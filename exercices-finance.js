@@ -1,0 +1,201 @@
+/* Œconomia — Entraînement : thème « Finance » (24 exercices, trois niveaux). */
+(function () {
+  const X = OEC.exo, { rnd, pick, fmt } = X;
+  const P = (...a) => a.map((t) => `<p>${t}</p>`).join("");
+
+  X.theme({ id: "finance", nom: "Finance",
+    intro: "À quoi servent les banques et les marchés financiers, comment évaluer un placement, et pourquoi la finance connaît-elle des crises ? Ces exercices vous entraînent à calculer des intérêts, des rendements et des valeurs actuelles, à comprendre le risque et l’effet de levier, et à discuter de la régulation.",
+    notions: ["instabilite-financiere", "preteur-dernier-ressort", "alea-moral", "aversion-pertes", "asymetrie-information", "preference-liquidite"] });
+
+  X.add([
+  /* =========================== NIVEAU 1 : DÉCOUVERTE =========================== */
+  { id: "fi1-action-obligation", theme: "finance", niveau: 1, type: "qcm", notion: "preference-liquidite",
+    titre: "Action ou obligation ?", competence: "Distinguer les deux grands titres financiers.",
+    enonce: P("Quelle phrase décrit correctement la différence entre une action et une obligation ?"),
+    options: ["Une action est un prêt à une entreprise ; une obligation, une part de propriété.", "Une action est une part de propriété d’une entreprise, qui donne droit à une part des bénéfices (dividendes) ; une obligation est un prêt, qui rapporte un intérêt fixé à l’avance.", "Une action et une obligation rapportent toujours le même revenu.", "Seuls les États émettent des actions."], c: 1,
+    explication: P("L’<b>action</b> fait de son détenteur un copropriétaire de l’entreprise : il touche des dividendes si l’entreprise fait des bénéfices et décide d’en distribuer, et son prix varie avec les perspectives de l’entreprise. Le risque et le rendement espéré sont élevés.", "L’<b>obligation</b> est une créance : l’emprunteur, entreprise ou État, verse un intérêt (coupon) et rembourse le capital à l’échéance. Elle est en général moins risquée, sauf si l’emprunteur fait faillite.") },
+
+  { id: "fi1-composes", theme: "finance", niveau: 1, type: "calcul", notion: "preference-liquidite",
+    titre: "Les intérêts composés", competence: "Calculer la valeur future d’un placement.",
+    gen: () => ({ c: rnd(2, 20) * 1000, i: pick([1, 2, 3, 4, 5, 6]), n: pick([5, 10, 20, 30]) }),
+    enonce: (p) => P(`Vous placez <b>${fmt(p.c)} francs</b> à un taux de <b>${p.i} %</b> par an, et vous réinvestissez chaque année les intérêts.`, `Quelle sera la valeur du placement dans <b>${p.n} ans</b> ? Arrondissez au franc.`),
+    champs: [{ label: "Valeur future", unite: "fr.", tol: 1 }],
+    reponses: (p) => [Math.round(p.c * Math.pow(1 + p.i / 100, p.n))],
+    indice: "Valeur future = capital × (1 + taux) puissance nombre d’années.",
+    correction: (p) => { const v = p.c * Math.pow(1 + p.i / 100, p.n); return P(`Valeur future = ${fmt(p.c)} × ${fmt(1 + p.i / 100, 2)}<sup>${p.n}</sup> ≈ <b>${fmt(Math.round(v))} francs</b>.`, `Avec des intérêts simples (non réinvestis), on aurait obtenu ${fmt(p.c * (1 + p.n * p.i / 100))} francs. La différence, ${fmt(Math.round(v - p.c * (1 + p.n * p.i / 100)))} francs, vient des « intérêts sur les intérêts » : c’est l’effet des intérêts composés, d’autant plus fort que la durée est longue.`); } },
+
+  { id: "fi1-rendement", theme: "finance", niveau: 1, type: "calcul", notion: "preference-liquidite",
+    titre: "Le rendement d’une action", competence: "Calculer le rendement total d’un placement.",
+    gen: () => { const p0 = rnd(40, 120); const p1 = p0 + rnd(-25, 30); return { p0, p1, d: rnd(1, 5) }; },
+    enonce: (p) => P(`Vous achetez une action <b>${p.p0} francs</b>. Pendant l’année, elle vous verse un dividende de <b>${p.d} francs</b>. Un an plus tard, vous la revendez <b>${p.p1} francs</b>.`, "Quel est votre rendement total sur l’année ? Arrondissez à une décimale (signe moins en cas de perte)."),
+    champs: [{ label: "Rendement", unite: "%", tol: 0.1 }],
+    reponses: (p) => [Math.round(((p.p1 - p.p0 + p.d) / p.p0) * 1000) / 10],
+    indice: "Rendement = (prix de vente − prix d’achat + dividende) ÷ prix d’achat × 100.",
+    correction: (p) => { const r = (p.p1 - p.p0 + p.d) / p.p0 * 100; return P(`Gain = (${p.p1} − ${p.p0}) + ${p.d} = ${p.p1 - p.p0 + p.d} francs.`, `Rendement = ${p.p1 - p.p0 + p.d} ÷ ${p.p0} × 100 ≈ <b>${fmt(r, 1)} %</b>.`, "Le rendement d’une action combine le dividende et la variation de prix (plus-value ou moins-value). Cette variation peut être forte d’une année à l’autre : c’est le prix du rendement moyen plus élevé des actions sur longue période."); } },
+
+  { id: "fi1-vf-bases", theme: "finance", niveau: 1, type: "vf", notion: "preference-liquidite",
+    titre: "Finance : les bases", competence: "Connaître quelques principes fondamentaux.",
+    affirmations: [
+      ["En général, un placement qui promet un rendement plus élevé est aussi plus risqué.", true, "C’est la relation entre risque et rendement : pour accepter plus de risque, les investisseurs exigent un rendement espéré plus élevé. Un placement qui promet beaucoup sans risque doit éveiller la méfiance."],
+      ["En Suisse, les dépôts bancaires sont garantis jusqu’à 100 000 francs par client et par banque en cas de faillite.", true, "C’est la garantie des dépôts, organisée par les banques elle-mêmes (esisuisse) et prévue par la loi."],
+      ["Quand les taux d’intérêt montent, le prix des obligations déjà émises augmente.", false, "Il <b>baisse</b> : les nouvelles obligations rapportent plus, les anciennes, à coupon plus faible, deviennent moins attractives et leur prix diminue."],
+      ["Répartir son épargne entre de nombreux placements différents réduit le risque.", true, "C’est la <b>diversification</b> : les pertes des uns sont en partie compensées par les gains des autres."]
+    ] },
+
+  { id: "fi1-diversification", theme: "finance", niveau: 1, type: "qcm", notion: "aversion-pertes",
+    titre: "Ne pas mettre tous ses œufs dans le même panier", competence: "Comprendre l’intérêt de la diversification.",
+    enonce: P("Marie a 20 000 francs d’épargne. Elle hésite entre acheter des actions d’une seule entreprise, celle où elle travaille, ou un fonds qui détient des actions de plusieurs centaines d’entreprises. Que conseille la théorie financière ?"),
+    options: ["Les actions de son entreprise, car elle la connaît bien.", "Le fonds diversifié, car le risque propre à chaque entreprise se compense en partie ; et investir dans son employeur concentre son risque : si l’entreprise va mal, elle peut perdre à la fois son emploi et son épargne.", "Aucun des deux : il ne faut jamais acheter d’actions.", "Peu importe, le risque est le même."], c: 1,
+    explication: P("La <b>diversification</b> réduit le risque spécifique de chaque entreprise sans réduire beaucoup le rendement espéré. Investir toute son épargne chez son employeur cumule deux risques sur le même événement. Lors de la faillite d’Enron en 2001, de nombreux salariés ont ainsi perdu leur emploi et leur épargne-retraite.", "Harry Markowitz a reçu le prix Nobel en 1990 pour avoir formalisé cette idée.") },
+
+  { id: "fi1-banque", theme: "finance", niveau: 1, type: "qcm", notion: "preteur-dernier-ressort",
+    titre: "Le métier d’une banque", competence: "Comprendre la transformation bancaire.",
+    enonce: P("Une banque cantonale reçoit des dépôts que ses clients peuvent retirer à tout moment, et accorde des hypothèques remboursables sur vingt ans. Comment appelle-t-on cette activité, et quel risque crée-t-elle ?"),
+    options: ["La spéculation ; elle crée un risque de change.", "La transformation des échéances ; elle crée un risque de panique si de nombreux déposants veulent retirer leur argent en même temps.", "La gestion de fortune ; elle ne crée aucun risque.", "L’émission de monnaie fiduciaire ; elle crée un risque d’inflation."], c: 1,
+    explication: P("La banque <b>transforme</b> des dépôts disponibles à court terme en prêts à long terme. C’est très utile : les déposants gardent leur argent disponible, et les emprunteurs peuvent financer des projets longs. Mais si tous les déposants veulent retirer leur argent au même moment, la banque ne peut pas les rembourser immédiatement : c’est la <b>panique bancaire</b>.", "Douglas Diamond et Philip Dybvig ont reçu le Nobel en 2022 pour l’analyse de ce mécanisme. La garantie des dépôts et la banque centrale, comme prêteur en dernier ressort, permettent de l’éviter.") },
+
+  { id: "fi1-piliers", theme: "finance", niveau: 1, type: "qcm", notion: "preference-liquidite",
+    titre: "Les trois piliers de la prévoyance suisse", competence: "Connaître l’organisation des retraites en Suisse.",
+    enonce: P("Le système suisse de prévoyance vieillesse repose sur trois piliers. Comment le deuxième pilier fonctionne-t-il ?"),
+    options: ["C’est l’AVS, financée par répartition : les cotisations des actifs paient les rentes des retraités.", "C’est la prévoyance professionnelle : salariés et employeurs cotisent à une caisse de pension, qui place ces sommes sur les marchés financiers pour financer la rente de chacun (capitalisation).", "C’est l’épargne individuelle volontaire, comme le pilier 3a.", "C’est l’aide sociale."], c: 1,
+    explication: P("Le <b>premier pilier</b> (AVS) fonctionne par <b>répartition</b> : les cotisations d’aujourd’hui financent les rentes d’aujourd’hui. Le <b>deuxième pilier</b> (prévoyance professionnelle, obligatoire pour la plupart des salariés) fonctionne par <b>capitalisation</b> : chacun accumule un capital placé par sa caisse de pension. Le <b>troisième pilier</b> est l’épargne individuelle, encouragée fiscalement (pilier 3a).", "Les caisses de pension gèrent plus de 1 000 milliards de francs, ce qui fait d’elles de grands investisseurs sur les marchés financiers.") },
+
+  { id: "fi1-placements", theme: "finance", niveau: 1, type: "document", notion: "aversion-pertes",
+    titre: "Choisir un placement selon son horizon", competence: "Relier risque, rendement et horizon de placement.",
+    enonce: P("Caractéristiques historiques approximatives de trois types de placements sur longue période (valeurs indicatives) :") +
+      `<table><thead><tr><th>Placement</th><th>Rendement annuel moyen</th><th>Pire année observée</th></tr></thead><tbody><tr><td>Compte d’épargne</td><td>environ 0,5 %</td><td>0 %</td></tr><tr><td>Obligations de la Confédération</td><td>environ 2 %</td><td>environ −10 %</td></tr><tr><td>Actions suisses (fonds diversifié)</td><td>environ 6 %</td><td>environ −35 %</td></tr></tbody></table>` +
+      P("Quel conseil est le plus raisonnable ?"),
+    options: ["Toujours tout placer en actions, puisqu’elles rapportent le plus.", "Pour une somme dont on aura besoin dans six mois, le compte d’épargne ; pour une épargne à vingt ans ou plus, une part importante en actions diversifiées peut convenir, en acceptant des baisses temporaires.", "Ne jamais acheter d’actions, car on peut perdre 35 % en un an.", "Les obligations sont sans risque."], c: 1,
+    explication: P("Le bon choix dépend de l’<b>horizon</b> et de la capacité à supporter des pertes. À court terme, une baisse de 35 % peut obliger à vendre au pire moment ; à long terme, les actions ont historiquement rapporté davantage, et les mauvaises années ont été compensées.", "Les obligations ne sont pas sans risque : leur prix baisse quand les taux montent, comme en 2022. Les rendements passés ne garantissent pas les rendements futurs.") },
+
+  /* =========================== NIVEAU 2 : INTERMÉDIAIRE =========================== */
+  { id: "fi2-actualisation", theme: "finance", niveau: 2, type: "calcul", notion: "preference-liquidite",
+    titre: "La valeur actuelle", competence: "Actualiser une somme future.",
+    gen: () => ({ f: rnd(5, 50) * 1000, r: pick([1, 2, 3, 4, 5, 8]), n: pick([2, 5, 10, 20]) }),
+    enonce: (p) => P(`Quelqu’un vous promet <b>${fmt(p.f)} francs</b> dans <b>${p.n} ans</b>. Vous pourriez placer votre argent sans risque à <b>${p.r} %</b> par an.`, "Combien vaut cette promesse aujourd’hui ? Arrondissez au franc."),
+    champs: [{ label: "Valeur actuelle", unite: "fr.", tol: 1 }],
+    reponses: (p) => [Math.round(p.f / Math.pow(1 + p.r / 100, p.n))],
+    indice: "Valeur actuelle = somme future ÷ (1 + taux) puissance nombre d’années.",
+    correction: (p) => { const v = p.f / Math.pow(1 + p.r / 100, p.n); return P(`Valeur actuelle = ${fmt(p.f)} ÷ ${fmt(1 + p.r / 100, 2)}<sup>${p.n}</sup> ≈ <b>${fmt(Math.round(v))} francs</b>.`, `C’est la somme qu’il faudrait placer aujourd’hui à ${p.r} % pour obtenir ${fmt(p.f)} francs dans ${p.n} ans.`, "L’actualisation est au cœur de la finance : la valeur d’une action, d’une obligation ou d’un investissement est la valeur actuelle des revenus futurs qu’il rapportera. Plus les taux d’intérêt sont élevés, plus cette valeur est faible."); } },
+
+  { id: "fi2-obligation", theme: "finance", niveau: 2, type: "calcul", notion: "preference-liquidite",
+    titre: "Taux d’intérêt et prix d’une obligation", competence: "Calculer l’effet d’une hausse des taux sur le prix d’une obligation.",
+    gen: () => ({ c: pick([20, 25, 30, 40, 50]), r0: pick([1, 2, 2.5]), r1: pick([3, 4, 5]) }),
+    enonce: (p) => P(`Une obligation perpétuelle (jamais remboursée) verse un coupon de <b>${p.c} francs</b> par an. Son prix est égal à la valeur actuelle de tous ses coupons futurs, soit <b>coupon ÷ taux d’intérêt du marché</b>.`, `Calculez son prix quand le taux du marché est de <b>${fmt(p.r0)} %</b>, puis quand il passe à <b>${fmt(p.r1)} %</b>.`),
+    champs: [{ label: "Prix à " + "taux bas", unite: "fr.", tol: 0.5 }, { label: "Prix à taux élevé", unite: "fr.", tol: 0.5 }],
+    reponses: (p) => [Math.round((p.c / (p.r0 / 100)) * 100) / 100, Math.round((p.c / (p.r1 / 100)) * 100) / 100],
+    indice: "Exprimez le taux en fraction : 2 % = 0,02.",
+    correction: (p) => { const a = p.c / (p.r0 / 100), b = p.c / (p.r1 / 100); return P(`À ${fmt(p.r0)} % : ${p.c} ÷ ${fmt(p.r0 / 100, 3)} = <b>${fmt(a)} francs</b>. À ${fmt(p.r1)} % : ${p.c} ÷ ${fmt(p.r1 / 100, 3)} = <b>${fmt(b)} francs</b>.`, `Le prix baisse de ${fmt(100 * (1 - b / a), 0)} % : quand les taux montent, les anciennes obligations, qui rapportent moins que les nouvelles, perdent de la valeur.`, "C’est ce qui s’est passé en 2022, quand les banques centrales ont relevé leurs taux : de nombreux détenteurs d’obligations, dont des caisses de pension et des banques comme la Silicon Valley Bank aux États-Unis, ont subi de lourdes pertes."); } },
+
+  { id: "fi2-levier", theme: "finance", niveau: 2, type: "calcul", notion: "instabilite-financiere",
+    titre: "L’effet de levier", competence: "Calculer l’effet d’une perte sur les fonds propres d’une banque.",
+    gen: () => ({ a: pick([100, 200, 500, 1000]), fp: pick([3, 4, 5, 8, 10]), perte: pick([1, 2, 3, 5]) }),
+    enonce: (p) => P(`Une banque détient <b>${p.a} milliards</b> d’actifs (crédits, titres). Elle les finance avec <b>${p.fp} %</b> de fonds propres (l’argent de ses actionnaires) et le reste par des dettes (dépôts, emprunts).`, `Ses actifs perdent <b>${p.perte} %</b> de leur valeur. Calculez le montant de ses fonds propres avant la perte, puis la perte en % de ses fonds propres.`),
+    champs: [{ label: "Fonds propres", unite: "milliards", tol: 0.05 }, { label: "Perte sur fonds propres", unite: "%", tol: 0.5 }],
+    reponses: (p) => [p.a * p.fp / 100, Math.round((p.perte / p.fp) * 1000) / 10],
+    indice: "La perte en francs est supportée d’abord par les fonds propres.",
+    correction: (p) => { const fp = p.a * p.fp / 100, pe = p.a * p.perte / 100; return P(`Fonds propres = ${fmt(p.fp)} % × ${p.a} = <b>${fmt(fp)} milliards</b>. Perte = ${fmt(p.perte)} % × ${p.a} = ${fmt(pe)} milliards.`, `Perte en % des fonds propres = ${fmt(pe)} ÷ ${fmt(fp)} × 100 = <b>${fmt(100 * p.perte / p.fp, 1)} %</b>.`, p.perte >= p.fp ? "Les fonds propres sont entièrement perdus : la banque est en faillite, et ses créanciers ne seront pas tous remboursés." : `Avec peu de fonds propres, une petite perte sur les actifs devient une grosse perte pour les actionnaires : c’est l’<b>effet de levier</b>. C’est pourquoi les régulateurs exigent davantage de fonds propres depuis 2008.`); } },
+
+  { id: "fi2-concours", theme: "finance", niveau: 2, type: "qcm", notion: "instabilite-financiere",
+    titre: "Le concours de beauté de Keynes", competence: "Comprendre une analyse classique de la spéculation.",
+    enonce: P("Au chapitre 12 de la Théorie générale, Keynes compare la Bourse à un concours de beauté organisé par un journal, où il faut désigner non le plus beau visage, mais celui que la majorité des participants choisira. Que veut-il montrer ?"),
+    options: ["Que les investisseurs choisissent toujours les meilleures entreprises.", "Que beaucoup d’investisseurs cherchent moins à estimer la valeur réelle d’une entreprise qu’à deviner ce que les autres vont penser, ce qui peut écarter durablement les prix de la réalité.", "Que la Bourse est un lieu de divertissement.", "Que les prix des actions sont fixés par l’État."], c: 1,
+    explication: P("Pour Keynes, l’investisseur professionnel cherche à anticiper l’opinion moyenne, et même ce que l’opinion moyenne pense de l’opinion moyenne. Les prix reposent alors sur des <b>conventions</b> fragiles, qui peuvent basculer brutalement.", "Il en conclut : « Quand le développement du capital d’un pays devient un sous-produit des activités d’un casino, le travail risque d’être mal fait. »") },
+
+  { id: "fi2-vf-efficience", theme: "finance", niveau: 2, type: "vf", notion: "aversion-pertes",
+    titre: "Marchés efficients et finance comportementale", competence: "Confronter deux visions des marchés financiers.",
+    affirmations: [
+      ["Selon l’hypothèse des marchés efficients d’Eugene Fama, les prix reflètent toute l’information disponible.", true, "Il est alors impossible de battre durablement le marché, sauf par chance ou par information privilégiée."],
+      ["La plupart des fonds gérés activement font mieux que leur indice de référence sur longue période, une fois les frais déduits.", false, "C’est l’inverse : la majorité fait <b>moins bien</b>, ce qui soutient l’hypothèse d’efficience et le succès des fonds indiciels à bas coût."],
+      ["Robert Shiller a montré que les cours des actions varient beaucoup plus que ne le justifieraient les dividendes futurs.", true, "Ces variations excessives suggèrent des phases d’euphorie et de panique, d’où son analyse des bulles."],
+      ["L’aversion aux pertes pousse souvent les investisseurs à vendre trop vite les titres qui ont perdu de la valeur.", false, "Elle pousse au contraire à <b>garder trop longtemps</b> les titres perdants, pour ne pas « réaliser » la perte, et à vendre trop vite les gagnants : c’est l’effet de disposition."]
+    ] },
+
+  { id: "fi2-frais", theme: "finance", niveau: 2, type: "calcul", notion: "aversion-pertes",
+    titre: "Le poids des frais sur le long terme", competence: "Mesurer l’effet des frais de gestion sur un placement.",
+    gen: () => ({ c: pick([10000, 20000, 50000]), r: pick([4, 5, 6]), f1: pick([1.5, 2]), f2: pick([0.2, 0.3]), n: pick([20, 30]) }),
+    enonce: (p) => P(`Vous placez <b>${fmt(p.c)} francs</b> pendant <b>${p.n} ans</b> dans un fonds d’actions qui rapporte <b>${p.r} %</b> par an avant frais.`, `Le fonds A prélève <b>${fmt(p.f1)} %</b> de frais par an, le fonds B, un fonds indiciel, <b>${fmt(p.f2)} %</b>. Calculez la valeur finale dans chacun des fonds (arrondie au franc).`),
+    champs: [{ label: "Fonds A", unite: "fr.", tol: 2 }, { label: "Fonds B", unite: "fr.", tol: 2 }],
+    reponses: (p) => [Math.round(p.c * Math.pow(1 + (p.r - p.f1) / 100, p.n)), Math.round(p.c * Math.pow(1 + (p.r - p.f2) / 100, p.n))],
+    indice: "Rendement net = rendement avant frais − frais. Valeur finale = capital × (1 + rendement net) puissance n.",
+    correction: (p) => { const a = p.c * Math.pow(1 + (p.r - p.f1) / 100, p.n), b = p.c * Math.pow(1 + (p.r - p.f2) / 100, p.n); return P(`Fonds A : ${fmt(p.c)} × ${fmt(1 + (p.r - p.f1) / 100, 3)}<sup>${p.n}</sup> ≈ <b>${fmt(Math.round(a))} francs</b>.`, `Fonds B : ${fmt(p.c)} × ${fmt(1 + (p.r - p.f2) / 100, 3)}<sup>${p.n}</sup> ≈ <b>${fmt(Math.round(b))} francs</b>.`, `Une différence de frais de ${fmt(p.f1 - p.f2, 1)} point par an représente ${fmt(Math.round(b - a))} francs au bout de ${p.n} ans, soit ${fmt(100 * (b - a) / b, 0)} % de la valeur finale du fonds B. Des frais en apparence faibles pèsent lourd à long terme, à cause des intérêts composés.`); } },
+
+  { id: "fi2-bourse-epargne", theme: "finance", niveau: 2, type: "redaction", notion: "aversion-pertes",
+    titre: "Compte d’épargne ou Bourse ?", competence: "Conseiller un choix de placement de façon argumentée (10 à 15 lignes).",
+    enonce: P("Léo, 25 ans, vient de terminer son apprentissage. Il gagne 5 200 francs par mois et peut épargner 400 francs par mois. Il se demande s’il doit laisser cet argent sur un compte d’épargne ou l’investir en Bourse.", "<b>Consigne :</b> conseillez Léo en présentant les avantages et les risques de chaque solution, en utilisant au moins deux notions de finance."),
+    criteres: ["La réponse distingue l’épargne de précaution (disponible rapidement, sans risque) et l’épargne de long terme.", "Elle explique la relation entre risque et rendement, et l’importance de l’horizon de placement.", "Elle mentionne la diversification (fonds indiciel, nombreux titres) plutôt qu’une seule action.", "Elle évoque au moins un autre élément : frais, intérêts composés, inflation qui érode l’épargne, pilier 3a, versements réguliers…", "Elle conclut par un conseil adapté et prudent."],
+    corrige: P("Léo devrait d’abord constituer une <b>épargne de précaution</b> sur un compte, équivalant à quelques mois de dépenses, pour faire face aux imprévus sans devoir vendre des placements au mauvais moment.", "Pour l’argent dont il n’aura pas besoin avant de nombreuses années, la Bourse peut convenir : à long terme, les actions ont historiquement rapporté davantage qu’un compte d’épargne, dont le rendement est souvent inférieur à l’<b>inflation</b>. Mais il doit accepter des baisses temporaires importantes : c’est la contrepartie du rendement plus élevé (<b>relation risque-rendement</b>).", "Il devrait <b>diversifier</b>, par exemple avec un fonds indiciel à bas frais, plutôt que miser sur quelques actions, et investir régulièrement chaque mois. Les <b>intérêts composés</b> et des frais faibles jouent fortement sur quarante ans. Il peut aussi utiliser le pilier 3a, qui offre un avantage fiscal, en sachant que l’argent est bloqué jusqu’à la retraite, sauf exceptions.") },
+
+  { id: "fi2-panique", theme: "finance", niveau: 2, type: "qcm", notion: "preteur-dernier-ressort",
+    titre: "Arrêter une panique bancaire", competence: "Connaître les outils qui préviennent les paniques bancaires.",
+    enonce: P("En 2023, des clients retirent massivement leurs dépôts de Credit Suisse. Quels outils permettent, en général, d’éviter qu’une panique bancaire ne se propage ?"),
+    options: ["La hausse des impôts sur les dépôts.", "La garantie des dépôts, qui rassure les petits déposants, et le rôle de prêteur en dernier ressort de la banque centrale, qui prête aux banques solides à court de liquidités.", "La fermeture de toutes les banques pendant un mois.", "L’interdiction des retraits par la loi."], c: 1,
+    explication: P("La <b>garantie des dépôts</b> enlève aux petits déposants la raison de se précipiter au guichet. Le <b>prêteur en dernier ressort</b>, la banque centrale, prête largement aux banques solvables qui manquent temporairement de liquidités, comme le recommandait Walter Bagehot en 1873.", "Ces outils ont un coût : ils peuvent encourager les banques à prendre trop de risques (<b>aléa moral</b>). Dans le cas de Credit Suisse, les liquidités de la BNS et les garanties de la Confédération ont accompagné une reprise forcée par UBS, en mars 2023.") },
+
+  /* =========================== NIVEAU 3 : AVANCÉ =========================== */
+  { id: "fi3-gordon", theme: "finance", niveau: 3, type: "calcul", notion: "instabilite-financiere",
+    titre: "La valeur d’une action (modèle de Gordon)", competence: "Évaluer une action à partir de ses dividendes futurs.",
+    gen: () => ({ d: pick([2, 3, 4, 5]), r: pick([6, 7, 8, 9]), g: pick([1, 2, 3]), g2: pick([4, 5]) }),
+    enonce: (p) => P(`Une entreprise versera l’an prochain un dividende de <b>${p.d} francs</b> par action. On s’attend à ce que ce dividende croisse de <b>${p.g} %</b> par an pour toujours. Les investisseurs exigent un rendement de <b>${p.r} %</b>.`, `Selon le modèle de Gordon, <b>P = D ÷ (r − g)</b>. Calculez le prix de l’action, puis le prix si les investisseurs s’attendaient à une croissance de <b>${p.g2} %</b>.`),
+    champs: [{ label: "Prix", unite: "fr.", tol: 0.05 }, { label: "Prix avec plus de croissance", unite: "fr.", tol: 0.05 }],
+    reponses: (p) => [Math.round((p.d / ((p.r - p.g) / 100)) * 100) / 100, Math.round((p.d / ((p.r - p.g2) / 100)) * 100) / 100],
+    indice: "Exprimez r et g en fraction : P = D ÷ (0,0r − 0,0g).",
+    correction: (p) => { const a = p.d / ((p.r - p.g) / 100), b = p.d / ((p.r - p.g2) / 100); return P(`P = ${p.d} ÷ (${fmt(p.r / 100, 2)} − ${fmt(p.g / 100, 2)}) = <b>${fmt(a)} francs</b>.`, `Avec ${p.g2} % de croissance : P = ${p.d} ÷ (${fmt(p.r / 100, 2)} − ${fmt(p.g2 / 100, 2)}) = <b>${fmt(b)} francs</b>.`, `Une petite révision des anticipations de croissance fait varier le prix de ${fmt(100 * (b / a - 1), 0)} %. C’est pourquoi les cours des actions, surtout celles d’entreprises de croissance, réagissent si fortement aux nouvelles et aux changements d’humeur des marchés, et pourquoi des anticipations trop optimistes peuvent nourrir des bulles.`); } },
+
+  { id: "fi3-hypotheque", theme: "finance", niveau: 3, type: "calcul",
+    titre: "Peut-on acheter ce logement ?", competence: "Appliquer les règles suisses de financement d’un logement (version simplifiée).",
+    gen: () => ({ prix: rnd(6, 16) * 100000 }),
+    enonce: (p) => P("Règles usuelles en Suisse (version simplifiée) : au moins <b>20 %</b> de fonds propres ; les charges annuelles théoriques, calculées avec un taux d’intérêt de <b>5 %</b> sur l’hypothèque, plus <b>1 %</b> d’amortissement de l’hypothèque et <b>1 %</b> du prix pour l’entretien, ne doivent pas dépasser <b>un tiers</b> du revenu brut.", `Un couple veut acheter un appartement à <b>${fmt(p.prix)} francs</b>, avec juste les fonds propres minimaux. Calculez ces fonds propres, puis le revenu brut annuel minimal nécessaire.`),
+    champs: [{ label: "Fonds propres", unite: "fr.", tol: 1 }, { label: "Revenu minimal", unite: "fr./an", tol: 3 }],
+    reponses: (p) => { const h = 0.8 * p.prix, ch = 0.05 * h + 0.01 * h + 0.01 * p.prix; return [0.2 * p.prix, Math.round(3 * ch)]; },
+    indice: "Hypothèque = 80 % du prix. Charges = 5 % et 1 % de l’hypothèque, plus 1 % du prix. Revenu minimal = 3 × charges.",
+    correction: (p) => { const h = 0.8 * p.prix, ch = 0.06 * h + 0.01 * p.prix; return P(`Fonds propres : 20 % × ${fmt(p.prix)} = <b>${fmt(0.2 * p.prix)} francs</b> ; hypothèque : ${fmt(h)} francs.`, `Charges théoriques : 5 % × ${fmt(h)} + 1 % × ${fmt(h)} + 1 % × ${fmt(p.prix)} = ${fmt(0.05 * h)} + ${fmt(0.01 * h)} + ${fmt(0.01 * p.prix)} = ${fmt(ch)} francs par an.`, `Revenu brut minimal : 3 × ${fmt(ch)} = <b>${fmt(Math.round(3 * ch))} francs</b> par an.`, "Le taux théorique de 5 % est bien supérieur aux taux réels des dernières années : il sert à vérifier que les ménages pourront payer si les taux remontent, et à éviter une bulle immobilière alimentée par le crédit, comme celle des années 1980 en Suisse. Ces règles de prudence sont fixées par les banques et leur autorégulation, sous l’œil de la FINMA."); } },
+
+  { id: "fi3-capm", theme: "finance", niveau: 3, type: "calcul",
+    titre: "Le rendement exigé d’une action (MEDAF)", competence: "Appliquer le modèle d’équilibre des actifs financiers.",
+    gen: () => ({ rf: pick([0.5, 1, 2]), rm: pick([6, 7, 8]), b: pick([0.5, 0.8, 1, 1.2, 1.5, 2]) }),
+    enonce: (p) => P(`Selon le modèle d’équilibre des actifs financiers (MEDAF), le rendement exigé d’une action est : <b>r = r<sub>f</sub> + β × (r<sub>m</sub> − r<sub>f</sub>)</b>, où r<sub>f</sub> est le taux sans risque (<b>${fmt(p.rf)} %</b>), r<sub>m</sub> le rendement attendu du marché (<b>${p.rm} %</b>) et β la sensibilité de l’action aux mouvements du marché.`, `Calculez le rendement exigé d’une action dont le bêta vaut <b>${fmt(p.b, 1)}</b>.`),
+    champs: [{ label: "Rendement exigé", unite: "%", tol: 0.01 }],
+    reponses: (p) => [Math.round((p.rf + p.b * (p.rm - p.rf)) * 100) / 100],
+    indice: "Prime de risque du marché = rm − rf ; multipliez-la par β puis ajoutez rf.",
+    correction: (p) => { const r = p.rf + p.b * (p.rm - p.rf); return P(`r = ${fmt(p.rf)} + ${fmt(p.b, 1)} × (${p.rm} − ${fmt(p.rf)}) = ${fmt(p.rf)} + ${fmt(p.b * (p.rm - p.rf), 2)} = <b>${fmt(r, 2)} %</b>.`, p.b > 1 ? "Le bêta est supérieur à 1 : l’action amplifie les mouvements du marché, elle est plus risquée, et les investisseurs exigent un rendement plus élevé." : p.b < 1 ? "Le bêta est inférieur à 1 : l’action réagit moins que le marché, comme souvent les entreprises de biens de première nécessité, et le rendement exigé est plus faible." : "Avec un bêta de 1, l’action suit le marché, et son rendement exigé est celui du marché.", "Selon le MEDAF, seul le risque lié au marché est rémunéré, car le risque propre à chaque entreprise peut être éliminé par la diversification. Le modèle, dû à William Sharpe (Nobel 1990), reste très utilisé malgré ses limites empiriques."); } },
+
+  { id: "fi3-minsky", theme: "finance", niveau: 3, type: "qcm", notion: "instabilite-financiere",
+    titre: "Les trois financements de Minsky", competence: "Classer des emprunteurs selon Minsky.",
+    enonce: P("Pendant un boom immobilier, un ménage achète un appartement avec un prêt dont il ne peut payer que les intérêts avec son salaire, en comptant sur la hausse des prix pour revendre avec profit ou refinancer son prêt. Comment Hyman Minsky qualifierait-il ce financement ?"),
+    options: ["Un financement prudent (hedge) : les revenus couvrent intérêts et remboursement.", "Un financement spéculatif : les revenus couvrent les intérêts mais pas le remboursement, qui dépend d’un refinancement ou d’une revente.", "Un financement Ponzi : les revenus ne couvrent même pas les intérêts.", "Un financement public."], c: 1,
+    explication: P("Minsky distingue trois positions. <b>Prudente</b> : les revenus couvrent intérêts et capital. <b>Spéculative</b> : ils couvrent les intérêts, mais le remboursement dépend d’un nouveau crédit ou d’une revente. <b>Ponzi</b> : ils ne couvrent même pas les intérêts, et tout repose sur la hausse des prix.", "Selon lui, les périodes de calme font glisser l’économie vers les positions spéculatives et Ponzi : « la stabilité est déstabilisante ». Quand les prix cessent de monter, ces emprunteurs doivent vendre, ce qui peut provoquer un effondrement, comme lors de la crise des subprimes.") },
+
+  { id: "fi3-vf-crises", theme: "finance", niveau: 3, type: "vf", notion: "alea-moral",
+    titre: "Crises bancaires et régulation", competence: "Connaître les grandes crises et les réponses réglementaires.",
+    affirmations: [
+      ["En octobre 2008, la Confédération et la BNS ont soutenu UBS, fragilisée par ses pertes sur les crédits hypothécaires américains.", true, "La Confédération a apporté 6 milliards de francs et la BNS a repris des actifs toxiques dans un fonds spécial."],
+      ["Les accords de Bâle III, adoptés après 2008, ont réduit les exigences de fonds propres des banques.", false, "Ils les ont <b>renforcées</b>, et ont ajouté des exigences de liquidité."],
+      ["En mars 2023, Credit Suisse a été reprise par UBS, avec le soutien de la Confédération et de la BNS.", true, "La reprise a été organisée en un week-end pour éviter une faillite désordonnée."],
+      ["La disparition de Credit Suisse a mis fin au débat sur les banques « trop grandes pour faire faillite » en Suisse.", false, "Elle l’a relancé : après la reprise, le bilan d’UBS représente plus du double du PIB suisse, et le Conseil fédéral a proposé en 2025 de renforcer fortement ses exigences de fonds propres."]
+    ] },
+
+  { id: "fi3-diversification-calc", theme: "finance", niveau: 3, type: "calcul", notion: "aversion-pertes",
+    titre: "Le calcul de la diversification", competence: "Calculer le risque d’un portefeuille diversifié.",
+    gen: () => ({ s: pick([20, 25, 30, 40]), n: pick([4, 9, 16, 25, 100]) }),
+    enonce: (p) => P(`Chaque action d’un groupe a un risque (écart-type du rendement annuel) de <b>${p.s} %</b>. On suppose, pour simplifier, que leurs rendements sont indépendants les uns des autres.`, `Vous répartissez votre placement à parts égales entre <b>${p.n} actions</b>. Le risque du portefeuille vaut alors <b>σ ÷ √n</b>. Calculez-le (arrondi à une décimale).`),
+    champs: [{ label: "Risque du portefeuille", unite: "%", tol: 0.05 }],
+    reponses: (p) => [Math.round((p.s / Math.sqrt(p.n)) * 10) / 10],
+    indice: "Divisez le risque d’une action par la racine carrée du nombre d’actions.",
+    correction: (p) => P(`Risque = ${p.s} ÷ √${p.n} = ${p.s} ÷ ${fmt(Math.sqrt(p.n), 2)} ≈ <b>${fmt(p.s / Math.sqrt(p.n), 1)} %</b>.`, "En réalité, les actions ne sont pas indépendantes : elles baissent souvent ensemble lors des crises. La diversification élimine le risque propre à chaque entreprise, mais pas le risque commun au marché. C’est pourquoi le risque d’un portefeuille très diversifié ne descend pas vers zéro, mais vers celui du marché dans son ensemble.") },
+
+  { id: "fi3-ubs", theme: "finance", niveau: 3, type: "redaction", notion: "alea-moral",
+    titre: "Faut-il imposer davantage de fonds propres à UBS ?", competence: "Argumenter sur une question de régulation financière (15 à 25 lignes).",
+    enonce: P("Après la reprise de Credit Suisse, UBS est la seule grande banque internationale de Suisse, avec un bilan supérieur au double du PIB du pays. En 2025, le Conseil fédéral a proposé d’exiger qu’elle couvre entièrement par des fonds propres la valeur de ses filiales étrangères, ce qui représenterait, selon les estimations, plus de 20 milliards de francs de fonds propres supplémentaires. UBS juge ces exigences excessives.", "<b>Consigne :</b> faut-il imposer à UBS des exigences de fonds propres nettement plus élevées ? Présentez les arguments des deux côtés, en utilisant au moins deux notions de finance, puis concluez."),
+    criteres: ["La réponse présente au moins deux arguments pour : stabilité financière, réduction du risque pour les contribuables, aléa moral et garantie implicite de l’État, effet de levier, leçons de 2008 et 2023…", "Elle présente au moins deux arguments contre : coût du capital, compétitivité internationale de la banque, risque de délocalisation, effet sur le crédit et la place financière, comparaison avec les concurrents…", "Elle utilise correctement au moins deux notions : fonds propres, effet de levier, aléa moral, « trop grande pour faire faillite », prêteur en dernier ressort…", "Elle mentionne la taille de la banque par rapport à l’économie suisse et le risque pour les finances publiques.", "Elle conclut de façon argumentée et nuancée."],
+    corrige: P("<b>Pour :</b> avec un bilan supérieur au double du PIB suisse, une faillite d’UBS dépasserait les capacités de la Confédération. La banque bénéficie donc d’une garantie implicite de l’État, ce qui crée un <b>aléa moral</b> : elle peut prendre plus de risques en sachant qu’elle sera sauvée. Davantage de <b>fonds propres</b> réduit l’<b>effet de levier</b> : les actionnaires, et non les contribuables, absorbent les pertes. Les crises de 2008 et de 2023 ont montré que les règles précédentes ne suffisaient pas, et des économistes comme Anat Admati et Martin Hellwig plaident pour des fonds propres beaucoup plus élevés.", "<b>Contre :</b> les fonds propres coûtent plus cher que la dette ; des exigences très supérieures à celles des concurrents étrangers pourraient réduire la rentabilité et la compétitivité d’UBS, l’inciter à réduire certaines activités ou à déplacer son siège, et affaiblir la place financière suisse et le financement de l’économie.", "<b>Conclusion :</b> au vu de la taille d’UBS par rapport à l’économie suisse, des exigences plus élevées semblent justifiées pour protéger les contribuables, mais leur ampleur et leur calendrier doivent tenir compte de la compétitivité de la banque. Le débat porte moins sur le principe que sur le niveau.") },
+
+  { id: "fi3-bulle", theme: "finance", niveau: 3, type: "document", notion: "instabilite-financiere",
+    titre: "Reconnaître une bulle", competence: "Appliquer l’anatomie des crises de Kindleberger à des données.",
+    enonce: P("Évolution d’un indice fictif des prix d’un actif (base 100) et du crédit accordé pour l’acheter :") +
+      `<table><thead><tr><th>Année</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th></tr></thead><tbody><tr><td>Prix</td><td>100</td><td>112</td><td>135</td><td>180</td><td>240</td><td>238</td><td>150</td></tr><tr><td>Crédit (base 100)</td><td>100</td><td>110</td><td>130</td><td>170</td><td>230</td><td>235</td><td>190</td></tr></tbody></table>` +
+      P("Quelle lecture correspond le mieux à l’anatomie des crises de Kindleberger et Minsky ?"),
+    options: ["Une hausse régulière justifiée par les fondamentaux, puis une correction normale.", "Un essor nourri par le crédit (années 2 à 4), une euphorie où les prix accélèrent (année 5), un retournement où les prix stagnent alors que le crédit reste élevé (année 6), puis une panique et des ventes forcées (année 7).", "Une baisse continue des prix.", "Un marché sans lien avec le crédit."], c: 1,
+    explication: P("Le schéma correspond aux phases décrites par Kindleberger : <b>essor</b>, où le crédit et les prix montent ensemble ; <b>euphorie</b>, où les prix accélèrent, avec une hausse de 33 % en une année ; <b>retournement</b>, quand les prix cessent de monter alors que l’endettement est au plus haut ; puis <b>panique</b>, où les emprunteurs doivent vendre, ce qui fait chuter les prix de près de 40 %.", "Le crédit joue un rôle central : il alimente la hausse, puis rend la chute plus brutale, car les emprunteurs endettés sont forcés de vendre. On retrouve ce schéma de la crise de John Law en 1720 aux subprimes en 2008.") }
+  ]);
+})();

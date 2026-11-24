@@ -1,0 +1,201 @@
+/* Œconomia — Entraînement : thème « État et biens publics » (24 exercices, trois niveaux). */
+(function () {
+  const X = OEC.exo, { rnd, pick, fmt } = X;
+  const P = (...a) => a.map((t) => `<p>${t}</p>`).join("");
+
+  /* Marché avec externalité : demande P = a − Q, coût marginal privé = c + Q, coût externe e par unité */
+  const genExt = () => { const e = pick([4, 6, 8, 10]); const Qs = rnd(15, 40); const c = rnd(5, 20); return { a: c + 2 * Qs, c, e, Qm: Qs }; };
+
+  X.theme({ id: "etat", nom: "État et biens publics",
+    intro: "Pourquoi l’État intervient-il dans l’économie, comment finance-t-il ses dépenses, et quelles sont les limites de son action ? Ces exercices vous entraînent à reconnaître les défaillances du marché, à calculer des soldes budgétaires, des multiplicateurs et des taxes correctrices, et à débattre du rôle de l’État.",
+    notions: ["bien-public", "externalite", "biens-communs", "choix-public", "asymetrie-information", "multiplicateur", "equivalence-ricardienne"] });
+
+  X.add([
+  /* =========================== NIVEAU 1 : DÉCOUVERTE =========================== */
+  { id: "et1-bien-public", theme: "etat", niveau: 1, type: "qcm", notion: "bien-public",
+    titre: "Reconnaître un bien public", competence: "Identifier un bien non rival et non excluable.",
+    enonce: P("Lequel de ces biens est un bien public au sens économique ?"),
+    options: ["Une baguette de pain.", "L’éclairage public d’une rue.", "Un abonnement à une plateforme de streaming.", "Un appartement en location."], c: 1,
+    explication: P("Un <b>bien public</b> a deux caractéristiques : il est <b>non rival</b> (le fait que je l’utilise n’empêche pas les autres de l’utiliser) et <b>non excluable</b> (on ne peut pas empêcher quelqu’un d’en profiter). L’éclairage public profite à tous les passants, sans qu’on puisse faire payer chacun.", "Le marché le fournit mal, car chacun a intérêt à en profiter sans payer : c’est le problème du <b>passager clandestin</b>. D’où son financement par l’impôt.") },
+
+  { id: "et1-vf-biens", theme: "etat", niveau: 1, type: "vf", notion: "biens-communs",
+    titre: "Quatre types de biens", competence: "Classer des biens selon la rivalité et l’exclusion.",
+    affirmations: [
+      ["Les poissons d’un lac ouvert à tous les pêcheurs sont un bien commun : rivaux mais non excluables.", true, "Ce que pêche l’un manque aux autres, et il est difficile d’exclure qui que ce soit : c’est le cadre de la « tragédie des communs », étudiée par Hardin et Ostrom."],
+      ["La défense nationale est un bien privé.", false, "C’est un exemple classique de <b>bien public</b> : elle protège tous les habitants à la fois, et on ne peut pas en exclure ceux qui ne paient pas."],
+      ["Un film diffusé sur une plateforme payante est un bien de club : non rival mais excluable.", true, "Le regarder n’empêche pas les autres de le voir, mais seuls les abonnés y ont accès."],
+      ["Une baguette de pain est à la fois rivale et excluable.", true, "C’est un bien <b>privé</b> : si je la mange, personne d’autre ne peut la manger, et il faut la payer pour l’obtenir."]
+    ] },
+
+  { id: "et1-depenses", theme: "etat", niveau: 1, type: "calcul", notion: "bien-public",
+    titre: "Le poids des dépenses publiques", competence: "Calculer une part de dépenses publiques dans le PIB.",
+    gen: () => ({ d: rnd(240, 300), y: rnd(780, 880) }),
+    enonce: (p) => P(`Les dépenses de l’ensemble des administrations publiques d’un pays (État central, régions, communes et assurances sociales) s’élèvent à <b>${p.d} milliards</b> de francs, pour un PIB de <b>${p.y} milliards</b>.`, "Quelle est la part des dépenses publiques dans le PIB ? Arrondissez à une décimale."),
+    champs: [{ label: "Dépenses publiques", unite: "% du PIB", tol: 0.1 }],
+    reponses: (p) => [Math.round((p.d / p.y) * 1000) / 10],
+    indice: "Part = dépenses publiques ÷ PIB × 100.",
+    correction: (p) => P(`Part = ${p.d} ÷ ${p.y} × 100 ≈ <b>${fmt(100 * p.d / p.y, 1)} %</b> du PIB.`, "Cet ordre de grandeur, environ un tiers, correspond à celui de la Suisse, nettement en dessous de la moyenne de l’Union européenne, proche de la moitié. Attention : une grande partie de ces dépenses sont des transferts (retraites, allocations), qui ne sont pas une production de l’État mais une redistribution.") },
+
+  { id: "et1-externalite", theme: "etat", niveau: 1, type: "qcm", notion: "externalite",
+    titre: "Une externalité négative", competence: "Reconnaître une externalité et la réponse proposée par Pigou.",
+    enonce: P("Une usine rejette des fumées qui salissent le linge et nuisent à la santé des habitants voisins, sans les indemniser. Quelle réponse l’économiste Arthur Pigou proposait-il ?"),
+    options: ["Laisser faire : le marché corrigera seul le problème.", "Taxer chaque unité produite d’un montant égal au dommage causé aux voisins, pour que l’usine en tienne compte.", "Subventionner l’usine pour qu’elle produise davantage.", "Interdire toute production industrielle."], c: 1,
+    explication: P("Les fumées sont une <b>externalité négative</b> : un coût imposé à des tiers, qui n’apparaît pas dans le prix. L’usine produit donc trop, du point de vue de la société.", "Pigou propose en 1920 une <b>taxe</b> égale au dommage marginal : l’entreprise « internalise » le coût et réduit sa production jusqu’au niveau socialement souhaitable. La taxe CO2 sur les combustibles en Suisse repose sur cette idée.") },
+
+  { id: "et1-solde", theme: "etat", niveau: 1, type: "calcul", notion: "equivalence-ricardienne",
+    titre: "Déficit et dette", competence: "Calculer un solde budgétaire et l’évolution de la dette.",
+    gen: () => ({ r: rnd(70, 90), d: rnd(72, 95), dette: rnd(100, 160), y: rnd(780, 860) }),
+    enonce: (p) => P(`Cette année, un État a perçu <b>${p.r} milliards</b> de recettes et dépensé <b>${p.d} milliards</b>. Sa dette au début de l’année était de <b>${p.dette} milliards</b>, et le PIB du pays est de <b>${p.y} milliards</b>.`, "Calculez le solde budgétaire (signe moins en cas de déficit), puis la dette en fin d’année en % du PIB (arrondie à une décimale). On suppose que tout déficit est financé par l’emprunt et que tout excédent rembourse la dette."),
+    champs: [{ label: "Solde", unite: "milliards", tol: 0.05 }, { label: "Dette / PIB", unite: "%", tol: 0.1 }],
+    reponses: (p) => [p.r - p.d, Math.round(((p.dette - (p.r - p.d)) / p.y) * 1000) / 10],
+    indice: "Solde = recettes − dépenses. Nouvelle dette = ancienne dette − solde (un déficit l’augmente).",
+    correction: (p) => { const s = p.r - p.d, nd = p.dette - s; return P(`Solde = ${p.r} − ${p.d} = <b>${s} milliards</b> : ${s < 0 ? "un déficit" : s > 0 ? "un excédent" : "un équilibre"}.`, `Dette en fin d’année = ${p.dette} ${s < 0 ? "+ " + (-s) : "− " + s} = ${nd} milliards, soit ${nd} ÷ ${p.y} × 100 ≈ <b>${fmt(100 * nd / p.y, 1)} %</b> du PIB.`, "Le <b>déficit</b> est un flux (ce qui manque une année) ; la <b>dette</b> est un stock (l’accumulation des déficits passés). Les deux sont souvent confondus dans le débat public."); } },
+
+  { id: "et1-smith", theme: "etat", niveau: 1, type: "qcm", notion: "bien-public",
+    titre: "Les devoirs du souverain selon Adam Smith", competence: "Connaître la vision classique du rôle de l’État.",
+    enonce: P("Dans La Richesse des nations (1776), Adam Smith, partisan de la liberté économique, assigne pourtant des devoirs à l’État. Lesquels ?"),
+    options: ["Fixer les prix et les salaires.", "Aucun : l’État doit disparaître.", "Diriger les grandes entreprises du pays.", "La défense, la justice, et les ouvrages et institutions publics que nul intérêt privé ne financerait, comme les routes ou l’instruction du peuple."], c: 3,
+    explication: P("Smith défend le marché, mais il assigne au souverain trois devoirs : protéger la société contre les agressions extérieures (<b>défense</b>), protéger chacun contre l’injustice des autres (<b>justice</b>), et financer les <b>ouvrages publics</b> utiles à tous mais non rentables pour un particulier, comme les routes, les ponts ou l’éducation de base.", "On reconnaît déjà l’idée de bien public, formalisée par Samuelson en 1954.") },
+
+  { id: "et1-frein", theme: "etat", niveau: 1, type: "qcm", notion: "equivalence-ricardienne",
+    titre: "Le frein à l’endettement", competence: "Comprendre une règle budgétaire suisse.",
+    enonce: P("En 2001, 85 % des votants suisses ont accepté le « frein à l’endettement », appliqué à la Confédération depuis 2003. Que prévoit-il ?"),
+    options: ["Une interdiction totale de tout déficit, chaque année.", "Que les dépenses ne dépassent pas les recettes sur l’ensemble du cycle conjoncturel : des déficits sont permis en période de faible conjoncture, compensés par des excédents en période favorable.", "Que la dette publique soit remboursée en dix ans.", "Que la Banque nationale finance les déficits."], c: 1,
+    explication: P("Le frein à l’endettement plafonne les dépenses en fonction des recettes, corrigées de la conjoncture : en période de ralentissement, les recettes baissent et un déficit est autorisé ; en période de forte conjoncture, un excédent est exigé. Le budget doit être équilibré <b>sur le cycle</b>, ce qui laisse jouer les stabilisateurs automatiques.", "Des exceptions sont possibles en cas de situation extraordinaire, comme pendant la pandémie de 2020. La dette fédérale a fortement diminué depuis son introduction.") },
+
+  { id: "et1-budget", theme: "etat", niveau: 1, type: "document", notion: "bien-public",
+    titre: "Lire le budget d’une commune", competence: "Lire la répartition d’un budget public.",
+    enonce: P("Répartition des dépenses d’une commune fictive de 12 000 habitants (budget total : 60 millions de francs) :") +
+      `<table><thead><tr><th>Domaine</th><th>Part</th></tr></thead><tbody><tr><td>Formation (écoles)</td><td>32 %</td></tr><tr><td>Social et santé</td><td>24 %</td></tr><tr><td>Transports et routes</td><td>12 %</td></tr><tr><td>Administration</td><td>10 %</td></tr><tr><td>Sécurité (police, pompiers)</td><td>8 %</td></tr><tr><td>Culture, sport, loisirs</td><td>6 %</td></tr><tr><td>Environnement et aménagement</td><td>8 %</td></tr></tbody></table>` +
+      P("Quelle affirmation est correcte ?"),
+    options: ["La commune dépense davantage pour l’administration que pour les écoles.", "Les écoles représentent environ 19,2 millions de francs, soit 1 600 francs par habitant.", "La culture et le sport représentent la plus grande part du budget.", "Le budget social est supérieur à 20 millions de francs."], c: 1,
+    explication: P("32 % de 60 millions = <b>19,2 millions</b> de francs, soit 19 200 000 ÷ 12 000 = <b>1 600 francs par habitant</b>. La formation est le premier poste de la commune, devant le social et la santé (24 % × 60 = 14,4 millions).", "En Suisse, l’école obligatoire est principalement financée par les cantons et les communes, ce qui explique son poids important dans leurs budgets.") },
+
+  /* =========================== NIVEAU 2 : INTERMÉDIAIRE =========================== */
+  { id: "et2-pigou", theme: "etat", niveau: 2, type: "calcul", notion: "externalite",
+    titre: "La taxe pigouvienne", competence: "Calculer la quantité de marché et la quantité optimale en présence d’une externalité.",
+    gen: genExt,
+    enonce: (p) => P(`Sur un marché, la demande est <b>P = ${p.a} − Q</b> et le coût marginal privé des producteurs est <b>Cm = ${p.c} + Q</b>. Chaque unité produite cause en plus un dommage de <b>${p.e} francs</b> à des tiers (pollution).`, "Calculez la quantité échangée sans intervention (prix = coût marginal privé), puis la quantité socialement optimale (prix = coût marginal privé + dommage)."),
+    champs: [{ label: "Quantité de marché", unite: "", tol: 0.05 }, { label: "Quantité optimale", unite: "", tol: 0.05 }],
+    reponses: (p) => [p.Qm, p.Qm - p.e / 2],
+    indice: "Marché : a − Q = c + Q. Optimum : a − Q = c + Q + e.",
+    correction: (p) => P(`Sans intervention : ${p.a} − Q = ${p.c} + Q, donc 2Q = ${p.a - p.c} et Q = <b>${p.Qm}</b>.`, `Optimum social : ${p.a} − Q = ${p.c} + Q + ${p.e}, donc 2Q = ${p.a - p.c - p.e} et Q = <b>${fmt(p.Qm - p.e / 2)}</b>.`, `Le marché produit ${fmt(p.e / 2)} unités de trop. Une <b>taxe de ${p.e} francs par unité</b>, égale au dommage, ramène la production à l’optimum : c’est la taxe pigouvienne.`) },
+
+  { id: "et2-multiplicateur", theme: "etat", niveau: 2, type: "calcul", notion: "multiplicateur",
+    titre: "Le multiplicateur keynésien", competence: "Calculer l’effet d’une dépense publique sur le revenu.",
+    gen: () => ({ c: pick([0.5, 0.6, 0.75, 0.8, 0.9]), g: pick([2, 4, 5, 10]) }),
+    enonce: (p) => P(`Dans une économie fermée et sans impôt, les ménages consomment <b>${fmt(p.c * 100)} %</b> de chaque franc de revenu supplémentaire (propension marginale à consommer c = ${fmt(p.c, 2)}).`, `L’État augmente ses dépenses de <b>${p.g} milliards</b> de francs. Calculez le multiplicateur, puis la hausse du revenu national.`),
+    champs: [{ label: "Multiplicateur", unite: "", tol: 0.01 }, { label: "Hausse du revenu", unite: "milliards", tol: 0.05 }],
+    reponses: (p) => [Math.round((1 / (1 - p.c)) * 100) / 100, Math.round((p.g / (1 - p.c)) * 100) / 100],
+    indice: "Multiplicateur = 1 ÷ (1 − c).",
+    correction: (p) => { const k = 1 / (1 - p.c); return P(`Multiplicateur = 1 ÷ (1 − ${fmt(p.c, 2)}) = <b>${fmt(k, 2)}</b>.`, `Hausse du revenu = ${fmt(k, 2)} × ${p.g} = <b>${fmt(k * p.g, 2)} milliards</b>.`, `La dépense initiale devient un revenu pour des ménages, qui en consomment ${fmt(p.c * 100)} %, ce qui crée un nouveau revenu, et ainsi de suite. Dans la réalité, les impôts, les importations et l’épargne réduisent fortement cet effet : les multiplicateurs estimés sont souvent proches de 1, et plus élevés en récession.`); } },
+
+  { id: "et2-passager", theme: "etat", niveau: 2, type: "qcm", notion: "bien-public",
+    titre: "Le passager clandestin", competence: "Expliquer pourquoi le marché fournit mal les biens publics.",
+    enonce: P("Les habitants d’un quartier voudraient tous une digue contre les crues. Une entreprise propose de la construire si chacun verse volontairement 500 francs. Pourquoi le projet risque-t-il d’échouer ?"),
+    options: ["Parce que la digue est un bien rival.", "Parce que chacun espère profiter de la digue sans payer, puisqu’elle protégera aussi ceux qui n’ont pas contribué.", "Parce que les entreprises ne savent pas construire de digues.", "Parce que les habitants ne veulent pas être protégés."], c: 1,
+    explication: P("La digue protège tout le quartier, que l’on ait payé ou non : elle est <b>non excluable</b>. Chaque habitant a donc intérêt à laisser les autres payer : c’est le comportement de <b>passager clandestin</b>. Si beaucoup raisonnent ainsi, la digue n’est pas construite, alors que tout le monde la voulait.", "D’où le recours à l’impôt, obligatoire, ou à une organisation collective capable de faire contribuer chacun, comme les anciennes corporations de digues ou de bisses.") },
+
+  { id: "et2-vf-choix-public", theme: "etat", niveau: 2, type: "vf", notion: "choix-public",
+    titre: "Les défaillances de l’État", competence: "Connaître les apports de la théorie des choix publics.",
+    affirmations: [
+      ["La théorie des choix publics applique aux élus et aux fonctionnaires l’hypothèse qu’ils poursuivent aussi leur intérêt personnel.", true, "C’est l’apport de James Buchanan, Nobel 1986 : l’État n’est pas un planificateur bienveillant, il est fait de personnes avec leurs propres objectifs."],
+      ["Selon George Stigler, les autorités de régulation sont toujours indépendantes des entreprises qu’elles surveillent.", false, "Stigler a montré le risque de « capture » : les régulateurs finissent parfois par servir les intérêts des entreprises régulées."],
+      ["Un petit groupe très concerné peut obtenir un avantage payé par une majorité peu concernée.", true, "Le gain est concentré sur quelques-uns, le coût dilué sur tous : le groupe a beaucoup plus intérêt à s’organiser que la majorité (Mancur Olson)."],
+      ["Selon Hayek, un planificateur central peut rassembler toute l’information nécessaire pour diriger l’économie.", false, "Pour Hayek, la connaissance est dispersée entre des millions de personnes et ne peut pas être centralisée ; les prix de marché la transmettent."]
+    ] },
+
+  { id: "et2-dette-dyn", theme: "etat", niveau: 2, type: "calcul", notion: "equivalence-ricardienne",
+    titre: "La dynamique de la dette publique", competence: "Calculer l’évolution du ratio dette/PIB.",
+    gen: () => ({ d: pick([30, 60, 90, 120]), r: pick([1, 2, 3, 4]), g: pick([1, 2, 3, 4]), sp: pick([-2, -1, 0, 1, 2]) }),
+    enonce: (p) => P(`La dette publique d’un pays représente <b>${p.d} %</b> du PIB. Le taux d’intérêt moyen sur la dette est de <b>${p.r} %</b>, la croissance du PIB nominal de <b>${p.g} %</b>, et le solde primaire (recettes − dépenses hors intérêts) est de <b>${fmt(p.sp)} %</b> du PIB.`, "Le ratio de l’année suivante se calcule par : <b>d′ = d × (1 + r) ÷ (1 + g) − solde primaire</b>. Calculez-le (arrondi à une décimale)."),
+    champs: [{ label: "Dette / PIB", unite: "%", tol: 0.1 }],
+    reponses: (p) => [Math.round((p.d * (1 + p.r / 100) / (1 + p.g / 100) - p.sp) * 10) / 10],
+    indice: "Appliquez la formule en exprimant r et g en fraction (3 % = 0,03).",
+    correction: (p) => { const v = p.d * (1 + p.r / 100) / (1 + p.g / 100) - p.sp; return P(`d′ = ${p.d} × ${fmt(1 + p.r / 100, 2)} ÷ ${fmt(1 + p.g / 100, 2)} − (${fmt(p.sp)}) ≈ <b>${fmt(v, 1)} %</b> du PIB.`, p.r > p.g ? "Quand le taux d’intérêt dépasse la croissance, la dette tend à augmenter d’elle-même, sauf si l’État dégage un excédent primaire suffisant." : p.r < p.g ? "Quand la croissance dépasse le taux d’intérêt, le ratio tend à baisser même avec un léger déficit primaire : c’est ce qui a permis de réduire les dettes après 1945." : "Taux d’intérêt et croissance sont égaux : seul le solde primaire fait varier le ratio.", "Cette comparaison entre r et g est au cœur des débats sur la soutenabilité de la dette, en particulier depuis la remontée des taux d’intérêt en 2022."); } },
+
+  { id: "et2-lamal", theme: "etat", niveau: 2, type: "qcm", notion: "asymetrie-information",
+    titre: "Pourquoi l’assurance maladie est-elle obligatoire ?", competence: "Appliquer la notion de sélection adverse.",
+    enonce: P("Depuis 1996, l’assurance maladie de base est obligatoire en Suisse, et les caisses doivent accepter tout le monde au même prix dans une région, quel que soit l’état de santé. Quelle défaillance du marché ces règles visent-elles d’abord à corriger ?"),
+    options: ["Une externalité positive liée à la recherche médicale.", "La sélection adverse : si l’assurance était facultative, les personnes en bonne santé s’en passeraient, les primes monteraient, et l’assurance deviendrait inabordable pour ceux qui en ont besoin.", "Le monopole d’une caisse unique.", "Le passager clandestin des hôpitaux publics."], c: 1,
+    explication: P("L’assuré connaît mieux son état de santé que l’assureur : c’est une <b>asymétrie d’information</b>. Si l’assurance est facultative, ce sont surtout les personnes à risque qui s’assurent ; les primes montent, ce qui fait fuir les autres bien-portants, et ainsi de suite : c’est la <b>sélection adverse</b>, décrite par George Akerlof en 1970 à propos des voitures d’occasion.", "L’obligation de s’assurer et l’interdiction de sélectionner les assurés évitent ce cercle vicieux. Elles s’accompagnent de subsides pour les ménages modestes, les primes étant identiques quel que soit le revenu.") },
+
+  { id: "et2-co2", theme: "etat", niveau: 2, type: "redaction", notion: "externalite",
+    titre: "Faut-il une taxe carbone plus élevée ?", competence: "Argumenter sur un instrument de politique environnementale (10 à 15 lignes).",
+    enonce: P("La Suisse prélève une taxe CO2 sur les combustibles comme le mazout et le gaz, dont une grande partie est redistribuée à la population et aux entreprises. Le 13 juin 2021, une révision de la loi sur le CO2, qui prévoyait notamment une taxe sur les billets d’avion, a été rejetée de justesse par environ 52 % des votants.", "<b>Consigne :</b> présentez des arguments pour et contre une taxe carbone plus élevée, en utilisant la notion d’externalité, puis concluez."),
+    criteres: ["La réponse explique que les émissions de CO2 sont une externalité négative et que la taxe les fait entrer dans les prix (Pigou).", "Elle présente au moins deux arguments pour : efficacité (chacun réduit là où c’est le moins cher), incitation à l’innovation, recettes redistribuables, cohérence avec les engagements climatiques…", "Elle présente au moins deux arguments contre ou difficultés : effet sur les ménages modestes et les régions périphériques, compétitivité, fuite de carbone, acceptabilité politique (vote de 2021)…", "Elle évoque la redistribution des recettes ou d’autres instruments (normes, subventions, marché de quotas).", "Elle conclut de façon argumentée."],
+    corrige: P("Les émissions de CO2 sont une <b>externalité négative</b> : celui qui chauffe au mazout ou prend l’avion ne paie pas le coût du changement climatique qu’il contribue à provoquer. Une taxe carbone fait entrer ce coût dans les prix, comme le proposait Pigou.", "<b>Pour :</b> chacun réduit ses émissions là où c’est le moins coûteux pour lui, sans que l’État doive tout réglementer ; la taxe encourage l’innovation ; et ses recettes peuvent être redistribuées, comme en Suisse, ce qui limite son effet sur le pouvoir d’achat moyen.", "<b>Contre :</b> elle pèse davantage sur les ménages modestes et les habitants des régions mal desservies par les transports publics ; elle peut nuire à la compétitivité des entreprises exposées ou déplacer les émissions à l’étranger. Le rejet de 2021 montre aussi la difficulté de faire accepter une hausse des prix de l’énergie.", "<b>Conclusion :</b> une taxe carbone est un outil efficace, à condition de redistribuer ses recettes de façon visible, de la compléter par des investissements (transports, rénovation) et de l’introduire progressivement.") },
+
+  { id: "et2-ostrom", theme: "etat", niveau: 2, type: "qcm", notion: "biens-communs",
+    titre: "Ni le marché ni l’État ?", competence: "Connaître la troisième voie d’Elinor Ostrom.",
+    enonce: P("En 1968, Garrett Hardin affirme qu’une ressource commune, comme un pâturage, est condamnée à la surexploitation, sauf à la privatiser ou à la confier à l’État. Que montre Elinor Ostrom, prix Nobel 2009 ?"),
+    options: ["Que Hardin avait raison dans tous les cas.", "Que de nombreuses communautés d’usagers gèrent durablement leurs ressources communes en se donnant leurs propres règles, comme les alpages de Törbel en Valais.", "Que seule la privatisation fonctionne.", "Que les ressources communes ne s’épuisent jamais."], c: 1,
+    explication: P("À partir de centaines d’études de cas, Ostrom montre qu’il existe une <b>troisième voie</b> : des communautés qui fixent elles-mêmes les règles d’accès, se surveillent et sanctionnent les tricheurs. À Törbel, une règle ancienne interdit d’envoyer sur l’alpage plus de vaches qu’on ne peut en nourrir l’hiver.", "Ces institutions réussissent à certaines conditions : limites claires, règles adaptées, participation des usagers, surveillance, sanctions graduées et reconnaissance par les autorités.") },
+
+  /* =========================== NIVEAU 3 : AVANCÉ =========================== */
+  { id: "et3-frein-calc", theme: "etat", niveau: 3, type: "calcul", notion: "equivalence-ricardienne",
+    titre: "Calculer le plafond de dépenses du frein à l’endettement", competence: "Appliquer la règle budgétaire de la Confédération (version simplifiée).",
+    gen: () => ({ rec: rnd(78, 92), k: pick([0.98, 0.99, 1.0, 1.01, 1.02, 1.03]) }),
+    enonce: (p) => P("Selon le frein à l’endettement (version simplifiée), les dépenses maximales autorisées sont égales aux recettes estimées, multipliées par un <b>facteur conjoncturel k</b> = PIB tendanciel ÷ PIB effectif. Quand l’économie tourne en dessous de son potentiel, k dépasse 1.", `Les recettes estimées sont de <b>${p.rec} milliards</b> et le facteur conjoncturel de <b>${fmt(p.k, 2)}</b>. Calculez le plafond de dépenses et le solde autorisé (signe moins pour un déficit). Arrondissez à deux décimales.`),
+    champs: [{ label: "Plafond de dépenses", unite: "milliards", tol: 0.01 }, { label: "Solde autorisé", unite: "milliards", tol: 0.01 }],
+    reponses: (p) => [Math.round(p.rec * p.k * 100) / 100, Math.round((p.rec - p.rec * p.k) * 100) / 100],
+    indice: "Plafond = recettes × k. Solde = recettes − plafond.",
+    correction: (p) => { const pl = p.rec * p.k; return P(`Plafond = ${p.rec} × ${fmt(p.k, 2)} = <b>${fmt(pl, 2)} milliards</b>.`, `Solde autorisé = ${p.rec} − ${fmt(pl, 2)} = <b>${fmt(p.rec - pl, 2)} milliards</b>.`, p.k > 1 ? "L’économie est en dessous de son potentiel : un léger déficit est autorisé, pour ne pas aggraver le ralentissement." : p.k < 1 ? "L’économie tourne au-dessus de son potentiel : un excédent est exigé, qui compensera les déficits des mauvaises années." : "L’économie est à son potentiel : le budget doit être équilibré.", "Le mécanisme laisse ainsi jouer les stabilisateurs automatiques, tout en empêchant une hausse durable de la dette."); } },
+
+  { id: "et3-multi-ouvert", theme: "etat", niveau: 3, type: "calcul", notion: "multiplicateur",
+    titre: "Le multiplicateur dans une économie ouverte", competence: "Calculer un multiplicateur avec impôts et importations.",
+    gen: () => ({ c: pick([0.7, 0.8, 0.9]), t: pick([0.2, 0.3, 0.4]), m: pick([0.2, 0.3, 0.4, 0.5]), g: pick([5, 10]) }),
+    enonce: (p) => P(`Dans une petite économie ouverte, la propension marginale à consommer est c = <b>${fmt(p.c, 2)}</b>, le taux d’imposition t = <b>${fmt(p.t, 2)}</b> et la propension marginale à importer m = <b>${fmt(p.m, 2)}</b>.`, `Le multiplicateur vaut alors <b>k = 1 ÷ [1 − c(1 − t) + m]</b>. Calculez-le, puis l’effet sur le revenu d’une dépense publique supplémentaire de <b>${p.g} milliards</b>. Arrondissez à deux décimales.`),
+    champs: [{ label: "Multiplicateur", unite: "", tol: 0.01 }, { label: "Hausse du revenu", unite: "milliards", tol: 0.05 }],
+    reponses: (p) => { const k = 1 / (1 - p.c * (1 - p.t) + p.m); return [Math.round(k * 100) / 100, Math.round(k * p.g * 100) / 100]; },
+    indice: "Calculez d’abord c(1 − t), puis le dénominateur.",
+    correction: (p) => { const k = 1 / (1 - p.c * (1 - p.t) + p.m); return P(`c(1 − t) = ${fmt(p.c, 2)} × ${fmt(1 - p.t, 2)} = ${fmt(p.c * (1 - p.t), 3)}.`, `k = 1 ÷ (1 − ${fmt(p.c * (1 - p.t), 3)} + ${fmt(p.m, 2)}) = 1 ÷ ${fmt(1 - p.c * (1 - p.t) + p.m, 3)} ≈ <b>${fmt(k, 2)}</b>.`, `Hausse du revenu ≈ ${fmt(k, 2)} × ${p.g} = <b>${fmt(k * p.g, 2)} milliards</b>.`, `Le multiplicateur est bien plus faible qu’en économie fermée sans impôt (${fmt(1 / (1 - p.c), 1)}) : une partie de chaque franc dépensé part en impôts ou en importations. Dans une petite économie très ouverte comme la Suisse, une relance profite en partie aux pays voisins.`); } },
+
+  { id: "et3-perte-ext", theme: "etat", niveau: 3, type: "calcul", notion: "externalite",
+    titre: "Le coût social d’une externalité", competence: "Calculer la perte de bien-être due à une externalité non corrigée.",
+    gen: genExt,
+    enonce: (p) => P(`Même marché que dans l’exercice sur la taxe pigouvienne : demande <b>P = ${p.a} − Q</b>, coût marginal privé <b>Cm = ${p.c} + Q</b>, dommage externe <b>${p.e} francs</b> par unité.`, "Calculez la perte sèche pour la société quand l’externalité n’est pas corrigée (le triangle entre le coût social et la demande, des unités produites en trop), puis la recette d’une taxe pigouvienne à l’optimum."),
+    champs: [{ label: "Perte sèche", unite: "fr.", tol: 0.05 }, { label: "Recette de la taxe", unite: "fr.", tol: 0.05 }],
+    reponses: (p) => [0.5 * p.e * (p.e / 2), p.e * (p.Qm - p.e / 2)],
+    indice: "Unités en trop = quantité de marché − quantité optimale. Perte = ½ × dommage par unité × unités en trop.",
+    correction: (p) => { const dQ = p.e / 2, Qo = p.Qm - dQ; return P(`Quantité de marché : ${p.Qm} ; quantité optimale : ${fmt(Qo)} ; unités en trop : ${fmt(dQ)}.`, `Perte sèche = ½ × ${p.e} × ${fmt(dQ)} = <b>${fmt(0.5 * p.e * dQ)} francs</b>.`, `Recette de la taxe à l’optimum = ${p.e} × ${fmt(Qo)} = <b>${fmt(p.e * Qo)} francs</b>.`, "La taxe ne supprime pas toute pollution : elle la ramène au niveau où le bénéfice de la dernière unité produite compense son coût total. Sa recette peut être redistribuée ou financer d’autres politiques."); } },
+
+  { id: "et3-ricardien", theme: "etat", niveau: 3, type: "qcm", notion: "equivalence-ricardienne",
+    titre: "L’équivalence ricardienne", competence: "Comprendre une objection à l’efficacité des relances.",
+    enonce: P("Le gouvernement baisse les impôts cette année, financés par un emprunt, pour relancer la consommation. Selon l’équivalence ricardienne formulée par Robert Barro en 1974, que font les ménages ?"),
+    options: ["Ils dépensent toute la baisse d’impôt, ce qui relance fortement l’économie.", "Ils anticipent les impôts futurs nécessaires pour rembourser la dette, et épargnent la baisse d’impôt : la consommation ne change pas.", "Ils réduisent leur consommation, car les taux d’intérêt baissent.", "Ils demandent des hausses de salaire."], c: 1,
+    explication: P("Selon Barro, des ménages rationnels et prévoyants savent qu’une baisse d’impôt financée par la dette devra être compensée par des impôts plus élevés plus tard. Ils épargnent donc la baisse pour payer ces impôts futurs : la relance est sans effet.", "L’hypothèse suppose des ménages parfaitement informés, qui peuvent emprunter librement et se soucient de leurs descendants. Les études empiriques montrent qu’elle ne se vérifie que partiellement : de nombreux ménages, surtout modestes, dépensent une bonne partie des baisses d’impôt. Ricardo lui-même doutait que cette équivalence s’observe en pratique.") },
+
+  { id: "et3-vf-alea", theme: "etat", niveau: 3, type: "vf", notion: "alea-moral",
+    titre: "Aléa moral et assurance", competence: "Reconnaître l’aléa moral et ses remèdes.",
+    affirmations: [
+      ["L’aléa moral désigne le fait qu’une personne assurée peut prendre plus de risques, car elle n’en supporte plus toutes les conséquences.", true, "Par exemple, un conducteur bien assuré peut être moins prudent ; une banque qu’on sait sauvée en cas de crise peut prendre trop de risques."],
+      ["La franchise de l’assurance maladie suisse sert notamment à limiter l’aléa moral.", true, "En faisant payer une partie des frais à l’assuré, elle l’incite à ne pas consommer de soins inutiles."],
+      ["L’aléa moral et la sélection adverse sont deux noms du même phénomène.", false, "La <b>sélection adverse</b> concerne l’information cachée <b>avant</b> le contrat (qui choisit de s’assurer) ; l’<b>aléa moral</b> concerne le comportement caché <b>après</b> le contrat."],
+      ["La règle « trop grandes pour faire faillite » réduit l’aléa moral des grandes banques.", false, "Elle l’augmente : si une banque sait qu’elle sera sauvée, elle est tentée de prendre plus de risques. D’où l’exigence de fonds propres plus élevés pour les grandes banques suisses depuis 2011."]
+    ] },
+
+  { id: "et3-samuelson", theme: "etat", niveau: 3, type: "calcul", notion: "bien-public",
+    titre: "Faut-il construire le bien public ?", competence: "Appliquer la règle de Samuelson à un bien public.",
+    gen: () => { const n = 3; const w = Array.from({ length: n }, () => rnd(4, 20) * 100); const cost = rnd(20, 45) * 100; return { w, cost }; },
+    enonce: (p) => P(`Trois ménages vivent au bout d’un chemin non éclairé. Ils seraient prêts à payer respectivement <b>${p.w.map((x) => fmt(x)).join(", ")} francs</b> pour l’installation d’un éclairage, qui profiterait aux trois. L’installation coûte <b>${fmt(p.cost)} francs</b>.`, "Calculez le gain net pour l’ensemble des ménages (somme des dispositions à payer − coût). Faut-il construire l’éclairage ?"),
+    champs: [{ label: "Gain net", unite: "fr.", tol: 0.5 }],
+    reponses: (p) => [p.w.reduce((a, b) => a + b, 0) - p.cost],
+    indice: "Pour un bien public, on additionne les dispositions à payer de tous ceux qui en profitent.",
+    correction: (p) => { const s = p.w.reduce((a, b) => a + b, 0); return P(`Somme des dispositions à payer : ${p.w.map((x) => fmt(x)).join(" + ")} = ${fmt(s)} francs.`, `Gain net = ${fmt(s)} − ${fmt(p.cost)} = <b>${fmt(s - p.cost)} francs</b>.`, s >= p.cost ? `Le gain net est positif : l’éclairage est souhaitable. Pourtant, aucun ménage n’est prêt à payer seul ${fmt(p.cost)} francs, et chacun peut espérer que les autres paient : sans organisation collective, il risque de ne pas être construit.` : "Le gain net est négatif : l’éclairage coûte plus qu’il ne rapporte aux ménages, il ne faut pas le construire.", "C’est la règle de Samuelson (1954) : un bien public doit être fourni si la <b>somme</b> des bénéfices dépasse son coût. Pour un bien privé, au contraire, chacun compare son propre bénéfice au prix."); } },
+
+  { id: "et3-poste", theme: "etat", niveau: 3, type: "redaction", notion: "choix-public",
+    titre: "Les services publics doivent-ils rester publics ?", competence: "Argumenter sur la frontière entre marché et État (15 à 25 lignes).",
+    enonce: P("La Poste, les CFF et Swisscom sont des entreprises détenues en tout ou en majorité par la Confédération. Le marché des télécommunications a été ouvert à la concurrence, tandis que La Poste garde un monopole sur les lettres légères et doit assurer un service universel dans tout le pays.", "<b>Consigne :</b> faut-il ouvrir davantage ces services à la concurrence, voire les privatiser ? Présentez les arguments des deux côtés, en utilisant au moins une notion d’économie, puis concluez."),
+    criteres: ["La réponse présente au moins deux arguments pour l’ouverture ou la privatisation : efficacité, innovation, baisse des prix grâce à la concurrence, limites de la gestion publique (choix publics)…", "Elle présente au moins deux arguments pour le maintien public : service universel dans les régions périphériques, monopole naturel des réseaux, externalités positives, sécurité d’approvisionnement…", "Elle mobilise au moins une notion : monopole naturel, concurrence, bien public, externalité, service universel, défaillance du marché ou de l’État…", "Elle s’appuie sur au moins un exemple : télécommunications, chemins de fer, poste, électricité, expériences étrangères…", "Elle conclut de façon argumentée, éventuellement en distinguant les secteurs."],
+    corrige: P("<b>Pour l’ouverture :</b> la concurrence pousse les entreprises à innover et à baisser leurs prix, comme l’a montré l’ouverture des télécommunications en Suisse à la fin des années 1990. La théorie des <b>choix publics</b> rappelle que les entreprises publiques peuvent être influencées par des intérêts politiques et manquer d’incitations à l’efficacité.", "<b>Pour le maintien public :</b> certains réseaux, comme le rail, sont des <b>monopoles naturels</b> : il serait absurde de construire deux voies concurrentes. Le marché ne desservirait pas spontanément les vallées et villages peu rentables, alors que la cohésion du pays l’exige : c’est le <b>service universel</b>. Les transports publics ont aussi des externalités positives, comme la réduction des embouteillages et de la pollution.", "<b>Conclusion :</b> la réponse dépend du secteur : on peut ouvrir à la concurrence les services où plusieurs opérateurs peuvent coexister, tout en gardant sous contrôle public les réseaux en monopole naturel et en finançant explicitement le service universel.") },
+
+  { id: "et3-comparaison", theme: "etat", niveau: 3, type: "document", notion: "asymetrie-information",
+    titre: "Comparer le poids de l’État entre pays", competence: "Interpréter une comparaison internationale avec esprit critique.",
+    enonce: P("Dépenses des administrations publiques, en % du PIB (ordres de grandeur, années 2020) :") +
+      `<table><thead><tr><th>France</th><th>Suède</th><th>Allemagne</th><th>États-Unis</th><th>Suisse</th></tr></thead><tbody><tr><td>environ 57 %</td><td>environ 50 %</td><td>environ 48 %</td><td>environ 38 %</td><td>environ 33 %</td></tr></tbody></table>` +
+      P("Quelle conclusion est la plus prudente ?"),
+    options: ["Les Suisses paient beaucoup moins pour leur santé et leurs retraites que les Français.", "Les services publics sont forcément de meilleure qualité en France.", "La Suisse a un État moins dépensier, mais la comparaison est biaisée : l’assurance maladie de base et la prévoyance professionnelle, obligatoires, y sont gérées par des caisses privées et ne sont pas comptées comme dépenses publiques.", "Les États-Unis ont l’État le plus généreux de ces pays."], c: 2,
+    explication: P("Ces chiffres ne comparent pas tout à fait la même chose. En Suisse, les primes d’assurance maladie obligatoire et les cotisations au deuxième pilier sont versées à des caisses privées : ce sont des dépenses <b>obligatoires</b>, mais elles n’apparaissent pas comme dépenses publiques. Dans d’autres pays, les mêmes services passent par l’État.", "En les ajoutant, l’écart entre la Suisse et ses voisins se réduit nettement. Les comparaisons internationales doivent toujours être lues en se demandant ce qu’elles mesurent exactement.") }
+  ]);
+})();
