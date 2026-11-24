@@ -92,13 +92,55 @@
       <div class="pg-cats">${Object.entries(OEC.conceptCats || {}).map(([k, nom]) => { const cs = concepts.filter((c) => c.cat === k), l = cs.filter((c) => lu.has("c-" + c.id)); const non = cs.filter((c) => !lu.has("c-" + c.id)).slice(0, 3);
         return `<div class="pg-cat"><b>${nom}</b><span>${l.length} / ${cs.length} lues</span>${bar(l.length, cs.length)}${non.length ? `<p>À lire : ${non.map((c) => `<a href="#c-${c.id}">${c.nom}</a>`).join(" · ")}</p>` : `<p>Toutes lues ✓</p>`}</div>`; }).join("")}</div>
       <p class="pg-note">Votre progression est enregistrée dans ce navigateur, sur cet appareil : elle n’est ni envoyée ni visible par d’autres. Une notice, un dossier ou un portrait compte comme « lu » quand vous l’avez parcouru jusqu’au bout ou réussi son quiz ; un exercice, quand vous l’avez réussi.</p>
+      <div class="pg-transfert">
+        <h3>Continuer sur un autre appareil</h3>
+        <p>Obtenez un code qui contient votre progression, puis collez-le dans « Ma progression » sur l’autre appareil ou l’autre navigateur. Le code n’est envoyé nulle part : c’est vous qui le copiez.</p>
+        <p><button type="button" class="btn small" data-pg="export">Obtenir mon code</button></p>
+        <div id="pgCodeBox" hidden><textarea id="pgCode" readonly rows="3" aria-label="Code de progression à copier"></textarea><p><button type="button" class="btn small ghost" data-pg="copier">Copier le code</button></p></div>
+        <details class="pg-import"><summary>J’ai déjà un code</summary>
+          <textarea id="pgImport" rows="3" aria-label="Coller un code de progression" placeholder="Collez votre code ici"></textarea>
+          <p><button type="button" class="btn small" data-pg="import">Reprendre cette progression</button></p>
+          <p class="pg-msg" id="pgMsg" role="status"></p>
+        </details>
+      </div>
       <p><button type="button" class="btn small ghost pg-reset">Effacer ma progression</button></p>`;
   }
+  /* Ce qui forme la progression (les préférences d’affichage, thème et taille du texte, ne sont pas touchées) */
+  const PROGRESSION = ["oec-lu", "oec-ex", "oec-ex-pos", "oec-derniere", "oec-boussole", "oec-defis", "oec-parcours", "oec-actu-vue", "oec-chat-vu"];
+  const TRANSFERT = [...PROGRESSION, "oec-profil", "oec-niveau"];
+  const encoder = (o) => "OEC1-" + btoa(unescape(encodeURIComponent(JSON.stringify(o))));
+  const decoder = (s) => { s = String(s || "").replace(/\s+/g, ""); if (!s.startsWith("OEC1-")) throw new Error("format"); return JSON.parse(decodeURIComponent(escape(atob(s.slice(5))))); };
+  const msg = (t) => { const m = document.getElementById("pgMsg"); if (m) m.textContent = t; };
   document.addEventListener("click", (e) => {
+    const x = e.target.closest("[data-pg]");
+    if (x && x.dataset.pg === "export") {
+      const k = {}; try { TRANSFERT.forEach((c) => { const v = localStorage.getItem(c); if (v != null) k[c] = v; }); } catch (err) {}
+      const box = document.getElementById("pgCodeBox"), ta = document.getElementById("pgCode");
+      ta.value = encoder({ v: 1, date: new Date().toISOString().slice(0, 10), k }); box.hidden = false; ta.focus(); ta.select();
+      return;
+    }
+    if (x && x.dataset.pg === "copier") {
+      const ta = document.getElementById("pgCode"), o = x.textContent;
+      const fait = () => { x.textContent = "Code copié ✓"; setTimeout(() => (x.textContent = o), 1800); };
+      try { navigator.clipboard.writeText(ta.value).then(fait, () => { ta.focus(); ta.select(); }); } catch (err) { ta.focus(); ta.select(); }
+      return;
+    }
+    if (x && x.dataset.pg === "import") {
+      let o; try { o = decoder(document.getElementById("pgImport").value); } catch (err) { msg("Ce code n’est pas reconnu. Copiez-le en entier, il commence par OEC1-."); return; }
+      if (!o || o.v !== 1 || typeof o.k !== "object") { msg("Ce code n’est pas reconnu."); return; }
+      if (!x.dataset.sure) { x.dataset.sure = "1"; x.textContent = "Confirmer : remplacer la progression de cet appareil"; msg(`Code du ${o.date || "?"} reconnu. La progression actuelle de cet appareil sera remplacée.`); return; }
+      try {
+        PROGRESSION.forEach((c) => localStorage.removeItem(c));
+        TRANSFERT.forEach((c) => { if (typeof o.k[c] === "string") localStorage.setItem(c, o.k[c]); });
+      } catch (err) { msg("Impossible d’enregistrer dans ce navigateur (stockage bloqué ?)."); return; }
+      msg("Progression reprise. La page se recharge…"); setTimeout(() => location.reload(), 1200);
+      return;
+    }
     const b = e.target.closest(".pg-reset"); if (!b) return;
     if (!b.dataset.sure) { b.dataset.sure = "1"; b.textContent = "Confirmer : tout effacer sur cet appareil"; setTimeout(() => { if (b.isConnected) { delete b.dataset.sure; b.textContent = "Effacer ma progression"; } }, 5000); return; }
-    try { ["oec-lu", "oec-ex", "oec-ex-pos", "oec-derniere", "oec-boussole", "oec-defis"].forEach((k) => localStorage.removeItem(k)); } catch (err) {}
-    render();
+    try { PROGRESSION.forEach((k) => localStorage.removeItem(k)); } catch (err) {}
+    try { Object.keys(sessionStorage).filter((k) => k.startsWith("oec-ex-draft-")).forEach((k) => sessionStorage.removeItem(k)); } catch (err) {}
+    setTimeout(() => location.reload(), 50);
   });
   window.addEventListener("hashchange", () => { if (location.hash === "#progression") render(); });
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", render); else render();
