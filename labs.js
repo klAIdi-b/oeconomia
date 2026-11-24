@@ -530,7 +530,9 @@
     { t: "Tragédie des communs", s: "Le lac partagé", f: labCommons },
     { t: "Planche à billets", s: "Monnaie et inflation", f: labMoney }
   ];
+  let courant = 0;
   function show(i) {
+    courant = i;
     if (cleanup) { try { cleanup(); } catch (e) {} cleanup = null; }
     document.querySelectorAll("#labTabs .tab").forEach((b, k) => { b.classList.toggle("on", k === i); b.setAttribute("aria-selected", k === i); });
     const tabs = document.getElementById("labTabs"), on = tabs && tabs.children[i];
@@ -544,6 +546,7 @@
   }
   window.OECLABS = {
     show,
+    again: () => show(courant),
     init() {
       const tabs = document.getElementById("labTabs");
       LABS.forEach((l, i) => {

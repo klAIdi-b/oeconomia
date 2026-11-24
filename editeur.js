@@ -131,15 +131,25 @@
     if (!window.claude || !claude.use) return;         /* hors de claude.ai (aperçu local) : rien à faire */
     db = await claude.use("db");
     if (!db) return;                                   /* visiteur non connecté : textes d’origine */
-    new MutationObserver(() => queue()).observe(document.body, { childList: true, subtree: true });
-    window.addEventListener("hashchange", () => queue());
+    /* La surveillance de la page ne sert qu’à la propriétaire, ou s’il existe des modifications à appliquer.
+       Les zones qui changent sans cesse (simulateurs, ŒconoChat, exercices, débats) sont ignorées. */
+    const DYN = "#labo, #tutorat, #exRoot, #chat, #quiz, .ticker";
+    let surveille = false;
+    const surveiller = () => {
+      if (surveille || !(canWrite || edits.size)) return;
+      surveille = true;
+      new MutationObserver((muts) => {
+        if (muts.some((m) => { const t = m.target.nodeType === 1 ? m.target : m.target.parentElement; return t && !t.closest(DYN); })) queue();
+      }).observe(document.body, { childList: true, subtree: true });
+      window.addEventListener("hashchange", () => queue());
+    };
     db.collection("edits").onSnapshot((snap) => {
       edits.clear();
       snap.docs.forEach((d) => { const v = d.data(); if (v && typeof v.html === "string") edits.set(d.id, clean(v.html)); });
-      updateCount(); queue(true);
+      updateCount(); surveiller(); if (surveille) queue(true);
     }, () => {});
     const user = await claude.use("user");
     canWrite = user ? await user.canEdit() : false;
-    if (canWrite) buildUI();
+    if (canWrite) { buildUI(); surveiller(); }
   })();
 })();

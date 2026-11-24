@@ -8,10 +8,11 @@
   const PORTRAITS = {"smith":"portraits-p1a.js","ricardo":"portraits-p1a.js","marx":"portraits-p1b.js","hayek":"portraits-p1b.js","friedman":"portraits-p2a.js","schumpeter":"portraits-p2a.js","walras":"portraits-p2b.js","marshall":"portraits-p2b.js","malthus":"portraits-p3a.js","say":"portraits-p3a.js","mill":"portraits-p3b.js","pareto":"portraits-p3b.js","aristote":"portraits-p4a.js","khaldoun":"portraits-p4a.js","mun":"portraits-p4b.js","quesnay":"portraits-p4b.js","mises":"portraits-p5a.js","veblen":"portraits-p5a.js","robinson":"portraits-p5b.js","galbraith":"portraits-p5b.js","samuelson":"portraits-p6a.js","minsky":"portraits-p6a.js","lucas":"portraits-p6b.js","kahneman":"portraits-p6b.js","ostrom":"portraits-p7a.js","sen":"portraits-p7a.js","krugman":"portraits-p7b.js","summers":"portraits-p8a.js","acemoglu":"portraits-p8a.js","piketty":"portraits-p8b.js","duflo":"portraits-p8b.js","stiglitz":"portraits-p9a.js","mazzucato":"portraits-p9a.js","polanyi":"portraits-p10a.js","kalecki":"portraits-p10a.js","aglietta":"portraits-p10a.js","waring":"portraits-p10b.js","kelton":"portraits-p10b.js"};
   const EXERCICES = [{"id":"marche","nom":"Marché et prix","file":"exercices-marche.js","n":24},{"id":"monnaie","nom":"Monnaie et inflation","file":"exercices-monnaie.js","n":24},{"id":"croissance","nom":"Croissance et PIB","file":"exercices-croissance.js","n":24},{"id":"emploi","nom":"Emploi et chômage","file":"exercices-emploi.js","n":24},{"id":"commerce","nom":"Commerce international","file":"exercices-commerce.js","n":24},{"id":"inegalites","nom":"Inégalités et répartition","file":"exercices-inegalites.js","n":24},{"id":"etat","nom":"État et biens publics","file":"exercices-etat.js","n":24},{"id":"finance","nom":"Finance","file":"exercices-finance.js","n":24},{"id":"visions","nom":"Autres visions de l’économie","file":"exercices-visions.js","n":18}];
   const done = {};          /* fichier → promesse */
+  const charges = new Set();  /* fichiers déjà chargés */
   function script(src) {
     if (!done[src]) done[src] = new Promise((ok, ko) => {
       const s = document.createElement("script"); s.src = src; s.async = false;
-      s.onload = () => ok(); s.onerror = () => { delete done[src]; ko(new Error("Chargement impossible : " + src)); };
+      s.onload = () => { charges.add(src); ok(); }; s.onerror = () => { delete done[src]; ko(new Error("Chargement impossible : " + src)); };
       document.head.appendChild(s);
     });
     return done[src];
@@ -75,7 +76,15 @@
     theme(id) { const t = EXERCICES.find((x) => x.id === id); if (!t) return Promise.resolve(); return busy(script(t.file)); },
     ready(r) {             /* ce qu’il faut charger avant d’afficher une page */
       if (r.v === "concept" && NOTICES[r.id] && !(OEC.notices && OEC.notices[r.id])) return this.notice(r.id);
-      if (r.v === "eco" && PORTRAITS[r.id] && !(OEC.portraits && OEC.portraits[r.id])) return this.portrait(r.id);
+      if (r.v === "eco") {
+        const p = [];
+        if (PORTRAITS[r.id] && !(OEC.portraits && OEC.portraits[r.id])) p.push(this.portrait(r.id));
+        if (!OEC.deep) p.push(busy(script("approfondissements.js")));          /* contexte et héritage de chaque auteur */
+        return p.length ? Promise.all(p) : null;
+      }
+      if (r.v === "labo" && !OEC.labGuide)                                      /* mode d’emploi des simulateurs */
+        return busy(script("simulateurs-guide.js")).then(() => { if (window.OECLABS && OECLABS.again) OECLABS.again(); });
+      if (r.v === "enseigner" && !charges.has("enseigner.js")) return busy(script("enseigner.js"));
       return null;
     }
   };
