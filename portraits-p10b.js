@@ -111,6 +111,14 @@ ${compte}
       ["Recherche", "Margunn Bjørnholt et Ailsa McKay (dir.), Counting on Marilyn Waring, 2014 ; Nancy Folbre, The Invisible Heart, 2001."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Comment Marilyn Waring découvre-t-elle les limites des comptes nationaux ?",
+          o: ["En présidant la commission des dépenses publiques du Parlement néo-zélandais", "En travaillant à la banque centrale", "En étudiant à l’université de Harvard", "En dirigeant une entreprise"], c: 0,
+          e: "Elle constate que les comptes ignorent une grande partie du travail qu’elle voit autour d’elle." },
+        { q: "Selon Waring, pourquoi le travail domestique et les soins disparaissent-ils souvent des politiques ?",
+          o: ["Parce qu’ils ne sont pas payés, donc pas comptés dans le PIB", "Parce qu’ils sont interdits", "Parce qu’ils sont assurés par l’État", "Parce qu’ils sont déjà très bien rémunérés"], c: 0,
+          e: "Ce que l’on ne compte pas, on ne le voit pas, et on ne le finance pas." }
+      ],
       duree: 5,
       html: `
 <h3>Une députée qui lisait les comptes</h3>
@@ -251,6 +259,14 @@ ${circuit}
       ["Recherche", "Abba Lerner, « Functional Finance and the Federal Debt », Social Research, 1943 ; Stephanie Bell, « Can Taxes and Bonds Finance Government Spending? », 1998."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Kelton, en quoi un État qui émet sa propre monnaie diffère-t-il d’un ménage ?",
+          o: ["Il crée la monnaie en dépensant et ne peut pas faire faillite dans sa propre monnaie", "Il doit toujours gagner de l’argent avant de le dépenser", "Il ne peut jamais s’endetter", "Il dépend des banques pour obtenir de la monnaie"], c: 0,
+          e: "C’est le point de départ de la théorie moderne de la monnaie." },
+        { q: "Que reprochent ses critiques à la théorie défendue par Kelton ?",
+          o: ["D’encourager les gouvernements à trop dépenser", "D’interdire toute dépense publique", "D’ignorer complètement la monnaie", "De vouloir supprimer les impôts"], c: 0,
+          e: "Elle répond qu’il faut surveiller l’inflation, pas la dette." }
+      ],
       duree: 5,
       html: `
 <h3>Une économiste au cœur du débat américain</h3>

@@ -148,6 +148,14 @@ ${transition}` },
       ["Recherche", "Thomas Malthus, Principes d’économie politique (1820), livre II ; J. M. Keynes, « Robert Malthus », dans Essais biographiques, 1933."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Malthus, comment l’écart entre population et nourriture est-il comblé ?",
+          o: ["Par la misère, les famines et les épidémies, à moins de se marier plus tard et d’avoir moins d’enfants", "Par le commerce international", "Par la hausse des salaires", "Par l’aide aux pauvres"], c: 0,
+          e: "Il en conclut, de façon controversée, que l’aide aux pauvres augmente leur nombre." },
+        { q: "Qu’est-ce que Malthus n’a pas prévu ?",
+          o: ["Une agriculture bien plus productive et des familles faisant volontairement moins d’enfants", "La croissance de la population", "L’existence des famines", "L’intérêt de Darwin pour ses idées"], c: 0,
+          e: "Ses prédictions ont été démenties, mais ses questions sur les ressources demeurent." }
+      ],
       duree: 6,
       html: `
 <h3>Le pasteur pessimiste</h3>
@@ -300,6 +308,14 @@ ${facteurs}
       ["Recherche", "Thomas Sowell, Say’s Law: An Historical Analysis, 1972 ; Steven Kates (dir.), Two Hundred Years of Say’s Law, 2003."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que fait Say quand Napoléon lui demande de réécrire son Traité ?",
+          o: ["Il refuse, et devient industriel du coton", "Il accepte et devient ministre", "Il s’exile en Angleterre", "Il brûle son livre"], c: 0,
+          e: "Il terminera sa vie professeur au Collège de France." },
+        { q: "Selon Say, les services, comme ceux des médecins, sont-ils productifs ?",
+          o: ["Oui, autant que les objets", "Non, seule l’agriculture est productive", "Non, seuls les objets créent de la valeur", "Seulement s’ils sont payés par l’État"], c: 0,
+          e: "Say s’écarte ici des physiocrates et d’une partie des classiques." }
+      ],
       duree: 6,
       html: `
 <h3>Journaliste, industriel, professeur</h3>

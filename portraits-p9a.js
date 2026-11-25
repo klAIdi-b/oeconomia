@@ -142,6 +142,14 @@ ${credit}
       ["Recherche", "Joseph Stiglitz et Andrew Weiss, « Credit Rationing in Markets with Imperfect Information », American Economic Review, 1981 ; conférence Nobel « Information and the Change in the Paradigm in Economics », 2001."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Stiglitz, que se passe-t-il quand l’un des partenaires d’un échange est mal informé ?",
+          o: ["Il se protège, et le marché ne fonctionne plus comme prévu", "Le marché devient plus efficace", "Les prix baissent toujours", "L’échange devient impossible par la loi"], c: 0,
+          e: "C’est l’asymétrie d’information." },
+        { q: "Pour Stiglitz, que suppose la « main invisible » d’Adam Smith ?",
+          o: ["Une information parfaite, qui n’existe pas : les marchés ont donc besoin de règles", "Un État très puissant", "L’absence de monnaie", "Des entreprises toutes publiques"], c: 0,
+          e: "Il est devenu l’un des critiques les plus écoutés de la mondialisation." }
+      ],
       duree: 6,
       html: `
 <h3>Un théoricien devenu contestataire</h3>
@@ -307,6 +315,14 @@ ${risques}
       ["Recherche", "Mariana Mazzucato, « Mission-Oriented Research and Innovation in the European Union », Commission européenne, 2018 ; Richard Nelson, The Moon and the Ghetto, 1977."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Mazzucato, qui a pris le risque de départ des technologies de l’iPhone ?",
+          o: ["Le contribuable, par des recherches payées par l’État américain", "L’entreprise qui l’a commercialisé", "Les banques privées", "Les consommateurs"], c: 0,
+          e: "L’entreprise a eu le talent de les assembler." },
+        { q: "Quel exemple historique Mazzucato donne-t-elle d’une « mission » publique ?",
+          o: ["Aller sur la Lune", "Construire le canal de Suez", "Inventer l’imprimerie", "Créer l’euro"], c: 0,
+          e: "Elle propose de fixer à l’action publique de grands objectifs de ce type." }
+      ],
       duree: 6,
       html: `
 <h3>Une économiste écoutée des gouvernements</h3>

@@ -115,6 +115,14 @@ ${double}
       ["Recherche", "Gareth Dale, Karl Polanyi: A Life on the Left, 2016 ; Mark Granovetter, « Economic Action and Social Structure: The Problem of Embeddedness », American Journal of Sociology, 1985."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi Polanyi écrit-il La Grande Transformation en 1944 ?",
+          o: ["Pour comprendre l’effondrement de l’Empire austro-hongrois, de l’étalon-or et de la démocratie qu’il a vécu", "Pour défendre l’étalon-or", "Pour proposer un plan de reconstruction de l’Europe", "Pour répondre à Keynes"], c: 0,
+          e: "Exilé, il cherche à expliquer ce qui s’est passé en trente ans." },
+        { q: "Selon Polanyi, d’où vient le système où tout, même le travail et la terre, s’achète et se vend ?",
+          o: ["Il a été créé par des lois au XIXe siècle", "Il a toujours existé", "Il est né naturellement des échanges", "Il a été inventé par les marchands du Moyen Âge"], c: 0,
+          e: "Pour Polanyi, le marché généralisé n’a rien de naturel." }
+      ],
       duree: 5,
       html: `
 <h3>Un exilé de l’Europe centrale</h3>
@@ -251,6 +259,14 @@ ${cycle}
       ["Recherche", "Jan Toporowski, Michał Kalecki: An Intellectual Biography, deux volumes, 2013 et 2018."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Qu’y a-t-il de remarquable dans le parcours de Kalecki ?",
+          o: ["Il n’a jamais suivi de cours d’économie et découvre en polonais, dès 1933, des idées proches de celles de Keynes", "Il a été l’élève de Keynes à Cambridge", "Il a dirigé la banque centrale polonaise", "Il a reçu le prix Nobel"], c: 0,
+          e: "C’est un autodidacte de génie." },
+        { q: "Selon Kalecki, quel cycle la politique économique risque-t-elle de suivre ?",
+          o: ["Relance quand le chômage monte, austérité quand il disparaît", "Croissance continue sans crise", "Austérité permanente", "Inflation puis déflation chaque année"], c: 0,
+          e: "Le plein emploi donne du pouvoir aux salariés, ce qui inquiète les chefs d’entreprise." }
+      ],
       duree: 5,
       html: `
 <h3>Un autodidacte de génie</h3>
@@ -389,6 +405,14 @@ ${fordisme}
       ["Recherche", "Michel Aglietta et André Orléan, La Violence de la monnaie, 1982 ; La Monnaie entre violence et confiance, 2002."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quel livre d’Aglietta fonde l’école de la régulation en 1976 ?",
+          o: ["Régulation et crises du capitalisme", "La Grande Transformation", "Le Capital au XXIe siècle", "La Théorie générale"], c: 0,
+          e: "C’est l’une des rares écoles économiques nées en France après la guerre." },
+        { q: "Pour Aglietta, qu’est-ce qui permet au capitalisme de tenir pendant des décennies ?",
+          o: ["Des institutions : la manière de fixer les salaires, la monnaie, l’État", "Les seules forces du marché", "La découverte de nouvelles ressources naturelles", "Le hasard"], c: 0,
+          e: "Quand ces institutions s’usent, une grande crise éclate." }
+      ],
       duree: 5,
       html: `
 <h3>Un statisticien devenu théoricien</h3>

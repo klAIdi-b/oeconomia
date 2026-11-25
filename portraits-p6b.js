@@ -147,6 +147,14 @@ ${paradoxe}` },
       ["Recherche", "Robert Lucas, « Expectations and the Neutrality of Money », Journal of Economic Theory, 1972 ; « Econometric Policy Evaluation: A Critique », 1976."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Lucas, pourquoi une création de monnaie prévisible ne relance-t-elle pas l’économie ?",
+          o: ["Parce que tout le monde s’y attend, et que seuls les prix montent", "Parce que la monnaie est détruite aussitôt", "Parce que les banques refusent de prêter", "Parce que les salaires sont fixés par la loi"], c: 0,
+          e: "Seules les surprises ont un effet, et on ne peut pas surprendre les gens tout le temps." },
+        { q: "À quoi Lucas s’intéresse-t-il plus tard, qu’il juge bien plus important pour le bien-être que les cycles ?",
+          o: ["La croissance et l’éducation", "Les taux de change", "La Bourse", "Les impôts sur les successions"], c: 0,
+          e: "Il a refondé la macroéconomie sur les anticipations et les choix individuels." }
+      ],
       duree: 6,
       html: `
 <h3>L’homme qui a changé la macroéconomie</h3>
@@ -310,6 +318,14 @@ ${systemes}
       ["Recherche", "Daniel Kahneman et Amos Tversky, « Prospect Theory: An Analysis of Decision under Risk », Econometrica, 1979 ; Amos Tversky et Daniel Kahneman, « Judgment under Uncertainty: Heuristics and Biases », Science, 1974."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Lequel de ces raccourcis mentaux Kahneman a-t-il décrits ?",
+          o: ["Juger un risque plus probable si un exemple nous vient facilement à l’esprit", "Toujours choisir l’option la moins chère", "Calculer parfaitement les probabilités", "Ignorer les chiffres entendus juste avant"], c: 0,
+          e: "Nous nous trompons souvent, et toujours de la même façon." },
+        { q: "Que sont les « nudges » inspirés par ses travaux ?",
+          o: ["De petites incitations, comme les options par défaut, utilisées notamment par les gouvernements", "Des impôts sur les comportements risqués", "Des interdictions légales", "Des subventions massives"], c: 0,
+          e: "Ils s’appuient sur nos biais au lieu de les ignorer." }
+      ],
       duree: 6,
       html: `
 <h3>Un psychologue chez les économistes</h3>

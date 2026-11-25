@@ -152,6 +152,14 @@ ${phillipsLT}
       ["Recherche", "Milton Friedman, « The Role of Monetary Policy », American Economic Review, 1968 ; Milton Friedman et Anna Schwartz, A Monetary History of the United States, 1867-1960, 1963, chapitre 7."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Friedman, d’où vient toujours l’inflation ?",
+          o: ["D’une création de monnaie trop rapide", "De la hausse des salaires", "Des chocs pétroliers", "Des impôts trop élevés"], c: 0,
+          e: "Pour lui, la monnaie est la clé de l’économie." },
+        { q: "Lequel de ces combats Friedman a-t-il mené ?",
+          o: ["La fin du service militaire obligatoire aux États-Unis", "La nationalisation des banques", "Le retour à l’étalon-or", "Le contrôle des prix"], c: 0,
+          e: "Il défendait aussi les changes flexibles et des chèques pour choisir son école." }
+      ],
       duree: 6,
       html: `
 <h3>L’homme qui a défié Keynes</h3>
@@ -309,6 +317,14 @@ ${innovations}
       ["Recherche", "Joseph Schumpeter, Théorie de l’évolution économique, 1911, chapitre 2 ; Philippe Aghion et Peter Howitt, « A Model of Growth through Creative Destruction », Econometrica, 1992."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pour Schumpeter, qu’est-ce qui compte avant tout dans l’économie ?",
+          o: ["L’innovation", "La demande des ménages", "La quantité de monnaie", "Les droits de douane"], c: 0,
+          e: "Né la même année que Keynes, il propose une vision très différente de la sienne." },
+        { q: "Dans la destruction créatrice, que se passe-t-il après les profits de l’entrepreneur innovant ?",
+          o: ["D’autres l’imitent, et les anciennes entreprises disparaissent", "Il garde son avantage pour toujours", "L’État nationalise son entreprise", "Les prix montent sans fin"], c: 0,
+          e: "C’est, selon lui, « le fait essentiel du capitalisme »." }
+      ],
       duree: 6,
       html: `
 <h3>Un aristocrate de l’économie</h3>

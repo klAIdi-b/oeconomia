@@ -140,6 +140,14 @@ ${etat}` },
       ["Recherche", "Adam Smith, Richesse des nations (1776), livres I, IV et V, dans l’édition de Glasgow ; Donald Winch, Riches and Poverty, 1996."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Qu’est-ce qui fait augmenter la richesse d’un pays, selon Smith ?",
+          o: ["La division du travail et l’échange", "L’accumulation d’or", "La conquête de colonies", "La hausse des impôts"], c: 0,
+          e: "L’exemple de la manufacture d’épingles en est l’illustration." },
+        { q: "De quoi Smith se méfie-t-il surtout ?",
+          o: ["Des marchands qui s’entendent pour faire monter les prix et des privilèges accordés par les gouvernements", "De l’éducation publique", "Des routes construites par l’État", "De la concurrence entre petits artisans"], c: 0,
+          e: "Smith est bien plus nuancé que son image de champion du laissez-faire." }
+      ],
       duree: 6,
       html: `
 <h3>Un philosophe écossais</h3>
@@ -289,6 +297,14 @@ ${systeme}
       ["Recherche", "Piero Sraffa (dir.), The Works and Correspondence of David Ricardo, 11 volumes, 1951-1973, notamment l’introduction de Sraffa au volume 1."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Ricardo, que se passe-t-il quand la population augmente et qu’il faut cultiver des terres moins fertiles ?",
+          o: ["Le blé devient plus cher, la rente des propriétaires augmente, et les profits des industriels baissent", "Le blé devient moins cher", "Les salaires augmentent fortement", "Les profits augmentent"], c: 0,
+          e: "C’est pourquoi il combat les lois qui interdisaient d’importer du blé bon marché." },
+        { q: "Que dit l’idée d’avantage comparatif de Ricardo ?",
+          o: ["Deux pays gagnent à commercer même si l’un est meilleur dans tout, chacun se spécialisant là où il est relativement le plus fort", "Seul le pays le plus productif gagne au commerce", "Chaque pays doit tout produire lui-même", "Le commerce appauvrit les pays riches"], c: 0,
+          e: "Cette idée reste au cœur des débats sur le commerce mondial." }
+      ],
       duree: 6,
       html: `
 <h3>L’agent de change qui lisait Adam Smith</h3>

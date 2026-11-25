@@ -148,6 +148,14 @@ ${stagnation}
       ["Recherche", "Olivier Blanchard et Lawrence Summers, « Hysteresis and the European Unemployment Problem », NBER Macroeconomics Annual, 1986."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Summers, pourquoi les pays riches épargnent-ils trop et investissent-ils trop peu ?",
+          o: ["À cause du vieillissement, des inégalités et du faible coût des équipements", "À cause d’impôts trop élevés", "À cause de taux d’intérêt trop hauts", "À cause d’une population trop jeune"], c: 0,
+          e: "C’est la stagnation séculaire." },
+        { q: "Qu’ont montré Summers et Olivier Blanchard à propos des récessions ?",
+          o: ["Qu’elles peuvent laisser des traces durables, d’où l’intérêt de relances rapides", "Qu’elles n’ont aucun effet durable", "Qu’elles se corrigent toujours d’elles-mêmes", "Qu’elles font baisser durablement le chômage"], c: 0,
+          e: "C’est l’hystérèse." }
+      ],
       duree: 6,
       html: `
 <h3>Un économiste au pouvoir</h3>
@@ -306,6 +314,14 @@ ${cercles}
       ["Recherche", "Daron Acemoglu, Simon Johnson et James Robinson, « The Colonial Origins of Comparative Development », American Economic Review, 2001."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quel événement de son adolescence pousse Acemoglu à réfléchir aux liens entre politique et prospérité ?",
+          o: ["Le coup d’État militaire de 1980 en Turquie", "La chute du mur de Berlin", "La crise de 2008", "L’indépendance de l’Arménie"], c: 0,
+          e: "Il deviendra professeur au MIT et prix Nobel en 2024." },
+        { q: "Pourquoi, selon Acemoglu, la pauvreté peut-elle durer des siècles ?",
+          o: ["Parce qu’une élite qui profite d’institutions extractives bloque les changements qui la menaceraient", "Parce que certains climats empêchent toute croissance", "Parce que les pays pauvres refusent le commerce", "Parce que la population augmente trop vite"], c: 0,
+          e: "Les institutions comptent davantage que la géographie ou la culture." }
+      ],
       duree: 6,
       html: `
 <h3>De la Turquie au MIT</h3>

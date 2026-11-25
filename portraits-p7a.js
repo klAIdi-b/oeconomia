@@ -143,6 +143,14 @@ ${torbel}
       ["Recherche", "Elinor Ostrom, Understanding Institutional Diversity, 2005 ; Elinor Ostrom, Roy Gardner et James Walker, Rules, Games, and Common-Pool Resources, 1994."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi déconseille-t-on l’économie à Elinor Ostrom au début de sa carrière ?",
+          o: ["Faute de mathématiques", "Parce qu’elle est trop jeune", "Parce qu’elle vit à Los Angeles", "Parce qu’elle étudie déjà la médecine"], c: 0,
+          e: "Politologue, elle reçoit pourtant le Nobel d’économie en 2009." },
+        { q: "Selon Ostrom, à quelles conditions les communautés gèrent-elles bien une ressource commune ?",
+          o: ["Droits clairs, règles fixées par les usagers, surveillance mutuelle, sanctions progressives et reconnaissance par les autorités", "Privatisation complète de la ressource", "Gestion entièrement confiée à l’État", "Absence de toute règle"], c: 0,
+          e: "C’est une troisième voie entre l’État et le marché." }
+      ],
       duree: 6,
       html: `
 <h3>La politologue qui a reçu le Nobel d’économie</h3>
@@ -303,6 +311,14 @@ ${idh}` },
       ["Recherche", "Amartya Sen, Choix collectif et bien-être social, 1970 ; L’Idée de justice, 2009."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pendant la famine du Bengale de 1943, qui meurt, selon le souvenir de Sen ?",
+          o: ["Seuls les plus pauvres, comme les journaliers agricoles", "Toute la population, riches compris", "Surtout les habitants des villes aisées", "Personne de la région"], c: 0,
+          e: "Leurs salaires ne suivaient pas la flambée des prix." },
+        { q: "Qu’observe Sen à propos des démocraties et des famines ?",
+          o: ["Aucune grande famine n’a eu lieu dans une démocratie avec une presse libre", "Les démocraties connaissent plus de famines", "Les famines ne dépendent pas du régime politique", "Les démocraties produisent toujours plus de nourriture"], c: 0,
+          e: "Les gouvernements doivent rendre des comptes." }
+      ],
       duree: 6,
       html: `
 <h3>Un enfant devant la famine</h3>

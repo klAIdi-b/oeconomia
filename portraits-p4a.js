@@ -145,6 +145,14 @@ ${justices}
       ["Recherche", "Moses Finley, « Aristotle and Economic Analysis », Past & Present, 1970 ; Joseph Schumpeter, Histoire de l’analyse économique, 1954, partie II, chapitre 1."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pour Aristote, à quoi sert l’économie ?",
+          o: ["À gérer sa maison pour bien vivre", "À accumuler le plus d’argent possible", "À conquérir de nouveaux territoires", "À fixer les prix de la cité"], c: 0,
+          e: "Elle a une limite : on n’a pas besoin d’une quantité infinie de choses." },
+        { q: "Quelle idée d’Aristote a inspiré l’interdiction de l’usure au Moyen Âge ?",
+          o: ["La condamnation du prêt à intérêt, où l’argent « fait des petits »", "La division du travail", "La loi des débouchés", "La libre concurrence"], c: 0,
+          e: "Ses idées ont guidé la pensée européenne pendant deux mille ans." }
+      ],
       duree: 6,
       html: `
 <h3>Le philosophe qui a inventé le mot « économie »</h3>
@@ -310,6 +318,14 @@ ${impot}` },
       ["Recherche", "Ibn Khaldoun, Muqaddima, parties III et V ; Jean David Boulakia, « Ibn Khaldun: A Fourteenth-Century Economist », Journal of Political Economy, 1971."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Où Ibn Khaldoun écrit-il la Muqaddima ?",
+          o: ["Dans une forteresse du désert algérien, en quelques mois", "À la cour de Grenade", "En prison à Tunis", "Dans une université du Caire, pendant vingt ans"], c: 0,
+          e: "Beaucoup y voient la naissance des sciences sociales." },
+        { q: "Selon Ibn Khaldoun, que font des impôts trop lourds ?",
+          o: ["Ils découragent l’activité et finissent par rapporter moins", "Ils enrichissent durablement l’État", "Ils n’ont aucun effet sur l’activité", "Ils renforcent la solidarité du groupe"], c: 0,
+          e: "Ronald Reagan l’a cité en 1981 pour justifier ses baisses d’impôts." }
+      ],
       duree: 6,
       html: `
 <h3>Un savant au cœur du pouvoir</h3>

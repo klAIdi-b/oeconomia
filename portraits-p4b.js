@@ -140,6 +140,14 @@ ${outils}
       ["Recherche", "J. M. Keynes, Théorie générale (1936), chapitre 23 ; Eli Heckscher, Mercantilism, 1931."]
     ],
     decouvrir: {
+      questions: [
+        { q: "De quoi accuse-t-on la compagnie dirigée par Mun ?",
+          o: ["D’appauvrir l’Angleterre en envoyant de l’argent en Asie pour acheter des épices", "De vendre trop cher aux Anglais", "D’avoir causé une guerre", "De refuser de payer ses impôts"], c: 0,
+          e: "Mun répond par un livre qui devient la référence du mercantilisme." },
+        { q: "Que critique Adam Smith dans la doctrine de Mun ?",
+          o: ["L’idée que la richesse d’un pays est son or : c’est ce qu’il produit et consomme qui compte", "L’idée que le commerce est utile", "L’idée que les épices sont chères", "L’idée qu’il faut produire davantage"], c: 0,
+          e: "Pour Smith, le commerce profite aux deux partenaires." }
+      ],
       duree: 6,
       html: `
 <h3>Un marchand qui écrit sur le commerce</h3>
@@ -294,6 +302,14 @@ ${tableau}
       ["Recherche", "Ronald Meek, The Economics of Physiocracy, 1962 ; Gianni Vaggi, The Economics of François Quesnay, 1987."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Quesnay, pourquoi l’artisan et le commerçant ne créent-ils pas de richesse nouvelle ?",
+          o: ["Parce qu’ils transforment et déplacent les biens, alors que seule l’agriculture produit plus qu’elle ne consomme", "Parce qu’ils ne travaillent pas assez", "Parce qu’ils paient trop d’impôts", "Parce qu’ils vendent à l’étranger"], c: 0,
+          e: "C’est le « produit net », qui vient de la nature." },
+        { q: "Qu’est-ce qui inspire à Quesnay l’idée de l’économie comme un circuit ?",
+          o: ["Sa connaissance de médecin de la circulation du sang", "Les canaux de Versailles", "Les comptes du roi", "Le commerce maritime"], c: 0,
+          e: "Son Tableau économique est l’ancêtre de la comptabilité nationale." }
+      ],
       duree: 6,
       html: `
 <h3>Le médecin du roi devenu économiste</h3>

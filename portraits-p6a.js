@@ -138,6 +138,14 @@ ${synthese}
       ["Recherche", "Paul Samuelson, « Interactions between the Multiplier Analysis and the Principle of Acceleration », 1939 ; « Proof That Properly Anticipated Prices Fluctuate Randomly », 1965."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quelle méthode Samuelson a-t-il imposée à toute l’économie moderne ?",
+          o: ["Écrire les questions économiques comme des problèmes mathématiques où chacun fait au mieux avec des moyens limités", "L’étude des archives fiscales", "Les expériences de laboratoire", "Les enquêtes de terrain dans les villages"], c: 0,
+          e: "Il a contribué à presque tous les domaines de la discipline." },
+        { q: "Que combine le manuel de Samuelson, L’Économique ?",
+          o: ["Les idées de Keynes contre le chômage et celles des classiques sur le fonctionnement des marchés", "Le marxisme et le monétarisme", "La physiocratie et le mercantilisme", "La psychologie et la sociologie"], c: 0,
+          e: "Il a été lu par des millions d’étudiants." }
+      ],
       duree: 6,
       html: `
 <h3>L’économiste des économistes</h3>
@@ -298,6 +306,14 @@ ${cycleMinsky}
       ["Recherche", "Hyman Minsky, John Maynard Keynes, 1975 ; Irving Fisher, « The Debt-Deflation Theory of Great Depressions », Econometrica, 1933."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi Minsky est-il soudain cité partout en 2008 ?",
+          o: ["Parce que la crise financière semble suivre exactement le scénario qu’il avait décrit", "Parce qu’il reçoit le prix Nobel", "Parce qu’il dirige la Réserve fédérale", "Parce qu’il publie un livre sur la crise"], c: 0,
+          e: "De son vivant, ses idées intéressaient peu ses collègues." },
+        { q: "Quel dilemme Minsky voit-il dans le sauvetage des crises par les banques centrales et les États ?",
+          o: ["En évitant les catastrophes, ils encouragent de nouveaux excès", "Ils empêchent toute croissance", "Ils provoquent toujours de l’hyperinflation", "Ils ruinent forcément les épargnants"], c: 0,
+          e: "D’où l’idée de freiner l’endettement pendant les périodes calmes." }
+      ],
       duree: 6,
       html: `
 <h3>Le prophète oublié de la crise</h3>
@@ -307,7 +323,7 @@ ${vieMinsky}
 <p>Pour Minsky, les crises naissent de la stabilité. Quand tout va bien, les banques et les emprunteurs prennent confiance, oublient les risques et s’endettent de plus en plus. Certains finissent par emprunter en comptant seulement sur la hausse des prix pour rembourser. Le jour où les prix cessent de monter, tout s’effondre : c’est le « moment Minsky ».</p>
 ${cycleMinsky}
 <h3>Sauver sans encourager</h3>
-<p>Les banques centrales et les États évitent que les crises deviennent des catastrophes, mais en sauvant le système, ils encouragent de nouveaux excès. D’où l’idée, reprise après 2008, de freiner l’endettement pendant les périodes calmes, comme le fait la Suisse avec le « volant anticyclique » sur les hypothèques.</p>
+<p>Les banques centrales et les États évitent que les crises deviennent des catastrophes, mais en sauvant le système, ils encouragent de nouveaux excès. D’où l’idée, reprise après 2008, de freiner l’endettement pendant les périodes calmes, comme le font de nombreux pays avec le « volant anticyclique » de fonds propres imposé aux banques.</p>
 <h3>À retenir</h3>
 <p>« La stabilité est déstabilisante. » Le portrait complet présente la vie de Minsky, sa pensée et sa redécouverte.</p>`,
       quiz: [0, 1]

@@ -135,6 +135,14 @@ ${harm}` },
       ["Recherche", "John Stuart Mill, « On the Definition of Political Economy », 1836 ; Samuel Hollander, The Economics of John Stuart Mill, 1985."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Mill, qu’est-ce qui dépend des choix de la société ?",
+          o: ["Le partage des richesses", "Les lois de la production", "Le climat", "La quantité de terres disponibles"], c: 0,
+          e: "On peut taxer les héritages ou encourager les coopératives ouvrières." },
+        { q: "Quelle société Mill imagine-t-il ?",
+          o: ["Une société qui cesserait de croître pour se consacrer à la culture et à la nature", "Une société entièrement planifiée par l’État", "Une société sans propriété", "Une société qui produirait toujours davantage"], c: 0,
+          e: "C’est son « état stationnaire », vu comme une perspective favorable." }
+      ],
       duree: 6,
       html: `
 <h3>Un enfant prodige devenu penseur de la liberté</h3>
@@ -302,6 +310,14 @@ ${optimum}
       ["Recherche", "Vilfredo Pareto, Cours d’économie politique (1896-1897), tome II ; Amartya Sen, « The Impossibility of a Paretian Liberal », Journal of Political Economy, 1970."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Qu’est-ce que Pareto découvre en étudiant les impôts de nombreux pays ?",
+          o: ["Que les hauts revenus se répartissent selon une loi mathématique régulière", "Que les revenus sont partout égaux", "Que les impôts n’ont aucun effet", "Que les pauvres paient plus que les riches"], c: 0,
+          e: "Il s’intéresse ensuite aux élites et à leur succession." },
+        { q: "Qu’est-ce que Pareto montre à propos des choix des consommateurs ?",
+          o: ["Qu’on peut les étudier sans mesurer leur bonheur, en sachant seulement ce qu’ils préfèrent", "Qu’ils sont toujours irrationnels", "Qu’on doit mesurer leur bonheur en francs", "Qu’ils dépendent uniquement du prix"], c: 0,
+          e: "C’est l’idée de l’utilité ordinale, base de la microéconomie moderne." }
+      ],
       duree: 6,
       html: `
 <h3>L’ingénieur de Lausanne</h3>

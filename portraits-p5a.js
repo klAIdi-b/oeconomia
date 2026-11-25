@@ -144,6 +144,14 @@ ${calcul}
       ["Recherche", "Ludwig von Mises, L’Action humaine, 1949, parties I et IV ; Don Lavoie, Rivalry and Central Planning, 1985."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Dans l’exemple de Mises, pourquoi l’économie planifiée « navigue à l’aveugle » ?",
+          o: ["Sans marché pour les usines et les terres, il n’y a pas de prix pour savoir s’il vaut mieux construire en acier ou en béton", "Parce que les planificateurs sont incompétents", "Parce que les ordinateurs n’existent pas", "Parce que les ouvriers refusent de travailler"], c: 0,
+          e: "C’est son défi lancé aux socialistes en 1920." },
+        { q: "Quelle est l’attitude de Mises face aux banques centrales ?",
+          o: ["Il s’en méfie et défend l’étalon-or", "Il veut leur confier toute l’économie", "Il veut qu’elles créent beaucoup de crédit", "Il n’en parle jamais"], c: 0,
+          e: "Pour lui, les crises viennent du crédit trop facile." }
+      ],
       duree: 6,
       html: `
 <h3>Le libéral intransigeant</h3>
@@ -290,6 +298,14 @@ ${industrie}
       ["Recherche", "Thorstein Veblen, « Why Is Economics Not an Evolutionary Science? », 1898 ; Geoffrey Hodgson, The Evolution of Institutional Economics, 2004."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Veblen, chaque classe sociale imite…",
+          o: ["la classe au-dessus d’elle", "la classe au-dessous d’elle", "les étrangers", "l’État"], c: 0,
+          e: "La consommation sert à montrer son rang." },
+        { q: "Quelle économie Veblen veut-il construire ?",
+          o: ["Une économie qui étudie l’évolution des habitudes et des institutions", "Une économie entièrement mathématique", "Une économie limitée à l’agriculture", "Une économie sans aucune théorie"], c: 0,
+          e: "Il est le fondateur de l’institutionnalisme." }
+      ],
       duree: 6,
       html: `
 <h3>Le fils de fermiers norvégiens</h3>

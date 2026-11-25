@@ -143,6 +143,14 @@ ${rg}
       ["Recherche", "Thomas Piketty et Emmanuel Saez, « Income Inequality in the United States, 1913-1998 », Quarterly Journal of Economics, 2003 ; Daron Acemoglu et James Robinson, « The Rise and Decline of General Laws of Capitalism », Journal of Economic Perspectives, 2015."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi Piketty passe-t-il des années dans les archives de l’impôt ?",
+          o: ["Pour mesurer les inégalités sur plus d’un siècle", "Pour calculer la dette publique", "Pour étudier la fraude fiscale", "Pour écrire l’histoire de l’impôt sur le revenu"], c: 0,
+          e: "Il veut une économie qui s’appuie davantage sur les faits et l’histoire." },
+        { q: "Selon Piketty, qu’est-ce qui a fait baisser les inégalités entre 1914 et 1945 ?",
+          o: ["Des chocs et des choix politiques : guerres, crise de 1929, impôts progressifs", "Une loi naturelle du développement", "Le progrès technique seul", "La baisse des salaires"], c: 0,
+          e: "La baisse n’était donc pas automatique." }
+      ],
       duree: 6,
       html: `
 <h3>Le chercheur des archives fiscales</h3>
@@ -309,6 +317,14 @@ ${vaccins}
       ["Recherche", "Esther Duflo, « The Economist as Plumber », American Economic Review, 2017 ; Esther Duflo, Rema Hanna et Stephen Ryan, « Incentives Work », American Economic Review, 2012."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Comment Duflo mesure-t-elle l’effet réel d’un programme contre la pauvreté ?",
+          o: ["En tirant au sort les villages ou les écoles qui en bénéficient, et en les comparant aux autres", "En interrogeant les responsables du programme", "En comparant les pays riches et les pays pauvres", "En calculant son coût total"], c: 0,
+          e: "C’est la méthode des essais cliniques appliquée à l’économie." },
+        { q: "Qu’a montré l’expérience des moustiquaires au Kenya ?",
+          o: ["Les moustiquaires gratuites sont bien plus utilisées que celles vendues, même à bas prix", "Les familles préfèrent les moustiquaires chères", "Les moustiquaires n’ont aucun effet", "Les moustiquaires gratuites sont revendues"], c: 0,
+          e: "De petits détails peuvent avoir de grands effets." }
+      ],
       duree: 6,
       html: `
 <h3>Une économiste de terrain</h3>

@@ -139,6 +139,14 @@ ${inconnues}
       ["Recherche", "William Jaffé (dir.), Correspondence of Léon Walras and Related Papers, 1965 ; Kenneth Arrow et Gérard Debreu, « Existence of an Equilibrium for a Competitive Economy », Econometrica, 1954."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi Walras s’installe-t-il à Lausanne ?",
+          o: ["Parce que la France n’a pas de place pour lui et que le canton de Vaud lui offre une chaire en 1870", "Parce qu’il y est né", "Pour diriger une banque", "Pour fuir une guerre"], c: 0,
+          e: "Il y écrit l’une des œuvres les plus importantes de l’histoire de l’économie." },
+        { q: "Selon Walras, comment l’État devrait-il se financer pour ne pas taxer le travail ?",
+          o: ["En possédant les terres et en vivant de leurs loyers", "En imprimant de la monnaie", "En taxant les importations", "En empruntant sans limite"], c: 0,
+          e: "Walras était aussi un réformateur social." }
+      ],
       duree: 6,
       html: `
 <h3>Un Français à Lausanne</h3>
@@ -301,6 +309,14 @@ ${outils}
       ["Recherche", "Piero Sraffa, « The Laws of Returns under Competitive Conditions », Economic Journal, 1926 ; Alfred Marshall, Industry and Trade, 1919."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi Marshall décide-t-il de consacrer sa vie à l’économie ?",
+          o: ["En visitant les quartiers pauvres, il veut comprendre comment améliorer la condition des travailleurs", "Pour faire fortune en Bourse", "Parce que son père était économiste", "Pour conseiller la Banque d’Angleterre"], c: 0,
+          e: "Le mathématicien de Cambridge veut une économie utile." },
+        { q: "Selon Marshall, qu’est-ce qui compte le plus pour fixer le prix à long terme ?",
+          o: ["Le coût de production", "La demande", "L’humeur des acheteurs", "Le prix fixé par l’État"], c: 0,
+          e: "À court terme, c’est la demande qui compte le plus." }
+      ],
       duree: 6,
       html: `
 <h3>Le mathématicien qui voulait aider les pauvres</h3>

@@ -178,6 +178,14 @@ ${chaine}
       ["Recherche", "J. M. Keynes, Théorie générale (1936), chapitres 1 à 3, 12 et 24 ; David Chambers et Elroy Dimson, « John Maynard Keynes, Investment Innovator », Journal of Economic Perspectives, 2013."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que répondaient la plupart des économistes de l’entre-deux-guerres face au chômage massif ?",
+          o: ["Qu’il suffisait d’attendre que les salaires baissent", "Que l’État devait dépenser davantage", "Qu’il fallait imprimer de la monnaie", "Que le chômage était impossible"], c: 0,
+          e: "Keynes leur répond : « À long terme, nous serons tous morts. »" },
+        { q: "Selon Keynes, que doit faire l’État quand ménages et entreprises, inquiets, dépensent moins ?",
+          o: ["Soutenir la demande par des taux bas et des dépenses publiques", "Réduire ses dépenses pour donner l’exemple", "Laisser baisser les salaires", "Augmenter les impôts"], c: 0,
+          e: "Sinon, la production baisse et le chômage peut durer." }
+      ],
       duree: 6,
       html: `
 <h3>Un homme aux mille vies</h3>

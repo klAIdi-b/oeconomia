@@ -146,6 +146,14 @@ ${cambridges}
       ["Recherche", "Joan Robinson, « The Production Function and the Theory of Capital », Review of Economic Studies, 1953 ; Avi Cohen et Geoffrey Harcourt, « Whatever Happened to the Cambridge Capital Theory Controversies? », Journal of Economic Perspectives, 2003."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Joan Robinson, que peut faire un employeur qui domine seul le marché du travail d’une ville ?",
+          o: ["Payer moins que ce que produisent ses salariés", "Payer toujours plus que ses concurrents", "Embaucher tous les chômeurs", "Fixer les prix de toute la ville"], c: 0,
+          e: "C’est le monopsone ; un salaire minimum bien choisi peut alors augmenter salaires et emploi." },
+        { q: "Sur quoi porte la longue bataille de Joan Robinson contre les économistes du MIT ?",
+          o: ["Sur la mesure du capital", "Sur le libre-échange", "Sur la politique monétaire", "Sur la démographie"], c: 0,
+          e: "Ses adversaires finissent par reconnaître qu’ils ont perdu ce débat en théorie." }
+      ],
       duree: 6,
       html: `
 <h3>Une femme dans le cercle de Keynes</h3>
@@ -301,6 +309,14 @@ ${sequence}
       ["Recherche", "Robert Solow, « The New Industrial State or Son of Affluence », The Public Interest, 1967 ; Adolf Berle et Gardiner Means, The Modern Corporation and Private Property, 1932."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que dénonce Galbraith par l’expression « opulence privée et misère publique » ?",
+          o: ["Une Amérique qui produit toujours plus de voitures et de gadgets, mais néglige ses écoles, ses parcs et ses rues", "La pauvreté des campagnes", "Les impôts trop élevés", "La faillite des banques"], c: 0,
+          e: "Il l’écrit dans L’Ère de l’opulence, en 1958." },
+        { q: "Selon Galbraith, que font les grandes entreprises avec la publicité ?",
+          o: ["Elles façonnent les désirs des consommateurs au lieu de seulement y répondre", "Elles informent objectivement les acheteurs", "Elles font baisser les prix", "Elles financent les services publics"], c: 0,
+          e: "L’État doit donc équilibrer leur pouvoir." }
+      ],
       duree: 6,
       html: `
 <h3>Le géant de Harvard</h3>

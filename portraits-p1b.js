@@ -132,6 +132,14 @@ ${circuits}
       ["Recherche", "Karl Marx, Le Capital, livre I (1867), sections 1 à 4 et chapitre 25 ; Eugen von Böhm-Bawerk, Karl Marx and the Close of His System, 1896."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Marx, à quoi la concurrence entre capitalistes conduit-elle ?",
+          o: ["À mécaniser, ce qui crée du chômage et provoque des crises", "À augmenter sans cesse les salaires", "À supprimer les profits pour toujours", "À la disparition des machines"], c: 0,
+          e: "Marx y voit des contradictions qui transformeront la société." },
+        { q: "Comment la notice juge-t-elle l’héritage de Marx ?",
+          o: ["Immense et contesté : plusieurs prédictions se sont révélées fausses, mais ses analyses restent discutées", "Entièrement confirmé par l’histoire", "Sans aucune influence au XXe siècle", "Limité à l’Allemagne"], c: 0,
+          e: "Ses idées ont inspiré les partis socialistes et des révolutions aux résultats souvent tragiques." }
+      ],
       duree: 6,
       html: `
 <h3>Un exilé au British Museum</h3>
@@ -287,6 +295,14 @@ ${etain}
       ["Recherche", "Friedrich Hayek, La Constitution de la liberté, 1960 ; Bruce Caldwell et Hansjörg Klausinger, Hayek: A Life, 1899-1950, 2022."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Dans l’exemple de Hayek, que se passe-t-il quand l’étain devient rare ?",
+          o: ["Son prix monte, et chacun l’économise sans même savoir pourquoi", "Le gouvernement le rationne", "Son prix baisse", "Personne ne s’en aperçoit"], c: 0,
+          e: "Les prix transmettent une information dispersée entre des millions de personnes." },
+        { q: "À partir des années 1970, qui les idées de Hayek inspirent-elles ?",
+          o: ["Margaret Thatcher et le renouveau du libéralisme", "Les partis communistes européens", "Le New Deal de Roosevelt", "Les planificateurs soviétiques"], c: 0,
+          e: "Dans les années 1930, c’est Keynes qui l’avait emporté dans leur débat." }
+      ],
       duree: 6,
       html: `
 <h3>Un Viennois contre la planification</h3>

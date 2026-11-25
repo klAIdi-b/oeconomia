@@ -139,6 +139,14 @@ ${centre}
       ["Recherche", "Paul Krugman, « Increasing Returns and Economic Geography », Journal of Political Economy, 1991 ; « It’s Baaack », Brookings Papers on Economic Activity, 1998."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi l’Allemagne et la France échangent-elles des voitures, selon Krugman ?",
+          o: ["Il est moins cher de produire en grand quelques modèles, et les clients aiment le choix", "Parce que l’une ne sait pas en fabriquer", "Parce que les droits de douane l’imposent", "Parce que l’essence est moins chère dans l’autre pays"], c: 0,
+          e: "Chaque pays se spécialise dans certains modèles et achète les autres." },
+        { q: "Qu’a rêvé de faire Krugman adolescent, en lisant un roman de science-fiction ?",
+          o: ["Prévoir l’avenir des sociétés", "Devenir astronaute", "Diriger une banque centrale", "Écrire des romans"], c: 0,
+          e: "Il deviendra économiste, puis prix Nobel en 2008." }
+      ],
       duree: 6,
       html: `
 <h3>Le lecteur d’Asimov</h3>
@@ -148,7 +156,7 @@ ${vieKrugman}
 <p>Pourquoi l’Allemagne et la France échangent-elles des voitures, alors qu’elles savent toutes les deux en fabriquer ? Krugman répond : parce qu’il est moins cher de produire en grand un petit nombre de modèles, et que les clients aiment avoir le choix. Chaque pays se spécialise dans certains modèles et achète les autres.</p>
 ${intra}
 <h3>Pourquoi l’industrie se concentre</h3>
-<p>Le même raisonnement explique pourquoi les entreprises se regroupent dans certaines régions : elles y trouvent des travailleurs et des clients, ce qui attire encore d’autres entreprises. En Suisse, l’horlogerie dans l’Arc jurassien ou la pharmacie à Bâle en sont des exemples.</p>
+<p>Le même raisonnement explique pourquoi les entreprises se regroupent dans certaines régions : elles y trouvent des travailleurs et des clients, ce qui attire encore d’autres entreprises. Le cinéma à Hollywood, l’informatique dans la Silicon Valley ou la pharmacie à Bâle en sont des exemples.</p>
 <h3>À retenir</h3>
 <p>Krugman a renouvelé la théorie du commerce et de la géographie, puis défendu les idées keynésiennes après 2008. Le portrait complet présente sa vie, ses idées, ses erreurs reconnues et ses critiques.</p>`,
       quiz: [0, 1]
