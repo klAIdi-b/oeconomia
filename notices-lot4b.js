@@ -119,6 +119,9 @@ ${thunen}
         o: ["L’interdiction de construire", "Un prélèvement d’au moins 20 % de la plus-value lors du classement d’un terrain en zone à bâtir", "La nationalisation des terrains", "La suppression de l’impôt foncier"], c: 1,
         e: "Les cantons doivent capter une partie de la plus-value créée par la décision publique de classement, une application de l’idée de Mill et de George." }
     ],
+    transfert: { q: "Une nouvelle ligne de métro est construite par la ville. Les terrains proches des stations prennent fortement de la valeur. Que suggère l’analyse de la rente ?",
+      o: ["Une grande partie de ce gain ne récompense aucun effort des propriétaires, d’où l’idée de taxer la plus-value du sol", "Les propriétaires ont créé cette valeur en entretenant leurs terrains", "La valeur des terrains va forcément baisser", "Le métro a fait baisser les loyers du quartier"], c: 0,
+      e: "Comme le proposait Henry George, la valeur créée par la collectivité peut lui revenir en partie." },
     ouverte: {
       q: "Faut-il, comme le proposait Henry George, taxer beaucoup plus fortement la valeur du sol en Suisse, par exemple pour financer le logement abordable ?",
       r: "Plusieurs arguments plaident en ce sens : la valeur du sol vient largement de la collectivité (infrastructures, emplois, décisions d’urbanisme), un impôt foncier ne décourage ni le travail ni l’investissement productif, et il pourrait inciter à mieux utiliser les terrains en zone à bâtir laissés vides. La Suisse dispose déjà de plusieurs instruments, impôt foncier communal dans certains cantons, imposition de la valeur locative, prélèvement sur les plus-values de classement. Les objections sont réelles : beaucoup de propriétaires sont des ménages modestes ou des retraités dont le patrimoine est surtout immobilier, l’évaluation du sol séparément du bâti est complexe, et une hausse brutale ferait baisser les prix au détriment des propriétaires récents fortement endettés. Les économistes favorables proposent souvent une introduction progressive, compensée par des baisses d’autres impôts."
@@ -131,6 +134,14 @@ ${thunen}
       ["Recherche", "Katharina Knoll, Moritz Schularick et Thomas Steger, « No Price Like Home: Global House Prices, 1870-2012 », American Economic Review, 2017 ; Anne Krueger, « The Political Economy of the Rent-Seeking Society », American Economic Review, 1974."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi un appartement vaut-il beaucoup plus au centre d’une grande ville qu’à la campagne, à coût de construction égal ?",
+          o: ["À cause de la valeur du terrain et de son emplacement", "Parce que les matériaux sont plus chers en ville", "Parce que les ouvriers sont mieux payés en ville", "Parce que l’appartement est plus solide"], c: 0,
+          e: "Le propriétaire n’a rien fait pour créer cette valeur : c’est une rente." },
+        { q: "Quelle est la conclusion surprenante de Ricardo sur la rente ?",
+          o: ["Ce n’est pas la rente qui rend le blé cher, c’est le blé cher qui crée la rente", "La rente fait baisser le prix du blé", "Les propriétaires fixent le prix du blé", "La rente récompense le travail du propriétaire"], c: 0,
+          e: "Le prix couvre le coût sur la plus mauvaise terre ; les meilleures dégagent un surplus." }
+      ],
       duree: 5,
       html: `
 <h3>Le prix d’un emplacement</h3>
@@ -152,7 +163,7 @@ ${terres}
       objections: "Terre et capital, limites de l’impôt foncier, la rente comme signal, une notion trop large.",
       ecoles: "Quesnay, Malthus-West-Ricardo, Mill, Marx, Marshall, Piketty.",
       source: "Ricardo, 1817 : les facultés productives originelles et impérissables du sol.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur l’impôt foncier.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur l’impôt foncier.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -257,6 +268,9 @@ ${paradoxe}
         o: ["Parce que la BNS compense en baissant toujours ses taux", "Parce que l’épargne excédentaire est placée à l’étranger et que les exportations soutiennent la demande", "Parce que l’État dépense tout", "Parce que les Suisses empruntent autant qu’ils épargnent"], c: 1,
         e: "L’excédent d’épargne correspond à l’excédent courant : la demande étrangère compense la faiblesse relative de la demande intérieure." }
     ],
+    transfert: { q: "En 2010, plusieurs pays européens réduisent leurs dépenses publiques en même temps, alors que ménages et entreprises économisent déjà. Que prévoit le paradoxe de l’épargne ?",
+      o: ["La demande totale baisse, les revenus diminuent, et la réduction de la dette devient plus difficile", "La croissance repart aussitôt grâce à l’épargne", "Les taux montent fortement", "Les exportations compensent toujours la baisse"], c: 0,
+      e: "Quand tout le monde économise en même temps, les revenus baissent pour tous." },
     ouverte: {
       q: "Le système suisse de prévoyance oblige les salariés à épargner massivement pour leur retraite par le deuxième pilier. Est-ce un problème au regard du paradoxe de l’épargne ?",
       r: "En période de plein emploi, non : cette épargne finance des investissements en Suisse et à l’étranger, et assure les revenus futurs des retraités, ce qui est son objectif. Le paradoxe de l’épargne suggère cependant deux points d’attention. D’abord, en récession, une épargne obligatoire élevée réduit la consommation au moment où la demande manque, même si l’assurance chômage et le chômage partiel atténuent ce risque. Ensuite, à l’échelle mondiale, l’abondance d’épargne contribue aux taux d’intérêt très bas, qui ont à leur tour réduit le rendement des caisses de pension et donc les rentes : un cercle que les théoriciens de la stagnation séculaire décrivent. La réponse ne consiste pas à réduire l’épargne pour la retraite, mais à veiller à ce qu’elle trouve des investissements utiles et à ce que la demande soit soutenue en cas de crise."
@@ -269,6 +283,14 @@ ${paradoxe}
       ["Recherche", "Wynne Godley et Marc Lavoie, Monetary Economics: An Integrated Approach to Credit, Money, Income, Production and Wealth, 2007 ; Olivier Blanchard et Daniel Leigh, « Growth Forecast Errors and Fiscal Multipliers », 2013."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que raconte la fable des abeilles de Mandeville ?",
+          o: ["Une ruche s’appauvrit quand toutes les abeilles deviennent économes en même temps", "Une ruche s’enrichit grâce à l’épargne de chaque abeille", "Les abeilles économes chassent les dépensières", "Une ruche partage son miel avec les autres"], c: 0,
+          e: "Quand tout le monde dépense moins, les artisans perdent leurs clients." },
+        { q: "En temps normal, que devient l’épargne selon la notice ?",
+          o: ["Elle est prêtée à ceux qui investissent, et enrichit la société à long terme", "Elle disparaît de l’économie", "Elle provoque toujours une crise", "Elle est confisquée par l’État"], c: 0,
+          e: "Le paradoxe joue surtout en crise, quand les entreprises n’osent pas investir." }
+      ],
       duree: 5,
       html: `
 <h3>La ruche vertueuse</h3>
@@ -290,7 +312,7 @@ ${paradoxe}
       objections: "L’épargne finance l’investissement, l’épargne enrichit à long terme, la banque centrale, la précaution.",
       ecoles: "Mandeville, Smith, Malthus contre Ricardo et Say, Keynes, Hayek, Summers.",
       source: "Keynes, 1936 : pourquoi tous ne peuvent épargner simultanément.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur le deuxième pilier.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur le deuxième pilier.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

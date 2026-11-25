@@ -127,6 +127,9 @@ ${epargneInv}
         o: ["0 %", "−0,25 %", "−0,75 %", "−2 %"], c: 2,
         e: "Le taux de −0,75 %, l’un des plus bas du monde, a été maintenu de janvier 2015 à juin 2022." }
     ],
+    transfert: { q: "Dans un pays où la population vieillit vite, les taux d’intérêt restent proches de zéro pendant vingt ans malgré une banque centrale très active. Quelle politique Summers recommanderait-il ?",
+      o: ["Davantage d’investissement public, par exemple dans les infrastructures", "Une hausse rapide des taux d’intérêt", "Une réduction de la dépense publique", "Une hausse des droits de douane"], c: 0,
+      e: "Quand la politique monétaire bute sur le plancher des taux, l’investissement public peut absorber l’excès d’épargne." },
     ouverte: {
       q: "La Suisse, avec sa population vieillissante, son épargne élevée et sa faible dette publique, devrait-elle emprunter davantage pour investir, comme le recommande Summers ?",
       r: "Les arguments en faveur sont réels : la Confédération emprunte à des taux très bas, les besoins d’investissement sont importants (transition énergétique, transports, logement), et la dette publique suisse est parmi les plus faibles des pays riches. Mais le frein à l’endettement, accepté par 85 % des votants en 2001, oblige la Confédération à équilibrer ses comptes sur un cycle conjoncturel, et il jouit d’un large soutien. Ses défenseurs soulignent qu’il a protégé la Suisse des dérives budgétaires et que la remontée des taux depuis 2022 a réduit l’argument de la dette gratuite. Les économistes favorables à plus d’investissement proposent plutôt d’assouplir le frein pour les dépenses d’investissement, une « règle d’or », que de l’abandonner. Le débat suisse illustre bien la tension entre la prudence budgétaire et la théorie de la stagnation séculaire."
@@ -139,6 +142,14 @@ ${epargneInv}
       ["Recherche", "Alvin Hansen, « Economic Progress and Declining Population Growth », American Economic Review, 1939 ; Łukasz Rachel et Thomas Smith, « Secular Drivers of the Global Real Interest Rate », Banque d’Angleterre, 2015."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Summers, pourquoi les ménages veulent-ils épargner davantage ?",
+          o: ["Parce qu’ils vivent plus longtemps et que les plus riches épargnent davantage", "Parce que les taux d’intérêt sont très élevés", "Parce que les impôts ont baissé", "Parce que les prix baissent partout"], c: 0,
+          e: "Vieillissement et inégalités poussent l’épargne désirée à la hausse." },
+        { q: "Pourquoi les entreprises investissent-elles moins, selon cette thèse ?",
+          o: ["Parce que machines et ordinateurs coûtent moins cher et que la population active croît moins vite", "Parce que les taux d’intérêt sont trop élevés", "Parce que la loi limite l’investissement", "Parce que les consommateurs achètent trop"], c: 0,
+          e: "Trop d’épargne et pas assez d’investissement poussent le taux d’intérêt vers zéro." }
+      ],
       duree: 5,
       html: `
 <h3>Une reprise qui ne vient pas</h3>
@@ -160,7 +171,7 @@ ${epargneInv}
       objections: "Le cycle de la dette, la critique de la BRI, un taux inobservable, l’innovation à venir.",
       ecoles: "Wicksell, Keynes, Hansen, Summers et Krugman, Gordon, Rogoff et la BRI.",
       source: "Hansen, 1939 : des reprises maladives qui meurent dans l’œuf.",
-      quiz: "Cinq questions corrigées et une question sur le frein à l’endettement.",
+      quiz: "Six questions corrigées et une question sur le frein à l’endettement.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -284,6 +295,9 @@ ${solutions}` },
         o: ["Le signal", "Le filtrage", "La réputation", "La recherche de rente"], c: 1,
         e: "L’assureur propose des contrats différents ; chacun choisit selon ce qu’il sait de sa santé, ce qui révèle une partie de son information." }
     ],
+    transfert: { q: "Sur une plateforme de location de logements, les voyageurs ne peuvent pas vérifier l’état d’un appartement avant d’arriver. Quel mécanisme aide le marché à fonctionner malgré l’asymétrie d’information ?",
+      o: ["Les avis et les notes laissés par les voyageurs précédents, qui créent une réputation", "Des prix identiques pour tous les logements", "L’interdiction des photos", "Le paiement en liquide à l’arrivée"], c: 0,
+      e: "La réputation remplace l’information que l’acheteur ne peut pas vérifier lui-même." },
     ouverte: {
       q: "Faut-il autoriser les caisses maladie suisses à utiliser des données de santé, par exemple des montres connectées, pour moduler les primes de l’assurance de base ?",
       r: "Du point de vue de la théorie de l’information, ces données réduiraient l’asymétrie entre assuré et assureur, et pourraient encourager des comportements plus sains, réduisant l’aléa moral. Mais l’assurance de base suisse repose sur un choix de solidarité : la prime ne dépend pas de l’état de santé. Moduler les primes selon les données reviendrait à faire payer davantage les malades et les personnes à risque, souvent pour des raisons génétiques ou sociales qu’elles ne contrôlent pas. C’est pourquoi la LAMal l’interdit dans l’assurance de base, alors que les assurances complémentaires peuvent sélectionner leurs clients. Le débat porte sur la frontière entre ces deux mondes, et sur la protection des données de santé."
@@ -296,6 +310,14 @@ ${solutions}` },
       ["Recherche", "George Akerlof, « The Market for “Lemons” », Quarterly Journal of Economics, 1970 ; Michael Spence, « Job Market Signaling », Quarterly Journal of Economics, 1973 ; Michael Rothschild et Joseph Stiglitz, « Equilibrium in Competitive Insurance Markets », 1976."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Sur le marché des voitures d’occasion, pourquoi les propriétaires de bonnes voitures refusent-ils de vendre ?",
+          o: ["Parce que les acheteurs, qui ne savent pas distinguer les bonnes des mauvaises, ne proposent que le prix moyen", "Parce que les bonnes voitures sont interdites à la revente", "Parce que les acheteurs paient trop cher", "Parce que les garages les rachètent toutes"], c: 0,
+          e: "Il ne reste en vente que les mauvaises voitures : c’est la sélection adverse." },
+        { q: "Lequel de ces dispositifs sert de signal pour réduire l’asymétrie d’information ?",
+          o: ["Une garantie offerte par le vendeur", "Une baisse générale des prix", "Une taxe sur les voitures", "Une interdiction de vendre"], c: 0,
+          e: "Un vendeur sûr de sa voiture peut se permettre de la garantir." }
+      ],
       duree: 5,
       html: `
 <h3>Le vendeur en sait plus que vous</h3>
@@ -317,7 +339,7 @@ ${spirale}
       objections: "Les solutions du marché, les asymétries de l’État, le signal comme gaspillage, les biais.",
       ecoles: "Arrow, Akerlof, Spence, Stiglitz, Hayek, Tirole.",
       source: "Akerlof, 1970 : la malhonnêteté évince le commerce légitime.",
-      quiz: "Cinq questions corrigées et une question sur les données de santé.",
+      quiz: "Six questions corrigées et une question sur les données de santé.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

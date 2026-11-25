@@ -113,6 +113,9 @@ ${sawtooth}
         o: ["Elles ignorent le rôle des banques", "Les sauvetages systématiques peuvent encourager la prise de risque (aléa moral)", "Elles accordent un rôle trop faible à la politique budgétaire", "Elles supposent des agents parfaitement rationnels"], c: 1,
         e: "Si l’État et la banque centrale sauvent toujours le système, les acteurs financiers anticipent ce soutien et prennent davantage de risques." }
     ],
+    transfert: { q: "Pendant dix ans, les prix des logements montent chaque année dans un pays, et les banques acceptent des prêts de plus en plus élevés par rapport aux revenus. Que dirait Minsky ?",
+      o: ["Le risque de crise augmente justement parce que la période a été calme", "Le marché est sûr, puisque les prix montent depuis longtemps", "Les banques sont devenues plus prudentes", "Seule une hausse des salaires pourrait provoquer une crise"], c: 0,
+      e: "La confiance accumulée pousse à s’endetter davantage avec des marges plus faibles." },
     ouverte: {
       q: "Depuis 2013, la Suisse peut activer un « volant anticyclique de fonds propres » qui oblige les banques à détenir plus de capital pour leurs crédits hypothécaires quand l’immobilier s’emballe. En quoi cet outil s’inspire-t-il de Minsky, et quelles sont ses limites ?",
       r: "L’outil est directement minskien : il agit pendant la phase de confiance, quand la fragilité s’accumule, en rendant le crédit un peu plus coûteux et en constituant des réserves qui serviront lors du retournement. La Suisse l’a activé dès 2013 sur les prêts hypothécaires, l’a relevé en 2014, suspendu pendant la pandémie, puis réactivé en 2022. Ses limites sont toutefois réelles : il est difficile de savoir quand une hausse des prix devient une bulle ; un supplément de fonds propres de quelques pourcents ne suffit pas à arrêter un emballement nourri par des taux très bas ; enfin, le crédit peut passer par des prêteurs non bancaires, comme les assurances ou les caisses de pension, qui ne sont pas concernés. L’outil réduit le risque sans supprimer le cycle."
@@ -125,6 +128,14 @@ ${sawtooth}
       ["Recherche", "Moritz Schularick et Alan Taylor, « Credit Booms Gone Bust », American Economic Review, 2012 ; Òscar Jordà, Moritz Schularick et Alan Taylor, « When Credit Bites Back », Journal of Money, Credit and Banking, 2013."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Parmi les trois types d’emprunteurs de Minsky, lequel est le plus fragile ?",
+          o: ["Celui qui ne peut même pas payer les intérêts et parie sur la hausse des prix", "Celui qui rembourse tout avec ses revenus", "Celui qui paie les intérêts et refinance le reste", "Ils sont tous aussi fragiles"], c: 0,
+          e: "Il dépend entièrement de la hausse des prix de ce qu’il a acheté." },
+        { q: "Selon la notice, quel événement peut faire basculer une économie très endettée ?",
+          o: ["Une hausse des taux ou une baisse des prix de l’immobilier", "Une baisse des impôts", "Une hausse des salaires", "Une bonne récolte"], c: 0,
+          e: "Les emprunteurs fragiles doivent vendre, les prix chutent, et la panique se propage." }
+      ],
       duree: 5,
       html: `
 <h3>Le calme avant la tempête</h3>
@@ -146,7 +157,7 @@ ${regimes}
       objections: "Une théorie difficile à tester, les bons booms, l’aléa moral, la finance de l’ombre.",
       ecoles: "Keynes, Fisher, Schumpeter, Hayek, Friedman, Bernanke, Diamond et Dybvig.",
       source: "Minsky, 1992 : comment la prospérité prolongée transforme la structure financière.",
-      quiz: "Cinq questions corrigées et une question sur le volant anticyclique suisse.",
+      quiz: "Six questions corrigées et une question sur le volant anticyclique suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -266,6 +277,9 @@ ${deux}
         o: ["Elle ignore les machines", "Elle repose sur la valeur-travail, alors que les prix s’expliquent par l’offre, la demande et la rareté de tous les facteurs", "Elle surestime les salaires", "Elle sous-estime le rôle des syndicats dans la fixation des salaires"], c: 1,
         e: "Depuis la révolution marginaliste, la valeur n’est plus rattachée au seul travail ; le profit est vu comme la rémunération du capital, du risque et du temps." }
     ],
+    transfert: { q: "Un pays ramène la journée de travail de 12 à 8 heures sans changer les salaires, qui correspondent toujours à six heures de travail. Selon le raisonnement de Marx, qu’arrive-t-il à la plus-value par ouvrier ?",
+      o: ["Elle diminue, car le surtravail passe de six à deux heures", "Elle augmente", "Elle ne change pas", "Elle disparaît entièrement"], c: 0,
+      e: "C’est pourquoi la durée de la journée a été au cœur des luttes ouvrières du XIXe siècle." },
     ouverte: {
       q: "Dans une économie de services comme la Suisse, où une grande partie de la valeur vient de la banque, de la pharmacie ou du conseil, la notion de plus-value garde-t-elle un sens ?",
       r: "On peut défendre les deux positions. Un marxiste soulignera que le salarié d’une banque ou d’un laboratoire produit aussi plus de valeur qu’il n’en reçoit, et que la part élevée des profits dans ces secteurs illustre l’appropriation du surtravail ; il notera aussi que la Suisse capte une partie de la valeur produite ailleurs, par le négoce et la finance. Un critique répondra que la valeur d’un médicament tient à la recherche, aux brevets, au capital investi et au risque, et qu’il est impossible de la mesurer en heures de travail ; la notion de plus-value devient alors une métaphore plus qu’un outil. Entre les deux, beaucoup d’économistes retiennent la question posée par Marx, le partage de la valeur ajoutée entre salaires et profits, tout en la mesurant avec d’autres outils."
@@ -278,6 +292,14 @@ ${deux}
       ["Recherche", "Loukas Karabarbounis et Brent Neiman, « The Global Decline of the Labor Share », Quarterly Journal of Economics, 2014 ; Nobuo Okishio, « Technical Changes and the Rate of Profit », 1961."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Marx, l’ouvrier produit l’équivalent de son salaire en six heures et travaille douze heures. Que produit-il pendant les six autres ?",
+          o: ["Une valeur que le patron garde sans la payer : la plus-value", "Rien, puisqu’il est déjà payé", "Un second salaire, qui lui est versé", "Des impôts pour l’État"], c: 0,
+          e: "C’est le surtravail, source du profit selon Marx." },
+        { q: "Selon la notice, quelle question posée par Marx reste centrale aujourd’hui ?",
+          o: ["Comment la richesse produite se partage entre salaires et profits", "Comment fixer le prix de l’or", "Comment supprimer la monnaie", "Comment augmenter la population"], c: 0,
+          e: "Depuis les années 1980, la part des salaires a baissé dans de nombreux pays." }
+      ],
       duree: 5,
       html: `
 <h3>D’où vient le profit ?</h3>
@@ -299,7 +321,7 @@ ${journee}
       objections: "La valeur-travail, la transformation, l’entrepreneur et le risque, les prédictions démenties.",
       ecoles: "Smith et Ricardo, les socialistes ricardiens, Clark, Robinson, Sraffa, Piketty.",
       source: "Marx et l’image du capital vampire.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur l’économie suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur l’économie suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

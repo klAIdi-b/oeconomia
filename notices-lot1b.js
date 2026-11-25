@@ -119,6 +119,9 @@ ${weimar}
         o: ["L’inflation est toujours monétaire", "Un indicateur cesse d’être fiable dès qu’il devient une cible de politique", "La monnaie est neutre à long terme", "Les banques créent la monnaie en accordant des crédits"], c: 1,
         e: "Dès qu’un agrégat monétaire est ciblé, les comportements s’adaptent et sa relation avec l’inflation se dérègle ; c’est l’une des raisons de l’abandon des cibles monétaires." }
     ],
+    transfert: { q: "À la fin des années 2000, la banque centrale du Zimbabwe finance massivement l’État en créant de la monnaie, alors que la production s’effondre. Que prévoit la théorie quantitative ?",
+      o: ["Une hausse des prix extrêmement rapide", "Une baisse des prix", "Une hausse de la production", "Aucun effet sur les prix"], c: 0,
+      e: "Plus de monnaie pour moins de biens : le pays a connu l’une des pires hyperinflations de l’histoire, en 2007-2008." },
     ouverte: {
       q: "Le franc suisse a perdu beaucoup moins de pouvoir d’achat que la plupart des monnaies depuis un siècle. Comment la théorie quantitative peut-elle l’expliquer, et que laisse-t-elle de côté ?",
       r: "La théorie quantitative suggère que la Banque nationale suisse a fait croître la monnaie à peu près au rythme de la production réelle, et que les finances publiques suisses, relativement saines, n’ont jamais exigé un financement monétaire des déficits. Mais d’autres éléments comptent : l’indépendance et la crédibilité de la BNS, qui ancrent les anticipations ; le statut de valeur refuge du franc, qui attire les capitaux et l’apprécie en période de crise, rendant les importations moins chères ; enfin, le fédéralisme et la démocratie directe, qui ont limité l’endettement public. La théorie quantitative décrit le résultat, mais les institutions expliquent pourquoi la monnaie a été gérée ainsi."
@@ -131,6 +134,14 @@ ${weimar}
       ["Recherche", "Phillip Cagan, « The Monetary Dynamics of Hyperinflation », 1956 ; George McCandless et Warren Weber, « Some Monetary Facts », 1995 ; Paul De Grauwe et Magdalena Polan, « Is Inflation Always and Everywhere a Monetary Phenomenon? », 2005."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi le prix du pain a-t-il explosé en Allemagne en 1923 ?",
+          o: ["Parce que le gouvernement imprimait des billets pour payer ses dépenses", "Parce que les récoltes de blé avaient été détruites", "Parce que les boulangers s’étaient entendus", "Parce que l’Allemagne importait trop"], c: 0,
+          e: "Plus le gouvernement imprimait, plus chaque billet perdait de sa valeur." },
+        { q: "Que dit l’équation M × V = P × Q si V et Q ne changent pas ?",
+          o: ["Doubler la monnaie double les prix", "Doubler la monnaie double la production", "Les prix ne dépendent pas de la monnaie", "Doubler la monnaie divise les prix par deux"], c: 0,
+          e: "Avec une vitesse et une production fixes, toute la hausse de la monnaie passe dans les prix." }
+      ],
       duree: 5,
       html: `
 <h3>Un pain à 200 milliards</h3>
@@ -152,7 +163,7 @@ ${weimar}
       objections: "Vitesse instable, monnaie endogène, loi de Goodhart, chocs d’offre, théorie budgétaire.",
       ecoles: "Aristote et Oresme, Ricardo, Keynes, Friedman, Hayek et Cantillon, la théorie monétaire moderne.",
       source: "Hume, 1752 : la hausse des prix ne suit pas immédiatement l’afflux de monnaie.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur le franc suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur le franc suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -272,6 +283,9 @@ ${ladder}
         o: ["Parce qu’elle réduit toujours le niveau de vie moyen", "Parce que les pertes sont concentrées et visibles, et les gains dispersés et futurs", "Parce que les nouvelles entreprises paient moins d’impôts que les anciennes", "Parce qu’elle ne concerne que les grandes entreprises"], c: 1,
         e: "Ceux qui perdent leur emploi ou leur rente sont identifiables et organisés ; les bénéficiaires sont nombreux, diffus, et souvent pas encore nés." }
     ],
+    transfert: { q: "Les applications de réservation de voitures avec chauffeur se répandent dans les grandes villes du monde. Comment Schumpeter décrirait-il ce phénomène ?",
+      o: ["Une innovation qui crée de nouveaux services et fragilise les compagnies de taxis traditionnelles", "Une simple baisse de prix entre services identiques", "Une politique publique de l’emploi", "Un monopole qui empêche toute innovation"], c: 0,
+      e: "Une nouvelle organisation du service remplace en partie l’ancienne : c’est la destruction créatrice." },
     ouverte: {
       q: "La crise horlogère des années 1970-1980 a fait disparaître une grande partie des emplois de l’Arc jurassien, avant la renaissance de l’industrie. Que peut faire une région pour traverser une vague de destruction créatrice ?",
       r: "L’exemple suisse suggère plusieurs leviers. Conserver et transformer les compétences : le savoir-faire en micromécanique a servi à la Swatch, mais aussi aux technologies médicales et à la microtechnique. Favoriser la réorganisation industrielle, ici la fusion des groupes en difficulté et l’automatisation. Accompagner les travailleurs par l’assurance chômage, la formation continue et l’apprentissage, qui facilite les reconversions. Enfin, ne pas chercher à protéger l’ancien produit à tout prix : la renaissance est venue d’une innovation, non du sauvetage de la montre mécanique bon marché. Un sceptique rappellera que tous les travailleurs licenciés n’en ont pas profité, et que la reprise a pris plus d’une décennie."
@@ -284,6 +298,14 @@ ${ladder}
       ["Recherche", "Philippe Aghion et Peter Howitt, « A Model of Growth through Creative Destruction », Econometrica, 1992 ; Aghion et al., « Competition and Innovation: An Inverted-U Relationship », Quarterly Journal of Economics, 2005."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi Kodak n’a-t-il pas exploité l’appareil photo numérique qu’il avait inventé ?",
+          o: ["Pour ne pas menacer son propre marché de la pellicule", "Parce que la technique ne fonctionnait pas", "Parce qu’un concurrent détenait le brevet", "Parce que les clients n’en voulaient pas"], c: 0,
+          e: "L’entreprise a protégé son ancien marché, et l’innovation des autres l’a ruinée." },
+        { q: "Dans les années 1970, que provoque l’arrivée des montres à quartz ?",
+          o: ["La disparition d’une grande partie des emplois de l’horlogerie mécanique", "Une hausse du prix des montres mécaniques", "La fin de toute production de montres en Suisse", "Aucun effet sur l’emploi"], c: 0,
+          e: "Ceux qui perdent leur emploi ne sont pas ceux qui profitent de l’innovation." }
+      ],
       duree: 5,
       html: `
 <h3>Kodak, l’inventeur ruiné par son invention</h3>
@@ -305,7 +327,7 @@ ${cycle}
       objections: "Perdants concentrés, géants qui bloquent, direction du progrès, environnement, avenir du capitalisme.",
       ecoles: "Marx, Hayek, Keynes, Ricardo, Mokyr, Acemoglu et Robinson.",
       source: "Schumpeter, 1942 : l’impulsion fondamentale de la machine capitaliste.",
-      quiz: "Cinq questions corrigées et une question sur l’Arc jurassien.",
+      quiz: "Six questions corrigées et une question sur l’Arc jurassien.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

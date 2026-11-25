@@ -125,6 +125,9 @@ ${bagehot}
         o: ["Par des achats massifs immédiats", "Par la promesse crédible d’intervenir sans limite, qui n’a même pas eu besoin d’être utilisée", "Par une hausse des taux", "Par un plan d’austérité imposé aux pays endettés"], c: 1,
         e: "Comme le prévoit le modèle de Diamond et Dybvig, la promesse crédible suffit à rétablir l’équilibre de confiance." }
     ],
+    transfert: { q: "En mars 2023, une banque régionale américaine voit ses clients retirer des milliards en une journée, alerte relayée par les réseaux sociaux. Que recommanderait la règle de Bagehot pour éviter la contagion ?",
+      o: ["Que la banque centrale prête largement, contre de bonnes garanties, aux banques solides menacées par la panique", "Que la banque centrale refuse toute aide pour punir les banques", "Que l’État interdise les retraits pendant un an", "Que les clients soient obligés de garder leurs dépôts"], c: 0,
+      e: "Il s’agit de la faillite de Silicon Valley Bank : les autorités ont garanti les dépôts et ouvert des facilités de prêt pour arrêter la contagion." },
     ouverte: {
       q: "Après la disparition de Credit Suisse, UBS est devenue une banque dont le bilan dépasse le double du PIB suisse. La Suisse peut-elle encore être son prêteur en dernier ressort ?",
       r: "C’est l’une des grandes questions de politique économique suisse. La BNS peut créer des francs sans limite et donc fournir des liquidités en francs ; mais une grande part des engagements d’UBS est en dollars, et la BNS dépend pour cela des lignes d’échange avec la Réserve fédérale. Surtout, si la banque devenait insolvable et non seulement illiquide, les pertes potentielles pourraient dépasser ce que la Confédération peut assumer. Le Conseil fédéral a donc proposé d’exiger d’UBS beaucoup plus de fonds propres, notamment pour ses filiales étrangères, afin que les actionnaires et créanciers supportent les pertes. UBS juge ces exigences excessives et fait valoir qu’elles nuiraient à sa compétitivité, voire la pousseraient à déplacer son siège. Le débat oppose la sécurité du contribuable suisse et la place d’une grande banque mondiale dans un petit pays."
@@ -137,6 +140,14 @@ ${bagehot}
       ["Recherche", "Douglas Diamond et Philip Dybvig, « Bank Runs, Deposit Insurance, and Liquidity », Journal of Political Economy, 1983 ; Henry Thornton, An Enquiry into the Nature and Effects of the Paper Credit of Great Britain, 1802."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi, en cas de panique, chaque client a-t-il intérêt à se précipiter à sa banque ?",
+          o: ["Parce qu’il craint d’arriver trop tard, quand la banque n’aura plus de liquidités", "Parce que les retraits sont rémunérés", "Parce que la banque centrale l’y oblige", "Parce que les taux d’intérêt augmentent"], c: 0,
+          e: "La panique se nourrit d’elle-même, même si la banque est saine." },
+        { q: "Pourquoi faut-il accompagner le prêteur en dernier ressort de règles strictes pour les banques ?",
+          o: ["Parce que, sûres d’être secourues, les banques risquent de devenir imprudentes", "Parce que la banque centrale manque d’argent", "Parce que les clients refusent les sauvetages", "Parce que les paniques ont disparu"], c: 0,
+          e: "C’est le dilemme de l’aléa moral." }
+      ],
       duree: 5,
       html: `
 <h3>Quand tout le monde veut son argent</h3>
@@ -158,7 +169,7 @@ ${bagehot}
       objections: "La banque libre, profits privés et pertes publiques, les limites de Bagehot, le financement des États.",
       ecoles: "Thornton, Bagehot, Friedman et Schwartz, Minsky, Diamond-Dybvig et Bernanke, Selgin et Hayek.",
       source: "Bagehot, 1873 : prêter à un taux très élevé, aussi largement que demandé.",
-      quiz: "Cinq questions corrigées et une question sur UBS.",
+      quiz: "Six questions corrigées et une question sur UBS.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -286,6 +297,9 @@ ${olson}
         o: ["Le Conseil fédéral", "Le frein à l’endettement accepté en 2001", "La BNS", "La FINMA"], c: 1,
         e: "Une règle constitutionnelle adoptée par le peuple limite la tentation des élus de s’endetter." }
     ],
+    transfert: { q: "Un pays maintient une subvention aux producteurs de sucre qui rapporte des millions à quelques centaines d’exploitants et coûte quelques euros par an à chaque consommateur. Comment Olson explique-t-il qu’elle survive ?",
+      o: ["Les producteurs, peu nombreux et très concernés, s’organisent ; les consommateurs, dispersés, ne se mobilisent pas", "Les consommateurs approuvent la subvention", "La subvention profite surtout aux consommateurs", "Le parlement ignore son existence"], c: 0,
+      e: "C’est la logique de l’action collective : les petits groupes concentrés l’emportent souvent." },
     ouverte: {
       q: "La démocratie directe suisse est-elle un bon remède aux défaillances de l’État décrites par la théorie des choix publics ?",
       r: "Plusieurs arguments plaident en ce sens. Les référendums financiers permettent aux citoyens de contrôler les dépenses, et les travaux de Feld, Kirchgässner et Frey suggèrent qu’ils limitent les dépenses et la dette sans dégrader les services. L’initiative populaire permet de mettre à l’agenda des sujets que les élus préféreraient éviter, ce qui réduit le pouvoir de ceux qui fixent l’ordre du jour. Mais la démocratie directe n’échappe pas à la logique d’Olson : les groupes bien organisés et financés, associations professionnelles, syndicats, grandes entreprises, ont plus de moyens pour lancer des initiatives et mener des campagnes. L’ignorance rationnelle s’applique aussi aux votations sur des sujets techniques, et la participation est souvent inférieure à la moitié des inscrits. Enfin, le maintien d’un soutien agricole très élevé en Suisse montre que la démocratie directe ne suffit pas à vaincre les intérêts concentrés quand ils rencontrent une sympathie populaire."
@@ -298,6 +312,14 @@ ${olson}
       ["Recherche", "James Buchanan et Gordon Tullock, The Calculus of Consent, 1962 ; Lars Feld et Gebhard Kirchgässner, « Direct Democracy, Political Culture, and the Outcome of Economic Policy », European Journal of Political Economy, 2001."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quelle hypothèse la théorie des choix publics fait-elle sur les élus et les fonctionnaires ?",
+          o: ["Ce sont des êtres humains avec leurs propres intérêts : être réélu, obtenir un budget plus important", "Ils agissent toujours pour l’intérêt général", "Ils sont parfaitement informés", "Ils n’ont aucun intérêt personnel"], c: 0,
+          e: "La théorie étudie la politique avec les outils de l’économie." },
+        { q: "Que propose Buchanan plutôt que d’espérer des dirigeants vertueux ?",
+          o: ["Des règles qui limitent les abus, comme l’équilibre budgétaire ou le référendum", "La suppression des élections", "Un gouvernement d’experts", "La nationalisation des entreprises"], c: 0,
+          e: "Des règles plutôt que des sauveurs." }
+      ],
       duree: 5,
       html: `
 <h3>La politique sans illusions</h3>
@@ -319,7 +341,7 @@ ${olson}
       objections: "Le vote désintéressé, le pessimisme auto-réalisateur, Ostrom, le coût des règles rigides.",
       ecoles: "Condorcet et Arrow, Wicksell, l’école de Virginie, Stigler, Frey, Ostrom et Sen.",
       source: "Madison, 1788 : si les hommes étaient des anges…",
-      quiz: "Cinq questions corrigées et une question sur la démocratie directe.",
+      quiz: "Six questions corrigées et une question sur la démocratie directe.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

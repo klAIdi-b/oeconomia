@@ -126,6 +126,9 @@ ${mecanismes}
         o: ["Parce qu’il réduit les impôts", "Parce qu’il garde les salariés liés à leur entreprise et préserve leurs compétences", "Parce qu’il augmente les salaires", "Parce qu’il permet aux entreprises de licencier plus facilement"], c: 1,
         e: "On évite la rupture du lien d’emploi et la perte de capital humain." }
     ],
+    transfert: { q: "Pendant la crise de 2020, l’Allemagne et plusieurs autres pays paient une partie des salaires pour que les entreprises gardent leurs employés au lieu de les licencier. Quel risque cherchent-ils surtout à éviter ?",
+      o: ["Que des chômeurs de longue durée perdent leurs compétences et leurs contacts, et que le chômage reste élevé après la crise", "Que les salaires montent trop vite", "Que les entreprises embauchent trop", "Que l’inflation disparaisse"], c: 0,
+      e: "Le chômage partiel garde les salariés liés à leur entreprise et limite l’hystérèse." },
     ouverte: {
       q: "Le chômage partiel a protégé l’emploi suisse en 2020. Peut-il aussi freiner l’adaptation de l’économie en maintenant des emplois condamnés ?",
       r: "C’est le principal reproche fait au chômage partiel. Dans une crise temporaire, comme la pandémie, il évite des licenciements inutiles et préserve les compétences, ce qui limite l’hystérèse et permet une reprise rapide. Mais si le choc est durable, s’il touche un secteur en déclin ou une entreprise non viable, le chômage partiel peut retarder la réallocation des salariés vers des activités d’avenir, et maintenir artificiellement des emplois sans avenir. C’est pourquoi il est limité dans le temps, en Suisse en principe à douze mois sur deux ans en temps normal, et soumis à la condition que la perte de travail soit temporaire et inévitable. Les études sur la Suisse et l’Allemagne concluent en général que ses bénéfices l’emportent nettement en crise conjoncturelle, mais que sa prolongation doit être surveillée de près."
@@ -138,6 +141,14 @@ ${mecanismes}
       ["Recherche", "Olivier Blanchard et Lawrence Summers, « Hysteresis and the European Unemployment Problem », NBER Macroeconomics Annual, 1986 ; Valerie Cerra et Sweta Saxena, « Growth Dynamics: The Myth of Economic Recovery », American Economic Review, 2008."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que veut dire l’image de la balle qui ne retombe pas au fond du bol ?",
+          o: ["Qu’après une crise, l’économie ne revient pas forcément à son état d’avant", "Que les crises n’ont aucun effet durable", "Que la croissance est toujours régulière", "Que les prix remontent toujours"], c: 0,
+          e: "C’est l’hystérèse : un choc temporaire laisse des traces durables." },
+        { q: "Pourquoi les jeunes qui terminent leurs études en pleine crise sont-ils pénalisés ?",
+          o: ["Ils gagnent moins pendant une dizaine d’années", "Ils gagnent plus, car il y a moins de concurrence", "Ils ne sont pas affectés", "Ils retrouvent aussitôt le même salaire que les autres"], c: 0,
+          e: "Un mauvais départ laisse des cicatrices sur toute une carrière." }
+      ],
       duree: 5,
       html: `
 <h3>Une crise qui laisse des traces</h3>
@@ -159,7 +170,7 @@ ${trajets}
       objections: "Chômage structurel, tendances préexistantes, risque d’inflation, mesure difficile.",
       ecoles: "Friedman et Phelps, Blanchard et Summers, Lindbeck et Snower, Ball, Cerra et Saxena, Yellen.",
       source: "Yellen, 2016 : une économie sous pression pour réparer les dégâts.",
-      quiz: "Cinq questions corrigées et une question sur le chômage partiel.",
+      quiz: "Six questions corrigées et une question sur le chômage partiel.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -276,6 +287,9 @@ ${fonctions}
         o: ["Une cryptomonnaie", "Une monnaie complémentaire créée en 1934 par des entrepreneurs suisses et toujours utilisée entre PME", "Une monnaie émise par la BNS pour les entreprises", "Un impôt fédéral"], c: 1,
         e: "Son usage augmente en récession, ce qui en fait un amortisseur de crise." }
     ],
+    transfert: { q: "Dans un pays où l’inflation atteint 100 % par an, les habitants épargnent en dollars et fixent les loyers en dollars, tout en payant leurs courses en monnaie locale. Quelles fonctions la monnaie locale a-t-elle perdues ?",
+      o: ["Celles de réserve de valeur et, en partie, d’unité de compte", "Celle d’intermédiaire des échanges seulement", "Aucune", "Toutes les trois"], c: 0,
+      e: "Une monnaie qui perd vite sa valeur ne sert plus à épargner ni à mesurer les prix durablement." },
     ouverte: {
       q: "La BNS devrait-elle émettre un franc numérique accessible à tous les ménages, comme une sorte de billet électronique ?",
       r: "La BNS a mené des expériences de monnaie numérique de banque centrale, notamment le projet Helvetia, mais seulement pour les transactions entre institutions financières, et elle s’est jusqu’ici montrée réservée sur une version pour le grand public. Les partisans d’un franc numérique de détail font valoir qu’avec le déclin de l’argent liquide, le public n’aura bientôt plus accès à une monnaie émise par la banque centrale, seulement à des dépôts bancaires, et qu’une monnaie publique numérique préserverait la souveraineté face aux géants technologiques et aux cryptomonnaies. Les opposants craignent qu’en période de crise, les ménages retirent massivement leurs dépôts bancaires vers le franc numérique, sûr, ce qui fragiliserait les banques et leur capacité de prêter. Il faudrait alors limiter les montants détenus. La question touche directement aux fonctions de la monnaie et au rôle respectif de la banque centrale et des banques dans sa création."
@@ -288,6 +302,14 @@ ${fonctions}
       ["Recherche", "Carl Menger, « On the Origin of Money », Economic Journal, 1892 ; Richard Radford, « The Economic Organisation of a P.O.W. Camp », Economica, 1945."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi tout le monde accepte-t-il un billet qui coûte quelques centimes à fabriquer ?",
+          o: ["Parce que chacun croit que les autres l’accepteront aussi : la monnaie est une convention", "Parce qu’il est garanti en or", "Parce que son papier est précieux", "Parce que la loi oblige à le garder"], c: 0,
+          e: "La monnaie repose sur la confiance." },
+        { q: "Que montre l’exemple des cigarettes dans les camps de prisonniers ?",
+          o: ["Qu’une monnaie peut apparaître spontanément quand les échanges en ont besoin", "Que fumer était interdit", "Que le troc est plus efficace que la monnaie", "Que les prisonniers n’échangeaient rien"], c: 0,
+          e: "Les cigarettes servaient à mesurer les prix, à payer et à garder de la valeur." }
+      ],
       duree: 5,
       html: `
 <h3>Un bout de papier qui vaut 100 francs</h3>
@@ -309,7 +331,7 @@ ${fonctions}
       objections: "Fonctions et nature de la monnaie, le mythe du troc, la neutralité, la monnaie privée.",
       ecoles: "Aristote, Jevons et Menger, Knapp, Keynes, Friedman, Hayek, Graeber, Aglietta et Orléan.",
       source: "Aristote : la monnaie existe par la loi, non par nature.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur le franc numérique.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur le franc numérique.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

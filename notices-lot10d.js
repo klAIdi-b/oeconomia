@@ -127,6 +127,9 @@ ${triangle}
         o: ["Parce que l’inflation suisse augmente pendant les crises", "Parce que les investisseurs le jugent sûr et en achètent", "Parce que les touristes viennent plus nombreux", "Parce que les taux suisses sont très élevés"], c: 1,
         e: "Stabilité politique, faible inflation et finances solides en font une valeur refuge." }
     ],
+    transfert: { q: "Supposons que le yen japonais perde 30 % de sa valeur face au dollar. Qu’en attend-on pour un constructeur automobile japonais qui vend aux États-Unis ?",
+      o: ["Ses voitures deviennent moins chères en dollars, ou plus rentables à prix inchangé", "Ses voitures deviennent plus chères en dollars", "Aucun effet, puisque ses prix sont fixés en yens", "Il doit fermer ses usines au Japon"], c: 0,
+      e: "Une monnaie qui se déprécie avantage les exportateurs : il faut moins de dollars pour acheter un même prix en yens." },
     ouverte: {
       q: "Un franc fort est-il plutôt une chance ou un problème pour la Suisse ?",
       r: "Le franc fort a des gagnants et des perdants. Il profite aux consommateurs, qui paient moins cher les produits importés, l’énergie et les voyages, et il aide à garder une inflation faible : en 2022, l’inflation suisse est restée bien en dessous de celle de la zone euro. Il reflète aussi la confiance dans le pays et pousse les entreprises à gagner en productivité. Mais il pèse sur l’industrie d’exportation, le tourisme et le commerce de détail près des frontières, qui perdent des clients ou doivent réduire leurs marges. Des emplois industriels peuvent être déplacés à l’étranger. La BNS a longtemps cherché un équilibre en intervenant sur le marché des changes, au prix d’un bilan très exposé aux marchés et de critiques venues des États-Unis. La réponse dépend du point de vue : celui du consommateur, du salarié de l’industrie, de l’épargnant ou du touriste, et du rythme auquel le franc s’apprécie, plus difficile à absorber quand il est brutal."
@@ -140,6 +143,14 @@ ${triangle}
       ["Recherche", "Rudiger Dornbusch, « Expectations and Exchange Rate Dynamics », Journal of Political Economy, 1976."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quand le franc s’apprécie, qui en profite directement ?",
+          o: ["Les Suisses qui voyagent à l’étranger ou achètent des produits importés", "Les hôtels suisses qui accueillent des touristes européens", "Les fabricants suisses qui exportent", "Personne"], c: 0,
+          e: "Avec un franc plus fort, il faut moins de francs pour payer en euros ou en dollars." },
+        { q: "Que signifie « 1 euro = 0,95 franc » ?",
+          o: ["Il faut 0,95 franc pour obtenir un euro", "Il faut 0,95 euro pour obtenir un franc", "L’euro vaut plus que le franc", "Le franc a perdu 5 % en un an"], c: 0,
+          e: "Un euro coûte moins d’un franc : le franc vaut un peu plus que l’euro." }
+      ],
       duree: 5,
       html: `
 <h3>Combien vaut un franc ?</h3>
@@ -159,7 +170,7 @@ ${marche}
       objections: "Des marchés trop volatils, fixer ou flotter, la guerre des monnaies.",
       ecoles: "Hume et Ricardo, Cassel, Keynes, Friedman, Mundell et Fleming, Dornbusch et Krugman.",
       source: "Une monnaie vaut ce qu’elle permet d’acheter.",
-      quiz: "Cinq questions corrigées et une question sur le franc fort.",
+      quiz: "Six questions corrigées et une question sur le franc fort.",
       lectures: "Six lectures classées par niveau."
     }
   };

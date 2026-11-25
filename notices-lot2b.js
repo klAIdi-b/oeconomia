@@ -107,6 +107,9 @@ ${pigou}
         o: ["En l’appliquant uniquement aux entreprises", "En redistribuant une large part de son produit à la population", "En exonérant le mazout de chauffage", "En l’indexant sur les salaires"], c: 1,
         e: "Environ deux tiers des recettes sont reversés, notamment par une réduction des primes d’assurance maladie : le signal-prix subsiste, mais le ménage moyen n’est pas appauvri." }
     ],
+    transfert: { q: "Une compagnie aérienne fixe ses prix selon le carburant, les salaires et les taxes d’aéroport, mais ne paie rien pour les émissions de CO₂ de ses vols. Que prévoit l’analyse des externalités ?",
+      o: ["Les vols sont trop bon marché pour la société, et il y en a plus que ce qui serait souhaitable", "Il y a trop peu de vols", "Le prix reflète exactement le coût pour la société", "Les passagers paient déjà le coût du climat"], c: 0,
+      e: "Le coût privé est inférieur au coût social : le marché produit trop." },
     ouverte: {
       q: "Les vols en avion ne sont pas soumis à la taxe CO₂ suisse sur les combustibles. Une taxe sur les billets d’avion serait-elle une bonne taxe pigouvienne ?",
       r: "Du point de vue de Pigou, une taxe sur les billets peut corriger une externalité réelle, puisque chaque vol émet du CO₂ dont le dommage n’est pas payé. Elle serait plus précise si elle dépendait de la distance et du type d’avion, donc des émissions réelles. Plusieurs difficultés apparaissent cependant : le risque que les passagers partent d’aéroports voisins non taxés (Bâle-Mulhouse, Milan, Munich), ce qui est une forme de fuite de carbone ; l’effet sur la répartition, qui dépend de qui voyage le plus (souvent les ménages aisés, ce qui rend la taxe plutôt progressive) ; et l’usage des recettes, redistribution ou financement de la transition. Le Parlement suisse avait adopté une telle taxe dans la loi sur le CO₂, mais celle-ci a été rejetée en votation populaire en 2021, ce qui montre que l’acceptabilité politique compte autant que l’efficacité économique."
@@ -119,6 +122,14 @@ ${pigou}
       ["Recherche", "Martin Weitzman, « Prices vs. Quantities », Review of Economic Studies, 1974 ; A. Denny Ellerman et al., Markets for Clean Air: The U.S. Acid Rain Program, 2000."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi le brouillard de Londres de 1952 est-il un exemple d’externalité ?",
+          o: ["Chacun payait son charbon, mais personne ne payait pour l’air qu’il polluait", "Parce que le charbon était trop cher", "Parce que l’État avait interdit le charbon", "Parce que le brouillard était un phénomène naturel"], c: 0,
+          e: "Le dommage causé aux autres n’était compté dans aucun prix." },
+        { q: "Pourquoi l’apiculteur dont les abeilles pollinisent les vergers voisins en fait-il « moins qu’il ne le faudrait » ?",
+          o: ["Parce qu’il n’est pas payé pour le service qu’il rend aux voisins", "Parce que les abeilles coûtent trop cher", "Parce que les arboriculteurs le paient trop", "Parce que le miel est lourdement taxé"], c: 0,
+          e: "C’est une externalité positive : le marché en produit trop peu." }
+      ],
       duree: 5,
       html: `
 <h3>Le brouillard qui a tué Londres</h3>
@@ -140,7 +151,7 @@ ${pigou}
       objections: "Mesurer le dommage, effets sur la répartition, fuites de carbone, défaillances de l’État.",
       ecoles: "Marshall, Samuelson, Ostrom, Coase, Hayek, l’économie écologique.",
       source: "Pigou, 1920 : l’écart entre produit net privé et produit net social.",
-      quiz: "Cinq questions corrigées et une question sur la taxation des billets d’avion.",
+      quiz: "Six questions corrigées et une question sur la taxation des billets d’avion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -250,6 +261,9 @@ ${phillips}
         o: ["La courbe de Phillips n’existe pas", "La courbe est non linéaire : plate quand le marché du travail est détendu, pentue quand il est très tendu", "L’inflation dépend uniquement de la monnaie", "La courbe est devenue verticale, même à court terme"], c: 1,
         e: "Quand les emplois vacants dépassent le nombre de chômeurs, comme en 2021-2022, une petite baisse du chômage s’accompagne d’une forte hausse de l’inflation." }
     ],
+    transfert: { q: "Un gouvernement veut ramener le chômage de 5 % à 3 % en poussant durablement l’inflation de 2 % à 6 %. Selon Friedman, que se passera-t-il à long terme ?",
+      o: ["Le chômage reviendra vers son niveau de départ, et l’inflation restera élevée", "Le chômage restera à 3 %, sans autre effet", "L’inflation reviendra d’elle-même à 2 %", "Le chômage tombera à zéro"], c: 0,
+      e: "Une fois l’inflation anticipée, les salaires s’ajustent et l’effet sur l’emploi disparaît." },
     ouverte: {
       q: "La BNS vise une inflation inférieure à 2 %, tandis que la Banque centrale européenne vise 2 %. Si l’inflation suisse tombe à 0 % avec un chômage de 3 %, la BNS doit-elle chercher à relancer l’économie ?",
       r: "Selon la courbe de Phillips moderne, une inflation nulle avec un chômage proche de son niveau habituel ne signale pas de surchauffe, et la stabilité des prix telle que la BNS la définit est respectée. Plusieurs arguments plaident pourtant pour la vigilance : une inflation proche de zéro laisse peu de marge avant la déflation, qui alourdit les dettes ; elle limite la capacité de la banque centrale à baisser les taux réels en cas de crise ; et elle peut refléter un franc très fort qui pèse sur l’industrie exportatrice. À l’inverse, relancer sans tension sur le marché du travail risque d’alimenter des bulles, notamment immobilières (voir la notice sur l’instabilité financière). La réponse dépend donc des causes : un franc fort ou une demande faible appellent des réponses différentes. Dans la pratique, la BNS a souvent utilisé les interventions sur le marché des changes plutôt que les seuls taux d’intérêt."
@@ -262,6 +276,14 @@ ${phillips}
       ["Recherche", "Paul Samuelson et Robert Solow, « Analytical Aspects of Anti-Inflation Policy », 1960 ; Pierpaolo Benigno et Gauti Eggertsson, « It’s Baaack: The Surge in Inflation in the 2020s and the Return of the Non-Linear Phillips Curve », 2023."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Dans les années 1960, quel choix les gouvernements croient-ils pouvoir faire ?",
+          o: ["Un peu plus d’inflation contre un peu moins de chômage", "Moins d’impôts contre plus de croissance", "Plus d’exportations contre moins d’importations", "Des prix fixes contre des salaires fixes"], c: 0,
+          e: "Friedman montrera que ce choix est une illusion à long terme." },
+        { q: "Qu’est-ce qui a surpris les économistes en 2021-2022 ?",
+          o: ["Avec un marché du travail très tendu, l’inflation est repartie brusquement", "Le chômage a dépassé 25 %", "Les prix ont baissé partout", "Les salaires ont été gelés partout"], c: 0,
+          e: "La relation semble surtout exister quand l’économie est très tendue." }
+      ],
       duree: 5,
       html: `
 <h3>Moins de chômage, plus d’inflation ?</h3>
@@ -283,7 +305,7 @@ ${phillips}
       objections: "Anticipations rationnelles, taux naturel inobservable, relation instable, chocs d’offre.",
       ecoles: "Keynes, Samuelson et Solow, Friedman et Phelps, Lucas, nouveaux keynésiens, post-keynésiens.",
       source: "Friedman, 1967 : un arbitrage temporaire, pas d’arbitrage permanent.",
-      quiz: "Cinq questions corrigées et une question sur la politique de la BNS.",
+      quiz: "Six questions corrigées et une question sur la politique de la BNS.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

@@ -119,6 +119,9 @@ ${hysterese}` },
         o: ["L’absence de salaire minimum national", "Le système de formation professionnelle duale", "Le franc fort", "Des salaires d’apprentis subventionnés par l’État"], c: 1,
         e: "L’apprentissage, qui combine entreprise et école professionnelle, facilite le passage de la formation à l’emploi et améliore l’appariement." }
     ],
+    transfert: { q: "Après une crise de trois ans, de nombreux chômeurs de longue durée ont perdu contact avec leur métier. La croissance revient, mais le chômage reste élevé. Comment l’appelle-t-on ?",
+      o: ["L’hystérèse : la crise a fait monter le chômage naturel lui-même", "Le chômage saisonnier", "Le plein emploi", "Une simple erreur statistique"], c: 0,
+      e: "Les compétences et les contacts perdus rendent le retour à l’emploi plus difficile." },
     ouverte: {
       q: "Si le chômage naturel dépend des institutions, pourquoi tous les pays n’adoptent-ils pas les institutions des pays où il est le plus bas, comme la Suisse ou le Danemark ?",
       r: "D’abord parce que les institutions forment des ensembles cohérents : la flexicurité danoise suppose une assurance chômage généreuse financée par des impôts élevés et un haut niveau de confiance ; l’apprentissage suisse suppose des entreprises disposées à former et des branches organisées. Importer un élément isolé peut échouer. Ensuite parce que chaque réforme fait des perdants identifiables, souvent les salariés en place ou les chômeurs actuels, qui s’y opposent. Enfin parce que les sociétés n’ont pas les mêmes préférences : certaines acceptent un chômage plus élevé en échange d’une protection plus forte de l’emploi ou d’inégalités plus faibles. L’économie peut éclairer ces arbitrages, pas les trancher seule."
@@ -131,6 +134,14 @@ ${hysterese}` },
       ["Recherche", "Olivier Blanchard et Lawrence Summers, « Hysteresis and the European Unemployment Problem », NBER Macroeconomics Annual, 1986 ; Olivier Blanchard et Justin Wolfers, « The Role of Shocks and Institutions in the Rise of European Unemployment », Economic Journal, 2000."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi y a-t-il toujours des chômeurs, même quand l’économie va très bien ?",
+          o: ["Parce que trouver le bon poste prend du temps : jeunes diplômés, changements de métier, fermetures", "Parce que les salaires sont trop élevés", "Parce que l’État limite l’embauche", "Parce que personne ne veut travailler"], c: 0,
+          e: "Ce chômage de recherche existe toujours : c’est une partie du taux naturel." },
+        { q: "Selon Friedman, que faut-il faire pour réduire durablement le chômage ?",
+          o: ["Agir sur le marché du travail : formation, rencontre entre chômeurs et entreprises, règles d’embauche", "Injecter de l’argent dans l’économie", "Augmenter fortement l’inflation", "Fermer les frontières"], c: 0,
+          e: "Relancer la demande au-delà du taux naturel ne donne que de l’inflation." }
+      ],
       duree: 5,
       html: `
 <h3>Il y a toujours des chômeurs</h3>
@@ -152,7 +163,7 @@ ${hysterese}
       objections: "Un concept inobservable, un mot trompeur, la demande à long terme, le coût des réformes.",
       ecoles: "Friedman et Phelps, Keynes, Diamond-Mortensen-Pissarides, Blanchard et Summers, Lucas, post-keynésiens.",
       source: "Friedman, 1968 : la définition du taux naturel.",
-      quiz: "Cinq questions corrigées et une question sur les modèles nationaux.",
+      quiz: "Six questions corrigées et une question sur les modèles nationaux.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -258,6 +269,9 @@ ${verres}
         o: ["Il faut supprimer l’impôt", "Un impôt progressif minimise la perte totale de bien-être", "Les riches doivent payer moins", "L’impôt doit être le même pour tous"], c: 1,
         e: "Si un franc coûte moins de satisfaction à un riche qu’à un pauvre, taxer davantage les hauts revenus réduit le sacrifice total ; l’argument suppose cependant des comparaisons entre personnes." }
     ],
+    transfert: { q: "Une étudiante a révisé huit heures pour un examen. Selon le raisonnement marginaliste, comment décider si elle doit réviser une neuvième heure ?",
+      o: ["En comparant ce que cette heure supplémentaire lui rapportera à ce qu’elle lui coûte", "En calculant la moyenne de ce que lui ont rapporté les huit premières heures", "En révisant toujours le plus possible", "En s’arrêtant dès qu’elle a dépassé la moyenne de sa classe"], c: 0,
+      e: "Ce sont les comparaisons à la marge, et non les moyennes, qui guident les bonnes décisions." },
     ouverte: {
       q: "De nombreuses communes suisses facturent l’eau selon un tarif unique par mètre cube. Faudrait-il, au regard de l’utilité marginale, adopter des tarifs progressifs par tranches ?",
       r: "L’utilité marginale décroissante plaide pour une tarification par tranches : les premiers mètres cubes, essentiels, peuvent être bon marché, tandis que les usages moins nécessaires (arrosage, piscines) sont facturés plus cher, ce qui encourage les économies là où elles coûtent le moins de bien-être. La Suisse étant riche en eau, l’enjeu de rareté est cependant moins fort que dans les régions sèches, même si les sécheresses estivales récentes l’ont rendu plus visible. Plusieurs objections apparaissent : les tarifs par ménage pénalisent les familles nombreuses si l’on ne tient pas compte de la taille du foyer ; le coût du réseau est essentiellement fixe, ce qui justifie une taxe de base ; et la complexité administrative a un coût. Un économiste conclura que la tarification doit refléter à la fois la valeur marginale de l’eau, son coût et des considérations d’équité."
@@ -270,6 +284,14 @@ ${verres}
       ["Recherche", "Mark Blaug, « Was There a Marginal Revolution? », History of Political Economy, 1972 ; Betsey Stevenson et Justin Wolfers, « Economic Growth and Subjective Well-Being », Brookings Papers, 2008."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi le cinquième verre d’eau du randonneur est-il à peine utile ?",
+          o: ["Parce que la satisfaction apportée par chaque verre supplémentaire diminue", "Parce que l’eau est de moins bonne qualité", "Parce que l’eau coûte plus cher", "Parce que le randonneur n’a plus soif dès le premier verre"], c: 0,
+          e: "C’est l’utilité marginale décroissante." },
+        { q: "Selon les marginalistes, de quoi dépend la valeur d’un bien ?",
+          o: ["Du désir qu’on en a et de sa rareté", "Du travail qu’il a coûté", "De son poids", "Du prix fixé par l’État"], c: 0,
+          e: "La valeur ne dépend plus du travail, mais de l’utilité de la dernière unité." }
+      ],
       duree: 5,
       html: `
 <h3>L’eau et le diamant</h3>
@@ -291,7 +313,7 @@ ${verres}
       objections: "La mesure de l’utilité, la critique marxiste, les préférences façonnées, la rationalité, Sraffa.",
       ecoles: "Aristote, Say, Jevons-Menger-Walras, Marshall, Mises, Kahneman.",
       source: "Jevons, 1871 : la valeur dépend entièrement de l’utilité.",
-      quiz: "Cinq questions corrigées et une question sur la tarification de l’eau.",
+      quiz: "Six questions corrigées et une question sur la tarification de l’eau.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

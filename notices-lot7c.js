@@ -123,6 +123,9 @@ ${tatonnement}
         o: ["Que les planificateurs seraient corrompus", "Que le problème est de rassembler une connaissance dispersée, que seuls les prix de marché transmettent", "Que le socialisme est immoral", "Que l’équilibre n’existe pas"], c: 1,
         e: "Pour Hayek, les prix sont un système de communication de l’information." }
     ],
+    transfert: { q: "Un pays impose une forte taxe sur l’acier importé. Pourquoi une analyse d’équilibre général est-elle utile pour en mesurer les effets ?",
+      o: ["Parce que la taxe touche aussi les fabricants de voitures, la construction, les salaires et les autres marchés liés à l’acier", "Parce que seul le marché de l’acier est concerné", "Parce que les taxes n’ont jamais d’effet sur les autres marchés", "Parce que l’acier n’est utilisé par personne d’autre"], c: 0,
+      e: "Étudier un marché isolément peut faire oublier les effets en chaîne sur tous les autres." },
     ouverte: {
       q: "Les modèles d’équilibre général calculable sont utilisés pour évaluer des choix politiques suisses majeurs, comme les relations avec l’Union européenne. Faut-il leur faire confiance ?",
       r: "Ces modèles ont un avantage décisif : ils tiennent compte des effets en cascade entre secteurs, que les analyses partielles ignorent, et ils imposent une cohérence comptable, chaque franc dépensé étant un revenu quelque part. Ils permettent de comparer des scénarios de manière transparente. Mais leurs résultats dépendent fortement d’hypothèses difficiles à vérifier : élasticités de substitution entre produits suisses et étrangers, réaction de l’immigration, effets sur la productivité et l’innovation, souvent mal représentés. Ils supposent aussi en général que l’économie retrouve le plein emploi. Les chiffres doivent donc être lus comme des ordres de grandeur conditionnels, et comparés à d’autres méthodes. Le danger est de présenter un chiffre précis de perte de PIB comme une certitude, alors qu’il résulte de choix de modélisation."
@@ -135,6 +138,14 @@ ${tatonnement}
       ["Recherche", "Kenneth Arrow et Gérard Debreu, « Existence of an Equilibrium for a Competitive Economy », Econometrica, 1954 ; Gérard Debreu, Théorie de la valeur, 1959."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi une hausse du prix du pétrole ne touche-t-elle pas seulement l’essence ?",
+          o: ["Parce que les transports, l’électricité, les engrais et les plastiques en dépendent, et que tous les marchés sont liés", "Parce que l’État augmente tous les prix", "Parce que l’essence est le seul produit concerné", "Parce que les salaires montent automatiquement"], c: 0,
+          e: "C’est pourquoi il faut parfois étudier tous les marchés ensemble." },
+        { q: "Que cherchait à montrer Walras avec ses équations ?",
+          o: ["Qu’il existe des prix pour lesquels l’offre égale la demande sur tous les marchés à la fois", "Que les marchés sont toujours en crise", "Que l’État doit fixer les prix", "Que la monnaie ne sert à rien"], c: 0,
+          e: "Une version mathématique de la « main invisible », démontrée rigoureusement en 1954." }
+      ],
       duree: 5,
       html: `
 <h3>Tout est lié</h3>
@@ -156,7 +167,7 @@ ${reseau}
       objections: "Hypothèses irréalistes, temps et monnaie absents, équilibre comme fiction, idéal utile.",
       ecoles: "Quesnay, Walras et Pareto, Arrow-Debreu-McKenzie, Leontief, Scarf et SMD, Mises et Hayek.",
       source: "Walras, 1874 : la théorie des prix sous une libre concurrence hypothétique.",
-      quiz: "Cinq questions corrigées et une question sur les modèles et la politique suisse.",
+      quiz: "Six questions corrigées et une question sur les modèles et la politique suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -283,6 +294,9 @@ ${frise}` },
         o: ["Un impôt sur l’eau potable des ménages", "Une redevance payée aux collectivités de montagne pour l’utilisation de l’eau par les centrales hydroélectriques", "Une taxe sur l’eau minérale", "Une subvention aux agriculteurs"], c: 1,
         e: "Son plafond fédéral, de 110 francs par kilowatt, partage la rente de l’eau entre cantons et producteurs." }
     ],
+    transfert: { q: "Un moteur de recherche en ligne est gratuit pour ses utilisateurs, qui s’en servent pourtant chaque jour. Que montre cet exemple ?",
+      o: ["Qu’une chose peut avoir une grande valeur d’usage sans prix payé par l’utilisateur, et échapper ainsi en partie au PIB", "Que ce service n’a aucune valeur", "Que le PIB mesure parfaitement le bien-être", "Que les utilisateurs paient en réalité un prix très élevé"], c: 0,
+      e: "Beaucoup de choses très utiles n’ont pas de prix : c’est pourquoi on cherche d’autres mesures du bien-être." },
     ouverte: {
       q: "Faudrait-il inclure dans les statistiques officielles suisses la valeur du travail domestique non rémunéré, à côté du PIB ?",
       r: "L’Office fédéral de la statistique publie déjà un compte satellite du travail non rémunéré, qui montre son importance considérable, comparable en heures au travail rémunéré. Les partisans d’une plus grande visibilité soulignent que l’ignorer conduit à sous-estimer la contribution des femmes, qui en effectuent la majorité, et à mal évaluer certaines politiques : par exemple, l’ouverture de crèches fait augmenter le PIB, car un travail auparavant gratuit devient rémunéré, sans que la production réelle de soins aux enfants change autant. Les sceptiques rappellent que la valorisation de ce travail dépend de conventions discutables, comme le salaire d’un professionnel ou le salaire auquel renonce la personne, et que l’intégrer au PIB brouillerait la mesure de l’activité marchande. La solution la plus répandue consiste à publier ces comptes à côté du PIB, plutôt qu’à les y fusionner, ce qui permet de voir ce que chaque mesure éclaire."
@@ -295,6 +309,14 @@ ${frise}` },
       ["Recherche", "Robert Costanza et al., « The Value of the World’s Ecosystem Services and Natural Capital », Nature, 1997 ; Carl Menger, Principes d’économie politique, 1871, chapitres 2 et 3."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quelle distinction Adam Smith tire-t-il du paradoxe de l’eau et du diamant ?",
+          o: ["Entre la valeur d’usage, l’utilité d’une chose, et la valeur d’échange, ce qu’on obtient en la vendant", "Entre les biens publics et les biens privés", "Entre l’offre et la demande", "Entre le travail et le capital"], c: 0,
+          e: "Les deux valeurs peuvent être très différentes." },
+        { q: "Pourquoi, dans le désert, l’eau pourrait-elle valoir plus que les diamants ?",
+          o: ["Parce que l’eau y devient rare, et que le dernier litre est vital", "Parce que les diamants y sont plus abondants", "Parce que l’eau coûte plus de travail", "Parce que l’État en fixe le prix"], c: 0,
+          e: "Ce qui compte pour le prix, c’est l’utilité de la dernière unité, qui dépend de la rareté." }
+      ],
       duree: 5,
       html: `
 <h3>L’eau et le diamant</h3>
@@ -316,7 +338,7 @@ ${paradoxe}
       objections: "Une notion vague, une valeur sociale, ne pas tout monétiser, les limites du marginalisme.",
       ecoles: "Aristote, Galiani et Condillac, Smith, Ricardo et Marx, les marginalistes, Costanza, Stiglitz et Sen.",
       source: "Smith, 1776 : rien de plus utile que l’eau, mais elle ne peut presque rien acheter.",
-      quiz: "Cinq questions corrigées et une question sur le travail non rémunéré.",
+      quiz: "Six questions corrigées et une question sur le travail non rémunéré.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

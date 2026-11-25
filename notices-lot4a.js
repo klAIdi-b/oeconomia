@@ -128,6 +128,9 @@ ${transfo}
         o: ["Parce que la police l’a fermée", "Parce que les produits peu demandés s’accumulaient et que le temps nécessaire était difficile à estimer", "Parce que les bons de travail étaient falsifiés", "Parce qu’elle ne vendait que de la nourriture"], c: 1,
         e: "Évaluer les biens en heures de travail ignore la demande : les produits recherchés disparaissaient vite, les autres s’entassaient." }
     ],
+    transfert: { q: "Un tableau peint en deux heures se vend aux enchères beaucoup plus cher qu’une table qui a demandé quarante heures de travail. Qu’en conclurait un économiste marginaliste ?",
+      o: ["Que la valeur dépend du désir qu’on a du bien et de sa rareté, pas seulement du travail", "Que le prix du tableau est une erreur du marché", "Que le travail du peintre vaut vingt fois plus", "Que la table aurait dû coûter vingt fois plus"], c: 0,
+      e: "C’est l’une des raisons pour lesquelles la plupart des économistes ont abandonné la valeur-travail à partir des années 1870." },
     ouverte: {
       q: "Une heure d’infirmière, d’enseignante et de banquier d’affaires sont rémunérées très différemment en Suisse. La théorie de la valeur-travail permet-elle de dire si ces écarts sont justes ?",
       r: "La valeur-travail, au sens de Marx, compterait le travail qualifié comme un multiple du travail simple, en fonction notamment du temps de formation ; elle pourrait justifier certains écarts, mais difficilement ceux observés, qui dépassent de loin les différences de formation. L’économie marginaliste répond que les salaires reflètent la productivité marginale et la rareté des compétences, ce qui expliquerait les écarts sans juger de leur justice. Plusieurs économistes contemporains objectent que les salaires dépendent aussi du pouvoir de négociation, des institutions et de la valeur sociale du travail, que le marché mesure mal, comme l’a montré la pandémie en révélant l’importance de métiers peu payés. Aucune théorie de la valeur ne tranche à elle seule la question morale ; elles aident à distinguer ce qui relève de la productivité, de la rareté et du rapport de force."
@@ -140,6 +143,14 @@ ${transfo}
       ["Recherche", "Eugen von Böhm-Bawerk, Karl Marx and the Close of His System, 1896 ; Piero Sraffa, Production de marchandises par des marchandises, 1960 ; Paul Samuelson, « Understanding the Marxian Notion of Exploitation », Journal of Economic Literature, 1971."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Ricardo, que contient un poisson, en plus du travail du pêcheur ?",
+          o: ["Une part du travail qui a servi à fabriquer son filet", "La valeur de la mer", "Le prix fixé par le marché", "Rien d’autre"], c: 0,
+          e: "Tout bien incorpore du travail direct et du travail passé." },
+        { q: "Quelle difficulté la théorie de la valeur-travail rencontre-t-elle avec les prix réels ?",
+          o: ["Ils ne correspondent pas exactement aux quantités de travail, car le capital doit aussi être rémunéré", "Ils sont toujours égaux au travail fourni", "Ils sont fixés par l’État", "Ils ne changent jamais"], c: 0,
+          e: "Les entreprises qui utilisent beaucoup de machines doivent aussi verser un profit sur leur capital." }
+      ],
       duree: 5,
       html: `
 <h3>Le castor et le daim</h3>
@@ -161,7 +172,7 @@ ${incorporé}
       objections: "La rareté, le travail hétérogène, la transformation, le temps et le capital.",
       ecoles: "Locke, Smith, Ricardo, Marx, les marginalistes, Sraffa et Robinson.",
       source: "Smith, 1776 : la règle du travail dans l’état primitif.",
-      quiz: "Cinq questions corrigées et une question sur les écarts de salaires.",
+      quiz: "Six questions corrigées et une question sur les écarts de salaires.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -266,6 +277,9 @@ ${gravitation}
         o: ["Parce que leurs coûts de production augmentent", "Parce que les fabricants limitent volontairement l’offre et que la rareté fait partie de leur valeur", "Parce que leur prix de catalogue n’a pas suivi l’inflation", "Parce que la demande baisse"], c: 1,
         e: "C’est l’exception que Smith signalait : un monopole ou une rareté entretenue empêchent l’offre d’augmenter et le prix de redescendre." }
     ],
+    transfert: { q: "Pendant une pénurie, le prix des puces électroniques s’envole et les fabricants font des profits exceptionnels. Que prévoit le raisonnement de Smith, si la concurrence joue ?",
+      o: ["De nouvelles usines sont construites, l’offre augmente, et les prix finissent par baisser", "Les prix restent élevés pour toujours", "La demande disparaît", "Les fabricants ferment leurs usines"], c: 0,
+      e: "Les profits exceptionnels attirent de nouveaux producteurs, comme dans le transport maritime après 2021." },
     ouverte: {
       q: "Pourquoi la concurrence ne fait-elle pas baisser les prix suisses au niveau de ceux des pays voisins pour des produits identiques ?",
       r: "Une partie de l’écart correspond à un prix naturel plus élevé : salaires, loyers et coûts logistiques sont plus hauts en Suisse, et les services liés à la vente (personnel, magasins) entrent dans le prix final. Mais la gravitation vers les prix étrangers est freinée par plusieurs obstacles que Smith aurait reconnus : des fournisseurs étrangers qui fixent des prix différents selon les pays et refusent de livrer les distributeurs suisses aux conditions européennes, des contrats de distribution exclusifs, des normes techniques ou d’étiquetage spécifiques, et une agriculture protégée par des droits de douane élevés. Les importations parallèles et les achats transfrontaliers jouent le rôle de la concurrence ; les règles adoptées en 2022 contre le pouvoir de marché relatif cherchent à les faciliter. Le débat porte sur la part respective des coûts réels et des obstacles à la concurrence."
@@ -278,6 +292,14 @@ ${gravitation}
       ["Recherche", "Piero Sraffa, « The Laws of Returns under Competitive Conditions », Economic Journal, 1926 ; Jan De Loecker, Jan Eeckhout et Gabriel Unger, « The Rise of Market Power and the Macroeconomic Implications », Quarterly Journal of Economics, 2020."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi le prix du drap noir montait-il brusquement à la mort d’un membre de la famille royale ?",
+          o: ["Parce que tout le monde devait porter le deuil en même temps, et la demande s’envolait", "Parce que le coût de production du drap augmentait", "Parce que le roi fixait le prix", "Parce que les tisserands faisaient grève"], c: 0,
+          e: "Le prix de marché s’écartait du prix naturel, puis y revenait." },
+        { q: "Qu’est-ce qui ramène le prix vers son niveau naturel quand un produit se vend plus cher qu’il ne coûte ?",
+          o: ["De nouveaux producteurs se lancent, l’offre augmente, et le prix redescend", "L’État fixe un prix plafond", "Les consommateurs refusent d’acheter", "Les producteurs baissent volontairement leurs prix"], c: 0,
+          e: "C’est la « gravitation » du prix de marché autour du prix naturel." }
+      ],
       duree: 5,
       html: `
 <h3>Le drap noir</h3>
@@ -299,7 +321,7 @@ ${gravitation}
       objections: "Rendements croissants, pouvoir de marché, temps de l’ajustement, demande, école autrichienne.",
       ecoles: "Scolastiques, Cantillon, Smith, Ricardo et Marx, Marshall, Walras.",
       source: "Smith, 1776 : le prix central vers lequel gravitent les prix.",
-      quiz: "Cinq questions corrigées et une question sur les prix suisses.",
+      quiz: "Six questions corrigées et une question sur les prix suisses.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

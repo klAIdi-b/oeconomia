@@ -124,6 +124,9 @@ ${tauxBNS}` }
         o: ["Pour réduire la dette des cantons", "Pour rendre les placements en francs moins attrayants et freiner la hausse du franc", "Pour financer la Confédération", "Pour provoquer de l’inflation élevée"], c: 1,
         e: "Le franc, valeur refuge, menaçait les exportations et poussait les prix à la baisse." }
     ],
+    transfert: { q: "En 2022, l’inflation atteint environ 8 % aux États-Unis. Quelle réaction de la Réserve fédérale correspond au raisonnement de la notice ?",
+      o: ["Une forte hausse de ses taux, au risque de ralentir l’économie", "Une baisse de ses taux pour soutenir la consommation", "Un gel des prix par décret", "Des achats massifs d’actions"], c: 0,
+      e: "La Réserve fédérale a relevé son taux de près de zéro à plus de 5 % entre mars 2022 et l’été 2023." },
     ouverte: {
       q: "Les taux négatifs appliqués par la BNS de 2015 à 2022 ont-ils été une bonne politique pour la Suisse ?",
       r: "Le bilan est discuté. Pour la BNS et une partie des économistes, les taux négatifs, combinés aux interventions sur les devises, ont empêché une appréciation encore plus forte du franc après l’abandon du cours plancher. Ils ont protégé l’industrie d’exportation et le tourisme, et évité une baisse durable des prix qui aurait pesé sur l’économie. Leurs critiques soulignent les effets secondaires : des rendements très faibles pour les caisses de pension et les épargnants, des banques dont les marges se sont réduites, et une forte hausse des prix de l’immobilier, encouragée par des hypothèques bon marché (<a href=\"#c-instabilite-financiere\">voir instabilité financière</a>). D’autres rappellent que la Suisse n’avait guère le choix, dans un monde où la BCE appliquait elle aussi des taux négatifs. La réponse dépend du poids qu’on accorde à la protection de l’industrie, aux intérêts des épargnants et des locataires, et aux risques à long terme pour la stabilité financière."
@@ -137,6 +140,14 @@ ${tauxBNS}` }
       ["Recherche", "John Taylor, « Discretion versus Policy Rules in Practice », Carnegie-Rochester Conference Series on Public Policy, 1993."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi une hausse du taux directeur freine-t-elle la hausse des prix ?",
+          o: ["Parce qu’emprunter coûte plus cher, qu’on dépense moins et que la demande ralentit", "Parce que les commerçants sont obligés de baisser leurs prix", "Parce que les salaires sont gelés par la loi", "Parce que les banques ferment leurs guichets"], c: 0,
+          e: "La banque centrale ne fixe pas les prix : elle agit sur le coût de l’argent, donc sur la demande." },
+        { q: "Que signifie, pour une monnaie, être une « valeur refuge » ?",
+          o: ["En temps de crise, les investisseurs l’achètent, ce qui la fait monter", "Elle est garantie par de l’or", "Elle ne peut jamais perdre de valeur", "Elle ne sert qu’aux touristes"], c: 0,
+          e: "C’est le cas du franc suisse, du dollar ou du yen." }
+      ],
       duree: 5,
       html: `
 <h3>Le thermostat de l’économie</h3>
@@ -156,7 +167,7 @@ ${transmission}
       objections: "Indépendance et démocratie, mandat étroit ou large, effets secondaires, règles ou discrétion.",
       ecoles: "Wicksell, Keynes, Friedman, Lucas, Kydland et Prescott, Taylor et Bernanke, Kelton.",
       source: "Le mandat de la BNS dans la loi.",
-      quiz: "Cinq questions corrigées et une question sur les taux négatifs.",
+      quiz: "Six questions corrigées et une question sur les taux négatifs.",
       lectures: "Six lectures classées par niveau."
     }
   };

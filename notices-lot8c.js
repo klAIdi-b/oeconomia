@@ -123,6 +123,9 @@ ${depense}
         o: ["Oui, sans réserve", "Non : il jugeait que les contribuables ne raisonnent pas ainsi", "Il ne l’a jamais évoquée", "Il l’a démontrée mathématiquement"], c: 1,
         e: "Il formule l’équivalence en théorie, mais la juge fausse en pratique." }
     ],
+    transfert: { q: "Un gouvernement annonce une baisse d’impôts financée par un emprunt, en précisant qu’elle sera suivie d’une hausse d’impôts dans deux ans. Dans quel cas la relance aura-t-elle le moins d’effet ?",
+      o: ["Si la plupart des ménages ont de l’épargne, anticipent la hausse future et gardent l’argent", "Si la plupart des ménages vivent au jour le jour", "Si les ménages ne croient pas à la hausse future", "Si la baisse d’impôt est versée aux plus modestes"], c: 0,
+      e: "Plus les ménages raisonnent comme le suppose Barro, moins la baisse d’impôt relance la consommation." },
     ouverte: {
       q: "Le frein à l’endettement suisse repose sur l’idée que les déficits d’aujourd’hui sont les impôts de demain. L’équivalence ricardienne justifie-t-elle ou affaiblit-elle cette règle ?",
       r: "L’équivalence ricardienne joue dans les deux sens. Si elle était parfaitement vraie, la dette n’aurait aucune importance économique, puisque les ménages compenseraient tout déficit par leur épargne : une règle budgétaire serait inutile. C’est justement parce qu’elle est en grande partie fausse, parce que les citoyens sous-estiment la charge future de la dette, comme le pensait Ricardo, qu’une règle comme le frein à l’endettement peut se justifier : elle compense la myopie des électeurs et la tentation des élus de reporter les coûts sur l’avenir. Mais l’échec de l’équivalence signifie aussi que la politique budgétaire a des effets réels sur la demande, ce qui justifie des déficits temporaires en récession, que le frein autorise. Le débat porte alors sur l’équilibre entre ces deux préoccupations, et sur le traitement des investissements publics."
@@ -135,6 +138,14 @@ ${depense}
       ["Recherche", "Robert Barro, « Are Government Bonds Net Wealth? », Journal of Political Economy, 1974 ; Jonathan Parker et al., « Consumer Spending and the Economic Stimulus Payments of 2008 », American Economic Review, 2013."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon l’équivalence ricardienne, que fait un ménage qui reçoit une baisse d’impôt financée par l’emprunt ?",
+          o: ["Il met l’argent de côté, pour payer les impôts plus élevés qui viendront", "Il dépense toute la somme", "Il emprunte davantage", "Il demande une hausse de salaire"], c: 0,
+          e: "Si chacun anticipe les impôts futurs, la baisse d’impôt ne relance pas l’économie." },
+        { q: "Pourquoi l’équivalence ne tient-elle qu’en partie dans les faits ?",
+          o: ["Parce que beaucoup de ménages n’ont pas d’épargne et dépensent tout revenu supplémentaire", "Parce que les impôts ne changent jamais", "Parce que l’État ne rembourse jamais", "Parce que les ménages épargnent tout"], c: 0,
+          e: "Les chèques américains de 2001 et 2008 ont été en grande partie dépensés." }
+      ],
       duree: 5,
       html: `
 <h3>Un cadeau qu’on rendra plus tard</h3>
@@ -156,7 +167,7 @@ ${calendrier}
       objections: "Ricardo n’y croyait pas, contraintes de crédit, myopie, taux inférieur à la croissance.",
       ecoles: "Ricardo, Barro, Buchanan, les nouveaux classiques, les keynésiens, les études de ménages.",
       source: "Ricardo, 1820 : les contribuables ne les estiment jamais ainsi.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur le frein à l’endettement.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur le frein à l’endettement.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -280,6 +291,9 @@ ${verrou}
         o: ["Qu’elles ne changent rien", "Que la productivité des usines déjà présentes augmente d’environ 12 % après cinq ans", "Que les salaires baissent", "Que les entreprises locales ferment"], c: 1,
         e: "C’est une mesure directe des économies d’agglomération." }
     ],
+    transfert: { q: "Une grande partie des entreprises de cinéma des États-Unis est concentrée à Los Angeles, et une grande partie de l’industrie mondiale des semi-conducteurs à Taïwan. Comment les rendements croissants l’expliquent-ils ?",
+      o: ["Une avance initiale attire travailleurs, fournisseurs et clients, ce qui renforce encore l’avantage de la région", "Ces régions ont des ressources naturelles uniques", "La loi interdit ces activités ailleurs", "Ces industries ont des coûts qui augmentent avec la taille"], c: 0,
+      e: "Avec des rendements croissants, une petite avance historique peut devenir décisive et durable." },
     ouverte: {
       q: "La Suisse doit-elle chercher à attirer et à concentrer certaines industries, comme la pharmacie à Bâle ou la blockchain à Zoug, par des avantages fiscaux ciblés ?",
       r: "Les rendements croissants d’agglomération plaident pour cette stratégie : une fois qu’un écosystème est constitué, il attire de lui-même entreprises et talents, et ses bénéfices dépassent l’avantage fiscal initial. La Suisse en a profité, avec ses clusters pharmaceutiques, financiers, horlogers ou technologiques. Mais la stratégie a des limites. Les avantages fiscaux ciblés sont contraints par les accords internationaux, comme l’impôt minimum de 15 % de l’OCDE pour les grandes entreprises, appliqué par la Suisse depuis 2024. Choisir les industries d’avenir est difficile, et un cluster bâti sur un seul avantage fiscal peut disparaître si celui-ci est supprimé. Les facteurs durables des clusters suisses sont plutôt la qualité des universités et de la formation professionnelle, la stabilité institutionnelle, l’ouverture aux talents étrangers et la qualité de vie. Les économistes recommandent souvent d’investir dans ces conditions générales plutôt que de subventionner des secteurs particuliers."
@@ -292,6 +306,14 @@ ${verrou}
       ["Recherche", "Paul Romer, « Endogenous Technological Change », Journal of Political Economy, 1990 ; Paul Krugman, « Increasing Returns and Economic Geography », Journal of Political Economy, 1991."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi le coût de chaque copie d’un logiciel baisse-t-il quand on en vend davantage ?",
+          o: ["Parce que le coût de conception est réparti sur un plus grand nombre de copies, qui coûtent presque rien", "Parce que les programmeurs sont moins bien payés", "Parce que l’État subventionne les logiciels", "Parce que la demande baisse"], c: 0,
+          e: "Ce sont des rendements croissants : ils avantagent les grands et le premier arrivé." },
+        { q: "Pourquoi les entreprises d’un même secteur gagnent-elles à se regrouper dans une région ?",
+          o: ["Elles partagent des travailleurs qualifiés, des fournisseurs et des idées", "Parce que les loyers y sont plus bas", "Parce que la loi les y oblige", "Parce qu’elles peuvent s’entendre sur les prix"], c: 0,
+          e: "Selon Marshall, les secrets du métier y sont « dans l’air »." }
+      ],
       duree: 5,
       html: `
 <h3>Plus on produit, moins ça coûte</h3>
@@ -313,7 +335,7 @@ ${courbe}
       objections: "Rendements qui décroissent, verrouillage rare, politique industrielle risquée, les gagnants emportent tout.",
       ecoles: "Smith, Marshall, Sraffa et Young, Arthur et David, Krugman, Romer.",
       source: "Marshall, 1890 : les secrets du métier sont dans l’air.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur les clusters suisses.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur les clusters suisses.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

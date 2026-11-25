@@ -107,6 +107,9 @@ ${frontiere}
         o: ["Parce que les organes sont vendus", "Parce que plusieurs patients sont greffés sans que personne ne soit lésé", "Parce que l’État paie les donneurs", "Parce qu’il réduit les dépenses de santé"], c: 1,
         e: "Chaque donneur donne comme prévu, chaque patient reçoit un rein compatible : il n’y a que des gagnants." }
     ],
+    transfert: { q: "Un pays supprime ses droits de douane sur l’acier : les consommateurs gagnent 900 millions, les producteurs d’acier perdent 300 millions, sans compensation. Est-ce une amélioration de Pareto ?",
+      o: ["Non, puisque des producteurs y perdent ; les gagnants pourraient toutefois indemniser les perdants", "Oui, puisque le gain total est positif", "Oui, si les consommateurs sont plus nombreux", "Non, et les gagnants ne pourraient pas indemniser les perdants"], c: 0,
+      e: "C’est une amélioration au sens de Kaldor-Hicks, pas de Pareto : sans indemnisation, les perdants restent perdants." },
     ouverte: {
       q: "La réforme AVS 21, acceptée en 2022, a relevé l’âge de la retraite des femmes à 65 ans. Comment l’analyser avec les critères de Pareto et de Kaldor-Hicks ?",
       r: "Ce n’est pas une amélioration de Pareto : les femmes concernées travaillent un an de plus ou touchent leur rente plus tard, et sont donc perdantes, au moins à court terme. Selon le critère de Kaldor-Hicks, on peut soutenir que le gain collectif, stabilisation du financement de l’AVS et égalité formelle de l’âge de référence, dépasse ces pertes. La réforme comprenait d’ailleurs des mesures de compensation pour les générations de femmes les plus proches de la retraite, ce qui la rapproche d’une compensation effective, partielle. Mais juger si cette compensation était suffisante, et si l’égalité de l’âge était juste compte tenu des inégalités de salaires et de rentes entre femmes et hommes, suppose des jugements de valeur que ni Pareto ni Kaldor-Hicks ne tranchent. Le résultat très serré de la votation reflète ce désaccord sur l’équité, et non sur l’efficacité."
@@ -119,6 +122,14 @@ ${frontiere}
       ["Recherche", "Nicholas Kaldor, « Welfare Propositions of Economics and Interpersonal Comparisons of Utility », Economic Journal, 1939 ; Bruce Greenwald et Joseph Stiglitz, « Externalities in Economies with Imperfect Information and Incomplete Markets », Quarterly Journal of Economics, 1986."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon le critère de Pareto, quand une situation s’améliore-t-elle ?",
+          o: ["Quand au moins une personne y gagne et que personne n’y perd", "Quand la majorité y gagne", "Quand le revenu total augmente", "Quand les plus pauvres y gagnent"], c: 0,
+          e: "C’est un critère très exigeant, qui évite de comparer les bonheurs." },
+        { q: "Pourquoi une situation où une seule personne a presque tout peut-elle être efficace au sens de Pareto ?",
+          o: ["Parce qu’on ne peut rien lui prendre sans la léser", "Parce qu’elle est juste", "Parce que les autres sont satisfaits", "Parce que l’État l’a voulue"], c: 0,
+          e: "Efficace ne veut pas dire juste." }
+      ],
       duree: 5,
       html: `
 <h3>Peut-on juger une réforme sans comparer les bonheurs ?</h3>
@@ -140,7 +151,7 @@ ${frontiere}
       objections: "Le silence sur l’équité, le biais du statu quo, les comparaisons inévitables, les préférences.",
       ecoles: "Smith, Walras et Pareto, Edgeworth, Samuelson-Arrow-Debreu, Hayek, Sen.",
       source: "Pareto, 1909 : la définition du maximum d’ophélimité.",
-      quiz: "Cinq questions corrigées et une question sur la réforme AVS 21.",
+      quiz: "Six questions corrigées et une question sur la réforme AVS 21.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -242,6 +253,9 @@ ${chaine}
         o: ["Qu’elle était due à une récolte catastrophique", "Qu’elle venait de l’effondrement des droits d’accès à la nourriture de certains groupes, malgré une production non exceptionnellement basse", "Qu’elle avait été provoquée par une épidémie", "Qu’elle avait touché toutes les classes sociales également"], c: 1,
         e: "La hausse des prix alimentaires, sans hausse des revenus des plus pauvres, a privé certains groupes de la capacité de se nourrir." }
     ],
+    transfert: { q: "Deux pays ont le même revenu par habitant. Dans le premier, les filles quittent l’école à 12 ans et l’hôpital le plus proche est à une journée de route. Que conclurait Sen ?",
+      o: ["Le développement y est moindre, car les possibilités réelles de vie sont plus faibles", "Les deux pays sont aussi développés, puisque leur revenu est le même", "Le premier est plus développé, car il dépense moins pour l’école", "On ne peut rien dire sans connaître le bonheur déclaré"], c: 0,
+      e: "Le développement se mesure aux libertés réelles, pas seulement au revenu." },
     ouverte: {
       q: "La Suisse figure parmi les tout premiers pays au classement de l’IDH. Selon l’approche par les capabilités, quels groupes ou quelles dimensions mériteraient malgré tout une attention particulière ?",
       r: "L’approche invite à regarder les personnes dont les facteurs de conversion sont défavorables : les personnes handicapées, dont l’accès à l’emploi et à la mobilité reste limité ; les personnes âgées isolées ; les personnes sans statut légal, qui ont un accès restreint aux soins et au travail déclaré ; les familles monoparentales, plus exposées à la pauvreté. Elle invite aussi à examiner les capabilités politiques, comme la participation des résidents étrangers, privés du droit de vote au niveau fédéral alors qu’ils représentent environ un quart de la population ; et l’égalité entre femmes et hommes, par exemple les écarts de salaires et de rentes ou l’accès aux structures d’accueil de l’enfance. Un indice global élevé peut coexister avec des privations réelles pour certains groupes, que seule une analyse plus fine révèle."
@@ -254,6 +268,14 @@ ${chaine}
       ["Recherche", "Amartya Sen, « Equality of What? », Tanner Lectures, 1979 ; Amartya Sen, Poverty and Famines, 1981 ; Sabina Alkire et James Foster, « Counting and Multidimensional Poverty Measurement », Journal of Public Economics, 2011."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quel fait surprenant Amartya Sen relève-t-il à propos des hommes afro-américains et des habitants du Kerala ?",
+          o: ["Les premiers, plus riches en moyenne, avaient moins de chances d’atteindre un âge avancé", "Les seconds étaient plus riches", "Les deux groupes avaient la même espérance de vie", "Les premiers étaient plus nombreux à faire des études"], c: 0,
+          e: "Le revenu ne dit pas tout de la qualité d’une vie." },
+        { q: "Selon Sen, pourquoi deux personnes au même revenu n’ont-elles pas forcément les mêmes possibilités ?",
+          o: ["Parce que la santé, le handicap ou les règles de la société changent ce qu’elles peuvent réellement faire", "Parce qu’elles ne dépensent pas leur argent de la même façon", "Parce que les prix sont différents chaque jour", "Parce que l’une épargne plus que l’autre"], c: 0,
+          e: "Ce qui compte, ce sont les capabilités : ce qu’on est réellement capable d’être et de faire." }
+      ],
       duree: 5,
       html: `
 <h3>Plus riches, mais vivant moins longtemps</h3>
@@ -275,7 +297,7 @@ ${chaine}
       objections: "Une approche vague, la mesure, le paternalisme, le débat avec Rawls.",
       ecoles: "Aristote, Smith, Mill, Pareto, Rawls, Duflo.",
       source: "Sen, 1999 : le développement comme expansion des libertés réelles.",
-      quiz: "Cinq questions corrigées et une question sur la Suisse.",
+      quiz: "Six questions corrigées et une question sur la Suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

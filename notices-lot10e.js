@@ -124,6 +124,9 @@ ${coordination}
         o: ["En augmentant les amendes de tous", "En offrant l’immunité au premier qui dénonce, ce qui pousse chacun à parler avant les autres", "En autorisant les cartels déclarés", "En interdisant aux entreprises de répondre aux appels d’offres"], c: 1,
         e: "Le cartel devient un dilemme du prisonnier." }
     ],
+    transfert: { q: "Deux pays voisins pêchent dans le même lac. Chacun gagne à pêcher davantage, mais si les deux le font, le stock de poissons s’effondre. De quel type de situation s’agit-il ?",
+      o: ["Un dilemme du prisonnier : l’intérêt de chacun conduit à une issue mauvaise pour les deux", "Un jeu de coordination à plusieurs équilibres", "Un monopole", "Une situation sans interaction entre les deux pays"], c: 0,
+      e: "Chacun a intérêt à pêcher plus quoi que fasse l’autre, et tous deux y perdent : seul un accord surveillé peut l’éviter." },
     ouverte: {
       q: "La Suisse émet environ 0,1 % des gaz à effet de serre mondiaux sur son territoire. A-t-elle intérêt à réduire ses émissions si les grands pays ne le font pas ?",
       r: "La théorie des jeux éclaire le dilemme. Si chaque pays raisonne seul, il a intérêt à laisser les autres faire l’effort : la réduction d’un petit pays ne change presque rien au climat, et lui coûte. Si tous raisonnent ainsi, personne n’agit et tous en souffrent. Plusieurs arguments plaident pourtant pour l’action. Les engagements internationaux reposent sur la réciprocité : un pays qui n’agit pas affaiblit la confiance et la pression sur les autres. La Suisse est très exposée au réchauffement, avec ses glaciers et ses Alpes, et son empreinte réelle est plus élevée si l’on compte les émissions liées aux biens importés. Agir tôt peut aussi développer des technologies et des savoir-faire exportables. D’autres soulignent le coût pour l’économie et les ménages, le risque de déplacer la production polluante à l’étranger, et l’intérêt d’agir surtout là où chaque franc réduit le plus d’émissions, y compris par des projets à l’étranger. La réponse dépend de la confiance accordée à la coopération internationale et de la responsabilité qu’on attribue aux pays riches."
@@ -137,6 +140,14 @@ ${coordination}
       ["Recherche", "John von Neumann et Oskar Morgenstern, Theory of Games and Economic Behavior, Princeton University Press, 1944."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Deux stations-service gagneraient toutes deux à garder des prix élevés. Pourquoi finissent-elles par les baisser ?",
+          o: ["Parce que chacune peut attirer tous les clients en baissant seule, et craint que l’autre le fasse", "Parce que la loi les y oblige", "Parce que leurs coûts ont baissé", "Parce que les clients exigent un prix unique"], c: 0,
+          e: "C’est la logique du dilemme du prisonnier : l’intérêt de chacun mène à une issue moins bonne pour les deux." },
+        { q: "Qu’est-ce qui permet parfois de sortir d’un dilemme du prisonnier ?",
+          o: ["La répétition du jeu, la confiance et des règles communes", "Le hasard seulement", "Le fait de ne jouer qu’une seule fois", "Des prix imposés par les clients"], c: 0,
+          e: "Quand on se retrouve souvent, la trahison d’aujourd’hui peut être punie demain." }
+      ],
       duree: 5,
       html: `
 <h3>Quand votre choix dépend de celui des autres</h3>
@@ -156,7 +167,7 @@ ${dilemme}
       objections: "Des joueurs moins rationnels, plusieurs équilibres, les communs d’Ostrom.",
       ecoles: "Cournot, von Neumann et Morgenstern, Nash, Schelling, Tirole, Ostrom et Kahneman.",
       source: "La définition de Nash, en une page.",
-      quiz: "Cinq questions corrigées et une question sur le climat et la Suisse.",
+      quiz: "Six questions corrigées et une question sur le climat et la Suisse.",
       lectures: "Six lectures classées par niveau."
     }
   };

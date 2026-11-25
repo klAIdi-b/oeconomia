@@ -112,6 +112,9 @@ ${compte}` },
         o: ["Parce que les grands événements attirent trop de touristes", "Parce que les recettes des fédérations sportives basées en Suisse faussent la croissance trimestrielle", "Pour corriger l’effet de la météo sur les stations de ski", "Parce que les paris sportifs sont exclus du PIB"], c: 1,
         e: "Les droits des Jeux olympiques ou de la Coupe du monde sont comptés en Suisse l’année de l’événement." }
     ],
+    transfert: { q: "Dans un pays, de nombreuses familles cessent de cuisiner chez elles et achètent des repas livrés. Le temps passé à table et la nourriture consommée ne changent pas. Qu’arrive-t-il au PIB ?",
+      o: ["Il augmente, car un travail auparavant gratuit devient une production payée", "Il baisse, car les familles travaillent moins", "Il ne change pas, puisque la consommation de nourriture est la même", "Il baisse, car les livreurs polluent"], c: 0,
+      e: "Le PIB ne compte pas le repas cuisiné à la maison, mais compte le repas acheté." },
     ouverte: {
       q: "La Suisse devrait-elle accorder autant d’importance à son PIB qu’à d’autres indicateurs, comme le bien-être déclaré ou l’empreinte écologique, dans le débat politique ?",
       r: "La Suisse dispose déjà d’un système d’indicateurs du développement durable, MONET 2030, publié par l’Office fédéral de la statistique, qui suit plus de cent indicateurs sociaux, économiques et environnementaux. Mais le débat public reste dominé par le PIB et la croissance, en partie parce qu’un chiffre unique est plus facile à communiquer. Mettre davantage en avant d’autres indicateurs permettrait de mieux voir des enjeux que le PIB cache, comme l’empreinte carbone importée, le <dfn data-g=travail-non-remunere>travail non rémunéré</dfn> ou la répartition du patrimoine. Le risque d’un indicateur unique de bien-être est l’arbitraire des pondérations et la tentation de choisir l’indicateur qui flatte le gouvernement. La solution souvent recommandée est un « tableau de bord » restreint, de quelques indicateurs clés présentés ensemble, plutôt qu’un remplacement du PIB."
@@ -124,6 +127,14 @@ ${compte}` },
       ["Recherche", "Simon Kuznets, National Income, 1929-1932, 1934 ; Chad Syverson, « Challenges to Mismeasurement Explanations for the US Productivity Slowdown », Journal of Economic Perspectives, 2017."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi le gouvernement américain fait-il calculer le revenu national en 1932 ?",
+          o: ["Parce qu’il ne savait pas à quel point l’économie s’était effondrée pendant la crise", "Pour augmenter les impôts", "Pour préparer une guerre", "Pour fixer les salaires"], c: 0,
+          e: "Simon Kuznets trouve que le revenu national a diminué de moitié en trois ans." },
+        { q: "Pourquoi un accident de voiture peut-il faire augmenter le PIB ?",
+          o: ["Parce que les réparations et les soins sont des productions payées", "Parce que l’accident crée de la richesse", "Parce que l’assurance rembourse deux fois", "Parce que le PIB compte les accidents comme investissements"], c: 0,
+          e: "Le PIB mesure la production, pas le bien-être." }
+      ],
       duree: 5,
       html: `
 <h3>Mesurer toute une économie</h3>
@@ -145,7 +156,7 @@ ${trois}
       objections: "Croissance à tout prix, travail des femmes, défense du PIB, économie numérique.",
       ecoles: "Petty et King, Quesnay, Kuznets, Stone et Meade, Stiglitz-Sen-Fitoussi, écologistes et féministes.",
       source: "Kuznets, 1934 : le bien-être ne se déduit guère du revenu national.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur les indicateurs.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur les indicateurs.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -268,6 +279,9 @@ ${durees}
         o: ["Environ 11 mois", "Environ 5 ans", "Environ 20 ans", "Environ 6 mois"], c: 1,
         e: "Près de 58 mois en moyenne, contre environ 11 mois pour les récessions." }
     ],
+    transfert: { q: "En 2020, une pandémie oblige de nombreux pays à fermer magasins et usines pendant plusieurs semaines. Comment classer ce choc dans l’analyse des cycles ?",
+      o: ["Un choc extérieur, qui provoque une récession amplifiée par la baisse de la confiance et des revenus", "Un cycle régulier de sept à onze ans", "Une simple variation saisonnière", "Une crise causée uniquement par le crédit trop facile"], c: 0,
+      e: "Les cycles naissent souvent d’un choc imprévu, que l’économie amplifie ensuite." },
     ouverte: {
       q: "Les cycles conjoncturels suisses suivent étroitement ceux de la zone euro et de l’économie mondiale. La Suisse a-t-elle encore les moyens de mener sa propre politique conjoncturelle ?",
       r: "La Suisse dispose de moyens réels mais spécifiques. La BNS mène une politique monétaire indépendante, qui a montré son efficacité, notamment par l’action sur le taux de change. Les stabilisateurs automatiques, assurance chômage et réduction de l’horaire de travail, soutiennent la demande en récession sans décision politique, et le frein à l’endettement autorise des déficits conjoncturels. En revanche, comme l’économie est petite et très ouverte, une politique budgétaire de relance a un effet limité, et les exportations dépendent de la conjoncture européenne et mondiale, que la Suisse ne contrôle pas. La politique conjoncturelle suisse vise donc surtout à amortir les chocs extérieurs et à préserver l’emploi et les compétences, plutôt qu’à piloter activement le cycle. L’expérience de 2009 et de 2020 suggère que cette approche, fondée sur le chômage partiel, a bien fonctionné."
@@ -280,6 +294,14 @@ ${durees}
       ["Recherche", "Finn Kydland et Edward Prescott, « Time to Build and Aggregate Fluctuations », Econometrica, 1982 ; Ragnar Frisch, « Propagation Problems and Impulse Problems in Dynamic Economics », 1933."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Comment appelle-t-on les périodes où la production et l’emploi augmentent, puis reculent ?",
+          o: ["Des expansions et des récessions, qui forment les cycles économiques", "Des inflations et des déflations", "Des booms et des krachs boursiers seulement", "Des saisons économiques fixes"], c: 0,
+          e: "L’économie ne croît pas en ligne droite." },
+        { q: "Selon la plupart des économistes, comment naissent les cycles ?",
+          o: ["Un choc au hasard est amplifié par le fonctionnement de l’économie", "Ils reviennent à date fixe, chaque année", "Ils sont décidés par les gouvernements", "Ils dépendent uniquement des saisons"], c: 0,
+          e: "Confiance, crédit et chocs extérieurs se combinent." }
+      ],
       duree: 5,
       html: `
 <h3>L’économie avance par vagues</h3>
@@ -301,7 +323,7 @@ ${phases}
       objections: "Des cycles illusoires, les cycles réels contestés, la prévision difficile, stabiliser qui déstabilise.",
       ecoles: "Juglar, Kitchin et Kondratiev, Schumpeter, Frisch, Keynes et Samuelson, Hayek et Minsky, Kydland et Prescott.",
       source: "Burns et Mitchell, 1946 : récurrents mais pas périodiques.",
-      quiz: "Cinq questions corrigées et une question sur la politique conjoncturelle suisse.",
+      quiz: "Six questions corrigées et une question sur la politique conjoncturelle suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

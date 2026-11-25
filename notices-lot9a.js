@@ -107,6 +107,9 @@ ${formes}
         o: ["Que payer les donneurs augmente toujours la quantité et la qualité du sang", "Qu’un système payant peut attirer des donneurs plus à risque et changer le sens du don", "Que le don du sang devrait être interdit", "Que les donneurs bénévoles donnent un sang de moins bonne qualité"], c: 1,
         e: "Introduire un prix peut modifier le sens d’un acte." }
     ],
+    transfert: { q: "Un pays envisage d’autoriser la vente d’organes pour réduire les listes d’attente de greffes. Quelle question l’approche de Polanyi invite-t-elle à poser ?",
+      o: ["Qu’est-ce qui doit rester, en partie, hors du marché, et selon quelles règles sociales ?", "Quel prix maximise le profit des vendeurs ?", "Comment supprimer toute règle sur les greffes ?", "Comment exporter les organes vers d’autres pays ?"], c: 0,
+      e: "Comme pour le don du sang, il s’agit de savoir jusqu’où laisser les prix décider." },
     ouverte: {
       q: "En Suisse, le don du sang n’est pas rémunéré, et en 2022 les votants ont accepté le principe du consentement présumé pour le don d’organes. Faut-il laisser certaines choses hors du marché ?",
       r: "La question est au cœur de la notion d’encastrement. En Suisse, le sang est donné bénévolement, et la loi interdit le commerce d’organes. Le vote de 2022 n’a pas introduit de marché : il a changé la règle par défaut, en présumant le consentement sauf refus exprimé, pour augmenter le nombre de dons. Polanyi, et à sa suite Titmuss, diraient que certaines choses touchent à la dignité des personnes et au lien social : les payer pourrait attirer les plus pauvres, faire baisser la qualité ou décourager ceux qui donnaient par solidarité. Des économistes répondent que des prix bien encadrés pourraient sauver des vies quand les dons manquent, comme pour les reins, et l’Iran, qui rémunère les donneurs de rein, est souvent cité comme ayant fortement réduit ses listes d’attente. Le débat n’oppose donc pas le marché et l’absence de règles, mais différentes manières d’organiser l’échange : don, règle publique ou prix encadré."
@@ -119,6 +122,14 @@ ${formes}
       ["Recherche", "Mark Granovetter, « Economic Action and Social Structure: The Problem of Embeddedness », American Journal of Sociology, 1985 ; Joseph Henrich et al., « In Search of Homo Economicus », American Economic Review, 2001."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pendant des millénaires, selon Polanyi, sur quelles règles l’économie a-t-elle surtout reposé ?",
+          o: ["Le partage en famille, les services rendus et les prélèvements du seigneur ou du temple", "Les prix fixés par le marché", "La planification centrale", "Le commerce international"], c: 0,
+          e: "L’économie était « encastrée » dans la société." },
+        { q: "Comment la société réagit-elle quand le XIXe siècle tente de tout confier au marché ?",
+          o: ["Elle se protège : lois sociales, syndicats, protection de l’agriculture", "Elle accepte sans réagir", "Elle supprime la monnaie", "Elle revient au troc"], c: 0,
+          e: "C’est ce que Polanyi appelle le « double mouvement »." }
+      ],
       duree: 5,
       html: `
 <h3>L’économie n’est pas une île</h3>
@@ -140,7 +151,7 @@ ${formes}
       objections: "Une histoire idéalisée, des marchés anciens, deux sens du mot, la lecture libérale.",
       ecoles: "Polanyi, Malinowski et Mauss, Veblen, Granovetter, Ostrom, Hayek.",
       source: "Le marché seul conduirait à la destruction de la société.",
-      quiz: "Cinq questions corrigées et une question sur le don en Suisse.",
+      quiz: "Six questions corrigées et une question sur le don en Suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -243,6 +254,9 @@ ${deuxVues}
         o: ["Supprimer le franc", "Réserver à la BNS la création de monnaie scripturale", "Interdire les prêts hypothécaires", "Supprimer l’argent liquide"], c: 1,
         e: "Elle a été rejetée par environ 76 % des votants." }
     ],
+    transfert: { q: "Dans un pays, la demande de prêts immobiliers explose pendant un boom du logement. Que prévoit la thèse de la monnaie endogène pour la quantité de monnaie ?",
+      o: ["Elle augmente, car chaque nouveau prêt crée de nouveaux dépôts", "Elle baisse, car les banques prêtent leurs réserves", "Elle ne change pas, car seule la banque centrale crée la monnaie", "Elle augmente seulement si l’État imprime des billets"], c: 0,
+      e: "La monnaie suit la demande de crédit : un boom du crédit est aussi un boom de la monnaie." },
     ouverte: {
       q: "Si les banques créent l’essentiel de la monnaie en accordant des prêts hypothécaires, faut-il mieux encadrer le crédit immobilier en Suisse ?",
       r: "La thèse de la monnaie endogène éclaire bien la situation suisse. Les prêts hypothécaires y sont très élevés par rapport au revenu national, et ils créent une grande partie de la monnaie. Quand le crédit immobilier progresse vite, la monnaie et les prix des logements montent ensemble, ce qui peut nourrir une bulle (<a href=\"#c-instabilite-financiere\">voir instabilité financière</a>). La Suisse dispose déjà d’outils : les règles de fonds propres exigées des acheteurs, le calcul de la capacité financière avec un taux théorique élevé, et le volant anticyclique de fonds propres, que le Conseil fédéral peut activer sur proposition de la BNS, activé en 2013, suspendu en 2020 pendant la pandémie, puis réactivé en 2022. Les partisans d’un encadrement plus strict y voient une manière de prévenir les crises. D’autres soulignent que ces règles rendent l’accès à la propriété plus difficile pour les jeunes ménages, dans un pays où la majorité de la population est locataire. Le débat porte sur l’équilibre entre stabilité financière et accès au logement."
@@ -255,6 +269,14 @@ ${deuxVues}
       ["Recherche", "Basil Moore, Horizontalists and Verticalists: The Macroeconomics of Credit Money, 1988."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que se passe-t-il réellement quand une banque accorde un prêt ?",
+          o: ["Elle inscrit la somme sur le compte de l’emprunteur, et de l’argent nouveau apparaît", "Elle prend l’argent déposé par d’autres clients", "Elle demande des billets à la banque centrale", "Elle vend de l’or"], c: 0,
+          e: "C’est la monnaie endogène, créée de l’intérieur de l’économie." },
+        { q: "Qu’est-ce qui limite la création de monnaie par les banques ?",
+          o: ["Elles ne prêtent qu’aux clients jugés solvables, respectent des règles et dépendent du taux fixé par la banque centrale", "Rien ne la limite", "La quantité d’or dans leurs coffres", "Le nombre de billets imprimés"], c: 0,
+          e: "Les banques ne prêtent pas n’importe quoi à n’importe qui." }
+      ],
       duree: 5,
       html: `
 <h3>D’où vient l’argent sur votre compte ?</h3>
@@ -276,7 +298,7 @@ ${deuxVues}
       objections: "Des banques contraintes, une banque centrale qui garde la main, un débat de vocabulaire.",
       ecoles: "Wicksell et Schumpeter, Keynes, Kaldor et Moore, Minsky, Kelton, Friedman.",
       source: "Chaque prêt crée un dépôt.",
-      quiz: "Cinq questions corrigées et une question sur le crédit immobilier en Suisse.",
+      quiz: "Six questions corrigées et une question sur le crédit immobilier en Suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

@@ -556,7 +556,7 @@
       const mainFig = ((N.sections.find((s) => s.id === "raisonnement") || { html: "" }).html.match(/<figure class="schema">(?:(?!<figure)[\s\S])*?Acemoglu et Robinson[\s\S]*?<\/figure>/) || [""])[0];
       const versComplet = `<p class="nfull-link"><button type="button" data-set="oec-niveau" data-val="approfondir">${N.portrait ? "Lire le portrait complet : sa vie, ses livres, ses combats, ses héritiers" : "Lire la notice complète : preuves, objections, autres écoles, texte source"} →</button></p>`;
       return `${essentiel}${versComplet}${N.decouvrir.html}${mainFig}
-        <h3>Vérifier sa compréhension</h3>${quizHtml(N.decouvrir.quiz.map((k) => N.quiz[k]))}
+        <h3>Vérifier sa compréhension</h3>${quizHtml(N.decouvrir.questions || N.decouvrir.quiz.map((k) => N.quiz[k]))}
         <div class="nextlevel"><p>${N.portrait ? "Vous voulez suivre sa vie, ses livres, ses combats et ses héritiers en détail ?" : "Vous voulez comprendre les preuves, les études de cas et les objections ?"}</p><button class="btn small" data-set="oec-niveau" data-val="approfondir">${N.portrait ? "Lire le portrait complet →" : "Lire la notice complète →"}</button></div>`;
     }
 
@@ -568,7 +568,7 @@
     if (N.objections) parts.push(["objections", LB.objections, N.objections]);
     if (N.ecoles) parts.push(["ecoles", LB.ecoles, N.ecoles]);
     if (N.source) parts.push(["source", "Texte source commenté", `<blockquote class="quote-block">« ${N.source.texte} »<cite>${N.source.titre}</cite></blockquote>${N.source.notes}`]);
-    if (N.quiz) parts.push(["quiz", "Vérifier sa compréhension", quizHtml(N.quiz) + (N.ouverte ? `<div class="openq"><span>Question de réflexion</span><p>${N.ouverte.q}</p><button class="btn small ghost qreveal">Voir des éléments de réponse</button><p class="qexpl" hidden>${N.ouverte.r}</p></div>` : "")]);
+    if (N.quiz) parts.push(["quiz", "Vérifier sa compréhension", quizHtml(N.transfert ? N.quiz.concat(N.transfert) : N.quiz) + (N.ouverte ? `<div class="openq"><span>Question de réflexion</span><p>${N.ouverte.q}</p><button class="btn small ghost qreveal">Voir des éléments de réponse</button><p class="qexpl" hidden>${N.ouverte.r}</p></div>` : "")]);
     if (N.lectures) parts.push(["lectures", "Pour aller plus loin", `<ul class="lect lvl">${N.lectures.map(([lv, t]) => `<li><span class="lvltag">${lv}</span> ${t}</li>`).join("")}</ul>`]);
 
     if (blocs) {

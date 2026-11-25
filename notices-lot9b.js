@@ -105,6 +105,9 @@ ${heures}
         o: ["Des comptes tenus par les cantons et les communes", "Des comptes statistiques tenus à côté du PIB pour mesurer, par exemple, le travail domestique", "Des comptes de la banque centrale", "Des comptes qui remplacent le PIB dans les statistiques officielles"], c: 1,
         e: "Ils sont prévus par le système de comptabilité nationale depuis 1993." }
     ],
+    transfert: { q: "Une commune ferme une crèche publique pour économiser, et des parents réduisent leur temps de travail payé pour garder leurs enfants. Que montre une analyse qui tient compte du travail non rémunéré ?",
+      o: ["L’économie n’est pas gratuite : le coût est transféré aux familles, sous forme de temps et de revenus perdus", "La commune a réalisé une économie nette pour la société", "Le PIB mesure exactement ce changement", "Aucun travail n’a été ajouté"], c: 0,
+      e: "Le travail de garde ne disparaît pas : il passe du secteur payé au secteur non payé." },
     ouverte: {
       q: "Faudrait-il tenir compte du travail non rémunéré dans le calcul des retraites suisses ?",
       r: "C’est déjà en partie le cas. Depuis la dixième révision de l’AVS, entrée en vigueur en 1997, des bonifications pour tâches éducatives et pour tâches d’assistance augmentent la rente des personnes qui ont élevé des enfants ou soigné des proches, et les revenus des couples sont partagés pendant le mariage. En revanche, le deuxième pilier, la prévoyance professionnelle, dépend du salaire : les personnes qui ont réduit leur temps de travail pour s’occuper des enfants, en majorité des femmes, reçoivent des rentes nettement plus faibles. Les partisans d’une meilleure prise en compte proposent d’abaisser le seuil d’entrée du deuxième pilier ou de créer des bonifications comparables à celles de l’AVS. Leurs contradicteurs répondent que le deuxième pilier est une épargne individuelle liée au salaire, et que la solution passe plutôt par l’accès aux crèches et le partage des tâches, pour que chacun puisse travailler davantage. Le débat porte sur la place que l’on veut donner au travail invisible dans la protection sociale."
@@ -117,6 +120,14 @@ ${heures}
       ["Recherche", "Organisation internationale du travail, Care Work and Care Jobs for the Future of Decent Work, 2018 ; Nancy Folbre, The Invisible Heart, 2001."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi le même travail de cuisine peut-il compter ou non dans le PIB ?",
+          o: ["Il compte s’il est payé, par exemple chez des voisins, et pas s’il est fait gratuitement pour sa famille", "Il compte seulement s’il est fait le week-end", "Il ne compte jamais", "Il compte seulement s’il est fait par un homme"], c: 0,
+          e: "Le PIB ne mesure que ce qui donne lieu à un paiement." },
+        { q: "Pourquoi ce travail non compté peut-il fausser certaines décisions ?",
+          o: ["Une économie qui reporte du travail sur les familles peut sembler gratuite, alors qu’elle ne l’est pas", "Parce qu’il fait baisser les impôts", "Parce qu’il est déjà payé par l’État", "Parce qu’il n’a aucune valeur"], c: 0,
+          e: "Ce qui n’est pas compté pèse moins dans les décisions." }
+      ],
       duree: 5,
       html: `
 <h3>Un travail que personne ne compte</h3>
@@ -138,7 +149,7 @@ ${heures}
       objections: "Des chiffres fragiles, le rôle du PIB, des choix personnels, compter ou partager.",
       ecoles: "Waring, Margaret Reid, Gary Becker, Sen, Folbre et Nelson.",
       source: "Élargir les indicateurs de revenus aux activités non marchandes.",
-      quiz: "Cinq questions corrigées et une question sur les retraites suisses.",
+      quiz: "Six questions corrigées et une question sur les retraites suisses.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -236,6 +247,9 @@ ${formes}
         o: ["Par conviction socialiste", "Surtout pour réduire la rotation du personnel et augmenter la productivité", "Pour baisser ses prix", "À cause d’une grève générale"], c: 1,
         e: "Il y voyait une mesure d’économie." }
     ],
+    transfert: { q: "Depuis les années 1980, dans de nombreux pays, les salaires progressent moins vite que la productivité, et la consommation est en partie soutenue par l’endettement des ménages. Comment un régulationniste interpréterait-il ce changement ?",
+      o: ["Comme un nouveau mode de régulation, où la finance remplace en partie la hausse des salaires", "Comme le retour du fordisme", "Comme la fin de toute régulation", "Comme une simple récession ordinaire"], c: 0,
+      e: "Chaque période du capitalisme a ses propres règles, et celle-ci donne une place centrale à la finance." },
     ouverte: {
       q: "La Suisse a-t-elle un mode de régulation propre, et lequel ?",
       r: "Un régulationniste répondrait oui, en décrivant un ensemble d’institutions qui se tiennent. Le rapport salarial repose sur le partenariat social, la paix du travail et des conventions collectives négociées par branche, avec peu de grèves. La formation professionnelle duale, l’apprentissage, fournit une main-d’œuvre qualifiée et relie les entreprises aux écoles. La concurrence combine des secteurs exportateurs très ouverts, horlogerie, pharmacie, machines, et des secteurs intérieurs longtemps protégés, comme l’agriculture. Le régime monétaire s’appuie sur un franc fort et une banque centrale crédible. L’État est fédéral, léger au niveau national, et soumis à la démocratie directe et au frein à l’endettement. Enfin, l’insertion internationale passe par les accords bilatéraux avec l’Union européenne et une main-d’œuvre étrangère importante. Les critiques de cette lecture rappellent que ce modèle a aussi reposé sur la place financière et le secret bancaire, aujourd’hui abandonné pour les non-résidents, et que le franc fort met régulièrement l’industrie sous pression. La question est de savoir si ce compromis résistera aux transitions numérique et écologique."
@@ -248,6 +262,14 @@ ${formes}
       ["Recherche", "Robert Boyer et Yves Saillard (dir.), Théorie de la régulation : l’état des savoirs, 1995."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Aglietta, sur quoi reposait la croissance stable de l’après-guerre ?",
+          o: ["Sur un ensemble de règles qui s’accordaient bien entre elles, un « mode de régulation »", "Sur la seule politique monétaire", "Sur le commerce avec les colonies", "Sur l’absence d’État"], c: 0,
+          e: "Quand ces règles s’usent, la croissance se dérègle." },
+        { q: "Dans le cercle fordiste, pourquoi les hausses de salaires soutiennent-elles la croissance ?",
+          o: ["Parce que les ouvriers achètent ce qu’ils fabriquent, ce qui soutient les ventes et l’investissement", "Parce qu’elles font baisser les prix", "Parce qu’elles réduisent les impôts", "Parce qu’elles diminuent la production"], c: 0,
+          e: "Productivité, salaires et consommation de masse se renforcent mutuellement." }
+      ],
       duree: 5,
       html: `
 <h3>Pourquoi l’économie tient, puis craque</h3>
@@ -269,7 +291,7 @@ ${formes}
       objections: "Une explication après coup, un compromis idéalisé, difficile à tester, la lecture libérale.",
       ecoles: "Aglietta, Boyer, Lipietz et Coriat, Marx et Keynes, Gramsci, Hall et Soskice.",
       source: "Ford : cinq dollars par jour, une mesure d’économie.",
-      quiz: "Cinq questions corrigées et une question sur le modèle suisse.",
+      quiz: "Six questions corrigées et une question sur le modèle suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

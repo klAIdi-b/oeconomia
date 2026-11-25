@@ -131,6 +131,9 @@ ${plafond}` },
         o: ["Parce que les Suisses mangeaient moins de fromage", "Parce que des prix garantis supérieurs au prix de marché encourageaient une production supérieure à la demande", "Parce que les prix du fromage étaient fixés trop bas", "Parce que la demande étrangère avait doublé"], c: 1,
         e: "C’est l’effet d’un prix plancher : excédents à stocker ou à écouler à perte." }
     ],
+    transfert: { q: "Une sécheresse détruit une partie de la récolte de café au Brésil, premier producteur mondial. Que prévoit le modèle de l’offre et de la demande sur le marché mondial du café ?",
+      o: ["L’offre diminue, le prix monte, et la quantité achetée baisse", "La demande augmente et le prix baisse", "Le prix et la quantité augmentent", "Rien ne change, car le café est indispensable"], c: 0,
+      e: "Un choc d’offre déplace la courbe d’offre vers la gauche : prix plus élevé, quantité plus faible." },
     ouverte: {
       q: "Plusieurs cantons suisses, comme Genève ou Bâle-Ville, ont renforcé la protection des locataires. Le modèle de l’offre et de la demande condamne-t-il ces mesures ?",
       r: "Le modèle simple prédit qu’un plafonnement des loyers sous le prix de marché réduit l’offre de logements et crée une pénurie. Les études comme celle de San Francisco le confirment en partie. Mais la réalité est plus nuancée. Le marché du logement n’est pas parfaitement concurrentiel : déménager coûte cher, l’information est imparfaite, et les locataires en place sont en position de faiblesse face à des hausses brutales. Une protection contre les hausses abusives en cours de bail peut corriger ce déséquilibre sans réduire fortement l’offre. Les effets dépendent donc de la conception : une limitation des loyers des nouveaux contrats ou des logements rénovés freine davantage l’investissement qu’une protection des locataires existants. Le problème de fond, dans les villes suisses, reste le manque de terrains constructibles et la lenteur des procédures, que seule une hausse de l’offre peut résoudre."
@@ -143,6 +146,14 @@ ${plafond}` },
       ["Recherche", "Vernon Smith, « An Experimental Study of Competitive Market Behavior », Journal of Political Economy, 1962 ; Rebecca Diamond, Tim McQuade et Franklin Qian, « The Effects of Rent Control Expansion », American Economic Review, 2019."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que se passe-t-il si un prix est fixé trop haut sur un marché libre ?",
+          o: ["Des invendus s’accumulent, et les vendeurs finissent par baisser leurs prix", "Il manque des produits", "Les acheteurs en veulent davantage", "Les vendeurs produisent moins et le prix monte encore"], c: 0,
+          e: "Le prix s’établit là où quantités offerte et demandée sont égales." },
+        { q: "Qu’a provoqué le prix maximum de l’essence aux États-Unis en 1973 ?",
+          o: ["Des pénuries et des files d’attente aux stations-service", "Des invendus d’essence", "Une baisse de la demande", "Une hausse de la production"], c: 0,
+          e: "Un prix plafond trop bas crée une pénurie." }
+      ],
       duree: 5,
       html: `
 <h3>Deux lames de ciseaux</h3>
@@ -164,7 +175,7 @@ ${ciseaux}
       objections: "Concurrence, information, bulles, répercussions sur les autres marchés.",
       ecoles: "Smith et Ricardo, Cournot et Jenkin, les marginalistes, Marshall, Vernon Smith, Kahneman.",
       source: "Marshall, 1890 : laquelle des deux lames coupe le papier ?",
-      quiz: "Cinq questions corrigées et une question sur la protection des locataires.",
+      quiz: "Six questions corrigées et une question sur la protection des locataires.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -290,6 +301,9 @@ ${taxe}
         o: ["Parce qu’il coûte deux fois plus cher", "Parce qu’il combine un montant fixe annuel et un prix réduit par trajet", "Parce qu’il est vendu par deux entreprises différentes", "Parce que le prix varie selon l’heure du trajet"], c: 1,
         e: "Le montant fixe capte une partie du surplus des voyageurs fréquents, le prix réduit les incite à voyager davantage." }
     ],
+    transfert: { q: "Une ville se demande s’il faut construire un pont dont le péage rapportera peu. Comment, selon Dupuit, évaluer son utilité ?",
+      o: ["Par ce que l’ensemble des usagers serait prêt à payer pour le traverser, au-delà du péage", "Par le seul montant des péages encaissés", "Par le coût de construction", "Par le nombre d’ouvriers employés"], c: 0,
+      e: "L’utilité d’un ouvrage se mesure au surplus de ses usagers, pas seulement aux recettes." },
     ouverte: {
       q: "Les analyses coût-bénéfice suisses des projets de transport additionnent les gains de temps des usagers. Faut-il donner le même poids à une heure gagnée par un cadre et par un apprenti ?",
       r: "Dans une analyse fondée sur la disposition à payer, l’heure du cadre vaut plus, car il est prêt à payer davantage pour gagner du temps. Cela peut orienter les investissements vers les liaisons utilisées par les usagers aux revenus élevés, comme les trains rapides entre grandes villes. Pour éviter ce biais, la plupart des méthodes officielles, y compris les normes suisses de l’Office fédéral des routes et des transports, utilisent une valeur moyenne du temps par motif de déplacement, la même pour tous les usagers, plutôt que des valeurs individuelles selon le revenu. C’est un choix éthique : traiter le temps de chacun comme également précieux. Les critiques font valoir que cela s’éloigne des préférences réelles ; les défenseurs y voient une correction nécessaire du biais du surplus en faveur des plus riches."
@@ -302,6 +316,14 @@ ${taxe}
       ["Recherche", "Peter Cohen et al., « Using Big Data to Estimate Consumer Surplus: The Case of Uber », NBER, 2016 ; Arnold Harberger, « Monopoly and Resource Allocation », American Economic Review, 1954."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Vous étiez prêt à payer 50 francs pour un billet et l’avez payé 30. Comment appelle-t-on les 20 francs de différence ?",
+          o: ["Le surplus du consommateur", "Le profit du vendeur", "La perte sèche", "La taxe"], c: 0,
+          e: "C’est le gain de l’échange pour l’acheteur." },
+        { q: "Pourquoi une taxe provoque-t-elle une « perte sèche » ?",
+          o: ["Parce qu’elle empêche des échanges qui auraient profité à l’acheteur comme au vendeur", "Parce que l’État gaspille toujours les recettes", "Parce qu’elle fait baisser les salaires", "Parce que les entreprises la paient deux fois"], c: 0,
+          e: "Cette perte ne profite à personne, ni à l’État ni aux acteurs du marché." }
+      ],
       duree: 5,
       html: `
 <h3>La bonne affaire</h3>
@@ -323,7 +345,7 @@ ${triangles}
       objections: "Un franc n’est pas un franc pour tous, disposition à payer et bien-être, biens sans marché, triangles et rectangles.",
       ecoles: "Dupuit, Marshall, Hicks, Harberger, Sen, Brynjolfsson.",
       source: "Dupuit, 1849 : empêcher le voyageur de deuxième classe d’aller en troisième.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur la valeur du temps.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur la valeur du temps.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

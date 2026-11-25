@@ -120,6 +120,9 @@ OEC.notices["institutions-inclusives"] = {
       o: ["La mortalité des colons a surtout touché les colonies les plus riches", "Les colons ont aussi apporté du capital humain, qui pourrait être la vraie cause de la croissance", "Les données de mortalité sont fausses", "La géographie et le climat suffisent à expliquer les écarts de revenu"],
       c: 1, e: "Ils soutiennent que l’instruction et les savoir-faire comptent d’abord, les institutions démocratiques suivant l’enrichissement. L’objection sur les données est celle d’Albouy (2012), celle sur la géographie celle de Sachs." }
   ],
+  transfert: { q: "Dans un pays, ouvrir un atelier exige deux ans de démarches et des pots-de-vin, et le gouvernement peut confisquer les terres. Que prévoit la théorie des institutions ?",
+    o: ["Peu d’investissement et d’innovation, car ceux qui créent de la richesse risquent de se la faire prendre", "Une croissance rapide, grâce à un État fort", "Aucun effet : seule la géographie compte", "Une arrivée massive d’entrepreneurs étrangers"], c: 0,
+    e: "Des institutions extractives découragent d’investir : celui qui crée de la richesse n’est pas sûr d’en profiter." },
   ouverte: {
     q: "La Suisse n’a ni accès à la mer, ni matières premières, ni grandes plaines fertiles. Comment le cadre d’Acemoglu et Robinson pourrait-il expliquer sa prospérité, et que manquerait-il à cette explication ?",
     r: "On peut invoquer un pouvoir politique très décentralisé et contrôlé (fédéralisme, démocratie directe, communes autonomes), une tradition ancienne de gestion collective des ressources que décrit aussi Ostrom avec Törbel, une neutralité qui a épargné le pays des destructions des guerres, la protection de la propriété et une monnaie stable. Il manquerait cependant le rôle de l’éducation (dont la Réforme a favorisé la diffusion), de la spécialisation industrielle et financière, des ressources tirées du mercenariat et du commerce, et des réseaux d’immigrés qualifiés, comme les huguenots dans l’horlogerie. Le cas suisse illustre bien les forces et les limites du cadre : il explique pourquoi la richesse a pu s’accumuler, moins pourquoi elle est apparue dans ces secteurs précis."
@@ -138,6 +141,22 @@ OEC.notices["institutions-inclusives"] = {
   const N = OEC.notices["institutions-inclusives"];
 
   N.decouvrir = {
+
+    questions: [
+
+      { q: "Pourquoi la comparaison entre les deux moitiés de Nogales est-elle si parlante ?",
+
+        o: ["Parce que le climat et la culture sont les mêmes des deux côtés : seules les règles diffèrent", "Parce que la moitié mexicaine possède davantage de ressources naturelles", "Parce que les habitants des deux côtés n’ont aucun lien entre eux", "Parce que la moitié américaine est beaucoup plus ancienne"], c: 0,
+
+        e: "Géographie et culture étant semblables, l’écart de niveau de vie doit venir des institutions." },
+
+      { q: "Le Botswana et la Sierra Leone ont tous deux découvert des diamants. Qu’est-ce qui explique leurs destins opposés ?",
+
+        o: ["La qualité de leurs diamants", "L’usage du pouvoir : richesse investie et pouvoir contrôlé au Botswana, richesse captée par un parti unique en Sierra Leone", "Leur climat", "La taille de leur population"], c: 1,
+
+        e: "Mêmes ressources, règles différentes, destins opposés : c’est l’argument des institutions." }
+
+    ],
     duree: 5,
     html: `
 <h3>Une ville, deux destins</h3>
@@ -166,7 +185,7 @@ OEC.notices["institutions-inclusives"] = {
     objections: "La Chine, le capital humain, les données, la géographie, et une théorie jugée trop souple.",
     ecoles: "Smith, North, Hayek, Ostrom, Marx et Sen face à cette thèse.",
     source: "Une phrase d’Adam Smith de 1755 et ce qu’elle laisse de côté.",
-    quiz: "Cinq questions corrigées et une question de réflexion sur la Suisse.",
+    quiz: "Six questions corrigées et une question de réflexion sur la Suisse.",
     lectures: "Cinq lectures classées par niveau."
   };
 

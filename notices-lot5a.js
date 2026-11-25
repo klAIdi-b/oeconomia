@@ -140,6 +140,9 @@ ${cercle}
         o: ["Les premières montres-bracelets anglaises", "La production en série de montres américaines avec des pièces interchangeables", "Les montres japonaises à quartz", "Une taxe américaine sur les montres"], c: 1,
         e: "La production mécanisée et concentrée des Américains contraste avec l’établissage dispersé du Jura." }
     ],
+    transfert: { q: "Dans un petit village isolé, un seul artisan répare à la fois les vélos, les montres et les radios. Dans une grande ville, chaque réparateur a sa spécialité. Comment Smith l’explique-t-il ?",
+      o: ["La division du travail est limitée par la taille du marché : au village, il n’y a pas assez de clients pour se spécialiser", "Les artisans de village sont plus habiles", "La loi interdit la spécialisation à la campagne", "En ville, les réparations sont moins chères à faire"], c: 0,
+      e: "On ne peut se spécialiser que s’il y a assez de clients pour une seule activité." },
     ouverte: {
       q: "La pandémie a relancé en Suisse le débat sur la dépendance aux chaînes d’approvisionnement mondiales, par exemple pour les médicaments. Faut-il relocaliser certaines productions ?",
       r: "La théorie de la division du travail explique pourquoi la spécialisation internationale rend les biens moins chers : un petit pays comme la Suisse ne peut pas tout produire efficacement, et son marché intérieur est trop étroit pour beaucoup d’industries. Relocaliser coûte donc cher. Mais l’efficacité en temps normal n’est pas le seul critère : pour des biens essentiels, comme certains médicaments ou équipements médicaux, une rupture d’approvisionnement a un coût très élevé. La Suisse dispose déjà d’un système de réserves obligatoires pour certains biens vitaux, géré par l’Office fédéral pour l’approvisionnement économique du pays. Les économistes recommandent souvent de diversifier les fournisseurs et de constituer des stocks, plutôt que de relocaliser massivement, ce qui préserve l’essentiel des gains de la spécialisation tout en réduisant la vulnérabilité."
@@ -152,6 +155,14 @@ ${cercle}
       ["Recherche", "Allyn Young, « Increasing Returns and Economic Progress », Economic Journal, 1928 ; Charles Babbage, On the Economy of Machinery and Manufactures, 1832, chapitre 19."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que montre l’exemple du crayon ?",
+          o: ["Qu’aucune personne ne saurait le fabriquer seule : il résulte du travail spécialisé de milliers de gens", "Qu’un crayon est facile à fabriquer", "Que le bois est la matière la plus chère", "Que les crayons sont produits par une seule entreprise"], c: 0,
+          e: "C’est le résultat de la division du travail, à l’échelle du monde." },
+        { q: "Pourquoi Adam Smith plaide-t-il pour l’éducation publique ?",
+          o: ["Parce qu’un travail répétitif toute la vie peut abrutir les ouvriers", "Parce que les écoles rapportent des impôts", "Parce que les patrons manquent de clients", "Parce que les épingles exigent des ingénieurs"], c: 0,
+          e: "La division du travail a aussi un prix humain, que Smith souligne lui-même." }
+      ],
       duree: 5,
       html: `
 <h3>Personne ne sait fabriquer un crayon</h3>
@@ -173,7 +184,7 @@ ${epingles}
       objections: "Déqualification, limites du taylorisme, fragilité des chaînes, inégalités territoriales.",
       ecoles: "Platon, Smith, Babbage, Marx, Durkheim, Hayek, Krugman et Romer.",
       source: "Smith, 1776 : la première phrase de la Richesse des nations.",
-      quiz: "Cinq questions corrigées et une question sur la relocalisation.",
+      quiz: "Six questions corrigées et une question sur la relocalisation.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -298,6 +309,9 @@ ${coop}
         o: ["Que les coopératives fonctionnent mieux sans règles", "Qu’une demande excessive de monnaie peut provoquer une récession même quand personne ne manque de rien", "Que les coopératives sont inefficaces", "Que l’inflation est toujours nuisible"], c: 1,
         e: "Chacun voulant accumuler des tickets, personne ne sortait, et personne ne pouvait en gagner." }
     ],
+    transfert: { q: "En 2009, après une crise financière, les ventes chutent dans presque tous les secteurs en même temps, et les entreprises gardent leurs liquidités. Ce constat donne-t-il raison à Say ou à Keynes ?",
+      o: ["Plutôt à Keynes : la demande manque partout à la fois parce que l’argent est gardé", "Plutôt à Say : il y a trop de certains biens et pas assez d’autres", "Aux deux à égalité, puisque les prix baissent", "À aucun des deux, car les crises n’ont rien à voir avec la demande"], c: 0,
+      e: "On admet souvent que Say a raison à long terme, et Keynes en période de crise." },
     ouverte: {
       q: "Pendant la Grande Dépression, la Suisse a maintenu un franc fort et cherché à baisser prix et salaires jusqu’en 1936. Que dirait Say de cette politique, et que dirait Keynes ?",
       r: "Dans la logique de Say et des classiques, l’économie suisse souffrait de coûts trop élevés par rapport à ses concurrents : la baisse des prix et des salaires devait rétablir la compétitivité et la production, qui créerait elle-même ses débouchés. Keynes répondrait que la baisse générale des prix et des salaires réduit les revenus et donc la demande, augmente le poids réel des dettes, et pousse chacun à retarder ses dépenses en attendant de nouvelles baisses : la demande manque, et la crise se prolonge. L’expérience suisse, avec une reprise nette après la dévaluation de septembre 1936, et celle des autres pays du bloc-or, sortis tardivement de la crise, est souvent citée en faveur de la seconde interprétation. Les défenseurs de la politique de l’époque soulignent la volonté de préserver la confiance dans le franc et l’épargne des ménages, qui restent des préoccupations suisses."
@@ -310,6 +324,14 @@ ${coop}
       ["Recherche", "Joan Sweeney et Richard Sweeney, « Monetary Theory and the Great Capitol Hill Baby Sitting Co-op Crisis », Journal of Money, Credit and Banking, 1977 ; Thomas Sowell, Say’s Law: An Historical Analysis, 1972."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pour Say, pourquoi une surproduction de tout à la fois est-elle impossible ?",
+          o: ["Parce qu’en produisant et en vendant, on gagne de quoi acheter autre chose", "Parce que l’État achète les invendus", "Parce que les machines produisent peu", "Parce que les prix ne changent jamais"], c: 0,
+          e: "Les produits s’échangent contre des produits." },
+        { q: "Qu’objecte Keynes à la loi des débouchés ?",
+          o: ["L’argent gagné n’est pas toujours dépensé : en période d’inquiétude, on le garde", "La production est toujours insuffisante", "Les prix s’ajustent trop vite", "Le commerce international l’empêche"], c: 0,
+          e: "La demande peut alors manquer partout à la fois, comme pendant la Grande Dépression." }
+      ],
       duree: 5,
       html: `
 <h3>Peut-on produire trop de tout ?</h3>
@@ -331,7 +353,7 @@ ${coop}
       objections: "Say avait raison à long terme, la caricature de Keynes, l’effet Pigou, identité et égalité.",
       ecoles: "Smith, Say et Ricardo, Malthus et Sismondi, Marx, Keynes, Friedman et Lucas.",
       source: "Say : un produit terminé offre un débouché à d’autres produits.",
-      quiz: "Cinq questions corrigées et une question sur la Suisse des années 1930.",
+      quiz: "Six questions corrigées et une question sur la Suisse des années 1930.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

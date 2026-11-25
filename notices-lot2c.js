@@ -107,6 +107,9 @@ ${compound}
         o: ["D’ignorer les données", "De présenter des « lois générales » alors que les institutions expliquent davantage l’évolution des inégalités", "De proposer un impôt trop faible", "De sous-estimer la hausse des inégalités aux États-Unis"], c: 1,
         e: "Pour eux, ce sont les institutions politiques et économiques, différentes selon les pays, qui déterminent la répartition, plus qu’un écart arithmétique." }
     ],
+    transfert: { q: "Dans un pays, les patrimoines rapportent 5 % par an et l’économie croît de 1 % par an pendant des décennies, sans impôt progressif. Que prévoit Piketty ?",
+      o: ["Les grandes fortunes, surtout héritées, prennent une place croissante", "Les inégalités de patrimoine diminuent d’elles-mêmes", "Les salaires dépassent bientôt les revenus du capital", "Rien ne change dans la répartition"], c: 0,
+      e: "Avec r largement supérieur à g, le patrimoine accumulé croît plus vite que le revenu national." },
     ouverte: {
       q: "Faut-il taxer davantage les successions, plutôt que la fortune ou le revenu, si l’on veut limiter le mécanisme décrit par Piketty ?",
       r: "Plusieurs arguments plaident pour la taxation des successions : elle frappe une richesse que l’héritier n’a pas gagnée par son mérite, ce qui la rend compatible avec l’idéal méritocratique, y compris pour des libéraux comme John Stuart Mill ; elle décourage moins le travail et l’épargne que l’impôt sur le revenu ; et elle s’attaque directement à la transmission des inégalités. Mais elle est souvent très impopulaire, y compris parmi les ménages modestes ; elle peut inciter les grandes fortunes à s’installer ailleurs ; et elle pose des difficultés pour les entreprises familiales, dont la transmission pourrait obliger à vendre. L’impôt suisse sur la fortune, annuel et modeste, illustre une autre voie, de même que les droits de succession élevés de pays comme la France ou le Royaume-Uni. Le choix dépend autant des valeurs politiques que de l’efficacité économique."
@@ -119,6 +122,14 @@ ${compound}
       ["Recherche", "Thomas Piketty et Gabriel Zucman, « Capital is Back », Quarterly Journal of Economics, 2014 ; Matthew Rognlie, « Deciphering the Fall and Rise in the Net Capital Share », Brookings Papers, 2015 ; Daron Acemoglu et James Robinson, « The Rise and Decline of General Laws of Capitalism », Journal of Economic Perspectives, 2015."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que veut montrer le conseil de Vautrin à Rastignac, dans le roman de Balzac ?",
+          o: ["Qu’au XIXe siècle, l’héritage comptait plus que le travail pour devenir riche", "Que le travail était très bien payé", "Que les impôts étaient trop élevés", "Que les mariages étaient interdits entre classes sociales"], c: 0,
+          e: "Piketty se demande si ce monde où l’héritage domine est en train de revenir." },
+        { q: "Pourquoi les inégalités de patrimoine remontent-elles quand r est plus grand que g ?",
+          o: ["Parce qu’un patrimoine qui réinvestit ses revenus grossit plus vite que les salaires", "Parce que les salaires augmentent plus vite que les patrimoines", "Parce que l’inflation détruit les patrimoines", "Parce que la croissance est trop forte"], c: 0,
+          e: "Le rendement du patrimoine dépasse la croissance de l’économie, donc des revenus du travail." }
+      ],
       duree: 5,
       html: `
 <h3>Le conseil de Vautrin</h3>
@@ -140,7 +151,7 @@ ${compound}
       objections: "Le logement, la baisse de r, le renouvellement des fortunes, les institutions, les mesures.",
       ecoles: "Ricardo, Marx, Kuznets, Pareto, Hayek, Sen.",
       source: "Piketty, 2013 : des inégalités « mécaniquement » produites.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur la fiscalité des successions.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur la fiscalité des successions.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -261,6 +272,9 @@ ${principes}
         o: ["Les stocks se sont effondrés", "Une solution efficace pour la ressource peut concentrer les droits et poser des problèmes de répartition", "Les quotas ont été interdits", "Les quotas n’ont eu aucun effet sur les stocks de poissons"], c: 1,
         e: "Les stocks et la rentabilité se sont améliorés, mais les quotas se sont concentrés et certains villages ont perdu leur pêche." }
     ],
+    transfert: { q: "Dans une ville, tout le monde peut se garer gratuitement dans le centre, et les places sont toujours occupées. De quel problème s’agit-il, et quelle réponse en découle ?",
+      o: ["D’une ressource rivale et ouverte à tous, surexploitée ; on peut la régler par un stationnement payant ou des règles d’accès", "D’un bien public pur, que seul l’État peut produire", "D’une externalité positive, qu’il faut subventionner", "D’un monopole, qu’il faut briser"], c: 0,
+      e: "Chaque conducteur prend une place sans tenir compte de la gêne pour les autres ; un prix ou une règle limite l’usage." },
     ouverte: {
       q: "Les glaciers et les ressources en eau des Alpes sont-ils des biens communs ? Comment les principes d’Ostrom pourraient-ils s’appliquer à la gestion de l’eau en Suisse face au réchauffement ?",
       r: "L’eau des Alpes présente bien les caractéristiques d’un commun : rivale (l’eau prélevée pour l’irrigation, la neige artificielle ou l’hydroélectricité manque aux autres usages) et difficile à exclure. La Suisse dispose déjà d’institutions proches des principes d’Ostrom : consortages des bisses, droits d’eau communaux, gestion par bassins, et un fédéralisme qui emboîte les niveaux de décision (principe 8). Le réchauffement modifie toutefois les conditions : la fonte des glaciers augmente les débits à court terme puis les réduira, et les conflits d’usage entre agriculture, tourisme, énergie et écosystèmes vont s’intensifier. Les principes suggèrent des limites claires des droits d’eau, des règles révisées par les usagers eux-mêmes, une surveillance partagée des débits et des mécanismes de résolution des conflits entre communes et cantons. Mais une partie du problème, le climat lui-même, dépasse toute gestion locale."
@@ -273,6 +287,14 @@ ${principes}
       ["Recherche", "Elinor Ostrom, James Walker et Roy Gardner, « Covenants with and without a Sword », American Political Science Review, 1992 ; H. Scott Gordon, « The Economic Theory of a Common-Property Resource: The Fishery », Journal of Political Economy, 1954."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Dans l’image du pâturage de Hardin, pourquoi chaque berger ajoute-t-il des vaches ?",
+          o: ["Parce qu’il garde tout le profit de sa vache, alors que les dégâts du surpâturage sont partagés entre tous", "Parce que l’herbe repousse toujours", "Parce que l’État l’y oblige", "Parce que les vaches sont gratuites"], c: 0,
+          e: "Le gain est privé, le coût est collectif : c’est la tragédie des communs." },
+        { q: "Qu’a découvert Elinor Ostrom en étudiant des centaines de cas réels ?",
+          o: ["Que de nombreuses communautés gèrent durablement leurs ressources grâce à des règles décidées ensemble", "Que seule la privatisation protège les ressources", "Que seul l’État peut gérer une ressource commune", "Que les ressources communes finissent toujours par disparaître"], c: 0,
+          e: "Règles communes, surveillance mutuelle et sanctions progressives sont les clés du succès." }
+      ],
       duree: 5,
       html: `
 <h3>La morue disparue</h3>
@@ -294,7 +316,7 @@ ${principes}
       objections: "Changer d’échelle, communs excluants, efficacité des marchés, portée des principes.",
       ecoles: "Aristote, Gordon et Scott, Hardin, Coase, Hayek, les mouvements des communs.",
       source: "Hardin, 1968, et sa propre correction de 1998.",
-      quiz: "Cinq questions corrigées et une question sur l’eau des Alpes.",
+      quiz: "Six questions corrigées et une question sur l’eau des Alpes.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

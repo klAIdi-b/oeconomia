@@ -125,6 +125,9 @@ ${rounds}
         o: ["L’austérité avait relancé la croissance européenne", "Les multiplicateurs effectifs étaient nettement supérieurs à ceux supposés dans les prévisions", "Le multiplicateur était négatif en Grèce", "La politique monétaire avait été trop restrictive en 2010"], c: 1,
         e: "Les prévisions supposaient un multiplicateur d’environ 0,5 ; la réalité correspondait plutôt à 0,9 à 1,7. Les pays qui ont le plus réduit leurs dépenses ont donc connu des récessions plus fortes que prévu." }
     ],
+    transfert: { q: "Pendant une récession, les ménages d’un pays décident tous d’épargner davantage par précaution. Que prévoit le raisonnement de Keynes ?",
+      o: ["Les ventes baissent, les entreprises produisent et embauchent moins, et les revenus diminuent", "Les taux baissent et l’investissement compense aussitôt la baisse de la consommation", "La production augmente grâce à l’épargne", "Rien ne change"], c: 0,
+      e: "La dépense des uns est le revenu des autres : moins de dépense, c’est moins de revenu." },
     ouverte: {
       q: "La Suisse applique depuis 2003 un « frein à l’endettement » qui oblige la Confédération à équilibrer son budget sur l’ensemble d’un cycle conjoncturel. Est-ce compatible avec les idées de Keynes ?",
       r: "En partie. Le mécanisme autorise des déficits en période de récession et exige des excédents en période de haute conjoncture : il laisse donc jouer les « stabilisateurs automatiques », ce qui est conforme à l’idée keynésienne d’une politique contracyclique, et même à la recommandation de Keynes d’excédents en période de prospérité. En revanche, il limite les plans de relance discrétionnaires de grande ampleur, que Keynes jugeait nécessaires dans les crises profondes. Pendant la pandémie, la Suisse a d’ailleurs utilisé une procédure de dépenses extraordinaires, prévue par la règle, pour financer le chômage partiel. Un keynésien soulignera aussi que l’économie suisse, très ouverte, a un multiplicateur faible, puisqu’une grande partie de la dépense supplémentaire part en importations."
@@ -137,6 +140,14 @@ ${rounds}
       ["Recherche", "Olivier Blanchard et Daniel Leigh, « Growth Forecast Errors and Fiscal Multipliers », American Economic Review, 2013 ; Valerie Ramey, « Ten Years After the Financial Crisis: What Have We Learned from the Renaissance in Fiscal Research? », Journal of Economic Perspectives, 2019."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Keynes, pourquoi des usines peuvent-elles rester vides alors que des chômeurs cherchent du travail ?",
+          o: ["Parce que les entreprises ne produisent que ce qu’elles pensent pouvoir vendre", "Parce que les machines sont usées", "Parce que les chômeurs refusent de travailler", "Parce que les salaires sont trop bas"], c: 0,
+          e: "Si personne n’achète, personne ne produit, et personne n’embauche." },
+        { q: "Que veut montrer l’exemple des 100 millions dépensés par l’État pour des routes ?",
+          o: ["Que la dépense publique peut créer au total plus de richesse que la somme de départ", "Que les routes coûtent toujours trop cher", "Que l’État doit rembourser aussitôt", "Que les salaires doivent baisser"], c: 0,
+          e: "Les salaires versés sont en partie dépensés, puis redépensés : c’est le multiplicateur." }
+      ],
       duree: 5,
       html: `
 <h3>Des usines vides et des chômeurs</h3>
@@ -157,7 +168,7 @@ ${rounds}
       objections: "Éviction, équivalence ricardienne, anticipations, banque centrale, dette et offre.",
       ecoles: "Malthus, Say, Hayek, Friedman, Minsky, les nouveaux keynésiens.",
       source: "Keynes sur le pouvoir des idées et les « économistes défunts ».",
-      quiz: "Cinq questions corrigées et une question sur le frein à l’endettement suisse.",
+      quiz: "Six questions corrigées et une question sur le frein à l’endettement suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -274,6 +285,9 @@ ${gains}
         o: ["La gratuité des transports", "Le passage sans coût des travailleurs d’un secteur à l’autre", "La concurrence parfaite sur tous les marchés", "L’égalité des salaires entre pays"], c: 1,
         e: "Les travailleurs licenciés des secteurs concurrencés n’ont pas retrouvé facilement d’emploi ailleurs, ni déménagé : l’ajustement a été lent et coûteux." }
     ],
+    transfert: { q: "Le Vietnam produit des chaussures et des puces électroniques moins efficacement que la Corée du Sud, mais son retard est bien plus faible dans les chaussures. Que conseille la théorie de Ricardo ?",
+      o: ["Le Vietnam se spécialise dans les chaussures, la Corée dans les puces, et ils échangent", "La Corée produit tout elle-même", "Le Vietnam produit tout lui-même", "Aucun échange n’est avantageux"], c: 0,
+      e: "Chaque pays se spécialise là où son coût d’opportunité est le plus faible, même s’il est moins productif partout." },
     ouverte: {
       q: "Faut-il que la Suisse continue de protéger fortement son agriculture, au regard de la théorie de l’avantage comparatif ?",
       r: "La théorie de Ricardo suggère que la protection a un coût : prix plus élevés pour les consommateurs, ressources maintenues dans un secteur sans avantage comparatif, et risque de mesures de rétorsion contre les exportations suisses. Mais plusieurs arguments s’ajoutent au calcul : l’agriculture entretient des paysages et une vie rurale dans les régions de montagne (des externalités positives que le marché ne rémunère pas), elle contribue à la sécurité d’approvisionnement en cas de crise, et une transition brutale imposerait des coûts concentrés sur une population précise. Une réponse fréquente des économistes consiste à remplacer la protection aux frontières par des paiements directs liés aux services rendus, qui préservent ces objectifs à un coût moindre pour les consommateurs ; la Suisse a d’ailleurs évolué dans ce sens depuis les années 1990."
@@ -286,6 +300,14 @@ ${gains}
       ["Recherche", "Daniel Bernhofen et John Brown, « A Direct Test of the Theory of Comparative Advantage: The Case of Japan », Journal of Political Economy, 2004 ; David Autor, David Dorn et Gordon Hanson, « The China Syndrome », American Economic Review, 2013."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi l’avocate a-t-elle intérêt à confier la frappe à sa secrétaire, même si elle tape plus vite ?",
+          o: ["Parce que chaque heure passée à taper est une heure de conseil qu’elle ne facture pas", "Parce que taper est fatigant", "Parce que la secrétaire tape en réalité plus vite qu’elle", "Parce que l’ordinateur coûte plus cher que la secrétaire"], c: 0,
+          e: "Ce qui compte n’est pas d’être le meilleur, mais ce à quoi on renonce." },
+        { q: "Qu’est-ce que le coût d’opportunité ?",
+          o: ["Ce à quoi on renonce en choisissant une activité", "Le prix payé au fournisseur", "Le coût du transport des marchandises", "Les impôts sur le commerce"], c: 0,
+          e: "C’est la clé de l’avantage comparatif." }
+      ],
       duree: 5,
       html: `
 <h3>L’avocate et la secrétaire</h3>
@@ -307,7 +329,7 @@ ${gains}
       objections: "Perdants, coûts d’ajustement, politique industrielle, rendements croissants, dépendances.",
       ecoles: "Mercantilistes, Smith, Mill, structuralistes, marxistes, Krugman.",
       source: "Ricardo, chapitre 7 : la poursuite de l’avantage individuel et le bien universel.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur l’agriculture suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur l’agriculture suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

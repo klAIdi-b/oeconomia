@@ -115,6 +115,9 @@ ${trappe}
         o: ["Elle a relevé ses taux", "Elle a fixé un cours plancher de 1,20 franc pour un euro", "Elle a acheté massivement des obligations de la Confédération", "Elle a cessé toute intervention"], c: 1,
         e: "Le taux de change est devenu son principal instrument : elle a acheté massivement des devises pour empêcher le franc de s’apprécier au-delà du plancher." }
     ],
+    transfert: { q: "En 2020, les taux sont déjà proches de zéro dans la zone euro, et les entreprises hésitent à investir malgré l’argent bon marché. Quelle conclusion tirerait Keynes ?",
+      o: ["La banque centrale seule ne suffit plus : la dépense publique doit prendre le relais", "Il faut relever fortement les taux", "Les entreprises vont forcément investir bientôt", "Il faut supprimer l’argent liquide"], c: 0,
+      e: "Dans une trappe à liquidité, la politique monétaire perd son efficacité : c’est l’argument pour la relance budgétaire." },
     ouverte: {
       q: "Entre 2015 et 2022, la BNS a maintenu un taux directeur de −0,75 %. Qui en a profité et qui en a souffert en Suisse ?",
       r: "Les gagnants principaux sont les emprunteurs, notamment les propriétaires immobiliers dont les hypothèques à taux bas ont coûté peu, l’industrie d’exportation, protégée d’une appréciation encore plus forte du franc, et les détenteurs d’actifs dont la valeur a augmenté. Les perdants sont les épargnants, dont les comptes ne rapportaient rien et qui se voyaient parfois appliquer des frais, les caisses de pension, qui ont peiné à obtenir le rendement nécessaire pour financer les rentes, ce qui a contribué à la baisse des taux de conversion, et les jeunes ménages, confrontés à la hausse des prix immobiliers. Les banques ont vu leurs marges comprimées, même si la BNS a exempté une partie de leurs réserves. Le bilan dépend du point de comparaison : sans taux négatifs, le franc se serait sans doute encore apprécié, avec des pertes d’emplois industriels."
@@ -127,6 +130,14 @@ ${trappe}
       ["Recherche", "Paul Krugman, « It’s Baaack: Japan’s Slump and the Return of the Liquidity Trap », Brookings Papers on Economic Activity, 1998 ; John Hicks, « Mr. Keynes and the “Classics” », Econometrica, 1937."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pour Keynes, pourquoi garde-t-on de l’argent qui ne rapporte rien ?",
+          o: ["Pour payer ses achats, faire face aux imprévus ou attendre une meilleure occasion de placer", "Parce que la loi l’impose", "Parce que les billets prennent de la valeur avec le temps", "Parce que les banques refusent les dépôts"], c: 0,
+          e: "Ce goût pour l’argent disponible est la préférence pour la liquidité." },
+        { q: "Pourquoi créer davantage de monnaie ne sert-il presque plus à rien dans une trappe à liquidité ?",
+          o: ["Parce que la monnaie reste dans les banques au lieu d’être prêtée ou dépensée", "Parce que les prix montent aussitôt", "Parce que la monnaie est détruite chaque soir", "Parce que les taux d’intérêt sont trop élevés"], c: 0,
+          e: "Quand les taux sont à zéro et que la confiance manque, la monnaie ne circule plus." }
+      ],
       duree: 5,
       html: `
 <h3>Pourquoi garder de l’argent qui ne rapporte rien ?</h3>
@@ -148,7 +159,7 @@ ${motifs}
       objections: "Friedman, l’effet Pigou, la récession de bilan, les effets secondaires des taux bas.",
       ecoles: "Keynes, Hicks, Friedman, Krugman, Minsky, Summers.",
       source: "Keynes, 1936 : l’intérêt, récompense de la renonciation à la liquidité.",
-      quiz: "Cinq questions corrigées et une question sur les taux négatifs suisses.",
+      quiz: "Six questions corrigées et une question sur les taux négatifs suisses.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -254,6 +265,9 @@ ${valeur}
         o: ["En obligeant les salariés à épargner", "En affectant à l’épargne une partie des futures augmentations, sans jamais réduire le salaire disponible", "En offrant une prime d’épargne", "En prélevant l’épargne sur le salaire dès le premier mois"], c: 1,
         e: "Le revenu disponible ne baisse jamais ; il augmente simplement moins vite. L’épargne n’est donc pas vécue comme une perte." }
     ],
+    transfert: { q: "Un magasin en ligne présente la même offre de deux façons : « 10 euros de réduction si vous payez en avance » ou « 10 euros de frais si vous payez à la livraison ». Selon l’économie comportementale, laquelle pousse le plus à payer en avance ?",
+      o: ["Les frais, car éviter une perte motive davantage qu’obtenir un gain", "La réduction, car les gains comptent davantage que les pertes", "Les deux ont exactement le même effet", "Aucune, car les clients ne lisent pas les conditions"], c: 0,
+      e: "Les deux présentations sont équivalentes en argent, mais la perte pèse plus lourd." },
     ouverte: {
       q: "Au moment de la retraite, de nombreux assurés suisses peuvent choisir de toucher leur avoir du deuxième pilier sous forme de rente ou de capital. Comment l’aversion aux pertes et le cadrage peuvent-ils influencer ce choix ?",
       r: "Le capital apparaît souvent comme un gain tangible, une somme que l’on possède, tandis que la rente peut être perçue comme une perte si l’on meurt tôt (« j’aurai cotisé pour rien »), ce qui pousse vers le capital. À l’inverse, présenter la rente comme une assurance contre le risque de manquer d’argent en vivant très longtemps peut la rendre plus attractive. La façon dont la caisse de pension présente les options, l’ordre des informations et l’option par défaut influencent donc fortement le résultat. Un économiste classique comparerait la valeur actuelle des deux options selon l’espérance de vie, les taux et la fiscalité ; un économiste comportemental ajouterait qu’il faut aider les assurés à éviter les biais, par exemple en présentant les deux options de manière symétrique, en termes de revenu mensuel et de risque."
@@ -266,6 +280,14 @@ ${valeur}
       ["Recherche", "Daniel Kahneman et Amos Tversky, « Prospect Theory », Econometrica, 1979 ; Daniel Kahneman, Jack Knetsch et Richard Thaler, « Experimental Tests of the Endowment Effect and the Coase Theorem », Journal of Political Economy, 1990."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Dans l’exemple de la maladie qui menace 600 personnes, qu’est-ce qui change la décision des gens ?",
+          o: ["La façon de présenter le même choix : en vies sauvées ou en morts", "Le nombre de malades", "Le coût du programme", "L’avis des médecins"], c: 0,
+          e: "C’est l’effet de cadrage, mis en évidence par Kahneman et Tversky." },
+        { q: "Pourquoi la plupart des gens refusent-ils de jouer à pile ou face pour gagner 150 francs ou en perdre 100 ?",
+          o: ["Parce qu’une perte leur fait environ deux fois plus d’effet qu’un gain de même montant", "Parce que le pari est perdant en moyenne", "Parce que les jeux d’argent sont interdits", "Parce qu’ils ne comprennent pas les probabilités"], c: 0,
+          e: "Le pari est pourtant avantageux en moyenne : c’est l’aversion aux pertes." }
+      ],
       duree: 5,
       html: `
 <h3>Même choix, réponses opposées</h3>
@@ -287,7 +309,7 @@ ${valeur}
       objections: "L’ampleur de l’effet, l’expérience qui corrige, la crise de réplication, l’éthique des nudges.",
       ecoles: "Bernoulli, Allais, Simon, Thaler, Friedman, Keynes.",
       source: "Kahneman et Tversky, 1979 : les pertes pèsent plus lourd que les gains.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur le deuxième pilier.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur le deuxième pilier.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

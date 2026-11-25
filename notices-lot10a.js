@@ -137,6 +137,9 @@ ${echelle}
         o: ["Toujours celui qui la verse au fisc", "Le côté du marché le moins élastique", "Le côté du marché le plus élastique", "Les deux côtés à parts égales, toujours"], c: 1,
         e: "Celui qui a le moins de solutions de rechange ne peut pas éviter la taxe." }
     ],
+    transfert: { q: "Une ville augmente de 20 % le prix des tickets de métro, et le nombre de trajets baisse de 4 %. Que peut-on en conclure ?",
+      o: ["La demande est élastique, et la recette de la compagnie baisse", "La demande est inélastique (environ −0,2), et la recette de la compagnie augmente", "L’élasticité vaut −5", "On ne peut rien dire sans connaître le prix de l’essence"], c: 1,
+      e: "−4 % ÷ 20 % = −0,2 : la quantité réagit bien moins que le prix, donc la recette augmente." },
     ouverte: {
       q: "Faut-il taxer les boissons sucrées en Suisse, comme le fait le Royaume-Uni depuis 2018 ?",
       r: "L’élasticité aide à poser les termes du débat. La demande de boissons sucrées est en général plus élastique que celle du tabac, parce qu’il existe des substituts proches : l’eau, les boissons sans sucre ou moins sucrées. Une taxe peut donc réduire la consommation, et c’est d’ailleurs ce qui s’est passé au Royaume-Uni, où de nombreux fabricants ont réduit la teneur en sucre de leurs boissons pour y échapper. Ses partisans y voient un moyen de prévenir l’obésité et le diabète, dont les coûts pèsent sur l’assurance maladie (<a href=\"#c-externalite\">voir externalité</a>). Ses adversaires soulignent qu’une telle taxe pèse plus lourd, en proportion, sur les ménages modestes, qu’elle restreint la liberté de choix, et que d’autres moyens existent : la Suisse a jusqu’ici privilégié des engagements volontaires de l’industrie, comme la déclaration de Milan de 2015 sur la réduction du sucre dans les yaourts et les céréales. Le débat porte à la fois sur l’efficacité de la mesure et sur le rôle de l’État dans les choix de consommation."
@@ -150,6 +153,14 @@ ${echelle}
       ["Recherche", "Frank Ramsey, « A Contribution to the Theory of Taxation », Economic Journal, 1927."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi la demande de cigarettes réagit-elle peu à une hausse de prix ?",
+          o: ["Parce que les fumeurs ont peu de substituts et une forte habitude", "Parce que les cigarettes sont bon marché", "Parce que l’État fixe leur prix", "Parce que les fumeurs ne connaissent pas les prix"], c: 0,
+          e: "Sans substitut proche et avec la dépendance, la quantité achetée baisse peu." },
+        { q: "Une marque de café augmente fortement son prix, les autres non. Que se passe-t-il probablement ?",
+          o: ["Ses ventes changent à peine", "Beaucoup de clients passent à une autre marque : la demande pour cette marque est élastique", "Toutes les marques vendent moins", "Ses ventes augmentent, car son café paraît meilleur"], c: 1,
+          e: "Quand les substituts sont nombreux, les acheteurs réagissent fortement au prix." }
+      ],
       duree: 5,
       html: `
 <h3>Le prix monte : achète-t-on encore ?</h3>
@@ -169,7 +180,7 @@ ${deuxCourbes}
       objections: "Un chiffre qui varie, des comportements insensibles au prix, la règle de Ramsey.",
       ecoles: "King et Davenant, Cournot, Marshall, Engel, Ramsey, Veblen.",
       source: "La définition de Marshall, en 1890.",
-      quiz: "Cinq questions corrigées et une question sur la taxe sur les boissons sucrées.",
+      quiz: "Six questions corrigées et une question sur la taxe sur les boissons sucrées.",
       lectures: "Six lectures classées par niveau."
     }
   };

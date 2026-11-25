@@ -123,6 +123,9 @@ ${periodes}
         o: ["Un cours plancher de 1,20 franc pour un euro", "Un impôt sur les dépôts", "Des achats massifs d’actions suisses", "Une hausse des réserves obligatoires des banques"], c: 0,
         e: "La BNS s’est engagée à acheter des devises en quantité illimitée pour empêcher le franc de s’apprécier au-delà de ce seuil." }
     ],
+    transfert: { q: "Un pays a ramené ses taux à zéro il y a trois ans. Les prix baissent légèrement, et le crédit ne repart pas malgré la création de monnaie. Quelle politique les économistes keynésiens recommanderaient-ils en priorité ?",
+      o: ["Une relance par la dépense publique, puisque la politique monétaire classique a perdu sa force", "Une hausse des taux pour restaurer la confiance", "Une réduction de la dépense publique", "Une hausse des impôts sur la consommation"], c: 0,
+      e: "À taux zéro, la banque centrale ne peut plus guère stimuler la demande : l’État prend le relais." },
     ouverte: {
       q: "Le billet de 1 000 francs facilite la thésaurisation et empêche la BNS de descendre très bas en taux négatifs. Faudrait-il le supprimer ?",
       r: "Les partisans de la suppression, dans la ligne de Rogoff, font valoir deux arguments : elle permettrait à la BNS de descendre plus bas en taux négatifs en cas de crise grave, et elle compliquerait l’évasion fiscale et le blanchiment. Les opposants rappellent que l’argent liquide est très apprécié en Suisse, pour des raisons de protection de la vie privée, de résilience en cas de panne des systèmes de paiement, et de confiance. Le Parlement et la BNS ont toujours défendu l’accès au cash, et une initiative populaire visant à inscrire la garantie de l’argent liquide dans la Constitution a abouti en 2023. Du point de vue de la politique monétaire, la Suisse a pu gérer les années de taux négatifs à −0,75 % avec le billet de 1 000 francs, en exonérant une partie des dépôts bancaires. La question devient pressante seulement si l’on pense qu’une crise future exigerait des taux beaucoup plus négatifs."
@@ -135,6 +138,14 @@ ${periodes}
       ["Recherche", "Paul Krugman, « It’s Baaack: Japan’s Slump and the Return of the Liquidity Trap », Brookings Papers on Economic Activity, 1998 ; Lars Svensson, « The Zero Bound in an Open Economy: A Foolproof Way of Escaping from a Liquidity Trap », 2001."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Quand les taux sont nuls, pourquoi la monnaie créée par la banque centrale reste-t-elle immobile ?",
+          o: ["Parce que garder de l’argent ne coûte rien et que le placer ne rapporte presque rien", "Parce que la banque centrale interdit de la prêter", "Parce que les prix montent trop vite", "Parce que les banques ont fermé"], c: 0,
+          e: "Banques, entreprises et ménages la gardent en réserve." },
+        { q: "Quels outils les banques centrales ont-elles inventés face à la trappe à liquidité ?",
+          o: ["Des achats massifs d’obligations et des taux légèrement négatifs", "La suppression des billets", "Le retour à l’étalon-or", "Le contrôle des prix"], c: 0,
+          e: "Beaucoup d’économistes recommandent aussi une relance par la dépense publique." }
+      ],
       duree: 5,
       html: `
 <h3>Le remède qui ne marche plus</h3>
@@ -156,7 +167,7 @@ ${periodes}
       objections: "Friedman, l’efficacité des outils non conventionnels, les effets secondaires, un phénomène révolu ?",
       ecoles: "Keynes et Hicks, Friedman, Krugman, Bernanke et Svensson, Summers, Rogoff.",
       source: "Keynes, 1936 : une préférence pour la liquidité virtuellement absolue.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur le billet de 1 000 francs.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur le billet de 1 000 francs.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -287,6 +298,9 @@ ${trois}
         o: ["Que l’inflation diminue lentement", "Qu’un changement de régime crédible peut arrêter l’inflation très vite, avec un coût limité", "Qu’il faut des années de chômage élevé pour l’arrêter", "Que seule une forte baisse des salaires peut l’arrêter"], c: 1,
         e: "Dès que la réforme est crédible, les anticipations changent et l’inflation s’arrête en quelques semaines." }
     ],
+    transfert: { q: "Un gouvernement annonce chaque année qu’il va relancer l’économie en créant un peu d’inflation « surprise ». Selon les anticipations rationnelles, que se passe-t-il au bout de quelques années ?",
+      o: ["Les gens l’anticipent, intègrent l’inflation dans les salaires et les prix, et l’emploi ne gagne plus rien", "L’emploi augmente chaque année davantage", "L’inflation disparaît", "Les salaires baissent en termes réels chaque année"], c: 0,
+      e: "On ne surprend pas les gens indéfiniment : la relance permanente ne fait qu’augmenter l’inflation." },
     ouverte: {
       q: "La BNS avait-elle raison de surprendre complètement les marchés le 15 janvier 2015, alors que sa crédibilité repose sur des anticipations bien guidées ?",
       r: "Du point de vue de la théorie des anticipations, une banque centrale crédible doit être prévisible, car ses annonces guident les comportements. La surprise de janvier 2015 a donc eu un coût : des entreprises exportatrices et des ménages endettés en devises ont subi des pertes brutales, et une partie du public s’est sentie trompée. Mais la BNS fait valoir qu’un abandon annoncé à l’avance, ou même laissé entrevoir, aurait déclenché des achats spéculatifs massifs de francs qu’elle aurait dû contrer en achetant encore plus d’euros, avec des pertes considérables. Une politique de change est particulièrement vulnérable aux anticipations, car les marchés peuvent parier contre elle. La plupart des économistes jugent que la décision était défendable, mais que la communication des jours précédents a nui à la crédibilité. La BNS a depuis évité de présenter ses instruments comme permanents."
@@ -299,6 +313,14 @@ ${trois}
       ["Recherche", "John Muth, « Rational Expectations and the Theory of Price Movements », Econometrica, 1961 ; Robert Lucas, « Econometric Policy Evaluation: A Critique », 1976."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Si l’on prévoit simplement que demain sera comme hier, que se passe-t-il quand l’inflation monte durablement ?",
+          o: ["On se trompe longtemps dans le même sens", "On prévoit toujours juste", "On surestime l’inflation", "On ne peut plus rien prévoir du tout"], c: 0,
+          e: "C’est la limite des anticipations fondées sur le passé." },
+        { q: "Pourquoi les banques centrales annoncent-elles un objectif d’inflation clair ?",
+          o: ["Pour que chacun puisse anticiper leur politique, ce qui renforce leur crédibilité", "Pour surprendre les marchés", "Parce que la loi leur interdit de changer de taux", "Pour fixer elles-mêmes les salaires"], c: 0,
+          e: "Si l’on ne peut pas tromper les gens durablement, la crédibilité devient un instrument." }
+      ],
       duree: 5,
       html: `
 <h3>On ne trompe pas les gens indéfiniment</h3>
@@ -320,7 +342,7 @@ ${trois}
       objections: "Rationalité limitée, incertitude radicale, rigidités de prix, apprentissage.",
       ecoles: "Muth, Friedman et Cagan, Lucas et Sargent, Kydland et Prescott, néokeynésiens, comportementalistes.",
       source: "Muth, 1961 : les anticipations sont les prédictions de la théorie pertinente.",
-      quiz: "Cinq questions corrigées et une question sur la surprise de la BNS.",
+      quiz: "Six questions corrigées et une question sur la surprise de la BNS.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

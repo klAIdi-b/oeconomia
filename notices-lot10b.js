@@ -129,6 +129,9 @@ ${residu}
         o: ["Tous les pays finissent par avoir le même revenu", "Les pays pauvres rattrapent les riches quand leurs caractéristiques sont comparables", "Les pays riches croissent toujours plus vite", "Les pays pauvres rattrapent les riches s’ils empruntent assez"], c: 1,
         e: "Le rattrapage dépend de l’éducation, de l’épargne et des institutions." }
     ],
+    transfert: { q: "Deux pays disposent des mêmes techniques. Le premier investit 35 % de son revenu, le second 15 %. Que prévoit le modèle de Solow à long terme ?",
+      o: ["Le premier aura un revenu par habitant plus élevé, mais les deux finiront par croître au même rythme, celui du progrès technique", "Le premier croîtra toujours plus vite que le second", "Les deux auront exactement le même revenu par habitant", "Le second finira par dépasser le premier"], c: 0,
+      e: "L’épargne élève le niveau du revenu, pas son rythme de croissance à long terme." },
     ouverte: {
       q: "Le PIB suisse augmente en grande partie grâce à la croissance de la population. Est-ce le signe d’une économie en bonne santé ?",
       r: "Le modèle de Solow invite à distinguer deux choses. La croissance du PIB total mesure la taille de l’économie : davantage de travailleurs produisent davantage, paient plus d’impôts et de cotisations, et répondent aux besoins des entreprises qui manquent de main-d’œuvre. La croissance du PIB par habitant mesure, elle, l’évolution du niveau de vie moyen, et dépend surtout de la productivité. Pour certains, une population en hausse est le signe d’un pays attractif, dont l’économie crée des emplois, et l’immigration aide à financer les retraites dans une population qui vieillit. Pour d’autres, une croissance qui vient surtout du nombre d’habitants exerce une pression sur le logement, les transports et l’environnement, sans enrichir beaucoup chacun. Le débat porte aussi sur les moyens d’augmenter la productivité : formation, recherche, concurrence, numérique. La réponse dépend de ce qu’on veut mesurer, et des valeurs qu’on donne à la croissance, à la qualité de vie et à l’ouverture du pays."
@@ -142,6 +145,14 @@ ${residu}
       ["Recherche", "Gregory Mankiw, David Romer et David Weil, « A Contribution to the Empirics of Economic Growth », Quarterly Journal of Economics, 1992."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi chaque machine supplémentaire rapporte-t-elle un peu moins que la précédente ?",
+          o: ["Parce que les machines récentes sont de moins bonne qualité", "Parce que les premières machines servent aux tâches les plus utiles, les suivantes à des tâches de moins en moins importantes", "Parce que les machines sont de plus en plus taxées", "Parce que les travailleurs refusent de s’en servir"], c: 1,
+          e: "C’est la loi des rendements décroissants : le premier ordinateur change tout, le troisième presque rien." },
+        { q: "Selon Solow, que faut-il pour que le revenu par habitant continue de croître à long terme ?",
+          o: ["Construire toujours plus d’usines", "Augmenter la population", "Produire mieux avec les mêmes moyens : techniques, organisation, formation", "Créer davantage de monnaie"], c: 2,
+          e: "À force d’accumuler, on atteint un plafond ; seul le progrès technique permet d’aller plus loin." }
+      ],
       duree: 5,
       html: `
 <h3>Plus de machines, toujours plus riche ?</h3>
@@ -161,7 +172,7 @@ ${residu}
       objections: "Un progrès inexpliqué, les institutions oubliées, la demande et les limites de la planète.",
       ecoles: "Harrod et Domar, Solow et Swan, Phelps, Romer et Lucas, Aghion et Howitt, Acemoglu.",
       source: "Sept huitièmes de la croissance viennent du progrès technique.",
-      quiz: "Cinq questions corrigées et une question sur la croissance suisse.",
+      quiz: "Six questions corrigées et une question sur la croissance suisse.",
       lectures: "Six lectures classées par niveau."
     }
   };

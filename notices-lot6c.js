@@ -117,6 +117,9 @@ ${enU}
         o: ["Parce qu’elle est fausse", "Parce qu’une grande partie de l’empreinte carbone suisse est émise à l’étranger, dans les biens importés", "Parce que les émissions suisses ont en réalité augmenté", "Parce que la population suisse a diminué"], c: 1,
         e: "Près des deux tiers de l’empreinte de la consommation suisse sont émis hors du pays." }
     ],
+    transfert: { q: "Dans un pays qui s’industrialise rapidement, la population quitte les campagnes pour les villes, où les salaires sont plus élevés mais très dispersés. Que prévoyait Kuznets pour cette première phase ?",
+      o: ["Une hausse des inégalités", "Une baisse immédiate des inégalités", "Aucun changement des inégalités", "La disparition de la pauvreté urbaine"], c: 0,
+      e: "C’est la phase ascendante de la cloche ; la suite n’est pas garantie, comme le montre la remontée depuis 1980." },
     ouverte: {
       q: "Les inégalités de revenu sont relativement stables en Suisse, mais les inégalités de patrimoine y sont parmi les plus élevées des pays riches. Faut-il s’en préoccuper ?",
       r: "Plusieurs facteurs expliquent cette concentration du patrimoine : les héritages, la forte valeur des entreprises familiales et de l’immobilier, la présence de nombreuses grandes fortunes venues de l’étranger, et le fait que l’épargne retraite du deuxième pilier n’est souvent pas comptée dans le patrimoine des ménages, ce qui sous-estime celui de la classe moyenne. Ceux qui s’en préoccupent soulignent que la concentration du patrimoine se transmet entre générations, qu’elle peut peser sur l’égalité des chances et sur l’influence politique, et que l’impôt sur les successions a été réduit ou supprimé pour les descendants directs dans la plupart des cantons. Ceux qui la relativisent rappellent que la Suisse prélève déjà un impôt sur la fortune dans tous les cantons, que les revenus restent assez égaux après impôts et transferts, et que la mobilité sociale y est plutôt bonne. Le peuple a refusé en 2015 un impôt fédéral sur les successions, et l’initiative de la Jeunesse socialiste sur les très grandes successions, qui a relancé le débat, a été très largement rejetée le 30 novembre 2025."
@@ -129,6 +132,14 @@ ${enU}
       ["Recherche", "Klaus Deininger et Lyn Squire, « New Ways of Looking at Old Issues: Inequality and Growth », Journal of Development Economics, 1998 ; Gene Grossman et Alan Krueger, « Economic Growth and the Environment », Quarterly Journal of Economics, 1995."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Kuznets, pourquoi les inégalités augmentent-elles au début de l’industrialisation ?",
+          o: ["Parce que les villes s’enrichissent plus vite que les campagnes", "Parce que les impôts augmentent", "Parce que l’école se diffuse", "Parce que l’État social se développe"], c: 0,
+          e: "Puis, quand presque tout le monde a rejoint l’économie moderne, elles diminuent." },
+        { q: "Pour quel type de pollution l’idée d’une courbe en cloche fonctionne-t-elle le moins bien ?",
+          o: ["Pour les émissions qui réchauffent le climat", "Pour la fumée des usines", "Pour la pollution de l’air des villes", "Pour la pollution des rivières locales"], c: 0,
+          e: "Elle se vérifie pour certaines pollutions locales, beaucoup moins pour le climat." }
+      ],
       duree: 5,
       html: `
 <h3>Une cloche pour les inégalités</h3>
@@ -150,7 +161,7 @@ ${cloche}
       objections: "Une généralisation hâtive, le rôle des institutions, un argument pour l’attente, le climat.",
       ecoles: "Kuznets, Lewis, Ahluwalia, Deininger et Squire, Piketty et Saez, Milanović, Grossman et Krueger.",
       source: "Kuznets, 1955 : 5 % d’information et 95 % de spéculation.",
-      quiz: "Cinq questions corrigées et une question sur le patrimoine en Suisse.",
+      quiz: "Six questions corrigées et une question sur le patrimoine en Suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -271,6 +282,9 @@ ${course}` },
         o: ["Les riches sont moins heureux que les pauvres", "Dans un pays, les riches se disent plus heureux, mais la satisfaction moyenne n’augmente guère quand le pays s’enrichit", "Le bonheur ne dépend pas du revenu", "La consommation rend toujours malheureux"], c: 1,
         e: "L’explication la plus courante est l’importance des comparaisons sociales ; le résultat est contesté par Stevenson et Wolfers." }
     ],
+    transfert: { q: "Dans un quartier, plusieurs familles achètent de grandes voitures neuves. L’année suivante, leurs voisins font de même, bien que leurs anciennes voitures fonctionnent. Comment Veblen et Robert Frank l’expliqueraient-ils ?",
+      o: ["Chacun veut au moins égaler ses voisins : les dépenses des uns poussent celles des autres", "Les anciennes voitures sont devenues illégales", "Les prix des voitures ont fortement baissé", "Les voisins ont tous changé de travail"], c: 0,
+      e: "Tout le monde dépense davantage sans que personne ne gagne en rang." },
     ouverte: {
       q: "Faudrait-il remplacer une partie de l’impôt sur le revenu suisse par un impôt progressif sur la consommation, comme le propose Robert Frank ?",
       r: "L’idée de Frank est d’imposer non pas le revenu, mais la consommation totale de chaque ménage, calculée comme le revenu moins l’épargne, avec des taux faibles pour les premiers francs consommés et très élevés pour les grosses dépenses. La consommation positionnelle des plus riches deviendrait plus coûteuse, l’épargne serait encouragée, et la course aux dépenses se ralentirait sans que personne perde en rang relatif. La Suisse, qui impose déjà fortement la consommation par la TVA, mais à taux unique, et qui a un impôt sur la fortune, pourrait en théorie l’envisager. Les obstacles sont importants : il faudrait mesurer l’épargne de chaque ménage, éviter les contournements par les achats à l’étranger, et réformer un système fiscal fédéraliste, où les cantons fixent l’essentiel de l’impôt sur le revenu. Les partisans d’une simplification fiscale y voient une complication supplémentaire ; ceux qui s’inquiètent de la consommation de ressources et de l’endettement des ménages y voient une piste prometteuse."
@@ -283,6 +297,14 @@ ${course}` },
       ["Recherche", "Erzo Luttmer, « Neighbors as Negatives: Relative Earnings and Well-Being », Quarterly Journal of Economics, 2005 ; Marianne Bertrand et Adair Morse, « Trickle-Down Consumption », Review of Economics and Statistics, 2016."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Selon Veblen, pourquoi achète-t-on une montre de luxe ?",
+          o: ["Parce qu’elle montre aux autres qu’on est riche", "Parce qu’elle donne l’heure plus précisément", "Parce qu’elle est plus solide", "Parce qu’elle est moins chère à long terme"], c: 0,
+          e: "Ce qui compte, c’est ce que l’objet dit de son propriétaire." },
+        { q: "Pourquoi un sac de luxe vendu à bas prix perdrait-il de son attrait ?",
+          o: ["Parce que son prix élevé fait partie de sa valeur de symbole", "Parce que sa qualité baisserait", "Parce qu’il deviendrait illégal", "Parce qu’on ne pourrait plus le revendre"], c: 0,
+          e: "Pour ces biens de Veblen, la demande augmente avec le prix." }
+      ],
       duree: 5,
       html: `
 <h3>Montrer qu’on peut se le permettre</h3>
@@ -304,7 +326,7 @@ ${veblen}
       objections: "Le goût, l’utilité du signal, le paternalisme, le paradoxe d’Easterlin contesté.",
       ecoles: "Smith, Veblen, Duesenberry et Leibenstein, Galbraith, Bourdieu, Hirsch, Easterlin et Frank.",
       source: "Veblen, 1899 : la consommation ostentatoire comme moyen de considération.",
-      quiz: "Cinq questions corrigées et une question sur l’impôt progressif sur la consommation.",
+      quiz: "Six questions corrigées et une question sur l’impôt progressif sur la consommation.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

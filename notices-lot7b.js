@@ -129,6 +129,9 @@ ${fpp}
         o: ["Une production impossible", "Une situation où des ressources sont inemployées", "La production maximale", "Une production qui n’utilise que du capital"], c: 1,
         e: "On peut alors produire plus de tout sans rien sacrifier, comme en récession." }
     ],
+    transfert: { q: "Une ville offre un terrain qu’elle possède « gratuitement » pour construire un stade, au lieu de le vendre 20 millions à un promoteur. Que dirait un économiste du coût de ce terrain pour la ville ?",
+      o: ["Il coûte 20 millions : c’est ce à quoi la ville renonce en ne le vendant pas", "Il ne coûte rien, puisque la ville le possède déjà", "Il coûte seulement l’entretien futur du stade", "Il rapporte de l’argent, puisque le stade attire des visiteurs"], c: 0,
+      e: "Le coût d’opportunité d’un bien qu’on possède est ce qu’on pourrait en tirer autrement." },
     ouverte: {
       q: "La Suisse forme des jeunes très qualifiés par l’apprentissage plutôt que par l’université. Le coût d’opportunité des études longues justifie-t-il ce modèle ?",
       r: "Le coût d’opportunité des études longues est réel : plusieurs années de salaire sacrifiées, que le supplément de revenu futur doit compenser. En Suisse, où l’apprentissage débouche sur des emplois bien rémunérés et où les passerelles vers les hautes écoles spécialisées existent, ce coût est particulièrement élevé, ce qui rend l’apprentissage rationnel pour beaucoup de jeunes. Mais la comparaison ne se limite pas aux salaires : les études universitaires ouvrent d’autres carrières, d’autres réseaux et une capacité d’adaptation qui peut compter face aux changements technologiques. Certains économistes s’inquiètent que les compétences très spécifiques de l’apprentissage deviennent obsolètes plus vite ; d’autres soulignent que la formation continue et la perméabilité du système suisse limitent ce risque. Le faible taux de chômage des jeunes en Suisse plaide plutôt en faveur du modèle."
@@ -141,6 +144,14 @@ ${fpp}
       ["Recherche", "Shane Frederick et al., « Opportunity Cost Neglect », Journal of Consumer Research, 2009 ; Gary Becker, « A Theory of the Allocation of Time », Economic Journal, 1965."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pour un étudiant, que comprend le vrai coût de ses études ?",
+          o: ["Les frais d’inscription, mais aussi le salaire qu’il aurait gagné en travaillant à la place", "Seulement les frais d’inscription", "Seulement le prix des livres", "Rien, si les études sont gratuites"], c: 0,
+          e: "Le vrai coût d’un choix, c’est la meilleure chose qu’on aurait pu faire à la place." },
+        { q: "Qu’est-ce que l’« erreur du Concorde » ?",
+          o: ["Continuer un projet raté parce qu’on y a déjà beaucoup investi", "Arrêter un projet trop tôt", "Investir dans les avions", "Refuser tout projet risqué"], c: 0,
+          e: "L’argent déjà dépensé et perdu ne doit pas influencer la décision." }
+      ],
       duree: 5,
       html: `
 <h3>Ce qu’on ne voit pas</h3>
@@ -162,7 +173,7 @@ ${fpp}
       objections: "L’incomparable, la subjectivité, le chômage, les coûts passés.",
       ecoles: "Bastiat, Green, Wieser, Mises et Buchanan, Becker, Kahneman et Thaler.",
       source: "Bastiat, 1850 : l’effet qu’on voit et ceux qu’il faut prévoir.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur l’apprentissage.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur l’apprentissage.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -288,6 +299,9 @@ ${plage}
         o: ["Pour pollution", "Pour avoir empêché les importations parallèles de voitures vers la Suisse", "Pour fraude fiscale", "Pour publicité mensongère"], c: 1,
         e: "Cloisonner le marché suisse permettait de maintenir des prix plus élevés qu’à l’étranger." }
     ],
+    transfert: { q: "Dans une région, une seule entreprise fournit l’internet à haut débit. Une deuxième entreprise obtient le droit de s’installer. Que prévoit l’analyse de la concurrence imparfaite ?",
+      o: ["Les prix baissent et les quantités vendues augmentent", "Les prix montent, car il y a deux entreprises à rémunérer", "Rien ne change, car un monopole fixe déjà le juste prix", "La qualité baisse forcément"], c: 0,
+      e: "Quelques concurrents suffisent déjà à réduire le pouvoir de marché." },
     ouverte: {
       q: "Les prix en Suisse restent nettement supérieurs à ceux des pays voisins. Est-ce un problème de concurrence imparfaite, ou le reflet de salaires et de coûts plus élevés ?",
       r: "Les deux facteurs jouent. Une partie importante de l’écart s’explique par des salaires, des loyers et des coûts de distribution plus élevés, ainsi que par un pouvoir d’achat qui permet aux consommateurs de payer davantage. Mais des études de la Confédération et de la COMCO ont aussi montré que certains fournisseurs étrangers pratiquent des « suppléments suisses » sur les mêmes produits, en empêchant les commerçants suisses de s’approvisionner à l’étranger aux prix pratiqués ailleurs. La concentration de la grande distribution autour de deux grands acteurs, les protections agricoles et certaines normes techniques propres à la Suisse limitent aussi la concurrence. Le contre-projet à l’initiative pour des prix équitables, en vigueur depuis 2022, permet aux entreprises suisses de s’approvisionner à l’étranger auprès d’entreprises puissantes aux conditions locales. Ses effets restent à évaluer, mais il s’attaque précisément au pouvoir de marché des fournisseurs."
@@ -300,6 +314,14 @@ ${plage}
       ["Recherche", "Jan De Loecker, Jan Eeckhout et Gabriel Unger, « The Rise of Market Power and the Macroeconomic Implications », Quarterly Journal of Economics, 2020 ; Antoine-Augustin Cournot, Recherches sur les principes mathématiques de la théorie des richesses, 1838, chapitres 5 et 7."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi un producteur de blé parmi des milliers ne peut-il pas choisir son prix ?",
+          o: ["Parce que s’il le relève, ses clients achètent ailleurs", "Parce que l’État fixe le prix du blé", "Parce que son blé est de moins bonne qualité", "Parce que ses coûts sont trop élevés"], c: 0,
+          e: "En concurrence parfaite, chacun prend le prix du marché comme une donnée." },
+        { q: "Qu’est-ce qu’un cartel ?",
+          o: ["Une entente secrète entre entreprises pour fixer les prix ou se partager le marché", "Une entreprise publique", "Une fusion autorisée", "Un syndicat de salariés"], c: 0,
+          e: "Les cartels sont interdits ; Adam Smith s’en méfiait déjà en 1776." }
+      ],
       duree: 5,
       html: `
 <h3>Quand une entreprise fixe son prix</h3>
@@ -321,7 +343,7 @@ ${structures}
       objections: "Innovation, marchés contestables, école de Chicago, retour des critiques.",
       ecoles: "Smith, Cournot et Bertrand, Robinson et Chamberlin, Hotelling et Nash, Schumpeter, Chicago et Tirole.",
       source: "Smith, 1776 : une conspiration contre le public.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur l’îlot de cherté.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur l’îlot de cherté.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

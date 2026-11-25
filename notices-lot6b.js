@@ -124,6 +124,9 @@ ${rand}
         o: ["Un salarié qui a deux emplois", "Une rémunération fondée sur un seul indicateur pousse à négliger les autres aspects du travail", "Le fait de travailler trop", "Le fait qu’un salarié surveillé travaille toujours mieux"], c: 1,
         e: "Par exemple, un enseignant payé selon un test peut enseigner pour le test plutôt que pour apprendre." }
     ],
+    transfert: { q: "Une plateforme de location de vélos ne fait rien payer aux utilisateurs pour les dégâts causés aux vélos. Que prévoit l’analyse de l’aléa moral ?",
+      o: ["Les utilisateurs feront moins attention aux vélos, et les réparations augmenteront", "Les vélos seront mieux entretenus", "Aucun changement de comportement", "Les utilisateurs louent moins de vélos"], c: 0,
+      e: "Quand on ne supporte pas les conséquences de ses actes, on fait moins attention." },
     ouverte: {
       q: "Faut-il augmenter la franchise minimale de la LAMal, aujourd’hui de 300 francs, pour freiner la hausse des primes ?",
       r: "La théorie de l’aléa moral et l’expérience RAND suggèrent qu’une participation plus élevée réduit la consommation de soins, et donc les coûts. Le Parlement suisse a d’ailleurs discuté à plusieurs reprises d’une hausse de la franchise minimale. Mais l’effet n’est pas uniforme : les personnes aux revenus modestes réduisent aussi des soins utiles, comme le suivi de maladies chroniques ou la prévention, ce qui peut entraîner plus tard des hospitalisations coûteuses. Les personnes à faible revenu bénéficient de réductions de primes, mais pas de réductions de franchise. Une hausse générale aurait donc un effet régressif. Certains économistes proposent plutôt de moduler la participation selon l’utilité des soins, en la supprimant pour les traitements dont l’efficacité est prouvée et en l’augmentant pour les autres, une approche dite « fondée sur la valeur »."
@@ -136,6 +139,14 @@ ${rand}
       ["Recherche", "Willard Manning et al., « Health Insurance and the Demand for Medical Care: Evidence from a Randomized Experiment », American Economic Review, 1987 ; Michael Jensen et William Meckling, « Theory of the Firm », Journal of Financial Economics, 1976."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi celui dont les consultations sont gratuites va-t-il plus souvent chez le médecin ?",
+          o: ["Parce qu’il ne supporte plus le coût de ses décisions", "Parce qu’il est malhonnête", "Parce qu’il est plus souvent malade", "Parce que les médecins l’y obligent"], c: 0,
+          e: "Ce n’est pas de la fraude : c’est une réaction normale, l’aléa moral." },
+        { q: "Comment limite-t-on en général l’aléa moral ?",
+          o: ["En faisant payer une petite partie du risque, comme une franchise ou un bonus-malus", "En supprimant l’assurance", "En remboursant tout", "En interdisant les consultations"], c: 0,
+          e: "Mais trop d’incitations peut pousser à renoncer à des soins utiles." }
+      ],
       duree: 5,
       html: `
 <h3>Quand on est protégé, on fait moins attention</h3>
@@ -157,7 +168,7 @@ ${rand}
       objections: "Un concept trop extensible, les motivations intrinsèques, la protection sociale, les sauvetages.",
       ecoles: "Arrow et Pauly, Jensen et Meckling, Holmström et Hart, Minsky, Frey.",
       source: "Pauly, 1968 : non pas une perversion morale, mais un comportement rationnel.",
-      quiz: "Cinq questions corrigées et une question sur la franchise minimale.",
+      quiz: "Six questions corrigées et une question sur la franchise minimale.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -280,6 +291,9 @@ ${contrib}
         o: ["Que personne ne contribue jamais", "Que la possibilité de sanctionner les profiteurs maintient une coopération élevée", "Que les contributions augmentent toujours", "Que les sanctions découragent toute contribution"], c: 1,
         e: "Sans sanction, la coopération s’effondre au fil des tours ; avec sanction, elle se maintient." }
     ],
+    transfert: { q: "Une ville lance une collecte volontaire pour installer un système d’alerte aux tsunamis qui protégera toute la côte. Quel risque principal menace le projet ?",
+      o: ["Chacun peut espérer en profiter sans payer, et la collecte risque de ne pas suffire", "Le système sera trop utilisé", "Les habitants paieront trop", "Le système ne protégera que les donateurs"], c: 0,
+      e: "C’est le problème du passager clandestin, typique des biens publics." },
     ouverte: {
       q: "Le modèle de la Rega, un service vital financé par des donateurs volontaires, pourrait-il être étendu à d’autres services publics en Suisse ?",
       r: "Le succès de la Rega repose sur des conditions particulières : un service très visible et apprécié, une forte identification nationale, et surtout un lien entre la contribution et un avantage personnel, la prise en charge des frais non couverts. Ces conditions transforment en partie un bien public en bien de club, ce qui limite le passager clandestin. Elles sont difficiles à reproduire pour des services moins spectaculaires ou dont le bénéfice est diffus, comme la défense, la recherche fondamentale ou l’entretien des infrastructures. Le financement volontaire pose aussi des questions d’équité : les services financés par des dons dépendent de la générosité et de la popularité, pas forcément des besoins. Il peut cependant compléter utilement le financement public pour des services où la motivation des contributeurs et le contrôle social sont forts, comme les sociétés de sauvetage, le patrimoine local ou certaines activités culturelles."
@@ -292,6 +306,14 @@ ${contrib}
       ["Recherche", "Ernst Fehr et Simon Gächter, « Cooperation and Punishment in Public Goods Experiments », American Economic Review, 2000 ; Richard Musgrave, The Theory of Public Finance, 1959."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi un phare est-il un bien public ?",
+          o: ["Tous les bateaux en profitent en même temps, et on ne peut pas éteindre la lumière pour ceux qui n’ont pas payé", "Parce qu’il appartient à l’État", "Parce qu’il est gratuit à construire", "Parce qu’il n’éclaire qu’un seul bateau à la fois"], c: 0,
+          e: "Non rival et non excluable." },
+        { q: "Pourquoi beaucoup de biens publics sont-ils financés par l’impôt ?",
+          o: ["Parce que l’impôt oblige chacun à contribuer, ce qui évite le passager clandestin", "Parce que les entreprises refusent de les produire par principe", "Parce qu’ils coûtent peu", "Parce que les citoyens ne les utilisent pas"], c: 0,
+          e: "Sinon, chacun est tenté de laisser les autres payer." }
+      ],
       duree: 5,
       html: `
 <h3>Qui paie pour le phare ?</h3>
@@ -313,7 +335,7 @@ ${matrice}
       objections: "Moins de passagers clandestins que prévu, un argument qui sert à tout, une frontière politique, les besoins mal évalués.",
       ecoles: "Hume, Smith et Mill, Wicksell et Lindahl, Samuelson et Musgrave, Coase et Buchanan, Ostrom et Nordhaus.",
       source: "Hume, 1739 : deux voisins peuvent drainer un pré, pas mille.",
-      quiz: "Cinq questions corrigées et une question sur le modèle de la Rega.",
+      quiz: "Six questions corrigées et une question sur le modèle de la Rega.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

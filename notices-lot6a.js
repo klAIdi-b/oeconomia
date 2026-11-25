@@ -125,6 +125,9 @@ ${fuites}
         o: ["Au plein emploi avec une banque centrale qui relève ses taux", "En récession, avec des taux bloqués à zéro", "En période d’inflation forte", "Quand la dette publique est très élevée"], c: 1,
         e: "Sans éviction par les taux et avec des ressources inemployées, la dépense se propage pleinement." }
     ],
+    transfert: { q: "Deux pays lancent le même plan de relance. Le premier importe la moitié de ce qu’il consomme, le second un dixième. Dans lequel le multiplicateur sera-t-il probablement le plus faible ?",
+      o: ["Dans le premier, car une grande partie de la dépense profite aux producteurs étrangers", "Dans le second, car il produit davantage lui-même", "Il sera identique dans les deux", "Dans le second, car ses importations sont plus chères"], c: 0,
+      e: "Plus une économie est ouverte, plus les fuites vers l’étranger sont importantes." },
     ouverte: {
       q: "En cas de forte récession, la Suisse devrait-elle lancer un grand plan de relance budgétaire, malgré son multiplicateur faible ?",
       r: "Le faible multiplicateur suisse, dû à l’ouverture de l’économie, réduit l’efficacité d’une relance par la dépense : une partie importante soutient l’activité des pays voisins. C’est un argument pour privilégier les stabilisateurs automatiques et le chômage partiel, qui ont fait leurs preuves en 2009 et en 2020, plutôt que des programmes d’investissement lancés dans l’urgence. Mais deux nuances s’imposent. D’abord, certaines dépenses ont un contenu local élevé, comme la construction, les services ou la rénovation énergétique des bâtiments, et donc un multiplicateur plus fort. Ensuite, si toute l’Europe est en récession, une relance coordonnée bénéficie à chacun, car les dépenses des voisins soutiennent aussi les exportations suisses. Le frein à l’endettement laisse d’ailleurs une marge en récession, puisqu’il autorise des déficits conjoncturels."
@@ -137,6 +140,14 @@ ${fuites}
       ["Recherche", "Richard Kahn, « The Relation of Home Investment to Unemployment », Economic Journal, 1931 ; Olivier Blanchard et Daniel Leigh, « Growth Forecast Errors and Fiscal Multipliers », American Economic Review, 2013."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Pourquoi une dépense publique de 100 millions peut-elle augmenter le revenu du pays de plus de 100 millions ?",
+          o: ["Parce que ceux qui la reçoivent en dépensent une partie, qui devient le revenu d’autres, et ainsi de suite", "Parce que l’État rembourse deux fois la somme", "Parce que les prix montent", "Parce que les impôts baissent automatiquement"], c: 0,
+          e: "C’est le multiplicateur." },
+        { q: "Qu’est-ce qui réduit le multiplicateur ?",
+          o: ["Les « fuites » : impôts, épargne et achats de produits étrangers", "La hausse de la consommation", "Les grands travaux", "Le chômage"], c: 0,
+          e: "À chaque étape, une partie de l’argent ne circule plus dans le pays." }
+      ],
       duree: 5,
       html: `
 <h3>Une dépense qui fait des petits</h3>
@@ -158,7 +169,7 @@ ${vagues}
       objections: "Éviction, équivalence ricardienne, qualité de la dépense, dette.",
       ecoles: "Kahn, Keynes, Samuelson, Friedman, Barro, Krugman et Blanchard.",
       source: "Keynes, 1936 : les bouteilles de billets enterrées.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur une relance suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur une relance suisse.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -287,6 +298,9 @@ ${misere}
         o: ["Parce que l’économie n’a pas reculé", "Parce que beaucoup de travailleurs étrangers ont quitté le pays et que de nombreuses femmes se sont retirées du marché du travail", "Parce que l’industrie horlogère a continué à embaucher", "Parce que la Suisse a fermé ses frontières aux importations"], c: 1,
         e: "La Suisse a « exporté » une partie de son chômage, un phénomène lié au statut des permis de travail de l’époque." }
     ],
+    transfert: { q: "En 2022, la guerre en Ukraine fait flamber le prix du gaz en Europe. Pourquoi ce choc fait-il craindre une stagflation ?",
+      o: ["Parce que l’énergie plus chère fait monter les prix tout en freinant la production", "Parce que le gaz plus cher fait baisser les prix", "Parce qu’il augmente la demande des ménages", "Parce qu’il fait disparaître le chômage"], c: 0,
+      e: "Comme en 1973, un choc sur le coût de l’énergie pousse les prix à la hausse et la production à la baisse." },
     ouverte: {
       q: "La Suisse a mieux traversé l’inflation de 2022 que la plupart des pays européens. Est-ce le fruit de sa politique monétaire, de la force du franc ou de son mix énergétique ?",
       r: "Les trois facteurs ont joué. L’inflation suisse a culminé autour de 3,5 % en 2022, contre plus de 10 % dans la zone euro. La force du franc a réduit le prix des importations, notamment de l’énergie, et la BNS a laissé le franc s’apprécier tout en relevant ses taux dès juin 2022, avant la BCE. La structure énergétique suisse, avec beaucoup d’hydroélectricité et de nucléaire et une part limitée du gaz, a amorti le choc. Les prix réglementés de l’électricité, fixés une fois par an, ont retardé la répercussion des hausses. Enfin, la crédibilité de la BNS, construite depuis les années 1970, a contribué à garder les anticipations d’inflation basses. La leçon de la stagflation des années 1970 reste valable : la crédibilité de la politique monétaire et la diversification énergétique réduisent fortement le coût d’un choc d’offre."
@@ -299,6 +313,14 @@ ${misere}
       ["Recherche", "Robert Barsky et Lutz Kilian, « Do We Really Know that Oil Caused the Great Stagflation? », NBER Macroeconomics Annual, 2001 ; Edmund Phelps, « Phillips Curves, Expectations of Inflation and Optimal Unemployment over Time », Economica, 1967."]
     ],
     decouvrir: {
+      questions: [
+        { q: "Que désigne le mot « stagflation » ?",
+          o: ["La combinaison d’une économie qui stagne et d’une forte inflation", "Une croissance très forte", "Une baisse générale des prix", "Une hausse des exportations"], c: 0,
+          e: "Contraction de stagnation et inflation, le mot date de 1965." },
+        { q: "Pourquoi sortir de la stagflation est-il si difficile ?",
+          o: ["Parce que relancer l’économie aggrave l’inflation et la freiner aggrave le chômage", "Parce que les prix du pétrole sont fixés par l’État", "Parce que les banques centrales n’existent pas", "Parce que les salaires baissent trop vite"], c: 0,
+          e: "Les États-Unis ont choisi après 1979 de freiner fortement, au prix d’un chômage élevé." }
+      ],
       duree: 5,
       html: `
 <h3>Le pire des deux mondes</h3>
@@ -320,7 +342,7 @@ ${offre}
       objections: "Le procès du keynésianisme, sa défense, le coût de la désinflation, la politique des revenus.",
       ecoles: "Synthèse keynésienne, Friedman et Phelps, Lucas, Galbraith, banquiers centraux.",
       source: "Macleod, 1965 : le pire des deux mondes.",
-      quiz: "Cinq questions corrigées, dont un calcul, et une question sur l’inflation suisse de 2022.",
+      quiz: "Six questions corrigées, dont un calcul, et une question sur l’inflation suisse de 2022.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
