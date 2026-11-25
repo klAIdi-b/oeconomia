@@ -27,4 +27,4 @@ npx serve .
 
 ## Licence
 
-À préciser. En attendant, tous droits réservés.
+© 2026 klAIdi-b. Sauf mention contraire, les textes, schémas, exercices et le code sont sous licence [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) : réutilisation libre, y compris commerciale, en citant « Œconomia, klAIdi-b » et en partageant les adaptations sous la même licence. Les polices (SIL Open Font License), les citations d’auteurs et les données de sources publiques font exception : voir [LICENSE.md](LICENSE.md).
