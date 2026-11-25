@@ -13,7 +13,7 @@
   { id: "vi1-familles", theme: "visions", niveau: 1, type: "qcm", notion: "mode-regulation",
     titre: "Orthodoxe ou hétérodoxe ?", competence: "Situer un courant de pensée par rapport au courant dominant.",
     enonce: P("Laquelle de ces idées est défendue par un courant <b>hétérodoxe</b>, c’est-à-dire en marge du courant dominant ?"),
-    options: ["Les individus comparent les coûts et les avantages avant de choisir.", "Un État qui émet sa propre monnaie ne peut pas faire faillite dans cette monnaie ; sa vraie limite est l’inflation.", "Un prix plafond inférieur au prix d’équilibre provoque une pénurie.", "Le commerce international repose sur l’avantage comparatif."], c: 1,
+    options: ["Les individus comparent les coûts et les avantages avant de choisir.", "Un État qui émet sa propre monnaie ne peut pas faire faillite dans cette monnaie ; sa vraie limite est l’inflation.", "Un prix plafond inférieur au prix d’équilibre provoque une pénurie.", "Le commerce international repose sur l’avantage comparatif."], c: 1, pourquoi: ["Comparer coûts et avantages est le cœur du raisonnement du courant dominant.", null, "Le prix plafond et la pénurie font partie du modèle d’offre et de demande enseigné dans tous les manuels.", "L’avantage comparatif de Ricardo est enseigné par le courant dominant."],
     explication: P("C’est la thèse de la <b>théorie moderne de la monnaie</b>, portée par Stephanie Kelton, un courant post-keynésien hétérodoxe. Les trois autres idées sont enseignées dans tous les manuels.", "Voir la page <a href=\"#familles\">Les familles de pensée</a>.") },
 
   { id: "vi1-vf-polanyi", theme: "visions", niveau: 1, type: "vf", notion: "encastrement",
@@ -28,7 +28,7 @@
   { id: "vi1-pib", theme: "visions", niveau: 1, type: "qcm", notion: "travail-non-remunere",
     titre: "Ce que le PIB compte", competence: "Distinguer travail rémunéré et non rémunéré dans le PIB.",
     enonce: P("Laquelle de ces activités est comptée dans le PIB ?"),
-    options: ["Un père prépare le repas de ses enfants.", "Une femme soigne sa mère âgée à domicile.", "Une aide ménagère payée nettoie un appartement.", "Un voisin répare bénévolement le vélo d’un enfant."], c: 2,
+    options: ["Un père prépare le repas de ses enfants.", "Une femme soigne sa mère âgée à domicile.", "Une aide ménagère payée nettoie un appartement.", "Un voisin répare bénévolement le vélo d’un enfant."], c: 2, pourquoi: ["Le repas est préparé gratuitement pour sa famille : ce travail n’entre pas dans le PIB.", "Les soins sont donnés sans paiement : ce travail non rémunéré n’est pas compté dans le PIB.", null, "La réparation est bénévole : sans paiement, rien n’entre dans le PIB."],
     explication: P("Seule l’activité <b>payée</b> entre dans le PIB. Le même travail fait gratuitement pour sa famille ou ses voisins n’y figure pas : c’est le <b>travail non rémunéré</b>, mis en lumière par Marilyn Waring.", "Selon l’OFS, on y consacre en Suisse davantage d’heures qu’au travail payé.") },
 
   { id: "vi1-part-heures", theme: "visions", niveau: 1, type: "calcul", notion: "travail-non-remunere",
@@ -43,7 +43,7 @@
   { id: "vi1-pret", theme: "visions", niveau: 1, type: "qcm", notion: "monnaie-endogene",
     titre: "Un prêt crée-t-il de la monnaie ?", competence: "Comprendre la création monétaire par le crédit.",
     enonce: P("Une banque accorde à une entreprise un prêt de 50 000 francs, versé sur le compte de l’entreprise. Que devient la quantité de monnaie dans l’économie ?"),
-    options: ["Elle ne change pas : la banque a seulement prêté l’argent de ses déposants.", "Elle augmente de 50 000 francs : la banque a créé un dépôt nouveau.", "Elle baisse de 50 000 francs.", "Elle double."], c: 1,
+    options: ["Elle ne change pas : la banque a seulement prêté l’argent de ses déposants.", "Elle augmente de 50 000 francs : la banque a créé un dépôt nouveau.", "Elle baisse de 50 000 francs.", "Elle double."], c: 1, pourquoi: ["C’est la présentation des anciens manuels. En pratique, la banque crédite le compte de l’entreprise sans retirer l’argent des autres déposants : elle crée de la monnaie.", null, "Le prêt ajoute un dépôt sur le compte de l’entreprise : la monnaie augmente. Elle baissera seulement au remboursement.", "La monnaie augmente du montant du prêt, 50 000 francs, pas du double de toute la monnaie existante."],
     explication: P("« Les crédits font les dépôts » : en accordant le prêt, la banque inscrit 50 000 francs sur le compte de l’entreprise. Cette monnaie n’existait pas auparavant. Elle disparaîtra quand le prêt sera remboursé.", "Voir la notice <a href=\"#c-monnaie-endogene\">Monnaie endogène</a>.") },
 
   { id: "vi1-vf-kalecki", theme: "visions", niveau: 1, type: "vf", notion: "mode-regulation",

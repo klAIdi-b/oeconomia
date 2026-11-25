@@ -12,7 +12,7 @@
   { id: "cr1-ce-qui-compte", theme: "croissance", niveau: 1, type: "qcm", notion: "pib",
     titre: "Qu’est-ce qui compte dans le PIB ?", competence: "Savoir ce que mesure le produit intérieur brut.",
     enonce: P("Laquelle de ces opérations, réalisées en Suisse cette année, est comptée dans le PIB suisse de l’année ?"),
-    options: ["L’achat d’une voiture d’occasion fabriquée il y a cinq ans.", "Un repas préparé à la maison pour sa famille.", "Une coupe de cheveux payée chez un coiffeur.", "L’achat d’actions d’une entreprise suisse en Bourse."], c: 2,
+    options: ["L’achat d’une voiture d’occasion fabriquée il y a cinq ans.", "Un repas préparé à la maison pour sa famille.", "Une coupe de cheveux payée chez un coiffeur.", "L’achat d’actions d’une entreprise suisse en Bourse."], c: 2, pourquoi: ["La voiture a été comptée dans le PIB l’année de sa fabrication ; la revendre ne crée aucune production nouvelle.", "Le repas est produit, mais il n’est ni vendu ni payé : le PIB ne compte pas le travail domestique.", null, "Acheter des actions est un échange de titres, une opération financière : aucune production nouvelle n’est créée."],
     explication: P("Le PIB mesure la valeur des biens et services <b>produits</b> pendant l’année sur le territoire et <b>échangés sur un marché</b> (ou fournis par les administrations). La coupe de cheveux est un service produit et vendu cette année.", "La voiture d’occasion a été comptée l’année de sa fabrication ; le repas à la maison n’est pas vendu, il n’est pas compté ; l’achat d’actions est un simple transfert de propriété, pas une production.") },
 
   { id: "cr1-taux", theme: "croissance", niveau: 1, type: "calcul", notion: "pib",
@@ -45,7 +45,7 @@
   { id: "cr1-nominal-reel", theme: "croissance", niveau: 1, type: "qcm", notion: "pib",
     titre: "PIB nominal et PIB réel", competence: "Distinguer une hausse des prix d’une hausse de la production.",
     enonce: P("Cette année, le PIB nominal d’un pays a augmenté de 3 %, et les prix ont augmenté en moyenne de 2 %. Que peut-on dire de la production ?"),
-    options: ["Elle a augmenté de 3 %.", "Elle a augmenté d’environ 1 %.", "Elle a augmenté de 5 %.", "Elle a baissé de 1 %."], c: 1,
+    options: ["Elle a augmenté de 3 %.", "Elle a augmenté d’environ 1 %.", "Elle a augmenté de 5 %.", "Elle a baissé de 1 %."], c: 1, pourquoi: ["3 % est la hausse du PIB nominal, qui mélange production et prix : il faut retirer la hausse des prix de 2 %.", null, "Il faut soustraire la hausse des prix, pas l’ajouter : le PIB nominal est gonflé par l’inflation.", "La valeur de la production a augmenté plus vite que les prix (3 % contre 2 %) : la production réelle a donc augmenté."],
     explication: P("Le PIB <b>nominal</b> est mesuré aux prix de l’année : il augmente si l’on produit plus, mais aussi si les prix montent. Le PIB <b>réel</b> retire l’effet des prix. Ici, la croissance réelle est d’environ 3 − 2 = <b>1 %</b> (plus précisément 1,03 ÷ 1,02 − 1 ≈ 0,98 %).", "Quand on parle de « croissance économique », on parle toujours de la croissance du PIB réel.") },
 
   { id: "cr1-valeur-ajoutee", theme: "croissance", niveau: 1, type: "calcul", notion: "pib",
@@ -60,7 +60,7 @@
   { id: "cr1-crosse", theme: "croissance", niveau: 1, type: "qcm", notion: "division-travail",
     titre: "Quand la croissance a-t-elle commencé ?", competence: "Situer le décollage de la croissance dans l’histoire.",
     enonce: P("Selon les estimations de l’historien Angus Maddison, comment a évolué le revenu moyen par habitant dans le monde au cours des deux derniers millénaires ?"),
-    options: ["Il a augmenté régulièrement d’environ 1 % par an depuis l’Antiquité.", "Il a très peu progressé jusque vers 1800, puis a été multiplié par plus de dix en deux siècles.", "Il a baissé depuis la révolution industrielle.", "Il a surtout augmenté au Moyen Âge, grâce à l’agriculture."], c: 1,
+    options: ["Il a augmenté régulièrement d’environ 1 % par an depuis l’Antiquité.", "Il a très peu progressé jusque vers 1800, puis a été multiplié par plus de dix en deux siècles.", "Il a baissé depuis la révolution industrielle.", "Il a surtout augmenté au Moyen Âge, grâce à l’agriculture."], c: 1, pourquoi: ["Une croissance de 1 % par an pendant deux mille ans aurait multiplié le revenu par plusieurs centaines de millions : ce n’est pas ce qu’on observe.", null, "C’est l’inverse : la révolution industrielle marque le début de la hausse rapide du revenu par habitant.", "Au Moyen Âge, les progrès agricoles ont surtout permis à la population de croître ; le revenu par habitant a très peu changé (le « piège malthusien »)."],
     explication: P("Pendant des siècles, les gains de productivité se traduisaient surtout par une hausse de la population : c’est le « piège malthusien ». Avec la révolution industrielle, à partir de la fin du XVIIIe siècle en Angleterre, le revenu par habitant décolle : il a été multiplié par plus de dix depuis 1820. La courbe a la forme d’une « crosse de hockey ».") },
 
   { id: "cr1-suisse-pib", theme: "croissance", niveau: 1, type: "document", notion: "cycles",
@@ -68,7 +68,7 @@
     enonce: P("Croissance du PIB réel de la Suisse (en %, valeurs arrondies, les chiffres sont régulièrement révisés par le SECO et l’OFS) :") +
       `<table><thead><tr><th>2019</th><th>2020</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr></thead><tbody><tr><td>1,1</td><td>−2,1</td><td>5,4</td><td>3,0</td><td>0,7</td><td>1,3</td></tr></tbody></table>` +
       P("Quelle affirmation est correcte ?"),
-    options: ["Le PIB suisse a été plus faible en 2021 qu’en 2019.", "Le PIB a reculé en 2020, avec la pandémie, puis fortement rebondi en 2021.", "La Suisse a connu une récession en 2023, puisque la croissance n’était que de 0,7 %.", "Les chiffres montrent que la Suisse ne connaît jamais de baisse du PIB."], c: 1,
+    options: ["Le PIB suisse a été plus faible en 2021 qu’en 2019.", "Le PIB a reculé en 2020, avec la pandémie, puis fortement rebondi en 2021.", "La Suisse a connu une récession en 2023, puisque la croissance n’était que de 0,7 %.", "Les chiffres montrent que la Suisse ne connaît jamais de baisse du PIB."], c: 1, pourquoi: ["Après −2,1 % en 2020 et +5,4 % en 2021, le PIB de 2021 dépasse celui de 2019 d’environ 3 %.", null, "Une croissance de 0,7 % reste positive : la production a augmenté. Une récession suppose une baisse de la production.", "Le tableau montre justement une baisse en 2020 (−2,1 %)."],
     explication: P("En 2020, la croissance est négative : la production a baissé, à cause des mesures sanitaires. En 2021, elle rebondit fortement, et le PIB dépasse alors son niveau de 2019 (−2,1 % puis +5,4 % donnent environ +3,2 %).", "En 2023, la croissance est faible mais positive : la production a augmenté, il ne s’agit pas d’une récession.") },
 
   /* =========================== NIVEAU 2 : INTERMÉDIAIRE =========================== */
@@ -172,7 +172,7 @@
     enonce: (p) => P("Dans une version simple du modèle de Solow, la production par travailleur est y = √k (k : capital par travailleur). Chaque année, on épargne et investit une part s de la production, et le capital par travailleur diminue au taux (n + δ), sous l’effet de la croissance de la population et de l’usure des machines.", `À l’état stationnaire, l’investissement compense exactement cette diminution : <b>s × √k = (n + δ) × k</b>. On a ici s = <b>${fmt(p.s, 2)}</b> et n + δ = <b>${fmt(p.nd, 2)}</b>.`, "Calculez le capital par travailleur et la production par travailleur à l’état stationnaire. Arrondissez à deux décimales."),
     champs: [{ label: "Capital k*", unite: "", tol: 0.02 }, { label: "Production y*", unite: "", tol: 0.011 }],
     reponses: (p) => [Math.round(Math.pow(p.s / p.nd, 2) * 100) / 100, Math.round((p.s / p.nd) * 100) / 100],
-    indice: "Divisez les deux côtés par √k : s = (n + δ) × √k, donc √k = s ÷ (n + δ).",
+    indice: "Écrivez l’égalité de l’état stationnaire avec y = √k, puis cherchez comment isoler √k.",
     correction: (p) => { const y = p.s / p.nd; return P(`De s × √k = (n + δ) × k, on tire √k* = s ÷ (n + δ) = ${fmt(p.s, 2)} ÷ ${fmt(p.nd, 2)} = ${fmt(y, 2)}.`, `Donc k* = ${fmt(y, 2)}² ≈ <b>${fmt(y * y, 2)}</b>, et y* = √k* = <b>${fmt(y, 2)}</b>.`, "Un pays qui épargne davantage atteint un revenu par travailleur plus élevé, mais une fois à l’état stationnaire, sa croissance par habitant s’arrête : seul le progrès technique peut la relancer."); } },
 
   { id: "cr3-vf-ralentissement", theme: "croissance", niveau: 3, type: "vf", notion: "stagnation-seculaire",

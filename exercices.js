@@ -228,7 +228,7 @@
     if (it.type === "graphique") return "graphiques";
     return null;
   }
-  const methodeLink = (it) => { const id = methodeFor(it); const f = id && (OEC.methode || []).find((x) => x.id === id); return f ? `<p class="ex-revoir">Fiche méthode : <a href="#methode-${f.id}">${f.titre}</a></p>` : ""; };
+  const methodeLink = (it, lib) => { const id = methodeFor(it); const f = id && (OEC.methode || []).find((x) => x.id === id); return f ? `<p class="ex-revoir">${lib || "Fiche méthode :"} <a href="#methode-${f.id}">${f.titre}</a></p>` : ""; };
 
   function body(it) {
     const card = cardOf(it); if (!card) return;
@@ -241,7 +241,8 @@
         $$(".qopt", b).forEach((x) => { x.disabled = true; if (+x.dataset.j === it.c) x.classList.add("right"); });
         if (!ok) btn.classList.add("wrong");
         const f = $(".ex-feedback", b); f.hidden = false;
-        f.innerHTML = `<p class="ex-verdict ${ok ? "ok" : "ko"}">${ok ? "Bonne réponse." : "Ce n’est pas la bonne réponse."}</p>${it.explication}${notionLink(it)}${it.type !== "qcm" ? methodeLink(it) : ""}<button type="button" class="btn small ghost ex-retry">Recommencer</button>`;
+        const pq = !ok && it.pourquoi && it.pourquoi[j] ? `<p class="ex-pourquoi"><b>Votre réponse :</b> ${it.pourquoi[j]}</p>` : "";
+        f.innerHTML = `<p class="ex-verdict ${ok ? "ok" : "ko"}">${ok ? "Bonne réponse." : "Ce n’est pas la bonne réponse."}</p>${pq}${it.explication}${notionLink(it)}${it.type !== "qcm" ? methodeLink(it) : ""}<button type="button" class="btn small ghost ex-retry">Recommencer</button>`;
         $(".ex-retry", f).addEventListener("click", () => body(it));
         mark(it.id, ok);
       }));
@@ -271,9 +272,10 @@
       const figc = it.figp ? it.figp(p) : fig;
       b.innerHTML = `${it.enonce(p)}${figc}<div class="ex-fields">${it.champs.map((c, j) => `<label><span>${c.label}</span><input type="text" inputmode="decimal" autocomplete="off" data-j="${j}"><em>${c.unite || ""}</em></label>`).join("")}</div>
         <div class="ex-actions"><button type="button" class="btn small ex-check">Vérifier</button><button type="button" class="btn small ghost ex-show">Je bloque : voir la correction</button><button type="button" class="btn small ghost ex-new">Nouvelles valeurs</button></div>
+        ${it.niveau <= 2 ? methodeLink(it, "Besoin d’un exemple résolu avant de commencer ? Fiche méthode :") : ""}
         <div class="ex-feedback" hidden></div><div class="ex-corr" hidden><h4>Correction pas à pas</h4>${it.correction(p)}${notionLink(it)}${methodeLink(it)}</div>`;
       const inputs = $$("input", b);
-      let essaye = false;
+      let essaye = false, rates = 0;
       inputs.forEach((inp) => inp.addEventListener("keydown", (e) => { if (e.key === "Enter") $(".ex-check", b).click(); }));
       $(".ex-check", b).addEventListener("click", () => {
         essaye = true; $(".ex-show", b).textContent = "Voir la correction";
@@ -284,7 +286,11 @@
           inp.classList.toggle("ok", ok); inp.classList.toggle("ko", !ok);
         });
         const all = good === inputs.length, f = $(".ex-feedback", b); f.hidden = false;
-        f.innerHTML = all ? `<p class="ex-verdict ok">Juste ! ${it.bravo ? it.bravo(p) : ""}</p>` : `<p class="ex-verdict ko">${inputs.length > 1 ? `${good} réponse${good > 1 ? "s" : ""} juste${good > 1 ? "s" : ""} sur ${inputs.length}.` : "Pas encore."} Vérifiez vos calculs, ou affichez la correction.</p>${it.indice ? `<p class="ex-indice"><b>Indice :</b> ${it.indice}</p>` : ""}${methodeLink(it)}`;
+        if (!all) rates++;
+        /* premier échec : l’indice (la stratégie) ; à partir du deuxième : la première étape de la correction */
+        const paras = rates >= 2 ? (it.correction(p).match(/<p>[\s\S]*?<\/p>/g) || []) : [];
+        const etape = paras.length >= 2 ? paras[0] : "";   /* jamais quand la correction tient en un seul paragraphe : ce serait la réponse */
+        f.innerHTML = all ? `<p class="ex-verdict ok">Juste ! ${it.bravo ? it.bravo(p) : ""}</p>` : `<p class="ex-verdict ko">${inputs.length > 1 ? `${good} réponse${good > 1 ? "s" : ""} juste${good > 1 ? "s" : ""} sur ${inputs.length}.` : "Pas encore."} ${rates >= 2 ? "Voici la première étape ; essayez de continuer seul." : "Vérifiez vos calculs, ou demandez la correction."}</p>${it.indice ? `<p class="ex-indice"><b>Indice :</b> ${it.indice}</p>` : ""}${etape ? `<div class="ex-indice"><b>Première étape :</b>${etape}</div>` : ""}${methodeLink(it)}`;
         if (all) $(".ex-corr", b).hidden = false;
         mark(it.id, all);
       });

@@ -24,7 +24,7 @@
   { id: "mo1-fonctions", theme: "monnaie", niveau: 1, type: "qcm", notion: "fonctions-monnaie",
     titre: "Les trois fonctions de la monnaie", competence: "Reconnaître les fonctions de la monnaie dans des situations concrètes.",
     enonce: P("Nina met 200 francs de côté chaque mois sur un compte d’épargne pour s’acheter un vélo dans un an. Quelle fonction de la monnaie utilise-t-elle principalement ?"),
-    options: ["Unité de compte.", "Moyen d’échange.", "Réserve de valeur.", "Instrument de politique monétaire."], c: 2,
+    options: ["Unité de compte.", "Moyen d’échange.", "Réserve de valeur.", "Instrument de politique monétaire."], c: 2, pourquoi: ["L’unité de compte sert à exprimer les prix dans une même unité ; Nina, elle, garde de l’argent pour plus tard.", "Le moyen d’échange sert à payer. Nina paiera son vélo dans un an ; pour l’instant, elle garde son argent en réserve.", null, "La politique monétaire est menée par la banque centrale : ce n’est pas un usage de la monnaie par un ménage."],
     explication: P("La monnaie a trois fonctions : <b>unité de compte</b> (exprimer tous les prix dans une même unité, le franc), <b>moyen d’échange</b> (payer ses achats) et <b>réserve de valeur</b> (conserver du pouvoir d’achat pour plus tard). En épargnant, Nina utilise la monnaie comme réserve de valeur. Cette fonction est fragilisée par l’inflation, qui érode la valeur de l’argent conservé.") },
 
   { id: "mo1-ipc", theme: "monnaie", niveau: 1, type: "calcul", notion: "theorie-quantitative",
@@ -57,13 +57,13 @@
   { id: "mo1-bns", theme: "monnaie", niveau: 1, type: "qcm", notion: "preteur-dernier-ressort",
     titre: "Le mandat de la Banque nationale suisse", competence: "Connaître le rôle de la banque centrale.",
     enonce: P("Quel est l’objectif principal fixé par la loi à la Banque nationale suisse (BNS) ?"),
-    options: ["Maximiser les bénéfices versés aux cantons.", "Assurer la stabilité des prix, en tenant compte de l’évolution de la conjoncture.", "Maintenir le franc au même cours que l’euro.", "Financer les dépenses de la Confédération."], c: 1,
+    options: ["Maximiser les bénéfices versés aux cantons.", "Assurer la stabilité des prix, en tenant compte de l’évolution de la conjoncture.", "Maintenir le franc au même cours que l’euro.", "Financer les dépenses de la Confédération."], c: 1, pourquoi: ["La BNS verse une partie de ses bénéfices à la Confédération et aux cantons quand il y en a, mais la loi ne lui donne pas pour but d’en faire.", null, "La BNS a maintenu un cours plancher face à l’euro de 2011 à 2015, comme moyen temporaire, jamais comme objectif légal ; aujourd’hui le franc flotte.", "La BNS est indépendante et ne finance pas les dépenses de la Confédération : ce serait contraire à sa mission de stabilité des prix."],
     explication: P("La loi charge la BNS d’assurer la <b>stabilité des prix</b>, en tenant compte de la conjoncture. Elle l’interprète comme une inflation positive mais inférieure à 2 % par an. Elle est indépendante du gouvernement, ne finance pas les dépenses publiques, et ses bénéfices, quand il y en a, sont distribués en partie à la Confédération et aux cantons.") },
 
   { id: "mo1-desinflation", theme: "monnaie", niveau: 1, type: "qcm", notion: "theorie-quantitative",
     titre: "Inflation, désinflation, déflation", competence: "Distinguer des notions proches.",
     enonce: P("Dans un pays, l’inflation passe de 5 % une année à 2 % l’année suivante. Comment appelle-t-on ce phénomène ?"),
-    options: ["Une déflation : les prix baissent.", "Une désinflation : les prix augmentent encore, mais moins vite.", "Une stagflation.", "Une hyperinflation."], c: 1,
+    options: ["Une déflation : les prix baissent.", "Une désinflation : les prix augmentent encore, mais moins vite.", "Une stagflation.", "Une hyperinflation."], c: 1, pourquoi: ["Les prix montent encore de 2 % : ils ne baissent pas. La déflation suppose une inflation négative.", null, "La stagflation associe inflation élevée et activité qui stagne ; ici l’inflation recule, et rien n’est dit de l’activité.", "L’hyperinflation désigne des hausses de prix extrêmes, de plusieurs dizaines de pour cent par mois."],
     explication: P("Les prix continuent d’augmenter, de 2 %, mais <b>moins vite</b> qu’avant : c’est une <b>désinflation</b>. La <b>déflation</b> serait une baisse du niveau général des prix (inflation négative). La <b>stagflation</b> combine inflation élevée et stagnation de l’activité.") },
 
   { id: "mo1-salaire-reel", theme: "monnaie", niveau: 1, type: "calcul", notion: "theorie-quantitative",
@@ -80,7 +80,7 @@
     enonce: P("Inflation annuelle moyenne en Suisse, mesurée par l’IPC (Office fédéral de la statistique, valeurs arrondies) :") +
       `<table><thead><tr><th>Année</th><th>2019</th><th>2020</th><th>2021</th><th>2022</th><th>2023</th><th>2024</th></tr></thead><tbody><tr><td>Inflation</td><td>0,4 %</td><td>−0,7 %</td><td>0,6 %</td><td>2,8 %</td><td>2,1 %</td><td>1,1 %</td></tr></tbody></table>` +
       P("Quelle affirmation est correcte ?"),
-    options: ["Les prix ont baissé en 2023, puisque l’inflation est passée de 2,8 % à 2,1 %.", "La Suisse a connu une déflation en 2020, et l’inflation a dépassé l’objectif de la BNS en 2022 et en 2023.", "L’inflation suisse a été plus forte en 2022 que dans la zone euro.", "Les prix ont augmenté de 2,8 % au total entre 2019 et 2024."], c: 1,
+    options: ["Les prix ont baissé en 2023, puisque l’inflation est passée de 2,8 % à 2,1 %.", "La Suisse a connu une déflation en 2020, et l’inflation a dépassé l’objectif de la BNS en 2022 et en 2023.", "L’inflation suisse a été plus forte en 2022 que dans la zone euro.", "Les prix ont augmenté de 2,8 % au total entre 2019 et 2024."], c: 1, pourquoi: ["Une inflation de 2,1 % signifie que les prix ont encore augmenté, mais moins vite : c’est une désinflation, pas une baisse.", null, "Le tableau ne donne que des chiffres suisses : il ne permet aucune comparaison avec la zone euro.", "2,8 % est le taux d’une seule année, 2022. Sur toute la période, il faudrait cumuler les taux annuels."],
     explication: P("En 2020, l’inflation est négative (−0,7 %) : les prix ont baissé en moyenne, c’est une <b>déflation</b>, liée notamment à la pandémie et à la force du franc. En 2022 et 2023, elle dépasse 2 %, la limite supérieure de la stabilité des prix pour la BNS.", "En 2023, les prix ont continué de monter, mais moins vite (désinflation). Le tableau ne dit rien de la zone euro, où l’inflation a été bien plus forte (plus de 8 % en 2022). Pour la hausse totale, il faut combiner les taux année après année, et non prendre un seul chiffre.") },
 
   /* =========================== NIVEAU 2 : INTERMÉDIAIRE =========================== */
