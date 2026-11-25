@@ -155,7 +155,7 @@ ${rand}
 <p>Dans les années 1970, environ deux mille familles américaines reçoivent au hasard des assurances maladie plus ou moins généreuses. Celles qui ne paient rien dépensent nettement plus en soins que celles qui paient une partie, sans être en moyenne en meilleure santé.</p>
 ${rand}
 <h3>Les remèdes</h3>
-<p>Pour limiter l’aléa moral, on fait payer une petite partie du risque : en Suisse, la franchise et la quote-part de 10 % de l’assurance maladie, le bonus-malus de l’assurance auto, les primes liées aux résultats dans les entreprises. Mais trop d’incitations peut aussi pousser à renoncer à des soins utiles.</p>
+<p>Pour limiter l’aléa moral, on fait payer une petite partie du risque : les franchises des assurances maladie, par exemple en Suisse ou aux Pays-Bas, le bonus-malus de l’assurance auto, les primes liées aux résultats dans les entreprises. Mais trop d’incitations peut aussi pousser à renoncer à des soins utiles.</p>
 <h3>À retenir</h3>
 <p>Protéger et inciter sont deux objectifs en tension. La notice complète présente le mécanisme, les preuves et les cas des banques et du chômage.</p>`,
       quiz: [0, 2]

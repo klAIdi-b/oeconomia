@@ -157,7 +157,7 @@ ${trajets}
 <h3>Pourquoi ?</h3>
 <p>Les chômeurs de longue durée perdent leurs compétences et leurs contacts, et les employeurs hésitent à les embaucher. Les salariés en place négocient pour eux-mêmes plutôt que pour les chômeurs. Et les entreprises, en récession, renoncent à des investissements qui ne seront jamais faits. Les jeunes qui terminent leurs études en pleine crise gagnent moins pendant une dizaine d’années.</p>
 <h3>Agir vite</h3>
-<p>Si les crises laissent des cicatrices, il faut les combattre vite. C’est l’idée du chômage partiel, utilisé massivement en Suisse en 2020 : garder les salariés dans leur entreprise plutôt que de les licencier.</p>
+<p>Si les crises laissent des cicatrices, il faut les combattre vite. C’est l’idée du chômage partiel, utilisé massivement en 2020 en Allemagne, en France, en Suisse et dans de nombreux autres pays : garder les salariés dans leur entreprise plutôt que de les licencier.</p>
 <h3>À retenir</h3>
 <p>Une récession peut coûter bien plus que ses quelques mois de baisse. La notice complète présente les mécanismes, les preuves et les débats.</p>`,
       quiz: [0, 4]
@@ -241,8 +241,8 @@ ${fonctions}
     cas: [
       { titre: "Le WIR, une monnaie complémentaire suisse", html: `
 <p>En 1934, en pleine crise, seize entrepreneurs zurichois fondent une coopérative d’entraide économique, le Wirtschaftsring, ou WIR. Ses membres s’accordent des crédits dans une monnaie interne, le franc WIR, utilisable uniquement entre eux, pour continuer à échanger malgré la pénurie de francs suisses. Le WIR existe toujours, aujourd’hui sous la forme de la Banque WIR, et compte des dizaines de milliers de petites et moyennes entreprises. Des études, comme celles de James Stodder, suggèrent que son utilisation augmente en période de récession, ce qui en fait un stabilisateur contracyclique. C’est l’une des plus anciennes monnaies complémentaires encore en fonctionnement.</p>` },
-      { titre: "L’initiative Monnaie pleine", html: `
-<p>En juin 2018, les Suisses votent sur l’initiative « Monnaie pleine », qui voulait retirer aux banques commerciales le pouvoir de créer de la monnaie scripturale : seule la BNS aurait pu créer de la monnaie, y compris les dépôts sur les comptes courants. Les partisans voulaient rendre le système plus sûr et faire bénéficier la collectivité des gains de la création monétaire. Les opposants, dont le Conseil fédéral et la BNS, craignaient une expérience risquée sans équivalent dans le monde. L’initiative est rejetée par plus de 75 % des votants. Le débat a familiarisé le public avec le fait que les banques créent la monnaie en prêtant.</p>` },
+      { titre: "Le Venezuela, une monnaie qui ne sert plus", html: `
+<p>À partir de 2016, le Venezuela connaît une hyperinflation : la banque centrale finance massivement l’État, et la hausse des prix dépasse 100 000 % par an en 2018. Le bolivar cesse d’abord d’être une réserve de valeur : personne ne veut garder une monnaie qui perd la moitié de sa valeur en quelques semaines. Il perd ensuite son rôle d’unité de compte : commerçants et propriétaires affichent leurs prix en dollars. Il reste un moyen de paiement pour les petites dépenses, faute de mieux, avant que les dollars ne circulent eux aussi largement. L’exemple montre que les trois fonctions de la monnaie peuvent se défaire l’une après l’autre quand la confiance disparaît.</p>` },
       { titre: "Le bitcoin, monnaie légale au Salvador", html: `
 <p>En septembre 2021, le Salvador devient le premier pays à faire du bitcoin une monnaie légale, à côté du dollar américain. Les commerçants sont en principe obligés de l’accepter. Mais l’usage reste très limité : les études montrent que peu de ménages et d’entreprises l’utilisent pour leurs transactions, en raison de sa volatilité. Début 2025, dans le cadre d’un accord avec le FMI, le pays rend son acceptation facultative. L’expérience montre la difficulté pour un actif très volatil de remplir les fonctions d’unité de compte et d’intermédiaire des échanges.</p>` }
     ],
@@ -312,13 +312,13 @@ ${fonctions}
       ],
       duree: 5,
       html: `
-<h3>Un bout de papier qui vaut 100 francs</h3>
+<h3>Un simple bout de papier</h3>
 <p>Un billet coûte quelques centimes à fabriquer, et pourtant tout le monde l’accepte. Pourquoi ? Parce que la monnaie est une convention : nous croyons tous que les autres l’accepteront. Elle rend trois services, ses trois <b>fonctions</b> : mesurer les prix, payer, et garder de la valeur pour plus tard.</p>
 <h3>Sans monnaie, le troc</h3>
 <p>Sans monnaie, pour obtenir des chaussures contre son pain, la boulangère devrait trouver un cordonnier qui veut justement du pain. La monnaie simplifie tout : on vend à l’un, on achète à l’autre. Dans les camps de prisonniers de la Seconde Guerre mondiale, les cigarettes sont spontanément devenues monnaie.</p>
 ${fonctions}
 <h3>Qui crée la monnaie ?</h3>
-<p>Aujourd’hui, l’essentiel de la monnaie n’est pas fait de billets, mais d’inscriptions sur des comptes bancaires, créées par les banques quand elles prêtent. En 2018, les Suisses ont refusé à plus de 75 % de retirer ce pouvoir aux banques. Et depuis 1934, des PME suisses utilisent entre elles leur propre monnaie, le WIR.</p>
+<p>Aujourd’hui, l’essentiel de la monnaie n’est pas fait de billets, mais d’inscriptions sur des comptes bancaires, créées par les banques quand elles prêtent. À côté des monnaies officielles existent aussi des monnaies complémentaires, comme le WIR, utilisé entre PME suisses depuis 1934, ou de nombreuses monnaies locales en Europe.</p>
 <h3>À retenir</h3>
 <p>La monnaie repose sur la confiance. La notice complète présente ses fonctions, son histoire et les débats actuels.</p>`,
       quiz: [0, 3]
@@ -327,7 +327,7 @@ ${fonctions}
       depart: "Qu’est-ce qui fait qu’un bout de papier vaut quelque chose ? Aristote et le nomisma.",
       raisonnement: "Sept étapes, du troc à la création monétaire par les banques.",
       preuves: "Les cigarettes des camps, les pierres de Yap, le mythe du troc.",
-      cas: "Le WIR suisse, l’initiative Monnaie pleine, le bitcoin au Salvador.",
+      cas: "Le WIR, le Venezuela, le bitcoin au Salvador.",
       objections: "Fonctions et nature de la monnaie, le mythe du troc, la neutralité, la monnaie privée.",
       ecoles: "Aristote, Jevons et Menger, Knapp, Keynes, Friedman, Hayek, Graeber, Aglietta et Orléan.",
       source: "Aristote : la monnaie existe par la loi, non par nature.",

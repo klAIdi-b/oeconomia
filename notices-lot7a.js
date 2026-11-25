@@ -255,8 +255,8 @@ ${taxe}
     cas: [
       { titre: "L’abonnement demi-tarif des CFF", html: `
 <p>Les CFF proposent depuis 1987 un abonnement demi-tarif sous sa forme actuelle : pour moins de 200 francs par an, le voyageur paie ensuite la moitié du prix de chaque billet. C’est un tarif en deux parties, qui permet de capter une partie du surplus des voyageurs fréquents, tout en les incitant à prendre davantage le train, puisque chaque trajet supplémentaire leur coûte moins. L’abonnement général, qui donne un accès illimité, pousse la logique au bout : une fois payé, le coût de chaque trajet est nul. Avec plusieurs millions de détenteurs d’abonnements, ces formules sont au cœur du modèle ferroviaire suisse.</p>` },
-      { titre: "Le tunnel de base du Gothard", html: `
-<p>Inauguré en 2016, le tunnel ferroviaire de base du Gothard, long de 57 kilomètres, a coûté plus de 12 milliards de francs pour la seule ligne du Gothard des nouvelles lignes ferroviaires à travers les Alpes. Ses bénéfices ne se mesurent pas aux recettes des billets, mais, comme l’avait vu Dupuit, aux gains des usagers : temps de trajet réduit, transfert des marchandises de la route vers le rail, moins de pollution et de risques d’accident dans les vallées alpines. Le projet avait été approuvé par le peuple en 1992, puis son financement en 1998.</p>` },
+      { titre: "Les billets de concert revendus", html: `
+<p>En novembre 2022, la mise en vente des billets de la tournée américaine de Taylor Swift bloque le site de Ticketmaster : des millions de fans se connectent en même temps pour des places dont le prix officiel est le plus souvent inférieur à 500 dollars. Beaucoup étaient prêts à payer bien davantage, et certaines places se revendent ensuite plusieurs milliers de dollars. Fixer un prix inférieur à la disposition à payer laisse un surplus important aux acheteurs chanceux, mais aussi aux revendeurs, qui en captent une grande partie. Les organisateurs hésitent pourtant à vendre au prix fort, par crainte de décevoir leur public et pour préserver leur image.</p>` },
       { titre: "Les wagons sans toit de Dupuit", html: `
 <p>Au milieu du XIXe siècle, certaines compagnies ferroviaires françaises font circuler des wagons de troisième classe sans toit ni banquettes rembourrées. Dupuit explique que ce n’est pas pour économiser le coût d’un toit, mais pour rendre la troisième classe assez désagréable afin que ceux qui peuvent payer la deuxième ne soient pas tentés de s’en contenter. C’est l’une des premières analyses de la discrimination par la qualité, que pratiquent aujourd’hui les compagnies aériennes en dégradant leur classe économique de base.</p>` }
     ],
@@ -329,7 +329,7 @@ ${taxe}
 <h3>La bonne affaire</h3>
 <p>Vous étiez prêt à payer 50 francs pour un billet de concert, et vous l’avez eu pour 30. Vous avez gagné 20 francs de satisfaction en plus de ce que vous avez dépensé. Les économistes appellent ce gain le <b>surplus du consommateur</b>. Le vendeur, qui aurait accepté de vendre moins cher, réalise lui aussi un surplus.</p>
 <h3>Combien vaut un pont ?</h3>
-<p>L’idée vient d’un ingénieur français, Jules Dupuit, en 1844. Il observe que l’utilité d’un pont ne se mesure pas aux péages encaissés, mais à ce que les usagers seraient prêts à payer. C’est ainsi qu’on évalue encore aujourd’hui les grands projets publics, comme le tunnel de base du Gothard.</p>
+<p>L’idée vient d’un ingénieur français, Jules Dupuit, en 1844. Il observe que l’utilité d’un pont ne se mesure pas aux péages encaissés, mais à ce que les usagers seraient prêts à payer. C’est ainsi qu’on évalue encore aujourd’hui les grands projets publics, des lignes de train à grande vitesse aux tunnels alpins.</p>
 ${triangles}
 <h3>Ce que coûte une taxe</h3>
 <p>Une taxe rapporte des recettes à l’État, mais empêche aussi des échanges qui auraient profité à l’acheteur comme au vendeur. Cette perte, qui ne profite à personne, s’appelle la perte sèche. Elle augmente vite : une taxe deux fois plus élevée en crée environ quatre fois plus.</p>
@@ -341,7 +341,7 @@ ${triangles}
       depart: "Combien vaut un pont ? Dupuit et les ingénieurs de 1844.",
       raisonnement: "Sept étapes, de la disposition à payer à l’analyse coût-bénéfice.",
       preuves: "Le surplus d’Uber, la valeur des services gratuits, la perte sèche des monopoles.",
-      cas: "L’abonnement demi-tarif, le tunnel du Gothard, les wagons sans toit.",
+      cas: "Le demi-tarif, les billets de concert revendus, les wagons sans toit de Dupuit.",
       objections: "Un franc n’est pas un franc pour tous, disposition à payer et bien-être, biens sans marché, triangles et rectangles.",
       ecoles: "Dupuit, Marshall, Hicks, Harberger, Sen, Brynjolfsson.",
       source: "Dupuit, 1849 : empêcher le voyageur de deuxième classe d’aller en troisième.",

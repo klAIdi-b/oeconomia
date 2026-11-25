@@ -154,7 +154,7 @@ ${fuites}
 <p>Quand l’État construit une école pour 100 millions de francs, cet argent devient le salaire des maçons et le chiffre d’affaires des fournisseurs. Ceux-ci en dépensent une partie au restaurant ou dans les magasins, dont les propriétaires dépensent à leur tour, et ainsi de suite. Au total, le revenu du pays augmente de plus que les 100 millions de départ. C’est le <b>multiplicateur</b>, découvert par Richard Kahn en 1931 et popularisé par <a href="#eco-keynes">Keynes</a>.</p>
 ${vagues}
 <h3>Les fuites</h3>
-<p>Mais à chaque étape, une partie de l’argent ne circule plus dans le pays : elle part en impôts, en épargne, ou en achats de produits étrangers. En Suisse, qui importe beaucoup, une grande partie de la dépense profite aux pays voisins, et le multiplicateur est faible.</p>
+<p>Mais à chaque étape, une partie de l’argent ne circule plus dans le pays : elle part en impôts, en épargne, ou en achats de produits étrangers. Dans un petit pays très ouvert, comme la Suisse, l’Irlande ou la Belgique, une grande partie de la dépense profite aux pays voisins, et le multiplicateur est faible.</p>
 <h3>Un débat sans fin</h3>
 <p>Combien vaut vraiment le multiplicateur ? Les économistes l’estiment le plus souvent entre 0,5 et 2. Il est plus fort en période de crise, quand beaucoup de gens et de machines sont inoccupés. En 2013, le FMI a reconnu l’avoir sous-estimé pendant l’austérité européenne.</p>
 <h3>À retenir</h3>

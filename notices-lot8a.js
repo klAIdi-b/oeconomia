@@ -310,7 +310,7 @@ ${phases}
 <h3>Pourquoi ces vagues ?</h3>
 <p>Les explications varient. Pour <a href="#eco-keynes">Keynes</a>, l’investissement des entreprises dépend de leur confiance, et ses variations sont amplifiées. Pour d’autres, c’est le crédit trop facile qui crée des bulles, ou des chocs comme une flambée du pétrole ou une pandémie. La plupart des économistes pensent qu’un choc au hasard est amplifié par le fonctionnement de l’économie.</p>
 <h3>Des récessions plus courtes</h3>
-<p>Depuis la guerre, les expansions durent en moyenne plusieurs années et les récessions moins d’un an. En Suisse, le KOF, à l’ETH Zurich, publie chaque mois un baromètre pour anticiper les retournements.</p>
+<p>Depuis la guerre, les expansions durent en moyenne plusieurs années et les récessions moins d’un an. Des instituts publient chaque mois des indicateurs pour anticiper les retournements, comme les enquêtes auprès des directeurs d’achat aux États-Unis et en Europe, ou le baromètre conjoncturel du KOF en Suisse.</p>
 <h3>À retenir</h3>
 <p>Les cycles sont récurrents mais irréguliers, et difficiles à prévoir. La notice complète présente les théories, les faits et les débats.</p>`,
       quiz: [0, 1]

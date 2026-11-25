@@ -78,10 +78,10 @@ ${tauxBNS}` }
     cas: [
       { titre: "Le cours plancher et les taux négatifs, 2011-2022", html: `
 <p>Pendant la crise de la zone euro, les investisseurs se réfugient dans le franc, qui s’apprécie fortement et menace l’industrie d’exportation et le tourisme. En septembre 2011, la BNS fixe un cours plancher de 1,20 franc pour un euro et s’engage à acheter des devises en quantité illimitée pour le défendre. Le 15 janvier 2015, elle l’abandonne par surprise : le franc s’envole. Elle introduit en même temps un taux négatif de −0,75 %, maintenu jusqu’en juin 2022, pour rendre les placements en francs moins attrayants. Ces achats de devises ont fait gonfler son bilan à plusieurs centaines de milliards de francs.</p>` },
-      { titre: "Les bénéfices et les pertes de la BNS", html: `
-<p>Avec un bilan aussi grand, placé en grande partie en devises et en actions étrangères, le résultat de la BNS dépend fortement des marchés. Certaines années, elle réalise des dizaines de milliards de bénéfices, en partie versés à la Confédération et aux cantons. En 2022, elle subit une perte d’environ 130 milliards de francs, et ne verse rien pour cet exercice. Le débat sur l’usage de ses bénéfices, par exemple pour l’AVS, revient régulièrement, alors que la BNS rappelle que sa mission n’est pas de faire des profits.</p>` },
-      { titre: "L’hypothèque et la décision trimestrielle", html: `
-<p>Les décisions de la BNS touchent directement les ménages. Le taux de référence qui sert à adapter les loyers suit le taux moyen des hypothèques, lui-même influencé par la politique monétaire. Après la remontée des taux de 2022-2023, le taux de référence augmente en 2023 pour la première fois depuis son introduction en 2008, ce qui permet aux bailleurs de demander des hausses de loyer. Une décision de politique monétaire se retrouve ainsi, avec retard, dans le budget de nombreux locataires.</p>` }
+      { titre: "La Turquie contre la règle, 2021-2023", html: `
+<p>En 2021, alors que l’inflation monte en Turquie, la banque centrale, sous la pression du président, qui affirme que des taux élevés causent l’inflation, baisse son taux directeur à plusieurs reprises. La livre turque s’effondre, ce qui renchérit les importations, et l’inflation dépasse 80 % à l’automne 2022. À partir de juin 2023, une nouvelle équipe change de cap et relève le taux jusqu’à 50 % en mars 2024. L’épisode illustre ce que décrit la notice : une banque centrale qui perd son indépendance et sa crédibilité paie ensuite un prix très élevé pour les retrouver.</p>` },
+      { titre: "Taux fixes ou variables : une transmission inégale", html: `
+<p>La hausse des taux de 2022-2023 n’a pas touché les ménages de la même façon partout. Aux États-Unis, la plupart des emprunteurs immobiliers ont un prêt à taux fixe sur trente ans : ceux qui avaient emprunté avant la hausse n’ont rien senti, et beaucoup ont simplement évité de déménager. Au Royaume-Uni, où les taux sont souvent fixés pour deux à cinq ans seulement, des millions de ménages ont vu leurs mensualités bondir au moment de renouveler leur prêt. La même décision de politique monétaire agit donc plus ou moins vite selon les habitudes de crédit de chaque pays.</p>` }
     ],
     objections: `
 <h4>1. Indépendance et démocratie</h4>
@@ -108,15 +108,15 @@ ${tauxBNS}` }
 <p><b>L’intérêt général du pays.</b> La formule reprend l’article 99 de la Constitution. Elle rappelle que la BNS, indépendante, n’est pas pour autant au service d’une région, d’une branche ou du budget de l’État.</p>`
     },
     quiz: [
-      { q: "Quel est l’objectif principal que la loi fixe à la BNS ?",
-        o: ["Le plein emploi", "La stabilité des prix, en tenant compte de la conjoncture", "Un franc faible", "La stabilité du franc face à l’euro"], c: 1,
-        e: "La BNS la définit comme une inflation annuelle inférieure à 2 %." },
+      { q: "Quel est l’objectif principal de la plupart des banques centrales, comme la BCE ou la BNS ?",
+        o: ["Le plein emploi seulement", "La stabilité des prix", "Un taux de change faible", "Le financement de l’État"], c: 1,
+        e: "Elles la définissent en général comme une inflation d’environ 2 % par an ; la BNS vise une inflation inférieure à 2 %." },
       { q: "Face à une inflation trop élevée, que fait en général une banque centrale ?",
         o: ["Elle baisse son taux directeur", "Elle relève son taux directeur", "Elle achète davantage de titres publics", "Elle imprime plus de billets"], c: 1,
         e: "Le crédit devient plus cher, la demande ralentit et la hausse des prix se calme." },
-      { q: "Pourquoi le canal du taux de change est-il si important en Suisse ?",
-        o: ["Parce que les prix suisses sont fixés en euros", "Parce que c’est une petite économie très ouverte, qui importe et exporte beaucoup", "Parce que le franc est rattaché à l’euro", "Parce que la BNS ne peut pas modifier ses taux"], c: 1,
-        e: "Un franc plus fort rend les importations moins chères et freine l’inflation." },
+      { q: "Pourquoi le canal du taux de change est-il particulièrement important dans les petites économies très ouvertes, comme la Suisse ou la Nouvelle-Zélande ?",
+        o: ["Parce qu’elles importent et exportent beaucoup par rapport à leur production", "Parce qu’elles n’ont pas de banques commerciales", "Parce que leur monnaie est rattachée au dollar", "Parce que leurs taux ne changent jamais"], c: 0,
+        e: "Un taux plus élevé renforce la monnaie, ce qui fait baisser le prix des importations et freine l’inflation." },
       { q: "Que signifie l’expression « délais longs et variables » ?",
         o: ["Que la BNS se réunit rarement", "Que les effets d’une décision monétaire mettent un à deux ans à se faire sentir, de façon incertaine", "Que les crédits durent longtemps", "Que les taux changent lentement et rarement"], c: 1,
         e: "D’où l’importance des prévisions dans les décisions." },
@@ -124,9 +124,9 @@ ${tauxBNS}` }
         o: ["Pour réduire la dette des cantons", "Pour rendre les placements en francs moins attrayants et freiner la hausse du franc", "Pour financer la Confédération", "Pour provoquer de l’inflation élevée"], c: 1,
         e: "Le franc, valeur refuge, menaçait les exportations et poussait les prix à la baisse." }
     ],
-    transfert: { q: "En 2022, l’inflation atteint environ 8 % aux États-Unis. Quelle réaction de la Réserve fédérale correspond au raisonnement de la notice ?",
-      o: ["Une forte hausse de ses taux, au risque de ralentir l’économie", "Une baisse de ses taux pour soutenir la consommation", "Un gel des prix par décret", "Des achats massifs d’actions"], c: 0,
-      e: "La Réserve fédérale a relevé son taux de près de zéro à plus de 5 % entre mars 2022 et l’été 2023." },
+    transfert: { q: "Depuis dix ans, la banque centrale d’un pays annonce une inflation de 3 % et relève ses taux à chaque dérapage. Salariés et entreprises fixent désormais leurs prix et leurs salaires en tablant sur 3 %. Que montre cette situation ?",
+        o: ["La crédibilité de la banque centrale aide à garder l’inflation basse, car les anticipations restent ancrées", "La banque centrale n’a plus besoin de son taux directeur", "L’inflation dépend seulement du prix du pétrole", "Les salaires sont fixés par la loi"], c: 0,
+        e: "Quand chacun croit à l’objectif, salaires et prix s’ajustent en conséquence : la crédibilité est un instrument en soi." },
     ouverte: {
       q: "Les taux négatifs appliqués par la BNS de 2015 à 2022 ont-ils été une bonne politique pour la Suisse ?",
       r: "Le bilan est discuté. Pour la BNS et une partie des économistes, les taux négatifs, combinés aux interventions sur les devises, ont empêché une appréciation encore plus forte du franc après l’abandon du cours plancher. Ils ont protégé l’industrie d’exportation et le tourisme, et évité une baisse durable des prix qui aurait pesé sur l’économie. Leurs critiques soulignent les effets secondaires : des rendements très faibles pour les caisses de pension et les épargnants, des banques dont les marges se sont réduites, et une forte hausse des prix de l’immobilier, encouragée par des hypothèques bon marché (<a href=\"#c-instabilite-financiere\">voir instabilité financière</a>). D’autres rappellent que la Suisse n’avait guère le choix, dans un monde où la BCE appliquait elle aussi des taux négatifs. La réponse dépend du poids qu’on accorde à la protection de l’industrie, aux intérêts des épargnants et des locataires, et aux risques à long terme pour la stabilité financière."
@@ -144,17 +144,17 @@ ${tauxBNS}` }
         { q: "Pourquoi une hausse du taux directeur freine-t-elle la hausse des prix ?",
           o: ["Parce qu’emprunter coûte plus cher, qu’on dépense moins et que la demande ralentit", "Parce que les commerçants sont obligés de baisser leurs prix", "Parce que les salaires sont gelés par la loi", "Parce que les banques ferment leurs guichets"], c: 0,
           e: "La banque centrale ne fixe pas les prix : elle agit sur le coût de l’argent, donc sur la demande." },
-        { q: "Que signifie, pour une monnaie, être une « valeur refuge » ?",
-          o: ["En temps de crise, les investisseurs l’achètent, ce qui la fait monter", "Elle est garantie par de l’or", "Elle ne peut jamais perdre de valeur", "Elle ne sert qu’aux touristes"], c: 0,
-          e: "C’est le cas du franc suisse, du dollar ou du yen." }
+        { q: "Qu’ont fait les grandes banques centrales face au retour de l’inflation en 2022 ?",
+        o: ["Elles ont relevé leurs taux très rapidement", "Elles ont baissé leurs taux à zéro", "Elles ont fixé elles-mêmes les prix des biens", "Elles ont cessé d’intervenir"], c: 0,
+        e: "La Réserve fédérale est passée de près de zéro à plus de 5 % en un peu plus d’un an." }
       ],
       duree: 5,
       html: `
 <h3>Le thermostat de l’économie</h3>
-<p>La Banque nationale suisse a une mission principale : garder des prix stables, c’est-à-dire une hausse des prix inférieure à 2 % par an. Son outil principal est le taux directeur. Quand les prix montent trop vite, elle le relève : emprunter coûte plus cher, on dépense moins, et la hausse des prix ralentit. Quand l’économie faiblit, elle le baisse.</p>
+<p>La plupart des banques centrales, de la Réserve fédérale américaine à la Banque centrale européenne ou à la Banque nationale suisse, ont une mission principale : garder des prix stables, en général une hausse des prix d’environ 2 % par an. Leur outil principal est le taux directeur. Quand les prix montent trop vite, elles le relèvent : emprunter coûte plus cher, on dépense moins, et la hausse des prix ralentit. Quand l’économie faiblit, elles le baissent.</p>
 ${transmission}
-<h3>Une particularité suisse : le franc</h3>
-<p>Le franc est une valeur refuge : en temps de crise, les investisseurs l’achètent, et il s’apprécie. Pour protéger les exportateurs, la BNS a appliqué de 2015 à 2022 un taux négatif et acheté d’énormes quantités de devises. Quand l’inflation est revenue en 2022, elle a relevé son taux jusqu’à 1,75 %.</p>
+<h3>2022 : le retour de l’inflation</h3>
+<p>Après la pandémie et l’invasion de l’Ukraine, l’inflation atteint environ 9 % aux États-Unis et 10 % dans la zone euro. Les banques centrales relèvent leurs taux plus vite qu’elles ne l’avaient fait depuis des décennies : la Réserve fédérale passe de près de zéro à plus de 5 % en un peu plus d’un an. L’inflation recule ensuite, mais le crédit, et notamment l’immobilier, ralentit nettement.</p>
 <h3>À retenir</h3>
 <p>La banque centrale agit sur le coût de l’argent, avec un délai d’un à deux ans. La notice complète présente les canaux de transmission, les instruments exceptionnels et le débat sur son indépendance.</p>`,
       quiz: [0, 1]
@@ -163,7 +163,7 @@ ${transmission}
       depart: "Pourquoi confier la monnaie à une banque centrale indépendante ?",
       raisonnement: "Sept étapes, du taux directeur aux instruments non conventionnels.",
       preuves: "Le choc Volcker, indépendance et inflation, l’inflation de 2022 et le taux de la BNS.",
-      cas: "Le cours plancher et les taux négatifs, les bénéfices de la BNS, le taux de référence des loyers.",
+      cas: "Le cours plancher et les taux négatifs, la Turquie contre la règle, taux fixes ou variables.",
       objections: "Indépendance et démocratie, mandat étroit ou large, effets secondaires, règles ou discrétion.",
       ecoles: "Wicksell, Keynes, Friedman, Lucas, Kydland et Prescott, Taylor et Bernanke, Kelton.",
       source: "Le mandat de la BNS dans la loi.",

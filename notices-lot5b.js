@@ -75,8 +75,8 @@ ${periodes}
 <p>La Réserve fédérale maintient son taux entre 0 et 0,25 % de décembre 2008 à décembre 2015, et achète plusieurs milliers de milliards de dollars de titres. L’inflation reste faible malgré l’énorme création de monnaie de banque centrale, ce qui confirme l’intuition de la trappe : la monnaie créée a été conservée sous forme de réserves bancaires. Les études concluent en général que l’assouplissement quantitatif a fait baisser les taux à long terme, mais son effet sur l’activité reste débattu.</p>` }
     ],
     cas: [
-      { titre: "Le cours plancher de la BNS (2011-2015)", html: `
-<p>En 2011, la crise de la zone euro provoque un afflux massif de capitaux vers le franc. L’euro tombe presque à la parité avec le franc en août, ce qui menace l’industrie d’exportation et fait craindre une déflation. Les taux suisses étant déjà proches de zéro, la BNS ne peut plus les baisser. Le 6 septembre 2011, elle annonce qu’elle ne tolérera plus un cours inférieur à 1,20 franc pour un euro, et qu’elle est prête à acheter des devises « en quantités illimitées ». C’est l’application, dans un petit pays ouvert, de la sortie de trappe par le change proposée par Svensson. Le bilan de la BNS gonfle considérablement. Le 15 janvier 2015, la BNS abandonne le cours plancher et fixe son taux à −0,75 % ; le franc s’apprécie brutalement.</p>` },
+      { titre: "Le Japon et les « Abenomics », 2013", html: `
+<p>Après quinze ans de prix stagnants ou en baisse, le Japon lance en 2013 une politique de choc. La Banque du Japon se fixe un objectif d’inflation de 2 % et promet de doubler la base monétaire en deux ans, en achetant massivement des obligations d’État ; elle introduit en 2016 un taux légèrement négatif. Les résultats sont mitigés : le yen baisse, les profits des entreprises et l’emploi progressent, mais l’inflation reste longtemps sous l’objectif. Il faudra le choc mondial de 2022 pour qu’elle le dépasse durablement, et la Banque du Japon ne sortira des taux négatifs qu’en mars 2024. L’épisode montre à la fois les ressources et les limites d’une banque centrale prise dans la trappe.</p>` },
       { titre: "Le débat sur la suppression des billets", html: `
 <p>Puisque ce sont les billets qui empêchent les taux de descendre très en dessous de zéro, certains économistes ont proposé de les limiter. Kenneth Rogoff, dans The Curse of Cash (2016), propose de supprimer progressivement les grosses coupures, qui servent aussi à l’évasion fiscale et aux trafics. La BCE a cessé d’émettre le billet de 500 euros en 2019. La Suisse a fait le choix inverse : le billet de 1 000 francs, l’un des plus élevés en valeur au monde, reste émis, et l’attachement des Suisses à l’argent liquide est fort. Le plancher des taux y est donc probablement plus bas qu’ailleurs, mais une suppression des billets n’y est pas à l’ordre du jour.</p>` },
       { titre: "Keynes et l’investissement public", html: `
@@ -119,9 +119,9 @@ ${periodes}
       { q: "Que propose Krugman en 1998 pour sortir le Japon de la trappe ?",
         o: ["Augmenter les impôts", "Que la banque centrale promette de manière crédible une inflation plus élevée à l’avenir", "Revenir à l’étalon-or", "Que l’État rembourse rapidement sa dette"], c: 1,
         e: "Si le public anticipe plus d’inflation, le taux réel baisse même avec un taux nominal nul." },
-      { q: "Quel instrument la BNS a-t-elle utilisé de 2011 à 2015 pour contourner le plancher des taux ?",
-        o: ["Un cours plancher de 1,20 franc pour un euro", "Un impôt sur les dépôts", "Des achats massifs d’actions suisses", "Une hausse des réserves obligatoires des banques"], c: 0,
-        e: "La BNS s’est engagée à acheter des devises en quantité illimitée pour empêcher le franc de s’apprécier au-delà de ce seuil." }
+      { q: "Que promet la Banque du Japon en 2013 pour sortir de la trappe à liquidité ?",
+        o: ["De doubler la base monétaire en achetant massivement des obligations, avec un objectif d’inflation de 2 %", "De relever fortement ses taux", "De rattacher le yen au dollar", "De supprimer les billets de 10 000 yens"], c: 0,
+        e: "Les résultats ont été mitigés : l’inflation est restée longtemps sous l’objectif." }
     ],
     transfert: { q: "Un pays a ramené ses taux à zéro il y a trois ans. Les prix baissent légèrement, et le crédit ne repart pas malgré la création de monnaie. Quelle politique les économistes keynésiens recommanderaient-ils en priorité ?",
       o: ["Une relance par la dépense publique, puisque la politique monétaire classique a perdu sa force", "Une hausse des taux pour restaurer la confiance", "Une réduction de la dépense publique", "Une hausse des impôts sur la consommation"], c: 0,
@@ -154,7 +154,7 @@ ${periodes}
 <p>Quand les taux sont nuls, garder de l’argent ne coûte rien, et le placer ne rapporte presque rien. La banque centrale peut créer autant de monnaie qu’elle veut : banques, entreprises et ménages la gardent en réserve, au lieu de la prêter ou de la dépenser. Et les taux ne peuvent pas descendre très en dessous de zéro, sinon chacun garderait ses billets.</p>
 ${periodes}
 <h3>D’abord le Japon, puis tout le monde</h3>
-<p>Le Japon y est entré en 1999, les États-Unis et l’Europe après la crise de 2008. La Suisse a appliqué un taux de −0,75 % de 2015 à 2022, et avait fixé de 2011 à 2015 un cours plancher de 1,20 franc pour un euro. Les banques centrales ont inventé de nouveaux outils, comme les achats massifs d’obligations, et beaucoup d’économistes recommandent alors une relance par la dépense publique.</p>
+<p>Le Japon y est entré à la fin des années 1990, les États-Unis et l’Europe après la crise de 2008. La Banque centrale européenne, la Banque du Japon, la Suède, le Danemark et la Suisse ont même appliqué des taux négatifs. Les banques centrales ont inventé de nouveaux outils, comme les achats massifs d’obligations, et beaucoup d’économistes recommandent alors une relance par la dépense publique.</p>
 <h3>À retenir</h3>
 <p>À taux zéro, la politique monétaire classique perd sa force. La notice complète présente le mécanisme, les outils et les débats.</p>`,
       quiz: [0, 1]
@@ -163,7 +163,7 @@ ${periodes}
       depart: "Que faire quand les taux sont à zéro ? Le Japon de 1999 et le monde de 2008.",
       raisonnement: "Sept étapes, de la préférence pour la liquidité aux outils non conventionnels.",
       preuves: "Les années 1930, le laboratoire japonais, la Réserve fédérale après 2008.",
-      cas: "Le cours plancher de la BNS, le débat sur les billets, Keynes et l’investissement public.",
+      cas: "Les « Abenomics » au Japon, le débat sur les billets, Keynes et l’investissement public.",
       objections: "Friedman, l’efficacité des outils non conventionnels, les effets secondaires, un phénomène révolu ?",
       ecoles: "Keynes et Hicks, Friedman, Krugman, Bernanke et Svensson, Summers, Rogoff.",
       source: "Keynes, 1936 : une préférence pour la liquidité virtuellement absolue.",

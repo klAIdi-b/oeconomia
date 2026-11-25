@@ -44,7 +44,7 @@ OEC.concepts = [
   { id: "elasticite", nom: "Élasticité", cat: "valeur",
     court: "La sensibilité de la quantité demandée ou offerte à une variation du prix ou du revenu, mesurée en pour cent.",
     texte: "Marshall nomme l’élasticité en 1890 : de combien, en pour cent, la quantité demandée varie-t-elle quand le prix varie de 1 % ? Une demande est inélastique quand les acheteurs réagissent peu (essence à court terme, tabac, médicaments), élastique quand ils ont des substituts proches (une marque parmi d’autres). Le chiffre indique si une hausse de prix augmente ou diminue la recette du vendeur, et quel côté du marché supporte une taxe. La même mesure s’applique au revenu, avec la loi d’Engel sur la part de l’alimentation, et au prix d’un autre bien, pour distinguer substituts et compléments.",
-    exemple: "L’impôt sur le tabac rapporte environ deux milliards de francs par an à l’AVS et à l’AI, parce que la demande de cigarettes réagit peu au prix.",
+    exemple: "Les taxes sur le tabac rapportent beaucoup aux États, de l’Europe à l’Australie, parce que la demande de cigarettes réagit peu au prix.",
     auteurs: ["marshall", "veblen"], questions: ["valeur", "etat"], voir: ["offre-demande", "surplus", "consommation-ostentatoire", "externalite"], lab: 0 },
 
   { id: "surplus", nom: "Surplus du consommateur et perte sèche", cat: "valeur",
@@ -159,7 +159,7 @@ OEC.concepts = [
   { id: "modele-solow", nom: "Croissance et modèle de Solow", cat: "macro",
     court: "Un modèle qui explique la croissance de long terme par l’accumulation du capital, la population et le progrès technique.",
     texte: "Robert Solow propose en 1956 le modèle de référence de la croissance. Le capital a des rendements décroissants : chaque machine supplémentaire rapporte moins que la précédente. Un pays qui ne fait qu’épargner et investir atteint donc un état stationnaire où le revenu par habitant cesse de croître ; épargner davantage élève son niveau de vie, pas son rythme de croissance. Seul le progrès technique permet une croissance durable. En 1957, Solow calcule qu’il explique sept huitièmes de la hausse de la production par heure aux États-Unis de 1909 à 1949. Le modèle prédit aussi que les pays pauvres rattrapent les riches, ce qui ne s’observe qu’entre pays aux conditions comparables. Les théories de la croissance endogène et des institutions sont nées de ses limites.",
-    exemple: "Depuis le début des années 2000, une part importante de la croissance du PIB suisse vient de la hausse de la population ; le PIB par habitant, qui dépend de la productivité, progresse plus lentement.",
+    exemple: "La Corée du Sud a rattrapé les pays riches en investissant massivement dans les machines et l’éducation, puis sa croissance a ralenti à mesure que le rattrapage s’achevait.",
     auteurs: ["samuelson", "lucas", "krugman", "acemoglu"], questions: ["croissance", "inegalites"], voir: ["destruction-creatrice", "institutions-inclusives", "pib", "stagnation-seculaire"] },
 
   /* ---------- Monnaie et finance ---------- */
@@ -178,7 +178,7 @@ OEC.concepts = [
   { id: "politique-monetaire", nom: "Politique monétaire", cat: "monnaie",
     court: "L’action de la banque centrale sur le coût de l’argent, d’abord pour garder des prix stables.",
     texte: "La banque centrale fixe un taux directeur, qui se répercute sur les taux des crédits, des hypothèques et de l’épargne. Quand l’inflation monte, elle le relève : le crédit devient plus cher, la demande ralentit, la monnaie s’apprécie, et la hausse des prix se calme, avec un délai d’un à deux ans. Quand l’économie faiblit, elle le baisse. La crédibilité compte autant que le taux : si chacun croit à des prix stables, salaires et prix s’ajustent en conséquence. Depuis 2008, les banques centrales recourent aussi à des instruments exceptionnels : taux négatifs, achats massifs de titres et, en Suisse, interventions sur le marché des changes. Leur indépendance et l’étendue de leur mandat restent débattues.",
-    exemple: "Face à une inflation de 3,5 % en août 2022, la BNS a relevé son taux directeur de −0,25 % à 1,75 % en un an.",
+    exemple: "Face à une inflation de plus de 9 % en 2022, la Réserve fédérale américaine a relevé son taux directeur de près de zéro à plus de 5 % en un peu plus d’un an.",
     auteurs: ["friedman", "keynes", "lucas", "kelton"], questions: ["monnaie", "crises"], voir: ["taux-de-change", "theorie-quantitative", "monnaie-endogene", "trappe-liquidite", "anticipations-rationnelles", "preteur-dernier-ressort", "courbe-phillips"] },
 
   { id: "preference-liquidite", nom: "Préférence pour la liquidité", cat: "monnaie",

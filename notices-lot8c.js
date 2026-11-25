@@ -245,8 +245,8 @@ ${verrou}
     cas: [
       { titre: "Bâle et la pharmacie", html: `
 <p>L’industrie chimique bâloise naît au XIXe siècle de la production de teintures pour l’industrie textile et la soierie, grâce à la proximité du Rhin, à la présence de chimistes et à une législation sur les brevets alors moins contraignante qu’ailleurs. Elle se transforme au XXe siècle en industrie pharmaceutique, avec des entreprises comme Roche et Novartis. Aujourd’hui, la région bâloise concentre des sièges mondiaux, des centres de recherche, des start-ups de biotechnologie, des universités et des sous-traitants spécialisés. Chaque acteur attire les autres. C’est un exemple type d’économies externes à la Marshall, et d’un avantage historique devenu durable.</p>` },
-      { titre: "La Crypto Valley de Zoug", html: `
-<p>Au milieu des années 2010, plusieurs projets de cryptomonnaies s’installent dans le canton de Zoug, dont la fondation Ethereum en 2014, attirés par une fiscalité favorable et une attitude ouverte des autorités. Rapidement, des centaines d’entreprises de la blockchain s’y établissent, ainsi que des avocats, des fiduciaires et des investisseurs spécialisés. Le nom de « Crypto Valley » apparaît. L’exemple montre comment un petit avantage initial peut, grâce aux rendements croissants d’agglomération, attirer tout un écosystème, même si la durabilité de cette concentration reste à démontrer.</p>` },
+      { titre: "La Silicon Valley", html: `
+<p>En 1956, William Shockley, coinventeur du transistor, installe un laboratoire près de l’université Stanford, en Californie. L’année suivante, huit de ses chercheurs le quittent pour fonder Fairchild Semiconductor ; d’anciens employés de Fairchild créent ensuite des dizaines d’entreprises, dont Intel en 1968. Ingénieurs, investisseurs en capital-risque, avocats spécialisés et sous-traitants s’installent à leur tour dans la région, et chaque nouvelle entreprise la rend plus attractive pour la suivante. Malgré des loyers parmi les plus élevés du monde, la Silicon Valley reste le premier centre mondial de l’innovation numérique : une avance prise dans les années 1950 s’est renforcée d’elle-même pendant soixante-dix ans.</p>` },
       { titre: "Le clavier QWERTY et sa controverse", html: `
 <p>Pour Paul David (1985), le clavier QWERTY illustre le verrouillage : conçu dans les années 1870 pour éviter que les tiges des machines à écrire ne se coincent, il serait resté dominant malgré l’existence de dispositions plus efficaces, comme le clavier Dvorak, parce que dactylos et fabricants s’étaient coordonnés dessus. En 1990, Stan Liebowitz et Stephen Margolis publient « La fable des touches », où ils contestent les preuves de la supériorité du clavier Dvorak. La controverse montre qu’il est difficile de prouver qu’un marché est verrouillé dans une solution inférieure.</p>` }
     ],
@@ -320,7 +320,7 @@ ${verrou}
 <p>Concevoir un logiciel ou un médicament coûte des centaines de millions ; en produire une copie supplémentaire ne coûte presque rien. Plus on en vend, plus le coût de chaque unité baisse. Les économistes parlent de <b>rendements croissants</b>. Ils avantagent les grandes entreprises et le premier arrivé.</p>
 ${courbe}
 <h3>Pourquoi les entreprises se regroupent</h3>
-<p>Les horlogers dans le Jura, la pharmacie à Bâle, la blockchain à Zoug : les entreprises d’un même secteur gagnent à être proches, car elles partagent des travailleurs qualifiés, des fournisseurs et des idées. Alfred <a href="#eco-marshall">Marshall</a> disait en 1890 que, dans ces régions, les secrets du métier sont « dans l’air ».</p>
+<p>La finance à Londres, l’informatique dans la Silicon Valley, la pharmacie à Bâle : les entreprises d’un même secteur gagnent à être proches, car elles partagent des travailleurs qualifiés, des fournisseurs et des idées. Alfred Marshall disait en 1890 que, dans ces régions, les secrets du métier sont « dans l’air ».</p>
 <h3>Le hasard et l’histoire</h3>
 <p>Avec les rendements croissants, une petite avance due au hasard peut devenir décisive : une technologie l’emporte parce qu’elle a été adoptée un peu plus tôt, pas forcément parce qu’elle est la meilleure. Le clavier QWERTY en serait un exemple, même si c’est discuté.</p>
 <h3>À retenir</h3>
@@ -331,7 +331,7 @@ ${courbe}
       depart: "Pourquoi les horlogers se regroupent-ils dans le Jura ? Marshall et les districts industriels.",
       raisonnement: "Sept étapes, des économies d’échelle à la croissance endogène.",
       preuves: "Les usines à un million de dollars, la courbe d’apprentissage du solaire, les emplois qui en créent d’autres.",
-      cas: "Bâle et la pharmacie, la Crypto Valley de Zoug, la controverse QWERTY.",
+      cas: "Bâle et la pharmacie, la Silicon Valley, le clavier QWERTY.",
       objections: "Rendements qui décroissent, verrouillage rare, politique industrielle risquée, les gagnants emportent tout.",
       ecoles: "Smith, Marshall, Sraffa et Young, Arthur et David, Krugman, Romer.",
       source: "Marshall, 1890 : les secrets du métier sont dans l’air.",

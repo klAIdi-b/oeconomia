@@ -93,10 +93,10 @@ ${echelle}
     cas: [
       { titre: "L’impôt sur le tabac et l’AVS", html: `
 <p>En Suisse, l’impôt sur le tabac rapporte environ deux milliards de francs par an à la Confédération, qui les affecte à l’AVS et à l’AI. Ce rendement s’explique par une demande peu élastique : à chaque hausse, la consommation baisse un peu, mais les recettes augmentent. Les autorités de santé y voient aussi un moyen de dissuader les jeunes de commencer, puisque leur demande est plus sensible au prix.</p>` },
-      { titre: "Le tourisme d’achat", html: `
-<p>Quand le franc s’apprécie fortement, en 2011 puis après l’abandon du taux plancher face à l’euro en janvier 2015, les produits français, allemands ou italiens deviennent meilleur marché pour les Suisses. Près des frontières, à Genève, Bâle ou au Tessin, beaucoup de ménages vont faire leurs courses de l’autre côté. Pour un supermarché proche de la frontière, la demande devient très élastique : les substituts sont à quelques kilomètres. Les commerces de l’intérieur du pays ont été moins touchés.</p>` },
+      { titre: "Netflix, 2011", html: `
+<p>En juillet 2011, Netflix annonce que l’abonnement combinant la location de DVD par la poste et la vidéo en ligne passera d’environ 10 à 16 dollars par mois, une hausse d’environ 60 %. Les clients disposent de substituts : vidéoclubs, autres services en ligne, télévision payante. En trois mois, l’entreprise perd environ 800 000 abonnés aux États-Unis, et son action chute fortement. Pour un service qui a des concurrents proches, la demande est élastique : la hausse de prix fait fuir une partie des clients.</p>` },
       { titre: "La récolte trop abondante", html: `
-<p>La demande de produits agricoles de base est peu élastique : on ne mange pas deux fois plus de pommes de terre parce qu’elles sont moins chères. Une récolte exceptionnelle fait donc chuter les prix plus que les quantités n’augmentent, et le revenu des agriculteurs peut baisser les bonnes années. C’est l’une des raisons pour lesquelles de nombreux pays encadrent l’offre agricole. En Suisse, par exemple, la quantité de raisin autorisée par mètre carré pour les vins d’appellation est plafonnée, ce qui sert aussi la qualité.</p>` }
+<p>La demande de produits agricoles de base est peu élastique : on ne mange pas deux fois plus de pommes de terre parce qu’elles sont moins chères. Une récolte exceptionnelle fait donc chuter les prix plus que les quantités n’augmentent, et le revenu des agriculteurs peut baisser les bonnes années. C’est l’une des raisons pour lesquelles de nombreux pays encadrent l’offre agricole, par des quotas, des stocks publics ou des aides. En 2020, l’Union européenne finance ainsi la distillation de vins excédentaires, dont la demande s’était effondrée avec la fermeture des restaurants.</p>` }
     ],
     objections: `
 <h4>1. Une élasticité n’est pas une constante</h4>
@@ -167,7 +167,7 @@ ${echelle}
 <p>Quand le prix d’un produit augmente, on en achète moins. Mais de combien ? Pour l’essence ou les cigarettes, presque autant qu’avant. Pour une marque de café parmi d’autres, beaucoup moins : on change de marque. L’élasticité mesure cette sensibilité, en comparant la variation de la quantité à celle du prix, en pour cent.</p>
 ${deuxCourbes}
 <h3>Pourquoi c’est utile</h3>
-<p>Si les acheteurs réagissent peu, une hausse de prix rapporte plus au vendeur. C’est pourquoi l’impôt sur le tabac rapporte environ deux milliards de francs par an en Suisse, versés à l’AVS et à l’AI. Si les acheteurs réagissent beaucoup, la hausse fait fuir les clients, comme les supermarchés proches de la frontière l’ont constaté quand le franc s’est apprécié.</p>
+<p>Si les acheteurs réagissent peu, une hausse de prix rapporte plus au vendeur. C’est pourquoi les taxes sur le tabac rapportent beaucoup aux États, de l’Europe à l’Australie. Si les acheteurs réagissent beaucoup, la hausse fait fuir les clients : quand Netflix a augmenté ses prix d’environ 60 % aux États-Unis en 2011, il a perdu environ 800 000 abonnés en trois mois.</p>
 <h3>À retenir</h3>
 <p>Une demande est élastique quand il existe des substituts, que le bien n’est pas indispensable ou qu’il pèse lourd dans le budget. La notice complète présente le calcul, l’élasticité-revenu et croisée, et le débat sur les taxes.</p>`,
       quiz: [0, 1]
@@ -176,7 +176,7 @@ ${deuxCourbes}
       depart: "Une hausse de prix rapporte-t-elle ? De King à Marshall, la naissance d’une mesure.",
       raisonnement: "Sept étapes, du calcul en pour cent à l’incidence fiscale.",
       preuves: "L’essence, le tabac, la loi d’Engel en Suisse, et la difficulté de mesurer.",
-      cas: "L’impôt sur le tabac, le tourisme d’achat, la récolte trop abondante.",
+      cas: "L’impôt sur le tabac, Netflix en 2011, la récolte trop abondante.",
       objections: "Un chiffre qui varie, des comportements insensibles au prix, la règle de Ramsey.",
       ecoles: "King et Davenant, Cournot, Marshall, Engel, Ramsey, Veblen.",
       source: "La définition de Marshall, en 1890.",

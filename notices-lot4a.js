@@ -231,8 +231,8 @@ ${gravitation}
 <p>En 2021, la reprise brutale de la demande de biens, les fermetures de ports en Chine et la pénurie de conteneurs font exploser le prix du transport maritime. Le coût d’un conteneur de quarante pieds entre l’Asie et l’Europe est multiplié par cinq à dix selon les routes. Les armateurs réalisent des profits records et commandent massivement de nouveaux navires. En 2023, la demande s’est calmée, la capacité a augmenté, et les tarifs sont revenus près de leur niveau d’avant la crise. C’est presque exactement le mécanisme du drap noir de Smith, à l’échelle mondiale.</p>` },
       { titre: "Le prix des montres de luxe", html: `
 <p>Certaines montres suisses de prestige se revendent sur le marché secondaire bien au-dessus de leur prix de catalogue, et les listes d’attente durent des années. Le prix de marché dépasse durablement le prix naturel au sens de Smith, sans que l’offre augmente pour autant. Les fabricants limitent volontairement leur production, car la rareté fait partie de la valeur de la marque. On retrouve ici les exceptions que Smith signalait déjà : le monopole et la rareté. Les biens de luxe illustrent aussi l’analyse de Veblen sur la <a href="#c-consommation-ostentatoire">consommation ostentatoire</a>.</p>` },
-      { titre: "L’« îlot de cherté » suisse", html: `
-<p>Les prix de nombreux biens de consommation sont nettement plus élevés en Suisse que dans les pays voisins, même pour des produits identiques fabriqués à l’étranger. Une partie de l’écart s’explique par des coûts plus élevés, salaires, loyers, logistique, ce qui est cohérent avec un prix naturel plus haut. Mais une autre partie tient à des obstacles à la concurrence : contrats de distribution exclusifs, différenciation des prix par les fournisseurs étrangers selon le pays, barrières techniques. La Suisse a adopté plusieurs mesures, comme le principe du « Cassis de Dijon » en 2010, qui admet certains produits conformes aux normes européennes, puis des règles contre le « pouvoir de marché relatif » des fournisseurs, entrées en vigueur en 2022.</p>` }
+      { titre: "L’insuline aux États-Unis", html: `
+<p>L’insuline, découverte en 1921, est un médicament ancien dont la fabrication coûte peu. Pourtant, son prix a fortement augmenté aux États-Unis dans les années 2010, et une étude de la RAND Corporation estime en 2021 qu’il y était environ huit fois plus élevé que dans les autres pays riches. Trois fabricants dominent le marché, les brevets successifs sur de nouvelles formes du produit freinent l’arrivée de copies, et des intermédiaires négocient des remises opaques. Le prix de marché reste ainsi durablement très au-dessus du prix naturel, faute d’une concurrence suffisante. Les pouvoirs publics ont fini par intervenir : depuis 2023, ce que paient les retraités couverts par l’assurance publique est plafonné à 35 dollars par mois.</p>` }
     ],
     objections: `
 <h4>1. Les rendements croissants</h4>
@@ -317,7 +317,7 @@ ${gravitation}
       depart: "Le deuil public et le prix du drap noir.",
       raisonnement: "Six étapes : taux naturels, prix naturel, demande effective, gravitation, obstacles, de Ricardo à Marshall.",
       preuves: "Les cycles du porc, l’égalisation des profits, les grands cycles des matières premières.",
-      cas: "Le fret maritime en 2021, les montres de luxe, l’îlot de cherté suisse.",
+      cas: "Le fret maritime, les montres de luxe, l’insuline aux États-Unis.",
       objections: "Rendements croissants, pouvoir de marché, temps de l’ajustement, demande, école autrichienne.",
       ecoles: "Scolastiques, Cantillon, Smith, Ricardo et Marx, Marshall, Walras.",
       source: "Smith, 1776 : le prix central vers lequel gravitent les prix.",

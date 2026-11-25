@@ -79,8 +79,8 @@ ${tatonnement}
 <p>Né à Évreux en 1834, Léon Walras ne trouve pas de poste en France, où ses idées et ses mathématiques déconcertent. En 1870, il est élu à la nouvelle chaire d’économie politique de l’Académie de Lausanne, créée à l’initiative du canton de Vaud. Il y développe toute son œuvre. Lorsqu’il prend sa retraite en 1892, l’Italien Vilfredo <a href="#eco-pareto">Pareto</a> lui succède et prolonge son travail, notamment avec la notion d’optimum qui porte son nom. On parle de l’« école de Lausanne ». En 1909, l’Université de Lausanne célèbre le jubilé scientifique de Walras, qui meurt l’année suivante à Clarens, près de Montreux. Lausanne a ainsi été, au tournant du XXe siècle, l’un des grands centres mondiaux de la théorie économique.</p>` },
       { titre: "Le débat sur le calcul socialiste", html: `
 <p>En 1920, Ludwig von <a href="#eco-mises">Mises</a> soutient qu’une économie socialiste, sans propriété privée des moyens de production ni prix de marché, ne peut pas calculer rationnellement. En 1936-1937, l’économiste polonais Oskar Lange répond en utilisant l’équilibre général : un bureau central pourrait jouer le rôle du crieur de Walras, fixer des prix, observer les pénuries et les excédents, et ajuster par tâtonnement. Friedrich <a href="#eco-hayek">Hayek</a> réplique en 1945 que le problème n’est pas de résoudre des équations, mais de rassembler une connaissance dispersée entre des millions de personnes, que seuls les prix de marché permettent de transmettre. Le débat a beaucoup influencé la compréhension du rôle des prix.</p>` },
-      { titre: "La Suisse et la fin des accords bilatéraux", html: `
-<p>En 2015, la Confédération commande des études sur les conséquences économiques d’une disparition des accords bilatéraux I avec l’Union européenne. L’une d’elles s’appuie sur un modèle d’équilibre général calculable, qui simule les effets en cascade sur tous les secteurs : hausse des coûts d’exportation, réduction de l’immigration de travailleurs, effets sur les prix, les salaires et l’investissement. Les études concluent à une perte de PIB de plusieurs points de pourcentage à long terme. Leurs résultats sont discutés, mais l’exercice illustre l’usage concret de la théorie de Walras dans le débat politique suisse.</p>` }
+      { titre: "L’ALENA à l’épreuve des faits", html: `
+<p>Avant l’entrée en vigueur de l’accord de libre-échange nord-américain, en 1994, plusieurs équipes utilisent des modèles d’équilibre général calculable pour en prévoir les effets sur les États-Unis, le Canada et le Mexique. Ils prévoient des gains modestes pour les États-Unis et plus importants pour le Mexique. En 2005, l’économiste Timothy Kehoe compare ces prévisions aux résultats observés : les modèles ont bien vu la direction des effets, mais ils ont fortement sous-estimé la croissance du commerce dans les produits qui s’échangeaient peu avant l’accord. La leçon : ces modèles éclairent les effets en chaîne d’une réforme, mais ils peinent à prévoir l’apparition d’échanges nouveaux.</p>` }
     ],
     objections: `
 <h4>1. Des hypothèses irréalistes</h4>
@@ -154,7 +154,7 @@ ${reseau}
 <h3>Une théorie née à Lausanne</h3>
 <p>Elle est formulée en 1874 par Léon <a href="#eco-walras">Walras</a>, un Français devenu professeur à Lausanne. Il cherche à montrer, avec des équations, qu’il existe des prix pour lesquels l’offre égale la demande sur tous les marchés à la fois : une version mathématique de la « main invisible » d’Adam Smith. Il faudra attendre 1954 pour que Kenneth Arrow et Gérard Debreu le démontrent rigoureusement.</p>
 <h3>Une belle construction, discutée</h3>
-<p>Cette théorie suppose des conditions très idéales, et rien ne garantit que l’économie atteigne vraiment l’équilibre. Ses versions chiffrées servent pourtant à évaluer les accords commerciaux, comme ceux de la Suisse avec l’Union européenne.</p>
+<p>Cette théorie suppose des conditions très idéales, et rien ne garantit que l’économie atteigne vraiment l’équilibre. Ses versions chiffrées servent pourtant à évaluer les accords commerciaux, de l’accord nord-américain de 1994 aux relations entre la Suisse et l’Union européenne.</p>
 <h3>À retenir</h3>
 <p>L’équilibre général est le cadre le plus ambitieux de la théorie économique. La notice complète présente la construction, les débats et les usages.</p>`,
       quiz: [0, 1]
@@ -163,7 +163,7 @@ ${reseau}
       depart: "Comment des millions de décisions peuvent-elles être cohérentes ? Walras à Lausanne.",
       raisonnement: "Sept étapes, de l’interdépendance à la question de la stabilité.",
       preuves: "Les tableaux de Leontief, les modèles calculables, l’expérience de la planification.",
-      cas: "L’école de Lausanne, le débat sur le calcul socialiste, les accords bilatéraux.",
+      cas: "L’école de Lausanne, le calcul socialiste, l’ALENA à l’épreuve des faits.",
       objections: "Hypothèses irréalistes, temps et monnaie absents, équilibre comme fiction, idéal utile.",
       ecoles: "Quesnay, Walras et Pareto, Arrow-Debreu-McKenzie, Leontief, Scarf et SMD, Mises et Hayek.",
       source: "Walras, 1874 : la théorie des prix sous une libre concurrence hypothétique.",

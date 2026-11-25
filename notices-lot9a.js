@@ -210,8 +210,8 @@ ${deuxVues}
     cas: [
       { titre: "L’initiative « Monnaie pleine », 2018", html: `
 <p>En juin 2018, les Suisses votent sur une initiative qui veut retirer aux banques commerciales le pouvoir de créer de la monnaie scripturale : seule la BNS pourrait le faire. Ses partisans partent précisément du constat de la monnaie endogène, et y voient la cause des bulles de crédit. La BNS et le Conseil fédéral s’y opposent, jugeant le système trop risqué et sans précédent. L’initiative est rejetée par environ 76 % des votants.</p>` },
-      { titre: "Le prêt hypothécaire", html: `
-<p>Une famille achète un appartement de un million de francs avec 200 000 francs de fonds propres. La banque lui accorde un prêt hypothécaire de 800 000 francs, qu’elle inscrit sur son compte et qui est aussitôt versé au vendeur. Le vendeur dispose désormais d’un dépôt de 800 000 francs qui n’existait pas la veille. En Suisse, où les prêts hypothécaires dépassent largement le revenu national, c’est l’un des principaux canaux de création monétaire.</p>` },
+      { titre: "Le prêt immobilier", html: `
+<p>Une famille achète un appartement de 500 000 euros avec 100 000 euros d’apport personnel. La banque lui accorde un prêt immobilier de 400 000 euros, qu’elle inscrit sur son compte et qui est aussitôt versé au vendeur. Le vendeur dispose désormais d’un dépôt de 400 000 euros qui n’existait pas la veille. Dans la plupart des pays riches, où les prêts immobiliers représentent une grande partie du crédit bancaire, c’est l’un des principaux canaux de création monétaire.</p>` },
       { titre: "Northern Rock, 2007", html: `
 <p>La banque britannique Northern Rock prêtait massivement pour l’immobilier, en se finançant sur les marchés. Quand ce financement se tarit en 2007, les déposants se précipitent aux guichets : c’est la première panique bancaire au Royaume-Uni depuis plus d’un siècle. L’épisode rappelle que la monnaie créée par le crédit repose sur la confiance dans la solvabilité des banques (<a href="#c-preteur-dernier-ressort">voir prêteur en dernier ressort</a>).</p>` }
     ],
@@ -284,8 +284,8 @@ ${deuxVues}
 ${deuxVues}
 <h3>Pas sans limites</h3>
 <p>Les banques ne prêtent qu’aux clients qu’elles jugent solvables, et doivent respecter des règles. La banque centrale, elle, agit surtout par le taux d’intérêt : plus il est élevé, plus le crédit est cher, et moins on emprunte.</p>
-<h3>Un débat suisse</h3>
-<p>En 2018, une initiative proposait de réserver la création de monnaie à la BNS. Les votants l’ont rejetée à environ 76 %, mais le débat a fait connaître ce mécanisme méconnu.</p>
+<h3>Un débat public</h3>
+<p>Ce mécanisme méconnu a nourri des débats publics. En 2015, un rapport commandé par le gouvernement islandais propose de réserver la création de monnaie à la banque centrale. En 2018, les Suisses rejettent à environ 76 % une initiative allant dans le même sens.</p>
 <h3>À retenir</h3>
 <p>La monnaie naît surtout du crédit, et disparaît quand on rembourse. La notice complète présente le raisonnement, les preuves et le débat avec les monétaristes.</p>`,
       quiz: [0, 4]
@@ -294,7 +294,7 @@ ${deuxVues}
       depart: "Qui crée la monnaie ? Le multiplicateur des manuels contre la monnaie endogène.",
       raisonnement: "Six étapes, du crédit qui crée le dépôt à la dépense publique.",
       preuves: "La Banque d’Angleterre en 2014, l’assouplissement quantitatif, ce qui reste du monétarisme.",
-      cas: "Monnaie pleine en 2018, le prêt hypothécaire, Northern Rock.",
+      cas: "Monnaie pleine en 2018, le prêt immobilier, Northern Rock.",
       objections: "Des banques contraintes, une banque centrale qui garde la main, un débat de vocabulaire.",
       ecoles: "Wicksell et Schumpeter, Keynes, Kaldor et Moore, Minsky, Kelton, Friedman.",
       source: "Chaque prêt crée un dépôt.",

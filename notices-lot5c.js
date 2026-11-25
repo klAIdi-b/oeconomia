@@ -79,8 +79,8 @@ ${bagehot}
     cas: [
       { titre: "Credit Suisse, mars 2023", html: `
 <p>Après des années de scandales et de pertes, Credit Suisse subit à l’automne 2022 puis en mars 2023 des retraits massifs de ses clients fortunés. Le 15 mars, la BNS annonce qu’elle fournira des liquidités ; le lendemain, la banque emprunte jusqu’à 50 milliards de francs. Le 19 mars, la reprise par UBS est annoncée, accompagnée de facilités de liquidités pouvant atteindre au total environ 200 milliards de francs, dont une partie garantie par la Confédération, et d’une garantie fédérale contre certaines pertes. Ces garanties, finalement remboursées, ont évité une panique mondiale. Mais l’épisode a relancé le débat sur l’aléa moral : la Suisse se retrouve avec une seule grande banque, UBS, dont le bilan dépasse le double du PIB du pays, et le Conseil fédéral a proposé de renforcer fortement les exigences de fonds propres.</p>` },
-      { titre: "Le sauvetage d’UBS en 2008", html: `
-<p>Quinze ans plus tôt, c’est UBS qui était en difficulté, après d’énormes pertes sur les crédits immobiliers américains. En octobre 2008, la Confédération lui apporte 6 milliards de francs de capital, et la BNS crée un fonds de stabilisation qui reprend une partie de ses actifs illiquides. Le fonds sera liquidé avec bénéfice en 2013, et la Confédération revendra sa participation avec un gain. Le sauvetage a été rentable financièrement, mais il a révélé que l’État suisse garantissait implicitement ses grandes banques, ce qui a conduit à la législation « too big to fail » de 2011.</p>` },
+      { titre: "Lehman Brothers, septembre 2008", html: `
+<p>Le 15 septembre 2008, les autorités américaines refusent de sauver la banque d’affaires Lehman Brothers, qui fait faillite. Elles veulent montrer que les banques imprudentes ne seront pas toujours secourues. La panique qui suit est immense : les marchés monétaires se figent, et dès le lendemain, la Réserve fédérale doit prêter 85 milliards de dollars à l’assureur AIG. Dans les semaines suivantes, elle ouvre de nombreuses facilités de prêt, et le Congrès vote un plan de 700 milliards de dollars pour soutenir les banques. L’épisode reste au cœur du débat : laisser tomber une banque limite l’aléa moral, mais peut déclencher la panique que le prêteur en dernier ressort doit justement éviter.</p>` },
       { titre: "Overend, Gurney et le « vendredi noir » de 1866", html: `
 <p>Overend, Gurney & Co. était la plus grande maison d’escompte de Londres. Lorsqu’elle fait faillite le 10 mai 1866, une panique s’empare de la City. La Banque d’Angleterre refuse de la sauver, la jugeant insolvable, mais prête massivement aux autres banques solides. La panique s’arrête. Cet épisode, sept ans avant Lombard Street, illustre la doctrine que Bagehot va formuler : sauver le système, pas les institutions insolvables.</p>` }
     ],
@@ -156,7 +156,7 @@ ${bagehot}
 <p>Pour l’arrêter, il faut quelqu’un qui puisse prêter sans limite : la banque centrale, qui crée la monnaie. En 1873, le journaliste Walter Bagehot résume la règle : en cas de panique, prêter largement, à un taux élevé, contre de bonnes garanties, aux banques solides. C’est le rôle de <b>prêteur en dernier ressort</b>.</p>
 ${bagehot}
 <h3>Un dilemme</h3>
-<p>Sans ce pompier, les paniques peuvent ruiner l’économie, comme aux États-Unis dans les années 1930. Mais s’il intervient toujours, les banques risquent de devenir imprudentes. La Suisse l’a vécu avec le sauvetage d’UBS en 2008, puis avec Credit Suisse en 2023, reprise par UBS avec l’appui de la BNS et de la Confédération.</p>
+<p>Sans ce pompier, les paniques peuvent ruiner l’économie, comme aux États-Unis dans les années 1930. Mais s’il intervient toujours, les banques risquent de devenir imprudentes. La crise de 2008 l’a montré à grande échelle, des États-Unis au Royaume-Uni et à la Suisse, et le dilemme est revenu en 2023 avec la faillite de la Silicon Valley Bank et la reprise forcée de Credit Suisse par UBS.</p>
 <h3>À retenir</h3>
 <p>Le prêteur en dernier ressort évite les catastrophes, mais doit être accompagné de règles strictes pour les banques. La notice complète présente l’histoire, les mécanismes et les débats.</p>`,
       quiz: [0, 1]
@@ -165,7 +165,7 @@ ${bagehot}
       depart: "Northern Rock en 2007, Credit Suisse en 2023 : pourquoi une banque tombe si vite.",
       raisonnement: "Sept étapes, du métier de banquier à l’élargissement du rôle depuis 2008.",
       preuves: "La Grande Dépression, la panique de 1907, le « quoi qu’il en coûte » de Draghi.",
-      cas: "Credit Suisse en 2023, UBS en 2008, le vendredi noir de 1866.",
+      cas: "Credit Suisse en 2023, Lehman Brothers en 2008, Overend et Gurney en 1866.",
       objections: "La banque libre, profits privés et pertes publiques, les limites de Bagehot, le financement des États.",
       ecoles: "Thornton, Bagehot, Friedman et Schwartz, Minsky, Diamond-Dybvig et Bernanke, Selgin et Hayek.",
       source: "Bagehot, 1873 : prêter à un taux très élevé, aussi largement que demandé.",

@@ -98,9 +98,9 @@ ${heures}
       { q: "Qu’est-ce que la méthode du coût de remplacement ?",
         o: ["Estimer ce qu’aurait gagné la personne en travaillant ailleurs", "Estimer ce que coûterait une personne payée pour faire le même travail", "Estimer la valeur des biens produits à la maison au prix du marché", "Mesurer le temps passé à chaque activité, sans lui donner de valeur"], c: 1,
         e: "L’autre méthode est le coût d’opportunité." },
-      { q: "Quelle valeur l’OFS attribue-t-il au travail non rémunéré en 2020 ?",
-        o: ["4 milliards de francs", "434 milliards de francs", "43 milliards de francs", "1 000 milliards de francs"], c: 1,
-        e: "Environ 60 % correspond au travail des femmes." },
+      { q: "Selon l’Organisation internationale du travail (2018), quelle part du travail de soin non rémunéré est assurée par les femmes dans le monde ?",
+        o: ["Environ un quart", "Environ la moitié", "Environ les trois quarts", "La quasi-totalité"], c: 2,
+        e: "Les femmes assurent environ les trois quarts des heures de travail de soin non rémunéré dans le monde, avec de fortes différences entre pays." },
       { q: "Que sont les « comptes satellites » ?",
         o: ["Des comptes tenus par les cantons et les communes", "Des comptes statistiques tenus à côté du PIB pour mesurer, par exemple, le travail domestique", "Des comptes de la banque centrale", "Des comptes qui remplacent le PIB dans les statistiques officielles"], c: 1,
         e: "Ils sont prévus par le système de comptabilité nationale depuis 1993." }
@@ -134,7 +134,7 @@ ${heures}
 <p>Faire la cuisine, laver le linge, s’occuper des enfants, aider un parent âgé : ces tâches demandent du temps et de l’effort. Pourtant, quand on les fait pour sa famille sans être payé, le PIB ne les compte pas. Faites le même travail chez des voisins contre un salaire, et il entre dans les statistiques.</p>
 ${heures}
 <h3>Plus que le travail payé</h3>
-<p>En Suisse, on passe davantage d’heures au travail non rémunéré qu’au travail rémunéré. L’OFS estime sa valeur à 434 milliards de francs en 2020. Les femmes en assurent la plus grande part.</p>
+<p>Dans de nombreux pays, on consacre presque autant d’heures, voire davantage, au travail non rémunéré qu’au travail payé. En Suisse, par exemple, il dépasse en heures le travail rémunéré, et l’Office fédéral de la statistique l’estime à 434 milliards de francs en 2020. Partout dans le monde, les femmes en assurent la plus grande part : environ les trois quarts du travail de soin non rémunéré, selon l’Organisation internationale du travail.</p>
 <h3>Pourquoi c’est important</h3>
 <p>Ce qui n’est pas compté pèse moins dans les décisions. Une économie budgétaire qui reporte du travail sur les familles peut sembler gratuite, alors qu’elle ne l’est pas. Les retraites des personnes qui ont réduit leur travail payé pour s’occuper des autres en dépendent aussi.</p>
 <h3>À retenir</h3>

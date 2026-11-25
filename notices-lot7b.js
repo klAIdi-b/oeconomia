@@ -83,8 +83,8 @@ ${fpp}
     cas: [
       { titre: "Apprentissage ou gymnase ?", html: `
 <p>En Suisse, environ deux tiers des jeunes choisissent une formation professionnelle après l’école obligatoire. Pour une famille, le coût d’une voie gymnasiale puis universitaire ne se limite pas aux frais d’études, modestes dans les hautes écoles publiques suisses : il comprend surtout le salaire d’apprenti, puis les années de salaire de professionnel qualifié auxquels l’étudiant renonce. Ce coût d’opportunité explique en partie l’attrait de l’apprentissage, d’autant que la maturité professionnelle et les hautes écoles spécialisées permettent de reprendre des études plus tard. Les études de rendement de l’éducation tiennent compte de ces salaires sacrifiés.</p>` },
-      { titre: "L’armée de milice", html: `
-<p>Le service militaire suisse coûte peu au budget fédéral en salaires, puisque les soldats de milice ne reçoivent qu’une solde modeste. Mais son coût d’opportunité est considérable : chaque jour de service est un jour de travail perdu pour l’économie, que l’allocation pour perte de gain compense en partie, à hauteur d’environ 80 % du revenu. Les économistes qui comparent une armée de milice et une armée professionnelle doivent tenir compte de ces coûts invisibles, mais aussi des bénéfices qu’on attribue à la milice, comme le lien entre l’armée et la société.</p>` },
+      { titre: "La fin de la conscription aux États-Unis", html: `
+<p>À la fin des années 1960, les États-Unis recrutent encore une partie de leurs soldats par la conscription, en les payant bien moins que ce qu’ils gagneraient dans la vie civile. Une commission présidentielle, à laquelle participe Milton Friedman, montre en 1970 que ce faible coût budgétaire est trompeur : le vrai coût d’un soldat appelé inclut ce à quoi lui et la société renoncent, ses études, son métier, son revenu. Une armée de métier, payée au prix du marché, ferait apparaître ce coût dans le budget au lieu de le faire supporter aux jeunes appelés. La conscription prend fin en 1973. Le débat revient régulièrement dans les pays qui envisagent de rétablir un service obligatoire.</p>` },
       { titre: "La gratuité qui coûte", html: `
 <p>Les files d’attente devant les distributions gratuites ou les soldes illustrent un coût d’opportunité caché : le temps. Gary Becker, prix Nobel 1992, a fait du temps une ressource centrale de son analyse des ménages : les activités qui prennent beaucoup de temps, comme cuisiner, deviennent relativement plus coûteuses quand les salaires montent, ce qui explique en partie l’essor des repas préparés et des services à domicile.</p>` }
     ],
@@ -169,7 +169,7 @@ ${fpp}
       depart: "La vitre cassée de Bastiat, 1850.",
       raisonnement: "Sept étapes, de la rareté à l’avantage comparatif.",
       preuves: "L’oubli du coût d’opportunité, le billet de ski, le Concorde.",
-      cas: "Apprentissage ou gymnase, l’armée de milice, la gratuité qui coûte.",
+      cas: "Apprentissage ou gymnase, la fin de la conscription américaine, la gratuité qui coûte.",
       objections: "L’incomparable, la subjectivité, le chômage, les coûts passés.",
       ecoles: "Bastiat, Green, Wieser, Mises et Buchanan, Becker, Kahneman et Thaler.",
       source: "Bastiat, 1850 : l’effet qu’on voit et ceux qu’il faut prévoir.",

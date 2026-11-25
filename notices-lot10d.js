@@ -12,12 +12,12 @@
   /* =====================================================================
      TAUX DE CHANGE
      ===================================================================== */
-  /* le marché du franc : une hausse de la demande */
+  /* le marché d’une monnaie refuge : une hausse de la demande */
   const marche = fig(310, (() => {
-    let s = `<text x="20" y="22" ${T}>Le marché du franc en temps de crise</text>`;
+    let s = `<text x="20" y="22" ${T}>Le marché d’une monnaie refuge en temps de crise</text>`;
     s += `<line x1="90" y1="260" x2="90" y2="44" style="stroke:var(--ink); stroke-width:1.5"/><line x1="90" y1="260" x2="560" y2="260" style="stroke:var(--ink); stroke-width:1.5"/>`;
-    s += `<text x="98" y="54" ${S}>prix du franc (en euros)</text><text x="560" y="276" text-anchor="end" ${S}>francs échangés</text>`;
-    s += `<line x1="130" y1="240" x2="470" y2="70" style="stroke:var(--gold); stroke-width:3"/><text x="476" y="68" ${S}>offre de francs</text>`;
+    s += `<text x="98" y="54" ${S}>prix de la monnaie (en dollars)</text><text x="560" y="276" text-anchor="end" ${S}>quantité échangée</text>`;
+    s += `<line x1="130" y1="240" x2="470" y2="70" style="stroke:var(--gold); stroke-width:3"/><text x="476" y="68" ${S}>offre de la monnaie</text>`;
     s += `<line x1="130" y1="90" x2="400" y2="240" style="stroke:var(--note); stroke-width:3"/><text x="404" y="252" ${S}>demande</text>`;
     s += `<line x1="230" y1="70" x2="500" y2="220" style="stroke:var(--plum); stroke-width:3"/><text x="504" y="224" ${S}>demande en crise</text>`;
     /* intersections : D1 avec O en (≈273,168), D2 avec O en (≈340,135) */
@@ -25,9 +25,9 @@
     s += `<circle cx="273" cy="168" r="5" style="fill:var(--ink)"/><circle cx="344" cy="133" r="5" style="fill:var(--ink)"/>`;
     s += `<text x="82" y="172" text-anchor="end" ${S}>avant</text><text x="82" y="137" text-anchor="end" ${S}>après</text>`;
     s += arrow(300, 205, 380, 205, "var(--plum)");
-    s += `<text x="320" y="290" text-anchor="middle" ${S}>Les investisseurs veulent des francs : la demande se déplace, le franc s’apprécie.</text>`;
+    s += `<text x="320" y="290" text-anchor="middle" ${S}>Les investisseurs veulent cette monnaie : la demande se déplace, elle s’apprécie.</text>`;
     return s;
-  })(), "Schéma. Le taux de change est le prix d’une monnaie exprimé dans une autre. Il se forme, comme les autres prix, par la rencontre d’une offre et d’une demande. Quand les investisseurs cherchent un abri, la demande de francs augmente et son prix monte : il faut moins de francs pour obtenir un euro.", "Schéma du marché du franc : la demande se déplace vers la droite et le prix du franc augmente");
+  })(), "Schéma. Le taux de change est le prix d’une monnaie exprimé dans une autre. Il se forme, comme les autres prix, par la rencontre d’une offre et d’une demande. Quand les investisseurs cherchent un abri, la demande de monnaies jugées sûres, comme le franc suisse, le yen ou le dollar, augmente, et leur prix monte.", "Schéma du marché d’une monnaie refuge : la demande se déplace vers la droite et son prix augmente");
 
   /* le triangle d’incompatibilité */
   const triangle = fig(330, (() => {
@@ -46,22 +46,22 @@
 
   OEC.notices["taux-de-change"] = {
     essentiel: [
-      "Le taux de change est le prix d’une monnaie exprimé dans une autre : par exemple, le nombre de francs qu’il faut pour obtenir un euro. Il se forme sur le marché des changes, selon l’offre et la demande de chaque monnaie.",
-      "Une monnaie s’apprécie quand elle gagne de la valeur : les importations deviennent moins chères, mais les exportations plus chères pour les clients étrangers. Elle se déprécie dans le cas inverse. Le franc, valeur refuge, a tendance à s’apprécier lors des crises.",
+      "Le taux de change est le prix d’une monnaie exprimé dans une autre : par exemple, le nombre de dollars qu’il faut pour obtenir un euro. Il se forme sur le marché des changes, selon l’offre et la demande de chaque monnaie.",
+      "Une monnaie s’apprécie quand elle gagne de la valeur : les importations deviennent moins chères, mais les exportations plus chères pour les clients étrangers. Elle se déprécie dans le cas inverse. Les monnaies jugées sûres, comme le franc suisse, le yen ou le dollar, ont tendance à s’apprécier lors des crises.",
       "À long terme, les taux de change tendent à refléter les écarts d’inflation entre pays (parité des pouvoirs d’achat). À court terme, ils dépendent surtout des taux d’intérêt, des anticipations et de la confiance. Chaque pays doit choisir entre un change fixe, des capitaux libres et une politique monétaire autonome : il ne peut avoir que deux des trois."
     ],
     sections: [
-      { id: "depart", titre: "La question de départ : pourquoi le franc vaut-il plus qu’avant ?", html: `
-<p>En 2000, un euro valait environ 1,55 franc. Depuis 2022, il en vaut moins d’un. Pour un touriste suisse en Italie, c’est une bonne nouvelle : ses vacances coûtent moins cher. Pour une entreprise horlogère qui vend en euros, c’est un défi : chaque montre rapporte moins de francs. Pourquoi la valeur d’une monnaie change-t-elle ainsi, et qui la fixe ?</p>
+      { id: "depart", titre: "La question de départ : pourquoi la valeur des monnaies change-t-elle ?", html: `
+<p>En 2000, un euro valait environ 0,90 dollar ; en 2008, près de 1,60 ; depuis 2015, entre environ 1,05 et 1,20 dollar. Pour un touriste européen à New York, ces variations changent le prix de chaque repas. Pour un constructeur automobile allemand qui vend aux États-Unis, elles peuvent faire la différence entre un bénéfice et une perte. Pourquoi la valeur d’une monnaie change-t-elle ainsi, et qui la fixe ?</p>
 <p>Pendant longtemps, les monnaies étaient rattachées à l’or ou entre elles. Après 1945, le système de Bretton Woods fixe le cours des grandes monnaies par rapport au dollar, lui-même convertible en or. Ce système s’effondre au début des années 1970 : les États-Unis suspendent la convertibilité du dollar en août 1971, et la Suisse laisse flotter le franc en janvier 1973. Depuis, la valeur du franc se forme chaque jour sur le marché des changes.</p>` },
       { id: "raisonnement", titre: "Le raisonnement pas à pas", html: `
 <h4>1. Un prix comme un autre</h4>
-<p>Sur le marché des changes, on achète et on vend des monnaies. Ceux qui veulent des francs (touristes étrangers, entreprises qui achètent des produits suisses, investisseurs qui placent leur argent en Suisse) forment la demande. Ceux qui vendent des francs pour obtenir d’autres monnaies forment l’offre. Le taux de change équilibre les deux (<a href="#c-offre-demande">voir offre et demande</a>).</p>
+<p>Sur le marché des changes, on achète et on vend des monnaies. Ceux qui veulent des euros (touristes étrangers, entreprises qui achètent des produits européens, investisseurs qui placent leur argent dans la zone euro) forment la demande. Ceux qui vendent des euros pour obtenir d’autres monnaies forment l’offre. Le taux de change équilibre les deux (<a href="#c-offre-demande">voir offre et demande</a>).</p>
 ${marche}
 <h4>2. Lire un taux de change</h4>
-<p>On peut l’exprimer dans les deux sens : 1 euro = 0,94 franc, ou 1 franc = 1,06 euro. Quand il faut moins de francs pour un euro, le franc s’est <b>apprécié</b> ; l’euro s’est <b>déprécié</b>. Il faut toujours vérifier dans quel sens le taux est donné.</p>
+<p>On peut l’exprimer dans les deux sens : 1 euro = 1,10 dollar, ou 1 dollar = 0,91 euro. Quand il faut plus de dollars pour un euro, l’euro s’est <b>apprécié</b> ; le dollar s’est <b>déprécié</b>. Il faut toujours vérifier dans quel sens le taux est donné.</p>
 <h4>3. Les effets sur le commerce</h4>
-<p>Un franc plus fort rend les produits importés moins chers pour les Suisses, ce qui freine l’inflation. Mais il rend les produits suisses plus chers à l’étranger : à prix inchangé en francs, une montre de 6500 francs coûte plus d’euros. Les exportateurs doivent alors baisser leurs marges, gagner en productivité ou miser sur la qualité.</p>
+<p>Une monnaie plus forte rend les produits importés moins chers pour les habitants du pays, ce qui freine l’inflation. Mais elle rend leurs produits plus chers à l’étranger : à prix inchangé en yens, une voiture japonaise coûte plus de dollars quand le yen monte. Les exportateurs doivent alors baisser leurs marges, gagner en productivité ou miser sur la qualité.</p>
 <h4>4. Le long terme : la parité des pouvoirs d’achat</h4>
 <p>En 1916, l’économiste suédois Gustav Cassel propose une idée simple : à long terme, une même somme devrait acheter la même chose dans tous les pays. Si les prix montent de 3 % par an dans la zone euro et de 1 % en Suisse, l’euro devrait perdre environ 2 % par an face au franc. C’est en grande partie ce qui explique l’appréciation du franc sur plusieurs décennies : l’inflation a presque toujours été plus faible en Suisse.</p>
 <h4>5. Le court terme : taux d’intérêt et confiance</h4>
@@ -70,7 +70,7 @@ ${marche}
 <p>Un pays peut laisser flotter sa monnaie ou la rattacher à une autre. Le change fixe apporte de la stabilité aux entreprises, mais il a un prix. Robert Mundell et Marcus Fleming montrent dans les années 1960 qu’un pays ne peut pas avoir à la fois un change fixe, des capitaux libres et une politique monétaire autonome : c’est le triangle d’incompatibilité.</p>
 ${triangle}
 <h4>7. Quand la banque centrale intervient</h4>
-<p>Une banque centrale peut acheter ou vendre des devises pour influencer le cours de sa monnaie. La BNS l’a fait massivement pour freiner la hausse du franc (<a href="#c-politique-monetaire">voir politique monétaire</a>). Pour freiner une appréciation, elle crée des francs et achète des devises : elle peut le faire sans limite. Pour freiner une dépréciation, elle doit vendre ses réserves de devises, qui, elles, sont limitées.</p>
+<p>Une banque centrale peut acheter ou vendre des devises pour influencer le cours de sa monnaie. La Banque nationale suisse, la Banque du Japon ou la Banque populaire de Chine l’ont fait massivement (<a href="#c-politique-monetaire">voir politique monétaire</a>). Pour freiner une appréciation, une banque centrale crée sa propre monnaie et achète des devises : elle peut le faire sans limite. Pour freiner une dépréciation, elle doit vendre ses réserves de devises, qui, elles, sont limitées.</p>
 <p class="ex-revoir">Fiche méthode : <a href="#methode-variation">Calculer un taux de variation</a></p>` },
       { id: "preuves", titre: "Ce que disent les faits", html: `
 <h4>L’indice Big Mac</h4>
@@ -83,10 +83,10 @@ ${triangle}
     cas: [
       { titre: "Le 15 janvier 2015", html: `
 <p>Depuis septembre 2011, la BNS défend un cours plancher de 1,20 franc pour un euro en achetant des devises. Le 15 janvier 2015, elle annonce son abandon, sans avertissement. En quelques minutes, l’euro chute brièvement sous 0,90 franc, avant de se stabiliser autour de la parité. Les exportateurs et les hôteliers voient leurs prix augmenter d’un coup de plus de 10 % pour leurs clients européens. Beaucoup réduisent leurs marges, déplacent une partie de leurs achats à l’étranger ou gèlent les salaires.</p>` },
-      { titre: "Le tourisme d’achat", html: `
-<p>Quand le franc s’apprécie, faire ses courses en France, en Allemagne ou en Italie devient plus avantageux. Près des frontières, à Genève, Bâle, Constance ou au Tessin, de nombreux ménages traversent la frontière chaque semaine. Le commerce de détail suisse estime que ces achats à l’étranger représentent plusieurs milliards de francs par an. Le taux de change touche ainsi directement les commerces de proximité (<a href="#c-elasticite">voir élasticité</a>).</p>` },
-      { titre: "La Suisse « manipulatrice » ?", html: `
-<p>En décembre 2020, le Trésor américain qualifie la Suisse de « manipulateur de devises », en raison des achats massifs de devises de la BNS et de l’excédent commercial suisse avec les États-Unis. La BNS répond qu’elle n’intervient pas pour avantager ses exportateurs, mais pour éviter une appréciation excessive du franc qui ferait baisser les prix et menacerait l’économie. L’épisode montre qu’une politique de change, même justifiée par des objectifs internes, peut être perçue à l’étranger comme une arme commerciale.</p>` }
+      { titre: "La livre sterling et le Brexit, 2016", html: `
+<p>Le 23 juin 2016, les Britanniques votent pour quitter l’Union européenne. Le lendemain, la livre perd environ 8 % face au dollar, l’une de ses plus fortes baisses en une journée depuis des décennies, et elle continue de reculer dans les mois suivants. Les marchés anticipent un commerce plus difficile avec le premier partenaire du pays et des investissements moindres. La baisse de la livre renchérit les importations : l’inflation britannique passe d’environ 0,5 % à près de 3 % en 2017, ce qui réduit le pouvoir d’achat des ménages. Elle aide en revanche les exportateurs et les entreprises qui réalisent une partie de leurs ventes à l’étranger.</p>` },
+      { titre: "Le yuan, entre ancrage et flottement", html: `
+<p>Pendant des années, la Chine rattache sa monnaie au dollar, à environ 8,28 yuans pour un dollar jusqu’en 2005. Ses exportations bon marché gagnent le monde entier, et les États-Unis l’accusent de maintenir le yuan artificiellement bas en achetant massivement des dollars. À partir de juillet 2005, Pékin laisse le yuan s’apprécier progressivement, d’environ un tiers jusqu’en 2014, tout en gardant un contrôle étroit sur son cours et sur les mouvements de capitaux. En 2019, au plus fort de la guerre commerciale, le Trésor américain qualifie la Chine de « manipulateur de devises », avant de retirer ce qualificatif quelques mois plus tard. Le cas illustre le triangle d’incompatibilité : pour piloter son change tout en gardant sa politique monétaire, la Chine doit limiter la circulation des capitaux.</p>` }
     ],
     objections: `
 <h4>1. Des marchés trop volatils ?</h4>
@@ -111,12 +111,12 @@ ${triangle}
 <p><b>Sa portée.</b> La parité des pouvoirs d’achat sert encore à comparer les niveaux de vie entre pays et à juger si une monnaie est surévaluée. Mais elle décrit une tendance de long terme, pas les variations quotidiennes.</p>`
     },
     quiz: [
-      { q: "Le taux passe de 1 euro = 1,10 franc à 1 euro = 0,95 franc. Que s’est-il passé ?",
-        o: ["Le franc s’est déprécié", "Le franc s’est apprécié", "L’euro s’est apprécié", "Les deux monnaies se sont dépréciées"], c: 1,
-        e: "Il faut moins de francs pour un euro : le franc vaut plus." },
-      { q: "Quel est l’effet d’un franc fort sur les exportateurs suisses ?",
-        o: ["Leurs produits deviennent moins chers à l’étranger", "Leurs produits deviennent plus chers pour les clients étrangers", "Leurs ventes à l’étranger augmentent", "Leurs matières premières importées deviennent plus chères"], c: 1,
-        e: "À prix inchangé en francs, il faut plus d’euros pour les acheter." },
+      { q: "Le taux passe de 1 euro = 1,10 dollar à 1 euro = 0,95 dollar. Que s’est-il passé ?",
+        o: ["Le dollar s’est déprécié", "Le dollar s’est apprécié", "L’euro s’est apprécié", "Les deux monnaies se sont dépréciées"], c: 1,
+        e: "Il faut moins de dollars pour un euro : le dollar vaut plus, l’euro moins." },
+      { q: "Quel est l’effet d’une monnaie forte sur les exportateurs d’un pays ?",
+        o: ["Leurs produits deviennent moins chers à l’étranger", "Leurs produits deviennent plus chers pour les clients étrangers", "Leurs matières premières importées deviennent plus chères", "Leurs ventes à l’étranger augmentent"], c: 1,
+        e: "À prix inchangé en monnaie nationale, il faut plus de monnaie étrangère pour acheter leurs produits." },
       { q: "Selon la parité des pouvoirs d’achat, que devient à long terme la monnaie d’un pays à forte inflation ?",
         o: ["Elle s’apprécie", "Elle se déprécie", "Elle reste stable", "Elle dépend seulement des taux d’intérêt"], c: 1,
         e: "Elle perd de la valeur à peu près au rythme de l’écart d’inflation." },
@@ -144,29 +144,29 @@ ${triangle}
     ],
     decouvrir: {
       questions: [
-        { q: "Quand le franc s’apprécie, qui en profite directement ?",
-          o: ["Les Suisses qui voyagent à l’étranger ou achètent des produits importés", "Les hôtels suisses qui accueillent des touristes européens", "Les fabricants suisses qui exportent", "Personne"], c: 0,
-          e: "Avec un franc plus fort, il faut moins de francs pour payer en euros ou en dollars." },
-        { q: "Que signifie « 1 euro = 0,95 franc » ?",
-          o: ["Il faut 0,95 franc pour obtenir un euro", "Il faut 0,95 euro pour obtenir un franc", "L’euro vaut plus que le franc", "Le franc a perdu 5 % en un an"], c: 0,
-          e: "Un euro coûte moins d’un franc : le franc vaut un peu plus que l’euro." }
+        { q: "Quand une monnaie s’apprécie, qui en profite directement ?",
+        o: ["Ses habitants qui voyagent à l’étranger ou achètent des produits importés", "Les hôtels du pays qui accueillent des touristes étrangers", "Les entreprises du pays qui exportent", "Personne"], c: 0,
+        e: "Avec une monnaie plus forte, il faut moins de monnaie nationale pour payer à l’étranger." },
+        { q: "Que signifie « 1 euro = 1,10 dollar » ?",
+        o: ["Il faut 1,10 dollar pour obtenir un euro", "Il faut 1,10 euro pour obtenir un dollar", "Le dollar vaut plus que l’euro", "L’euro a gagné 10 % en un an"], c: 0,
+        e: "Un euro coûte plus d’un dollar : l’euro vaut un peu plus que le dollar." }
       ],
       duree: 5,
       html: `
-<h3>Combien vaut un franc ?</h3>
-<p>Le taux de change est le prix d’une monnaie dans une autre : par exemple, combien de francs il faut pour un euro. En 2000, un euro valait environ 1,55 franc ; aujourd’hui, moins d’un franc. Le franc s’est fortement apprécié.</p>
+<h3>Combien vaut une monnaie ?</h3>
+<p>Le taux de change est le prix d’une monnaie dans une autre : par exemple, combien de dollars il faut pour obtenir un euro. Depuis sa création en 1999, l’euro a valu entre environ 0,83 et 1,60 dollar. Ces variations changent le prix de tout ce qu’on achète ou vend à l’étranger.</p>
 ${marche}
 <h3>Pourquoi c’est important</h3>
-<p>Quand le franc s’apprécie, les vacances à l’étranger et les produits importés coûtent moins cher. Mais les montres, les machines ou les nuitées d’hôtel suisses deviennent plus chères pour les étrangers. Le 15 janvier 2015, quand la BNS a abandonné le cours plancher de 1,20 franc pour un euro, les exportateurs ont vu leurs prix augmenter de plus de 10 % en un jour pour leurs clients européens.</p>
+<p>Quand une monnaie s’apprécie, les voyages à l’étranger et les produits importés coûtent moins cher à ses habitants, mais ses exportations deviennent plus chères pour les étrangers. Le 24 juin 2016, au lendemain du vote britannique sur la sortie de l’Union européenne, la livre sterling perd environ 8 % face au dollar en une journée, ce qui renchérit les importations des Britanniques. À l’inverse, le 15 janvier 2015, quand la Suisse abandonne son cours plancher face à l’euro, le franc s’envole, et les exportateurs suisses voient leurs prix augmenter de plus de 10 % en un jour pour leurs clients européens.</p>
 <h3>À retenir</h3>
 <p>Le taux de change dépend à long terme des écarts d’inflation, et à court terme des taux d’intérêt et de la confiance. La notice complète présente la parité des pouvoirs d’achat, le triangle d’incompatibilité et le débat sur les interventions.</p>`,
       quiz: [0, 1]
     },
     resumes: {
-      depart: "Pourquoi le franc vaut-il plus qu’avant ? De Bretton Woods au change flottant.",
+      depart: "Pourquoi la valeur des monnaies change-t-elle ? De Bretton Woods au change flottant.",
       raisonnement: "Sept étapes, du marché des changes aux interventions de la banque centrale.",
       preuves: "L’indice Big Mac, une parité très lente, le mercredi noir de 1992.",
-      cas: "Le 15 janvier 2015, le tourisme d’achat, la Suisse accusée de manipulation.",
+      cas: "Le 15 janvier 2015, la livre et le Brexit, le yuan entre ancrage et flottement.",
       objections: "Des marchés trop volatils, fixer ou flotter, la guerre des monnaies.",
       ecoles: "Hume et Ricardo, Cassel, Keynes, Friedman, Mundell et Fleming, Dornbusch et Krugman.",
       source: "Une monnaie vaut ce qu’elle permet d’acheter.",
