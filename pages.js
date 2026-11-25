@@ -310,8 +310,11 @@
         ["#methode", "Méthode", `${n(OEC.methode) || 12} fiches`, "Calculer un pourcentage, lire un graphique, argumenter : les réflexes de base, expliqués simplement."],
         ["#progression", "Ma progression", "Votre parcours", "Le chemin parcouru, vos points forts, et ce qui vous attend ensuite."]]]
     ];
-    $("#doors").outerHTML = `<div class="plan" id="doors">${familles.map(([titre, sous, portes]) => `<div class="plan-fam"><header><h3>${titre}</h3><p>${sous}</p></header><div class="doors">${portes.map(([href, k, t, p]) => `<a class="door" href="${href}"><span class="k">${k}</span><b>${t}</b><p>${p}</p><span class="go">Entrer →</span></a>`).join("")}</div></div>`).join("")}</div>`;
-    $("#homeQuestions").innerHTML = OEC.questions.map(qCardBig).join("");
+    /* en haut, les quatre entrées les plus utiles ; en dessous, le plan complet, replié sur téléphone */
+    const top = [["#parcours", "Pour débuter", "Les parcours guidés", "Un sujet, étape par étape, sans prérequis"], ["#boussole", "En cinq minutes", "Quel économiste êtes-vous ?", "Dix situations concrètes"],
+      ["#controverses", "Pour débattre", "Les controverses", "Deux camps, sources à l’appui, et votre verdict"], ["#entrainement", "Pour s’exercer", "L’entraînement", "Des exercices corrigés sur trois niveaux"]];
+    const ouvert = !(window.matchMedia && matchMedia("(max-width: 720px)").matches);
+    $("#doors").outerHTML = `<div class="plan" id="doors"><p class="eyebrow">Les plus utilisés</p><div class="plan-top">${top.map(([h, k, t, p]) => `<a href="${h}"><small>${k}</small><b>${t}</b><span>${p}</span></a>`).join("")}</div><p class="eyebrow">Le plan complet</p>${familles.map(([titre, sous, portes]) => `<details class="plan-fam"${ouvert ? " open" : ""}><summary><header><h3>${titre}</h3><p>${sous}</p></header></summary><div class="doors">${portes.map(([href, k, t, p]) => `<a class="door" href="${href}"><span class="k">${k}</span><b>${t}</b><p>${p}</p><span class="go">Entrer →</span></a>`).join("")}</div></details>`).join("")}</div>`;
     const tf = $("#tutoFaces"); if (tf) tf.innerHTML = ["keynes", "smith", "hayek", "ostrom", "marx"].map((id) => `<img src="${A.portrait(id)}" alt="" width="42" height="42">`).join("");
     $("#qIndex").innerHTML = OEC.questions.map(qCardBig).join("");
     const hc = $("#homeConcepts");

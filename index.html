@@ -308,6 +308,18 @@ html.mnav-open{overflow:hidden}
 .profils-l{font-size:14px; color:var(--ink-soft); margin-right:2px}
 .profils button{font:600 14px var(--f-body); padding:8px 14px; min-height:40px; border-radius:999px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer}
 .profils button:hover, .profils button[aria-pressed="true"]{border-color:var(--note); color:var(--note)}
+.plan-top{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap:10px; margin:0 0 22px}
+.plan-top a{display:flex; flex-direction:column; gap:4px; padding:14px 16px; border-radius:var(--r); border:1px solid var(--line); background:var(--card); text-decoration:none; color:var(--ink)}
+.plan-top a:hover, .plan-top a:focus-visible{border-color:var(--note)}
+.plan-top small{font:600 11px/1 var(--f-engr); letter-spacing:.14em; text-transform:uppercase; color:var(--gold)}
+.plan-top b{font:400 22px/1.1 var(--f-display)}
+.plan-top span{font-size:14px; color:var(--ink-soft)}
+.plan-fam > summary{list-style:none; cursor:pointer}
+.plan-fam > summary::-webkit-details-marker{display:none}
+.plan-fam > summary header h3::after{content:" +"; color:var(--ink-soft); font-size:.8em}
+.plan-fam[open] > summary header h3::after{content:" −"}
+#retourSlot:empty{display:none}
+.hero .rt-back{margin:18px 0 0}
 .profil-box{margin-top:14px; padding:14px 16px; border-radius:var(--r); border:1px solid var(--line); background:var(--card); max-width:620px}
 .profil-box p{margin:0 0 8px; font-size:15px}
 .profil-box ul{margin:0; padding-left:18px; display:grid; gap:4px; font-size:15px}
@@ -1101,6 +1113,7 @@ footer .brand{font-size:22px}
         <p class="eyebrow">De −350 à aujourd’hui</p>
         <h1>Vingt-quatre siècles de <em>disputes</em> sur l’argent.</h1>
         <p class="lede">Pourquoi certains pays sont-ils riches et d’autres pauvres ? Pourquoi les crises reviennent-elles ? Qui doit décider, le marché ou l’État ? Depuis Aristote, les plus grands esprits s’affrontent sur ces questions. Ici, vous les écoutez débattre, vous testez leurs idées, et vous vous faites votre propre avis.</p>
+        <div id="retourSlot"></div>
         <div class="cta-row">
           <a class="btn" href="#boussole">Quel économiste êtes-vous ?</a>
           <a class="btn ghost" href="#controverses">Voir Keynes affronter Hayek</a>
@@ -1138,16 +1151,14 @@ footer .brand{font-size:22px}
   <section class="block" data-view="accueil" id="portes">
     <div class="wrap">
       <div class="sec-head">
-        <div><p class="eyebrow">Le plan du site</p><h2>Par où commencer ?</h2></div>
-        <p>Trois façons d’entrer : comprendre, débattre, vous exercer. Partez de ce qui vous intrigue : chaque page vous mène naturellement à la suivante.</p>
+        <div><p class="eyebrow">Le plan du site</p><h2>Tout ce que vous pouvez faire ici</h2></div>
+        <p>Comprendre, débattre, vous exercer : choisissez une porte. Chaque page vous mène naturellement à la suivante.</p>
       </div>
       <div class="doors" id="doors"></div>
       <p class="readstats" id="readStats" hidden></p>
       <div class="defi-slot" data-defi="accueil"></div>
       <a class="tuto-banner" href="#tutorat"><span class="faces" id="tutoFaces"></span><span><b>Interroger un économiste</b><p>Posez vos questions d’actualité à Keynes, Smith, Hayek ou Ostrom, ou confrontez deux avis opposés. Nécessite un compte Claude connecté.</p></span><span class="go">ŒconoChat →</span></a>
       <div id="homeActu"></div>
-      <div class="qstrip-head"><p class="eyebrow">Les grandes questions</p><a href="#questions" class="more">Toutes les questions →</a></div>
-      <div class="qgrid" id="homeQuestions"></div>
       <div class="qstrip-head"><p class="eyebrow">Dix notions pour commencer</p><a href="#concepts" class="more">Tout le dictionnaire →</a></div>
       <div class="cchips big" id="homeConcepts"></div>
     </div>
@@ -1249,7 +1260,7 @@ footer .brand{font-size:22px}
           <li><b>2</b><span><strong>Arrêtez-vous sur un repère.</strong> Cliquez sur une date : son histoire s’affiche juste en dessous.</span></li>
           <li><b>3</b><span><strong>Creusez.</strong> Ouvrez l’économiste concerné, l’anatomie de la crise ou le chapitre de l’époque.</span></li>
         </ol>
-        <div class="map-start"><span class="eyebrow">Par où commencer ?</span><div class="map-start-chips" id="tlStart"></div></div>
+        <div class="map-start"><span class="eyebrow">Points de départ</span><div class="map-start-chips" id="tlStart"></div></div>
       </div>
       <div class="tl-controls">
         <button class="btn small ghost" id="tlPrev" aria-label="Événement précédent">← Précédent</button>

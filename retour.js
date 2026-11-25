@@ -42,19 +42,21 @@
     if (e) out.push([`#eco-${e.id}`, "Votre test", `Vous pensez comme ${e.nom}`, "Lire sa fiche →"]);
     else out.push(["#boussole", "Pas encore fait", "Quel économiste êtes-vous ?", "Dix situations, environ 5 minutes →"]);
     const a = (OEC.actualites || [])[0], vu = get("oec-actu-vue", 0);
-    if (a && a.n > vu) out.push(["#actualite", "Nouveau", a.titre, "Lire l’actualité de la quinzaine →"]);
-    return out.slice(0, 4);
+    if (a && a.n > vu) out.push(["#actualite", "Nouveau", a.titre, "Lire l’actualité →"]);
+    return out.slice(0, 3);
   }
+  /* Le bloc se place en haut de l’accueil, dans le héros, pour être vu sans défiler */
   function render() {
-    const doors = document.getElementById("doors");
-    if (!doors) return;
-    let box = document.getElementById("retour");
+    const slot = document.getElementById("retourSlot");
+    if (!slot) return;
     const lu = get("oec-lu", []), ex = get("oec-ex", {});
     const revient = lu.length || Object.keys(ex).length || get("oec-derniere", null) || get("oec-boussole", null) || (get("oec-parcours", {}).vus || []).length;
-    if (!revient) { if (box) box.remove(); return; }
-    if (!box) { box = document.createElement("div"); box.id = "retour"; box.className = "rt-back"; }
-    const head = doors.closest(".wrap").querySelector(".sec-head");
-    if (box.previousElementSibling !== head) head.after(box);
+    const cta = document.querySelector('.hero .cta-row a[href="#boussole"]');
+    if (cta) cta.textContent = get("oec-boussole", null) ? "Refaire le test" : "Quel économiste êtes-vous ?";
+    const lede = document.querySelector(".hero .lede"); if (lede) lede.hidden = !!revient;   /* pour qui revient, la reprise remplace le chapeau */
+    if (!revient) { slot.innerHTML = ""; return; }
+    let box = document.getElementById("retour");
+    if (!box) { box = document.createElement("div"); box.id = "retour"; box.className = "rt-back"; slot.appendChild(box); }
     box.innerHTML = `<p class="eyebrow">Bon retour</p><h3>On reprend où vous en étiez ?</h3><div class="rt-back-list">${items().map(([h, k, t, go]) => `<a href="${h}"><small>${esc(k)}</small><b>${esc(t)}</b><span>${esc(go)}</span></a>`).join("")}</div>`;
   }
   function vue() {
