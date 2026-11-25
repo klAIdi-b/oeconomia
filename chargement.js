@@ -66,6 +66,7 @@
     R.querySelectorAll("[data-tpl-title]").forEach((el) => { el.title = el.dataset.tplTitle.replace(/\{([a-z]+(?::[lL])?)\}/g, (x, c) => ecrire(c, T) || x); });
   };
   OEC.lazy = {
+    script: (f) => busy(script(f)),            /* un fichier à la demande, par ex. word.js */
     noticeFile: (id) => NOTICES[id],
     hasNotice: (id) => !!NOTICES[id],
     exercises: EXERCICES,

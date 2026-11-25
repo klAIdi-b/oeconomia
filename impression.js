@@ -151,5 +151,5 @@ ${DOC_CSS.replace(/\.pr-/g, "#printArea .pr-").replace(/#printArea \.pr-doc \.pr
   /* Impression directe (Ctrl + P) : on ouvre les blocs repliés le temps de l’impression */
   window.addEventListener("beforeprint", () => { if (document.body.classList.contains("oec-printing")) return; document.querySelectorAll("details:not([open])").forEach((d) => { d.open = true; d.dataset.prOpen = "1"; }); });
   window.addEventListener("afterprint", () => { document.querySelectorAll("details[data-pr-open]").forEach((d) => { d.open = false; delete d.dataset.prOpen; }); });
-  OEC.print = { print, decorate };
+  OEC.print = { print, decorate, vars: VARS };
 })();

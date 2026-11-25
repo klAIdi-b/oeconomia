@@ -111,7 +111,8 @@
     add(items) { items.forEach((it) => ITEMS.push(it)); },
     show(theme) { state.theme = theme; state.niveau = 1; savePos(); render(); },
     count() { return OEC.lazy ? OEC.lazy.totalExercises : ITEMS.length; },
-    printable(mode) { return printable(mode); }
+    printable(mode) { return printable(mode); },
+    wordable(mode) { return wordable(mode); }
   };
 
   /* ---------- Rendu de la page ---------- */
@@ -138,7 +139,7 @@
     }
     root.innerHTML = `
       <div class="ex-themes">${THEMES.map((t) => `<button type="button" class="chip${t.id === state.theme ? " on" : ""}" data-theme="${t.id}" ${t.bientot ? "disabled" : ""}>${t.nom}${t.bientot ? " · bientôt" : ""}</button>`).join("")}</div>
-      ${T ? `<div class="ex-intro"><p>${T.intro} <button type="button" class="ex-lien" data-lien="ex-${T.id}-${state.niveau}" title="Copier le lien vers ce thème et ce niveau">Copier le lien du thème</button></p><p class="ex-imprimer"><b>Imprimer ce niveau :</b> <button type="button" class="btn small ghost ex-print" data-mode="eleve" title="Énoncés seuls, avec de la place pour répondre">Sans corrigés</button> <button type="button" class="btn small ghost ex-print" data-mode="prof" title="Énoncés, réponses et corrections">Avec corrigés</button></p><p class="ex-regle">Un exercice compte comme réussi si vous le réussissez du premier coup, ou en le refaisant un autre jour. Réussi juste après avoir vu la correction, il reste à consolider.</p><p class="ex-notions"><b>Notions à revoir :</b> ${T.notions.map((c) => `<a href="#c-${c}">${(OEC.concepts.find((x) => x.id === c) || { nom: c }).nom}</a>`).join(" · ")}</p></div>` : ""}
+      ${T ? `<div class="ex-intro"><p>${T.intro} <button type="button" class="ex-lien" data-lien="ex-${T.id}-${state.niveau}" title="Copier le lien vers ce thème et ce niveau">Copier le lien du thème</button></p><p class="ex-imprimer"><b>Imprimer ce niveau :</b> <button type="button" class="btn small ghost ex-print" data-mode="eleve" title="Énoncés seuls, avec de la place pour répondre">Sans corrigés</button> <button type="button" class="btn small ghost ex-print" data-mode="prof" title="Énoncés, réponses et corrections">Avec corrigés</button></p><p class="ex-imprimer"><b>Télécharger en Word, modifiable :</b> <button type="button" class="btn small ghost ex-word" data-mode="eleve" title="Fichier Word à adapter : énoncés et place pour répondre">Version élève</button> <button type="button" class="btn small ghost ex-word" data-mode="prof" title="Fichier Word avec les réponses et les corrections">Version corrigée</button></p><p class="ex-regle">Un exercice compte comme réussi si vous le réussissez du premier coup, ou en le refaisant un autre jour. Réussi juste après avoir vu la correction, il reste à consolider.</p><p class="ex-notions"><b>Notions à revoir :</b> ${T.notions.map((c) => `<a href="#c-${c}">${(OEC.concepts.find((x) => x.id === c) || { nom: c }).nom}</a>`).join(" · ")}</p></div>` : ""}
       <div class="ex-tabs" id="exTabs"></div>
       <p class="ex-niv" id="exNiv"></p>
       <div class="ex-list" id="exList"></div>`;
@@ -171,7 +172,7 @@
         const card = cardOf(it), p = (card && card.__p) || it.gen(), rep = it.reponses(p);
         h += it.enonce(p) + (it.figp ? it.figp(p) : figOf(it));
         h += `<p class="pr-champs">${it.champs.map((c) => `${c.label} : ________________ ${c.unite || ""}`).join("<br>")}</p>`;
-        if (prof) h += `<div class="pr-corr"><p><b>Réponse${rep.length > 1 ? "s" : ""} :</b> ${it.champs.map((c, j) => `${c.label} = ${fmt(rep[j], 2)} ${c.unite || ""}`).join(" ; ")}</p>${it.correction(p)}</div>`;
+        if (prof) h += `<div class="pr-corr"><p><b>Réponse${rep.length > 1 ? "s" : ""} :</b> ${it.champs.map((c, j) => `${c.label} = ${fmt(rep[j], 4)} ${c.unite || ""}`).join(" ; ")}</p>${it.correction(p)}</div>`;
       } else if (it.type === "vf") {
         h += (it.enonce || "") + figOf(it);
         h += `<ol class="pr-vf">${it.affirmations.map((a) => `<li>${a[0]} <span class="pr-box">☐ ${(it.etiquettes || ["Vrai"])[0]} ☐ ${(it.etiquettes || [, "Faux"])[1]}</span>${prof ? `<div class="pr-corr"><b>${a[1] ? (it.etiquettes || ["Vrai"])[0] : (it.etiquettes || [, "Faux"])[1]}.</b> ${a[2]}</div>` : ""}</li>`).join("")}</ol>`;
@@ -188,6 +189,36 @@
     return { title: `${T.nom} · ${NIV[state.niveau]}${prof ? " · corrigé" : ""}`,
       html: `<h1>${T.nom}</h1><p class="pr-sous">Niveau ${NIV[state.niveau]} · ${its.length} exercices · ${prof ? "avec réponses et corrections" : "sans corrigés"}</p>${parts.join("")}` };
   }
+
+  /* Données de la série pour l’export Word (word.js) : mêmes exercices et même ordre que la version imprimée */
+  function wordable(mode) {
+    const T = THEMES.find((t) => t.id === state.theme); if (!T || T.lazy) return null;
+    const its = itemsOf(state.theme, state.niveau), figOf = (it) => it.fig ? (typeof it.fig === "function" ? it.fig() : it.fig) : "";
+    return { theme: T.nom, niveauNom: NIV[state.niveau], prof: mode === "prof", items: its.map((it, i) => {
+      const o = { n: i + 1, titre: it.titre, typeLib: it.typeLib || TYPES[it.type] || it.type, competence: it.competence || "" };
+      if (it.type === "calcul") {
+        const card = cardOf(it), p = (card && card.__p) || it.gen(), rep = it.reponses(p);
+        Object.assign(o, { kind: "calcul", enonce: it.enonce(p), fig: it.figp ? it.figp(p) : figOf(it), correction: it.correction(p),
+          champs: it.champs.map((c, j) => ({ label: c.label, unite: c.unite || "", rep: fmt(rep[j], 4) })) });
+      } else if (it.type === "vf") {
+        Object.assign(o, { kind: "vf", enonce: it.enonce || "", fig: figOf(it), etiquettes: it.etiquettes || ["Vrai", "Faux"],
+          affirmations: it.affirmations.map((a) => ({ texte: a[0], vrai: !!a[1], expl: a[2] })) });
+      } else if (it.type === "redaction") {
+        Object.assign(o, { kind: "redaction", enonce: it.enonce, fig: figOf(it), criteres: it.criteres || [], corrige: it.corrige || "" });
+      } else {
+        const ord = order(it);
+        Object.assign(o, { kind: "qcm", enonce: it.enonce, fig: figOf(it), options: ord.map((j) => it.options[j]), bonne: ord.indexOf(it.c), explication: it.explication });
+      }
+      return o;
+    }) };
+  }
+  document.addEventListener("click", (e) => {
+    const b = e.target.closest(".ex-word"); if (!b || b.disabled) return;
+    const D = wordable(b.dataset.mode); if (!D) return;
+    b.disabled = true;
+    const go = () => OEC.word.exercices(D, b).finally(() => { b.disabled = false; });
+    (OEC.word ? Promise.resolve() : OEC.lazy.script("word.js")).then(go).catch(() => { b.disabled = false; b.textContent = "Téléchargement impossible"; });
+  });
 
   /* Liens directs : #entrainement/<thème>[/<niveau>] ou #entrainement/<exercice> */
   const PREFIX = { m: "marche", mo: "monnaie", cr: "croissance", em: "emploi", co: "commerce", in: "inegalites", et: "etat", fi: "finance", vi: "visions" };
