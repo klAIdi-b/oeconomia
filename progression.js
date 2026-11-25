@@ -16,7 +16,7 @@
     const cLus = (OEC.concepts || []).filter((c) => lu.has("c-" + c.id)).length, qLus = (OEC.questions || []).filter((q) => lu.has("q-" + q.id)).length;
     const eLus = (OEC.economists || []).filter((e) => lu.has("eco-" + e.id)).length;
     const het = HETERO.filter((id) => lu.has("eco-" + id)).length, dom = DOMINANT.filter((id) => lu.has("eco-" + id)).length;
-    const avance = themes.some((t) => ok[t.id] && ok[t.id][3] >= Math.ceil(Math.round((t.n || 24) / 3) / 2));
+    const avance = themes.some((t) => ok[t.id] && ok[t.id][3] >= Math.ceil((t.niv ? t.niv[2] : Math.round((t.n || 24) / 3)) / 2));
     let test = false, chat = false; try { test = !!localStorage.getItem("oec-boussole"); chat = !!localStorage.getItem("oec-chat-vu"); } catch (e) {}
     const B = [
       ["Premiers pas", "Lire une première notion", cLus >= 1, "#concepts"],
@@ -60,12 +60,12 @@
     const cLus = concepts.filter((c) => lu.has("c-" + c.id)).length, qLus = questions.filter((q) => lu.has("q-" + q.id)).length, eLus = ecos.filter((e) => lu.has("eco-" + e.id)).length;
     const vide = !lu.size && !nbOk;
     const nbAvant = Object.values(ex).filter((v) => v && v.avant && !v.ok).length, nbApres = Object.values(ex).filter((v) => v && v.apres && !v.ok).length;
-    const parNiv = (t) => Math.round((t.n || 24) / 3);
+    const parNiv = (t, n) => (t.niv ? t.niv[n - 1] : Math.round((t.n || 24) / 3));
 
     /* suggestions */
     const sug = [];
-    themes.forEach((t) => { const k = Math.ceil(parNiv(t) * 0.75); [1, 2].forEach((n) => { if (ok[t.id][n] >= k && ok[t.id][n + 1] < k && sug.length < 4) sug.push([`#ex-${t.id}-${n + 1}`, `Passez au niveau ${NIV[n + 1]} en ${t.nom}`, `Vous avez réussi ${ok[t.id][n]} exercices sur ${parNiv(t)} au niveau ${NIV[n]}.`]); }); });
-    themes.forEach((t) => { [1, 2, 3].forEach((n) => { const k = ok[t.id][n]; if (k > 0 && k < 6 && sug.length < 4 && !sug.some((s) => s[0].startsWith(`#ex-${t.id}`))) sug.push([`#ex-${t.id}-${n}`, `Continuez ${t.nom}, niveau ${NIV[n]}`, `${k} exercice${k > 1 ? "s" : ""} réussi${k > 1 ? "s" : ""} sur ${parNiv(t)}.`]); }); });
+    themes.forEach((t) => { [1, 2].forEach((n) => { const k = Math.ceil(parNiv(t, n) * 0.75); if (ok[t.id][n] >= k && ok[t.id][n + 1] < k && sug.length < 4) sug.push([`#ex-${t.id}-${n + 1}`, `Passez au niveau ${NIV[n + 1]} en ${t.nom}`, `Vous avez réussi ${ok[t.id][n]} exercices sur ${parNiv(t, n)} au niveau ${NIV[n]}.`]); }); });
+    themes.forEach((t) => { [1, 2, 3].forEach((n) => { const k = ok[t.id][n]; if (k > 0 && k < 6 && sug.length < 4 && !sug.some((s) => s[0].startsWith(`#ex-${t.id}`))) sug.push([`#ex-${t.id}-${n}`, `Continuez ${t.nom}, niveau ${NIV[n]}`, `${k} exercice${k > 1 ? "s" : ""} réussi${k > 1 ? "s" : ""} sur ${parNiv(t, n)}.`]); }); });
     const qNon = questions.find((q) => !lu.has("q-" + q.id));
     if (qNon && sug.length < 4) sug.push(["#q-" + qNon.id, `Lisez la grande question « ${qNon.court} »`, qNon.titre]);
     const cNon = concepts.find((c) => !lu.has("c-" + c.id));
@@ -87,12 +87,19 @@
       <div class="pg-sug">${sug.map(([h, t, p]) => `<a class="door" href="${h}"><b>${t}</b><p>${p}</p><span class="go">Y aller →</span></a>`).join("")}</div>
       <h3>Exercices par thème</h3>
       <div class="tablewrap"><table class="positions pg-table"><thead><tr><th>Thème</th>${[1, 2, 3].map((n) => `<th>${NIV[n]}</th>`).join("")}</tr></thead><tbody>
-        ${themes.map((t) => `<tr><td>${t.nom}</td>${[1, 2, 3].map((n) => `<td><a href="#ex-${t.id}-${n}">${ok[t.id][n]} / ${parNiv(t)}</a>${bar(ok[t.id][n], parNiv(t))}</td>`).join("")}</tr>`).join("")}
+        ${themes.map((t) => `<tr><td>${t.nom}</td>${[1, 2, 3].map((n) => `<td><a href="#ex-${t.id}-${n}">${ok[t.id][n]} / ${parNiv(t, n)}</a>${bar(ok[t.id][n], parNiv(t, n))}</td>`).join("")}</tr>`).join("")}
       </tbody></table></div>
       <h3>Notions par domaine</h3>
       <div class="pg-cats">${Object.entries(OEC.conceptCats || {}).map(([k, nom]) => { const cs = concepts.filter((c) => c.cat === k), l = cs.filter((c) => lu.has("c-" + c.id)); const non = cs.filter((c) => !lu.has("c-" + c.id)).slice(0, 3);
         return `<div class="pg-cat"><b>${nom}</b><span>${l.length} / ${cs.length} lues</span>${bar(l.length, cs.length)}${non.length ? `<p>À lire : ${non.map((c) => `<a href="#c-${c.id}">${c.nom}</a>`).join(" · ")}</p>` : `<p>Toutes lues ✓</p>`}</div>`; }).join("")}</div>
       <p class="pg-note">Votre progression est enregistrée dans ce navigateur, sur cet appareil : elle n’est ni envoyée ni visible par d’autres. Une notice, un dossier ou un portrait compte comme « lu » quand vous l’avez parcouru jusqu’au bout ou réussi son quiz ; un exercice, quand vous l’avez réussi.</p>
+      <div class="pg-transfert pg-seance">
+        <h3>Bilan de séance</h3>
+        <p>Pour un cours ou une séance de travail : notez le début, puis affichez ou imprimez ce que vous avez fait depuis. Rien n’est envoyé : le bilan se montre ou s’imprime.</p>
+        ${(() => { const d = get("oec-seance", 0); return d ? `<p class="pg-msg">Séance commencée à ${new Date(d).toLocaleTimeString("fr-CH", { hour: "2-digit", minute: "2-digit" })}, le ${new Date(d).toLocaleDateString("fr-CH")}.</p>` : ""; })()}
+        <p><button type="button" class="btn small" data-pg="seance-debut">${get("oec-seance", 0) ? "Recommencer une séance" : "Commencer une séance"}</button> <button type="button" class="btn small ghost" data-pg="seance-bilan">Voir mon bilan</button></p>
+        <div id="pgBilan" hidden></div>
+      </div>
       <div class="pg-transfert">
         <h3>Continuer sur un autre appareil</h3>
         <p>Obtenez un code qui contient votre progression, puis collez-le dans « Ma progression » sur l’autre appareil ou l’autre navigateur. Le code n’est envoyé nulle part : c’est vous qui le copiez.</p>
@@ -107,13 +114,47 @@
       <p><button type="button" class="btn small ghost pg-reset">Effacer ma progression</button></p>`;
   }
   /* Ce qui forme la progression (les préférences d’affichage, thème et taille du texte, ne sont pas touchées) */
-  const PROGRESSION = ["oec-lu", "oec-ex", "oec-ex-pos", "oec-derniere", "oec-boussole", "oec-defis", "oec-parcours", "oec-actu-vue", "oec-chat-vu"];
+  const PROGRESSION = ["oec-lu", "oec-ex", "oec-ex-pos", "oec-derniere", "oec-boussole", "oec-defis", "oec-parcours", "oec-actu-vue", "oec-chat-vu", "oec-seance"];
   const TRANSFERT = [...PROGRESSION, "oec-profil", "oec-niveau"];
   const encoder = (o) => "OEC1-" + btoa(unescape(encodeURIComponent(JSON.stringify(o))));
   const decoder = (s) => { s = String(s || "").replace(/\s+/g, ""); if (!s.startsWith("OEC1-")) throw new Error("format"); return JSON.parse(decodeURIComponent(escape(atob(s.slice(5))))); };
   const msg = (t) => { const m = document.getElementById("pgMsg"); if (m) m.textContent = t; };
+  /* Bilan de séance : les exercices faits depuis le début noté, avec leur résultat. Rien n’est envoyé. */
+  const escB = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  async function bilan() {
+    const box = document.getElementById("pgBilan"); if (!box) return;
+    const debut = get("oec-seance", 0);
+    if (!debut) { box.hidden = false; box.innerHTML = `<p>Cliquez d’abord sur « Commencer une séance », puis faites des exercices.</p>`; return; }
+    const ex = get("oec-ex", {}), ids = Object.keys(ex).filter((id) => ex[id] && ex[id].t >= debut);
+    box.hidden = false;
+    if (!ids.length) { box.innerHTML = `<p>Aucun exercice fait depuis le début de la séance.</p>`; return; }
+    box.innerHTML = `<p>Préparation du bilan…</p>`;
+    try { await Promise.all([...new Set(ids.map((id) => OEC.exo.themeDe(id)).filter(Boolean))].map((t) => OEC.lazy.theme(t))); } catch (e) {}
+    const NIVX = { 1: "Découverte", 2: "Intermédiaire", 3: "Avancé" };
+    const lignes = ids.sort((a, b) => ex[a].t - ex[b].t).map((id) => {
+      const p = ex[id], it = OEC.exo.item(id) || { titre: id, niveau: "" }, th = ((OEC.lazy.exercises || []).find((t) => t.id === OEC.exo.themeDe(id)) || { nom: "" }).nom;
+      const r = p.ok ? (p.premier ? "Réussi du premier coup" : "Réussi") : p.apres ? "Réussi après correction" : "Pas encore réussi";
+      return { titre: it.titre, th, niv: NIVX[it.niveau] || "", r, premier: p.ok && p.premier, ok: p.ok };
+    });
+    const n = lignes.length, k = lignes.filter((l) => l.premier).length, m = lignes.filter((l) => !l.ok).length;
+    const quand = `${new Date(debut).toLocaleDateString("fr-CH")}, de ${new Date(debut).toLocaleTimeString("fr-CH", { hour: "2-digit", minute: "2-digit" })} à ${new Date().toLocaleTimeString("fr-CH", { hour: "2-digit", minute: "2-digit" })}`;
+    const corps = `<p><b>Séance du ${quand}</b></p>
+      <p>${n} exercice${n > 1 ? "s" : ""} fait${n > 1 ? "s" : ""}, dont ${k} réussi${k > 1 ? "s" : ""} du premier coup${m ? ` ; ${m} à revoir` : ""}.</p>
+      <table class="positions pg-table"><thead><tr><th>Exercice</th><th>Thème</th><th>Niveau</th><th>Résultat</th></tr></thead><tbody>${lignes.map((l) => `<tr><td>${escB(l.titre)}</td><td>${escB(l.th)}</td><td>${l.niv}</td><td>${l.r}</td></tr>`).join("")}</tbody></table>`;
+    box.innerHTML = `<label class="pg-nom">Prénom, pour l’impression (facultatif, rien n’est enregistré) : <input type="text" id="pgNom" autocomplete="off"></label>
+      <div id="pgBilanCorps">${corps}</div>
+      <p class="pg-note">Bilan établi sur cet appareil, sans compte. Les exercices manqués reviendront dans la <a href="#revision">révision du jour</a>.</p>
+      <p><button type="button" class="btn small" data-pg="seance-imprimer">Imprimer le bilan</button></p>`;
+  }
   document.addEventListener("click", (e) => {
     const x = e.target.closest("[data-pg]");
+    if (x && x.dataset.pg === "seance-debut") { try { localStorage.setItem("oec-seance", JSON.stringify(Date.now())); } catch (err) {} render(); return; }
+    if (x && x.dataset.pg === "seance-bilan") { bilan(); return; }
+    if (x && x.dataset.pg === "seance-imprimer") {
+      const nom = (document.getElementById("pgNom") || {}).value || "", corps = document.getElementById("pgBilanCorps");
+      if (corps && OEC.print) OEC.print.print("Bilan de séance" + (nom ? " : " + nom : ""), `<h1>Bilan de séance${nom ? " : " + escB(nom) : ""}</h1>` + corps.innerHTML);
+      return;
+    }
     if (x && x.dataset.pg === "export") {
       const k = {}; try { TRANSFERT.forEach((c) => { const v = localStorage.getItem(c); if (v != null) k[c] = v; }); } catch (err) {}
       const box = document.getElementById("pgCodeBox"), ta = document.getElementById("pgCode");

@@ -55,7 +55,7 @@
   function mark(id, ok, how) {
     const p = PROG[id] || { n: 0, v: 2 };
     const d = today(), premier = p.n === 0;
-    p.n++; p.v = 2; p.last = d;
+    p.n++; p.v = 2; p.last = d; p.t = Date.now();
     /* dans la révision du jour : réussi, l’exercice revient dans 7 puis 30 jours ; manqué, il revient demain */
     if (location.hash === "#revision") { p.rev = ok ? (p.rev || 0) + 1 : 0; p.revd = d; }
     if (premier) p.premier = ok;
@@ -150,7 +150,7 @@
     const its = itemsOf(state.theme, state.niveau);
     list.innerHTML = its.map((it, i) => `
       <article class="ex-card${etat(PROG[it.id])[0] ? " " + etat(PROG[it.id])[0] : ""}" data-id="${it.id}">
-        <header><span class="ex-num">Exercice ${i + 1}</span><span class="ex-type">${TYPES[it.type] || it.type}</span><span class="ex-ok">${etat(PROG[it.id])[1]}</span><button type="button" class="ex-lien" data-lien="ex-${it.id}" title="Copier le lien direct vers cet exercice">Copier le lien</button>
+        <header><span class="ex-num">Exercice ${i + 1}</span><span class="ex-type">${it.typeLib || TYPES[it.type] || it.type}</span><span class="ex-ok">${etat(PROG[it.id])[1]}</span><button type="button" class="ex-lien" data-lien="ex-${it.id}" title="Copier le lien direct vers cet exercice">Copier le lien</button>
         <h3>${it.titre}</h3><p class="ex-comp">${it.competence}</p></header>
         <div class="ex-body"></div>
       </article>`).join("");
@@ -174,7 +174,7 @@
         if (prof) h += `<div class="pr-corr"><p><b>Réponse${rep.length > 1 ? "s" : ""} :</b> ${it.champs.map((c, j) => `${c.label} = ${fmt(rep[j], 2)} ${c.unite || ""}`).join(" ; ")}</p>${it.correction(p)}</div>`;
       } else if (it.type === "vf") {
         h += (it.enonce || "") + figOf(it);
-        h += `<ol class="pr-vf">${it.affirmations.map((a) => `<li>${a[0]} <span class="pr-box">☐ Vrai ☐ Faux</span>${prof ? `<div class="pr-corr"><b>${a[1] ? "Vrai" : "Faux"}.</b> ${a[2]}</div>` : ""}</li>`).join("")}</ol>`;
+        h += `<ol class="pr-vf">${it.affirmations.map((a) => `<li>${a[0]} <span class="pr-box">☐ ${(it.etiquettes || ["Vrai"])[0]} ☐ ${(it.etiquettes || [, "Faux"])[1]}</span>${prof ? `<div class="pr-corr"><b>${a[1] ? (it.etiquettes || ["Vrai"])[0] : (it.etiquettes || [, "Faux"])[1]}.</b> ${a[2]}</div>` : ""}</li>`).join("")}</ol>`;
       } else if (it.type === "redaction") {
         h += it.enonce + figOf(it);
         h += prof ? `<div class="pr-corr"><p><b>Critères de réussite :</b></p><ul>${it.criteres.map((c) => `<li>${c}</li>`).join("")}</ul><p><b>Exemple de réponse :</b></p>${it.corrige}</div>` : `<div class="pr-lignes">${"<span></span>".repeat(16)}</div>`;
@@ -251,7 +251,7 @@
       }));
     }
     if (it.type === "vf") {
-      b.innerHTML = `${it.enonce || ""}${fig}<ol class="ex-vf">${it.affirmations.map((a, j) => `<li data-j="${j}"><p>${a[0]}</p><span><button type="button" data-v="1">Vrai</button><button type="button" data-v="0">Faux</button></span><div class="ex-vf-e" hidden></div></li>`).join("")}</ol>
+      b.innerHTML = `${it.enonce || ""}${fig}<ol class="ex-vf">${it.affirmations.map((a, j) => `<li data-j="${j}"><p>${a[0]}</p><span><button type="button" data-v="1">${(it.etiquettes || ["Vrai"])[0]}</button><button type="button" data-v="0">${(it.etiquettes || [, "Faux"])[1]}</button></span><div class="ex-vf-e" hidden></div></li>`).join("")}</ol>
         <div class="ex-actions"><button type="button" class="btn small ex-check">Vérifier</button></div><div class="ex-feedback" hidden></div>`;
       $$(".ex-vf li", b).forEach((li) => $$("button", li).forEach((btn) => btn.addEventListener("click", () => { $$("button", li).forEach((x) => x.classList.toggle("on", x === btn)); li.dataset.r = btn.dataset.v; })));
       $(".ex-check", b).addEventListener("click", () => {
@@ -261,7 +261,7 @@
         lis.forEach((li) => {
           const a = it.affirmations[+li.dataset.j], ok = (li.dataset.r === "1") === a[1]; if (ok) good++;
           li.classList.add(ok ? "ok" : "ko"); $$("button", li).forEach((x) => (x.disabled = true));
-          const e = $(".ex-vf-e", li); e.hidden = false; e.innerHTML = `<b>${a[1] ? "Vrai" : "Faux"}.</b> ${a[2]}`;
+          const e = $(".ex-vf-e", li); e.hidden = false; e.innerHTML = `<b>${a[1] ? (it.etiquettes || ["Vrai"])[0] : (it.etiquettes || [, "Faux"])[1]}.</b> ${a[2]}`;
         });
         const all = good === lis.length, f = $(".ex-feedback", b); f.hidden = false;
         f.innerHTML = `<p class="ex-verdict ${all ? "ok" : "ko"}">${good} sur ${lis.length} correctes.</p>${notionLink(it)}<button type="button" class="btn small ghost ex-retry">Recommencer</button>`;
@@ -395,6 +395,8 @@ Réponds en texte simple, sans Markdown, en trois parties qui commencent exactem
     return { total: out.length, choix };
   }
   OEC.revision = { nombre: () => dues().total };
+  OEC.exo.item = (id) => ITEMS.find((x) => x.id === id);
+  OEC.exo.themeDe = themeDe;
   async function renderRevision() {
     const root = $("#revRoot"); if (!root) return;
     const { total, choix } = dues();

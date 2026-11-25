@@ -144,6 +144,8 @@
         <li><b>Imprimer une série.</b> En haut de chaque série, le bouton d’impression propose « Sans corrigés » pour les élèves et « Avec corrigés » pour vous.</li>
         <li><b>Envoyer un lien direct.</b> Le bouton « Copier le lien du thème » donne une adresse qui ouvre directement le bon thème et le bon niveau. Chaque exercice a aussi son propre lien.</li>
         <li><b>Des chiffres différents pour chacun.</b> Dans les calculs, les valeurs changent à chaque essai : deux voisins n’ont pas le même énoncé, et un élève peut recommencer autant qu’il veut.</li>
+        <li><b>Un bilan à la fin du cours.</b> Dans ${L("#progression", "Ma progression")}, l’élève clique sur « Commencer une séance » au début du cours ; à la fin, « Voir mon bilan » affiche les exercices faits et leur résultat, à vous montrer ou à imprimer. Rien n’est envoyé, aucun compte n’est nécessaire.</li>
+        <li><b>Faits et valeurs.</b> Chaque thème comprend, au niveau Découverte, un exercice « Constat ou jugement de valeur ? », utile avant tout débat en classe.</li>
       </ol>
       <p>Les ${OEC.lettres(OEC.totaux().fiches)} fiches de la ${L("#methode", "boîte à outils")} (pourcentages, indices, lecture de graphique, argumentation) s’impriment de la même façon.</p>
 

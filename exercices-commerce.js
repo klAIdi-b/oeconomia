@@ -205,6 +205,14 @@
       <tr><td>Évolution du prix mondial de la principale exportation sur 5 ans</td><td>entre −40 % et +60 % selon les années</td><td>stable</td></tr></tbody></table>` +
       P("Quelle analyse est la plus juste ?"),
     options: ["Le pays A est moins vulnérable, car le cuivre est indispensable.", "Le pays A est très exposé aux variations des cours : ses recettes d’exportation, ses termes de l’échange et souvent son budget public fluctuent fortement ; diversifier son économie réduirait ce risque.", "Les deux pays sont exposés de la même façon.", "Le pays B devrait se spécialiser davantage dans les machines."], c: 1,
-    explication: P("Le pays A dépend presque entièrement d’une seule matière première dont le prix varie beaucoup. Quand le cours chute, ses recettes d’exportation, ses <b>termes de l’échange</b> et ses recettes fiscales s’effondrent, et sa monnaie se déprécie. Le pays B, plus diversifié, est bien moins exposé.", "Les économistes parlent parfois de « malédiction des ressources » : une forte dépendance aux matières premières peut s’accompagner d’une croissance instable et, selon Acemoglu et Robinson, d’institutions extractives, quand une élite contrôle la rente.") }
+    explication: P("Le pays A dépend presque entièrement d’une seule matière première dont le prix varie beaucoup. Quand le cours chute, ses recettes d’exportation, ses <b>termes de l’échange</b> et ses recettes fiscales s’effondrent, et sa monnaie se déprécie. Le pays B, plus diversifié, est bien moins exposé.", "Les économistes parlent parfois de « malédiction des ressources » : une forte dépendance aux matières premières peut s’accompagner d’une croissance instable et, selon Acemoglu et Robinson, d’institutions extractives, quand une élite contrôle la rente.") },
+  { id: "co1-fait-valeur", theme: "commerce", niveau: 1, type: "vf", typeLib: "Constat ou jugement de valeur", etiquettes: ["Constat", "Jugement de valeur"],
+    titre: "Constat ou jugement de valeur ?", competence: "Distinguer un constat, que l’on peut vérifier, d’un jugement de valeur, qui dit ce qui devrait être.",
+    enonce: P("Pour chaque affirmation, dites s’il s’agit d’un <b>constat</b>, que l’on peut vérifier avec des données, même s’il se révèle faux, ou d’un <b>jugement de valeur</b>, qui dit ce qui devrait être."),
+    affirmations: [
+      ["L’Union européenne est le premier partenaire commercial de la Suisse.", true, "On peut le vérifier avec des données : les statistiques du commerce extérieur le montrent."],
+      ["La Suisse devrait protéger davantage son agriculture.", false, "Il dit ce qui devrait être. Des faits peuvent éclairer le débat, mais pas le trancher : « devrait » signale un choix politique."],
+      ["Un droit de douane sur les vélos importés fait monter leur prix dans le pays.", true, "On peut le vérifier avec des données : on peut comparer les prix avant et après le droit de douane."],
+      ["Il vaut mieux acheter des produits locaux, même plus chers.", false, "Il dit ce qui devrait être. Des faits peuvent éclairer le débat, mais pas le trancher : « il vaut mieux » exprime une préférence."]] },
   ]);
 })();

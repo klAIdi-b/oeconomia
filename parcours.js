@@ -112,7 +112,7 @@
         ["c:monnaie-endogene", "D’où vient l’argent sur votre compte ? Le crédit crée la monnaie."],
         ["debat:kelton-summers", "Un État peut-il dépenser sans compter ? La théorie moderne de la monnaie face à ses critiques."],
         ["c:travail-non-remunere", "Le travail que le PIB ne compte pas, et pourquoi c’est important."],
-        ["ex:visions-1", "Six exercices de niveau Découverte pour vérifier ce que vous avez retenu."]] }
+        ["ex:visions-1", "Sept exercices de niveau Découverte pour vérifier ce que vous avez retenu."]] }
   ];
 
   const KEY = "oec-parcours";
@@ -144,7 +144,7 @@
       href = "#ex-" + id; titre = `${T ? T.nom : th}, niveau ${NIV[n] || n}`; type = "Exercices";
       const ex = get("oec-ex", {}); let ok = 0;
       Object.entries(ex).forEach(([k, v]) => { const p = k.match(/^([a-z]+)(\d)-/); if (v && v.ok && p && PREFIX[p[1]] === th && p[2] === n) ok++; });
-      const parNiv = T ? Math.round(T.n / 3) : 8;
+      const parNiv = T ? (T.niv ? T.niv[+n - 1] : Math.round(T.n / 3)) : 8;
       fait = ok >= Math.ceil(parNiv / 2); type += ok ? ` · ${ok} réussi${ok > 1 ? "s" : ""} sur ${parNiv}` : "";
     }
     if (t === "exs") {
