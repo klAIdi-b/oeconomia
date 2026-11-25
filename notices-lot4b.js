@@ -123,8 +123,8 @@ ${thunen}
       o: ["Une grande partie de ce gain ne récompense aucun effort des propriétaires, d’où l’idée de taxer la plus-value du sol", "Les propriétaires ont créé cette valeur en entretenant leurs terrains", "La valeur des terrains va forcément baisser", "Le métro a fait baisser les loyers du quartier"], c: 0,
       e: "Comme le proposait Henry George, la valeur créée par la collectivité peut lui revenir en partie." },
     ouverte: {
-      q: "Faut-il, comme le proposait Henry George, taxer beaucoup plus fortement la valeur du sol en Suisse, par exemple pour financer le logement abordable ?",
-      r: "Plusieurs arguments plaident en ce sens : la valeur du sol vient largement de la collectivité (infrastructures, emplois, décisions d’urbanisme), un impôt foncier ne décourage ni le travail ni l’investissement productif, et il pourrait inciter à mieux utiliser les terrains en zone à bâtir laissés vides. La Suisse dispose déjà de plusieurs instruments, impôt foncier communal dans certains cantons, imposition de la valeur locative, prélèvement sur les plus-values de classement. Les objections sont réelles : beaucoup de propriétaires sont des ménages modestes ou des retraités dont le patrimoine est surtout immobilier, l’évaluation du sol séparément du bâti est complexe, et une hausse brutale ferait baisser les prix au détriment des propriétaires récents fortement endettés. Les économistes favorables proposent souvent une introduction progressive, compensée par des baisses d’autres impôts."
+      q: "Faut-il, comme le proposait Henry George, taxer beaucoup plus fortement la valeur du sol, par exemple pour financer le logement abordable ?",
+      r: "Plusieurs arguments plaident en ce sens : la valeur du sol vient largement de la collectivité (infrastructures, emplois, décisions d’urbanisme), un impôt sur le sol ne décourage ni le travail ni l’investissement productif, et il pourrait inciter à mieux utiliser les terrains constructibles laissés vides. Plusieurs pays appliquent déjà de tels instruments : le Danemark taxe la valeur des terrains, des villes de Pennsylvanie ont longtemps taxé davantage le sol que les bâtiments, et la Suisse prélève une partie de la plus-value lorsqu’un terrain devient constructible. Les objections sont réelles : beaucoup de propriétaires sont des ménages modestes ou des retraités dont le patrimoine est surtout immobilier, l’évaluation du sol séparément du bâti est complexe, et une hausse brutale ferait baisser les prix au détriment des propriétaires récents fortement endettés. Les économistes favorables proposent souvent une introduction progressive, compensée par des baisses d’autres impôts."
     },
     lectures: [
       ["Accessible", "Henry George, Progrès et Pauvreté, 1879, livres III et IV."],
@@ -163,7 +163,7 @@ ${terres}
       objections: "Terre et capital, limites de l’impôt foncier, la rente comme signal, une notion trop large.",
       ecoles: "Quesnay, Malthus-West-Ricardo, Mill, Marx, Marshall, Piketty.",
       source: "Ricardo, 1817 : les facultés productives originelles et impérissables du sol.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur l’impôt foncier.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -272,8 +272,8 @@ ${paradoxe}
       o: ["La demande totale baisse, les revenus diminuent, et la réduction de la dette devient plus difficile", "La croissance repart aussitôt grâce à l’épargne", "Les taux montent fortement", "Les exportations compensent toujours la baisse"], c: 0,
       e: "Quand tout le monde économise en même temps, les revenus baissent pour tous." },
     ouverte: {
-      q: "Le système suisse de prévoyance oblige les salariés à épargner massivement pour leur retraite par le deuxième pilier. Est-ce un problème au regard du paradoxe de l’épargne ?",
-      r: "En période de plein emploi, non : cette épargne finance des investissements en Suisse et à l’étranger, et assure les revenus futurs des retraités, ce qui est son objectif. Le paradoxe de l’épargne suggère cependant deux points d’attention. D’abord, en récession, une épargne obligatoire élevée réduit la consommation au moment où la demande manque, même si l’assurance chômage et le chômage partiel atténuent ce risque. Ensuite, à l’échelle mondiale, l’abondance d’épargne contribue aux taux d’intérêt très bas, qui ont à leur tour réduit le rendement des caisses de pension et donc les rentes : un cercle que les théoriciens de la stagnation séculaire décrivent. La réponse ne consiste pas à réduire l’épargne pour la retraite, mais à veiller à ce qu’elle trouve des investissements utiles et à ce que la demande soit soutenue en cas de crise."
+      q: "Plusieurs pays, comme l’Australie ou les Pays-Bas, obligent les salariés à épargner massivement pour leur retraite. Est-ce un problème au regard du paradoxe de l’épargne ?",
+      r: "En période de plein emploi, non : cette épargne finance des investissements, dans le pays et à l’étranger, et assure les revenus futurs des retraités, ce qui est son objectif. Le paradoxe de l’épargne suggère cependant deux points d’attention. D’abord, en récession, une épargne obligatoire élevée réduit la consommation au moment où la demande manque, même si l’assurance chômage et le chômage partiel atténuent ce risque. Ensuite, à l’échelle mondiale, l’abondance d’épargne contribue aux taux d’intérêt très bas, qui ont à leur tour réduit le rendement des fonds de pension et donc les rentes : un cercle que les théoriciens de la stagnation séculaire décrivent. La réponse ne consiste pas à réduire l’épargne pour la retraite, mais à veiller à ce qu’elle trouve des investissements utiles et à ce que la demande soit soutenue en cas de crise."
     },
     lectures: [
       ["Accessible", "Bernard Mandeville, La Fable des abeilles, 1714, le poème initial, court et percutant."],
@@ -312,7 +312,7 @@ ${paradoxe}
       objections: "L’épargne finance l’investissement, l’épargne enrichit à long terme, la banque centrale, la précaution.",
       ecoles: "Mandeville, Smith, Malthus contre Ricardo et Say, Keynes, Hayek, Summers.",
       source: "Keynes, 1936 : pourquoi tous ne peuvent épargner simultanément.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur le deuxième pilier.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

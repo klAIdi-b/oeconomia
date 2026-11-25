@@ -131,8 +131,8 @@ ${triangle}
       o: ["Ses voitures deviennent moins chères en dollars, ou plus rentables à prix inchangé", "Ses voitures deviennent plus chères en dollars", "Aucun effet, puisque ses prix sont fixés en yens", "Il doit fermer ses usines au Japon"], c: 0,
       e: "Une monnaie qui se déprécie avantage les exportateurs : il faut moins de dollars pour acheter un même prix en yens." },
     ouverte: {
-      q: "Un franc fort est-il plutôt une chance ou un problème pour la Suisse ?",
-      r: "Le franc fort a des gagnants et des perdants. Il profite aux consommateurs, qui paient moins cher les produits importés, l’énergie et les voyages, et il aide à garder une inflation faible : en 2022, l’inflation suisse est restée bien en dessous de celle de la zone euro. Il reflète aussi la confiance dans le pays et pousse les entreprises à gagner en productivité. Mais il pèse sur l’industrie d’exportation, le tourisme et le commerce de détail près des frontières, qui perdent des clients ou doivent réduire leurs marges. Des emplois industriels peuvent être déplacés à l’étranger. La BNS a longtemps cherché un équilibre en intervenant sur le marché des changes, au prix d’un bilan très exposé aux marchés et de critiques venues des États-Unis. La réponse dépend du point de vue : celui du consommateur, du salarié de l’industrie, de l’épargnant ou du touriste, et du rythme auquel le franc s’apprécie, plus difficile à absorber quand il est brutal."
+      q: "Une monnaie forte est-elle plutôt une chance ou un problème pour un pays ?",
+      r: "Une monnaie forte a des gagnants et des perdants. Elle profite aux consommateurs, qui paient moins cher les produits importés, l’énergie et les voyages, et elle aide à garder une inflation faible : en 2022, la Suisse, dont le franc s’est apprécié, a connu une inflation bien plus faible que la zone euro. Elle reflète aussi la confiance dans le pays et pousse les entreprises à gagner en productivité. Mais elle pèse sur l’industrie d’exportation et le tourisme, qui perdent des clients ou doivent réduire leurs marges, et des emplois peuvent être déplacés à l’étranger. À l’inverse, la forte baisse du yen en 2022-2024 a aidé les exportateurs japonais, mais renchéri l’énergie et l’alimentation importées pour les ménages. La réponse dépend du point de vue, celui du consommateur, du salarié de l’industrie, de l’épargnant ou du touriste, et du rythme des variations, plus difficiles à absorber quand elles sont brutales."
     },
     lectures: [
       ["Accessible", "Banque nationale suisse, « La BNS en bref » et le matériel pédagogique Iconomix sur le taux de change."],
@@ -170,7 +170,7 @@ ${marche}
       objections: "Des marchés trop volatils, fixer ou flotter, la guerre des monnaies.",
       ecoles: "Hume et Ricardo, Cassel, Keynes, Friedman, Mundell et Fleming, Dornbusch et Krugman.",
       source: "Une monnaie vaut ce qu’elle permet d’acheter.",
-      quiz: "Six questions corrigées et une question sur le franc fort.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Six lectures classées par niveau."
     }
   };

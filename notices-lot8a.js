@@ -116,8 +116,8 @@ ${compte}` },
       o: ["Il augmente, car un travail auparavant gratuit devient une production payée", "Il baisse, car les familles travaillent moins", "Il ne change pas, puisque la consommation de nourriture est la même", "Il baisse, car les livreurs polluent"], c: 0,
       e: "Le PIB ne compte pas le repas cuisiné à la maison, mais compte le repas acheté." },
     ouverte: {
-      q: "La Suisse devrait-elle accorder autant d’importance à son PIB qu’à d’autres indicateurs, comme le bien-être déclaré ou l’empreinte écologique, dans le débat politique ?",
-      r: "La Suisse dispose déjà d’un système d’indicateurs du développement durable, MONET 2030, publié par l’Office fédéral de la statistique, qui suit plus de cent indicateurs sociaux, économiques et environnementaux. Mais le débat public reste dominé par le PIB et la croissance, en partie parce qu’un chiffre unique est plus facile à communiquer. Mettre davantage en avant d’autres indicateurs permettrait de mieux voir des enjeux que le PIB cache, comme l’empreinte carbone importée, le <dfn data-g=travail-non-remunere>travail non rémunéré</dfn> ou la répartition du patrimoine. Le risque d’un indicateur unique de bien-être est l’arbitraire des pondérations et la tentation de choisir l’indicateur qui flatte le gouvernement. La solution souvent recommandée est un « tableau de bord » restreint, de quelques indicateurs clés présentés ensemble, plutôt qu’un remplacement du PIB."
+      q: "Les gouvernements devraient-ils accorder autant d’importance à d’autres indicateurs, comme le bien-être déclaré ou l’empreinte écologique, qu’au PIB ?",
+      r: "Plusieurs pays ont essayé. La Nouvelle-Zélande a présenté en 2019 un « budget du bien-être », qui fixe ses priorités à partir d’indicateurs de santé, de pauvreté des enfants ou d’environnement ; le Bhoutan met en avant le « bonheur national brut » ; de nombreux instituts statistiques, comme ceux de la France, du Royaume-Uni ou de la Suisse, publient des tableaux d’indicateurs du bien-être et du développement durable. Mais le débat public reste dominé par le PIB et la croissance, en partie parce qu’un chiffre unique est plus facile à communiquer. Mettre davantage en avant d’autres indicateurs permettrait de mieux voir des enjeux que le PIB cache, comme l’empreinte carbone importée, le travail non rémunéré ou la répartition du patrimoine. Le risque d’un indicateur unique de bien-être est l’arbitraire des pondérations et la tentation de choisir l’indicateur qui flatte le gouvernement. La solution souvent recommandée est un « tableau de bord » restreint, de quelques indicateurs clés présentés ensemble, plutôt qu’un remplacement du PIB."
     },
     lectures: [
       ["Accessible", "Diane Coyle, GDP: A Brief but Affectionate History, 2014."],
@@ -156,7 +156,7 @@ ${trois}
       objections: "Croissance à tout prix, travail des femmes, défense du PIB, économie numérique.",
       ecoles: "Petty et King, Quesnay, Kuznets, Stone et Meade, Stiglitz-Sen-Fitoussi, écologistes et féministes.",
       source: "Kuznets, 1934 : le bien-être ne se déduit guère du revenu national.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur les indicateurs.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -283,8 +283,8 @@ ${durees}
       o: ["Un choc extérieur, qui provoque une récession amplifiée par la baisse de la confiance et des revenus", "Un cycle régulier de sept à onze ans", "Une simple variation saisonnière", "Une crise causée uniquement par le crédit trop facile"], c: 0,
       e: "Les cycles naissent souvent d’un choc imprévu, que l’économie amplifie ensuite." },
     ouverte: {
-      q: "Les cycles conjoncturels suisses suivent étroitement ceux de la zone euro et de l’économie mondiale. La Suisse a-t-elle encore les moyens de mener sa propre politique conjoncturelle ?",
-      r: "La Suisse dispose de moyens réels mais spécifiques. La BNS mène une politique monétaire indépendante, qui a montré son efficacité, notamment par l’action sur le taux de change. Les stabilisateurs automatiques, assurance chômage et réduction de l’horaire de travail, soutiennent la demande en récession sans décision politique, et le frein à l’endettement autorise des déficits conjoncturels. En revanche, comme l’économie est petite et très ouverte, une politique budgétaire de relance a un effet limité, et les exportations dépendent de la conjoncture européenne et mondiale, que la Suisse ne contrôle pas. La politique conjoncturelle suisse vise donc surtout à amortir les chocs extérieurs et à préserver l’emploi et les compétences, plutôt qu’à piloter activement le cycle. L’expérience de 2009 et de 2020 suggère que cette approche, fondée sur le chômage partiel, a bien fonctionné."
+      q: "Les cycles d’une petite économie très ouverte, comme la Belgique, Singapour ou la Suisse, suivent étroitement ceux de ses grands partenaires. A-t-elle encore les moyens de mener sa propre politique conjoncturelle ?",
+      r: "Ses moyens sont réels mais limités, et dépendent de ses institutions. Un pays de la zone euro, comme la Belgique, n’a plus de politique monétaire propre et compte surtout sur son budget. Singapour pilote sa politique monétaire par le taux de change plutôt que par les taux d’intérêt, et la Suisse dispose d’une banque centrale indépendante qui agit aussi sur le change. Partout, les stabilisateurs automatiques, assurance chômage et chômage partiel, soutiennent la demande en récession sans décision politique. En revanche, comme l’économie est petite et très ouverte, une relance budgétaire a un effet limité, et les exportations dépendent d’une conjoncture mondiale que le pays ne contrôle pas. La politique conjoncturelle de ces pays vise donc surtout à amortir les chocs extérieurs et à préserver l’emploi et les compétences, plutôt qu’à piloter activement le cycle."
     },
     lectures: [
       ["Accessible", "Charles Kindleberger et Robert Aliber, Manias, Panics, and Crashes, édition récente, chapitres 1 et 2."],
@@ -323,7 +323,7 @@ ${phases}
       objections: "Des cycles illusoires, les cycles réels contestés, la prévision difficile, stabiliser qui déstabilise.",
       ecoles: "Juglar, Kitchin et Kondratiev, Schumpeter, Frisch, Keynes et Samuelson, Hayek et Minsky, Kydland et Prescott.",
       source: "Burns et Mitchell, 1946 : récurrents mais pas périodiques.",
-      quiz: "Six questions corrigées et une question sur la politique conjoncturelle suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

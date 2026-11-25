@@ -111,8 +111,8 @@ ${pigou}
       o: ["Les vols sont trop bon marché pour la société, et il y en a plus que ce qui serait souhaitable", "Il y a trop peu de vols", "Le prix reflète exactement le coût pour la société", "Les passagers paient déjà le coût du climat"], c: 0,
       e: "Le coût privé est inférieur au coût social : le marché produit trop." },
     ouverte: {
-      q: "Les vols en avion ne sont pas soumis à la taxe CO₂ suisse sur les combustibles. Une taxe sur les billets d’avion serait-elle une bonne taxe pigouvienne ?",
-      r: "Du point de vue de Pigou, une taxe sur les billets peut corriger une externalité réelle, puisque chaque vol émet du CO₂ dont le dommage n’est pas payé. Elle serait plus précise si elle dépendait de la distance et du type d’avion, donc des émissions réelles. Plusieurs difficultés apparaissent cependant : le risque que les passagers partent d’aéroports voisins non taxés (Bâle-Mulhouse, Milan, Munich), ce qui est une forme de fuite de carbone ; l’effet sur la répartition, qui dépend de qui voyage le plus (souvent les ménages aisés, ce qui rend la taxe plutôt progressive) ; et l’usage des recettes, redistribution ou financement de la transition. Le Parlement suisse avait adopté une telle taxe dans la loi sur le CO₂, mais celle-ci a été rejetée en votation populaire en 2021, ce qui montre que l’acceptabilité politique compte autant que l’efficacité économique."
+      q: "Le kérosène des vols internationaux n’est presque nulle part taxé. Une taxe sur les billets d’avion serait-elle une bonne taxe pigouvienne ?",
+      r: "Du point de vue de Pigou, une taxe sur les billets peut corriger une externalité réelle, puisque chaque vol émet du CO₂ dont le dommage n’est pas payé ; l’exonération du kérosène des vols internationaux, héritée d’accords conclus dès 1944, rend même l’avion relativement avantagé. La taxe serait plus précise si elle dépendait de la distance et du type d’avion, donc des émissions réelles. Plusieurs pays en appliquent une, comme la Suède depuis 2018 ou la France depuis 2020. Des difficultés apparaissent cependant : le risque que les passagers partent d’aéroports voisins non taxés, une forme de fuite de carbone ; l’effet sur la répartition, qui dépend de qui voyage le plus, souvent les ménages aisés ; et l’usage des recettes, redistribution ou financement de la transition. En Suisse, une telle taxe faisait partie d’une loi sur le CO₂ rejetée en votation en 2021, ce qui montre que l’acceptabilité politique compte autant que l’efficacité économique."
     },
     lectures: [
       ["Accessible", "William Nordhaus, The Climate Casino, 2013. Les enjeux économiques du climat expliqués par le lauréat du Nobel 2018."],
@@ -151,7 +151,7 @@ ${pigou}
       objections: "Mesurer le dommage, effets sur la répartition, fuites de carbone, défaillances de l’État.",
       ecoles: "Marshall, Samuelson, Ostrom, Coase, Hayek, l’économie écologique.",
       source: "Pigou, 1920 : l’écart entre produit net privé et produit net social.",
-      quiz: "Six questions corrigées et une question sur la taxation des billets d’avion.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -265,8 +265,8 @@ ${phillips}
       o: ["Le chômage reviendra vers son niveau de départ, et l’inflation restera élevée", "Le chômage restera à 3 %, sans autre effet", "L’inflation reviendra d’elle-même à 2 %", "Le chômage tombera à zéro"], c: 0,
       e: "Une fois l’inflation anticipée, les salaires s’ajustent et l’effet sur l’emploi disparaît." },
     ouverte: {
-      q: "La BNS vise une inflation inférieure à 2 %, tandis que la Banque centrale européenne vise 2 %. Si l’inflation suisse tombe à 0 % avec un chômage de 3 %, la BNS doit-elle chercher à relancer l’économie ?",
-      r: "Selon la courbe de Phillips moderne, une inflation nulle avec un chômage proche de son niveau habituel ne signale pas de surchauffe, et la stabilité des prix telle que la BNS la définit est respectée. Plusieurs arguments plaident pourtant pour la vigilance : une inflation proche de zéro laisse peu de marge avant la déflation, qui alourdit les dettes ; elle limite la capacité de la banque centrale à baisser les taux réels en cas de crise ; et elle peut refléter un franc très fort qui pèse sur l’industrie exportatrice. À l’inverse, relancer sans tension sur le marché du travail risque d’alimenter des bulles, notamment immobilières (voir la notice sur l’instabilité financière). La réponse dépend donc des causes : un franc fort ou une demande faible appellent des réponses différentes. Dans la pratique, la BNS a souvent utilisé les interventions sur le marché des changes plutôt que les seuls taux d’intérêt."
+      q: "Si l’inflation d’un pays tombe à 0 % alors que son chômage est bas, sa banque centrale doit-elle chercher à relancer l’économie ?",
+      r: "Selon la courbe de Phillips moderne, une inflation nulle avec un chômage proche de son niveau habituel ne signale pas de surchauffe. Plusieurs arguments plaident pourtant pour la vigilance : une inflation proche de zéro laisse peu de marge avant la déflation, qui alourdit les dettes ; elle limite la capacité de la banque centrale à baisser les taux réels en cas de crise ; et elle peut s’installer dans les anticipations, comme au Japon pendant deux décennies. La zone euro a connu une situation proche en 2014-2016, et la BCE a alors lancé des achats massifs d’obligations. À l’inverse, relancer sans tension sur le marché du travail risque d’alimenter des bulles, notamment immobilières (<a href=\"#c-instabilite-financiere\">voir instabilité financière</a>). La réponse dépend donc des causes : une monnaie très forte, une demande faible ou un choc temporaire sur les prix de l’énergie appellent des réponses différentes."
     },
     lectures: [
       ["Accessible", "Olivier Blanchard, Macroéconomie (manuel), chapitres sur la courbe de Phillips et le taux naturel."],
@@ -305,7 +305,7 @@ ${phillips}
       objections: "Anticipations rationnelles, taux naturel inobservable, relation instable, chocs d’offre.",
       ecoles: "Keynes, Samuelson et Solow, Friedman et Phelps, Lucas, nouveaux keynésiens, post-keynésiens.",
       source: "Friedman, 1967 : un arbitrage temporaire, pas d’arbitrage permanent.",
-      quiz: "Six questions corrigées et une question sur la politique de la BNS.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

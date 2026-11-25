@@ -132,7 +132,7 @@ ${transfo}
       o: ["Que la valeur dépend du désir qu’on a du bien et de sa rareté, pas seulement du travail", "Que le prix du tableau est une erreur du marché", "Que le travail du peintre vaut vingt fois plus", "Que la table aurait dû coûter vingt fois plus"], c: 0,
       e: "C’est l’une des raisons pour lesquelles la plupart des économistes ont abandonné la valeur-travail à partir des années 1870." },
     ouverte: {
-      q: "Une heure d’infirmière, d’enseignante et de banquier d’affaires sont rémunérées très différemment en Suisse. La théorie de la valeur-travail permet-elle de dire si ces écarts sont justes ?",
+      q: "Une heure d’infirmière, d’enseignante et de banquier d’affaires sont rémunérées très différemment dans la plupart des pays. La théorie de la valeur-travail permet-elle de dire si ces écarts sont justes ?",
       r: "La valeur-travail, au sens de Marx, compterait le travail qualifié comme un multiple du travail simple, en fonction notamment du temps de formation ; elle pourrait justifier certains écarts, mais difficilement ceux observés, qui dépassent de loin les différences de formation. L’économie marginaliste répond que les salaires reflètent la productivité marginale et la rareté des compétences, ce qui expliquerait les écarts sans juger de leur justice. Plusieurs économistes contemporains objectent que les salaires dépendent aussi du pouvoir de négociation, des institutions et de la valeur sociale du travail, que le marché mesure mal, comme l’a montré la pandémie en révélant l’importance de métiers peu payés. Aucune théorie de la valeur ne tranche à elle seule la question morale ; elles aident à distinguer ce qui relève de la productivité, de la rareté et du rapport de force."
     },
     lectures: [
@@ -281,8 +281,8 @@ ${gravitation}
       o: ["De nouvelles usines sont construites, l’offre augmente, et les prix finissent par baisser", "Les prix restent élevés pour toujours", "La demande disparaît", "Les fabricants ferment leurs usines"], c: 0,
       e: "Les profits exceptionnels attirent de nouveaux producteurs, comme dans le transport maritime après 2021." },
     ouverte: {
-      q: "Pourquoi la concurrence ne fait-elle pas baisser les prix suisses au niveau de ceux des pays voisins pour des produits identiques ?",
-      r: "Une partie de l’écart correspond à un prix naturel plus élevé : salaires, loyers et coûts logistiques sont plus hauts en Suisse, et les services liés à la vente (personnel, magasins) entrent dans le prix final. Mais la gravitation vers les prix étrangers est freinée par plusieurs obstacles que Smith aurait reconnus : des fournisseurs étrangers qui fixent des prix différents selon les pays et refusent de livrer les distributeurs suisses aux conditions européennes, des contrats de distribution exclusifs, des normes techniques ou d’étiquetage spécifiques, et une agriculture protégée par des droits de douane élevés. Les importations parallèles et les achats transfrontaliers jouent le rôle de la concurrence ; les règles adoptées en 2022 contre le pouvoir de marché relatif cherchent à les faciliter. Le débat porte sur la part respective des coûts réels et des obstacles à la concurrence."
+      q: "Pourquoi un même produit, un smartphone, un médicament ou une voiture, coûte-t-il souvent beaucoup plus cher dans certains pays que chez leurs voisins ?",
+      r: "Une partie de l’écart correspond à un prix naturel plus élevé : salaires, loyers, impôts et coûts logistiques diffèrent d’un pays à l’autre, et les services liés à la vente entrent dans le prix final. Mais la gravitation vers un prix commun est freinée par plusieurs obstacles que Smith aurait reconnus : des fabricants qui fixent des prix différents selon les pays et organisent leur distribution pour empêcher les revendeurs d’acheter là où c’est moins cher, des normes ou des homologations nationales, et des droits de douane. Les médicaments en sont un exemple frappant : leur prix est souvent bien plus élevé aux États-Unis qu’en Europe, où il est négocié par les pouvoirs publics. Les importations parallèles et les achats transfrontaliers jouent le rôle de la concurrence ; le marché unique européen et des règles comme celles adoptées en Suisse en 2022 contre les prix imposés par des fournisseurs puissants cherchent à les faciliter. Le débat porte sur la part respective des coûts réels et des obstacles à la concurrence."
     },
     lectures: [
       ["Accessible", "Adam Smith, La Richesse des nations (1776), livre I, chapitre 7, un chapitre court et limpide."],
@@ -321,7 +321,7 @@ ${gravitation}
       objections: "Rendements croissants, pouvoir de marché, temps de l’ajustement, demande, école autrichienne.",
       ecoles: "Scolastiques, Cantillon, Smith, Ricardo et Marx, Marshall, Walras.",
       source: "Smith, 1776 : le prix central vers lequel gravitent les prix.",
-      quiz: "Six questions corrigées et une question sur les prix suisses.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

@@ -129,8 +129,8 @@ ${fuites}
       o: ["Dans le premier, car une grande partie de la dépense profite aux producteurs étrangers", "Dans le second, car il produit davantage lui-même", "Il sera identique dans les deux", "Dans le second, car ses importations sont plus chères"], c: 0,
       e: "Plus une économie est ouverte, plus les fuites vers l’étranger sont importantes." },
     ouverte: {
-      q: "En cas de forte récession, la Suisse devrait-elle lancer un grand plan de relance budgétaire, malgré son multiplicateur faible ?",
-      r: "Le faible multiplicateur suisse, dû à l’ouverture de l’économie, réduit l’efficacité d’une relance par la dépense : une partie importante soutient l’activité des pays voisins. C’est un argument pour privilégier les stabilisateurs automatiques et le chômage partiel, qui ont fait leurs preuves en 2009 et en 2020, plutôt que des programmes d’investissement lancés dans l’urgence. Mais deux nuances s’imposent. D’abord, certaines dépenses ont un contenu local élevé, comme la construction, les services ou la rénovation énergétique des bâtiments, et donc un multiplicateur plus fort. Ensuite, si toute l’Europe est en récession, une relance coordonnée bénéficie à chacun, car les dépenses des voisins soutiennent aussi les exportations suisses. Le frein à l’endettement laisse d’ailleurs une marge en récession, puisqu’il autorise des déficits conjoncturels."
+      q: "En cas de forte récession, un petit pays très ouvert, dont le multiplicateur est faible, devrait-il lancer un grand plan de relance budgétaire ?",
+      r: "Un multiplicateur faible, dû à l’ouverture de l’économie, réduit l’efficacité d’une relance par la dépense : une partie importante soutient l’activité des pays voisins. C’est un argument pour privilégier les stabilisateurs automatiques et le chômage partiel, qui ont fait leurs preuves en 2009 et en 2020, plutôt que des programmes d’investissement lancés dans l’urgence. Mais deux nuances s’imposent. D’abord, certaines dépenses ont un contenu local élevé, comme la construction, les services ou la rénovation énergétique des bâtiments, et donc un multiplicateur plus fort. Ensuite, si toute une région du monde est en récession, une relance coordonnée bénéficie à chacun, car les dépenses des voisins soutiennent aussi les exportations : c’est l’un des arguments du plan de relance européen de 2020, financé en commun."
     },
     lectures: [
       ["Accessible", "Paul Krugman, Sortez-nous de cette crise… maintenant !, 2012, chapitres sur la relance."],
@@ -169,7 +169,7 @@ ${vagues}
       objections: "Éviction, équivalence ricardienne, qualité de la dépense, dette.",
       ecoles: "Kahn, Keynes, Samuelson, Friedman, Barro, Krugman et Blanchard.",
       source: "Keynes, 1936 : les bouteilles de billets enterrées.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur une relance suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -302,8 +302,8 @@ ${misere}
       o: ["Parce que l’énergie plus chère fait monter les prix tout en freinant la production", "Parce que le gaz plus cher fait baisser les prix", "Parce qu’il augmente la demande des ménages", "Parce qu’il fait disparaître le chômage"], c: 0,
       e: "Comme en 1973, un choc sur le coût de l’énergie pousse les prix à la hausse et la production à la baisse." },
     ouverte: {
-      q: "La Suisse a mieux traversé l’inflation de 2022 que la plupart des pays européens. Est-ce le fruit de sa politique monétaire, de la force du franc ou de son mix énergétique ?",
-      r: "Les trois facteurs ont joué. L’inflation suisse a culminé autour de 3,5 % en 2022, contre plus de 10 % dans la zone euro. La force du franc a réduit le prix des importations, notamment de l’énergie, et la BNS a laissé le franc s’apprécier tout en relevant ses taux dès juin 2022, avant la BCE. La structure énergétique suisse, avec beaucoup d’hydroélectricité et de nucléaire et une part limitée du gaz, a amorti le choc. Les prix réglementés de l’électricité, fixés une fois par an, ont retardé la répercussion des hausses. Enfin, la crédibilité de la BNS, construite depuis les années 1970, a contribué à garder les anticipations d’inflation basses. La leçon de la stagflation des années 1970 reste valable : la crédibilité de la politique monétaire et la diversification énergétique réduisent fortement le coût d’un choc d’offre."
+      q: "En 2022, l’inflation a été bien plus faible au Japon, en Chine ou en Suisse qu’au Royaume-Uni ou en Europe centrale. Qu’est-ce qui explique ces écarts face au même choc ?",
+      r: "Plusieurs facteurs ont joué. La dépendance au gaz russe et la structure énergétique d’abord : les pays très dépendants du gaz, comme une grande partie de l’Europe centrale, ont subi le choc de plein fouet, alors que ceux qui produisent beaucoup d’électricité hydraulique ou nucléaire l’ont amorti. Le taux de change ensuite : une monnaie qui s’apprécie, comme le franc suisse, réduit le prix des importations, alors qu’une monnaie qui baisse l’augmente. Les politiques publiques aussi : en France, le blocage des tarifs de l’électricité et du gaz a contenu l’inflation, au prix d’un coût budgétaire élevé. La situation de départ comptait enfin : la Chine sortait de confinements qui freinaient la demande, et le Japon d’années de prix stables. La crédibilité de la banque centrale a aidé à garder les anticipations basses. La leçon de la stagflation des années 1970 reste valable : crédibilité monétaire et diversification énergétique réduisent fortement le coût d’un choc d’offre."
     },
     lectures: [
       ["Accessible", "Alan Blinder, A Monetary and Fiscal History of the United States, 1961-2021, 2022, chapitres sur les années 1970."],
@@ -342,7 +342,7 @@ ${offre}
       objections: "Le procès du keynésianisme, sa défense, le coût de la désinflation, la politique des revenus.",
       ecoles: "Synthèse keynésienne, Friedman et Phelps, Lucas, Galbraith, banquiers centraux.",
       source: "Macleod, 1965 : le pire des deux mondes.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur l’inflation suisse de 2022.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

@@ -119,8 +119,8 @@ ${trappe}
       o: ["La banque centrale seule ne suffit plus : la dépense publique doit prendre le relais", "Il faut relever fortement les taux", "Les entreprises vont forcément investir bientôt", "Il faut supprimer l’argent liquide"], c: 0,
       e: "Dans une trappe à liquidité, la politique monétaire perd son efficacité : c’est l’argument pour la relance budgétaire." },
     ouverte: {
-      q: "Entre 2015 et 2022, la BNS a maintenu un taux directeur de −0,75 %. Qui en a profité et qui en a souffert en Suisse ?",
-      r: "Les gagnants principaux sont les emprunteurs, notamment les propriétaires immobiliers dont les hypothèques à taux bas ont coûté peu, l’industrie d’exportation, protégée d’une appréciation encore plus forte du franc, et les détenteurs d’actifs dont la valeur a augmenté. Les perdants sont les épargnants, dont les comptes ne rapportaient rien et qui se voyaient parfois appliquer des frais, les caisses de pension, qui ont peiné à obtenir le rendement nécessaire pour financer les rentes, ce qui a contribué à la baisse des taux de conversion, et les jeunes ménages, confrontés à la hausse des prix immobiliers. Les banques ont vu leurs marges comprimées, même si la BNS a exempté une partie de leurs réserves. Le bilan dépend du point de comparaison : sans taux négatifs, le franc se serait sans doute encore apprécié, avec des pertes d’emplois industriels."
+      q: "Entre 2014 et 2022, plusieurs banques centrales, dont la BCE, la Banque du Japon et la banque centrale de Suède, ont appliqué des taux négatifs. Qui en a profité et qui en a souffert ?",
+      r: "Les gagnants principaux sont les emprunteurs, notamment les propriétaires immobiliers dont les prêts à taux bas ont coûté peu, les États, qui ont emprunté à des taux nuls ou négatifs, les entreprises exportatrices, protégées d’une appréciation de leur monnaie, et les détenteurs d’actifs dont la valeur a augmenté. Les perdants sont les épargnants, dont les comptes ne rapportaient rien, les caisses de pension et les assureurs, qui ont peiné à obtenir le rendement nécessaire pour financer les rentes, et les jeunes ménages, confrontés à la hausse des prix immobiliers. Les banques ont vu leurs marges comprimées, même si les banques centrales ont exempté une partie de leurs réserves. Le bilan dépend du point de comparaison : sans taux négatifs, la croissance aurait sans doute été plus faible et le risque de déflation plus élevé."
     },
     lectures: [
       ["Accessible", "Paul Krugman, Pourquoi les crises reviennent toujours (The Return of Depression Economics), 2009."],
@@ -159,7 +159,7 @@ ${motifs}
       objections: "Friedman, l’effet Pigou, la récession de bilan, les effets secondaires des taux bas.",
       ecoles: "Keynes, Hicks, Friedman, Krugman, Minsky, Summers.",
       source: "Keynes, 1936 : l’intérêt, récompense de la renonciation à la liquidité.",
-      quiz: "Six questions corrigées et une question sur les taux négatifs suisses.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -269,7 +269,7 @@ ${valeur}
       o: ["Les frais, car éviter une perte motive davantage qu’obtenir un gain", "La réduction, car les gains comptent davantage que les pertes", "Les deux ont exactement le même effet", "Aucune, car les clients ne lisent pas les conditions"], c: 0,
       e: "Les deux présentations sont équivalentes en argent, mais la perte pèse plus lourd." },
     ouverte: {
-      q: "Au moment de la retraite, de nombreux assurés suisses peuvent choisir de toucher leur avoir du deuxième pilier sous forme de rente ou de capital. Comment l’aversion aux pertes et le cadrage peuvent-ils influencer ce choix ?",
+      q: "Dans plusieurs pays, comme le Royaume-Uni ou les Pays-Bas, les futurs retraités peuvent toucher tout ou partie de leur épargne retraite en capital plutôt qu’en rente. Comment l’aversion aux pertes et le cadrage peuvent-ils influencer ce choix ?",
       r: "Le capital apparaît souvent comme un gain tangible, une somme que l’on possède, tandis que la rente peut être perçue comme une perte si l’on meurt tôt (« j’aurai cotisé pour rien »), ce qui pousse vers le capital. À l’inverse, présenter la rente comme une assurance contre le risque de manquer d’argent en vivant très longtemps peut la rendre plus attractive. La façon dont la caisse de pension présente les options, l’ordre des informations et l’option par défaut influencent donc fortement le résultat. Un économiste classique comparerait la valeur actuelle des deux options selon l’espérance de vie, les taux et la fiscalité ; un économiste comportemental ajouterait qu’il faut aider les assurés à éviter les biais, par exemple en présentant les deux options de manière symétrique, en termes de revenu mensuel et de risque."
     },
     lectures: [

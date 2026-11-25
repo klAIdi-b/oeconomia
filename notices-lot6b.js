@@ -128,8 +128,8 @@ ${rand}
       o: ["Les utilisateurs feront moins attention aux vélos, et les réparations augmenteront", "Les vélos seront mieux entretenus", "Aucun changement de comportement", "Les utilisateurs louent moins de vélos"], c: 0,
       e: "Quand on ne supporte pas les conséquences de ses actes, on fait moins attention." },
     ouverte: {
-      q: "Faut-il augmenter la franchise minimale de la LAMal, aujourd’hui de 300 francs, pour freiner la hausse des primes ?",
-      r: "La théorie de l’aléa moral et l’expérience RAND suggèrent qu’une participation plus élevée réduit la consommation de soins, et donc les coûts. Le Parlement suisse a d’ailleurs discuté à plusieurs reprises d’une hausse de la franchise minimale. Mais l’effet n’est pas uniforme : les personnes aux revenus modestes réduisent aussi des soins utiles, comme le suivi de maladies chroniques ou la prévention, ce qui peut entraîner plus tard des hospitalisations coûteuses. Les personnes à faible revenu bénéficient de réductions de primes, mais pas de réductions de franchise. Une hausse générale aurait donc un effet régressif. Certains économistes proposent plutôt de moduler la participation selon l’utilité des soins, en la supprimant pour les traitements dont l’efficacité est prouvée et en l’augmentant pour les autres, une approche dite « fondée sur la valeur »."
+      q: "Faut-il augmenter la part des frais médicaux payée par les patients, par exemple les franchises, pour freiner la hausse des dépenses de santé ?",
+      r: "La théorie de l’aléa moral et l’expérience RAND suggèrent qu’une participation plus élevée réduit la consommation de soins, et donc les coûts. De nombreux pays l’appliquent sous différentes formes : franchises en Suisse ou aux Pays-Bas, tickets modérateurs en France, contrats à forte franchise aux États-Unis. Mais l’effet n’est pas uniforme : les personnes aux revenus modestes réduisent aussi des soins utiles, comme le suivi de maladies chroniques ou la prévention, ce qui peut entraîner plus tard des hospitalisations coûteuses. Une hausse générale aurait donc un effet régressif. Certains économistes proposent plutôt de moduler la participation selon l’utilité des soins, en la supprimant pour les traitements dont l’efficacité est prouvée et en l’augmentant pour les autres, une approche dite « fondée sur la valeur »."
     },
     lectures: [
       ["Accessible", "Tim Harford, The Undercover Economist, 2005, chapitre sur l’assurance."],
@@ -168,7 +168,7 @@ ${rand}
       objections: "Un concept trop extensible, les motivations intrinsèques, la protection sociale, les sauvetages.",
       ecoles: "Arrow et Pauly, Jensen et Meckling, Holmström et Hart, Minsky, Frey.",
       source: "Pauly, 1968 : non pas une perversion morale, mais un comportement rationnel.",
-      quiz: "Six questions corrigées et une question sur la franchise minimale.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -295,8 +295,8 @@ ${contrib}
       o: ["Chacun peut espérer en profiter sans payer, et la collecte risque de ne pas suffire", "Le système sera trop utilisé", "Les habitants paieront trop", "Le système ne protégera que les donateurs"], c: 0,
       e: "C’est le problème du passager clandestin, typique des biens publics." },
     ouverte: {
-      q: "Le modèle de la Rega, un service vital financé par des donateurs volontaires, pourrait-il être étendu à d’autres services publics en Suisse ?",
-      r: "Le succès de la Rega repose sur des conditions particulières : un service très visible et apprécié, une forte identification nationale, et surtout un lien entre la contribution et un avantage personnel, la prise en charge des frais non couverts. Ces conditions transforment en partie un bien public en bien de club, ce qui limite le passager clandestin. Elles sont difficiles à reproduire pour des services moins spectaculaires ou dont le bénéfice est diffus, comme la défense, la recherche fondamentale ou l’entretien des infrastructures. Le financement volontaire pose aussi des questions d’équité : les services financés par des dons dépendent de la générosité et de la popularité, pas forcément des besoins. Il peut cependant compléter utilement le financement public pour des services où la motivation des contributeurs et le contrôle social sont forts, comme les sociétés de sauvetage, le patrimoine local ou certaines activités culturelles."
+      q: "Des services vitaux, comme le sauvetage en mer au Royaume-Uni ou le sauvetage aérien en Suisse, sont financés en grande partie par des dons. Ce modèle pourrait-il être étendu à d’autres services publics ?",
+      r: "Le succès de ces organisations, la RNLI britannique ou la Rega suisse, repose sur des conditions particulières : un service très visible et apprécié, une forte identification nationale, et parfois un lien entre la contribution et un avantage personnel, comme la prise en charge des frais pour les donateurs de la Rega. Ces conditions transforment en partie un bien public en bien de club, ce qui limite le passager clandestin. Elles sont difficiles à reproduire pour des services moins spectaculaires ou dont le bénéfice est diffus, comme la défense, la recherche fondamentale ou l’entretien des infrastructures. Le financement volontaire pose aussi des questions d’équité : les services financés par des dons dépendent de la générosité et de la popularité, pas forcément des besoins. Il peut cependant compléter utilement le financement public pour des services où la motivation des contributeurs et le contrôle social sont forts, comme le patrimoine local ou certaines activités culturelles."
     },
     lectures: [
       ["Accessible", "Ronald Coase, « The Lighthouse in Economics », Journal of Law and Economics, 1974, très lisible."],
@@ -335,7 +335,7 @@ ${matrice}
       objections: "Moins de passagers clandestins que prévu, un argument qui sert à tout, une frontière politique, les besoins mal évalués.",
       ecoles: "Hume, Smith et Mill, Wicksell et Lindahl, Samuelson et Musgrave, Coase et Buchanan, Ostrom et Nordhaus.",
       source: "Hume, 1739 : deux voisins peuvent drainer un pré, pas mille.",
-      quiz: "Six questions corrigées et une question sur le modèle de la Rega.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

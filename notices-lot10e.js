@@ -128,8 +128,8 @@ ${coordination}
       o: ["Un dilemme du prisonnier : l’intérêt de chacun conduit à une issue mauvaise pour les deux", "Un jeu de coordination à plusieurs équilibres", "Un monopole", "Une situation sans interaction entre les deux pays"], c: 0,
       e: "Chacun a intérêt à pêcher plus quoi que fasse l’autre, et tous deux y perdent : seul un accord surveillé peut l’éviter." },
     ouverte: {
-      q: "La Suisse émet environ 0,1 % des gaz à effet de serre mondiaux sur son territoire. A-t-elle intérêt à réduire ses émissions si les grands pays ne le font pas ?",
-      r: "La théorie des jeux éclaire le dilemme. Si chaque pays raisonne seul, il a intérêt à laisser les autres faire l’effort : la réduction d’un petit pays ne change presque rien au climat, et lui coûte. Si tous raisonnent ainsi, personne n’agit et tous en souffrent. Plusieurs arguments plaident pourtant pour l’action. Les engagements internationaux reposent sur la réciprocité : un pays qui n’agit pas affaiblit la confiance et la pression sur les autres. La Suisse est très exposée au réchauffement, avec ses glaciers et ses Alpes, et son empreinte réelle est plus élevée si l’on compte les émissions liées aux biens importés. Agir tôt peut aussi développer des technologies et des savoir-faire exportables. D’autres soulignent le coût pour l’économie et les ménages, le risque de déplacer la production polluante à l’étranger, et l’intérêt d’agir surtout là où chaque franc réduit le plus d’émissions, y compris par des projets à l’étranger. La réponse dépend de la confiance accordée à la coopération internationale et de la responsabilité qu’on attribue aux pays riches."
+      q: "Un petit pays qui émet une part infime des gaz à effet de serre mondiaux a-t-il intérêt à réduire ses émissions si les grands pays ne le font pas ?",
+      r: "La théorie des jeux éclaire le dilemme. Si chaque pays raisonne seul, il a intérêt à laisser les autres faire l’effort : la réduction d’un petit pays ne change presque rien au climat, et lui coûte. Si tous raisonnent ainsi, personne n’agit et tous en souffrent. Plusieurs arguments plaident pourtant pour l’action. Les engagements internationaux reposent sur la réciprocité : un pays qui n’agit pas affaiblit la confiance et la pression sur les autres. Beaucoup de petits pays sont très exposés au réchauffement, des îles du Pacifique aux pays de montagne, et leur empreinte réelle est souvent plus élevée si l’on compte les émissions liées aux biens importés. Agir tôt peut aussi développer des technologies et des savoir-faire exportables, comme l’éolien au Danemark. D’autres soulignent le coût pour l’économie et les ménages, le risque de déplacer la production polluante à l’étranger, et l’intérêt d’agir là où chaque euro réduit le plus d’émissions. La réponse dépend de la confiance accordée à la coopération internationale et de la responsabilité qu’on attribue aux pays riches."
     },
     lectures: [
       ["Accessible", "Robert Axelrod, Comment réussir dans un monde d’égoïstes, Odile Jacob, 1992."],
@@ -167,7 +167,7 @@ ${dilemme}
       objections: "Des joueurs moins rationnels, plusieurs équilibres, les communs d’Ostrom.",
       ecoles: "Cournot, von Neumann et Morgenstern, Nash, Schelling, Tirole, Ostrom et Kahneman.",
       source: "La définition de Nash, en une page.",
-      quiz: "Six questions corrigées et une question sur le climat et la Suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Six lectures classées par niveau."
     }
   };

@@ -141,8 +141,8 @@ ${echelle}
       o: ["La demande est élastique, et la recette de la compagnie baisse", "La demande est inélastique (environ −0,2), et la recette de la compagnie augmente", "L’élasticité vaut −5", "On ne peut rien dire sans connaître le prix de l’essence"], c: 1,
       e: "−4 % ÷ 20 % = −0,2 : la quantité réagit bien moins que le prix, donc la recette augmente." },
     ouverte: {
-      q: "Faut-il taxer les boissons sucrées en Suisse, comme le fait le Royaume-Uni depuis 2018 ?",
-      r: "L’élasticité aide à poser les termes du débat. La demande de boissons sucrées est en général plus élastique que celle du tabac, parce qu’il existe des substituts proches : l’eau, les boissons sans sucre ou moins sucrées. Une taxe peut donc réduire la consommation, et c’est d’ailleurs ce qui s’est passé au Royaume-Uni, où de nombreux fabricants ont réduit la teneur en sucre de leurs boissons pour y échapper. Ses partisans y voient un moyen de prévenir l’obésité et le diabète, dont les coûts pèsent sur l’assurance maladie (<a href=\"#c-externalite\">voir externalité</a>). Ses adversaires soulignent qu’une telle taxe pèse plus lourd, en proportion, sur les ménages modestes, qu’elle restreint la liberté de choix, et que d’autres moyens existent : la Suisse a jusqu’ici privilégié des engagements volontaires de l’industrie, comme la déclaration de Milan de 2015 sur la réduction du sucre dans les yaourts et les céréales. Le débat porte à la fois sur l’efficacité de la mesure et sur le rôle de l’État dans les choix de consommation."
+      q: "Faut-il taxer les boissons sucrées, comme le font le Mexique depuis 2014 ou le Royaume-Uni depuis 2018 ?",
+      r: "L’élasticité aide à poser les termes du débat. La demande de boissons sucrées est en général plus élastique que celle du tabac, parce qu’il existe des substituts proches : l’eau, les boissons sans sucre ou moins sucrées. Une taxe peut donc réduire la consommation : au Mexique, les achats de boissons taxées ont baissé d’environ 6 % la première année, et davantage chez les ménages modestes ; au Royaume-Uni, de nombreux fabricants ont réduit la teneur en sucre de leurs boissons pour échapper à la taxe. Ses partisans y voient un moyen de prévenir l’obésité et le diabète, dont les coûts pèsent sur les systèmes de santé (<a href=\"#c-externalite\">voir externalité</a>). Ses adversaires soulignent qu’une telle taxe pèse plus lourd, en proportion, sur les ménages modestes, qu’elle restreint la liberté de choix, et que d’autres moyens existent, comme les engagements volontaires de l’industrie que privilégient plusieurs pays, dont la Suisse. Le débat porte à la fois sur l’efficacité de la mesure et sur le rôle de l’État dans les choix de consommation."
     },
     lectures: [
       ["Accessible", "N. Gregory Mankiw et Mark P. Taylor, Principes de l’économie, De Boeck, chapitre sur l’élasticité."],
@@ -180,7 +180,7 @@ ${deuxCourbes}
       objections: "Un chiffre qui varie, des comportements insensibles au prix, la règle de Ramsey.",
       ecoles: "King et Davenant, Cournot, Marshall, Engel, Ramsey, Veblen.",
       source: "La définition de Marshall, en 1890.",
-      quiz: "Six questions corrigées et une question sur la taxe sur les boissons sucrées.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Six lectures classées par niveau."
     }
   };

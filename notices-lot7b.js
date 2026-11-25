@@ -133,8 +133,8 @@ ${fpp}
       o: ["Il coûte 20 millions : c’est ce à quoi la ville renonce en ne le vendant pas", "Il ne coûte rien, puisque la ville le possède déjà", "Il coûte seulement l’entretien futur du stade", "Il rapporte de l’argent, puisque le stade attire des visiteurs"], c: 0,
       e: "Le coût d’opportunité d’un bien qu’on possède est ce qu’on pourrait en tirer autrement." },
     ouverte: {
-      q: "La Suisse forme des jeunes très qualifiés par l’apprentissage plutôt que par l’université. Le coût d’opportunité des études longues justifie-t-il ce modèle ?",
-      r: "Le coût d’opportunité des études longues est réel : plusieurs années de salaire sacrifiées, que le supplément de revenu futur doit compenser. En Suisse, où l’apprentissage débouche sur des emplois bien rémunérés et où les passerelles vers les hautes écoles spécialisées existent, ce coût est particulièrement élevé, ce qui rend l’apprentissage rationnel pour beaucoup de jeunes. Mais la comparaison ne se limite pas aux salaires : les études universitaires ouvrent d’autres carrières, d’autres réseaux et une capacité d’adaptation qui peut compter face aux changements technologiques. Certains économistes s’inquiètent que les compétences très spécifiques de l’apprentissage deviennent obsolètes plus vite ; d’autres soulignent que la formation continue et la perméabilité du système suisse limitent ce risque. Le faible taux de chômage des jeunes en Suisse plaide plutôt en faveur du modèle."
+      q: "L’Allemagne, l’Autriche ou la Suisse forment une grande partie de leurs jeunes par l’apprentissage plutôt que par l’université. Le coût d’opportunité des études longues justifie-t-il ce modèle ?",
+      r: "Le coût d’opportunité des études longues est réel : plusieurs années de salaire sacrifiées, que le supplément de revenu futur doit compenser. Dans les pays où l’apprentissage débouche sur des emplois bien rémunérés et où des passerelles vers l’enseignement supérieur existent, ce coût est particulièrement élevé, ce qui rend l’apprentissage rationnel pour beaucoup de jeunes. Mais la comparaison ne se limite pas aux salaires : les études universitaires ouvrent d’autres carrières, d’autres réseaux et une capacité d’adaptation qui peut compter face aux changements technologiques. Certains économistes s’inquiètent que les compétences très spécifiques de l’apprentissage deviennent obsolètes plus vite ; d’autres soulignent que la formation continue limite ce risque. Le faible chômage des jeunes dans ces pays plaide en faveur du modèle, mais il repose sur des entreprises disposées à former, difficiles à reproduire ailleurs."
     },
     lectures: [
       ["Accessible", "Frédéric Bastiat, Ce qu’on voit et ce qu’on ne voit pas, 1850, texte court et vivant."],
@@ -173,7 +173,7 @@ ${fpp}
       objections: "L’incomparable, la subjectivité, le chômage, les coûts passés.",
       ecoles: "Bastiat, Green, Wieser, Mises et Buchanan, Becker, Kahneman et Thaler.",
       source: "Bastiat, 1850 : l’effet qu’on voit et ceux qu’il faut prévoir.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur l’apprentissage.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -303,8 +303,8 @@ ${plage}
       o: ["Les prix baissent et les quantités vendues augmentent", "Les prix montent, car il y a deux entreprises à rémunérer", "Rien ne change, car un monopole fixe déjà le juste prix", "La qualité baisse forcément"], c: 0,
       e: "Quelques concurrents suffisent déjà à réduire le pouvoir de marché." },
     ouverte: {
-      q: "Les prix en Suisse restent nettement supérieurs à ceux des pays voisins. Est-ce un problème de concurrence imparfaite, ou le reflet de salaires et de coûts plus élevés ?",
-      r: "Les deux facteurs jouent. Une partie importante de l’écart s’explique par des salaires, des loyers et des coûts de distribution plus élevés, ainsi que par un pouvoir d’achat qui permet aux consommateurs de payer davantage. Mais des études de la Confédération et de la COMCO ont aussi montré que certains fournisseurs étrangers pratiquent des « suppléments suisses » sur les mêmes produits, en empêchant les commerçants suisses de s’approvisionner à l’étranger aux prix pratiqués ailleurs. La concentration de la grande distribution autour de deux grands acteurs, les protections agricoles et certaines normes techniques propres à la Suisse limitent aussi la concurrence. Le contre-projet à l’initiative pour des prix équitables, en vigueur depuis 2022, permet aux entreprises suisses de s’approvisionner à l’étranger auprès d’entreprises puissantes aux conditions locales. Ses effets restent à évaluer, mais il s’attaque précisément au pouvoir de marché des fournisseurs."
+      q: "Quelques entreprises dominent la recherche en ligne, les réseaux sociaux ou la vente en ligne. Faut-il les démanteler ?",
+      r: "Plusieurs arguments plaident pour une action forte. Ces marchés présentent des effets de réseau puissants : plus une plateforme a d’utilisateurs, plus elle est attractive, ce qui rend la concurrence très difficile. Les géants rachètent souvent de jeunes concurrents prometteurs, et peuvent favoriser leurs propres services. En 2024, un juge américain a estimé que Google détenait un monopole illégal dans la recherche en ligne, et l’Union européenne impose depuis 2022 des obligations particulières aux plus grandes plateformes. D’autres économistes appellent à la prudence : ces services sont souvent gratuits pour les utilisateurs, ils financent beaucoup de recherche, et leur position peut être remise en cause par une nouvelle vague d’innovation, comme Schumpeter l’a décrit (<a href=\"#c-destruction-creatrice\">voir destruction créatrice</a>). Entre le démantèlement et le laisser-faire, le débat porte sur des règles d’interopérabilité, de portabilité des données et de contrôle des rachats."
     },
     lectures: [
       ["Accessible", "Thomas Philippon, The Great Reversal: How America Gave Up on Free Markets, 2019."],
@@ -343,7 +343,7 @@ ${structures}
       objections: "Innovation, marchés contestables, école de Chicago, retour des critiques.",
       ecoles: "Smith, Cournot et Bertrand, Robinson et Chamberlin, Hotelling et Nash, Schumpeter, Chicago et Tirole.",
       source: "Smith, 1776 : une conspiration contre le public.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur l’îlot de cherté.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

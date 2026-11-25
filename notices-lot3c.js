@@ -111,8 +111,8 @@ ${frontiere}
       o: ["Non, puisque des producteurs y perdent ; les gagnants pourraient toutefois indemniser les perdants", "Oui, puisque le gain total est positif", "Oui, si les consommateurs sont plus nombreux", "Non, et les gagnants ne pourraient pas indemniser les perdants"], c: 0,
       e: "C’est une amélioration au sens de Kaldor-Hicks, pas de Pareto : sans indemnisation, les perdants restent perdants." },
     ouverte: {
-      q: "La réforme AVS 21, acceptée en 2022, a relevé l’âge de la retraite des femmes à 65 ans. Comment l’analyser avec les critères de Pareto et de Kaldor-Hicks ?",
-      r: "Ce n’est pas une amélioration de Pareto : les femmes concernées travaillent un an de plus ou touchent leur rente plus tard, et sont donc perdantes, au moins à court terme. Selon le critère de Kaldor-Hicks, on peut soutenir que le gain collectif, stabilisation du financement de l’AVS et égalité formelle de l’âge de référence, dépasse ces pertes. La réforme comprenait d’ailleurs des mesures de compensation pour les générations de femmes les plus proches de la retraite, ce qui la rapproche d’une compensation effective, partielle. Mais juger si cette compensation était suffisante, et si l’égalité de l’âge était juste compte tenu des inégalités de salaires et de rentes entre femmes et hommes, suppose des jugements de valeur que ni Pareto ni Kaldor-Hicks ne tranchent. Le résultat très serré de la votation reflète ce désaccord sur l’équité, et non sur l’efficacité."
+      q: "Plusieurs pays ont relevé l’âge de la retraite ces dernières années, comme la France en 2023 ou la Suisse pour les femmes à partir de 2025. Comment analyser ces réformes avec les critères de Pareto et de Kaldor-Hicks ?",
+      r: "Ce ne sont pas des améliorations de Pareto : les personnes concernées travaillent plus longtemps ou touchent leur rente plus tard, et sont donc perdantes, au moins à court terme. Selon le critère de Kaldor-Hicks, on peut soutenir que le gain collectif, un financement plus stable des retraites pour les générations suivantes, dépasse ces pertes. Certaines réformes prévoient des compensations, par exemple pour les générations les plus proches de la retraite ou pour les carrières longues, ce qui les rapproche d’une indemnisation effective, partielle. Mais juger si ces compensations sont suffisantes, et si l’effort est équitablement réparti entre métiers pénibles et métiers de bureau, entre femmes et hommes, entre jeunes et retraités, suppose des jugements de valeur que ni Pareto ni Kaldor-Hicks ne tranchent. Les fortes oppositions qu’ont suscitées ces réformes portent sur l’équité plus que sur l’efficacité."
     },
     lectures: [
       ["Accessible", "Amartya Sen, Éthique et économie, 1987, une critique claire des limites de l’économie du bien-être."],
@@ -151,7 +151,7 @@ ${frontiere}
       objections: "Le silence sur l’équité, le biais du statu quo, les comparaisons inévitables, les préférences.",
       ecoles: "Smith, Walras et Pareto, Edgeworth, Samuelson-Arrow-Debreu, Hayek, Sen.",
       source: "Pareto, 1909 : la définition du maximum d’ophélimité.",
-      quiz: "Six questions corrigées et une question sur la réforme AVS 21.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -257,8 +257,8 @@ ${chaine}
       o: ["Le développement y est moindre, car les possibilités réelles de vie sont plus faibles", "Les deux pays sont aussi développés, puisque leur revenu est le même", "Le premier est plus développé, car il dépense moins pour l’école", "On ne peut rien dire sans connaître le bonheur déclaré"], c: 0,
       e: "Le développement se mesure aux libertés réelles, pas seulement au revenu." },
     ouverte: {
-      q: "La Suisse figure parmi les tout premiers pays au classement de l’IDH. Selon l’approche par les capabilités, quels groupes ou quelles dimensions mériteraient malgré tout une attention particulière ?",
-      r: "L’approche invite à regarder les personnes dont les facteurs de conversion sont défavorables : les personnes handicapées, dont l’accès à l’emploi et à la mobilité reste limité ; les personnes âgées isolées ; les personnes sans statut légal, qui ont un accès restreint aux soins et au travail déclaré ; les familles monoparentales, plus exposées à la pauvreté. Elle invite aussi à examiner les capabilités politiques, comme la participation des résidents étrangers, privés du droit de vote au niveau fédéral alors qu’ils représentent environ un quart de la population ; et l’égalité entre femmes et hommes, par exemple les écarts de salaires et de rentes ou l’accès aux structures d’accueil de l’enfance. Un indice global élevé peut coexister avec des privations réelles pour certains groupes, que seule une analyse plus fine révèle."
+      q: "Les pays en tête du classement de l’IDH, comme la Norvège ou l’Islande, n’ont-ils plus de privations à corriger ? Quels groupes l’approche par les capabilités inviterait-elle à regarder ?",
+      r: "L’approche invite à regarder les personnes dont les facteurs de conversion sont défavorables : les personnes handicapées, dont l’accès à l’emploi et à la mobilité reste limité ; les personnes âgées isolées ; les personnes sans statut légal, qui ont un accès restreint aux soins et au travail déclaré ; les familles monoparentales, plus exposées à la pauvreté. Elle invite aussi à examiner les capabilités politiques, comme la participation des résidents étrangers, souvent privés du droit de vote national alors qu’ils représentent une part importante de la population dans certains pays riches ; et l’égalité entre femmes et hommes, par exemple les écarts de salaires et de retraites ou l’accès aux structures d’accueil de l’enfance. Un indice global élevé peut coexister avec des privations réelles pour certains groupes, que seule une analyse plus fine révèle."
     },
     lectures: [
       ["Accessible", "Amartya Sen, Un nouveau modèle économique (Development as Freedom), 1999."],
@@ -297,7 +297,7 @@ ${chaine}
       objections: "Une approche vague, la mesure, le paternalisme, le débat avec Rawls.",
       ecoles: "Aristote, Smith, Mill, Pareto, Rawls, Duflo.",
       source: "Sen, 1999 : le développement comme expansion des libertés réelles.",
-      quiz: "Six questions corrigées et une question sur la Suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

@@ -117,8 +117,8 @@ ${sawtooth}
       o: ["Le risque de crise augmente justement parce que la période a été calme", "Le marché est sûr, puisque les prix montent depuis longtemps", "Les banques sont devenues plus prudentes", "Seule une hausse des salaires pourrait provoquer une crise"], c: 0,
       e: "La confiance accumulée pousse à s’endetter davantage avec des marges plus faibles." },
     ouverte: {
-      q: "Depuis 2013, la Suisse peut activer un « volant anticyclique de fonds propres » qui oblige les banques à détenir plus de capital pour leurs crédits hypothécaires quand l’immobilier s’emballe. En quoi cet outil s’inspire-t-il de Minsky, et quelles sont ses limites ?",
-      r: "L’outil est directement minskien : il agit pendant la phase de confiance, quand la fragilité s’accumule, en rendant le crédit un peu plus coûteux et en constituant des réserves qui serviront lors du retournement. La Suisse l’a activé dès 2013 sur les prêts hypothécaires, l’a relevé en 2014, suspendu pendant la pandémie, puis réactivé en 2022. Ses limites sont toutefois réelles : il est difficile de savoir quand une hausse des prix devient une bulle ; un supplément de fonds propres de quelques pourcents ne suffit pas à arrêter un emballement nourri par des taux très bas ; enfin, le crédit peut passer par des prêteurs non bancaires, comme les assurances ou les caisses de pension, qui ne sont pas concernés. L’outil réduit le risque sans supprimer le cycle."
+      q: "Depuis la crise de 2008, de nombreux pays peuvent obliger leurs banques à détenir plus de capital quand le crédit s’emballe : c’est le « volant anticyclique de fonds propres » prévu par les accords de Bâle III. En quoi cet outil s’inspire-t-il de Minsky, et quelles sont ses limites ?",
+      r: "L’outil est directement minskien : il agit pendant la phase de confiance, quand la fragilité s’accumule, en rendant le crédit un peu plus coûteux et en constituant des réserves qui serviront lors du retournement. Plusieurs pays l’ont activé, comme le Royaume-Uni, la Suède ou la Suisse, et beaucoup l’ont relâché en mars 2020 pour que les banques continuent de prêter pendant la pandémie. Ses limites sont toutefois réelles : il est difficile de savoir quand une hausse des prix devient une bulle ; un supplément de fonds propres de quelques pourcents ne suffit pas à arrêter un emballement nourri par des taux très bas ; enfin, le crédit peut passer par des prêteurs non bancaires, fonds d’investissement, assurances ou caisses de pension, qui ne sont pas concernés. L’outil réduit le risque sans supprimer le cycle."
     },
     lectures: [
       ["Accessible", "Charles Kindleberger et Robert Aliber, Manias, Panics, and Crashes, 7e éd., 2015. Le grand récit des crises financières, nourri par Minsky."],
@@ -157,7 +157,7 @@ ${regimes}
       objections: "Une théorie difficile à tester, les bons booms, l’aléa moral, la finance de l’ombre.",
       ecoles: "Keynes, Fisher, Schumpeter, Hayek, Friedman, Bernanke, Diamond et Dybvig.",
       source: "Minsky, 1992 : comment la prospérité prolongée transforme la structure financière.",
-      quiz: "Six questions corrigées et une question sur le volant anticyclique suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -281,8 +281,8 @@ ${deux}
       o: ["Elle diminue, car le surtravail passe de six à deux heures", "Elle augmente", "Elle ne change pas", "Elle disparaît entièrement"], c: 0,
       e: "C’est pourquoi la durée de la journée a été au cœur des luttes ouvrières du XIXe siècle." },
     ouverte: {
-      q: "Dans une économie de services comme la Suisse, où une grande partie de la valeur vient de la banque, de la pharmacie ou du conseil, la notion de plus-value garde-t-elle un sens ?",
-      r: "On peut défendre les deux positions. Un marxiste soulignera que le salarié d’une banque ou d’un laboratoire produit aussi plus de valeur qu’il n’en reçoit, et que la part élevée des profits dans ces secteurs illustre l’appropriation du surtravail ; il notera aussi que la Suisse capte une partie de la valeur produite ailleurs, par le négoce et la finance. Un critique répondra que la valeur d’un médicament tient à la recherche, aux brevets, au capital investi et au risque, et qu’il est impossible de la mesurer en heures de travail ; la notion de plus-value devient alors une métaphore plus qu’un outil. Entre les deux, beaucoup d’économistes retiennent la question posée par Marx, le partage de la valeur ajoutée entre salaires et profits, tout en la mesurant avec d’autres outils."
+      q: "Dans les économies de services, où une grande partie de la valeur vient de la banque, de la pharmacie ou du conseil, la notion de plus-value garde-t-elle un sens ?",
+      r: "On peut défendre les deux positions. Un marxiste soulignera que le salarié d’une banque ou d’un laboratoire produit aussi plus de valeur qu’il n’en reçoit, et que la part élevée des profits dans ces secteurs illustre l’appropriation du surtravail ; il notera aussi que certains pays, places financières ou centres de négoce, captent une partie de la valeur produite ailleurs. Un critique répondra que la valeur d’un médicament tient à la recherche, aux brevets, au capital investi et au risque, et qu’il est impossible de la mesurer en heures de travail ; la notion de plus-value devient alors une métaphore plus qu’un outil. Entre les deux, beaucoup d’économistes retiennent la question posée par Marx, le partage de la valeur ajoutée entre salaires et profits, tout en la mesurant avec d’autres outils."
     },
     lectures: [
       ["Accessible", "Karl Marx, Salaire, prix et profit, 1865. Une conférence devant des ouvriers, l’introduction la plus claire à sa théorie."],
@@ -321,7 +321,7 @@ ${journee}
       objections: "La valeur-travail, la transformation, l’entrepreneur et le risque, les prédictions démenties.",
       ecoles: "Smith et Ricardo, les socialistes ricardiens, Clark, Robinson, Sraffa, Piketty.",
       source: "Marx et l’image du capital vampire.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur l’économie suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

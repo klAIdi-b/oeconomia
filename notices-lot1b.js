@@ -123,8 +123,8 @@ ${weimar}
       o: ["Une hausse des prix extrêmement rapide", "Une baisse des prix", "Une hausse de la production", "Aucun effet sur les prix"], c: 0,
       e: "Plus de monnaie pour moins de biens : le pays a connu l’une des pires hyperinflations de l’histoire, en 2007-2008." },
     ouverte: {
-      q: "Le franc suisse a perdu beaucoup moins de pouvoir d’achat que la plupart des monnaies depuis un siècle. Comment la théorie quantitative peut-elle l’expliquer, et que laisse-t-elle de côté ?",
-      r: "La théorie quantitative suggère que la Banque nationale suisse a fait croître la monnaie à peu près au rythme de la production réelle, et que les finances publiques suisses, relativement saines, n’ont jamais exigé un financement monétaire des déficits. Mais d’autres éléments comptent : l’indépendance et la crédibilité de la BNS, qui ancrent les anticipations ; le statut de valeur refuge du franc, qui attire les capitaux et l’apprécie en période de crise, rendant les importations moins chères ; enfin, le fédéralisme et la démocratie directe, qui ont limité l’endettement public. La théorie quantitative décrit le résultat, mais les institutions expliquent pourquoi la monnaie a été gérée ainsi."
+      q: "Certaines monnaies, comme l’ancien mark allemand ou le franc suisse, ont perdu bien moins de pouvoir d’achat que les autres au XXe siècle. Comment la théorie quantitative peut-elle l’expliquer, et que laisse-t-elle de côté ?",
+      r: "La théorie quantitative suggère que ces banques centrales ont fait croître la monnaie à peu près au rythme de la production réelle, et que les finances publiques n’ont pas exigé de financement monétaire des déficits. Mais d’autres éléments comptent. La crédibilité de la banque centrale ancre les anticipations : la Bundesbank, créée après la guerre dans un pays marqué par l’hyperinflation de 1923, a fait de la stabilité des prix une priorité largement soutenue par l’opinion. Le statut de valeur refuge, pour le franc, attire les capitaux et l’apprécie en période de crise, ce qui rend les importations moins chères. Enfin, des institutions comme le fédéralisme ou des règles budgétaires ont limité l’endettement public. La théorie quantitative décrit le résultat ; les institutions et l’histoire expliquent pourquoi la monnaie a été gérée ainsi."
     },
     lectures: [
       ["Accessible", "Milton Friedman, Money Mischief: Episodes in Monetary History, 1992. Une série d’histoires monétaires racontées par le grand défenseur de la théorie."],
@@ -163,7 +163,7 @@ ${weimar}
       objections: "Vitesse instable, monnaie endogène, loi de Goodhart, chocs d’offre, théorie budgétaire.",
       ecoles: "Aristote et Oresme, Ricardo, Keynes, Friedman, Hayek et Cantillon, la théorie monétaire moderne.",
       source: "Hume, 1752 : la hausse des prix ne suit pas immédiatement l’afflux de monnaie.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur le franc suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -287,8 +287,8 @@ ${ladder}
       o: ["Une innovation qui crée de nouveaux services et fragilise les compagnies de taxis traditionnelles", "Une simple baisse de prix entre services identiques", "Une politique publique de l’emploi", "Un monopole qui empêche toute innovation"], c: 0,
       e: "Une nouvelle organisation du service remplace en partie l’ancienne : c’est la destruction créatrice." },
     ouverte: {
-      q: "La crise horlogère des années 1970-1980 a fait disparaître une grande partie des emplois de l’Arc jurassien, avant la renaissance de l’industrie. Que peut faire une région pour traverser une vague de destruction créatrice ?",
-      r: "L’exemple suisse suggère plusieurs leviers. Conserver et transformer les compétences : le savoir-faire en micromécanique a servi à la Swatch, mais aussi aux technologies médicales et à la microtechnique. Favoriser la réorganisation industrielle, ici la fusion des groupes en difficulté et l’automatisation. Accompagner les travailleurs par l’assurance chômage, la formation continue et l’apprentissage, qui facilite les reconversions. Enfin, ne pas chercher à protéger l’ancien produit à tout prix : la renaissance est venue d’une innovation, non du sauvetage de la montre mécanique bon marché. Un sceptique rappellera que tous les travailleurs licenciés n’en ont pas profité, et que la reprise a pris plus d’une décennie."
+      q: "Détroit avec l’automobile, la Lorraine avec la sidérurgie, l’Arc jurassien avec l’horlogerie : que peut faire une région pour traverser une vague de destruction créatrice ?",
+      r: "Les exemples contrastés suggèrent plusieurs leviers. Conserver et transformer les compétences : dans l’Arc jurassien, le savoir-faire en micromécanique a servi à la Swatch, mais aussi aux technologies médicales. Pittsburgh, ancienne capitale de l’acier, s’est reconvertie autour de ses universités et de ses hôpitaux. Favoriser la réorganisation et l’arrivée de nouvelles entreprises plutôt que protéger l’ancien produit à tout prix. Accompagner les travailleurs par l’assurance chômage, la formation continue et la mobilité. À l’inverse, Détroit, très dépendante d’une seule industrie, a perdu plus de la moitié de sa population depuis 1950 et a fait faillite en 2013. Un sceptique rappellera que tous les travailleurs licenciés ne profitent pas de la renaissance d’une région, et que les reconversions prennent souvent plus d’une décennie."
     },
     lectures: [
       ["Accessible", "Philippe Aghion, Céline Antonin et Simon Bunel, Le Pouvoir de la destruction créatrice, 2020. Une synthèse claire par l’un des lauréats du Nobel 2025."],
@@ -327,7 +327,7 @@ ${cycle}
       objections: "Perdants concentrés, géants qui bloquent, direction du progrès, environnement, avenir du capitalisme.",
       ecoles: "Marx, Hayek, Keynes, Ricardo, Mokyr, Acemoglu et Robinson.",
       source: "Schumpeter, 1942 : l’impulsion fondamentale de la machine capitaliste.",
-      quiz: "Six questions corrigées et une question sur l’Arc jurassien.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

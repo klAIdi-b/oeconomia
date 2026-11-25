@@ -131,8 +131,8 @@ ${epargneInv}
       o: ["Davantage d’investissement public, par exemple dans les infrastructures", "Une hausse rapide des taux d’intérêt", "Une réduction de la dépense publique", "Une hausse des droits de douane"], c: 0,
       e: "Quand la politique monétaire bute sur le plancher des taux, l’investissement public peut absorber l’excès d’épargne." },
     ouverte: {
-      q: "La Suisse, avec sa population vieillissante, son épargne élevée et sa faible dette publique, devrait-elle emprunter davantage pour investir, comme le recommande Summers ?",
-      r: "Les arguments en faveur sont réels : la Confédération emprunte à des taux très bas, les besoins d’investissement sont importants (transition énergétique, transports, logement), et la dette publique suisse est parmi les plus faibles des pays riches. Mais le frein à l’endettement, accepté par 85 % des votants en 2001, oblige la Confédération à équilibrer ses comptes sur un cycle conjoncturel, et il jouit d’un large soutien. Ses défenseurs soulignent qu’il a protégé la Suisse des dérives budgétaires et que la remontée des taux depuis 2022 a réduit l’argument de la dette gratuite. Les économistes favorables à plus d’investissement proposent plutôt d’assouplir le frein pour les dépenses d’investissement, une « règle d’or », que de l’abandonner. Le débat suisse illustre bien la tension entre la prudence budgétaire et la théorie de la stagnation séculaire."
+      q: "Un pays riche dont la population vieillit, dont l’épargne est élevée et la dette publique faible, comme l’Allemagne ou la Suisse, devrait-il emprunter davantage pour investir, comme le recommande Summers ?",
+      r: "Les arguments en faveur sont réels : ces États empruntent à des taux bas, les besoins d’investissement sont importants (transition énergétique, transports, logement, défense), et leur dette publique est parmi les plus faibles des pays riches. Mais tous deux se sont donné un « frein à l’endettement » inscrit dans la Constitution, en 2001 pour la Suisse et en 2009 pour l’Allemagne, qui limite les déficits structurels. Ses défenseurs soulignent qu’il protège des dérives budgétaires et que la remontée des taux depuis 2022 a réduit l’argument de la dette gratuite. Ses critiques jugent qu’il a conduit à négliger les infrastructures. En 2025, l’Allemagne a d’ailleurs assoupli sa règle pour financer la défense et un grand fonds d’investissement. Beaucoup d’économistes proposent une « règle d’or », qui exclurait l’investissement public du calcul du déficit, plutôt que l’abandon de toute règle. Le débat illustre la tension entre prudence budgétaire et théorie de la stagnation séculaire."
     },
     lectures: [
       ["Accessible", "Lawrence Summers, « The Age of Secular Stagnation », Foreign Affairs, mars-avril 2016."],
@@ -171,7 +171,7 @@ ${epargneInv}
       objections: "Le cycle de la dette, la critique de la BRI, un taux inobservable, l’innovation à venir.",
       ecoles: "Wicksell, Keynes, Hansen, Summers et Krugman, Gordon, Rogoff et la BRI.",
       source: "Hansen, 1939 : des reprises maladives qui meurent dans l’œuf.",
-      quiz: "Six questions corrigées et une question sur le frein à l’endettement.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -299,8 +299,8 @@ ${solutions}` },
       o: ["Les avis et les notes laissés par les voyageurs précédents, qui créent une réputation", "Des prix identiques pour tous les logements", "L’interdiction des photos", "Le paiement en liquide à l’arrivée"], c: 0,
       e: "La réputation remplace l’information que l’acheteur ne peut pas vérifier lui-même." },
     ouverte: {
-      q: "Faut-il autoriser les caisses maladie suisses à utiliser des données de santé, par exemple des montres connectées, pour moduler les primes de l’assurance de base ?",
-      r: "Du point de vue de la théorie de l’information, ces données réduiraient l’asymétrie entre assuré et assureur, et pourraient encourager des comportements plus sains, réduisant l’aléa moral. Mais l’assurance de base suisse repose sur un choix de solidarité : la prime ne dépend pas de l’état de santé. Moduler les primes selon les données reviendrait à faire payer davantage les malades et les personnes à risque, souvent pour des raisons génétiques ou sociales qu’elles ne contrôlent pas. C’est pourquoi la LAMal l’interdit dans l’assurance de base, alors que les assurances complémentaires peuvent sélectionner leurs clients. Le débat porte sur la frontière entre ces deux mondes, et sur la protection des données de santé."
+      q: "Faut-il autoriser les assureurs maladie à utiliser des données de santé, par exemple celles des montres connectées, pour moduler les primes ?",
+      r: "Du point de vue de la théorie de l’information, ces données réduiraient l’asymétrie entre assuré et assureur, et pourraient encourager des comportements plus sains, réduisant l’aléa moral. Mais beaucoup de pays ont fait un choix de solidarité pour l’assurance de base : la prime ne dépend pas de l’état de santé. C’est le cas en Allemagne, aux Pays-Bas ou en Suisse, et aux États-Unis, la réforme de 2010 a interdit de faire payer davantage les personnes déjà malades. Moduler les primes selon les données reviendrait à faire payer davantage les malades et les personnes à risque, souvent pour des raisons génétiques ou sociales qu’elles ne contrôlent pas, et pourrait relancer la sélection adverse que l’assurance obligatoire cherche à éviter. Les assurances complémentaires, elles, peuvent souvent sélectionner leurs clients. Le débat porte sur la frontière entre ces deux mondes, et sur la protection des données de santé."
     },
     lectures: [
       ["Accessible", "Tim Harford, The Undercover Economist, 2005, chapitre sur les voitures d’occasion et l’assurance."],
@@ -339,7 +339,7 @@ ${spirale}
       objections: "Les solutions du marché, les asymétries de l’État, le signal comme gaspillage, les biais.",
       ecoles: "Arrow, Akerlof, Spence, Stiglitz, Hayek, Tirole.",
       source: "Akerlof, 1970 : la malhonnêteté évince le commerce légitime.",
-      quiz: "Six questions corrigées et une question sur les données de santé.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

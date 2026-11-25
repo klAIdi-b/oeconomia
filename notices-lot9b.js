@@ -109,8 +109,8 @@ ${heures}
       o: ["L’économie n’est pas gratuite : le coût est transféré aux familles, sous forme de temps et de revenus perdus", "La commune a réalisé une économie nette pour la société", "Le PIB mesure exactement ce changement", "Aucun travail n’a été ajouté"], c: 0,
       e: "Le travail de garde ne disparaît pas : il passe du secteur payé au secteur non payé." },
     ouverte: {
-      q: "Faudrait-il tenir compte du travail non rémunéré dans le calcul des retraites suisses ?",
-      r: "C’est déjà en partie le cas. Depuis la dixième révision de l’AVS, entrée en vigueur en 1997, des bonifications pour tâches éducatives et pour tâches d’assistance augmentent la rente des personnes qui ont élevé des enfants ou soigné des proches, et les revenus des couples sont partagés pendant le mariage. En revanche, le deuxième pilier, la prévoyance professionnelle, dépend du salaire : les personnes qui ont réduit leur temps de travail pour s’occuper des enfants, en majorité des femmes, reçoivent des rentes nettement plus faibles. Les partisans d’une meilleure prise en compte proposent d’abaisser le seuil d’entrée du deuxième pilier ou de créer des bonifications comparables à celles de l’AVS. Leurs contradicteurs répondent que le deuxième pilier est une épargne individuelle liée au salaire, et que la solution passe plutôt par l’accès aux crèches et le partage des tâches, pour que chacun puisse travailler davantage. Le débat porte sur la place que l’on veut donner au travail invisible dans la protection sociale."
+      q: "Faudrait-il mieux tenir compte du travail non rémunéré, comme l’éducation des enfants ou les soins aux proches, dans le calcul des retraites ?",
+      r: "C’est déjà en partie le cas dans plusieurs pays. En Allemagne, chaque enfant ouvre droit à des années de cotisation fictives pour le parent qui l’élève ; en France, des trimestres sont accordés aux parents ; en Suisse, l’assurance vieillesse de base accorde des bonifications pour tâches éducatives et d’assistance. Mais les retraites complémentaires, liées au salaire, ne suivent pas toujours : les personnes qui ont réduit leur temps de travail pour s’occuper des autres, en majorité des femmes, reçoivent des pensions nettement plus faibles. Les partisans d’une meilleure prise en compte proposent d’étendre ces bonifications ou de partager les droits à la retraite entre conjoints. Leurs contradicteurs répondent que la solution passe plutôt par l’accès aux crèches et le partage des tâches, pour que chacun puisse travailler davantage. Le débat porte sur la place que l’on veut donner au travail invisible dans la protection sociale."
     },
     lectures: [
       ["Accessible", "OFS, « Compte satellite de production des ménages », dernière édition."],
@@ -149,7 +149,7 @@ ${heures}
       objections: "Des chiffres fragiles, le rôle du PIB, des choix personnels, compter ou partager.",
       ecoles: "Waring, Margaret Reid, Gary Becker, Sen, Folbre et Nelson.",
       source: "Élargir les indicateurs de revenus aux activités non marchandes.",
-      quiz: "Six questions corrigées et une question sur les retraites suisses.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -251,8 +251,8 @@ ${formes}
       o: ["Comme un nouveau mode de régulation, où la finance remplace en partie la hausse des salaires", "Comme le retour du fordisme", "Comme la fin de toute régulation", "Comme une simple récession ordinaire"], c: 0,
       e: "Chaque période du capitalisme a ses propres règles, et celle-ci donne une place centrale à la finance." },
     ouverte: {
-      q: "La Suisse a-t-elle un mode de régulation propre, et lequel ?",
-      r: "Un régulationniste répondrait oui, en décrivant un ensemble d’institutions qui se tiennent. Le rapport salarial repose sur le partenariat social, la paix du travail et des conventions collectives négociées par branche, avec peu de grèves. La formation professionnelle duale, l’apprentissage, fournit une main-d’œuvre qualifiée et relie les entreprises aux écoles. La concurrence combine des secteurs exportateurs très ouverts, horlogerie, pharmacie, machines, et des secteurs intérieurs longtemps protégés, comme l’agriculture. Le régime monétaire s’appuie sur un franc fort et une banque centrale crédible. L’État est fédéral, léger au niveau national, et soumis à la démocratie directe et au frein à l’endettement. Enfin, l’insertion internationale passe par les accords bilatéraux avec l’Union européenne et une main-d’œuvre étrangère importante. Les critiques de cette lecture rappellent que ce modèle a aussi reposé sur la place financière et le secret bancaire, aujourd’hui abandonné pour les non-résidents, et que le franc fort met régulièrement l’industrie sous pression. La question est de savoir si ce compromis résistera aux transitions numérique et écologique."
+      q: "Peut-on parler de modèles nationaux de capitalisme, comme le modèle rhénan allemand, le modèle nordique ou le modèle anglo-saxon ? Qu’apporte la notion de mode de régulation à cette comparaison ?",
+      r: "Un régulationniste répondrait oui, et décrirait pour chaque pays un ensemble d’institutions qui se tiennent. Le modèle rhénan, que Michel Albert oppose en 1991 au modèle anglo-saxon, combine un rapport salarial négocié par branches, la cogestion dans les entreprises, l’apprentissage et des banques proches de l’industrie. Le modèle nordique associe une forte protection sociale, des syndicats puissants et une grande ouverture au commerce. Le modèle anglo-saxon repose davantage sur les marchés financiers, un marché du travail flexible et une protection sociale plus limitée. Les économistes Peter Hall et David Soskice parlent en 2001 de « variétés du capitalisme ». La notion de mode de régulation ajoute une dimension historique : ces ensembles naissent, s’usent et se transforment, et chacun connaît ses propres crises. Ses critiques rappellent que les modèles nationaux se ressemblent de plus en plus avec la mondialisation, et que les typologies simplifient des réalités très diverses."
     },
     lectures: [
       ["Accessible", "Robert Boyer, La Théorie de la régulation : les fondamentaux, 2004."],
@@ -291,7 +291,7 @@ ${formes}
       objections: "Une explication après coup, un compromis idéalisé, difficile à tester, la lecture libérale.",
       ecoles: "Aglietta, Boyer, Lipietz et Coriat, Marx et Keynes, Gramsci, Hall et Soskice.",
       source: "Ford : cinq dollars par jour, une mesure d’économie.",
-      quiz: "Six questions corrigées et une question sur le modèle suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

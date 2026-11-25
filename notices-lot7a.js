@@ -135,8 +135,8 @@ ${plafond}` },
       o: ["L’offre diminue, le prix monte, et la quantité achetée baisse", "La demande augmente et le prix baisse", "Le prix et la quantité augmentent", "Rien ne change, car le café est indispensable"], c: 0,
       e: "Un choc d’offre déplace la courbe d’offre vers la gauche : prix plus élevé, quantité plus faible." },
     ouverte: {
-      q: "Plusieurs cantons suisses, comme Genève ou Bâle-Ville, ont renforcé la protection des locataires. Le modèle de l’offre et de la demande condamne-t-il ces mesures ?",
-      r: "Le modèle simple prédit qu’un plafonnement des loyers sous le prix de marché réduit l’offre de logements et crée une pénurie. Les études comme celle de San Francisco le confirment en partie. Mais la réalité est plus nuancée. Le marché du logement n’est pas parfaitement concurrentiel : déménager coûte cher, l’information est imparfaite, et les locataires en place sont en position de faiblesse face à des hausses brutales. Une protection contre les hausses abusives en cours de bail peut corriger ce déséquilibre sans réduire fortement l’offre. Les effets dépendent donc de la conception : une limitation des loyers des nouveaux contrats ou des logements rénovés freine davantage l’investissement qu’une protection des locataires existants. Le problème de fond, dans les villes suisses, reste le manque de terrains constructibles et la lenteur des procédures, que seule une hausse de l’offre peut résoudre."
+      q: "De Berlin à New York, de nombreuses villes ont renforcé le contrôle des loyers. Le modèle de l’offre et de la demande condamne-t-il ces mesures ?",
+      r: "Le modèle simple prédit qu’un plafonnement des loyers sous le prix de marché réduit l’offre de logements et crée une pénurie. Les études comme celle de San Francisco le confirment en partie, et le gel des loyers berlinois de 2020, annulé par la justice en 2021, a vu l’offre de logements à louer chuter. Mais la réalité est plus nuancée. Le marché du logement n’est pas parfaitement concurrentiel : déménager coûte cher, l’information est imparfaite, et les locataires en place sont en position de faiblesse face à des hausses brutales. Une protection contre les hausses abusives en cours de bail peut corriger ce déséquilibre sans réduire fortement l’offre. Les effets dépendent donc de la conception : une limitation des loyers des nouveaux contrats freine davantage l’investissement qu’une protection des locataires existants. Le problème de fond, dans la plupart des grandes villes, reste le manque de terrains constructibles et la lenteur des procédures, que seule une hausse de l’offre peut résoudre."
     },
     lectures: [
       ["Accessible", "Tim Harford, The Undercover Economist, 2005, chapitres 1 et 2."],
@@ -175,7 +175,7 @@ ${ciseaux}
       objections: "Concurrence, information, bulles, répercussions sur les autres marchés.",
       ecoles: "Smith et Ricardo, Cournot et Jenkin, les marginalistes, Marshall, Vernon Smith, Kahneman.",
       source: "Marshall, 1890 : laquelle des deux lames coupe le papier ?",
-      quiz: "Six questions corrigées et une question sur la protection des locataires.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -305,8 +305,8 @@ ${taxe}
       o: ["Par ce que l’ensemble des usagers serait prêt à payer pour le traverser, au-delà du péage", "Par le seul montant des péages encaissés", "Par le coût de construction", "Par le nombre d’ouvriers employés"], c: 0,
       e: "L’utilité d’un ouvrage se mesure au surplus de ses usagers, pas seulement aux recettes." },
     ouverte: {
-      q: "Les analyses coût-bénéfice suisses des projets de transport additionnent les gains de temps des usagers. Faut-il donner le même poids à une heure gagnée par un cadre et par un apprenti ?",
-      r: "Dans une analyse fondée sur la disposition à payer, l’heure du cadre vaut plus, car il est prêt à payer davantage pour gagner du temps. Cela peut orienter les investissements vers les liaisons utilisées par les usagers aux revenus élevés, comme les trains rapides entre grandes villes. Pour éviter ce biais, la plupart des méthodes officielles, y compris les normes suisses de l’Office fédéral des routes et des transports, utilisent une valeur moyenne du temps par motif de déplacement, la même pour tous les usagers, plutôt que des valeurs individuelles selon le revenu. C’est un choix éthique : traiter le temps de chacun comme également précieux. Les critiques font valoir que cela s’éloigne des préférences réelles ; les défenseurs y voient une correction nécessaire du biais du surplus en faveur des plus riches."
+      q: "Les analyses coût-bénéfice des projets de transport additionnent les gains de temps des usagers. Faut-il donner le même poids à une heure gagnée par un cadre et par un apprenti ?",
+      r: "Dans une analyse fondée sur la disposition à payer, l’heure du cadre vaut plus, car il est prêt à payer davantage pour gagner du temps. Cela peut orienter les investissements vers les liaisons utilisées par les usagers aux revenus élevés, comme les trains rapides entre grandes villes. Pour éviter ce biais, la plupart des méthodes officielles, au Royaume-Uni, en France ou en Suisse, utilisent une valeur moyenne du temps par motif de déplacement, la même pour tous les usagers, plutôt que des valeurs individuelles selon le revenu. C’est un choix éthique : traiter le temps de chacun comme également précieux. Les critiques font valoir que cela s’éloigne des préférences réelles ; les défenseurs y voient une correction nécessaire du biais du surplus en faveur des plus riches."
     },
     lectures: [
       ["Accessible", "Tim Harford, The Undercover Economist, 2005, chapitre 2 sur la discrimination par les prix."],
@@ -345,7 +345,7 @@ ${triangles}
       objections: "Un franc n’est pas un franc pour tous, disposition à payer et bien-être, biens sans marché, triangles et rectangles.",
       ecoles: "Dupuit, Marshall, Hicks, Harberger, Sen, Brynjolfsson.",
       source: "Dupuit, 1849 : empêcher le voyageur de deuxième classe d’aller en troisième.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur la valeur du temps.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

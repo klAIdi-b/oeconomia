@@ -276,8 +276,8 @@ ${principes}
       o: ["D’une ressource rivale et ouverte à tous, surexploitée ; on peut la régler par un stationnement payant ou des règles d’accès", "D’un bien public pur, que seul l’État peut produire", "D’une externalité positive, qu’il faut subventionner", "D’un monopole, qu’il faut briser"], c: 0,
       e: "Chaque conducteur prend une place sans tenir compte de la gêne pour les autres ; un prix ou une règle limite l’usage." },
     ouverte: {
-      q: "Les glaciers et les ressources en eau des Alpes sont-ils des biens communs ? Comment les principes d’Ostrom pourraient-ils s’appliquer à la gestion de l’eau en Suisse face au réchauffement ?",
-      r: "L’eau des Alpes présente bien les caractéristiques d’un commun : rivale (l’eau prélevée pour l’irrigation, la neige artificielle ou l’hydroélectricité manque aux autres usages) et difficile à exclure. La Suisse dispose déjà d’institutions proches des principes d’Ostrom : consortages des bisses, droits d’eau communaux, gestion par bassins, et un fédéralisme qui emboîte les niveaux de décision (principe 8). Le réchauffement modifie toutefois les conditions : la fonte des glaciers augmente les débits à court terme puis les réduira, et les conflits d’usage entre agriculture, tourisme, énergie et écosystèmes vont s’intensifier. Les principes suggèrent des limites claires des droits d’eau, des règles révisées par les usagers eux-mêmes, une surveillance partagée des débits et des mécanismes de résolution des conflits entre communes et cantons. Mais une partie du problème, le climat lui-même, dépasse toute gestion locale."
+      q: "Les glaciers et les ressources en eau des montagnes, des Alpes à l’Himalaya, sont-ils des biens communs ? Comment les principes d’Ostrom pourraient-ils s’appliquer à leur gestion face au réchauffement ?",
+      r: "L’eau des montagnes présente bien les caractéristiques d’un commun : rivale (l’eau prélevée pour l’irrigation, la neige artificielle ou l’hydroélectricité manque aux autres usages) et difficile à exclure. Des institutions anciennes s’approchent des principes d’Ostrom, comme les consortages des bisses en Valais ou les systèmes d’irrigation communautaires du Népal, qu’Ostrom a étudiés. À plus grande échelle, le traité de l’Indus, signé en 1960 entre l’Inde et le Pakistan, partage les eaux d’un bassin alimenté par les glaciers de l’Himalaya. Le réchauffement modifie toutefois les conditions : la fonte des glaciers augmente les débits à court terme puis les réduira, et les conflits d’usage entre agriculture, énergie, villes et écosystèmes vont s’intensifier. Les principes suggèrent des droits d’eau clairs, des règles révisées par les usagers eux-mêmes, une surveillance partagée et des mécanismes de résolution des conflits emboîtés, du village à l’échelle internationale. Mais une partie du problème, le climat lui-même, dépasse toute gestion locale."
     },
     lectures: [
       ["Accessible", "Elinor Ostrom, La Gouvernance des biens communs (1990), traduction française 2010. Le livre fondateur, riche en études de cas."],
@@ -316,7 +316,7 @@ ${principes}
       objections: "Changer d’échelle, communs excluants, efficacité des marchés, portée des principes.",
       ecoles: "Aristote, Gordon et Scott, Hardin, Coase, Hayek, les mouvements des communs.",
       source: "Hardin, 1968, et sa propre correction de 1998.",
-      quiz: "Six questions corrigées et une question sur l’eau des Alpes.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

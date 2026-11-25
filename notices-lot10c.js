@@ -128,8 +128,8 @@ ${tauxBNS}` }
         o: ["La crédibilité de la banque centrale aide à garder l’inflation basse, car les anticipations restent ancrées", "La banque centrale n’a plus besoin de son taux directeur", "L’inflation dépend seulement du prix du pétrole", "Les salaires sont fixés par la loi"], c: 0,
         e: "Quand chacun croit à l’objectif, salaires et prix s’ajustent en conséquence : la crédibilité est un instrument en soi." },
     ouverte: {
-      q: "Les taux négatifs appliqués par la BNS de 2015 à 2022 ont-ils été une bonne politique pour la Suisse ?",
-      r: "Le bilan est discuté. Pour la BNS et une partie des économistes, les taux négatifs, combinés aux interventions sur les devises, ont empêché une appréciation encore plus forte du franc après l’abandon du cours plancher. Ils ont protégé l’industrie d’exportation et le tourisme, et évité une baisse durable des prix qui aurait pesé sur l’économie. Leurs critiques soulignent les effets secondaires : des rendements très faibles pour les caisses de pension et les épargnants, des banques dont les marges se sont réduites, et une forte hausse des prix de l’immobilier, encouragée par des hypothèques bon marché (<a href=\"#c-instabilite-financiere\">voir instabilité financière</a>). D’autres rappellent que la Suisse n’avait guère le choix, dans un monde où la BCE appliquait elle aussi des taux négatifs. La réponse dépend du poids qu’on accorde à la protection de l’industrie, aux intérêts des épargnants et des locataires, et aux risques à long terme pour la stabilité financière."
+      q: "Faut-il élargir le mandat des banques centrales, aujourd’hui centré sur la stabilité des prix, à d’autres objectifs comme l’emploi, le climat ou les inégalités ?",
+      r: "Le débat est ouvert. La Réserve fédérale américaine a déjà un double mandat, prix et emploi, et la Banque centrale européenne a décidé en 2021 de tenir compte du changement climatique dans sa stratégie, par exemple dans le choix des titres qu’elle achète. Les partisans d’un mandat plus large rappellent que les décisions monétaires touchent l’emploi, le prix des logements et la répartition des patrimoines, et qu’il serait plus honnête de l’assumer. Leurs contradicteurs craignent qu’en multipliant les objectifs, les banques centrales perdent en clarté et en crédibilité, qui sont leurs principaux atouts (<a href=\"#c-anticipations-rationnelles\">voir anticipations rationnelles</a>). Ils soulignent aussi un problème démocratique : des institutions indépendantes et non élues ne devraient pas trancher des choix politiques, comme la répartition des revenus ou la politique industrielle, qui reviennent aux parlements. La réponse dépend de la confiance qu’on accorde aux banques centrales et de la place qu’on veut leur laisser à côté des gouvernements."
     },
     lectures: [
       ["Accessible", "Banque nationale suisse, « La BNS en bref », brochure publiée chaque année, et le matériel pédagogique Iconomix."],
@@ -167,7 +167,7 @@ ${transmission}
       objections: "Indépendance et démocratie, mandat étroit ou large, effets secondaires, règles ou discrétion.",
       ecoles: "Wicksell, Keynes, Friedman, Lucas, Kydland et Prescott, Taylor et Bernanke, Kelton.",
       source: "Le mandat de la BNS dans la loi.",
-      quiz: "Six questions corrigées et une question sur les taux négatifs.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Six lectures classées par niveau."
     }
   };

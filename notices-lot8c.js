@@ -127,8 +127,8 @@ ${depense}
       o: ["Si la plupart des ménages ont de l’épargne, anticipent la hausse future et gardent l’argent", "Si la plupart des ménages vivent au jour le jour", "Si les ménages ne croient pas à la hausse future", "Si la baisse d’impôt est versée aux plus modestes"], c: 0,
       e: "Plus les ménages raisonnent comme le suppose Barro, moins la baisse d’impôt relance la consommation." },
     ouverte: {
-      q: "Le frein à l’endettement suisse repose sur l’idée que les déficits d’aujourd’hui sont les impôts de demain. L’équivalence ricardienne justifie-t-elle ou affaiblit-elle cette règle ?",
-      r: "L’équivalence ricardienne joue dans les deux sens. Si elle était parfaitement vraie, la dette n’aurait aucune importance économique, puisque les ménages compenseraient tout déficit par leur épargne : une règle budgétaire serait inutile. C’est justement parce qu’elle est en grande partie fausse, parce que les citoyens sous-estiment la charge future de la dette, comme le pensait Ricardo, qu’une règle comme le frein à l’endettement peut se justifier : elle compense la myopie des électeurs et la tentation des élus de reporter les coûts sur l’avenir. Mais l’échec de l’équivalence signifie aussi que la politique budgétaire a des effets réels sur la demande, ce qui justifie des déficits temporaires en récession, que le frein autorise. Le débat porte alors sur l’équilibre entre ces deux préoccupations, et sur le traitement des investissements publics."
+      q: "De nombreux pays, de l’Allemagne à la Suisse, et l’Union européenne elle-même, se sont donné des règles qui limitent les déficits publics. L’équivalence ricardienne justifie-t-elle ou affaiblit-elle ces règles ?",
+      r: "L’équivalence ricardienne joue dans les deux sens. Si elle était parfaitement vraie, la dette n’aurait aucune importance économique, puisque les ménages compenseraient tout déficit par leur épargne : une règle budgétaire serait inutile. C’est justement parce qu’elle est en grande partie fausse, parce que les citoyens sous-estiment la charge future de la dette, comme le pensait Ricardo, qu’une règle peut se justifier : elle compense la myopie des électeurs et la tentation des élus de reporter les coûts sur l’avenir. Mais l’échec de l’équivalence signifie aussi que la politique budgétaire a des effets réels sur la demande, ce qui justifie des déficits temporaires en récession ; la plupart des règles les autorisent, et les règles européennes ont été suspendues pendant la pandémie. Le débat porte sur l’équilibre entre ces deux préoccupations, et sur le traitement des investissements publics."
     },
     lectures: [
       ["Accessible", "N. Gregory Mankiw, Macroéconomie, chapitre sur la dette publique et l’équivalence ricardienne."],
@@ -167,7 +167,7 @@ ${calendrier}
       objections: "Ricardo n’y croyait pas, contraintes de crédit, myopie, taux inférieur à la croissance.",
       ecoles: "Ricardo, Barro, Buchanan, les nouveaux classiques, les keynésiens, les études de ménages.",
       source: "Ricardo, 1820 : les contribuables ne les estiment jamais ainsi.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur le frein à l’endettement.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -295,8 +295,8 @@ ${verrou}
       o: ["Une avance initiale attire travailleurs, fournisseurs et clients, ce qui renforce encore l’avantage de la région", "Ces régions ont des ressources naturelles uniques", "La loi interdit ces activités ailleurs", "Ces industries ont des coûts qui augmentent avec la taille"], c: 0,
       e: "Avec des rendements croissants, une petite avance historique peut devenir décisive et durable." },
     ouverte: {
-      q: "La Suisse doit-elle chercher à attirer et à concentrer certaines industries, comme la pharmacie à Bâle ou la blockchain à Zoug, par des avantages fiscaux ciblés ?",
-      r: "Les rendements croissants d’agglomération plaident pour cette stratégie : une fois qu’un écosystème est constitué, il attire de lui-même entreprises et talents, et ses bénéfices dépassent l’avantage fiscal initial. La Suisse en a profité, avec ses clusters pharmaceutiques, financiers, horlogers ou technologiques. Mais la stratégie a des limites. Les avantages fiscaux ciblés sont contraints par les accords internationaux, comme l’impôt minimum de 15 % de l’OCDE pour les grandes entreprises, appliqué par la Suisse depuis 2024. Choisir les industries d’avenir est difficile, et un cluster bâti sur un seul avantage fiscal peut disparaître si celui-ci est supprimé. Les facteurs durables des clusters suisses sont plutôt la qualité des universités et de la formation professionnelle, la stabilité institutionnelle, l’ouverture aux talents étrangers et la qualité de vie. Les économistes recommandent souvent d’investir dans ces conditions générales plutôt que de subventionner des secteurs particuliers."
+      q: "Les États doivent-ils chercher à attirer et à concentrer certaines industries, comme les semi-conducteurs ou les batteries, par des subventions ou des avantages fiscaux ciblés ?",
+      r: "Les rendements croissants d’agglomération plaident pour cette stratégie : une fois qu’un écosystème est constitué, il attire de lui-même entreprises et talents, et ses bénéfices peuvent dépasser l’aide initiale. Taïwan, la Corée du Sud ou plus récemment les États-Unis, avec leur grand programme de 2022 en faveur des puces, ont misé sur ce raisonnement. Mais la stratégie a des limites. Les subventions des uns appellent celles des autres, dans une course coûteuse ; les avantages fiscaux sont contraints par l’impôt minimum de 15 % sur les grandes entreprises, adopté sous l’égide de l’OCDE ; choisir les industries d’avenir est difficile, et un pôle bâti sur une seule aide peut disparaître avec elle. Les facteurs durables des grands pôles sont plutôt la qualité des universités et de la formation, la stabilité institutionnelle et l’ouverture aux talents étrangers. Beaucoup d’économistes recommandent d’investir dans ces conditions générales plutôt que de subventionner des secteurs particuliers."
     },
     lectures: [
       ["Accessible", "Enrico Moretti, The New Geography of Jobs, 2012."],
@@ -335,7 +335,7 @@ ${courbe}
       objections: "Rendements qui décroissent, verrouillage rare, politique industrielle risquée, les gagnants emportent tout.",
       ecoles: "Smith, Marshall, Sraffa et Young, Arthur et David, Krugman, Romer.",
       source: "Marshall, 1890 : les secrets du métier sont dans l’air.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur les clusters suisses.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

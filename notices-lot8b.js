@@ -130,8 +130,8 @@ ${mecanismes}
       o: ["Que des chômeurs de longue durée perdent leurs compétences et leurs contacts, et que le chômage reste élevé après la crise", "Que les salaires montent trop vite", "Que les entreprises embauchent trop", "Que l’inflation disparaisse"], c: 0,
       e: "Le chômage partiel garde les salariés liés à leur entreprise et limite l’hystérèse." },
     ouverte: {
-      q: "Le chômage partiel a protégé l’emploi suisse en 2020. Peut-il aussi freiner l’adaptation de l’économie en maintenant des emplois condamnés ?",
-      r: "C’est le principal reproche fait au chômage partiel. Dans une crise temporaire, comme la pandémie, il évite des licenciements inutiles et préserve les compétences, ce qui limite l’hystérèse et permet une reprise rapide. Mais si le choc est durable, s’il touche un secteur en déclin ou une entreprise non viable, le chômage partiel peut retarder la réallocation des salariés vers des activités d’avenir, et maintenir artificiellement des emplois sans avenir. C’est pourquoi il est limité dans le temps, en Suisse en principe à douze mois sur deux ans en temps normal, et soumis à la condition que la perte de travail soit temporaire et inévitable. Les études sur la Suisse et l’Allemagne concluent en général que ses bénéfices l’emportent nettement en crise conjoncturelle, mais que sa prolongation doit être surveillée de près."
+      q: "Le chômage partiel a protégé l’emploi dans de nombreux pays en 2020. Peut-il aussi freiner l’adaptation de l’économie en maintenant des emplois condamnés ?",
+      r: "C’est le principal reproche fait au chômage partiel. Dans une crise temporaire, comme la pandémie, il évite des licenciements inutiles et préserve les compétences, ce qui limite l’hystérèse et permet une reprise rapide. Mais si le choc est durable, s’il touche un secteur en déclin ou une entreprise non viable, il peut retarder le passage des salariés vers des activités d’avenir, et maintenir artificiellement des emplois sans avenir. C’est pourquoi il est en général limité dans le temps et réservé aux pertes de travail jugées temporaires. Les pays qui l’ont peu utilisé, comme les États-Unis en 2020, ont vu le chômage bondir puis retomber assez vite, avec de nombreux changements d’emploi. Les études sur l’Allemagne, la France ou la Suisse concluent en général que ses bénéfices l’emportent nettement en crise conjoncturelle, mais que sa prolongation doit être surveillée de près."
     },
     lectures: [
       ["Accessible", "Olivier Blanchard, Macroéconomie, chapitre sur le chômage européen."],
@@ -170,7 +170,7 @@ ${trajets}
       objections: "Chômage structurel, tendances préexistantes, risque d’inflation, mesure difficile.",
       ecoles: "Friedman et Phelps, Blanchard et Summers, Lindbeck et Snower, Ball, Cerra et Saxena, Yellen.",
       source: "Yellen, 2016 : une économie sous pression pour réparer les dégâts.",
-      quiz: "Six questions corrigées et une question sur le chômage partiel.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -291,8 +291,8 @@ ${fonctions}
       o: ["Celles de réserve de valeur et, en partie, d’unité de compte", "Celle d’intermédiaire des échanges seulement", "Aucune", "Toutes les trois"], c: 0,
       e: "Une monnaie qui perd vite sa valeur ne sert plus à épargner ni à mesurer les prix durablement." },
     ouverte: {
-      q: "La BNS devrait-elle émettre un franc numérique accessible à tous les ménages, comme une sorte de billet électronique ?",
-      r: "La BNS a mené des expériences de monnaie numérique de banque centrale, notamment le projet Helvetia, mais seulement pour les transactions entre institutions financières, et elle s’est jusqu’ici montrée réservée sur une version pour le grand public. Les partisans d’un franc numérique de détail font valoir qu’avec le déclin de l’argent liquide, le public n’aura bientôt plus accès à une monnaie émise par la banque centrale, seulement à des dépôts bancaires, et qu’une monnaie publique numérique préserverait la souveraineté face aux géants technologiques et aux cryptomonnaies. Les opposants craignent qu’en période de crise, les ménages retirent massivement leurs dépôts bancaires vers le franc numérique, sûr, ce qui fragiliserait les banques et leur capacité de prêter. Il faudrait alors limiter les montants détenus. La question touche directement aux fonctions de la monnaie et au rôle respectif de la banque centrale et des banques dans sa création."
+      q: "Les banques centrales devraient-elles émettre une monnaie numérique accessible à tous les ménages, comme une sorte de billet électronique ?",
+      r: "Plusieurs projets existent : la Chine expérimente un yuan numérique depuis 2020, et la BCE prépare depuis 2023 un euro numérique, alors que d’autres banques centrales, comme la Réserve fédérale américaine ou la Banque nationale suisse, se sont montrées plus réservées. Les partisans font valoir qu’avec le déclin de l’argent liquide, le public n’aura bientôt plus accès à une monnaie émise par la banque centrale, seulement à des dépôts bancaires, et qu’une monnaie publique numérique préserverait la souveraineté face aux géants technologiques et aux cryptomonnaies. Les opposants craignent qu’en période de crise, les ménages retirent massivement leurs dépôts bancaires vers la monnaie numérique, sûre, ce qui fragiliserait les banques et leur capacité de prêter ; il faudrait alors limiter les montants détenus. D’autres s’inquiètent de la protection de la vie privée. La question touche directement aux fonctions de la monnaie et au rôle respectif de la banque centrale et des banques dans sa création."
     },
     lectures: [
       ["Accessible", "David Graeber, Dette : 5 000 ans d’histoire, 2011, chapitres 2 et 3."],
@@ -331,7 +331,7 @@ ${fonctions}
       objections: "Fonctions et nature de la monnaie, le mythe du troc, la neutralité, la monnaie privée.",
       ecoles: "Aristote, Jevons et Menger, Knapp, Keynes, Friedman, Hayek, Graeber, Aglietta et Orléan.",
       source: "Aristote : la monnaie existe par la loi, non par nature.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur le franc numérique.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

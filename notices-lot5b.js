@@ -127,8 +127,8 @@ ${periodes}
       o: ["Une relance par la dépense publique, puisque la politique monétaire classique a perdu sa force", "Une hausse des taux pour restaurer la confiance", "Une réduction de la dépense publique", "Une hausse des impôts sur la consommation"], c: 0,
       e: "À taux zéro, la banque centrale ne peut plus guère stimuler la demande : l’État prend le relais." },
     ouverte: {
-      q: "Le billet de 1 000 francs facilite la thésaurisation et empêche la BNS de descendre très bas en taux négatifs. Faudrait-il le supprimer ?",
-      r: "Les partisans de la suppression, dans la ligne de Rogoff, font valoir deux arguments : elle permettrait à la BNS de descendre plus bas en taux négatifs en cas de crise grave, et elle compliquerait l’évasion fiscale et le blanchiment. Les opposants rappellent que l’argent liquide est très apprécié en Suisse, pour des raisons de protection de la vie privée, de résilience en cas de panne des systèmes de paiement, et de confiance. Le Parlement et la BNS ont toujours défendu l’accès au cash, et une initiative populaire visant à inscrire la garantie de l’argent liquide dans la Constitution a abouti en 2023. Du point de vue de la politique monétaire, la Suisse a pu gérer les années de taux négatifs à −0,75 % avec le billet de 1 000 francs, en exonérant une partie des dépôts bancaires. La question devient pressante seulement si l’on pense qu’une crise future exigerait des taux beaucoup plus négatifs."
+      q: "Faudrait-il supprimer les grosses coupures, comme le billet de 500 euros ou de 1 000 francs, pour permettre aux banques centrales de descendre plus bas en taux négatifs ?",
+      r: "Les partisans de la suppression, dans la ligne de Kenneth Rogoff, font valoir deux arguments : elle permettrait aux banques centrales de descendre plus bas en taux négatifs en cas de crise grave, et elle compliquerait l’évasion fiscale et le blanchiment. La BCE a d’ailleurs cessé d’émettre le billet de 500 euros en 2019, surtout pour ce second motif. Les opposants rappellent que l’argent liquide reste apprécié dans de nombreux pays, comme l’Allemagne ou la Suisse, pour des raisons de protection de la vie privée, de résilience en cas de panne des systèmes de paiement, et de confiance. Du point de vue de la politique monétaire, les banques centrales ont pu gérer des taux légèrement négatifs avec les billets existants, en exonérant une partie des dépôts bancaires. La question ne devient pressante que si l’on pense qu’une crise future exigerait des taux beaucoup plus négatifs."
     },
     lectures: [
       ["Accessible", "Paul Krugman, Pourquoi les crises reviennent toujours, 2009, chapitre sur le Japon."],
@@ -167,7 +167,7 @@ ${periodes}
       objections: "Friedman, l’efficacité des outils non conventionnels, les effets secondaires, un phénomène révolu ?",
       ecoles: "Keynes et Hicks, Friedman, Krugman, Bernanke et Svensson, Summers, Rogoff.",
       source: "Keynes, 1936 : une préférence pour la liquidité virtuellement absolue.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur le billet de 1 000 francs.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

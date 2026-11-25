@@ -111,8 +111,8 @@ ${formes}
       o: ["Qu’est-ce qui doit rester, en partie, hors du marché, et selon quelles règles sociales ?", "Quel prix maximise le profit des vendeurs ?", "Comment supprimer toute règle sur les greffes ?", "Comment exporter les organes vers d’autres pays ?"], c: 0,
       e: "Comme pour le don du sang, il s’agit de savoir jusqu’où laisser les prix décider." },
     ouverte: {
-      q: "En Suisse, le don du sang n’est pas rémunéré, et en 2022 les votants ont accepté le principe du consentement présumé pour le don d’organes. Faut-il laisser certaines choses hors du marché ?",
-      r: "La question est au cœur de la notion d’encastrement. En Suisse, le sang est donné bénévolement, et la loi interdit le commerce d’organes. Le vote de 2022 n’a pas introduit de marché : il a changé la règle par défaut, en présumant le consentement sauf refus exprimé, pour augmenter le nombre de dons. Polanyi, et à sa suite Titmuss, diraient que certaines choses touchent à la dignité des personnes et au lien social : les payer pourrait attirer les plus pauvres, faire baisser la qualité ou décourager ceux qui donnaient par solidarité. Des économistes répondent que des prix bien encadrés pourraient sauver des vies quand les dons manquent, comme pour les reins, et l’Iran, qui rémunère les donneurs de rein, est souvent cité comme ayant fortement réduit ses listes d’attente. Le débat n’oppose donc pas le marché et l’absence de règles, mais différentes manières d’organiser l’échange : don, règle publique ou prix encadré."
+      q: "Le sang est donné bénévolement dans la plupart des pays européens, alors que le plasma est rémunéré aux États-Unis, et l’Espagne est devenue championne du don d’organes avec le consentement présumé. Faut-il laisser certaines choses hors du marché ?",
+      r: "La question est au cœur de la notion d’encastrement. La plupart des pays interdisent le commerce d’organes, et beaucoup organisent le don du sang sans paiement. Les États-Unis rémunèrent en revanche les donneurs de plasma, et fournissent une grande partie du plasma utilisé dans le monde. L’Espagne n’a pas créé de marché : elle a présumé le consentement sauf refus exprimé et, surtout, organisé un réseau très efficace de coordination dans les hôpitaux, ce qui lui donne l’un des taux de dons les plus élevés du monde. Polanyi, et à sa suite Titmuss, diraient que certaines choses touchent à la dignité des personnes et au lien social : les payer pourrait attirer les plus pauvres, faire baisser la qualité ou décourager ceux qui donnaient par solidarité. Des économistes répondent que des prix bien encadrés pourraient sauver des vies quand les dons manquent, et citent l’Iran, qui rémunère les donneurs de rein. Le débat oppose donc différentes manières d’organiser l’échange : don, règle publique ou prix encadré."
     },
     lectures: [
       ["Accessible", "Karl Polanyi, « Notre obsolète mentalité de marché », 1947."],
@@ -151,7 +151,7 @@ ${formes}
       objections: "Une histoire idéalisée, des marchés anciens, deux sens du mot, la lecture libérale.",
       ecoles: "Polanyi, Malinowski et Mauss, Veblen, Granovetter, Ostrom, Hayek.",
       source: "Le marché seul conduirait à la destruction de la société.",
-      quiz: "Six questions corrigées et une question sur le don en Suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -258,8 +258,8 @@ ${deuxVues}
       o: ["Elle augmente, car chaque nouveau prêt crée de nouveaux dépôts", "Elle baisse, car les banques prêtent leurs réserves", "Elle ne change pas, car seule la banque centrale crée la monnaie", "Elle augmente seulement si l’État imprime des billets"], c: 0,
       e: "La monnaie suit la demande de crédit : un boom du crédit est aussi un boom de la monnaie." },
     ouverte: {
-      q: "Si les banques créent l’essentiel de la monnaie en accordant des prêts hypothécaires, faut-il mieux encadrer le crédit immobilier en Suisse ?",
-      r: "La thèse de la monnaie endogène éclaire bien la situation suisse. Les prêts hypothécaires y sont très élevés par rapport au revenu national, et ils créent une grande partie de la monnaie. Quand le crédit immobilier progresse vite, la monnaie et les prix des logements montent ensemble, ce qui peut nourrir une bulle (<a href=\"#c-instabilite-financiere\">voir instabilité financière</a>). La Suisse dispose déjà d’outils : les règles de fonds propres exigées des acheteurs, le calcul de la capacité financière avec un taux théorique élevé, et le volant anticyclique de fonds propres, que le Conseil fédéral peut activer sur proposition de la BNS, activé en 2013, suspendu en 2020 pendant la pandémie, puis réactivé en 2022. Les partisans d’un encadrement plus strict y voient une manière de prévenir les crises. D’autres soulignent que ces règles rendent l’accès à la propriété plus difficile pour les jeunes ménages, dans un pays où la majorité de la population est locataire. Le débat porte sur l’équilibre entre stabilité financière et accès au logement."
+      q: "Si les banques créent l’essentiel de la monnaie en accordant des prêts immobiliers, faut-il mieux encadrer le crédit immobilier ?",
+      r: "La thèse de la monnaie endogène éclaire bien la question. Quand le crédit immobilier progresse vite, la monnaie et les prix des logements montent ensemble, ce qui peut nourrir une bulle (<a href=\"#c-instabilite-financiere\">voir instabilité financière</a>). Depuis la crise de 2008, de nombreux pays ont adopté des règles dites macroprudentielles : apport personnel minimal, plafond du prêt par rapport au revenu, calcul de la capacité de remboursement avec un taux plus élevé que le taux réel, exigences de fonds propres supplémentaires pour les banques. L’Irlande et la Nouvelle-Zélande en offrent des exemples, tout comme la Suisse. Les partisans d’un encadrement plus strict y voient une manière de prévenir les crises. D’autres soulignent que ces règles rendent l’accès à la propriété plus difficile pour les jeunes ménages et ceux qui n’ont pas d’héritage. Le débat porte sur l’équilibre entre stabilité financière et accès au logement."
     },
     lectures: [
       ["Accessible", "Banque d’Angleterre, « Money creation in the modern economy », Quarterly Bulletin, 2014."],
@@ -298,7 +298,7 @@ ${deuxVues}
       objections: "Des banques contraintes, une banque centrale qui garde la main, un débat de vocabulaire.",
       ecoles: "Wicksell et Schumpeter, Keynes, Kaldor et Moore, Minsky, Kelton, Friedman.",
       source: "Chaque prêt crée un dépôt.",
-      quiz: "Six questions corrigées et une question sur le crédit immobilier en Suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

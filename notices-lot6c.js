@@ -121,8 +121,8 @@ ${enU}
       o: ["Une hausse des inégalités", "Une baisse immédiate des inégalités", "Aucun changement des inégalités", "La disparition de la pauvreté urbaine"], c: 0,
       e: "C’est la phase ascendante de la cloche ; la suite n’est pas garantie, comme le montre la remontée depuis 1980." },
     ouverte: {
-      q: "Les inégalités de revenu sont relativement stables en Suisse, mais les inégalités de patrimoine y sont parmi les plus élevées des pays riches. Faut-il s’en préoccuper ?",
-      r: "Plusieurs facteurs expliquent cette concentration du patrimoine : les héritages, la forte valeur des entreprises familiales et de l’immobilier, la présence de nombreuses grandes fortunes venues de l’étranger, et le fait que l’épargne retraite du deuxième pilier n’est souvent pas comptée dans le patrimoine des ménages, ce qui sous-estime celui de la classe moyenne. Ceux qui s’en préoccupent soulignent que la concentration du patrimoine se transmet entre générations, qu’elle peut peser sur l’égalité des chances et sur l’influence politique, et que l’impôt sur les successions a été réduit ou supprimé pour les descendants directs dans la plupart des cantons. Ceux qui la relativisent rappellent que la Suisse prélève déjà un impôt sur la fortune dans tous les cantons, que les revenus restent assez égaux après impôts et transferts, et que la mobilité sociale y est plutôt bonne. Le peuple a refusé en 2015 un impôt fédéral sur les successions, et l’initiative de la Jeunesse socialiste sur les très grandes successions, qui a relancé le débat, a été très largement rejetée le 30 novembre 2025."
+      q: "Dans de nombreux pays riches, les inégalités de patrimoine sont bien plus fortes que les inégalités de revenu. Faut-il s’en préoccuper ?",
+      r: "Plusieurs facteurs expliquent cette concentration du patrimoine : les héritages, la forte valeur des entreprises familiales et de l’immobilier, et le fait que l’épargne retraite n’est souvent pas comptée dans le patrimoine des ménages, ce qui sous-estime celui de la classe moyenne. Ceux qui s’en préoccupent soulignent que la concentration du patrimoine se transmet entre générations, qu’elle peut peser sur l’égalité des chances et sur l’influence politique, et que les impôts sur les successions ont été réduits ou supprimés dans plusieurs pays, comme la Suède en 2004. Ceux qui la relativisent rappellent que les revenus restent assez égaux après impôts et transferts dans beaucoup de pays européens, et que la mobilité sociale y est plutôt bonne. Les choix politiques varient : la France ou le Royaume-Uni taxent fortement les grandes successions, alors que les votants suisses ont largement rejeté en 2015 puis en 2025 des impôts fédéraux sur les successions."
     },
     lectures: [
       ["Accessible", "Branko Milanović, Inégalités mondiales, 2016, chapitres 2 et 3."],
@@ -161,7 +161,7 @@ ${cloche}
       objections: "Une généralisation hâtive, le rôle des institutions, un argument pour l’attente, le climat.",
       ecoles: "Kuznets, Lewis, Ahluwalia, Deininger et Squire, Piketty et Saez, Milanović, Grossman et Krueger.",
       source: "Kuznets, 1955 : 5 % d’information et 95 % de spéculation.",
-      quiz: "Six questions corrigées et une question sur le patrimoine en Suisse.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -286,8 +286,8 @@ ${course}` },
       o: ["Chacun veut au moins égaler ses voisins : les dépenses des uns poussent celles des autres", "Les anciennes voitures sont devenues illégales", "Les prix des voitures ont fortement baissé", "Les voisins ont tous changé de travail"], c: 0,
       e: "Tout le monde dépense davantage sans que personne ne gagne en rang." },
     ouverte: {
-      q: "Faudrait-il remplacer une partie de l’impôt sur le revenu suisse par un impôt progressif sur la consommation, comme le propose Robert Frank ?",
-      r: "L’idée de Frank est d’imposer non pas le revenu, mais la consommation totale de chaque ménage, calculée comme le revenu moins l’épargne, avec des taux faibles pour les premiers francs consommés et très élevés pour les grosses dépenses. La consommation positionnelle des plus riches deviendrait plus coûteuse, l’épargne serait encouragée, et la course aux dépenses se ralentirait sans que personne perde en rang relatif. La Suisse, qui impose déjà fortement la consommation par la TVA, mais à taux unique, et qui a un impôt sur la fortune, pourrait en théorie l’envisager. Les obstacles sont importants : il faudrait mesurer l’épargne de chaque ménage, éviter les contournements par les achats à l’étranger, et réformer un système fiscal fédéraliste, où les cantons fixent l’essentiel de l’impôt sur le revenu. Les partisans d’une simplification fiscale y voient une complication supplémentaire ; ceux qui s’inquiètent de la consommation de ressources et de l’endettement des ménages y voient une piste prometteuse."
+      q: "Faudrait-il remplacer une partie de l’impôt sur le revenu par un impôt progressif sur la consommation, comme le propose Robert Frank ?",
+      r: "L’idée de Frank est d’imposer non pas le revenu, mais la consommation totale de chaque ménage, calculée comme le revenu moins l’épargne, avec des taux faibles pour les premières dépenses et très élevés pour les grosses dépenses. La consommation positionnelle des plus riches deviendrait plus coûteuse, l’épargne serait encouragée, et la course aux dépenses se ralentirait sans que personne perde en rang relatif. La plupart des pays taxent déjà la consommation, mais par une TVA à taux unique ou presque, qui pèse davantage, en proportion, sur les ménages modestes. Les obstacles sont importants : il faudrait mesurer l’épargne de chaque ménage, éviter les contournements par les achats à l’étranger, et réformer en profondeur les systèmes fiscaux. Les partisans d’une simplification fiscale y voient une complication supplémentaire ; ceux qui s’inquiètent de la consommation de ressources et de l’endettement des ménages y voient une piste prometteuse."
     },
     lectures: [
       ["Accessible", "Thorstein Veblen, Théorie de la classe de loisir, 1899, chapitres 3 et 4."],
@@ -326,7 +326,7 @@ ${veblen}
       objections: "Le goût, l’utilité du signal, le paternalisme, le paradoxe d’Easterlin contesté.",
       ecoles: "Smith, Veblen, Duesenberry et Leibenstein, Galbraith, Bourdieu, Hirsch, Easterlin et Frank.",
       source: "Veblen, 1899 : la consommation ostentatoire comme moyen de considération.",
-      quiz: "Six questions corrigées et une question sur l’impôt progressif sur la consommation.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

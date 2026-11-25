@@ -289,8 +289,8 @@ ${gains}
       o: ["Le Vietnam se spécialise dans les chaussures, la Corée dans les puces, et ils échangent", "La Corée produit tout elle-même", "Le Vietnam produit tout lui-même", "Aucun échange n’est avantageux"], c: 0,
       e: "Chaque pays se spécialise là où son coût d’opportunité est le plus faible, même s’il est moins productif partout." },
     ouverte: {
-      q: "Faut-il que la Suisse continue de protéger fortement son agriculture, au regard de la théorie de l’avantage comparatif ?",
-      r: "La théorie de Ricardo suggère que la protection a un coût : prix plus élevés pour les consommateurs, ressources maintenues dans un secteur sans avantage comparatif, et risque de mesures de rétorsion contre les exportations suisses. Mais plusieurs arguments s’ajoutent au calcul : l’agriculture entretient des paysages et une vie rurale dans les régions de montagne (des externalités positives que le marché ne rémunère pas), elle contribue à la sécurité d’approvisionnement en cas de crise, et une transition brutale imposerait des coûts concentrés sur une population précise. Une réponse fréquente des économistes consiste à remplacer la protection aux frontières par des paiements directs liés aux services rendus, qui préservent ces objectifs à un coût moindre pour les consommateurs ; la Suisse a d’ailleurs évolué dans ce sens depuis les années 1990."
+      q: "Les pays riches qui protègent fortement leur agriculture, comme le Japon, la Norvège ou la Suisse, devraient-ils continuer de le faire, au regard de la théorie de l’avantage comparatif ?",
+      r: "La théorie de Ricardo suggère que la protection a un coût : prix plus élevés pour les consommateurs, ressources maintenues dans un secteur sans avantage comparatif, et risque de mesures de rétorsion contre les exportations. Le Japon, par exemple, applique des droits de douane très élevés sur le riz importé au-delà d’un quota. Mais plusieurs arguments s’ajoutent au calcul : l’agriculture entretient des paysages et une vie rurale, notamment en montagne (des externalités positives que le marché ne rémunère pas), elle contribue à la sécurité d’approvisionnement en cas de crise, et une transition brutale imposerait des coûts concentrés sur une population précise. Une réponse fréquente des économistes consiste à remplacer la protection aux frontières par des paiements directs liés aux services rendus, qui préservent ces objectifs à un coût moindre pour les consommateurs ; l’Union européenne et la Suisse ont évolué dans ce sens depuis les années 1990."
     },
     lectures: [
       ["Accessible", "Paul Krugman, « Ricardo’s Difficult Idea », 1996, disponible en ligne. Un texte court et percutant sur les malentendus autour de l’avantage comparatif."],
@@ -329,7 +329,7 @@ ${gains}
       objections: "Perdants, coûts d’ajustement, politique industrielle, rendements croissants, dépendances.",
       ecoles: "Mercantilistes, Smith, Mill, structuralistes, marxistes, Krugman.",
       source: "Ricardo, chapitre 7 : la poursuite de l’avantage individuel et le bien universel.",
-      quiz: "Six questions corrigées, dont un calcul, et une question sur l’agriculture suisse.",
+      quiz: "Six questions corrigées, dont un calcul, et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

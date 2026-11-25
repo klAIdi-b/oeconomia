@@ -273,8 +273,8 @@ ${verres}
       o: ["En comparant ce que cette heure supplémentaire lui rapportera à ce qu’elle lui coûte", "En calculant la moyenne de ce que lui ont rapporté les huit premières heures", "En révisant toujours le plus possible", "En s’arrêtant dès qu’elle a dépassé la moyenne de sa classe"], c: 0,
       e: "Ce sont les comparaisons à la marge, et non les moyennes, qui guident les bonnes décisions." },
     ouverte: {
-      q: "De nombreuses communes suisses facturent l’eau selon un tarif unique par mètre cube. Faudrait-il, au regard de l’utilité marginale, adopter des tarifs progressifs par tranches ?",
-      r: "L’utilité marginale décroissante plaide pour une tarification par tranches : les premiers mètres cubes, essentiels, peuvent être bon marché, tandis que les usages moins nécessaires (arrosage, piscines) sont facturés plus cher, ce qui encourage les économies là où elles coûtent le moins de bien-être. La Suisse étant riche en eau, l’enjeu de rareté est cependant moins fort que dans les régions sèches, même si les sécheresses estivales récentes l’ont rendu plus visible. Plusieurs objections apparaissent : les tarifs par ménage pénalisent les familles nombreuses si l’on ne tient pas compte de la taille du foyer ; le coût du réseau est essentiellement fixe, ce qui justifie une taxe de base ; et la complexité administrative a un coût. Un économiste conclura que la tarification doit refléter à la fois la valeur marginale de l’eau, son coût et des considérations d’équité."
+      q: "De nombreuses villes facturent l’eau selon un tarif unique par mètre cube. Faudrait-il, au regard de l’utilité marginale, adopter des tarifs progressifs par tranches, comme le font de nombreuses villes d’Espagne ou d’Afrique du Sud ?",
+      r: "L’utilité marginale décroissante plaide pour une tarification par tranches : les premiers mètres cubes, essentiels, peuvent être bon marché, tandis que les usages moins nécessaires (arrosage, piscines) sont facturés plus cher, ce qui encourage les économies là où elles coûtent le moins de bien-être. L’enjeu est plus fort dans les régions sèches : lors de la grande sécheresse de 2017-2018, Le Cap a fortement relevé les tranches supérieures pour éviter de couper l’eau. Plusieurs objections apparaissent : les tarifs par ménage pénalisent les familles nombreuses si l’on ne tient pas compte de la taille du foyer ; le coût du réseau est surtout fixe, ce qui justifie une taxe de base ; et la complexité administrative a un coût. Un économiste conclura que la tarification doit refléter à la fois la valeur marginale de l’eau, son coût et des considérations d’équité."
     },
     lectures: [
       ["Accessible", "Robert Heilbroner, Les Grands Économistes, chapitre sur le monde victorien et l’économie marginaliste."],
@@ -313,7 +313,7 @@ ${verres}
       objections: "La mesure de l’utilité, la critique marxiste, les préférences façonnées, la rationalité, Sraffa.",
       ecoles: "Aristote, Say, Jevons-Menger-Walras, Marshall, Mises, Kahneman.",
       source: "Jevons, 1871 : la valeur dépend entièrement de l’utilité.",
-      quiz: "Six questions corrigées et une question sur la tarification de l’eau.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };

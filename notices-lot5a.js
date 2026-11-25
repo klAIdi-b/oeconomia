@@ -144,8 +144,8 @@ ${cercle}
       o: ["La division du travail est limitée par la taille du marché : au village, il n’y a pas assez de clients pour se spécialiser", "Les artisans de village sont plus habiles", "La loi interdit la spécialisation à la campagne", "En ville, les réparations sont moins chères à faire"], c: 0,
       e: "On ne peut se spécialiser que s’il y a assez de clients pour une seule activité." },
     ouverte: {
-      q: "La pandémie a relancé en Suisse le débat sur la dépendance aux chaînes d’approvisionnement mondiales, par exemple pour les médicaments. Faut-il relocaliser certaines productions ?",
-      r: "La théorie de la division du travail explique pourquoi la spécialisation internationale rend les biens moins chers : un petit pays comme la Suisse ne peut pas tout produire efficacement, et son marché intérieur est trop étroit pour beaucoup d’industries. Relocaliser coûte donc cher. Mais l’efficacité en temps normal n’est pas le seul critère : pour des biens essentiels, comme certains médicaments ou équipements médicaux, une rupture d’approvisionnement a un coût très élevé. La Suisse dispose déjà d’un système de réserves obligatoires pour certains biens vitaux, géré par l’Office fédéral pour l’approvisionnement économique du pays. Les économistes recommandent souvent de diversifier les fournisseurs et de constituer des stocks, plutôt que de relocaliser massivement, ce qui préserve l’essentiel des gains de la spécialisation tout en réduisant la vulnérabilité."
+      q: "La pandémie a relancé dans de nombreux pays le débat sur la dépendance aux chaînes d’approvisionnement mondiales, par exemple pour les médicaments ou les puces électroniques. Faut-il relocaliser certaines productions ?",
+      r: "La théorie de la division du travail explique pourquoi la spécialisation internationale rend les biens moins chers : aucun pays ne peut tout produire efficacement, et les marchés intérieurs sont trop étroits pour beaucoup d’industries. Relocaliser coûte donc cher. Mais l’efficacité en temps normal n’est pas le seul critère : pour des biens essentiels, comme certains médicaments ou composants électroniques, une rupture d’approvisionnement a un coût très élevé. Les États-Unis et l’Union européenne ont adopté en 2022 et 2023 de grands programmes de subventions pour produire davantage de puces sur leur sol, et plusieurs pays, comme la Suisse, imposent des réserves obligatoires pour certains biens vitaux. Les économistes recommandent souvent de diversifier les fournisseurs et de constituer des stocks plutôt que de relocaliser massivement, ce qui préserve l’essentiel des gains de la spécialisation tout en réduisant la vulnérabilité."
     },
     lectures: [
       ["Accessible", "Leonard Read, « I, Pencil », 1958, texte court disponible en ligne."],
@@ -184,7 +184,7 @@ ${epingles}
       objections: "Déqualification, limites du taylorisme, fragilité des chaînes, inégalités territoriales.",
       ecoles: "Platon, Smith, Babbage, Marx, Durkheim, Hayek, Krugman et Romer.",
       source: "Smith, 1776 : la première phrase de la Richesse des nations.",
-      quiz: "Six questions corrigées et une question sur la relocalisation.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
@@ -313,8 +313,8 @@ ${coop}
       o: ["Plutôt à Keynes : la demande manque partout à la fois parce que l’argent est gardé", "Plutôt à Say : il y a trop de certains biens et pas assez d’autres", "Aux deux à égalité, puisque les prix baissent", "À aucun des deux, car les crises n’ont rien à voir avec la demande"], c: 0,
       e: "On admet souvent que Say a raison à long terme, et Keynes en période de crise." },
     ouverte: {
-      q: "Pendant la Grande Dépression, la Suisse a maintenu un franc fort et cherché à baisser prix et salaires jusqu’en 1936. Que dirait Say de cette politique, et que dirait Keynes ?",
-      r: "Dans la logique de Say et des classiques, l’économie suisse souffrait de coûts trop élevés par rapport à ses concurrents : la baisse des prix et des salaires devait rétablir la compétitivité et la production, qui créerait elle-même ses débouchés. Keynes répondrait que la baisse générale des prix et des salaires réduit les revenus et donc la demande, augmente le poids réel des dettes, et pousse chacun à retarder ses dépenses en attendant de nouvelles baisses : la demande manque, et la crise se prolonge. L’expérience suisse, avec une reprise nette après la dévaluation de septembre 1936, et celle des autres pays du bloc-or, sortis tardivement de la crise, est souvent citée en faveur de la seconde interprétation. Les défenseurs de la politique de l’époque soulignent la volonté de préserver la confiance dans le franc et l’épargne des ménages, qui restent des préoccupations suisses."
+      q: "Pendant la Grande Dépression, les pays du « bloc-or », comme la France, la Belgique ou la Suisse, ont maintenu la valeur de leur monnaie et cherché à baisser prix et salaires jusqu’en 1935-1936. Que dirait Say de cette politique, et que dirait Keynes ?",
+      r: "Dans la logique de Say et des classiques, ces économies souffraient de coûts trop élevés par rapport à leurs concurrents, qui avaient dévalué : la baisse des prix et des salaires devait rétablir la compétitivité et la production, qui créerait elle-même ses débouchés. Keynes répondrait que la baisse générale des prix et des salaires réduit les revenus et donc la demande, augmente le poids réel des dettes, et pousse chacun à retarder ses dépenses en attendant de nouvelles baisses : la demande manque, et la crise se prolonge. Les pays qui ont dévalué tôt, comme le Royaume-Uni en 1931, se sont redressés plus vite que ceux du bloc-or, qui n’ont repris qu’après leurs dévaluations de 1935 et 1936 : l’expérience est souvent citée en faveur de la seconde interprétation. Les défenseurs de la politique de l’époque soulignaient la volonté de préserver la confiance dans la monnaie et l’épargne des ménages."
     },
     lectures: [
       ["Accessible", "Paul Krugman, « Baby-Sitting the Economy », Slate, 1998, en ligne."],
@@ -353,7 +353,7 @@ ${coop}
       objections: "Say avait raison à long terme, la caricature de Keynes, l’effet Pigou, identité et égalité.",
       ecoles: "Smith, Say et Ricardo, Malthus et Sismondi, Marx, Keynes, Friedman et Lucas.",
       source: "Say : un produit terminé offre un débouché à d’autres produits.",
-      quiz: "Six questions corrigées et une question sur la Suisse des années 1930.",
+      quiz: "Six questions corrigées et une question de réflexion.",
       lectures: "Cinq lectures classées par niveau."
     }
   };
