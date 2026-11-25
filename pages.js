@@ -344,11 +344,19 @@
     const keys = [...new Set((q.html.match(/data-g="([^"]+)"/g) || []).map((m) => m.slice(8, -1)))];
     OEC.concepts.forEach((c) => { if (c.questions.includes(id) && !keys.includes(c.id)) keys.push(c.id); });
     const inner = $("#qpageInner");
+    /* quatre questions pour vérifier sa compréhension, puis les exercices du thème */
+    const DQ = (OEC.dossierQuiz || {})[id];
+    const quizDossier = DQ ? `<h3>Vérifier sa compréhension</h3><div class="quizbox">${DQ.quiz.map((x, i) => `
+        <div class="quizq" data-c="${x.c}"><p class="qq"><b>${i + 1}.</b> ${x.q}</p>
+          <div class="qopts">${x.o.map((o, j) => `<button class="qopt" data-j="${j}">${o}</button>`).join("")}</div>
+          <p class="qexpl" hidden>${x.e}</p></div>`).join("")}
+        <p class="qscore" hidden></p></div>
+        <p class="dq-train"><a class="btn small" href="#ex-${DQ.theme}-1">S’entraîner sur ce thème →</a></p>` : "";
     inner.innerHTML = `
       <nav class="crumb"><a href="#accueil">Accueil</a><span>/</span><a href="#questions">Grandes questions</a></nav>
       <header class="article-head"><p class="eyebrow">Grande question · ${q.court} · ${minutes(words(q.html))} min de lecture ${readPill("q-" + id)}</p><h1>${q.titre}</h1><p class="chapo">${q.chapo}</p></header>
       <div class="article-layout">
-        <article class="prose">${q.html}</article>
+        <article class="prose">${q.html}${quizDossier}</article>
         <aside class="aside" id="qAside"></aside>
       </div>
       <nav class="pager">
@@ -360,6 +368,7 @@
       ${keys.length ? `<div><h4>Concepts clés</h4>${conceptChips(keys)}</div>` : ""}
       <div><h4>Pour continuer</h4><div class="stack">${more.join("")}</div></div>`;
     $$("dfn", inner).forEach((d) => (d.tabIndex = 0));
+    if (DQ) wireQuiz(inner);
   }
 
   /* ---------- Page « économiste » ---------- */
@@ -583,7 +592,7 @@
       const done = qs.filter((x) => x.dataset.done);
       if (done.length === qs.length) {
         const ok = done.filter((x) => x.dataset.done === "ok").length, s = $(".qscore", root);
-        s.hidden = false; s.textContent = `Score : ${ok} sur ${qs.length}. ${ok === qs.length ? "Notion maîtrisée." : "Relisez les sections concernées, puis réessayez en rechargeant la page."}`;
+        s.hidden = false; s.textContent = `Score : ${ok} sur ${qs.length}. ${ok === qs.length ? (location.hash.startsWith("#q-") ? "Dossier bien compris." : "Notion maîtrisée.") : "Relisez les sections concernées, puis réessayez en rechargeant la page."}`;
         if (ok >= qs.length - 1) markRead(location.hash.slice(1));
       }
     }));
