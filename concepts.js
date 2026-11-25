@@ -69,7 +69,7 @@ OEC.concepts = [
     court: "Marchés où un ou quelques acteurs peuvent influencer les prix, à la vente ou à l’achat.",
     texte: "Cournot analyse dès 1838 le monopole et le duopole. Le monopoleur restreint sa production pour vendre plus cher : il maximise son profit là où sa recette marginale égale son coût marginal, au détriment des consommateurs. Joan Robinson et Edward Chamberlin généralisent en 1933 l’analyse à la concurrence imparfaite, où chaque firme vend un produit un peu différencié. Robinson introduit le monopsone, un acheteur dominant, notamment sur le marché du travail. La théorie des jeux, à partir des années 1950, permet d’analyser les oligopoles, où chaque firme anticipe la réaction des autres. Ces travaux fondent le droit de la concurrence, et les débats actuels sur le pouvoir des grandes plateformes numériques.",
     exemple: "Dans une petite ville dominée par un seul grand employeur, celui-ci peut payer moins qu’ailleurs sans perdre ses salariés, faute d’alternative.",
-    auteurs: ["robinson", "galbraith", "schumpeter"], questions: ["etat", "inegalites"], voir: ["offre-demande", "surplus"] },
+    auteurs: ["robinson", "galbraith", "schumpeter"], questions: ["etat", "inegalites"], voir: ["equilibre-nash", "offre-demande", "surplus"] },
 
   { id: "division-travail", nom: "Division du travail", cat: "valeur",
     court: "La spécialisation des tâches entre travailleurs, entreprises ou pays, source majeure de productivité.",
@@ -295,7 +295,7 @@ OEC.concepts = [
     court: "Ressources rivales mais difficilement excluables, exposées à la surexploitation en l’absence de règles.",
     texte: "Une pêcherie, une nappe phréatique, un pâturage : chaque usager réduit ce qui reste pour les autres, mais il est difficile d’en interdire l’accès. Garrett Hardin conclut en 1968 à une « tragédie » inévitable, sauf à privatiser ou à étatiser. Elinor Ostrom montre en 1990 que des communautés d’usagers ont souvent su s’organiser durablement, et dégage huit principes communs à leurs réussites. Le concept s’est étendu aux communs de la connaissance, comme Wikipédia ou les logiciels libres, et aux communs mondiaux, comme l’atmosphère et les océans, pour lesquels l’auto-organisation est plus difficile.",
     exemple: "Les bisses du Valais, canaux d’irrigation séculaires, sont gérés par des consortages d’usagers qui fixent les tours d’eau et les corvées d’entretien.",
-    auteurs: ["ostrom", "aristote"], questions: ["etat"], voir: ["externalite", "bien-public"], lab: 4 },
+    auteurs: ["ostrom", "aristote"], questions: ["etat"], voir: ["equilibre-nash", "externalite", "bien-public"], lab: 4 },
 
   /* ---------- Institutions et comportements ---------- */
   { id: "aversion-pertes", nom: "Aversion aux pertes", cat: "institutions",
@@ -309,6 +309,12 @@ OEC.concepts = [
     texte: "George Akerlof publie en 1970 « The Market for Lemons » sur le marché des voitures d’occasion. Le vendeur connaît l’état de sa voiture, l’acheteur non. Celui-ci paie donc un prix moyen, qui décourage les propriétaires de bonnes voitures de vendre ; il ne reste que les « citrons », et le marché peut disparaître : c’est la sélection adverse. Michael Spence montre que les diplômes peuvent servir de signal de compétence ; Joseph Stiglitz analyse le rationnement du crédit et de l’assurance. Tous trois reçoivent le Nobel en 2001. L’asymétrie d’information explique les garanties, les marques, les réputations, la réglementation financière et sanitaire.",
     exemple: "Les plateformes de location entre particuliers reposent sur les notes et commentaires, qui réduisent l’asymétrie entre hôte et voyageur.",
     auteurs: ["stiglitz", "hayek"], questions: ["etat"], voir: ["alea-moral"] },
+
+  { id: "equilibre-nash", nom: "Équilibre de Nash", cat: "institutions",
+    court: "Une situation où personne ne peut améliorer son sort en changeant seul de stratégie, compte tenu de ce que font les autres.",
+    texte: "La théorie des jeux étudie les situations où le résultat de chacun dépend aussi des choix des autres. John Nash définit en 1950 l’équilibre qui porte son nom : chacun joue la meilleure réponse aux stratégies des autres, et personne n’a intérêt à changer seul. Cet équilibre n’est pas forcément bon pour tous : dans le dilemme du prisonnier, chacun a intérêt à trahir, et tous finissent moins bien lotis que s’ils avaient coopéré. Certains jeux ont plusieurs équilibres, que départagent les conventions ; quand le jeu se répète, la coopération peut devenir stable. L’outil éclaire les cartels, les guerres de prix, les négociations climatiques ou les enchères. Les expériences montrent toutefois que l’équité et la confiance comptent davantage que ne le prévoit la théorie.",
+    exemple: "Depuis 2004, la loi suisse sur les cartels offre l’immunité à la première entreprise qui dénonce un cartel : chaque membre a alors intérêt à parler avant les autres.",
+    auteurs: ["ostrom", "kahneman"], questions: ["etat", "valeur"], voir: ["concurrence-imparfaite", "biens-communs", "externalite", "optimum-pareto"] },
 
   { id: "consommation-ostentatoire", nom: "Consommation ostentatoire", cat: "institutions",
     court: "Chez Veblen, la dépense destinée à afficher son rang social plutôt qu’à satisfaire un besoin.",

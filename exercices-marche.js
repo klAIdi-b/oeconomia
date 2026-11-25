@@ -8,7 +8,7 @@
 
   X.theme({ id: "marche", nom: "Marché et prix",
     intro: "Comment se forment les prix ? Ces exercices vous entraînent à raisonner avec l’offre et la demande, à calculer des variations, des élasticités et des surplus, et à analyser l’effet des taxes, des prix plafonds et du monopole.",
-    notions: ["offre-demande", "elasticite", "surplus", "cout-opportunite", "utilite-marginale", "concurrence-imparfaite", "valeur-usage"] });
+    notions: ["offre-demande", "elasticite", "surplus", "cout-opportunite", "utilite-marginale", "concurrence-imparfaite", "equilibre-nash", "valeur-usage"] });
   ["Monnaie et inflation", "Croissance et PIB", "Emploi et chômage", "Commerce international", "Inégalités et répartition", "État et biens publics", "Finance"].forEach((n, i) =>
     X.theme({ id: "bientot" + i, nom: n, bientot: true, intro: "", notions: [] }));
 
@@ -138,6 +138,14 @@
     options: ["La demande de location de skis augmente, car les skieurs économisent ailleurs.", "La demande de location de skis diminue : sa courbe se déplace vers la gauche.", "L’offre de location de skis diminue.", "Aucun effet : ce sont deux marchés différents."], c: 1,
     explication: P("Le forfait et la location de skis sont des <b>biens complémentaires</b> : on les consomme ensemble. Si le forfait devient plus cher, certains skieurs viennent moins souvent ; à chaque prix, on loue moins de skis. La <b>courbe de demande</b> de location se déplace vers la gauche, ce qui tend à faire baisser son prix et la quantité louée.") },
 
+  { id: "m2-nash", theme: "marche", niveau: 2, type: "qcm", notion: "equilibre-nash",
+    titre: "La guerre des prix", competence: "Trouver un équilibre de Nash dans une matrice de gains.",
+    enonce: P("Deux compagnies de taxis d’une petite ville choisissent chacune un tarif élevé ou un tarif bas. Le tableau indique leur bénéfice quotidien en francs (compagnie A ; compagnie B) :") +
+      `<table><thead><tr><th></th><th>B : tarif élevé</th><th>B : tarif bas</th></tr></thead><tbody><tr><th>A : tarif élevé</th><td>800 ; 800</td><td>200 ; 1000</td></tr><tr><th>A : tarif bas</th><td>1000 ; 200</td><td>400 ; 400</td></tr></tbody></table>` +
+      P("Quel est l’équilibre de Nash de ce jeu ?"),
+    options: ["Les deux gardent un tarif élevé, car c’est l’issue qui leur rapporte le plus.", "Les deux baissent leur tarif : quoi que fasse l’autre, chacune gagne plus en baissant le sien.", "L’une garde un tarif élevé et l’autre le baisse.", "Il n’y a pas d’équilibre, car chacune veut gagner plus que l’autre."], c: 1,
+    explication: P("Cherchons la meilleure réponse de A. Si B garde un tarif élevé, A gagne 1000 en baissant au lieu de 800. Si B baisse, A gagne 400 en baissant au lieu de 200. Baisser est toujours préférable : c’est une <b>stratégie dominante</b>. Le jeu est symétrique, c’est donc vrai aussi pour B.", "L’<b>équilibre de Nash</b> est (tarif bas, tarif bas), avec 400 francs chacune, alors qu’elles gagneraient 800 en gardant toutes deux un tarif élevé. C’est un <b>dilemme du prisonnier</b> : il existe une issue meilleure pour les deux, mais elle n’est pas stable.") },
+
   /* =========================== NIVEAU 3 : AVANCÉ =========================== */
   { id: "m3-perte-seche", theme: "marche", niveau: 3, type: "calcul", notion: "surplus",
     titre: "La perte sèche d’une taxe", competence: "Calculer le nouvel équilibre et la perte sèche après une taxe.",
@@ -202,6 +210,11 @@
     enonce: P("Les CFF vendent des billets « dégriffés », moins chers, pour certains trains peu fréquentés, à réserver à l’avance et valables seulement pour ce train. Le prix normal reste inchangé pour les autres voyageurs.", "Quelle est la logique économique principale de cette offre ?"),
     options: ["Faire payer davantage les voyageurs pressés pour compenser les pertes.", "Pratiquer une discrimination par les prix : attirer les clients sensibles au prix sans baisser le tarif de ceux qui paieraient le prix fort.", "Respecter une obligation légale de proposer des billets bon marché.", "Réduire la demande aux heures de pointe en augmentant le prix normal."], c: 1,
     explication: P("C’est une forme de <b>discrimination par les prix</b> : vendre le même service à des prix différents selon la disposition à payer. Les voyageurs flexibles et sensibles au prix (étudiants, retraités, loisirs) prennent un billet dégriffé sur un train peu rempli ; les voyageurs qui ont besoin de flexibilité paient le plein tarif.", "Les conditions (réservation, train imposé) empêchent la plupart des voyageurs pressés de profiter du rabais. Comme le coût d’un passager supplémentaire dans un train peu rempli est très faible, l’entreprise gagne des recettes, et des voyageurs qui ne seraient pas partis peuvent voyager.") },
+  { id: "m3-clemence", theme: "marche", niveau: 3, type: "qcm", notion: "equilibre-nash",
+    titre: "Faire éclater un cartel", competence: "Analyser une règle de droit avec la théorie des jeux.",
+    enonce: P("Trois entreprises de construction se sont entendues pendant des années sur les prix des marchés publics de leur région. La loi sur les cartels prévoit que la première entreprise qui dénonce un cartel auquel elle participe peut échapper entièrement à l’amende ; les suivantes peuvent obtenir une réduction.", "Pourquoi ce programme de clémence rend-il les cartels plus fragiles ?"),
+    options: ["Parce qu’il réduit les amendes de toutes les entreprises, qui n’ont plus peur d’être sanctionnées.", "Parce qu’il transforme le cartel en dilemme du prisonnier : chaque membre craint d’être dénoncé et a intérêt à parler le premier.", "Parce qu’il oblige l’État à fixer lui-même les prix des marchés publics.", "Parce qu’il interdit aux entreprises de se rencontrer."], c: 1,
+    explication: P("Sans programme de clémence, se taire est la meilleure réponse de chacun tant que les autres se taisent : le cartel est un <b>équilibre</b> stable, entretenu par la répétition des appels d’offres.", "Avec la clémence, dénoncer devient avantageux : si les autres se taisent, j’efface mon amende ; s’ils risquent de parler, je dois parler avant eux. Dénoncer devient une <b>stratégie dominante</b>, et la simple méfiance suffit à faire éclater le cartel.", "La Suisse applique ce mécanisme depuis la révision de la loi sur les cartels entrée en vigueur en 2004, comme l’Union européenne et les États-Unis.") },
   { id: "m1-fait-valeur", theme: "marche", niveau: 1, type: "vf", typeLib: "Constat ou jugement de valeur", etiquettes: ["Constat", "Jugement de valeur"],
     titre: "Constat ou jugement de valeur ?", competence: "Distinguer un constat, que l’on peut vérifier, d’un jugement de valeur, qui dit ce qui devrait être.",
     enonce: P("Pour chaque affirmation, dites s’il s’agit d’un <b>constat</b>, que l’on peut vérifier avec des données, même s’il se révèle faux, ou d’un <b>jugement de valeur</b>, qui dit ce qui devrait être."),
