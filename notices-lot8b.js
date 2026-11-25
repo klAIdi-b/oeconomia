@@ -111,19 +111,19 @@ ${mecanismes}
     },
     quiz: [
       { q: "Qu’est-ce que l’hystérèse en économie ?",
-        o: ["Une inflation incontrôlée", "Le fait qu’un choc temporaire laisse des effets durables sur le chômage ou la production", "Une panique boursière", "Une baisse des impôts"], c: 1,
+        o: ["Une inflation incontrôlée", "Le fait qu’un choc temporaire laisse des effets durables sur le chômage ou la production", "Une panique boursière", "Le fait que le chômage revienne toujours à son niveau d’avant la crise"], c: 1,
         e: "Le niveau d’équilibre lui-même dépend de l’histoire passée." },
       { q: "D’où vient le terme hystérèse ?",
-        o: ["De la médecine", "De la physique du magnétisme", "De la finance", "Du droit"], c: 1,
+        o: ["De la médecine", "De la physique du magnétisme", "De la finance", "De la biologie"], c: 1,
         e: "Un morceau de fer reste aimanté après la disparition du champ magnétique." },
       { q: "Quel est le mécanisme des insiders et des outsiders ?",
-        o: ["Les chômeurs fixent les salaires", "Les salariés en place négocient pour eux-mêmes, sans tenir compte des chômeurs exclus de la négociation", "Les entreprises embauchent tous les chômeurs", "Les syndicats disparaissent"], c: 1,
+        o: ["Les chômeurs fixent les salaires", "Les salariés en place négocient pour eux-mêmes, sans tenir compte des chômeurs exclus de la négociation", "Les entreprises embauchent tous les chômeurs", "Les chômeurs acceptent des salaires plus bas, ce qui fait baisser le chômage"], c: 1,
         e: "Après une récession, les insiders moins nombreux protègent leurs emplois plutôt que la réembauche." },
       { q: "Que montrent les études sur les jeunes diplômés pendant une récession ?",
-        o: ["Qu’ils gagnent plus", "Qu’ils gagnent moins pendant une dizaine d’années", "Qu’ils ne sont pas affectés", "Qu’ils émigrent tous"], c: 1,
+        o: ["Qu’ils gagnent plus", "Qu’ils gagnent moins pendant une dizaine d’années", "Qu’ils ne sont pas affectés", "Qu’ils rattrapent leur retard de salaire en un an"], c: 1,
         e: "Ils commencent dans de moins bons emplois et rattrapent lentement leur retard." },
       { q: "Pourquoi le chômage partiel aide-t-il à limiter l’hystérèse ?",
-        o: ["Parce qu’il réduit les impôts", "Parce qu’il garde les salariés liés à leur entreprise et préserve leurs compétences", "Parce qu’il augmente les salaires", "Parce qu’il supprime les syndicats"], c: 1,
+        o: ["Parce qu’il réduit les impôts", "Parce qu’il garde les salariés liés à leur entreprise et préserve leurs compétences", "Parce qu’il augmente les salaires", "Parce qu’il permet aux entreprises de licencier plus facilement"], c: 1,
         e: "On évite la rupture du lien d’emploi et la perte de capital humain." }
     ],
     ouverte: {
@@ -261,10 +261,10 @@ ${fonctions}
     },
     quiz: [
       { q: "Quelles sont les trois fonctions classiques de la monnaie ?",
-        o: ["Produire, consommer, épargner", "Unité de compte, intermédiaire des échanges, réserve de valeur", "Imprimer, prêter, taxer", "Exporter, importer, investir"], c: 1,
+        o: ["Produire, consommer, épargner", "Unité de compte, intermédiaire des échanges, réserve de valeur", "Unité de compte, moyen de paiement, création de richesse", "Exporter, importer, investir"], c: 1,
         e: "Une bonne monnaie remplit les trois à la fois." },
       { q: "Qu’est-ce que la « double coïncidence des besoins » ?",
-        o: ["Le fait que deux personnes aient les mêmes goûts", "La condition du troc : trouver quelqu’un qui a ce qu’on veut et veut ce qu’on a", "Le fait d’avoir deux comptes", "Une double imposition"], c: 1,
+        o: ["Le fait que deux personnes aient les mêmes goûts", "La condition du troc : trouver quelqu’un qui a ce qu’on veut et veut ce qu’on a", "L’égalité entre l’offre et la demande d’un bien", "Le fait que l’acheteur et le vendeur s’accordent sur un prix"], c: 1,
         e: "La monnaie supprime cette condition en séparant vente et achat." },
       { q: "Avec 100 biens et sans unité de compte, combien de prix relatifs faudrait-il connaître ?",
         o: ["100", "Près de 5 000", "200", "1 000 000"], c: 1,
@@ -273,7 +273,7 @@ ${fonctions}
         o: ["Par l’impression de billets", "Par les banques quand elles accordent des crédits", "Par l’extraction d’or", "Par les entreprises"], c: 1,
         e: "Le prêt crée un dépôt nouveau sur le compte de l’emprunteur." },
       { q: "Qu’est-ce que le WIR ?",
-        o: ["Une cryptomonnaie", "Une monnaie complémentaire créée en 1934 par des entrepreneurs suisses et toujours utilisée entre PME", "Une ancienne pièce romaine", "Un impôt fédéral"], c: 1,
+        o: ["Une cryptomonnaie", "Une monnaie complémentaire créée en 1934 par des entrepreneurs suisses et toujours utilisée entre PME", "Une monnaie émise par la BNS pour les entreprises", "Un impôt fédéral"], c: 1,
         e: "Son usage augmente en récession, ce qui en fait un amortisseur de crise." }
     ],
     ouverte: {

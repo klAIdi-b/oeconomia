@@ -104,16 +104,16 @@ ${thunen}
     },
     quiz: [
       { q: "Dans l’exemple de Ricardo, qu’est-ce qui fixe le prix du blé ?",
-        o: ["Le coût sur la terre la plus fertile", "Le coût sur la terre la moins fertile encore cultivée", "La rente moyenne", "Le prix fixé par le roi"], c: 1,
+        o: ["Le coût sur la terre la plus fertile", "Le coût sur la terre la moins fertile encore cultivée", "La rente moyenne", "Le coût moyen de toutes les terres cultivées"], c: 1,
         e: "Le blé doit couvrir le coût de production sur la plus mauvaise terre cultivée, sinon elle ne le serait pas ; ce coût fixe le prix pour tous." },
       { q: "Selon Ricardo, pourquoi paie-t-on une rente ?",
-        o: ["Parce que la rente rend le blé cher", "Parce que le blé est cher, ce qui procure un surplus aux meilleures terres", "Parce que les propriétaires travaillent", "Parce que l’État l’impose"], c: 1,
+        o: ["Parce que la rente rend le blé cher", "Parce que le blé est cher, ce qui procure un surplus aux meilleures terres", "Parce que les propriétaires travaillent", "Parce que le propriétaire a amélioré la terre par son travail"], c: 1,
         e: "Le prix élevé du blé crée la rente, et non l’inverse. C’est pourquoi taxer la rente ne fait pas monter le prix." },
       { q: "Trois terres produisent 100, 90 et 80 avec le même coût ; la terre à 80 couvre juste ses coûts. Quelle est la rente totale ?",
         o: ["10", "20", "30", "270"], c: 2,
         e: "La première terre dégage 100 − 80 = 20, la deuxième 90 − 80 = 10, la troisième 0. Total : 30." },
       { q: "Qu’est-ce que la « recherche de rente » au sens de Tullock et Krueger ?",
-        o: ["La recherche d’un logement", "Les ressources dépensées pour obtenir un privilège plutôt que pour produire", "La gestion d’un patrimoine immobilier", "Le calcul de la rente agricole"], c: 1,
+        o: ["Le placement de l’épargne dans des actifs qui rapportent un revenu régulier", "Les ressources dépensées pour obtenir un privilège plutôt que pour produire", "La gestion d’un patrimoine immobilier", "Le calcul de la rente agricole"], c: 1,
         e: "Lobbying, démarches pour obtenir licences et protections : ces efforts coûtent sans rien produire, en plus de la perte causée par le privilège lui-même." },
       { q: "Que prévoit la loi suisse sur l’aménagement du territoire révisée en 2014 ?",
         o: ["L’interdiction de construire", "Un prélèvement d’au moins 20 % de la plus-value lors du classement d’un terrain en zone à bâtir", "La nationalisation des terrains", "La suppression de l’impôt foncier"], c: 1,
@@ -242,7 +242,7 @@ ${paradoxe}
     },
     quiz: [
       { q: "Pourquoi le paradoxe de l’épargne est-il un « sophisme de composition » ?",
-        o: ["Parce que l’épargne est toujours mauvaise", "Parce que ce qui est vrai pour un ménage n’est pas vrai pour tous les ménages ensemble", "Parce que les ménages mentent sur leur épargne", "Parce que les banques gardent l’épargne"], c: 1,
+        o: ["Parce que l’épargne est toujours mauvaise", "Parce que ce qui est vrai pour un ménage n’est pas vrai pour tous les ménages ensemble", "Parce que l’épargne réduit toujours l’investissement des entreprises", "Parce que les banques gardent l’épargne"], c: 1,
         e: "L’épargne d’un ménage ne réduit pas son revenu ; l’épargne de tous réduit la dépense, donc les revenus de tous." },
       { q: "Avec une propension à dépenser de 0,8 et un investissement inchangé, de combien baisse le revenu si les ménages veulent épargner 100 de plus ?",
         o: ["100", "80", "500", "Il ne baisse pas"], c: 2,
@@ -254,7 +254,7 @@ ${paradoxe}
         o: ["Une récession causée par la comptabilité", "Une récession où les entreprises endettées remboursent leurs dettes au lieu d’investir, même à taux zéro", "Une faillite bancaire", "Une hausse des impôts"], c: 1,
         e: "Le secteur privé épargne massivement pour réparer ses bilans ; seule la dépense publique empêche alors l’effondrement de la demande." },
       { q: "Pourquoi la forte épargne suisse ne provoque-t-elle pas de récession ?",
-        o: ["Parce qu’elle est interdite", "Parce que l’épargne excédentaire est placée à l’étranger et que les exportations soutiennent la demande", "Parce que l’État dépense tout", "Parce que les Suisses empruntent autant qu’ils épargnent"], c: 1,
+        o: ["Parce que la BNS compense en baissant toujours ses taux", "Parce que l’épargne excédentaire est placée à l’étranger et que les exportations soutiennent la demande", "Parce que l’État dépense tout", "Parce que les Suisses empruntent autant qu’ils épargnent"], c: 1,
         e: "L’excédent d’épargne correspond à l’excédent courant : la demande étrangère compense la faiblesse relative de la demande intérieure." }
     ],
     ouverte: {

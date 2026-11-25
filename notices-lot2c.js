@@ -92,7 +92,7 @@ ${compound}
     },
     quiz: [
       { q: "Que désignent r et g chez Piketty ?",
-        o: ["Le revenu et le gouvernement", "Le rendement du capital et le taux de croissance de l’économie", "Les recettes fiscales et la dette", "Le taux de change et le PIB"], c: 1,
+        o: ["Le taux d’intérêt réel et la croissance de la population", "Le rendement du capital et le taux de croissance de l’économie", "Les recettes fiscales et la dette", "Le taux de change et le PIB"], c: 1,
         e: "r est le rendement annuel moyen du patrimoine, g la croissance du revenu national. Quand r > g, le capital croît plus vite que l’économie." },
       { q: "Avec un taux d’épargne de 12 % et une croissance de 2 %, quel rapport capital sur revenu β = s / g obtient-on à long terme ?",
         o: ["2,4", "6", "10", "24"], c: 1,
@@ -104,7 +104,7 @@ ${compound}
         o: ["r est toujours inférieur à g", "La hausse de la part du capital tient presque entièrement au logement", "Les données fiscales sont fausses", "L’héritage a disparu"], c: 1,
         e: "Si le phénomène vient du logement, il s’explique par la rareté du foncier et l’urbanisme, ce qui appelle d’autres réponses qu’un impôt général sur le capital." },
       { q: "Que reprochent Acemoglu et Robinson à Piketty ?",
-        o: ["D’ignorer les données", "De présenter des « lois générales » alors que les institutions expliquent davantage l’évolution des inégalités", "De proposer un impôt trop faible", "De négliger l’Afrique"], c: 1,
+        o: ["D’ignorer les données", "De présenter des « lois générales » alors que les institutions expliquent davantage l’évolution des inégalités", "De proposer un impôt trop faible", "De sous-estimer la hausse des inégalités aux États-Unis"], c: 1,
         e: "Pour eux, ce sont les institutions politiques et économiques, différentes selon les pays, qui déterminent la répartition, plus qu’un écart arithmétique." }
     ],
     ouverte: {
@@ -246,10 +246,10 @@ ${principes}
     },
     quiz: [
       { q: "Qu’est-ce qui caractérise un bien commun ?",
-        o: ["Il est non rival et non excluable", "Il est rival mais difficilement excluable", "Il appartient toujours à l’État", "Il est gratuit et inépuisable"], c: 1,
+        o: ["Il est non rival et non excluable", "Il est rival mais difficilement excluable", "Il appartient toujours à l’État", "Il est non rival mais excluable"], c: 1,
         e: "Chaque usage réduit ce qui reste aux autres (rivalité), mais il est coûteux d’interdire l’accès (non-excluabilité). D’où le risque de surexploitation." },
       { q: "Quelles solutions Hardin propose-t-il en 1968 ?",
-        o: ["La gestion par les usagers eux-mêmes", "La privatisation ou la gestion par l’État", "La suppression de la ressource", "L’appel à la conscience des usagers"], c: 1,
+        o: ["La gestion par les usagers eux-mêmes", "La privatisation ou la gestion par l’État", "Une gestion confiée aux organisations internationales", "L’appel à la conscience des usagers"], c: 1,
         e: "Hardin ne voit que la propriété privée ou la coercition publique ; il juge l’appel à la conscience inefficace." },
       { q: "Qu’ont montré les expériences de laboratoire d’Ostrom, Walker et Gardner ?",
         o: ["Que la communication ne change rien", "Que la simple possibilité de discuter réduit fortement la surexploitation", "Que seules les amendes de l’État fonctionnent", "Que les participants coopèrent toujours"], c: 1,
@@ -258,7 +258,7 @@ ${principes}
         o: ["Un tirage au sort annuel des pâturages", "L’interdiction d’envoyer à l’alpage plus de vaches qu’on ne peut en nourrir l’hiver", "Un impôt sur chaque vache", "La vente des alpages au plus offrant"], c: 1,
         e: "La règle de 1517 lie le droit d’usage estival à la capacité de chacun à nourrir ses bêtes en hiver avec son propre foin." },
       { q: "Quelle limite le cas islandais des quotas transférables illustre-t-il ?",
-        o: ["Les stocks se sont effondrés", "Une solution efficace pour la ressource peut concentrer les droits et poser des problèmes de répartition", "Les quotas ont été interdits", "Les pêcheurs ont refusé de pêcher"], c: 1,
+        o: ["Les stocks se sont effondrés", "Une solution efficace pour la ressource peut concentrer les droits et poser des problèmes de répartition", "Les quotas ont été interdits", "Les quotas n’ont eu aucun effet sur les stocks de poissons"], c: 1,
         e: "Les stocks et la rentabilité se sont améliorés, mais les quotas se sont concentrés et certains villages ont perdu leur pêche." }
     ],
     ouverte: {

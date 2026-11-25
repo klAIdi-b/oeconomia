@@ -110,7 +110,7 @@ ${weimar}
         o: ["10 %", "12 %", "8 %", "2 %"], c: 2,
         e: "En taux de variation, l’équation donne approximativement : variation de M + variation de V = variation de P + variation de Q. Donc 10 + 0 = P + 2, soit environ 8 %." },
       { q: "Pourquoi la forte création de monnaie de banque centrale de 2008-2015 n’a-t-elle pas provoqué d’inflation ?",
-        o: ["Parce que la production a triplé", "Parce que la vitesse de circulation s’est effondrée, la monnaie restant dans les réserves des banques", "Parce que les prix étaient contrôlés par l’État", "Parce que la monnaie avait été détruite aussitôt"], c: 1,
+        o: ["Parce que la production a augmenté au même rythme que la monnaie", "Parce que la vitesse de circulation s’est effondrée, la monnaie restant dans les réserves des banques", "Parce que les banques centrales ont aussitôt relevé leurs taux", "Parce que la monnaie avait été détruite aussitôt"], c: 1,
         e: "La monnaie de banque centrale a fortement augmenté, mais elle est restée en grande partie dans les réserves des banques. La masse monétaire au sens large, celle que les ménages et les entreprises dépensent, a beaucoup moins augmenté, et sa vitesse de circulation a baissé. La dépense totale n’a donc pas suivi." },
       { q: "Que montre Phillip Cagan sur les hyperinflations ?",
         o: ["Qu’elles naissent de chocs pétroliers", "Qu’elles sont précédées d’un financement massif des déficits par la création monétaire, et que la vitesse y explose", "Qu’elles touchent surtout les pays riches", "Qu’elles se terminent toujours spontanément"], c: 1,
@@ -269,7 +269,7 @@ ${ladder}
         o: ["Plus de concurrence augmente toujours l’innovation", "Plus de concurrence la réduit toujours", "La relation a une forme de U inversé", "Il n’y a aucun lien"], c: 2,
         e: "Une concurrence modérée pousse à innover pour s’en échapper ; une concurrence extrême réduit trop le profit espéré de l’innovation." },
       { q: "Pourquoi la destruction créatrice suscite-t-elle tant de résistances ?",
-        o: ["Parce qu’elle réduit toujours le niveau de vie moyen", "Parce que les pertes sont concentrées et visibles, et les gains dispersés et futurs", "Parce qu’elle est interdite par la loi", "Parce qu’elle ne concerne que les grandes entreprises"], c: 1,
+        o: ["Parce qu’elle réduit toujours le niveau de vie moyen", "Parce que les pertes sont concentrées et visibles, et les gains dispersés et futurs", "Parce que les nouvelles entreprises paient moins d’impôts que les anciennes", "Parce qu’elle ne concerne que les grandes entreprises"], c: 1,
         e: "Ceux qui perdent leur emploi ou leur rente sont identifiables et organisés ; les bénéficiaires sont nombreux, diffus, et souvent pas encore nés." }
     ],
     ouverte: {

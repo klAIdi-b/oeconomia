@@ -125,7 +125,7 @@ ${phillipsLT}
     },
     quiz: [
       { q: "Selon l’hypothèse du revenu permanent, comment les ménages réagissent-ils à une hausse temporaire de revenu ?",
-        o: ["Ils la dépensent entièrement", "Ils en épargnent une grande partie", "Ils arrêtent de travailler", "Ils empruntent davantage"], c: 1,
+        o: ["Ils la dépensent entièrement", "Ils en épargnent une grande partie", "Ils augmentent leur consommation du même montant", "Ils empruntent davantage"], c: 1,
         e: "La consommation dépend du revenu attendu à long terme." },
       { q: "À quoi Friedman et Schwartz attribuent-ils la gravité de la Grande Dépression ?",
         o: ["À la spéculation", "À la chute d’un tiers de la masse monétaire, que la Réserve fédérale a laissé se produire", "Aux syndicats", "Au protectionnisme"], c: 1,
@@ -282,10 +282,10 @@ ${innovations}
     },
     quiz: [
       { q: "Quelle différence Schumpeter fait-il entre invention et innovation ?",
-        o: ["Aucune", "L’innovation est la mise en œuvre de nouvelles combinaisons par un entrepreneur, l’invention une découverte", "L’innovation concerne seulement les produits", "L’invention est plus importante"], c: 1,
+        o: ["L’invention est le fait des entreprises, l’innovation celui des savants", "L’innovation est la mise en œuvre de nouvelles combinaisons par un entrepreneur, l’invention une découverte", "L’innovation concerne seulement les produits", "L’invention est plus importante"], c: 1,
         e: "Un inventeur n’est pas forcément un entrepreneur." },
       { q: "Quel rôle Schumpeter donne-t-il au banquier ?",
-        o: ["Aucun", "Il crée le crédit qui permet aux entrepreneurs de réaliser leurs projets", "Il fixe les prix", "Il contrôle l’État"], c: 1,
+        o: ["Il prête l’épargne des ménages aux entreprises existantes", "Il crée le crédit qui permet aux entrepreneurs de réaliser leurs projets", "Il fixe les prix", "Il dirige lui-même les innovations"], c: 1,
         e: "Le crédit bancaire est la condition de l’innovation." },
       { q: "Pourquoi le capitalisme pourrait-il disparaître selon Capitalisme, socialisme et démocratie ?",
         o: ["À cause de ses échecs et de la misère ouvrière", "À cause de ses succès, qui rendent l’entrepreneur superflu et affaiblissent ses soutiens", "À cause des guerres", "À cause de l’inflation"], c: 1,
@@ -294,7 +294,7 @@ ${innovations}
         o: ["Chancelier", "Ministre des Finances", "Gouverneur de la banque centrale", "Ambassadeur"], c: 1,
         e: "Pendant sept mois, dans un gouvernement de coalition." },
       { q: "Quel produit lancé en 1983 symbolise la renaissance de l’horlogerie suisse après la crise du quartz ?",
-        o: ["La Rolex Submariner", "La Swatch", "L’Apple Watch", "La montre de poche"], c: 1,
+        o: ["La Rolex Submariner", "La Swatch", "La montre à quartz Beta 21", "La montre de poche"], c: 1,
         e: "Une montre à quartz bon marché, fabriquée de manière très automatisée." }
     ],
     ouverte: {

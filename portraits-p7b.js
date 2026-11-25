@@ -118,7 +118,7 @@ ${centre}
         o: ["L’avantage comparatif seul", "Les rendements croissants et le goût des consommateurs pour la variété", "Les droits de douane", "La loi des débouchés"], c: 1,
         e: "Chaque firme produit en grand quelques variétés." },
       { q: "Que décrit le modèle centre-périphérie (1991) ?",
-        o: ["La colonisation", "La concentration cumulative de l’industrie dans une région", "La migration des capitaux vers les pays pauvres", "L’exode urbain"], c: 1,
+        o: ["La colonisation", "La concentration cumulative de l’industrie dans une région", "La migration des capitaux vers les pays pauvres", "La dispersion de l’industrie quand les transports deviennent bon marché"], c: 1,
         e: "Une petite avance initiale peut se renforcer d’elle-même." },
       { q: "Que recommande Krugman au Japon en 1998 ?",
         o: ["Monter les taux d’intérêt", "S’engager de façon crédible à laisser monter l’inflation", "Quitter le libre-échange", "Réduire les dépenses publiques"], c: 1,

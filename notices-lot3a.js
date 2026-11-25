@@ -106,13 +106,13 @@ ${trappe}
         o: ["Le motif de transaction", "Le motif de précaution", "Le motif de spéculation", "Le motif fiscal"], c: 2,
         e: "Si les taux montent, le prix des obligations baisse : mieux vaut garder de la monnaie et acheter les titres plus tard, moins cher." },
       { q: "Qu’est-ce qu’une trappe à liquidité ?",
-        o: ["Une situation où la banque centrale manque de monnaie", "Une situation où les taux sont si bas que la monnaie supplémentaire est conservée au lieu d’être prêtée ou dépensée", "Une crise de change", "Une faillite bancaire"], c: 1,
+        o: ["Une situation où la banque centrale manque de monnaie", "Une situation où les taux sont si bas que la monnaie supplémentaire est conservée au lieu d’être prêtée ou dépensée", "Une situation où les taux sont trop élevés pour emprunter", "Une situation où les banques refusent tout crédit, quel que soit le taux"], c: 1,
         e: "Quand les taux sont déjà proches de zéro, créer davantage de monnaie ne fait plus baisser les taux ni relancer la dépense." },
       { q: "Pourquoi les taux d’intérêt peuvent-ils descendre légèrement sous zéro ?",
-        o: ["Parce que la loi l’impose", "Parce que détenir de grandes quantités de billets a un coût de stockage et d’assurance", "Parce que les banques centrales paient les épargnants", "Parce que l’inflation est négative"], c: 1,
+        o: ["Parce que l’épargne est taxée par l’État", "Parce que détenir de grandes quantités de billets a un coût de stockage et d’assurance", "Parce que les banques centrales paient les épargnants", "Parce que l’inflation est négative"], c: 1,
         e: "Tant que garder des billets coûte plus cher que d’accepter un taux légèrement négatif, les épargnants ne retirent pas massivement leurs fonds." },
       { q: "Comment la BNS a-t-elle réagi en 2011 alors que ses taux étaient déjà proches de zéro ?",
-        o: ["Elle a relevé ses taux", "Elle a fixé un cours plancher de 1,20 franc pour un euro", "Elle a supprimé le franc", "Elle a cessé toute intervention"], c: 1,
+        o: ["Elle a relevé ses taux", "Elle a fixé un cours plancher de 1,20 franc pour un euro", "Elle a acheté massivement des obligations de la Confédération", "Elle a cessé toute intervention"], c: 1,
         e: "Le taux de change est devenu son principal instrument : elle a acheté massivement des devises pour empêcher le franc de s’apprécier au-delà du plancher." }
     ],
     ouverte: {
@@ -248,10 +248,10 @@ ${valeur}
         o: ["La tendance à donner aux œuvres caritatives", "Le fait d’exiger davantage pour céder un objet que l’on ne paierait pour l’acquérir", "La préférence pour les biens de luxe", "L’héritage des parents"], c: 1,
         e: "Une fois possédé, l’objet fait partie du point de référence ; le céder est vécu comme une perte." },
       { q: "Pourquoi les investisseurs vendent-ils plus volontiers leurs actions gagnantes que leurs perdantes ?",
-        o: ["Pour payer moins d’impôts", "Parce que vendre une action en perte rend la perte définitive", "Parce que les actions perdantes remontent toujours", "Parce que la loi l’impose"], c: 1,
+        o: ["Pour payer moins d’impôts", "Parce que vendre une action en perte rend la perte définitive", "Parce que les actions perdantes remontent toujours", "Parce que les actions gagnantes ont atteint leur valeur maximale"], c: 1,
         e: "C’est l’effet de disposition, documenté par Odean (1998) : on préfère attendre que la perte se résorbe plutôt que de la réaliser." },
       { q: "Comment le programme « Save More Tomorrow » contourne-t-il l’aversion aux pertes ?",
-        o: ["En obligeant les salariés à épargner", "En affectant à l’épargne une partie des futures augmentations, sans jamais réduire le salaire disponible", "En offrant une prime d’épargne", "En supprimant les retraites"], c: 1,
+        o: ["En obligeant les salariés à épargner", "En affectant à l’épargne une partie des futures augmentations, sans jamais réduire le salaire disponible", "En offrant une prime d’épargne", "En prélevant l’épargne sur le salaire dès le premier mois"], c: 1,
         e: "Le revenu disponible ne baisse jamais ; il augmente simplement moins vite. L’épargne n’est donc pas vécue comme une perte." }
     ],
     ouverte: {

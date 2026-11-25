@@ -118,7 +118,7 @@ ${credit}
         o: ["Une différence de revenus entre deux pays", "Une situation où l’un des partenaires d’un échange en sait plus que l’autre", "Un écart entre l’offre et la demande", "Une erreur de prévision de la banque centrale"], c: 1,
         e: "Le vendeur, l’emprunteur ou le salarié en savent plus que l’acheteur, la banque ou l’employeur." },
       { q: "Pourquoi une banque refuse-t-elle des prêts au lieu de relever son taux ?",
-        o: ["Parce que la loi le lui interdit", "Parce qu’un taux élevé fait fuir les emprunteurs prudents et attire les plus risqués", "Parce qu’elle manque toujours d’argent", "Parce que les emprunteurs refusent de payer plus"], c: 1,
+        o: ["Parce que les taux sont fixés par la banque centrale", "Parce qu’un taux élevé fait fuir les emprunteurs prudents et attire les plus risqués", "Parce qu’elle manque toujours d’argent", "Parce que les emprunteurs refusent de payer plus"], c: 1,
         e: "C’est le rationnement du crédit, démontré avec Andrew Weiss en 1981." },
       { q: "Avec qui Stiglitz partage-t-il le prix Nobel en 2001 ?",
         o: ["Paul Krugman et Robert Lucas", "George Akerlof et Michael Spence", "Amartya Sen et Jean-Paul Fitoussi", "Milton Friedman et Friedrich Hayek"], c: 1,
@@ -127,7 +127,7 @@ ${credit}
         o: ["D’avoir prêté trop peu", "D’avoir imposé aux pays en crise une austérité et une ouverture financière qui ont aggravé leur situation", "D’avoir refusé toute réforme", "D’avoir favorisé l’Asie contre l’Amérique latine"], c: 1,
         e: "Il critique surtout la gestion de la crise asiatique de 1997-1998." },
       { q: "Selon la théorie du salaire d’efficience, pourquoi des entreprises paient-elles plus que le salaire du marché ?",
-        o: ["Par générosité", "Pour que le salarié ait beaucoup à perdre s’il est pris à ne pas travailler", "Parce que les syndicats l’exigent toujours", "Pour payer moins d’impôts"], c: 1,
+        o: ["Pour attirer les clients par une bonne image", "Pour que le salarié ait beaucoup à perdre s’il est pris à ne pas travailler", "Parce que les syndicats l’exigent toujours", "Parce que la productivité baisse quand les salaires montent"], c: 1,
         e: "Comme toutes le font, les salaires sont trop élevés pour le plein emploi : il reste du chômage." }
     ],
     ouverte: {
@@ -283,16 +283,16 @@ ${risques}
         o: ["L’État doit posséder toutes les entreprises", "L’État prend les risques de long terme à l’origine des grandes innovations", "L’innovation ne vient que des petites entreprises", "L’État doit cesser de financer la recherche"], c: 1,
         e: "Il investit là où le privé juge le risque trop grand." },
       { q: "Parmi ces technologies, laquelle Mazzucato rattache-t-elle à un financement public ?",
-        o: ["Aucune", "Internet, le GPS, l’écran tactile et l’assistant vocal", "Seulement le GPS", "Seulement l’appareil photo"], c: 1,
+        o: ["L’imprimante 3D seulement", "Internet, le GPS, l’écran tactile et l’assistant vocal", "Seulement le GPS", "Seulement l’appareil photo"], c: 1,
         e: "Ce sont les quatre exemples de son chapitre sur l’iPhone." },
       { q: "Que reproche-t-elle au partage actuel des risques et des gains ?",
         o: ["Les entreprises prennent tous les risques", "Les risques sont supportés par le public, mais les gains restent privés", "L’État gagne trop d’argent", "Les chercheurs sont trop payés"], c: 1,
         e: "Elle l’illustre par les prêts à Solyndra et à Tesla." },
       { q: "Qu’est-ce qu’une « mission » au sens de Mazzucato ?",
-        o: ["Une subvention à une entreprise précise", "Un objectif public ambitieux et mesurable, qui mobilise plusieurs secteurs", "Un voyage officiel", "Une privatisation"], c: 1,
+        o: ["Une subvention à une entreprise précise", "Un objectif public ambitieux et mesurable, qui mobilise plusieurs secteurs", "Une entreprise publique chargée d’un secteur", "Une privatisation"], c: 1,
         e: "Le modèle est le programme Apollo." },
       { q: "Quelle est la principale critique adressée à ses thèses ?",
-        o: ["Elle ignore l’existence d’Internet", "Elle retient les succès de l’État et oublie ses échecs", "Elle refuse toute dépense publique", "Elle défend le libre-échange"], c: 1,
+        o: ["Elle exagère le rôle des petites start-up", "Elle retient les succès de l’État et oublie ses échecs", "Elle refuse toute dépense publique", "Elle défend le libre-échange"], c: 1,
         e: "C’est l’argument de McCloskey et Mingardi." }
     ],
     ouverte: {

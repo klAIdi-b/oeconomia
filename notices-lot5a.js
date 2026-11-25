@@ -131,13 +131,13 @@ ${cercle}
         o: ["L’habileté acquise", "Le temps gagné entre les tâches", "L’invention de machines", "La possibilité de payer chaque tâche à son niveau de qualification"], c: 3,
         e: "C’est la quatrième raison, ajoutée par Charles Babbage en 1832." },
       { q: "Qu’est-ce qui limite la division du travail selon Smith ?",
-        o: ["La loi", "L’étendue du marché", "Le nombre de machines", "Le climat"], c: 1,
+        o: ["La fatigue des ouvriers spécialisés", "L’étendue du marché", "Le nombre de machines", "Le niveau d’instruction des ouvriers"], c: 1,
         e: "Sans assez de clients, un artisan ne peut pas se spécialiser dans une seule tâche." },
       { q: "Qu’appelle Durkheim la « solidarité organique » ?",
         o: ["La solidarité entre membres d’une famille", "La cohésion d’une société dont les membres, différents, dépendent les uns des autres", "L’entraide agricole", "Une assurance sociale"], c: 1,
         e: "La division du travail rend les individus différents mais interdépendants, comme les organes d’un corps." },
       { q: "Quel choc les horlogers suisses découvrent-ils à Philadelphie en 1876 ?",
-        o: ["Les montres électroniques", "La production en série de montres américaines avec des pièces interchangeables", "Les montres japonaises à quartz", "Une taxe américaine sur les montres"], c: 1,
+        o: ["Les premières montres-bracelets anglaises", "La production en série de montres américaines avec des pièces interchangeables", "Les montres japonaises à quartz", "Une taxe américaine sur les montres"], c: 1,
         e: "La production mécanisée et concentrée des Américains contraste avec l’établissage dispersé du Jura." }
     ],
     ouverte: {
@@ -283,7 +283,7 @@ ${coop}
     },
     quiz: [
       { q: "Que dit la loi des débouchés de Say ?",
-        o: ["Que les exportations sont la seule source de richesse", "Que les produits s’échangent contre des produits, si bien qu’une surproduction générale est impossible", "Que l’État doit créer des débouchés", "Que les prix ne baissent jamais"], c: 1,
+        o: ["Que les exportations sont la seule source de richesse", "Que les produits s’échangent contre des produits, si bien qu’une surproduction générale est impossible", "Que l’État doit créer des débouchés", "Qu’une surproduction peut toucher toute l’économie à la fois"], c: 1,
         e: "Chaque production fournit les moyens d’acheter d’autres produits ; seules des surproductions partielles sont possibles." },
       { q: "Qui a résumé la loi de Say par la formule « l’offre crée sa propre demande » ?",
         o: ["Say lui-même", "Ricardo", "Keynes", "Marx"], c: 2,
@@ -295,7 +295,7 @@ ${coop}
         o: ["un excès d’offre de travail seulement", "un excès de demande de monnaie", "une hausse des prix", "un déficit public"], c: 1,
         e: "La somme des excès d’offre et de demande sur tous les marchés, monnaie comprise, est nulle." },
       { q: "Que montre l’histoire de la coopérative de baby-sitting de Capitol Hill ?",
-        o: ["Que la garde d’enfants est mal payée", "Qu’une demande excessive de monnaie peut provoquer une récession même quand personne ne manque de rien", "Que les coopératives sont inefficaces", "Que l’inflation est toujours nuisible"], c: 1,
+        o: ["Que les coopératives fonctionnent mieux sans règles", "Qu’une demande excessive de monnaie peut provoquer une récession même quand personne ne manque de rien", "Que les coopératives sont inefficaces", "Que l’inflation est toujours nuisible"], c: 1,
         e: "Chacun voulant accumuler des tickets, personne ne sortait, et personne ne pouvait en gagner." }
     ],
     ouverte: {

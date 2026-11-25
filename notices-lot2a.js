@@ -98,7 +98,7 @@ ${sawtooth}
     },
     quiz: [
       { q: "Qu’est-ce qui distingue un financement « spéculatif » au sens de Minsky ?",
-        o: ["L’emprunteur achète des actions", "Les revenus couvrent les intérêts mais pas le capital, qui doit être refinancé", "L’emprunteur ne paie aucun intérêt", "Le prêt est accordé par une banque étrangère"], c: 1,
+        o: ["L’emprunteur achète des actions", "Les revenus couvrent les intérêts mais pas le capital, qui doit être refinancé", "L’emprunteur ne paie aucun intérêt", "Les revenus couvrent à la fois les intérêts et le remboursement du capital"], c: 1,
         e: "En financement spéculatif, l’emprunteur dépend de la disposition des prêteurs à refinancer le capital à l’échéance." },
       { q: "Pourquoi, selon Minsky, la stabilité est-elle déstabilisante ?",
         o: ["Parce que les banques centrales relèvent les taux pendant les périodes calmes", "Parce que la confiance accumulée pousse à s’endetter davantage avec des marges plus faibles", "Parce que les épargnants retirent leur argent", "Parce que l’inflation augmente toujours"], c: 1,
@@ -107,10 +107,10 @@ ${sawtooth}
         o: ["Que la dette publique annonce les crises", "Qu’une croissance rapide du crédit bancaire est le meilleur signal avancé des crises financières", "Que les crises sont imprévisibles", "Que l’inflation précède toujours les krachs"], c: 1,
         e: "Le boom du crédit, en particulier immobilier, précède la plupart des crises financières et les rend plus graves." },
       { q: "Que désigne l’expression « moment Minsky » ?",
-        o: ["La date de naissance de Minsky", "L’instant où des emprunteurs trop endettés doivent vendre leurs actifs, déclenchant une spirale de baisse", "Le moment où la banque centrale baisse ses taux", "La fin d’une récession"], c: 1,
+        o: ["Le début d’une période d’euphorie sur les marchés", "L’instant où des emprunteurs trop endettés doivent vendre leurs actifs, déclenchant une spirale de baisse", "Le moment où la banque centrale baisse ses taux", "La fin d’une récession"], c: 1,
         e: "Forgée par Paul McCulley en 1998, l’expression désigne le basculement d’un boom fondé sur la dette en ventes forcées et en effondrement des prix." },
       { q: "Quelle est la principale critique adressée aux recommandations de Minsky ?",
-        o: ["Elles ignorent le rôle des banques", "Les sauvetages systématiques peuvent encourager la prise de risque (aléa moral)", "Elles interdisent le crédit", "Elles supposent des agents parfaitement rationnels"], c: 1,
+        o: ["Elles ignorent le rôle des banques", "Les sauvetages systématiques peuvent encourager la prise de risque (aléa moral)", "Elles accordent un rôle trop faible à la politique budgétaire", "Elles supposent des agents parfaitement rationnels"], c: 1,
         e: "Si l’État et la banque centrale sauvent toujours le système, les acteurs financiers anticipent ce soutien et prennent davantage de risques." }
     ],
     ouverte: {
@@ -260,10 +260,10 @@ ${deux}
         o: ["La plus-value obtenue en allongeant la journée", "La plus-value obtenue en réduisant le temps de travail nécessaire grâce aux gains de productivité", "La plus-value réalisée à l’étranger", "La part de la plus-value versée aux actionnaires"], c: 1,
         e: "Si les biens de l’ouvrier deviennent moins chers à produire, la valeur de sa force de travail baisse, et le surtravail augmente à journée constante." },
       { q: "Pourquoi le capital constant ne crée-t-il pas de plus-value selon Marx ?",
-        o: ["Parce qu’il est trop cher", "Parce que les machines et matières premières ne font que transmettre leur valeur au produit", "Parce qu’il appartient à l’État", "Parce qu’il s’use trop vite"], c: 1,
+        o: ["Parce qu’il est financé par l’emprunt", "Parce que les machines et matières premières ne font que transmettre leur valeur au produit", "Parce que les machines remplacent les ouvriers", "Parce qu’il s’use trop vite"], c: 1,
         e: "Seul le travail vivant crée une valeur nouvelle. Les machines transmettent au produit la valeur qu’elles ont coûtée, au fur et à mesure de leur usure." },
       { q: "Quelle est la principale objection de l’économie dominante à la théorie de la plus-value ?",
-        o: ["Elle ignore les machines", "Elle repose sur la valeur-travail, alors que les prix s’expliquent par l’offre, la demande et la rareté de tous les facteurs", "Elle surestime les salaires", "Elle ne s’applique qu’à l’agriculture"], c: 1,
+        o: ["Elle ignore les machines", "Elle repose sur la valeur-travail, alors que les prix s’expliquent par l’offre, la demande et la rareté de tous les facteurs", "Elle surestime les salaires", "Elle sous-estime le rôle des syndicats dans la fixation des salaires"], c: 1,
         e: "Depuis la révolution marginaliste, la valeur n’est plus rattachée au seul travail ; le profit est vu comme la rémunération du capital, du risque et du temps." }
     ],
     ouverte: {

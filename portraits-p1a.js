@@ -125,7 +125,7 @@ ${etat}` },
         o: ["Monnaie, commerce, colonies", "Défense, justice, ouvrages publics", "Impôt, douane, armée", "Éducation, santé, retraites"], c: 1,
         e: "Les ouvrages publics comprennent l’éducation élémentaire du peuple." },
       { q: "Quel personnage Smith rencontre-t-il lors de son séjour à Genève ?",
-        o: ["Rousseau", "Voltaire", "Calvin", "Necker"], c: 1,
+        o: ["Rousseau", "Voltaire", "Diderot", "Necker"], c: 1,
         e: "Voltaire vivait alors à Ferney, tout près de Genève." }
     ],
     ouverte: {
@@ -271,7 +271,7 @@ ${systeme}
         o: ["Parce qu’elles réduisent les impôts", "Parce qu’en maintenant le blé cher, elles augmentent rente et salaires et réduisent les profits et l’accumulation", "Parce qu’elles favorisent les ouvriers", "Parce qu’elles nuisent à la monnaie"], c: 1,
         e: "Elles sacrifient la croissance à l’intérêt des propriétaires fonciers." },
       { q: "Que reconnaît Ricardo dans son chapitre « Des machines » (1821) ?",
-        o: ["Que les machines sont inutiles", "Que la mécanisation peut nuire durablement aux travailleurs", "Que les machines doivent être interdites", "Que les machines font monter la rente"], c: 1,
+        o: ["Que les machines profitent toujours immédiatement aux ouvriers", "Que la mécanisation peut nuire durablement aux travailleurs", "Que les machines doivent être interdites", "Que les machines font monter la rente"], c: 1,
         e: "Il revient publiquement sur son opinion antérieure." },
       { q: "Qu’est-ce que le « vice ricardien » selon Schumpeter ?",
         o: ["La spéculation boursière", "Tirer des conclusions politiques tranchées de modèles très simplifiés", "Le refus du libre-échange", "La défense des propriétaires fonciers"], c: 1,

@@ -105,7 +105,7 @@ OEC.notices["institutions-inclusives"] = {
   },
   quiz: [
     { q: "Pourquoi l’exemple des deux Nogales est-il si utile aux auteurs ?",
-      o: ["Parce que les deux villes ont des climats très différents", "Parce qu’il neutralise la géographie et la culture, et ne laisse varier que les institutions", "Parce que Nogales (Sonora) a été colonisée par les Anglais", "Parce que les deux villes ont le même revenu"],
+      o: ["Parce que les deux villes ont des climats très différents", "Parce qu’il neutralise la géographie et la culture, et ne laisse varier que les institutions", "Parce que la ville américaine dispose de ressources naturelles bien plus abondantes", "Parce qu’il montre que la culture explique l’essentiel des écarts de revenu"],
       c: 1, e: "Les deux villes partagent climat, maladies, ancêtres et culture. La différence de prospérité ne peut donc venir que de ce qui diffère : les règles des États-Unis et celles du Mexique." },
     { q: "Dans l’article de 2001, à quoi sert la mortalité des premiers colons ?",
       o: ["À mesurer directement la pauvreté actuelle", "À montrer que les maladies tropicales rendent les pays pauvres", "À isoler une source de différences institutionnelles sans lien direct avec la richesse actuelle", "À estimer le nombre de colons installés aujourd’hui"],
@@ -117,7 +117,7 @@ OEC.notices["institutions-inclusives"] = {
       o: ["Le fait que les anciennes colonies les plus prospères vers 1500 sont souvent devenues relativement plus pauvres", "La chute des empires européens après 1945", "La faillite des compagnies coloniales", "Le rattrapage de l’Asie depuis 1980"],
       c: 0, e: "Là où il y avait des populations denses et des richesses à prendre, les colonisateurs ont installé des institutions extractives ; là où il n’y avait presque rien, ils ont dû se donner des règles protectrices." },
     { q: "Quelle est l’objection principale de Glaeser et de ses coauteurs (2004) ?",
-      o: ["La Chine prouve que la démocratie est inutile", "Les colons ont aussi apporté du capital humain, qui pourrait être la vraie cause de la croissance", "Les données de mortalité sont fausses", "La géographie explique tout"],
+      o: ["La mortalité des colons a surtout touché les colonies les plus riches", "Les colons ont aussi apporté du capital humain, qui pourrait être la vraie cause de la croissance", "Les données de mortalité sont fausses", "La géographie et le climat suffisent à expliquer les écarts de revenu"],
       c: 1, e: "Ils soutiennent que l’instruction et les savoir-faire comptent d’abord, les institutions démocratiques suivant l’enrichissement. L’objection sur les données est celle d’Albouy (2012), celle sur la géographie celle de Sachs." }
   ],
   ouverte: {

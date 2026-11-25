@@ -95,7 +95,7 @@ ${double}
         o: ["Une économie fermée au commerce", "Une économie prise dans les relations sociales, politiques et religieuses", "Une économie planifiée par l’État", "Une économie sans monnaie"], c: 1,
         e: "Pendant la plus grande partie de l’histoire, la production et l’échange étaient réglés par la société." },
       { q: "Quelles sont les trois « marchandises fictives » ?",
-        o: ["L’or, l’argent et le cuivre", "Le travail, la terre et la monnaie", "Le pain, le vin et le sel", "Les actions, les obligations et les devises"], c: 1,
+        o: ["Les machines, les terres agricoles et l’or", "Le travail, la terre et la monnaie", "Le capital, l’entreprise et le savoir", "Les actions, les obligations et les devises"], c: 1,
         e: "Elles ne sont pas produites pour être vendues." },
       { q: "Qu’est-ce que le « double mouvement » ?",
         o: ["L’alternance des crises et des reprises", "L’extension du marché et la réaction de protection de la société", "Le va-et-vient des capitaux", "La hausse simultanée des prix et des salaires"], c: 1,
@@ -234,10 +234,10 @@ ${cycle}
         o: ["De l’épargne des ménages", "Des dépenses des capitalistes, investissement et consommation", "Des exportations seulement", "Des impôts"], c: 1,
         e: "« Les capitalistes gagnent ce qu’ils dépensent. »" },
       { q: "Pourquoi les chefs d’entreprise pourraient-ils s’opposer au plein emploi durable ?",
-        o: ["Parce qu’il réduit toujours les profits", "Parce qu’il retire au licenciement son pouvoir de discipline", "Parce qu’il est interdit par la loi", "Parce qu’il fait baisser les prix"], c: 1,
+        o: ["Parce qu’il réduit toujours les profits", "Parce qu’il retire au licenciement son pouvoir de discipline", "Parce qu’il oblige à payer davantage d’impôts", "Parce qu’il fait baisser les prix"], c: 1,
         e: "C’est l’argument de l’article de 1943." },
       { q: "Comment les grandes entreprises fixent-elles leurs prix selon Kalecki ?",
-        o: ["Par enchères", "En ajoutant une marge à leurs coûts, selon leur pouvoir de marché", "En suivant la banque centrale", "Au hasard"], c: 1,
+        o: ["Par enchères", "En ajoutant une marge à leurs coûts, selon leur pouvoir de marché", "En suivant la banque centrale", "Au niveau où l’offre égale exactement la demande"], c: 1,
         e: "C’est le « degré de monopole »." }
     ],
     ouverte: {
@@ -369,13 +369,13 @@ ${fordisme}
         o: ["Une loi sur la concurrence", "Un ensemble d’institutions qui assure pendant une période la stabilité de la croissance", "Une règle de la banque centrale", "Un modèle mathématique d’équilibre"], c: 1,
         e: "Salaires, concurrence, monnaie, État et insertion internationale." },
       { q: "Qu’est-ce que le fordisme ?",
-        o: ["Une marque de voitures", "Un régime de croissance associant production de masse, hausse des salaires et consommation de masse", "Une théorie de la monnaie", "Une politique protectionniste"], c: 1,
+        o: ["Une organisation du travail fondée sur l’artisanat", "Un régime de croissance associant production de masse, hausse des salaires et consommation de masse", "Une théorie de la monnaie", "Une politique protectionniste"], c: 1,
         e: "Le modèle des Trente Glorieuses." },
       { q: "Comment Aglietta explique-t-il la crise des années 1970 ?",
-        o: ["Par une erreur de la banque centrale", "Par l’épuisement du fordisme", "Par une guerre", "Par une mauvaise récolte"], c: 1,
+        o: ["Par une erreur de la banque centrale", "Par l’épuisement du fordisme", "Par une guerre", "Par la hausse excessive de la masse monétaire"], c: 1,
         e: "La productivité ralentit et le cercle vertueux se rompt." },
       { q: "Que soutiennent Aglietta et Orléan sur la monnaie ?",
-        o: ["Qu’elle est une marchandise comme les autres", "Qu’elle est une institution sociale fondée sur la confiance", "Qu’elle est inutile", "Qu’elle doit être en or"], c: 1,
+        o: ["Qu’elle est une marchandise comme les autres", "Qu’elle est une institution sociale fondée sur la confiance", "Qu’elle est neutre à long terme", "Qu’elle doit être en or"], c: 1,
         e: "D’où le lien entre monnaie et souveraineté." }
     ],
     ouverte: {

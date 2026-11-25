@@ -113,7 +113,7 @@ ${rounds}
         o: ["Le stock de machines disponibles", "La dépense anticipée par les entreprises", "Le niveau des salaires", "La quantité de monnaie"], c: 1,
         e: "Les entreprises produisent ce qu’elles pensent vendre. Les capacités de production fixent un plafond, mais en crise, c’est la demande effective qui détermine la production réelle." },
       { q: "Pourquoi une baisse générale des salaires peut-elle aggraver une dépression ?",
-        o: ["Parce qu’elle augmente les coûts des entreprises", "Parce qu’elle réduit les revenus, donc la consommation, et alourdit le poids réel des dettes", "Parce qu’elle provoque de l’inflation", "Parce qu’elle attire des travailleurs étrangers"], c: 1,
+        o: ["Parce qu’elle augmente les coûts des entreprises", "Parce qu’elle réduit les revenus, donc la consommation, et alourdit le poids réel des dettes", "Parce qu’elle provoque de l’inflation", "Parce qu’elle pousse les entreprises à remplacer les machines par des travailleurs"], c: 1,
         e: "Le salaire est un coût pour chaque entreprise, mais un revenu pour l’ensemble de l’économie. La baisse générale réduit la demande et, en faisant baisser les prix, augmente la charge réelle des dettes." },
       { q: "Avec une propension à dépenser de 0,75, quel est le multiplicateur simple ?",
         o: ["0,75", "1,75", "4", "7,5"], c: 2,
@@ -259,7 +259,7 @@ ${gains}
     },
     quiz: [
       { q: "Dans l’exemple de Ricardo, pourquoi l’Angleterre doit-elle se spécialiser dans le drap alors que le Portugal le produit avec moins de travail ?",
-        o: ["Parce que l’Angleterre a un avantage absolu dans le drap", "Parce qu’un drap coûte moins de vin en Angleterre qu’au Portugal", "Parce que le Portugal manque de main-d’œuvre", "Parce que le vin anglais est de mauvaise qualité"], c: 1,
+        o: ["Parce que l’Angleterre a un avantage absolu dans le drap", "Parce qu’un drap coûte moins de vin en Angleterre qu’au Portugal", "Parce que le Portugal manque de main-d’œuvre", "Parce que le drap anglais se vend plus cher à l’étranger que le vin"], c: 1,
         e: "Le drap coûte 0,83 tonneau de vin en Angleterre contre 1,125 au Portugal. C’est le coût d’opportunité, et non la productivité absolue, qui détermine la spécialisation." },
       { q: "Un pays A produit une voiture en 10 heures et un ordinateur en 5 heures ; un pays B, une voiture en 20 heures et un ordinateur en 8 heures. Qui a l’avantage comparatif dans les ordinateurs ?",
         o: ["A, car il est plus rapide pour les deux", "B, car un ordinateur lui coûte 0,4 voiture contre 0,5 pour A", "Personne, les coûts sont proportionnels", "A, car un ordinateur lui coûte 0,4 voiture"], c: 1,
@@ -268,10 +268,10 @@ ${gains}
         o: ["Que le commerce profite toujours à tous", "Que l’ouverture fait baisser la rémunération du facteur relativement rare", "Que les pays pauvres perdent toujours au commerce", "Que les droits de douane sont toujours inefficaces"], c: 1,
         e: "Le pays gagne globalement, mais les détenteurs du facteur rare (souvent le travail peu qualifié dans les pays riches) voient leur rémunération baisser." },
       { q: "Pourquoi l’ouverture du Japon en 1859 est-elle un test précieux ?",
-        o: ["Parce que le Japon était le pays le plus riche du monde", "Parce que les prix d’autarcie, observables avant l’ouverture, révèlent les coûts relatifs", "Parce que le Japon a refusé de commercer", "Parce que le commerce s’y est fait par troc"], c: 1,
+        o: ["Parce que le Japon avait les mêmes coûts relatifs que ses partenaires", "Parce que les prix d’autarcie, observables avant l’ouverture, révèlent les coûts relatifs", "Parce que le Japon était déjà spécialisé dans l’industrie", "Parce que le commerce s’y est fait par troc"], c: 1,
         e: "Les coûts relatifs d’autarcie sont normalement inobservables. Au Japon, on les connaît grâce aux prix d’avant 1859, et l’on vérifie que le pays exporte les biens relativement bon marché chez lui." },
       { q: "Quelle hypothèse de Ricardo le « choc chinois » a-t-il le plus remise en cause ?",
-        o: ["La gratuité des transports", "Le passage sans coût des travailleurs d’un secteur à l’autre", "L’absence de monnaie", "L’égalité des salaires entre pays"], c: 1,
+        o: ["La gratuité des transports", "Le passage sans coût des travailleurs d’un secteur à l’autre", "La concurrence parfaite sur tous les marchés", "L’égalité des salaires entre pays"], c: 1,
         e: "Les travailleurs licenciés des secteurs concurrencés n’ont pas retrouvé facilement d’emploi ailleurs, ni déménagé : l’ajustement a été lent et coûteux." }
     ],
     ouverte: {

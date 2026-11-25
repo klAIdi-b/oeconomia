@@ -18,11 +18,11 @@
         e: "Karl Marx, à Londres. Il y analyse le capitalisme comme un rapport social entre ceux qui possèdent les moyens de production et ceux qui vendent leur travail.", go: tl(1867, "Voir 1867 sur la frise") }
     ],
     questions: [
-      { q: "L’eau est indispensable, le diamant ne l’est pas. Pourquoi le diamant coûte-t-il pourtant beaucoup plus cher ?", o: ["Parce qu’il est plus utile", "Parce qu’il est rare : on paie l’utilité de la dernière unité, pas celle de toute l’eau du monde", "Parce que l’État fixe son prix", "Seulement à cause de la mode"], c: 1,
+      { q: "L’eau est indispensable, le diamant ne l’est pas. Pourquoi le diamant coûte-t-il pourtant beaucoup plus cher ?", o: ["Parce qu’il est plus utile", "Parce qu’il est rare : on paie l’utilité de la dernière unité, pas celle de toute l’eau du monde", "Parce qu’il demande beaucoup plus de travail", "Seulement à cause de la mode"], c: 1,
         e: "C’est le « paradoxe de l’eau et du diamant », posé par Adam Smith et résolu un siècle plus tard par les marginalistes : un verre d’eau de plus ne vaut presque rien quand l’eau abonde.", go: to("Lire le dossier sur la valeur", "#q-valeur") },
-      { q: "Un pays est plus productif que son voisin pour tous les biens. Selon Ricardo, a-t-il intérêt à commercer avec lui ?", o: ["Non, il doit tout produire lui-même", "Oui, en se spécialisant là où son avantage est le plus grand", "Seulement s’il manque de matières premières", "Seulement en temps de guerre"], c: 1,
+      { q: "Un pays est plus productif que son voisin pour tous les biens. Selon Ricardo, a-t-il intérêt à commercer avec lui ?", o: ["Non, il doit tout produire lui-même", "Oui, en se spécialisant là où son avantage est le plus grand", "Seulement s’il manque de matières premières", "Non, car il perdrait des emplois dans tous les secteurs"], c: 1,
         e: "Oui : c’est l’avantage comparatif. Chacun se spécialise là où il est relativement le meilleur, et les deux pays y gagnent.", go: to("Lire le dossier sur le commerce", "#q-commerce") },
-      { q: "Selon Keynes, baisser les salaires suffit-il à faire disparaître le chômage ?", o: ["Oui, toujours", "Non : cela réduit aussi les revenus et donc la demande", "Oui, mais seulement en Suisse", "La question ne se pose pas"], c: 1,
+      { q: "Selon Keynes, baisser les salaires suffit-il à faire disparaître le chômage ?", o: ["Oui, toujours", "Non : cela réduit aussi les revenus et donc la demande", "Oui, à condition que les prix baissent aussi", "Oui, si la baisse est assez forte et assez rapide"], c: 1,
         e: "Non. Une baisse générale des salaires réduit les revenus des ménages, donc la demande, et peut laisser le chômage intact. C’est l’argument de la demande effective.", go: to("Lire le dossier sur le chômage", "#q-chomage") }
     ],
     concepts: [
@@ -128,10 +128,19 @@
     if (!cand.length) cand = pool;
     return cand[Math.floor(Math.random() * cand.length)];
   }
+  /* Ordre des réponses mélangé de façon stable (graine tirée de la question), comme dans les quiz des notices.
+     Les vrai/faux et les listes de nombres gardent leur ordre naturel. */
+  function ordre(d) {
+    const idx = d.o.map((_, j) => j);
+    if (d.o.length < 3 || d.o.every((t) => /^[−-]?\d/.test(t))) return idx;
+    let h = 2166136261; for (const ch of d.q) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
+    for (let k = idx.length - 1; k > 0; k--) { h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0; const r = h % (k + 1); [idx[k], idx[r]] = [idx[r], idx[k]]; }
+    return idx;
+  }
   function render(slot, avoid) {
     const key = slot.dataset.defi, [p, i] = choose(key, avoid), d = DEFIS[p][i], id = `${p}:${i}`;
     slot.dataset.cur = id; slot.dataset.done = "";
-    slot.innerHTML = `<div class="defi"><p class="eyebrow">Petit défi</p><h3>${d.q}</h3><div class="defi-opts">${d.o.map((t, k) => `<button type="button" data-i="${k}">${t}</button>`).join("")}</div><div class="defi-res" aria-live="polite"></div></div>`;
+    slot.innerHTML = `<div class="defi"><p class="eyebrow">Petit défi</p><h3>${d.q}</h3><div class="defi-opts">${ordre(d).map((k) => `<button type="button" data-i="${k}">${d.o[k]}</button>`).join("")}</div><div class="defi-res" aria-live="polite"></div></div>`;
     slot.querySelector(".defi-opts").addEventListener("click", (ev) => {
       const b = ev.target.closest("button[data-i]"); if (!b) return;
       const ok = +b.dataset.i === d.c;

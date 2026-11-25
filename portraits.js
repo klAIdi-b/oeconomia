@@ -157,13 +157,13 @@ ${chaine}
         o: ["Parce que les salaires sont trop bas", "Parce que la demande effective peut être insuffisante, sans mécanisme automatique pour la rétablir", "Parce que l’État dépense trop", "Parce que la population augmente"], c: 1,
         e: "Rien ne garantit que l’investissement comble l’écart entre revenu et consommation." },
       { q: "Que désignent les « esprits animaux » ?",
-        o: ["Les spéculateurs malhonnêtes", "Le besoin spontané d’agir des entrepreneurs face à un avenir incertain", "Les grèves ouvrières", "Les lois de la nature"], c: 1,
+        o: ["Les spéculateurs malhonnêtes", "Le besoin spontané d’agir des entrepreneurs face à un avenir incertain", "Les grèves ouvrières", "Les anticipations rationnelles des investisseurs"], c: 1,
         e: "L’investissement dépend de la confiance autant que du calcul." },
       { q: "Que proposait Keynes à Bretton Woods en 1944 ?",
-        o: ["Le retour à l’étalon-or", "Une union de compensation avec une monnaie internationale, le bancor", "La suppression des banques centrales", "Un système fondé sur le dollar"], c: 1,
+        o: ["Le retour à l’étalon-or", "Une union de compensation avec une monnaie internationale, le bancor", "Des taux de change entièrement flottants", "Un système fondé sur le dollar"], c: 1,
         e: "Le plan américain de Harry Dexter White, fondé sur le dollar, l’a emporté." },
       { q: "Pourquoi Keynes juge-t-il qu’une baisse générale des salaires ne résout pas le chômage ?",
-        o: ["Parce qu’elle est interdite", "Parce qu’elle réduit aussi les revenus et donc la demande", "Parce qu’elle augmente les prix", "Parce que les syndicats l’empêchent"], c: 1,
+        o: ["Parce qu’elle fait monter les taux d’intérêt", "Parce qu’elle réduit aussi les revenus et donc la demande", "Parce qu’elle augmente les prix", "Parce que les syndicats l’empêchent"], c: 1,
         e: "Elle peut faire baisser les prix sans augmenter l’emploi, et alourdir les dettes." }
     ],
     ouverte: {

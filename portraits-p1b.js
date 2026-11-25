@@ -111,13 +111,13 @@ ${circuits}
         o: ["Du vol du capitaliste", "De la différence entre la valeur créée par la force de travail et ce qu’elle coûte", "Du commerce international", "De la rente foncière"], c: 1,
         e: "L’exploitation découle des règles mêmes de l’échange marchand." },
       { q: "Qu’est-ce que l’« armée industrielle de réserve » ?",
-        o: ["Une milice ouvrière", "Les chômeurs créés par la mécanisation, qui pèsent sur les salaires", "L’armée prussienne", "Les syndicats"], c: 1,
+        o: ["Une milice ouvrière", "Les chômeurs créés par la mécanisation, qui pèsent sur les salaires", "Les ouvriers les plus qualifiés, gardés en réserve par les patrons", "Les syndicats"], c: 1,
         e: "Elle résulte de l’accumulation et de la mécanisation." },
       { q: "Où se tient le premier congrès de l’Association internationale des travailleurs, en 1866 ?",
         o: ["À Londres", "À Genève", "À Paris", "À Berlin"], c: 1,
         e: "La Suisse a joué un rôle central dans l’histoire de l’Internationale." },
       { q: "Quelle critique Böhm-Bawerk adresse-t-il au Capital en 1896 ?",
-        o: ["Qu’il est trop long", "Que le livre III, où les prix s’écartent des valeurs, contredit la théorie de la valeur du livre I", "Qu’il ignore la monnaie", "Qu’il est favorable au capitalisme"], c: 1,
+        o: ["Qu’il surestime le rôle de la monnaie", "Que le livre III, où les prix s’écartent des valeurs, contredit la théorie de la valeur du livre I", "Qu’il ignore la monnaie", "Qu’il ignore la concurrence entre capitalistes"], c: 1,
         e: "C’est le « problème de la transformation »." }
     ],
     ouverte: {
@@ -263,7 +263,7 @@ ${etain}
         o: ["À Vienne", "Au Mont-Pèlerin, au-dessus de Vevey, en Suisse", "À Chicago", "À Londres"], c: 1,
         e: "Trente-neuf intellectuels libéraux s’y réunissent pendant dix jours." },
       { q: "Quel est le rôle du système des prix selon Hayek ?",
-        o: ["Enrichir les marchands", "Transmettre une information dispersée que personne ne peut centraliser", "Fixer les salaires", "Remplacer l’État"], c: 1,
+        o: ["Garantir une répartition juste des revenus", "Transmettre une information dispersée que personne ne peut centraliser", "Fixer les salaires", "Remplacer l’État"], c: 1,
         e: "C’est l’argument de son article de 1945, avec l’exemple de l’étain." },
       { q: "Selon la théorie autrichienne des cycles, qu’est-ce qui provoque les crises ?",
         o: ["L’insuffisance de la demande", "Un crédit trop abondant qui fausse l’investissement", "Les syndicats", "Le commerce international"], c: 1,
@@ -272,7 +272,7 @@ ${etain}
         o: ["Keynes", "Gunnar Myrdal", "Friedman", "Samuelson"], c: 1,
         e: "Myrdal, aux idées très opposées, défendait l’État-providence." },
       { q: "Qu’est-ce qu’un « ordre spontané » ?",
-        o: ["Un ordre militaire", "Un ordre issu des actions de nombreux individus suivant des règles, sans plan d’ensemble", "Un plan quinquennal", "Une décision du parlement"], c: 1,
+        o: ["Un ordre imposé par une autorité centrale", "Un ordre issu des actions de nombreux individus suivant des règles, sans plan d’ensemble", "Un ordre né du hasard, sans aucune règle", "Une décision du parlement"], c: 1,
         e: "Le langage, le droit coutumier et le marché en sont des exemples." }
     ],
     ouverte: {
