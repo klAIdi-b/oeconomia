@@ -85,6 +85,7 @@
       if (r.v === "labo" && !OEC.labGuide)                                      /* mode d’emploi des simulateurs */
         return busy(script("simulateurs-guide.js")).then(() => { if (window.OECLABS && OECLABS.again) OECLABS.again(); });
       if (r.v === "enseigner" && !charges.has("enseigner.js")) return busy(script("enseigner.js"));
+      if (r.v === "positionnement" && !charges.has("positionnement.js")) return busy(script("positionnement.js"));
       return null;
     }
   };

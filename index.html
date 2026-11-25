@@ -308,6 +308,17 @@ html.mnav-open{overflow:hidden}
 .profils-l{font-size:14px; color:var(--ink-soft); margin-right:2px}
 .profils button{font:600 14px var(--f-body); padding:8px 14px; min-height:40px; border-radius:999px; border:1px solid var(--line); background:var(--card); color:var(--ink); cursor:pointer}
 .profils button:hover, .profils button[aria-pressed="true"]{border-color:var(--note); color:var(--note)}
+.profils-test{font-size:14px; color:var(--note); margin-left:4px}
+.pos-theme{font:600 11px/1.2 var(--f-engr); letter-spacing:.12em; text-transform:uppercase; color:var(--gold)}
+.qopt[aria-pressed="true"]{border-color:var(--note); background:var(--note-soft)}
+.pos-nsp{font-style:italic; color:var(--ink-soft)}
+.pos-go{margin:8px 0 24px; display:flex; flex-wrap:wrap; align-items:center; gap:12px}
+.pos-go small{color:var(--ink-soft)}
+.pos-res{padding:22px 24px; border-radius:var(--r); border:2px solid var(--note); background:var(--card); margin:0 0 28px}
+.pos-res h2{margin:4px 0 2px}
+.pos-score{font-weight:700; color:var(--note); margin:0 0 10px}
+.pos-applique{display:flex; flex-wrap:wrap; gap:10px; margin:14px 0 8px}
+.pos-note, .pos-avant{font-size:14.5px; color:var(--ink-soft)}
 .plan-top{display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap:10px; margin:0 0 22px}
 .plan-top a{display:flex; flex-direction:column; gap:4px; padding:14px 16px; border-radius:var(--r); border:1px solid var(--line); background:var(--card); text-decoration:none; color:var(--ink)}
 .plan-top a:hover, .plan-top a:focus-visible{border-color:var(--note)}
@@ -371,7 +382,7 @@ body[data-view="accueil"] [data-view="accueil"], body[data-view="histoire"] [dat
 body[data-view="question"] [data-view="question"], body[data-view="eco"] [data-view="eco"], body[data-view="controverses"] [data-view="controverses"],
 body[data-view="pantheon"] [data-view="pantheon"], body[data-view="labo"] [data-view="labo"], body[data-view="crises"] [data-view="crises"],
 body[data-view="boussole"] [data-view="boussole"], body[data-view="tutorat"] [data-view="tutorat"],
-body[data-view="concepts"] [data-view="concepts"], body[data-view="concept"] [data-view="concept"], body[data-view="actualite"] [data-view="actualite"], body[data-view="entrainement"] [data-view="entrainement"], body[data-view="methode"] [data-view="methode"], body[data-view="sources"] [data-view="sources"], body[data-view="progression"] [data-view="progression"], body[data-view="parcours"] [data-view="parcours"], body[data-view="enseigner"] [data-view="enseigner"], body[data-view="apropos"] [data-view="apropos"], body[data-view="familles"] [data-view="familles"], body[data-view="revision"] [data-view="revision"]{display:block}
+body[data-view="concepts"] [data-view="concepts"], body[data-view="concept"] [data-view="concept"], body[data-view="actualite"] [data-view="actualite"], body[data-view="entrainement"] [data-view="entrainement"], body[data-view="methode"] [data-view="methode"], body[data-view="sources"] [data-view="sources"], body[data-view="progression"] [data-view="progression"], body[data-view="parcours"] [data-view="parcours"], body[data-view="enseigner"] [data-view="enseigner"], body[data-view="apropos"] [data-view="apropos"], body[data-view="familles"] [data-view="familles"], body[data-view="revision"] [data-view="revision"], body[data-view="positionnement"] [data-view="positionnement"]{display:block}
 /* Actualité */
 .actu{padding:26px; border-radius:var(--r); border:1px solid var(--line); background:var(--card)}
 .actu h3{font-size:clamp(28px,3.4vw,40px); margin-top:12px}
@@ -1131,6 +1142,7 @@ footer .brand{font-size:22px}
           <button type="button" data-profil="decouvre" aria-pressed="false">Je découvre l’économie</button>
           <button type="button" data-profil="connais" aria-pressed="false">Je connais déjà l’économie</button>
           <button type="button" data-profil="enseigne" aria-pressed="false">J’enseigne</button>
+          <a class="profils-test" href="#positionnement">Je ne sais pas : test de 2 minutes</a>
         </div>
         <div class="profil-box" id="profilBox" hidden></div>
         <div class="stats">
@@ -1410,6 +1422,16 @@ footer .brand{font-size:22px}
         </div>
       </div>
       <div class="defi-slot" data-defi="crises"></div>
+    </div>
+  </section>
+
+  <section class="block" data-view="positionnement" id="positionnement">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Par où commencer ?</p><h1>Le test de positionnement</h1></div>
+        <p>Cinq questions, une par grand thème, de la plus simple à la plus exigeante. À la fin, Œconomia vous suggère un point de départ : version courte ou complète des notions, et niveau des exercices. Ce n’est qu’une indication, que vous êtes libre de suivre ou non.</p>
+      </div>
+      <div id="posRoot"></div>
     </div>
   </section>
 
