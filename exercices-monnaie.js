@@ -5,7 +5,7 @@
 
   X.theme({ id: "monnaie", nom: "Monnaie et inflation",
     intro: "À quoi sert la monnaie, d’où vient l’inflation et comment la Banque nationale suisse la combat-elle ? Ces exercices vous entraînent à mesurer l’inflation, à distinguer valeurs nominales et réelles, à utiliser l’équation quantitative et à raisonner sur la politique monétaire.",
-    notions: ["fonctions-monnaie", "theorie-quantitative", "politique-monetaire", "preference-liquidite", "trappe-liquidite", "courbe-phillips", "anticipations-rationnelles", "preteur-dernier-ressort"] });
+    notions: ["fonctions-monnaie", "theorie-quantitative", "politique-monetaire", "taux-de-change", "preference-liquidite", "trappe-liquidite", "courbe-phillips", "anticipations-rationnelles", "preteur-dernier-ressort"] });
 
   /* Courbe de Phillips schématique */
   const phillips = (longTerme) => {
@@ -133,7 +133,7 @@
     options: ["Le point A correspond à un chômage élevé et une inflation faible.", "Passer de B à A permet de réduire le chômage, au prix d’une inflation plus forte.", "La courbe montre que l’inflation et le chômage augmentent toujours ensemble.", "Le point B est impossible à atteindre."], c: 1,
     explication: P("Le point A combine <b>chômage faible et inflation élevée</b> ; le point B, chômage élevé et inflation faible. La courbe suggère un <b>arbitrage</b> : en stimulant l’économie, on passe de B à A, en réduisant le chômage au prix d’une inflation plus forte.", "Dans les années 1970, la stagflation a montré que cet arbitrage n’était pas stable : Friedman et Phelps ont montré qu’à long terme, il disparaît quand les anticipations d’inflation s’ajustent.") },
 
-  { id: "mo2-franc-refuge", theme: "monnaie", niveau: 2, type: "redaction", notion: "fonctions-monnaie",
+  { id: "mo2-franc-refuge", theme: "monnaie", niveau: 2, type: "redaction", notion: "taux-de-change",
     titre: "Le franc, valeur refuge", competence: "Expliquer un phénomène monétaire et ses conséquences (10 à 15 lignes).",
     enonce: P("Lors des crises financières ou géopolitiques, de nombreux investisseurs achètent des francs suisses, considérés comme une « valeur refuge ». En 2011, la BNS a même fixé un cours plancher de 1,20 franc pour un euro, abandonné en janvier 2015.", "<b>Consigne :</b> expliquez pourquoi le franc est une valeur refuge, puis présentez les conséquences d’un franc fort pour l’économie suisse, en distinguant au moins un effet positif et un effet négatif."),
     criteres: ["La réponse explique pourquoi le franc inspire confiance : stabilité politique, faible inflation, finances publiques saines, institutions solides, banque centrale crédible…", "Elle explique le mécanisme : la demande de francs augmente, donc le franc s’apprécie (offre et demande de devises).", "Elle cite au moins un effet négatif : exportations et tourisme moins compétitifs, pression sur les marges et l’emploi industriel…", "Elle cite au moins un effet positif : importations moins chères, inflation faible, pouvoir d’achat à l’étranger…", "Elle mentionne une réponse possible de la BNS (cours plancher, achats de devises, taux négatifs) ou conclut clairement."],
@@ -190,7 +190,7 @@
       ["Selon les anticipations rationnelles de Lucas, une politique monétaire parfaitement anticipée a des effets durables sur la production.", false, "Selon Lucas, seule une politique <b>imprévue</b> peut avoir des effets réels, et seulement temporaires ; une politique anticipée ne change que les prix."]
     ] },
 
-  { id: "mo3-ppa", theme: "monnaie", niveau: 3, type: "calcul", notion: "theorie-quantitative",
+  { id: "mo3-ppa", theme: "monnaie", niveau: 3, type: "calcul", notion: "taux-de-change",
     titre: "Inflation et taux de change", competence: "Appliquer la parité des pouvoirs d’achat relative.",
     gen: () => ({ e: pick([0.92, 0.94, 0.96, 0.98, 1.05, 1.1]), pch: pick([0, 0.5, 1, 1.5]), peu: pick([2, 2.5, 3, 4, 6]) }),
     enonce: (p) => P(`Un euro vaut aujourd’hui <b>${fmt(p.e, 2)} franc</b>. L’inflation est de <b>${fmt(p.pch)} %</b> en Suisse et de <b>${fmt(p.peu)} %</b> dans la zone euro.`, "Selon la parité des pouvoirs d’achat relative, la monnaie du pays où l’inflation est plus forte se déprécie à peu près de l’écart d’inflation. Quel cours de l’euro (en francs) peut-on attendre dans un an ? Arrondissez à trois décimales."),

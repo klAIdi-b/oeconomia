@@ -16,7 +16,7 @@
 
   X.theme({ id: "commerce", nom: "Commerce international",
     intro: "Pourquoi les pays échangent-ils, qui y gagne et qui y perd, et que provoquent les droits de douane ? Ces exercices vous entraînent à calculer des avantages comparatifs, des soldes commerciaux et les effets d’un droit de douane, et à discuter du libre-échange et du protectionnisme.",
-    notions: ["avantage-comparatif", "rendements-croissants", "division-travail", "institutions-inclusives", "surplus"] });
+    notions: ["avantage-comparatif", "taux-de-change", "rendements-croissants", "division-travail", "institutions-inclusives", "surplus"] });
 
   X.add([
   /* =========================== NIVEAU 1 : DÉCOUVERTE =========================== */
@@ -152,7 +152,7 @@
     indice: "Recette = droit de douane × importations après le droit. Chaque triangle de perte = ½ × droit × variation de quantité (production pour l’un, consommation pour l’autre).",
     correction: (p) => { const M1 = imports(p, p.Pw + p.t), dQo = p.d * p.t, dQd = p.b * p.t; return P(`Importations après le droit : ${M1}. Recette = ${p.t} × ${M1} = <b>${fmt(p.t * M1)} francs</b>.`, `La production nationale augmente de ${p.d} × ${p.t} = ${dQo} ; la consommation baisse de ${p.b} × ${p.t} = ${dQd}.`, `Perte sèche = ½ × ${p.t} × ${dQo} + ½ × ${p.t} × ${dQd} = ${fmt(0.5 * p.t * dQo)} + ${fmt(0.5 * p.t * dQd)} = <b>${fmt(0.5 * p.t * (dQo + dQd))} francs</b>.`, "Le premier triangle correspond à des unités produites dans le pays plus cher qu’à l’étranger ; le second à des achats qui n’ont plus lieu. Ni l’État ni les producteurs ne récupèrent ces montants."); } },
 
-  { id: "co3-change", theme: "commerce", niveau: 3, type: "calcul", notion: "avantage-comparatif",
+  { id: "co3-change", theme: "commerce", niveau: 3, type: "calcul", notion: "taux-de-change",
     titre: "Le franc fort et le prix des exportations", competence: "Calculer l’effet d’une variation du taux de change sur un prix à l’export.",
     gen: () => ({ prix: pick([1200, 2500, 4800, 6500, 9000]), e0: pick([1.2, 1.1, 1.05]), e1: pick([1.0, 0.95, 0.93]) }),
     enonce: (p) => P(`Une montre suisse coûte <b>${fmt(p.prix)} francs</b>. Le taux de change passe de <b>1 € = ${fmt(p.e0, 2)} CHF</b> à <b>1 € = ${fmt(p.e1, 2)} CHF</b>, le prix en francs restant inchangé.`, "Quel est le prix de la montre en euros avant et après ? Arrondissez à l’euro."),

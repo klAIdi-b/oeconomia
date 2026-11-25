@@ -179,7 +179,7 @@ OEC.concepts = [
     court: "L’action de la banque centrale sur le coût de l’argent, d’abord pour garder des prix stables.",
     texte: "La banque centrale fixe un taux directeur, qui se répercute sur les taux des crédits, des hypothèques et de l’épargne. Quand l’inflation monte, elle le relève : le crédit devient plus cher, la demande ralentit, la monnaie s’apprécie, et la hausse des prix se calme, avec un délai d’un à deux ans. Quand l’économie faiblit, elle le baisse. La crédibilité compte autant que le taux : si chacun croit à des prix stables, salaires et prix s’ajustent en conséquence. Depuis 2008, les banques centrales recourent aussi à des instruments exceptionnels : taux négatifs, achats massifs de titres et, en Suisse, interventions sur le marché des changes. Leur indépendance et l’étendue de leur mandat restent débattues.",
     exemple: "Face à une inflation de 3,5 % en août 2022, la BNS a relevé son taux directeur de −0,25 % à 1,75 % en un an.",
-    auteurs: ["friedman", "keynes", "lucas", "kelton"], questions: ["monnaie", "crises"], voir: ["theorie-quantitative", "monnaie-endogene", "trappe-liquidite", "anticipations-rationnelles", "preteur-dernier-ressort", "courbe-phillips"] },
+    auteurs: ["friedman", "keynes", "lucas", "kelton"], questions: ["monnaie", "crises"], voir: ["taux-de-change", "theorie-quantitative", "monnaie-endogene", "trappe-liquidite", "anticipations-rationnelles", "preteur-dernier-ressort", "courbe-phillips"] },
 
   { id: "preference-liquidite", nom: "Préférence pour la liquidité", cat: "monnaie",
     court: "Chez Keynes, le désir de détenir de la monnaie plutôt que des titres, qui détermine le taux d’intérêt.",
@@ -222,7 +222,13 @@ OEC.concepts = [
     court: "Un pays gagne à se spécialiser dans les productions où son coût d’opportunité est le plus faible.",
     texte: "Ricardo l’expose en 1817 avec l’Angleterre et le Portugal. Le Portugal produit drap et vin avec moins de travail, mais son avantage est relativement plus grand pour le vin. En se spécialisant, le Portugal dans le vin, l’Angleterre dans le drap, et en échangeant, les deux pays obtiennent davantage des deux biens. Samuelson disait que c’était la seule proposition des sciences sociales à la fois vraie et non évidente. La théorie suppose le plein emploi, la mobilité des facteurs entre secteurs et l’immobilité entre pays. Elle ne dit pas que tout le monde gagne : les travailleurs des secteurs concurrencés peuvent perdre, ce que Stolper et Samuelson ont formalisé.",
     exemple: "La Suisse importe la majeure partie de son textile et exporte des produits pharmaceutiques et des machines de précision.",
-    auteurs: ["ricardo", "samuelson", "mill"], questions: ["commerce"], voir: ["cout-opportunite", "rendements-croissants"], lab: 2 },
+    auteurs: ["ricardo", "samuelson", "mill"], questions: ["commerce"], voir: ["taux-de-change", "cout-opportunite", "rendements-croissants"], lab: 2 },
+
+  { id: "taux-de-change", nom: "Taux de change", cat: "echange",
+    court: "Le prix d’une monnaie exprimé dans une autre, qui se forme sur le marché des changes.",
+    texte: "Le taux de change dit combien de francs il faut pour obtenir un euro ou un dollar. Depuis la fin du système de Bretton Woods, au début des années 1970, la plupart des grandes monnaies flottent : leur valeur dépend de l’offre et de la demande. Quand une monnaie s’apprécie, les importations deviennent moins chères et les exportations plus chères pour les étrangers. À long terme, les taux de change tendent à refléter les écarts d’inflation (parité des pouvoirs d’achat, Cassel) ; à court terme, ils dépendent des taux d’intérêt, des anticipations et de la confiance. Un pays ne peut avoir à la fois un change fixe, des capitaux libres et une politique monétaire autonome : c’est le triangle d’incompatibilité de Mundell et Fleming.",
+    exemple: "Le 15 janvier 2015, la BNS abandonne le cours plancher de 1,20 franc pour un euro : en un jour, les produits suisses deviennent plus de 10 % plus chers pour les clients européens.",
+    auteurs: ["ricardo", "keynes", "friedman", "krugman"], questions: ["commerce", "monnaie"], voir: ["avantage-comparatif", "politique-monetaire", "theorie-quantitative", "fonctions-monnaie"] },
 
   { id: "rendements-croissants", nom: "Rendements croissants", cat: "echange",
     court: "Situation où le coût unitaire baisse quand la quantité produite augmente.",
