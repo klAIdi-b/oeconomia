@@ -8,6 +8,7 @@ OEC.schools = {
   marx:      { label: "Marxisme", token: "--c-marx" },
   neoclass:  { label: "Néoclassiques", token: "--c-neoclass" },
   keynes:    { label: "Keynésiens", token: "--c-keynes" },
+  postk:     { label: "Post-keynésiens", token: "--c-postk" },
   autrich:   { label: "École autrichienne", token: "--c-autrich" },
   chicago:   { label: "Chicago & monétaristes", token: "--c-chicago" },
   hetero:    { label: "Institutions & évolution", token: "--c-hetero" },

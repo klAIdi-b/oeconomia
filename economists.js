@@ -234,7 +234,7 @@ OEC.economists = [
     bio: "Né à Vienne, cousin éloigné de Wittgenstein, Hayek combat sur le front italien en 1917-1918, puis dirige avec Mises l’Institut autrichien de recherche sur les cycles. Appelé à la London School of Economics en 1931, il perd la bataille des idées face à Keynes. La Route de la servitude, diffusée en version abrégée par le Reader’s Digest, fait de lui une figure publique. Il fonde en 1947 la Société du Mont-Pèlerin, près de Vevey, enseigne à Chicago puis à Fribourg-en-Brisgau, et reçoit le Nobel en 1974, partagé avec son adversaire intellectuel Gunnar Myrdal.",
     x: -0.85, y: 0.4, debat: "keynes-hayek" },
 
-  { id: "robinson", nom: "Joan Robinson", ini: "JR", vie: [1903, 1983], pays: "Angleterre", ecole: "keynes", famille: "post-keynesiens",
+  { id: "robinson", nom: "Joan Robinson", ini: "JR", vie: [1903, 1983], pays: "Angleterre", ecole: "postk", famille: "post-keynesiens",
     devise: "Théoricienne de la concurrence imparfaite, puis critique la plus redoutable de la théorie néoclassique du capital.",
     oeuvre: ["L’Économie de la concurrence imparfaite", "1933"],
     idees: [
@@ -286,7 +286,7 @@ OEC.economists = [
     bio: "Né à Gary, dans l’Indiana, Samuelson étudie à Chicago puis à Harvard, qui ne le retient pas ; il passe en 1940 au MIT, dont il fait le premier département d’économie du monde. Son manuel L’Économique (1948) connaît dix-neuf éditions et des traductions dans plus de quarante langues. Premier Américain à recevoir le Nobel d’économie, en 1970, il conseille John F. Kennedy. Il est l’oncle de Larry Summers.",
     x: 0.35, y: -0.8, debat: "friedman-samuelson" },
 
-  { id: "minsky", nom: "Hyman Minsky", ini: "HM", vie: [1919, 1996], pays: "États-Unis", ecole: "keynes", famille: "post-keynesiens",
+  { id: "minsky", nom: "Hyman Minsky", ini: "HM", vie: [1919, 1996], pays: "États-Unis", ecole: "postk", famille: "post-keynesiens",
     devise: "Lit Keynes comme un théoricien de la finance et montre que l’instabilité naît des périodes de stabilité elles-mêmes.",
     oeuvre: ["Stabiliser une économie instable", "1986"],
     idees: [
@@ -454,7 +454,7 @@ OEC.economists = [
     source: "La Grande Transformation, chap. 12, 1944",
     bio: "Né à Vienne et élevé à Budapest, docteur en droit, Polanyi fonde en 1908 le cercle Galilée, foyer de la jeunesse progressiste hongroise. Journaliste économique à Vienne dans les années 1920, il s’exile en Angleterre en 1933, où il enseigne aux ouvriers. Il écrit La Grande Transformation aux États-Unis, au Bennington College, puis enseigne à l’université Columbia. Son épouse, l’ancienne militante communiste Ilona Duczyńska, n’ayant pas le droit d’entrer aux États-Unis, le couple vit au Canada, où il meurt en 1964.",
     x: 0.7, y: 0.86 },
-  { id: "kalecki", nom: "Michał Kalecki", ini: "MK", vie: [1899, 1970], pays: "Pologne", ecole: "keynes", famille: "post-keynesiens",
+  { id: "kalecki", nom: "Michał Kalecki", ini: "MK", vie: [1899, 1970], pays: "Pologne", ecole: "postk", famille: "post-keynesiens",
     devise: "Découvre avant Keynes le rôle de la demande effective, et montre que le plein emploi durable se heurte à des obstacles politiques.",
     oeuvre: ["Aspects politiques du plein emploi", "1943"],
     idees: [
@@ -493,7 +493,7 @@ OEC.economists = [
     source: "Counting for Nothing, sous-titre, 1988",
     bio: "Élue au Parlement néo-zélandais en 1975, à vingt-trois ans, Waring y préside la commission des dépenses publiques. En 1984, son soutien à une loi d’opposition pour une Nouvelle-Zélande sans armes nucléaires conduit le Premier ministre Robert Muldoon à convoquer des élections anticipées. Elle quitte alors la politique, obtient un doctorat et publie en 1988 un livre souvent tenu pour le texte fondateur de l’économie féministe. Professeure de politiques publiques à Auckland, elle a siégé au Conseil de l’OMS sur l’économie de la santé pour tous.",
     x: 0.55, y: 0.98 },
-  { id: "kelton", nom: "Stephanie Kelton", ini: "SK", vie: [1969, null], pays: "États-Unis", ecole: "keynes", famille: "post-keynesiens",
+  { id: "kelton", nom: "Stephanie Kelton", ini: "SK", vie: [1969, null], pays: "États-Unis", ecole: "postk", famille: "post-keynesiens",
     devise: "Porte la « théorie moderne de la monnaie » : un État qui émet sa propre monnaie ne peut pas faire faillite, et sa vraie limite est l’inflation, pas la dette.",
     oeuvre: ["Le Mythe du déficit", "2020"],
     idees: [
