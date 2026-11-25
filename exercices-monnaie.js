@@ -5,7 +5,7 @@
 
   X.theme({ id: "monnaie", nom: "Monnaie et inflation",
     intro: "À quoi sert la monnaie, d’où vient l’inflation et comment la Banque nationale suisse la combat-elle ? Ces exercices vous entraînent à mesurer l’inflation, à distinguer valeurs nominales et réelles, à utiliser l’équation quantitative et à raisonner sur la politique monétaire.",
-    notions: ["fonctions-monnaie", "theorie-quantitative", "preference-liquidite", "trappe-liquidite", "courbe-phillips", "anticipations-rationnelles", "preteur-dernier-ressort"] });
+    notions: ["fonctions-monnaie", "theorie-quantitative", "politique-monetaire", "preference-liquidite", "trappe-liquidite", "courbe-phillips", "anticipations-rationnelles", "preteur-dernier-ressort"] });
 
   /* Courbe de Phillips schématique */
   const phillips = (longTerme) => {
@@ -54,7 +54,7 @@
     indice: "Divisez la somme par (1 + taux d’inflation).",
     correction: (p) => P(`Valeur réelle = ${fmt(p.s)} ÷ (1 + ${fmt(p.pi / 100, 3)}) = <b>${fmt(Math.round(p.s / (1 + p.pi / 100)))} francs</b> d’aujourd’hui.`, `Vous avez toujours ${fmt(p.s)} francs, mais ils permettent d’acheter environ ${fmt(p.pi * p.s / (100 + p.pi), 0)} francs de moins de biens et de services qu’aujourd’hui. C’est pourquoi l’inflation est parfois appelée un « impôt » sur la monnaie détenue.`) },
 
-  { id: "mo1-bns", theme: "monnaie", niveau: 1, type: "qcm", notion: "preteur-dernier-ressort",
+  { id: "mo1-bns", theme: "monnaie", niveau: 1, type: "qcm", notion: "politique-monetaire",
     titre: "Le mandat de la Banque nationale suisse", competence: "Connaître le rôle de la banque centrale.",
     enonce: P("Quel est l’objectif principal fixé par la loi à la Banque nationale suisse (BNS) ?"),
     options: ["Maximiser les bénéfices versés aux cantons.", "Assurer la stabilité des prix, en tenant compte de l’évolution de la conjoncture.", "Maintenir le franc au même cours que l’euro.", "Financer les dépenses de la Confédération."], c: 1, pourquoi: ["La BNS verse une partie de ses bénéfices à la Confédération et aux cantons quand il y en a, mais la loi ne lui donne pas pour but d’en faire.", null, "La BNS a maintenu un cours plancher face à l’euro de 2011 à 2015, comme moyen temporaire, jamais comme objectif légal ; aujourd’hui le franc flotte.", "La BNS est indépendante et ne finance pas les dépenses de la Confédération : ce serait contraire à sa mission de stabilité des prix."],
@@ -102,7 +102,7 @@
     indice: "Taux réel ≈ taux nominal − inflation ; calcul exact : (1 + i) ÷ (1 + π) − 1.",
     correction: (p) => { const r = ((1 + p.i / 100) / (1 + p.pi / 100) - 1) * 100; return P(`Approximation : ${fmt(p.i)} − ${fmt(p.pi)} = ${fmt(p.i - p.pi)} %.`, `Calcul exact : (1 + ${fmt(p.i / 100, 4)}) ÷ (1 + ${fmt(p.pi / 100, 4)}) − 1 ≈ <b>${fmt(r, 2)} %</b>.`, r < -0.005 ? "Le taux réel est négatif : l’épargne perd du pouvoir d’achat malgré les intérêts. C’était le cas de nombreux comptes en 2022." : r > 0.005 ? "Le taux réel est positif : l’épargne gagne du pouvoir d’achat." : "Le taux réel est nul : les intérêts compensent tout juste l’inflation, l’épargne garde son pouvoir d’achat."); } },
 
-  { id: "mo2-hausse-taux", theme: "monnaie", niveau: 2, type: "qcm", notion: "preference-liquidite",
+  { id: "mo2-hausse-taux", theme: "monnaie", niveau: 2, type: "qcm", notion: "politique-monetaire",
     titre: "Que se passe-t-il quand la BNS relève son taux ?", competence: "Décrire les canaux de transmission de la politique monétaire.",
     enonce: P("Face à une inflation de 3,5 %, la BNS relève son taux directeur. Quel enchaînement est le plus probable ?"),
     options: ["Les crédits deviennent moins chers, l’investissement augmente et l’inflation baisse.", "Les crédits et les hypothèques deviennent plus chers, la demande ralentit, le franc tend à s’apprécier, et l’inflation recule.", "Les prix baissent immédiatement, car les commerçants doivent appliquer le nouveau taux.", "Le chômage diminue fortement, car les banques gagnent plus."], c: 1,
@@ -155,7 +155,7 @@
     indice: "V = (P × Y) ÷ M. À vitesse constante, P × Y augmente comme M.",
     correction: (p) => P(`V = ${p.py} ÷ ${p.m} ≈ <b>${fmt(p.py / p.m, 2)}</b> : chaque franc sert en moyenne ${fmt(p.py / p.m, 2)} fois par an à acheter la production.`, `Si M augmente de 10 % et V reste constante, P × Y augmente aussi de 10 % : ${p.py} × 1,1 = <b>${fmt(p.py * 1.1, 1)} milliards</b>.`, "Toute la question est de savoir si cette hausse se traduit par plus de production (Y) ou par plus d’inflation (P). Pour les monétaristes, à long terme, ce sont les prix qui s’ajustent.") },
 
-  { id: "mo3-taylor", theme: "monnaie", niveau: 3, type: "calcul",
+  { id: "mo3-taylor", theme: "monnaie", niveau: 3, type: "calcul", notion: "politique-monetaire",
     titre: "La règle de Taylor", competence: "Appliquer une règle de politique monétaire.",
     gen: () => ({ r: pick([0.5, 1, 2]), pi: pick([0, 0.5, 1, 2, 3, 3.5, 5]), cible: pick([1, 2]), ecart: pick([-2, -1, 0, 1, 2]) }),
     enonce: (p) => P("En 1993, l’économiste John Taylor propose une règle simple pour fixer le taux directeur :", "<b>i = r* + π + 0,5 × (π − π*) + 0,5 × écart de production</b>", `où r* est le taux d’intérêt réel neutre (<b>${fmt(p.r)} %</b>), π l’inflation (<b>${fmt(p.pi)} %</b>), π* la cible d’inflation (<b>${fmt(p.cible)} %</b>) et l’écart de production l’écart en % entre la production effective et la production potentielle (<b>${fmt(p.ecart)} %</b>).`, "Quel taux directeur la règle recommande-t-elle ?"),
@@ -199,13 +199,13 @@
     indice: "Nouveau cours = cours actuel × (1 + inflation suisse) ÷ (1 + inflation de la zone euro).",
     correction: (p) => { const v = p.e * (1 + p.pch / 100) / (1 + p.peu / 100); return P(`Nouveau cours ≈ ${fmt(p.e, 2)} × ${fmt(1 + p.pch / 100, 3)} ÷ ${fmt(1 + p.peu / 100, 3)} ≈ <b>${fmt(v, 3)} franc</b> pour un euro.`, `L’euro perd de la valeur face au franc, car les prix montent plus vite dans la zone euro : le franc s’apprécie de façon à maintenir le même pouvoir d’achat des deux monnaies.`, "Cette relation explique en partie l’appréciation du franc sur longue période, l’inflation suisse étant presque toujours plus faible que celle de ses voisins. À court terme, les mouvements de capitaux, comme les achats de francs « refuge », pèsent souvent davantage."); } },
 
-  { id: "mo3-independance", theme: "monnaie", niveau: 3, type: "redaction", notion: "anticipations-rationnelles",
+  { id: "mo3-independance", theme: "monnaie", niveau: 3, type: "redaction", notion: "politique-monetaire",
     titre: "La Banque nationale doit-elle rester indépendante ?", competence: "Construire une argumentation équilibrée (15 à 25 lignes).",
     enonce: P("La BNS est indépendante : ni le Conseil fédéral ni le Parlement ne peuvent lui donner d’instructions sur sa politique monétaire. Certains proposent de lui confier d’autres missions, comme financer l’AVS avec ses bénéfices ou soutenir la transition climatique, et de la soumettre davantage au contrôle politique.", "<b>Consigne :</b> la BNS doit-elle rester indépendante du pouvoir politique ? Présentez des arguments pour et contre, en utilisant au moins une notion d’économie (crédibilité, anticipations, inflation, cycle électoral), puis concluez."),
     criteres: ["La réponse présente au moins deux arguments en faveur de l’indépendance : crédibilité, anticipations d’inflation ancrées, horizon long, résistance à la tentation de créer de l’inflation avant les élections, expériences historiques…", "Elle présente au moins deux arguments critiques : légitimité démocratique, pouvoir important confié à des non-élus, effets sur la répartition et les épargnants, question des missions (climat, emploi)…", "Elle utilise correctement au moins une notion d’économie (crédibilité, anticipations, inflation, cycle électoral).", "Elle distingue indépendance et absence de contrôle : mandat fixé par la loi, rapport au Parlement, transparence.", "Elle conclut de façon argumentée."],
     corrige: P("<b>Pour l’indépendance :</b> un gouvernement est tenté de stimuler l’économie avant les élections, quitte à provoquer de l’inflation ensuite. Une banque centrale indépendante, avec un mandat clair de stabilité des prix, est plus <b>crédible</b> : les anticipations d’inflation restent basses, ce qui permet de maîtriser l’inflation à moindre coût. L’histoire montre que les banques centrales soumises au pouvoir politique ont souvent laissé filer l’inflation, jusqu’aux hyperinflations.", "<b>Contre ou pour nuancer :</b> la politique monétaire a des effets importants sur l’emploi, les épargnants, les propriétaires et le franc ; confier ce pouvoir à des responsables non élus pose une question de légitimité démocratique. Les décisions de la BNS, comme l’abandon du cours plancher en 2015, ont surpris et coûté cher à certaines entreprises. Enfin, certains estiment qu’elle pourrait contribuer à d’autres objectifs, comme le climat.", "<b>Conclusion :</b> l’indépendance n’est pas l’absence de contrôle : c’est le peuple et le Parlement qui fixent le mandat de la BNS dans la loi, et elle doit rendre des comptes et être transparente. Il semble préférable de garder son indépendance dans le choix des instruments, tout en débattant démocratiquement de son mandat.") },
 
-  { id: "mo3-taux-bns", theme: "monnaie", niveau: 3, type: "document", notion: "preference-liquidite",
+  { id: "mo3-taux-bns", theme: "monnaie", niveau: 3, type: "document", notion: "politique-monetaire",
     titre: "Dix ans de taux directeur de la BNS", competence: "Analyser une série de décisions de politique monétaire.",
     enonce: P("Taux directeur de la BNS à quelques dates (en %) :") +
       `<table><thead><tr><th>Janv. 2015</th><th>Juin 2022</th><th>Déc. 2022</th><th>Juin 2023</th><th>Déc. 2024</th><th>Juin 2025</th></tr></thead><tbody><tr><td>−0,75</td><td>−0,25</td><td>1,00</td><td>1,75</td><td>0,50</td><td>0,00</td></tr></tbody></table><p class="ex-source">Source : Banque nationale suisse, décisions de politique monétaire.</p>` +
