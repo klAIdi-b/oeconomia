@@ -77,7 +77,7 @@
   { id: "vi2-fordisme", theme: "visions", niveau: 2, type: "qcm", notion: "mode-regulation",
     titre: "Le cercle du fordisme", competence: "Expliquer un enchaînement macroéconomique.",
     enonce: P("Quel enchaînement décrit le mieux le « fordisme » des Trente Glorieuses, selon l’école de la régulation ?"),
-    options: ["Baisse des salaires → baisse des prix → hausse des exportations → croissance.", "Gains de productivité → hausse des salaires négociée → consommation de masse → investissement → nouveaux gains de productivité.", "Création monétaire → inflation → croissance.", "Hausse des impôts → baisse de la dette → croissance."], c: 1,
+    options: ["Baisse des salaires → baisse des prix → hausse des exportations → croissance.", "Gains de productivité → hausse des salaires négociée → consommation de masse → investissement → nouveaux gains de productivité.", "Création monétaire → inflation → croissance.", "Hausse des impôts → baisse de la dette → croissance."], c: 1, pourquoi: ["Le fordisme repose sur la hausse des salaires, qui soutient la consommation, et non sur leur baisse.", null, "La croissance fordiste vient des gains de productivité partagés, pas de la création monétaire.", "Le fordisme est un régime de croissance fondé sur la consommation de masse, pas sur le désendettement."],
     explication: P("Les gains de productivité de la production de masse sont partagés avec les salariés par les conventions collectives. Les salariés achètent ce qu’ils produisent, ce qui soutient l’investissement. Le cercle se rompt à la fin des années 1960, quand la productivité ralentit.", "Voir la notice <a href=\"#c-mode-regulation\">Mode de régulation</a>.") },
 
   { id: "vi2-vf-monnaie", theme: "visions", niveau: 2, type: "vf", notion: "monnaie-endogene",
@@ -92,7 +92,7 @@
   { id: "vi2-kelton", theme: "visions", niveau: 2, type: "qcm", notion: "monnaie-endogene",
     titre: "La limite de la dépense publique", competence: "Comprendre la thèse de la théorie moderne de la monnaie.",
     enonce: P("Selon Stephanie Kelton, qu’est-ce qui limite vraiment les dépenses d’un État qui émet sa propre monnaie ?"),
-    options: ["Le niveau de sa dette publique", "La quantité d’or détenue par la banque centrale", "L’inflation, quand l’État demande plus de travail et de ressources qu’il n’y en a de disponibles", "Le budget de l’année précédente"], c: 2,
+    options: ["Le niveau de sa dette publique", "La quantité d’or détenue par la banque centrale", "L’inflation, quand l’État demande plus de travail et de ressources qu’il n’y en a de disponibles", "Le budget de l’année précédente"], c: 2, pourquoi: ["Pour la théorie moderne de la monnaie, un État qui émet sa monnaie peut toujours payer sa dette dans cette monnaie : le niveau de la dette n’est pas la vraie limite.", "Les monnaies actuelles ne sont plus convertibles en or : les réserves d’or ne limitent pas la dépense.", null, "Le budget passé n’est pas une contrainte économique : seule compte la disponibilité des ressources réelles."],
     explication: P("Pour la théorie moderne de la monnaie, la question n’est pas « comment le payer ? », mais « avons-nous les ressources ? ». Ses critiques, comme Lawrence Summers, répondent qu’il est politiquement difficile d’augmenter les impôts à temps pour contenir l’inflation.", "Voir le duel <a href=\"#controverses\" data-debat=\"kelton-summers\">Kelton contre Summers</a>.") },
 
   { id: "vi2-red-pib", theme: "visions", niveau: 2, type: "redaction", notion: "travail-non-remunere",
@@ -141,7 +141,7 @@
   { id: "vi3-souverainete", theme: "visions", niveau: 3, type: "qcm", notion: "monnaie-endogene",
     titre: "Qui est souverain sur sa monnaie ?", competence: "Appliquer une notion à des cas concrets.",
     enonce: P("Selon la théorie moderne de la monnaie, lequel de ces États dispose de la plus grande marge pour dépenser sans risque de faillite ?"),
-    options: ["La Grèce, qui utilise l’euro", "Un pays émergent endetté en dollars américains", "La Suisse, qui émet le franc, laisse flotter son change et s’endette en francs", "Un pays dont la monnaie est fixée à l’or"], c: 2,
+    options: ["La Grèce, qui utilise l’euro", "Un pays émergent endetté en dollars américains", "La Suisse, qui émet le franc, laisse flotter son change et s’endette en francs", "Un pays dont la monnaie est fixée à l’or"], c: 2, pourquoi: ["La Grèce n’émet pas l’euro : elle peut manquer de monnaie pour rembourser, comme en 2010-2012.", "Un pays endetté en dollars doit gagner ou acheter des dollars pour rembourser : il peut faire faillite.", null, "Avec l’étalon-or, la création monétaire est limitée par le stock d’or : la marge de dépense est réduite."],
     explication: P("Un État souverain sur sa monnaie, avec un change flottant et une dette dans sa propre monnaie, ne peut pas être forcé à la faillite. La Grèce ne contrôle pas l’euro ; un pays endetté en dollars doit gagner des dollars ; l’étalon-or limite la création monétaire.", "La Suisse remplit ces conditions, mais elle s’impose un frein à l’endettement, accepté par 85 % des votants en 2001. Voir le portrait de <a href=\"#eco-kelton\">Stephanie Kelton</a>.") },
 
   { id: "vi3-red-frein", theme: "visions", niveau: 3, type: "redaction", notion: "monnaie-endogene",
