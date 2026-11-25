@@ -5,7 +5,7 @@
 
   X.theme({ id: "croissance", nom: "Croissance et PIB",
     intro: "Comment mesure-t-on la richesse produite par un pays, et d’où vient sa croissance ? Ces exercices vous entraînent à calculer et à interpréter le PIB, à distinguer valeurs nominales et réelles, à raisonner sur la croissance de long terme et à discuter de ses limites.",
-    notions: ["pib", "division-travail", "destruction-creatrice", "cycles", "institutions-inclusives", "stagnation-seculaire", "capabilites"] });
+    notions: ["pib", "modele-solow", "division-travail", "destruction-creatrice", "cycles", "institutions-inclusives", "stagnation-seculaire", "capabilites"] });
 
   X.add([
   /* =========================== NIVEAU 1 : DÉCOUVERTE =========================== */
@@ -90,13 +90,13 @@
     indice: "Coefficient multiplicateur = (1 + taux) puissance nombre d’années.",
     correction: (p) => { const k = Math.pow(1 + p.g / 100, p.n); return P(`Coefficient = ${fmt(1 + p.g / 100, 3)}<sup>${p.n}</sup> ≈ <b>${fmt(k, 2)}</b>, soit une hausse totale d’environ ${fmt((k - 1) * 100, 0)} %.`, `Attention : ce n’est pas ${p.n} × ${fmt(p.g)} = ${fmt(p.n * p.g)} %, car chaque année la croissance s’applique à un niveau déjà plus élevé.`); } },
 
-  { id: "cr2-solow", theme: "croissance", niveau: 2, type: "qcm", notion: "pib",
+  { id: "cr2-solow", theme: "croissance", niveau: 2, type: "qcm", notion: "modele-solow",
     titre: "Le modèle de Solow", competence: "Comprendre les rendements décroissants du capital.",
     enonce: P("Selon le modèle de croissance de Robert Solow (1956), que se passe-t-il si un pays se contente d’accumuler toujours plus de machines, sans progrès technique ?"),
     options: ["Sa croissance s’accélère indéfiniment.", "Chaque machine supplémentaire rapporte un peu moins que la précédente, et la croissance du revenu par habitant finit par s’arrêter.", "Sa production baisse, car les machines remplacent les travailleurs.", "Sa croissance devient négative à cause de l’inflation."], c: 1,
     explication: P("Le capital a des <b>rendements décroissants</b> : une première machine fait beaucoup gagner, la vingtième beaucoup moins. À force d’accumuler, l’investissement ne fait plus que remplacer les machines usées. À long terme, seule la hausse de l’efficacité, le <b>progrès technique</b>, permet au revenu par habitant de continuer à croître.", "C’est ce qui a poussé Lucas, Romer, Aghion et Howitt à chercher d’où vient ce progrès : éducation, recherche, innovation.") },
 
-  { id: "cr2-comptabilite", theme: "croissance", niveau: 2, type: "calcul", notion: "destruction-creatrice",
+  { id: "cr2-comptabilite", theme: "croissance", niveau: 2, type: "calcul", notion: "modele-solow",
     titre: "La comptabilité de la croissance", competence: "Calculer la contribution du progrès technique (résidu de Solow).",
     gen: () => ({ y: pick([2, 2.5, 3, 3.5, 4]), k: pick([2, 3, 4, 5]), l: pick([0, 0.5, 1, 1.5]) }),
     enonce: (p) => P("La croissance de la production peut se décomposer ainsi : <b>croissance du PIB = 0,3 × croissance du capital + 0,7 × croissance du travail + progrès technique</b> (productivité globale des facteurs).", `Dans un pays, le PIB croît de <b>${fmt(p.y)} %</b>, le capital de <b>${fmt(p.k)} %</b> et le travail (heures travaillées) de <b>${fmt(p.l)} %</b>.`, "Quelle est la contribution du progrès technique ? Arrondissez à deux décimales."),
@@ -126,7 +126,7 @@
     criteres: ["La réponse mobilise le capital humain : formation professionnelle duale, écoles polytechniques, niveau de qualification…", "Elle mobilise l’innovation et la spécialisation : horlogerie, machines, chimie et pharmacie, finance, recherche…", "Elle mobilise les institutions : stabilité politique, État de droit, fédéralisme, démocratie directe, protection de la propriété…", "Elle mobilise l’ouverture : commerce international, travailleurs et capitaux étrangers…", "Elle relie ces facteurs à la productivité et nuance (ressources naturelles absentes, rôle de l’histoire, limites)."],
     corrige: P("La richesse de la Suisse ne vient pas de ressources naturelles, mais de facteurs que les théories de la croissance jugent décisifs. D’abord le <b>capital humain</b> : l’apprentissage dual forme une main-d’œuvre très qualifiée, et les écoles polytechniques (EPFZ, fondée en 1855, et EPFL) nourrissent la recherche.", "Ensuite l’<b>innovation et la spécialisation</b> dans des produits à forte valeur ajoutée : horlogerie, machines, chimie et pharmacie, souvent nées de l’industrie textile, puis services financiers. La Suisse figure en tête des classements mondiaux de l’innovation.", "Enfin des <b>institutions</b> stables et inclusives, au sens d’Acemoglu : État de droit, fédéralisme, démocratie directe, protection de la propriété, et une forte <b>ouverture</b> aux échanges et aux travailleurs étrangers. Le tunnel du Gothard et l’hydroélectricité ont compensé l’absence de charbon. Ces facteurs se renforcent mutuellement et expliquent une productivité élevée.") },
 
-  { id: "cr2-convergence", theme: "croissance", niveau: 2, type: "qcm", notion: "institutions-inclusives",
+  { id: "cr2-convergence", theme: "croissance", niveau: 2, type: "qcm", notion: "modele-solow",
     titre: "Les pays pauvres rattrapent-ils les riches ?", competence: "Comprendre la convergence conditionnelle.",
     enonce: P("Le modèle de Solow prédit que les pays pauvres, qui ont peu de capital, devraient croître plus vite que les pays riches et les rattraper. Que montrent les données depuis 1960 ?"),
     options: ["Tous les pays pauvres ont rattrapé les pays riches.", "Aucun pays pauvre n’a rattrapé les pays riches.", "Le rattrapage s’observe entre pays aux institutions et aux politiques comparables, comme la Corée du Sud, mais pas partout.", "Les pays riches croissent toujours plus vite que les pays pauvres."], c: 2,
@@ -166,7 +166,7 @@
     options: ["Le climat, plus favorable au Sud.", "Les ressources naturelles, plus abondantes au Sud.", "Les institutions : économie de marché et démocratie progressive au Sud, institutions extractives d’une dictature héréditaire au Nord.", "La culture, plus favorable au travail au Sud."], c: 2,
     explication: P("Pour Acemoglu et Robinson, c’est une sorte d’« expérience naturelle » : géographie, culture et histoire étaient semblables, seules les <b>institutions</b> ont divergé. Au Sud, des institutions de plus en plus <b>inclusives</b> ont encouragé l’investissement, l’éducation et l’innovation ; au Nord, des institutions <b>extractives</b> ont permis à une élite de capter les ressources, sans incitation à produire.", "Le Nord possède d’ailleurs davantage de ressources minières que le Sud, ce qui écarte l’explication par les ressources.") },
 
-  { id: "cr3-solow-calc", theme: "croissance", niveau: 3, type: "calcul",
+  { id: "cr3-solow-calc", theme: "croissance", niveau: 3, type: "calcul", notion: "modele-solow",
     titre: "L’état stationnaire de Solow", competence: "Calculer le revenu de long terme dans un modèle simple.",
     gen: () => ({ s: pick([0.15, 0.2, 0.25, 0.3, 0.35, 0.4]), nd: pick([0.05, 0.08, 0.1]) }),
     enonce: (p) => P("Dans une version simple du modèle de Solow, la production par travailleur est y = √k (k : capital par travailleur). Chaque année, on épargne et investit une part s de la production, et le capital par travailleur diminue au taux (n + δ), sous l’effet de la croissance de la population et de l’usure des machines.", `À l’état stationnaire, l’investissement compense exactement cette diminution : <b>s × √k = (n + δ) × k</b>. On a ici s = <b>${fmt(p.s, 2)}</b> et n + δ = <b>${fmt(p.nd, 2)}</b>.`, "Calculez le capital par travailleur et la production par travailleur à l’état stationnaire. Arrondissez à deux décimales."),

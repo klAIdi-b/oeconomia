@@ -148,13 +148,19 @@ OEC.concepts = [
     court: "Processus par lequel les innovations détruisent les activités anciennes en même temps qu’elles en créent de nouvelles.",
     texte: "L’expression, que Schumpeter popularise en 1942, désigne le mouvement par lequel le capitalisme se transforme de l’intérieur. Le chemin de fer ruine les diligences, la photographie numérique Kodak, le streaming les vidéoclubs. Pour Schumpeter, la concurrence décisive n’est pas celle des prix entre producteurs identiques, mais celle du produit nouveau, qui menace l’existence même des entreprises en place. Les théories de la croissance schumpétériennes, développées par Philippe Aghion et Peter Howitt, en ont fait un modèle formel : la croissance passe par le remplacement des entreprises les moins productives. Acemoglu et Robinson montrent que les élites cherchent souvent à bloquer ce processus qui menace leurs positions.",
     exemple: "Entre 1990 et 2010, la demande de pellicule photographique s’effondre et Kodak finit en faillite en 2012, tandis que naissent celles des appareils numériques et des réseaux sociaux de partage d’images.",
-    auteurs: ["schumpeter", "acemoglu", "marx", "mazzucato"], questions: ["crises", "inegalites"], voir: ["cycles", "institutions-inclusives"] },
+    auteurs: ["schumpeter", "acemoglu", "marx", "mazzucato"], questions: ["crises", "inegalites"], voir: ["modele-solow", "cycles", "institutions-inclusives"] },
 
   { id: "pib", nom: "PIB et ses limites", cat: "macro",
     court: "Le produit intérieur brut mesure la valeur ajoutée produite sur un territoire en une année.",
     texte: "La comptabilité nationale naît dans les années 1930, avec Simon Kuznets aux États-Unis et Richard Stone au Royaume-Uni, pour mesurer l’effondrement de la Dépression puis organiser l’effort de guerre. Le PIB additionne les valeurs ajoutées, ce qui revient à additionner les revenus ou les dépenses finales. Kuznets lui-même avertit en 1934 qu’on ne peut guère en déduire le bien-être d’une nation. Le PIB ignore le travail domestique, les loisirs, l’épuisement des ressources, la répartition des revenus et les dégâts environnementaux, qui peuvent même l’augmenter quand il faut les réparer. Le rapport Stiglitz-Sen-Fitoussi (2009) a proposé de le compléter par des indicateurs de bien-être, de soutenabilité et d’inégalités.",
     exemple: "Une marée noire augmente le PIB par les travaux de nettoyage qu’elle provoque.",
-    auteurs: ["sen", "quesnay", "waring"], questions: ["croissance"], voir: ["capabilites"] },
+    auteurs: ["sen", "quesnay", "waring"], questions: ["croissance"], voir: ["modele-solow", "capabilites"] },
+
+  { id: "modele-solow", nom: "Croissance et modèle de Solow", cat: "macro",
+    court: "Un modèle qui explique la croissance de long terme par l’accumulation du capital, la population et le progrès technique.",
+    texte: "Robert Solow propose en 1956 le modèle de référence de la croissance. Le capital a des rendements décroissants : chaque machine supplémentaire rapporte moins que la précédente. Un pays qui ne fait qu’épargner et investir atteint donc un état stationnaire où le revenu par habitant cesse de croître ; épargner davantage élève son niveau de vie, pas son rythme de croissance. Seul le progrès technique permet une croissance durable. En 1957, Solow calcule qu’il explique sept huitièmes de la hausse de la production par heure aux États-Unis de 1909 à 1949. Le modèle prédit aussi que les pays pauvres rattrapent les riches, ce qui ne s’observe qu’entre pays aux conditions comparables. Les théories de la croissance endogène et des institutions sont nées de ses limites.",
+    exemple: "Depuis le début des années 2000, une part importante de la croissance du PIB suisse vient de la hausse de la population ; le PIB par habitant, qui dépend de la productivité, progresse plus lentement.",
+    auteurs: ["samuelson", "lucas", "krugman", "acemoglu"], questions: ["croissance", "inegalites"], voir: ["destruction-creatrice", "institutions-inclusives", "pib", "stagnation-seculaire"] },
 
   /* ---------- Monnaie et finance ---------- */
   { id: "fonctions-monnaie", nom: "Fonctions de la monnaie", cat: "monnaie",
