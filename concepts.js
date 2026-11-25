@@ -35,17 +35,23 @@ OEC.concepts = [
     exemple: "Après une mauvaise récolte de café, le prix grimpe ; quelques années plus tard, de nouvelles plantations le ramènent vers le coût de production.",
     auteurs: ["smith", "ricardo", "marx", "marshall"], questions: ["valeur"], voir: ["offre-demande", "valeur-travail"] },
 
-  { id: "offre-demande", nom: "Offre, demande et élasticité", cat: "valeur",
+  { id: "offre-demande", nom: "Offre et demande", cat: "valeur",
     court: "Le prix et la quantité échangés résultent de la rencontre d’une courbe de demande décroissante et d’une courbe d’offre croissante.",
     texte: "Cournot dessine la première courbe de demande en 1838 ; Marshall en fait en 1890 l’outil de base de l’économie. La demande baisse quand le prix monte, parce que les acheteurs se tournent vers des substituts et que leur pouvoir d’achat diminue. L’offre augmente avec le prix, qui rend rentable une production plus coûteuse. L’élasticité mesure la sensibilité de la quantité au prix : la demande de pain ou d’essence est peu élastique à court terme, celle d’une marque particulière très élastique. Ces outils servent à prévoir l’effet d’une taxe, d’un prix plafond ou d’un choc d’offre. Ils supposent un marché concurrentiel et raisonnent « toutes choses égales par ailleurs », ce qui en fixe les limites.",
     exemple: "Une taxe sur le tabac est en grande partie payée par les fumeurs, parce que leur demande est peu élastique.",
-    auteurs: ["marshall", "walras"], questions: ["valeur"], voir: ["surplus", "equilibre-general", "utilite-marginale"], lab: 0 },
+    auteurs: ["marshall", "walras"], questions: ["valeur"], voir: ["elasticite", "surplus", "equilibre-general", "utilite-marginale"], lab: 0 },
+
+  { id: "elasticite", nom: "Élasticité", cat: "valeur",
+    court: "La sensibilité de la quantité demandée ou offerte à une variation du prix ou du revenu, mesurée en pour cent.",
+    texte: "Marshall nomme l’élasticité en 1890 : de combien, en pour cent, la quantité demandée varie-t-elle quand le prix varie de 1 % ? Une demande est inélastique quand les acheteurs réagissent peu (essence à court terme, tabac, médicaments), élastique quand ils ont des substituts proches (une marque parmi d’autres). Le chiffre indique si une hausse de prix augmente ou diminue la recette du vendeur, et quel côté du marché supporte une taxe. La même mesure s’applique au revenu, avec la loi d’Engel sur la part de l’alimentation, et au prix d’un autre bien, pour distinguer substituts et compléments.",
+    exemple: "L’impôt sur le tabac rapporte environ deux milliards de francs par an à l’AVS et à l’AI, parce que la demande de cigarettes réagit peu au prix.",
+    auteurs: ["marshall", "veblen"], questions: ["valeur", "etat"], voir: ["offre-demande", "surplus", "consommation-ostentatoire", "externalite"], lab: 0 },
 
   { id: "surplus", nom: "Surplus du consommateur et perte sèche", cat: "valeur",
     court: "L’écart entre ce qu’un acheteur aurait accepté de payer et ce qu’il paie ; la perte sèche est le surplus détruit par une distorsion.",
     texte: "Jules Dupuit, ingénieur des Ponts et Chaussées, en a l’intuition en 1844 en se demandant ce que vaut un pont pour ses usagers ; Marshall en fait un concept général. Le surplus du consommateur est l’aire située sous la courbe de demande et au-dessus du prix. Le surplus du producteur est l’écart entre le prix et le coût. Une taxe, un quota ou un monopole réduisent la quantité échangée : certains échanges qui auraient profité aux deux parties n’ont plus lieu. La perte sèche mesure cette valeur détruite, qui n’est récupérée par personne, ni par l’État ni par les entreprises. C’est l’un des principaux outils de l’analyse coûts-avantages des politiques publiques.",
     exemple: "Un péage trop élevé sur un pont vide fait perdre l’usage du pont à des voyageurs qui l’auraient emprunté à un prix plus bas, sans rapporter davantage.",
-    auteurs: ["marshall"], questions: ["etat"], voir: ["offre-demande", "optimum-pareto"], lab: 0 },
+    auteurs: ["marshall"], questions: ["etat"], voir: ["elasticite", "offre-demande", "optimum-pareto"], lab: 0 },
 
   { id: "equilibre-general", nom: "Équilibre général", cat: "valeur",
     court: "Situation où l’offre égale la demande simultanément sur tous les marchés, les prix étant interdépendants.",

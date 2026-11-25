@@ -8,7 +8,7 @@
 
   X.theme({ id: "marche", nom: "Marché et prix",
     intro: "Comment se forment les prix ? Ces exercices vous entraînent à raisonner avec l’offre et la demande, à calculer des variations, des élasticités et des surplus, et à analyser l’effet des taxes, des prix plafonds et du monopole.",
-    notions: ["offre-demande", "surplus", "cout-opportunite", "utilite-marginale", "concurrence-imparfaite", "valeur-usage"] });
+    notions: ["offre-demande", "elasticite", "surplus", "cout-opportunite", "utilite-marginale", "concurrence-imparfaite", "valeur-usage"] });
   ["Monnaie et inflation", "Croissance et PIB", "Emploi et chômage", "Commerce international", "Inégalités et répartition", "État et biens publics", "Finance"].forEach((n, i) =>
     X.theme({ id: "bientot" + i, nom: n, bientot: true, intro: "", notions: [] }));
 
@@ -85,7 +85,7 @@
     indice: "À l’équilibre, Qd = Qo : écrivez l’égalité et isolez P, puis remplacez P dans l’une des deux équations.",
     correction: (p) => P(`À l’équilibre : ${lin(p.a, p.b)} = ${linp(p.c, p.d)}`, `On regroupe les P : ${p.a} − (${p.c}) = ${p.b}P + ${p.d}P, soit ${p.a - p.c} = ${p.b + p.d}P.`, `Donc P* = ${p.a - p.c} ÷ ${p.b + p.d} = <b>${p.Ps} francs</b>.`, `Quantité : Q* = ${p.a} − ${p.b} × ${p.Ps} = <b>${p.Qs} kg</b> (on vérifie avec l’offre : ${p.c} + ${p.d} × ${p.Ps} = ${p.Qs}).`) },
 
-  { id: "m2-elasticite", theme: "marche", niveau: 2, type: "calcul", notion: "offre-demande",
+  { id: "m2-elasticite", theme: "marche", niveau: 2, type: "calcul", notion: "elasticite",
     titre: "Mesurer une élasticité-prix", competence: "Calculer et interpréter l’élasticité-prix de la demande.",
     gen: () => { const dp = pick([5, 8, 10, 12, 15, 20]); const dq = -pick([2, 3, 4, 5, 6, 8, 10, 12, 15, 18, 20, 24, 30]); return { dp, dq }; },
     enonce: (p) => P(`Une compagnie de bus augmente ses tarifs de <b>${p.dp} %</b>. Le nombre de billets vendus varie de <b>${fmt(p.dq)} %</b>.`, "Calculez l’élasticité-prix de la demande (arrondie à deux décimales)."),
@@ -94,7 +94,7 @@
     indice: "Élasticité-prix = variation en % de la quantité ÷ variation en % du prix.",
     correction: (p) => { const e = p.dq / p.dp; return P(`Élasticité = ${fmt(p.dq)} % ÷ ${p.dp} % = <b>${fmt(e, 2)}</b>.`, Math.abs(e) < 1 ? `En valeur absolue, elle est inférieure à 1 : la demande est <b>inélastique</b>. La quantité réagit moins que le prix, donc la recette de la compagnie augmente.` : Math.abs(e) > 1 ? `En valeur absolue, elle est supérieure à 1 : la demande est <b>élastique</b>. La quantité réagit plus fortement que le prix, donc la recette de la compagnie diminue.` : `Elle vaut −1 : la demande a une élasticité unitaire, et la recette ne change pas.`); } },
 
-  { id: "m2-recette", theme: "marche", niveau: 2, type: "qcm", notion: "offre-demande",
+  { id: "m2-recette", theme: "marche", niveau: 2, type: "qcm", notion: "elasticite",
     titre: "Élasticité et recette", competence: "Prévoir l’effet d’une hausse de prix sur la recette.",
     enonce: P("L’élasticité-prix de la demande de cigarettes est estimée à environ −0,4. L’État augmente fortement les taxes, ce qui fait monter le prix du paquet de 10 %. Quel effet peut-on prévoir ?"),
     options: ["La consommation baisse d’environ 4 %, et les dépenses totales des fumeurs augmentent.", "La consommation baisse d’environ 40 %, et les recettes fiscales s’effondrent.", "La consommation ne change pas, car les fumeurs sont dépendants.", "La consommation baisse de 10 %, comme le prix."], c: 0,
@@ -166,7 +166,7 @@
     indice: "Le monopole produit jusqu’à ce que la recette marginale soit égale au coût marginal : a − 2bQ = c.",
     correction: (p) => P(`Condition de profit maximal : recette marginale = coût marginal, soit ${p.a} − ${2 * p.b}Q = ${p.c}.`, `Donc Q = (${p.a} − ${p.c}) ÷ ${2 * p.b} = <b>${p.Qm} milliers de boîtes</b>.`, `Prix : on le lit sur la demande, P = ${p.a} − ${p.b} × ${p.Qm} = <b>${p.a - p.b * p.Qm} francs</b>.`, `En concurrence parfaite, le prix serait égal au coût marginal (${p.c} francs) et la quantité serait ${2 * p.Qm} milliers : le monopole produit <b>deux fois moins</b> et vend beaucoup plus cher. C’est la raison d’être des autorités de la concurrence, et la contrepartie que la société accepte pour récompenser l’innovation par un brevet.`) },
 
-  { id: "m3-croisee", theme: "marche", niveau: 3, type: "qcm", notion: "offre-demande",
+  { id: "m3-croisee", theme: "marche", niveau: 3, type: "qcm", notion: "elasticite",
     titre: "Élasticité croisée", competence: "Interpréter le signe d’une élasticité croisée.",
     enonce: P("Une ville augmente le prix des billets de bus de 10 %. Le nombre de locations de vélos en libre-service augmente de 6 %, et les ventes de cartes de recharge pour les cartes de transport baissent de 8 %.", "Que peut-on en conclure ?"),
     options: ["Les vélos en libre-service sont des compléments du bus ; les cartes de recharge, des substituts.", "L’élasticité croisée vélos-bus est de +0,6 : ce sont des substituts ; celle des cartes de recharge est de −0,8 : ce sont des compléments.", "Les deux élasticités sont négatives, car le prix du bus a augmenté.", "On ne peut rien conclure sans connaître le prix des vélos."], c: 1,
