@@ -370,7 +370,7 @@ body[data-view="accueil"] [data-view="accueil"], body[data-view="histoire"] [dat
 body[data-view="question"] [data-view="question"], body[data-view="eco"] [data-view="eco"], body[data-view="controverses"] [data-view="controverses"],
 body[data-view="pantheon"] [data-view="pantheon"], body[data-view="labo"] [data-view="labo"], body[data-view="crises"] [data-view="crises"],
 body[data-view="boussole"] [data-view="boussole"], body[data-view="tutorat"] [data-view="tutorat"],
-body[data-view="concepts"] [data-view="concepts"], body[data-view="concept"] [data-view="concept"], body[data-view="actualite"] [data-view="actualite"], body[data-view="entrainement"] [data-view="entrainement"], body[data-view="methode"] [data-view="methode"], body[data-view="sources"] [data-view="sources"], body[data-view="progression"] [data-view="progression"], body[data-view="parcours"] [data-view="parcours"], body[data-view="enseigner"] [data-view="enseigner"], body[data-view="apropos"] [data-view="apropos"], body[data-view="familles"] [data-view="familles"]{display:block}
+body[data-view="concepts"] [data-view="concepts"], body[data-view="concept"] [data-view="concept"], body[data-view="actualite"] [data-view="actualite"], body[data-view="entrainement"] [data-view="entrainement"], body[data-view="methode"] [data-view="methode"], body[data-view="sources"] [data-view="sources"], body[data-view="progression"] [data-view="progression"], body[data-view="parcours"] [data-view="parcours"], body[data-view="enseigner"] [data-view="enseigner"], body[data-view="apropos"] [data-view="apropos"], body[data-view="familles"] [data-view="familles"], body[data-view="revision"] [data-view="revision"]{display:block}
 /* Actualité */
 .actu{padding:26px; border-radius:var(--r); border:1px solid var(--line); background:var(--card)}
 .actu h3{font-size:clamp(28px,3.4vw,40px); margin-top:12px}
@@ -527,6 +527,9 @@ table.positions td:last-child{color:var(--ink-soft); width:26%}
 .ex-verdict.ko{color:var(--serial)}
 .ex-feedback p{margin:0 0 8px}
 .ex-indice{font-size:14.5px}
+.rev-info, .rev-vide{font-size:15.5px; color:var(--ink-soft); max-width:760px}
+.rev-vide a, .pg-rev a{color:var(--note); font-weight:600}
+.pg-rev{margin:14px 0 0; padding:12px 16px; border-left:3px solid var(--note); background:var(--card); border-radius:0 var(--r) var(--r) 0}
 .ex-pourquoi{font-size:15px; padding:8px 12px; border-left:3px solid var(--serial); background:var(--card); border-radius:0 8px 8px 0}
 .ex-indice p{margin:4px 0 0}
 .ex-corr{margin-top:14px; padding:14px 18px; border-radius:var(--r); background:var(--paper-2)}
@@ -1408,6 +1411,16 @@ footer .brand{font-size:22px}
   </section>
 
   <!-- BOUSSOLE -->
+  <section class="block" data-view="revision" id="revision">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><p class="eyebrow">Entraînement</p><h1>La révision du jour</h1></div>
+        <p>Quelques exercices déjà faits, mélangés entre les thèmes, à revoir au bon moment : le lendemain, une semaine plus tard, puis un mois plus tard. Revoir ainsi, à intervalles qui s’allongent, est l’une des façons les plus sûres de retenir durablement.</p>
+      </div>
+      <div id="revRoot"></div>
+    </div>
+  </section>
+
   <section class="block" data-view="entrainement" id="entrainement">
     <div class="wrap">
       <div class="sec-head">
@@ -1415,7 +1428,7 @@ footer .brand{font-size:22px}
         <p>QCM, vrai ou faux, calculs, graphiques et rédactions corrigées par Claude, sur trois niveaux. Les chiffres changent à chaque essai : recommencez autant que vous voulez. Bloqué sur une question ? Chaque exercice renvoie à la notice utile.</p>
       </div>
       <div class="defi-slot" data-defi="entrainement"></div>
-      <p class="ex-tomethode">Besoin d’un rappel pour calculer un taux de variation, lire un graphique ou construire une argumentation ? Consultez la <a href="#methode">boîte à outils de méthode</a>. Pour voir où vous en êtes : <a href="#progression">ma progression</a>.</p>
+      <p class="ex-tomethode">Besoin d’un rappel pour calculer un taux de variation, lire un graphique ou construire une argumentation ? Consultez la <a href="#methode">boîte à outils de méthode</a>. Pour voir où vous en êtes : <a href="#progression">ma progression</a>. Et chaque jour, la <a href="#revision">révision du jour</a> vous propose de revoir quelques exercices déjà faits.</p>
       <div id="exRoot"></div>
     </div>
   </section>

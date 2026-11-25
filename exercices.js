@@ -46,15 +46,18 @@
     return ["", ""];
   }
   function paint(id) {
-    const card = document.querySelector(`.ex-card[data-id="${id}"]`); if (!card) return;
     const [cls, txt] = etat(PROG[id]);
-    card.classList.toggle("reussi", cls === "reussi"); card.classList.toggle("apres", cls === "apres"); card.classList.toggle("avant", cls === "avant");
-    const lab = card.querySelector(".ex-ok"); if (lab) lab.textContent = txt;
+    document.querySelectorAll(`.ex-card[data-id="${id}"]`).forEach((card) => {
+      card.classList.toggle("reussi", cls === "reussi"); card.classList.toggle("apres", cls === "apres"); card.classList.toggle("avant", cls === "avant");
+      const lab = card.querySelector(".ex-ok"); if (lab) lab.textContent = txt;
+    });
   }
   function mark(id, ok, how) {
     const p = PROG[id] || { n: 0, v: 2 };
     const d = today(), premier = p.n === 0;
-    p.n++; p.v = 2;
+    p.n++; p.v = 2; p.last = d;
+    /* dans la révision du jour : réussi, l’exercice revient dans 7 puis 30 jours ; manqué, il revient demain */
+    if (location.hash === "#revision") { p.rev = ok ? (p.rev || 0) + 1 : 0; p.revd = d; }
     if (premier) p.premier = ok;
     if (ok) {
       if (premier || (p.echec && p.echec !== d)) { p.ok = true; p.d = d; if (how) p.how = how; }
@@ -200,7 +203,7 @@
     savePos(); render(); return true;
   }
   window.addEventListener("hashchange", fromHash);
-  const cardOf = (it) => document.querySelector(`.ex-card[data-id="${it.id}"]`);
+  const cardOf = (it) => document.querySelector(`${location.hash === "#revision" ? "#revRoot" : "#exList"} .ex-card[data-id="${it.id}"]`);
   const notionLink = (it) => it.notion ? `<p class="ex-revoir">Pour revoir : <a href="#c-${it.notion}">${(OEC.concepts.find((x) => x.id === it.notion) || { nom: it.notion }).nom}</a></p>` : "";
 
   /* Ordre des réponses mélangé de façon stable (graine tirée de l’identifiant de l’exercice) */
@@ -372,7 +375,51 @@ Réponds en texte simple, sans Markdown, en trois parties qui commencent exactem
     const lien = e.target.closest("#exRoot .ex-lien");
     if (lien && OEC.copyLink) OEC.copyLink(lien.dataset.lien === "theme" ? "" : lien.dataset.lien, lien);
   });
-  const start = () => { if (!fromHash()) render(); };
+  /* ---------- Révision du jour ----------
+     Les exercices déjà faits reviennent au bon moment : manqués, le lendemain ; réussis, après 1, 7 puis 30 jours.
+     Au plus cinq par jour, deux par thème au maximum, pour mélanger les sujets. */
+  const PAUSES = [1, 7, 30];
+  const ecartJours = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
+  const themeDe = (id) => { const m = id.match(/^([a-z]+)\d-/); return m && PREFIX[m[1]]; };
+  function dues() {
+    const t = today(), out = [];
+    Object.entries(PROG).forEach(([id, p]) => {
+      if (!p || !p.n || !themeDe(id)) return;
+      const ref = p.revd || p.last || p.d || p.echec; if (!ref) return;
+      const attente = p.ok ? PAUSES[Math.min(p.rev || 0, PAUSES.length - 1)] : 1, ecart = ecartJours(ref, t);
+      if (ecart >= attente) out.push({ id, ok: !!p.ok, retard: ecart - attente });
+    });
+    out.sort((a, b) => (a.ok - b.ok) || (b.retard - a.retard));
+    const parTheme = {}, choix = [];
+    for (const x of out) { const th = themeDe(x.id); parTheme[th] = (parTheme[th] || 0) + 1; if (parTheme[th] <= 2) choix.push(x.id); if (choix.length === 5) break; }
+    return { total: out.length, choix };
+  }
+  OEC.revision = { nombre: () => dues().total };
+  async function renderRevision() {
+    const root = $("#revRoot"); if (!root) return;
+    const { total, choix } = dues();
+    if (!choix.length) {
+      const deja = Object.values(PROG).some((p) => p && p.n);
+      root.innerHTML = `<p class="rev-vide">${deja ? "Rien à réviser aujourd’hui : vos exercices reviendront au bon moment. Continuez l’<a href=\"#entrainement\">entraînement</a> en attendant." : "La révision reprend les exercices que vous avez déjà faits. Commencez par quelques <a href=\"#ex-marche-1\">exercices</a> : ils reviendront ici le lendemain, puis une semaine et un mois plus tard."}</p>`;
+      return;
+    }
+    root.innerHTML = `<p class="ex-wait">Préparation de la révision…</p>`;
+    try { await Promise.all([...new Set(choix.map(themeDe))].map((t) => OEC.lazy.theme(t))); }
+    catch (e) { root.innerHTML = `<div class="oec-load-err" role="alert"><span>Les exercices n’ont pas pu être chargés, peut-être à cause de la connexion.</span><button type="button" class="btn small">Réessayer</button></div>`; root.querySelector("button").onclick = renderRevision; return; }
+    if (location.hash !== "#revision") return;
+    const its = choix.map((id) => ITEMS.find((x) => x.id === id)).filter(Boolean);
+    const nomTheme = (id) => (THEMES.find((t) => t.id === id) || { nom: id }).nom;
+    root.innerHTML = `<p class="rev-info">${its.length} exercice${its.length > 1 ? "s" : ""} à revoir aujourd’hui${total > its.length ? `, encore ${total - its.length} les jours suivants` : ""}. Réussi, un exercice revient dans une semaine, puis dans un mois ; manqué, il revient demain.</p>
+      <div class="ex-list">${its.map((it, i) => `
+      <article class="ex-card${etat(PROG[it.id])[0] ? " " + etat(PROG[it.id])[0] : ""}" data-id="${it.id}">
+        <header><span class="ex-num">Question ${i + 1}</span><span class="ex-type">${nomTheme(it.theme)} · ${NIV[it.niveau]}</span><span class="ex-ok">${etat(PROG[it.id])[1]}</span>
+        <h3>${it.titre}</h3><p class="ex-comp">${it.competence}</p></header>
+        <div class="ex-body"></div>
+      </article>`).join("")}</div>`;
+    its.forEach((it) => body(it));
+  }
+  window.addEventListener("hashchange", () => { if (location.hash === "#revision") renderRevision(); });
+  const start = () => { if (location.hash === "#revision") renderRevision(); if (!fromHash()) render(); };
   window.addEventListener("hashchange", () => { const T = THEMES.find((t) => t.id === state.theme); if (/^#(entrainement|ex-)/.test(location.hash) && T && T.lazy) render(); });
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start); else setTimeout(start, 0);
 })();

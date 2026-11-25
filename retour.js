@@ -33,6 +33,8 @@
 
   function items() {
     const out = [];
+    const nr = OEC.revision ? OEC.revision.nombre() : 0;
+    if (nr) out.push(["#revision", "Révision du jour", `${nr} exercice${nr > 1 ? "s" : ""} à revoir`, "Réviser →"]);
     const S = get("oec-parcours", {}), P = (OEC.parcours && OEC.parcours.list) || [];
     const p = S.actif && P.find((x) => x.id === S.actif.id);
     if (p) out.push([`#parcours-${p.id}`, "Parcours en cours", p.titre, `Reprendre à l’étape ${Math.min(S.actif.i + 1, p.etapes.length)} sur ${p.etapes.length} →`]);

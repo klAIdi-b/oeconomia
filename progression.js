@@ -81,6 +81,7 @@
         <a href="#pantheon"><b>${eLus}<small> / ${ecos.length}</small></b><span>portraits lus</span>${bar(eLus, ecos.length)}</a>
         <a href="#entrainement"><b>${nbOk}<small> / ${nbEx}</small></b><span>exercices réussis</span>${bar(nbOk, nbEx)}</a>
       </div>
+      ${(() => { const nr = OEC.revision ? OEC.revision.nombre() : 0; return nr ? `<p class="pg-rev"><b>Révision du jour :</b> ${nr} exercice${nr > 1 ? "s" : ""} à revoir aujourd’hui. <a href="#revision">Réviser maintenant →</a></p>` : ""; })()}
       ${badges(lu, nbOk, ok, themes)}
       <h3>Et maintenant ?</h3>
       <div class="pg-sug">${sug.map(([h, t, p]) => `<a class="door" href="${h}"><b>${t}</b><p>${p}</p><span class="go">Y aller →</span></a>`).join("")}</div>

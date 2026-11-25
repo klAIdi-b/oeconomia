@@ -4,9 +4,9 @@
   "use strict";
   const A = window.OECAPP;
   const { $, $$, ECO } = A;
-  const VIEWS = ["accueil", "histoire", "questions", "concepts", "controverses", "pantheon", "labo", "crises", "tutorat", "actualite", "entrainement", "methode", "sources", "progression", "parcours", "enseigner", "apropos", "familles"];
+  const VIEWS = ["accueil", "histoire", "questions", "concepts", "controverses", "pantheon", "labo", "crises", "tutorat", "actualite", "entrainement", "methode", "sources", "progression", "parcours", "enseigner", "apropos", "familles", "revision"];
   const LEGACY = { frise: "histoire", ring: "controverses", genealogie: "pantheon", boussole: "pantheon", top: "accueil" };
-  const NAV_OF = { question: "questions", eco: "pantheon", concept: "concepts", familles: "pantheon" };
+  const NAV_OF = { question: "questions", eco: "pantheon", concept: "concepts", familles: "pantheon", revision: "entrainement" };
   const CONCEPT = {}; (OEC.concepts || []).forEach((c) => (CONCEPT[c.id] = c));
   let pending = null;
 
@@ -143,7 +143,7 @@
     if (r.v === "eco") return `${ECO[r.id].nom} · Œconomia`;
     if (r.v === "question") return `${OEC.questions.find((q) => q.id === r.id).court} · Œconomia`;
     if (r.v === "concept") return `${CONCEPT[r.id].nom} · Œconomia`;
-    const names = { histoire: "Histoire", questions: "Grandes questions", concepts: "Concepts", controverses: "Controverses", pantheon: "Économistes", labo: "Simulateurs", crises: "Crises", boussole: "Quel économiste êtes-vous ?", tutorat: "ŒconoChat", actualite: "Actualité", entrainement: "Entraînement", methode: "Boîte à outils", sources: "Sources et méthode", progression: "Ma progression", parcours: "Parcours guidés", enseigner: "Enseigner avec Œconomia", apropos: "À propos", familles: "Les familles de pensée" };
+    const names = { histoire: "Histoire", questions: "Grandes questions", concepts: "Concepts", controverses: "Controverses", pantheon: "Économistes", labo: "Simulateurs", crises: "Crises", boussole: "Quel économiste êtes-vous ?", tutorat: "ŒconoChat", actualite: "Actualité", entrainement: "Entraînement", methode: "Boîte à outils", sources: "Sources et méthode", progression: "Ma progression", parcours: "Parcours guidés", enseigner: "Enseigner avec Œconomia", apropos: "À propos", familles: "Les familles de pensée", revision: "Révision du jour" };
     return names[r.v] ? `${names[r.v]} · Œconomia` : "Œconomia";
   }
   function go(hash, fn) {
