@@ -233,11 +233,11 @@
     stage.innerHTML = `<div class="lab">
       <div class="stage"><canvas id="mk"></canvas></div>
       <div class="side">
-        <div><p class="eyebrow">Vernon Smith, 1962 · Gode et Sunder, 1993</p><h3 style="margin-top:8px">La main invisible en direct</h3></div>
+        <div><p class="eyebrow">Vernon Smith, 1962 · Gode et Sunder, 1993</p><h3 style="margin-top:8px">Un marché qui trouve son prix</h3></div>
         <div class="btn-row"><button class="btn small" id="mkGo">Ouvrir le marché</button><button class="btn small ghost" id="mkShock">Choc : +20 acheteurs</button><button class="btn small ghost" id="mkReset">Réinitialiser</button></div>
         <div class="kpis"><div class="kpi"><small>Prix théorique</small><b id="mkE">–</b></div><div class="kpi"><small>Dernier prix</small><b id="mkL">–</b></div>
           <div class="kpi"><small>Séance</small><b id="mkP">–</b></div><div class="kpi"><small>Efficacité</small><b id="mkF">–</b></div></div>
-        ${credit("smith", "Adam Smith et la main invisible")}
+        ${credit("smith", "Adam Smith, penseur du marché")}
       </div></div>`;
     const cv = stage.querySelector("#mk");
     let buyers, sellers, eq, trades, period, active, book, idle, running = false, raf = 0, surplus, maxSurplus;

@@ -23,15 +23,15 @@
         ["Surplus total", "Le gain total que l’échange procure : celui des acheteurs, celui des vendeurs et la recette de l’État."],
         ["Perte sèche", "Ce que tout le monde perd parce que des échanges utiles n’ont plus lieu, par exemple à cause d’une taxe."]],
       exps: [
-        { titre: "Une mauvaise récolte", consigne: "Un gel détruit une partie de la récolte d’oranges : produire coûte plus cher.",
+        { titre: "Une mauvaise récolte", pred: {"q": "Que vont devenir le prix et la quantité vendue ?", "o": ["Le prix monte, la quantité vendue baisse", "Le prix et la quantité vendue montent", "Le prix baisse, la quantité vendue monte"], "c": 0}, consigne: "Un gel détruit une partie de la récolte d’oranges : produire coûte plus cher.",
           faire: [["click", '[data-sc="froid"]']],
           question: "Que deviennent le prix et la quantité vendue ?",
           reponse: "La droite d’offre monte : à chaque prix, les producteurs proposent moins d’oranges. Le prix grimpe de 47,3 à 60,7, et la quantité vendue tombe de 53,3 à 36,7. Les acheteurs qui ne veulent pas payer plus renoncent. Un choc d’offre fait bouger le prix et la quantité <b>en sens contraire</b>." },
-        { titre: "Un produit à la mode", consigne: "Le quinoa devient à la mode : à prix égal, les gens en veulent davantage.",
+        { titre: "Un produit à la mode", pred: {"q": "Que vont devenir le prix et la quantité vendue ?", "o": ["Le prix monte, la quantité vendue baisse", "Le prix et la quantité vendue montent", "Le prix baisse, la quantité vendue ne change pas"], "c": 1}, consigne: "Le quinoa devient à la mode : à prix égal, les gens en veulent davantage.",
           faire: [["click", '[data-sc="mode"]']],
           question: "Cette fois, que deviennent le prix et la quantité ?",
           reponse: "La droite de demande se déplace vers la droite. Le prix monte (de 47,3 à 59) et la quantité vendue aussi (de 53,3 à 70). Un choc de demande fait bouger le prix et la quantité <b>dans le même sens</b>. À plus long terme, ce prix élevé attire de nouveaux producteurs, ce qui peut le faire redescendre." },
-        { titre: "Une taxe", consigne: "L’État prélève une taxe de 25 sur chaque unité vendue, comme sur le tabac.",
+        { titre: "Une taxe", pred: {"q": "Qui va payer la taxe ?", "o": ["Seulement les acheteurs", "Seulement les vendeurs", "Les deux, chacun une partie"], "c": 2}, consigne: "L’État prélève une taxe de 25 sur chaque unité vendue, comme sur le tabac.",
           faire: [["click", '[data-sc="taxe"]']],
           question: "Qui paie vraiment la taxe : les acheteurs ou les vendeurs ?",
           reponse: "Les deux. Les acheteurs paient 60,7 au lieu de 47,3 (13,4 de plus), et les vendeurs ne touchent plus que 35,7 au lieu de 47,3 (11,6 de moins). Le rectangle doré est la recette de l’État. Le triangle rouge est la perte sèche : des ventes qui auraient profité à tous n’ont plus lieu." }],
@@ -53,15 +53,15 @@
         ["Part du revenu dépensée en importations", "Sur 1 franc de revenu, la part qui achète des produits étrangers. Elle fait partie de ce qui est dépensé, mais cet argent quitte le pays et n’y fait plus tourner l’économie."],
         ["Multiplicateur", "Le nombre de francs de revenu créés au total par 1 franc de dépense publique."]],
       exps: [
-        { titre: "Des ménages dépensiers", consigne: "Les ménages dépensent 90 % de ce qu’ils gagnent, et uniquement dans le pays.",
+        { titre: "Des ménages dépensiers", pred: {"q": "Les 50 milliards vont créer au total…", "o": ["exactement 50 milliards de revenus", "un peu plus de 50 milliards", "beaucoup plus : plusieurs centaines de milliards"], "c": 2}, consigne: "Les ménages dépensent 90 % de ce qu’ils gagnent, et uniquement dans le pays.",
           faire: [["set", "muI", 50], ["set", "muC", 0.9], ["set", "muM", 0], ["click", "#muGo"]],
           question: "Combien de revenus créent les 50 milliards de départ ?",
           reponse: "500 milliards : le multiplicateur vaut 10. Chaque vague ne perd que 10 % de la précédente, donc il en faut beaucoup avant qu’elles s’épuisent. C’est un cas d’école : en réalité, une partie de chaque franc part toujours en impôts, en épargne et en achats à l’étranger." },
-        { titre: "Un petit pays très ouvert", consigne: "Comme en Suisse, une grande partie de ce qu’on achète vient de l’étranger : sur 80 centimes dépensés par franc gagné, 40 partent à l’étranger.",
+        { titre: "Un petit pays très ouvert", pred: {"q": "Par rapport à l’expérience précédente, l’effet de la dépense sera…", "o": ["plus fort", "à peu près le même", "nettement plus faible"], "c": 2}, consigne: "Comme en Suisse, une grande partie de ce qu’on achète vient de l’étranger : sur 80 centimes dépensés par franc gagné, 40 partent à l’étranger.",
           faire: [["set", "muI", 50], ["set", "muC", 0.8], ["set", "muM", 0.4], ["click", "#muGo"]],
           question: "L’effet de la dépense publique est-il aussi fort ?",
           reponse: "Non : le multiplicateur tombe à 1,7 et les 50 milliards n’en créent que 83. À chaque vague, une grande partie de l’argent part à l’étranger. C’est pourquoi une relance a moins d’effet dans une petite économie ouverte que dans un grand pays comme les États-Unis." },
-        { titre: "Des ménages qui épargnent davantage", consigne: "Les ménages décident d’épargner davantage : sur chaque franc de revenu supplémentaire, ils n’en dépensent plus que 50 centimes.",
+        { titre: "Des ménages qui épargnent davantage", pred: {"q": "Dans ce modèle, si les ménages dépensent une plus petite part de chaque franc gagné, l’effet de la relance…", "o": ["augmente", "ne change pas", "diminue"], "c": 2}, consigne: "Les ménages décident d’épargner davantage : sur chaque franc de revenu supplémentaire, ils n’en dépensent plus que 50 centimes.",
           faire: [["set", "muI", 50], ["set", "muC", 0.5], ["set", "muM", 0.1], ["click", "#muGo"]],
           question: "Que devient l’effet de la relance dans ce modèle ?",
           reponse: "Dans ce modèle simple, il s’effondre : le multiplicateur tombe à 1,7 (83 milliards au total). Attention pourtant : les études trouvent souvent l’inverse en récession. Alan Auerbach et Yuriy Gorodnichenko (2012) estiment un multiplicateur nettement plus élevé en récession qu’en expansion : des machines et des travailleurs sont inemployés, la dépense publique ne prend pas la place de l’investissement privé, la banque centrale ne relève pas ses taux, et beaucoup de ménages à court d’argent dépensent tout revenu supplémentaire. Le modèle simple ne contient aucun de ces mécanismes." }],
@@ -83,15 +83,15 @@
         ["Autarcie", "Chaque pays produit tout lui-même, sans échanger."],
         ["Avantage comparatif", "Un pays a un avantage comparatif dans le bien qu’il produit au coût relatif le plus bas, même s’il est moins efficace que l’autre en tout."]],
       exps: [
-        { titre: "L’exemple de Ricardo", consigne: "Le Portugal produit le drap et le vin avec moins d’heures que l’Angleterre : il est meilleur dans les deux.",
+        { titre: "L’exemple de Ricardo", pred: {"q": "Le Portugal est meilleur dans les deux productions. Si chacun se spécialise, le monde…", "o": ["ne gagne rien : le Portugal devrait tout produire", "produit davantage avec les mêmes heures", "produit moins"], "c": 1}, consigne: "Le Portugal produit le drap et le vin avec moins d’heures que l’Angleterre : il est meilleur dans les deux.",
           faire: [["set", "rEc", 100], ["set", "rEw", 120], ["set", "rPc", 90], ["set", "rPw", 80], ["click", '[data-m="0"]'], ["wait", 900], ["click", '[data-m="1"]']],
           question: "Le monde gagne-t-il quelque chose si chacun se spécialise ?",
           reponse: "Oui : avec les mêmes heures et toujours 2 draps, le monde obtient 2,29 vins au lieu de 2. L’Angleterre fait le drap, où son retard est le plus faible ; le Portugal se concentre sur le vin, où son avance est la plus grande. Les deux peuvent ensuite échanger et y gagner." },
-        { titre: "Mêmes coûts relatifs", consigne: "Le Portugal est 20 % plus efficace partout : 80 heures pour chaque bien, contre 100 en Angleterre.",
+        { titre: "Mêmes coûts relatifs", pred: {"q": "Dans les deux pays, un drap coûte autant d’heures qu’un vin. Se spécialiser rapporte…", "o": ["un gain important", "un petit gain", "aucun gain"], "c": 2}, consigne: "Le Portugal est 20 % plus efficace partout : 80 heures pour chaque bien, contre 100 en Angleterre.",
           faire: [["set", "rEc", 100], ["set", "rEw", 100], ["set", "rPc", 80], ["set", "rPw", 80], ["click", '[data-m="1"]']],
           question: "Y a-t-il encore un gain à se spécialiser ?",
           reponse: "Non : dans les deux pays, un drap coûte exactement un vin. Se spécialiser ne libère aucune heure. Ce qui crée le gain, ce n’est pas d’être meilleur, c’est une <b>différence de coûts relatifs</b>." },
-        { titre: "Chacun son point fort", consigne: "L’Angleterre est très efficace pour le drap, le Portugal pour le vin.",
+        { titre: "Chacun son point fort", pred: {"q": "Chaque pays est très bon dans un seul bien. Le gain de la spécialisation sera…", "o": ["plus grand que dans l’exemple de Ricardo", "le même", "plus petit"], "c": 0}, consigne: "L’Angleterre est très efficace pour le drap, le Portugal pour le vin.",
           faire: [["set", "rEc", 60], ["set", "rEw", 140], ["set", "rPc", 120], ["set", "rPw", 60], ["click", '[data-m="1"]']],
           question: "Le gain de la spécialisation est-il plus grand ?",
           reponse: "Beaucoup plus : le monde obtient 3,57 vins au lieu de 2. Plus les coûts relatifs diffèrent, plus la spécialisation rapporte. C’est le cas le plus intuitif, celui de l’avantage absolu décrit par Adam Smith ; l’apport de Ricardo est de montrer que le gain existe aussi dans le premier cas." }],
@@ -113,15 +113,15 @@
         ["Séance", "Une journée de marché. À la fin de chaque séance, chacun repart avec au plus un achat ou une vente."],
         ["Efficacité", "La part du gain maximal possible que les échanges ont réellement produit. 100 % : tous les échanges utiles ont eu lieu."]],
       exps: [
-        { titre: "Ouvrir le marché", consigne: "Le marché ouvre : chacun lance des offres au hasard, sans jamais vendre à perte ni acheter au-dessus de son maximum.",
+        { titre: "Ouvrir le marché", pred: {"q": "Les participants font des offres au hasard. Les prix des échanges vont…", "o": ["rester dispersés au hasard", "se rapprocher du prix d’équilibre", "monter sans arrêt"], "c": 1}, consigne: "Le marché ouvre : chacun lance des offres au hasard, sans jamais vendre à perte ni acheter au-dessus de son maximum.",
           faire: [["click", "#mkReset"], ["click", "#mkGo"]],
           question: "Où se placent les prix des échanges au fil des séances ?",
           reponse: "Les points se resserrent autour de la ligne verte et l’efficacité dépasse souvent 90 %. Aucun participant ne calcule rien : ce sont les règles du marché, où l’on garde toujours la meilleure offre d’achat et la meilleure offre de vente, qui font le travail." },
-        { titre: "Vingt acheteurs de plus", consigne: "Vingt nouveaux acheteurs arrivent sur le marché : la demande augmente d’un coup.",
+        { titre: "Vingt acheteurs de plus", pred: {"q": "Vingt acheteurs arrivent. Les prix des échanges vont…", "o": ["monter", "baisser", "ne pas changer"], "c": 0}, consigne: "Vingt nouveaux acheteurs arrivent sur le marché : la demande augmente d’un coup.",
           faire: [["click", "#mkReset"], ["click", "#mkShock"], ["click", "#mkGo"]],
           question: "Comment le marché réagit-il ?",
-          reponse: "Le prix d’équilibre monte, et les prix des échanges suivent. Personne n’a annoncé la hausse : le marché s’ajuste de lui-même. C’est ce qu’Adam Smith appelait la « main invisible »." },
-        { titre: "Recommencer", consigne: "Relancez le marché plusieurs fois : les prix limites des participants sont tirés au hasard à chaque partie.",
+          reponse: "Le prix d’équilibre monte, et les prix des échanges suivent. Personne n’a annoncé la hausse : le marché s’ajuste de lui-même. On parle souvent de « main invisible », mais Adam Smith n’a jamais employé l’expression à propos de la formation des prix." },
+        { titre: "Recommencer", pred: {"q": "Avec d’autres participants à chaque partie, le prix d’équilibre…", "o": ["sera toujours le même", "changera, mais les échanges le rejoindront", "ne sera jamais atteint"], "c": 1}, consigne: "Relancez le marché plusieurs fois : les prix limites des participants sont tirés au hasard à chaque partie.",
           faire: [["click", "#mkReset"], ["click", "#mkGo"]],
           question: "Le prix d’équilibre est-il toujours le même ? Les prix le rejoignent-ils à chaque fois ?",
           reponse: "Le prix d’équilibre change d’une partie à l’autre, mais les échanges convergent presque toujours vers lui. En 1993, les économistes Gode et Sunder ont montré ainsi qu’une grande part de l’efficacité d’un marché tient à ses règles plutôt qu’à l’intelligence de ses participants. Vernon Smith, qui avait obtenu des résultats proches avec des étudiants dès 1962, a reçu le prix Nobel en 2002." }],
@@ -143,15 +143,15 @@
         ["Renouvellement du stock", "Les poissons se reproduisent : le stock se reconstitue d’autant plus vite qu’il est proche de la moitié du maximum (500)."],
         ["Règles d’Ostrom", "Un quota de 5 bateaux par flotte (20 en tout) décidé ensemble, une surveillance mutuelle qui coûte 1 par saison à chaque flotte, et des amendes qui augmentent en cas de récidive. Les amendes sont reversées aux flottes qui respectent le quota. Le gain total serait le plus grand avec environ 16 bateaux en tout, la pêche durable la plus grande avec environ 22 : le quota se situe entre les deux."]],
       exps: [
-        { titre: "Pêcher au maximum", consigne: "Vous envoyez 10 bateaux à chaque saison, sans aucune règle commune.",
+        { titre: "Pêcher au maximum", pred: {"q": "Sans règles, avec 10 bateaux à chaque saison, le lac va…", "o": ["rester en bonne santé", "être surexploité : à la fin, un bateau rapporte à peine ce qu’il coûte", "se vider entièrement en quelques saisons"], "c": 1}, consigne: "Vous envoyez 10 bateaux à chaque saison, sans aucune règle commune.",
           faire: [["check", "ostrom", false], ["set", "boats", 10], ["click", "#sail", 12]],
           question: "Où finissez-vous au classement ? Qu’est devenu le lac, et combien les quatre flottes ont-elles gagné ensemble ?",
           reponse: "Vous finissez deuxième. Brutus ajoute des bateaux tant que la pêche lui rapporte, le Copieur suit, et le stock tombe de 800 à environ 160 poissons. À la fin, un bateau rapporte à peine ce qu’il coûte, et les quatre flottes n’ont gagné ensemble qu’environ 290. Chacun a intérêt à pêcher plus ; tous y perdent : c’est la « tragédie des communs » décrite par Garrett Hardin en 1968. Le lac n’est pas vide, mais il ne rapporte presque plus rien : les économistes parlent de rente dissipée (Scott Gordon, 1954)." },
-        { titre: "Être raisonnable, seul", consigne: "Vous n’envoyez que 2 bateaux par saison pour protéger le lac, mais les autres ne changent rien.",
+        { titre: "Être raisonnable, seul", pred: {"q": "Si vous êtes le seul à pêcher avec prudence, vous finirez…", "o": ["premier", "au milieu du classement", "dernier"], "c": 2}, consigne: "Vous n’envoyez que 2 bateaux par saison pour protéger le lac, mais les autres ne changent rien.",
           faire: [["check", "ostrom", false], ["set", "boats", 2], ["click", "#sail", 12]],
           question: "Votre prudence est-elle récompensée ?",
           reponse: "Non : vous finissez dernier, et le lac tombe quand même à environ 330 poissons. Les poissons que vous laissez sont pêchés par Brutus, qui ajoute des bateaux tant que cela lui rapporte. Voilà le cœur du dilemme : ce qui est sage pour le groupe ne rapporte pas à celui qui le fait seul." },
-        { titre: "Les règles d’Ostrom", consigne: "Les quatre flottes adoptent ensemble un quota de 5 bateaux, surveillé, avec des amendes. Vous le respectez.",
+        { titre: "Les règles d’Ostrom", pred: {"q": "Avec les règles d’Ostrom, les quatre flottes gagneront ensemble…", "o": ["moins que sans règles", "autant que sans règles", "davantage que sans règles"], "c": 2}, consigne: "Les quatre flottes adoptent ensemble un quota de 5 bateaux, surveillé, avec des amendes. Vous le respectez.",
           faire: [["check", "ostrom", true], ["set", "boats", 5], ["click", "#sail", 12]],
           question: "Que deviennent le lac et les gains ?",
           reponse: "Après une première amende, Brutus respecte le quota. Le lac garde environ 600 poissons, et les quatre flottes gagnent ensemble environ 790, contre environ 560 sans règles avec la même stratégie de votre part (5 bateaux). Vous finissez premier. La comparaison vaut pour toutes les stratégies : avec 2 ou 10 bateaux aussi, le groupe gagne davantage avec les règles. C’est la leçon d’Elinor Ostrom : des communautés savent gérer une ressource commune si elles fixent elles-mêmes des règles, les surveillent et les sanctionnent." }],
@@ -174,15 +174,15 @@
         ["Q, la production réelle", "La quantité de biens et de services produits."],
         ["Sous-emploi", "Des machines et des travailleurs restent inutilisés : la production peut encore augmenter. Hypothèse de ce simulateur : tant qu’il reste des capacités, 1 % de monnaie en plus donne environ 0,8 % de production en plus, jusqu’à 1 600."]],
       exps: [
-        { titre: "Imprimer de la monnaie", consigne: "La banque centrale augmente deux fois la quantité de monnaie de 50 %. La production ne change pas.",
+        { titre: "Imprimer de la monnaie", pred: {"q": "La monnaie va augmenter de 125 %, la production ne change pas. Le prix du café va…", "o": ["monter d’environ 125 %", "monter un peu", "ne pas bouger"], "c": 0}, consigne: "La banque centrale augmente deux fois la quantité de monnaie de 50 %. La production ne change pas.",
           faire: [["click", "#mReset"], ["click", "#print"], ["wait", 500], ["click", "#print"]],
           question: "Que devient le prix du café ?",
           reponse: "La monnaie passe de 200 à 450, soit +125 %, et le café passe de 4 à 9 francs, +125 % lui aussi. Quand la production et la vitesse ne bougent pas, les prix montent exactement comme la monnaie : c’est la thèse de la théorie quantitative, défendue par Milton Friedman." },
-        { titre: "Une économie en sous-emploi", consigne: "Des usines tournent au ralenti et des gens cherchent du travail. La banque centrale imprime deux fois +50 %.",
+        { titre: "Une économie en sous-emploi", pred: {"q": "Avec des usines au ralenti, la même création de monnaie fera monter les prix…", "o": ["autant que dans la première expérience", "nettement moins", "davantage"], "c": 1}, consigne: "Des usines tournent au ralenti et des gens cherchent du travail. La banque centrale imprime deux fois +50 %.",
           faire: [["click", "#mReset"], ["check", "slack", true], ["wait", 400], ["click", "#print"], ["wait", 500], ["click", "#print"]],
           question: "Les prix montent-ils autant que dans la première expérience ?",
           reponse: "Non : une bonne partie de la monnaie nouvelle sert à produire davantage, et la production passe de 800 à environ 1 530. Le café monte bien moins, d’environ 5,00 à 5,90 francs. C’est l’argument de Keynes : en période de chômage, créer de la monnaie peut relancer l’activité sans beaucoup d’inflation. Imprimez encore : une fois les usines à plein régime (1 600), seuls les prix montent." },
-        { titre: "Une monnaie qui dort", consigne: "La monnaie double, mais les gens et les banques la gardent deux fois plus longtemps : la vitesse passe de 5 à 2,5.",
+        { titre: "Une monnaie qui dort", pred: {"q": "La monnaie double, mais elle circule deux fois moins vite. Le prix du café va…", "o": ["doubler", "baisser de moitié", "rester stable"], "c": 2}, consigne: "La monnaie double, mais les gens et les banques la gardent deux fois plus longtemps : la vitesse passe de 5 à 2,5.",
           faire: [["click", "#mReset"], ["set", "mM", 400], ["set", "mV", 2.5]],
           question: "Que devient le prix du café ?",
           reponse: "Il ne bouge pas : la monnaie supplémentaire reste sur les comptes au lieu de circuler. C’est en partie ce qui s’est passé après la crise de 2008 : les grandes banques centrales ont créé énormément de monnaie sans provoquer d’inflation forte pendant des années." }],
@@ -220,6 +220,7 @@
   function expBody(g, j) {
     const e = g.exps[j];
     return `<p class="lg-et-t"><span>Expérience ${j + 1} sur ${g.exps.length}</span>${e.titre}</p><p class="lg-cons">${e.consigne}</p>
+      ${e.pred ? `<div class="lg-pred"><p class="lg-pred-q"><b>Avant de lancer, prédisez :</b> ${e.pred.q}</p><div class="lg-pred-o" role="group" aria-label="Votre prédiction">${e.pred.o.map((o, i) => `<button type="button" class="lg-po" data-po="${i}" aria-pressed="false">${o}</button>`).join("")}</div><p class="lg-pred-res" role="status" hidden></p></div>` : ""}
       <button type="button" class="btn small lg-go">▶ Lancer l’expérience</button>
       <p class="lg-q"><b>Observez :</b> ${e.question}</p>
       <button type="button" class="btn small ghost lg-rep" aria-expanded="false">Voir l’explication</button>
@@ -230,10 +231,12 @@
     const box = document.createElement("div"); box.className = "lg-exp";
     box.innerHTML = `<div class="lg-exp-top"><p class="lg-exp-k">Expériences guidées</p><div class="lg-tabs">${g.exps.map((e, j) => `<button type="button" class="lg-t${j ? "" : " on"}" data-j="${j}" title="${e.titre}">${j + 1}</button>`).join("")}</div></div><div class="lg-exp-b">${expBody(g, 0)}</div>`;
     (side.firstElementChild || side).insertAdjacentElement("afterend", box);
-    let j = 0, busy = false;
-    const pick = (k) => { j = k; box.querySelectorAll(".lg-t").forEach((b, i) => b.classList.toggle("on", i === k)); box.querySelector(".lg-exp-b").innerHTML = expBody(g, k); };
+    let j = 0, busy = false, choix = null;
+    const pick = (k) => { j = k; choix = null; box.querySelectorAll(".lg-t").forEach((b, i) => b.classList.toggle("on", i === k)); box.querySelector(".lg-exp-b").innerHTML = expBody(g, k); };
     box.addEventListener("click", async (ev) => {
       const t = ev.target.closest(".lg-t"); if (t) { pick(+t.dataset.j); return; }
+      const po = ev.target.closest(".lg-po");
+      if (po) { choix = +po.dataset.po; box.querySelectorAll(".lg-po").forEach((b) => { b.classList.toggle("on", b === po); b.setAttribute("aria-pressed", String(b === po)); }); const g0 = box.querySelector(".lg-go"); if (g0) g0.focus(); return; }
       if (ev.target.closest(".lg-next")) { pick(j + 1); return; }
       const rep = ev.target.closest(".lg-rep");
       if (rep) { const r = box.querySelector(".lg-r"); r.hidden = !r.hidden; rep.setAttribute("aria-expanded", String(!r.hidden)); rep.textContent = r.hidden ? "Voir l’explication" : "Masquer l’explication"; if (!r.hidden) box.querySelectorAll(".lg-t")[j].classList.add("vu"); return; }
@@ -250,7 +253,20 @@
           if (k === "check") { el.checked = b; el.dispatchEvent(new Event("change", { bubbles: true })); }
           if (k === "click") { const n = b || 1; for (let i = 0; i < n; i++) { el.click(); if (n > 1) await wait(140); } }
         }
-      } finally { busy = false; if (go.isConnected) { go.disabled = false; go.textContent = "↻ Relancer l’expérience"; } }
+      } finally {
+        busy = false; if (go.isConnected) { go.disabled = false; go.textContent = "↻ Relancer l’expérience"; }
+        /* comparer la prédiction au résultat */
+        const e = g.exps[j], res = box.querySelector(".lg-pred-res");
+        const lc = (x) => x.charAt(0).toLowerCase() + x.slice(1);
+        if (e.pred && res) {
+          res.hidden = false;
+          res.className = "lg-pred-res" + (choix == null ? "" : choix === e.pred.c ? " ok" : " ko");
+          res.innerHTML = choix == null ? `Résultat attendu : <b>${lc(e.pred.o[e.pred.c])}</b>. La prochaine fois, essayez de prédire avant de lancer.`
+            : choix === e.pred.c ? `Bien vu : <b>${lc(e.pred.o[e.pred.c])}</b>. Lisez l’explication pour vérifier votre raisonnement.`
+            : `Pas tout à fait : <b>${lc(e.pred.o[e.pred.c])}</b>. Regardez le graphique, puis l’explication : qu’est-ce qui vous a surpris ?`;
+          box.querySelectorAll(".lg-po").forEach((b) => b.classList.toggle("bon", +b.dataset.po === e.pred.c));
+        }
+      }
     });
   }
 
@@ -281,6 +297,15 @@
 .lg-cons, .lg-q{font-size:14.5px; line-height:1.5}
 .lg-r{padding:10px 12px; border-radius:10px; background:var(--card); font-size:14.5px; line-height:1.55; display:grid; gap:10px; justify-items:start}
 .lg-r[hidden]{display:none}
+.lg-pred{display:grid; gap:8px; width:100%}
+.lg-pred-q{font-size:14.5px; line-height:1.5}
+.lg-pred-o{display:flex; flex-wrap:wrap; gap:6px}
+.lg-po{font:600 13.5px var(--f-body); padding:7px 11px; min-height:36px; border-radius:999px; border:1.5px solid var(--note); background:var(--card); color:var(--ink); cursor:pointer; text-align:left}
+.lg-po.on{background:var(--note); color:var(--paper)}
+.lg-po.bon:not(.on){border-style:dashed}
+.lg-pred-res{font-size:14.5px; line-height:1.5; padding:8px 10px; border-radius:8px; background:var(--card)}
+.lg-pred-res.ok{border-left:3px solid var(--note)} .lg-pred-res.ko{border-left:3px solid var(--serial)}
+.lg-pred-res[hidden]{display:none}
 .lg-fin-x{color:var(--ink-soft); font-size:13.5px}
 .lg-fin{display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:14px; margin-top:16px}
 .lg-fin > div{padding:14px 16px; border:1px solid var(--line); border-radius:var(--r); background:var(--card)}
