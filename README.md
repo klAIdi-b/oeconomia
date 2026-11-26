@@ -10,7 +10,7 @@ Un site francophone d’histoire de la pensée économique, pour le grand public
 - 39 portraits d’économistes, d’Aristote à Esther Duflo, en version courte et complète
 - 56 notions expliquées, chacune avec une notice longue : raisonnement, preuves, cas, objections, texte source et quiz
 - 9 dossiers sur les grandes questions, 10 controverses, 9 parcours guidés
-- 221 exercices corrigés sur trois niveaux, 12 fiches de méthode, 6 simulateurs
+- 324 exercices corrigés sur trois niveaux (douze par thème et par niveau), 12 fiches de méthode, 6 simulateurs
 - un test de positionnement et une révision espacée des exercices
 
 ## Fonctionnement

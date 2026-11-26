@@ -1,4 +1,4 @@
-/* Œconomia — Entraînement : thème pilote « Marché et prix » (24 exercices, trois niveaux).
+/* Œconomia — Entraînement : thème « Marché et prix » (trois niveaux, douze exercices par niveau).
    Les autres thèmes sont annoncés et seront ajoutés dans des fichiers semblables. */
 (function () {
   const X = OEC.exo, { rnd, pick, fmt, marche } = X;
