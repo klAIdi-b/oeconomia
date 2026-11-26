@@ -10,9 +10,9 @@
   const MOTS_MIN = 60;
   /* ce qu’exige chaque niveau, en une phrase */
   const NIV_DESC = {
-    1: "<b>Découverte</b> : reconnaître une notion et l’appliquer, calculs en une étape. Sans prérequis.",
-    2: "<b>Intermédiaire</b> : raisonner avec un modèle, calculs en deux ou trois étapes. Niveau du secondaire II.",
-    3: "<b>Avancé</b> : combiner un modèle, des données et une argumentation. Secondaire II exigeant, début d’études."
+    1: "<b>Découverte</b> : reconnaître une notion, l’appliquer à un cas concret et calculer en une étape, au niveau d’une fin d’apprentissage de commerce ou d’une maturité professionnelle.",
+    2: "<b>Intermédiaire</b> : raisonner avec un modèle, calculer en plusieurs étapes, lire des graphiques et des données, au niveau d’une fin de secondaire II exigeante ou d’une première année de Bachelor.",
+    3: "<b>Avancé</b> : manier des modèles formalisés et des données réelles, argumenter en comparant plusieurs écoles, au niveau d’une deuxième ou troisième année de Bachelor."
   };
   /* question normative (« faut-il… ? ») : le corrigé n’est qu’une conclusion possible */
   const NORMATIF = (it) => /faut-il|faudrait-il|devrait-on|doit-on|souhaitable/i.test(it.titre + " " + (typeof it.enonce === "string" ? it.enonce : ""));
@@ -80,9 +80,9 @@
   function marche(o = {}) {
     const k = 190 / 340;
     const line = (x1, y1, x2, y2, col, dash) => `<path d="M${x1},${y1} L${x2},${y2}" style="fill:none; stroke:${col}; stroke-width:2.5${dash ? "; stroke-dasharray:7 5" : ""}"/>`;
-    const lab = (x, y, t, col, anchor = "start") => `<text x="${x}" y="${y}" text-anchor="${anchor}" style="fill:${col}; font:700 13px Manrope, sans-serif">${t}</text>`;
+    const lab = (x, y, t, col, anchor = "start") => `<text x="${x}" y="${y}" text-anchor="${anchor}" style="fill:${col}; font:700 17px Manrope, sans-serif">${t}</text>`;
     let s = `<line x1="70" y1="30" x2="70" y2="250" style="stroke:var(--line); stroke-width:1.5"/><line x1="70" y1="250" x2="580" y2="250" style="stroke:var(--line); stroke-width:1.5"/>`;
-    s += `<text x="78" y="36" style="fill:var(--ink-soft); font:600 11px var(--f-mono, monospace)">Prix</text><text x="576" y="268" text-anchor="end" style="fill:var(--ink-soft); font:600 11px var(--f-mono, monospace)">Quantité</text>`;
+    s += `<text x="78" y="40" style="fill:var(--ink-soft); font:600 16px var(--f-mono, monospace)">Prix</text><text x="576" y="270" text-anchor="end" style="fill:var(--ink-soft); font:600 16px var(--f-mono, monospace)">Quantité</text>`;
     s += line(130, 50, 470, 240, "var(--note)") + lab(478, 244, "D", "var(--note)");
     s += line(130, 240, 470, 50, "var(--gold)") + lab(478, 54, "O", "var(--gold)");
     let E2 = null;
@@ -100,8 +100,59 @@
     return `<figure class="schema ex-fig"><svg viewBox="0 0 600 280" role="img" aria-label="${esc(o.label2 || "Graphique d’offre et de demande")}">${s}</svg>${cap}</figure>`;
   }
 
+  /* ---------- Schémas génériques ----------
+     graphe(o) : repère en unités des données. o = { xmax, ymax, xmin, ymin, h, xlab, ylab, caption, aria,
+       zones:  [{ pts: [[x, y], …], col, lab, at: [x, y] }],            surfaces (surplus, perte sèche…)
+       lignes: [{ pts: [[x, y], …] | f: (x) => y, de, a, col, dash, lab, at: [x, y], anc }],   droites ou courbes
+       reperes: [[x, y], …],                                            pointillés d’un point vers les deux axes
+       gx: [[x, "étiquette"], …], gy: [[y, "étiquette"], …],           graduations nommées sur les axes
+       points: [{ x, y, lab, col, dx, dy, anc }] }
+     Couleurs : "d" vert (demande), "o" or (offre), "r" rouge, "p" prune, "n" encre, "g" gris.
+     Tous les textes sont en 16 px : une fois le schéma placé dans un document, aucun n’est sous 11 points. */
+  const COUL = { d: "var(--note)", o: "var(--gold)", r: "var(--serial)", p: "var(--plum)", n: "var(--ink)", g: "var(--ink-soft)" };
+  const coul = (c) => COUL[c] || c || COUL.n;
+  const gtxt = (x, y, t, c, anc = "start", mono) => `<text x="${(+x).toFixed(1)}" y="${(+y).toFixed(1)}" text-anchor="${anc}" style="fill:${coul(c)}; font:${mono ? "600 16px var(--f-mono, monospace)" : "700 16px Manrope, sans-serif"}">${t}</text>`;
+  function graphe(o) {
+    const W = 600, H = o.h || 300, L = o.left || 66, R = o.right || 30, T = 34, B = o.bottom || 48;
+    const x0 = o.xmin || 0, x1 = o.xmax, y0 = o.ymin || 0, y1 = o.ymax;
+    const X = (x) => L + ((x - x0) / (x1 - x0)) * (W - L - R), Y = (y) => H - B - ((y - y0) / (y1 - y0)) * (H - T - B);
+    const pt = (p) => `${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`;
+    let s = "";
+    (o.zones || []).forEach((z) => { s += `<path d="M${z.pts.map(pt).join(" L")} Z" style="fill:${coul(z.col)}; fill-opacity:.18; stroke:none"/>`; });
+    (o.reperes || []).forEach(([x, y]) => { s += `<path d="M${L},${Y(y).toFixed(1)} L${pt([x, y])} L${X(x).toFixed(1)},${H - B}" style="fill:none; stroke:var(--ink-soft); stroke-width:1.2; stroke-dasharray:4 4"/>`; });
+    s += `<path d="M${L},${T - 8} L${L},${H - B} L${W - R + 8},${H - B}" style="fill:none; stroke:var(--ink); stroke-width:1.5"/>`;
+    (o.gx || []).forEach(([x, lab]) => { s += `<path d="M${X(x).toFixed(1)},${H - B} v6" style="fill:none; stroke:var(--ink); stroke-width:1.5"/>` + gtxt(X(x), H - B + 23, lab, "g", "middle", true); });
+    (o.gy || []).forEach(([y, lab]) => { s += `<path d="M${L - 6},${Y(y).toFixed(1)} h6" style="fill:none; stroke:var(--ink); stroke-width:1.5"/>` + gtxt(L - 10, Y(y) + 5.5, lab, "g", "end", true); });
+    (o.lignes || []).forEach((l) => {
+      let pts = l.pts;
+      if (l.f) { pts = []; const n = 48; for (let k = 0; k <= n; k++) { const x = l.de + ((l.a - l.de) * k) / n; pts.push([x, l.f(x)]); } }
+      s += `<path d="M${pts.map(pt).join(" L")}" style="fill:none; stroke:${coul(l.col)}; stroke-width:2.5${l.dash ? "; stroke-dasharray:7 5" : ""}; stroke-linejoin:round"/>`;
+      if (l.lab) s += gtxt(X(l.at[0]) + (l.dx || 0), Y(l.at[1]) + (l.dy || 0), l.lab, l.col, l.anc || "start");
+    });
+    (o.zones || []).forEach((z) => { if (z.lab) s += gtxt(X(z.at[0]), Y(z.at[1]) + 5.5, z.lab, z.col, "middle"); });
+    (o.points || []).forEach((p) => { s += `<circle cx="${X(p.x).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="5" style="fill:${coul(p.col)}"/>` + (p.lab ? gtxt(X(p.x) + (p.dx == null ? 9 : p.dx), Y(p.y) + (p.dy == null ? -9 : p.dy), p.lab, p.col, p.anc || "start") : ""); });
+    if (o.ylab) s += gtxt(L - 46, 18, o.ylab, "g", "start", true);
+    if (o.xlab) s += gtxt(W - R + 8, H - 6, o.xlab, "g", "end", true);
+    return `<figure class="schema ex-fig"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || o.caption || "Graphique")}">${s}</svg>${o.caption ? `<figcaption>${o.caption}</figcaption>` : ""}</figure>`;
+  }
+  /* barres(o) : diagramme en barres. o = { cats: ["2019", …], vals: [..], vals2, noms: ["série 1", "série 2"], ymax, ymin, unite, dec, caption, aria, h } */
+  function barres(o) {
+    const W = 600, H = o.h || 280, L = 30, R = 20, T = o.noms ? 50 : 34, B = 40, n = o.cats.length, deux = !!o.vals2;
+    const y0 = o.ymin || 0, y1 = o.ymax, Y = (y) => H - B - ((y - y0) / (y1 - y0)) * (H - T - B), pas = (W - L - R) / n, lb = pas * (deux ? 0.36 : 0.56);
+    const val = (v) => fmt(v, o.dec == null ? 1 : o.dec) + (o.unite || "");
+    let s = `<path d="M${L},${Y(0).toFixed(1)} L${W - R},${Y(0).toFixed(1)}" style="fill:none; stroke:var(--ink); stroke-width:1.5"/>`;
+    const barre = (v, x, c) => { const h = Math.abs(Y(v) - Y(0)), y = v >= 0 ? Y(v) : Y(0); return `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${lb.toFixed(1)}" height="${h.toFixed(1)}" style="fill:${coul(c)}"/>` + gtxt(x + lb / 2, v >= 0 ? y - 7 : y + h + 19, val(v), c, "middle"); };
+    o.cats.forEach((c, k) => {
+      const cx = L + pas * (k + 0.5);
+      s += deux ? barre(o.vals[k], cx - lb - 2, "d") + barre(o.vals2[k], cx + 2, "o") : barre(o.vals[k], cx - lb / 2, o.col || "d");
+      s += gtxt(cx, H - B + 24, c, "g", "middle", true);
+    });
+    if (o.noms) s += `<rect x="${L}" y="8" width="16" height="16" style="fill:var(--note)"/>` + gtxt(L + 24, 22, o.noms[0], "n") + `<rect x="${L + 250}" y="8" width="16" height="16" style="fill:var(--gold)"/>` + gtxt(L + 274, 22, o.noms[1], "n");
+    return `<figure class="schema ex-fig"><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || o.caption || "Diagramme en barres")}">${s}</svg>${o.caption ? `<figcaption>${o.caption}</figcaption>` : ""}</figure>`;
+  }
+
   OEC.exo = {
-    rnd, pick, fmt, marche,
+    rnd, pick, fmt, marche, graphe, barres,
     theme(t) {
       /* un thème réel remplace l’annonce « bientôt » de même nom, à sa place dans la liste */
       const i = THEMES.findIndex((x) => x.id === t.id || x.nom === t.nom);
