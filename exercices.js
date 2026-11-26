@@ -15,15 +15,17 @@
     3: "<b>Avancé</b> : manier des modèles formalisés et des données réelles, argumenter en comparant plusieurs écoles, au niveau d’une deuxième ou troisième année de Bachelor."
   };
   /* question normative (« faut-il… ? ») : le corrigé n’est qu’une conclusion possible */
-  const NORMATIF = (it) => /faut-il|faudrait-il|devrait-on|doit-on|souhaitable/i.test(it.titre + " " + (typeof it.enonce === "string" ? it.enonce : ""));
+  const NORMATIF = (it) => it.normatif != null ? !!it.normatif : /faut-il|faudrait-il|devrait-on|doit-on|souhaitable/i.test(it.titre + " " + (typeof it.enonce === "string" ? it.enonce : ""));
   const TYPES = { qcm: "Choix multiple", vf: "Vrai ou faux", calcul: "Calcul", graphique: "Graphique", redaction: "Rédaction", document: "Analyse de document" };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const fmt = (x, d = 2) => Number(x).toLocaleString("fr-CH", { maximumFractionDigits: d, minimumFractionDigits: 0 }).replace(/ | /g, " ");
+  const fmt = (x, d = 2) => Number(x).toLocaleString("fr-CH", { maximumFractionDigits: d, minimumFractionDigits: 0 }).replace(/ | /g, " ").replace(/^-/, "−");
+  /* arrondi unique pour les réponses et les corrections : demi arrondi en s’éloignant de zéro, sans erreur de virgule flottante */
+  const arr = (x, d = 2) => { const k = Math.pow(10, d); return (x < 0 ? -1 : 1) * Math.round(Math.abs(x) * k + 1e-9) / k; };
   const rnd = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const parseNum = (s) => {
     if (s == null) return NaN;
-    const t = String(s).replace(/[\s'’  ]/g, "").replace(/chf|fr\.?|%/gi, "").replace(",", ".").replace("−", "-");
+    const t = String(s).replace(/[\s'’  ]/g, "").replace(/chf|fr\.?|%/gi, "").replace(",", ".").replace("−", "-").replace(/^(-?\d*\.?\d+)[^\d.]+$/, "$1");   /* une unité écrite après le nombre est ignorée */
     return t === "" ? NaN : Number(t);
   };
 
@@ -152,7 +154,7 @@
   }
 
   OEC.exo = {
-    rnd, pick, fmt, marche, graphe, barres,
+    rnd, pick, fmt, arr, marche, graphe, barres,
     theme(t) {
       /* un thème réel remplace l’annonce « bientôt » de même nom, à sa place dans la liste */
       const i = THEMES.findIndex((x) => x.id === t.id || x.nom === t.nom);
@@ -168,7 +170,14 @@
 
   /* ---------- Rendu de la page ---------- */
   let root;
-  const itemsOf = (theme, niveau) => ITEMS.filter((x) => x.theme === theme && x.niveau === niveau);
+  /* Ordre d’une série : une série sur deux s’ouvre sur un graphique ou un document, et les rédactions ne sont pas reléguées à la fin */
+  const itemsOf = (theme, niveau) => {
+    const its = ITEMS.filter((x) => x.theme === theme && x.niveau === niveau), k = THEMES.findIndex((t) => t.id === theme);
+    if ((k + niveau) % 2 === 0) { const i = its.findIndex((x) => x.type === "graphique" || x.type === "document"); if (i > 0) its.unshift(its.splice(i, 1)[0]); }
+    const red = its.filter((x) => x.type === "redaction"), reste = its.filter((x) => x.type !== "redaction");
+    red.forEach((x, j) => reste.splice(Math.min(reste.length, 5 + 4 * j), 0, x));
+    return reste;
+  };
   function renderTabs() {
     const box = $("#exTabs"); if (!box) return;
     const niv = $("#exNiv"); if (niv) niv.innerHTML = NIV_DESC[state.niveau] || "";
@@ -222,14 +231,14 @@
       if (it.type === "calcul") {
         const card = cardOf(it), p = (card && card.__p) || it.gen(), rep = it.reponses(p);
         h += it.enonce(p) + (it.figp ? it.figp(p) : figOf(it));
-        h += `<p class="pr-champs">${it.champs.map((c) => `${c.label} : ________________ ${c.unite || ""}`).join("<br>")}</p>`;
-        if (prof) h += `<div class="pr-corr"><p><b>Réponse${rep.length > 1 ? "s" : ""} :</b> ${it.champs.map((c, j) => `${c.label} = ${fmt(rep[j], 4)} ${c.unite || ""}`).join(" ; ")}</p>${it.correction(p)}</div>`;
+        h += `<p class="pr-champs">${it.champs.map((c) => c.choix ? `${c.label} : ${c.choix.map((x) => "☐ " + x).join(" &nbsp; ")}` : `${c.label} : ________________ ${c.unite || ""}`).join("<br>")}</p>`;
+        if (prof) h += `<div class="pr-corr"><p><b>Réponse${rep.length > 1 ? "s" : ""} :</b> ${it.champs.map((c, j) => `${c.label} = ${repTexte(c, rep[j], 4)} ${c.unite || ""}`).join(" ; ")}</p>${it.correction(p)}</div>`;
       } else if (it.type === "vf") {
-        h += (it.enonce || "") + figOf(it);
-        h += `<ol class="pr-vf">${it.affirmations.map((a) => `<li>${a[0]} <span class="pr-box">☐ ${(it.etiquettes || ["Vrai"])[0]} ☐ ${(it.etiquettes || [, "Faux"])[1]}</span>${prof ? `<div class="pr-corr"><b>${a[1] ? (it.etiquettes || ["Vrai"])[0] : (it.etiquettes || [, "Faux"])[1]}.</b> ${a[2]}</div>` : ""}</li>`).join("")}</ol>`;
+        h += consigneVF(it) + figOf(it);
+        h += `<ol class="pr-vf">${ordreVF(it).map((j) => it.affirmations[j]).map((a) => `<li>${a[0]} <span class="pr-box">☐ ${(it.etiquettes || ["Vrai"])[0]} ☐ ${(it.etiquettes || [, "Faux"])[1]}</span>${prof ? `<div class="pr-corr"><b>${a[1] ? (it.etiquettes || ["Vrai"])[0] : (it.etiquettes || [, "Faux"])[1]}.</b> ${a[2]}</div>` : ""}</li>`).join("")}</ol>`;
       } else if (it.type === "redaction") {
         h += it.enonce + figOf(it);
-        h += prof ? `<div class="pr-corr"><p><b>Critères de réussite :</b></p><ul>${it.criteres.map((c) => `<li>${c}</li>`).join("")}</ul><p><b>Exemple de réponse :</b></p>${it.corrige}</div>` : `<div class="pr-lignes">${"<span></span>".repeat(16)}</div>`;
+        h += prof ? `<div class="pr-corr"><p><b>Critères de réussite :</b></p><ul>${it.criteres.map((c) => `<li>${c}</li>`).join("")}</ul><p><b>Exemple de réponse :</b></p>${it.corrige}</div>` : `<div class="pr-lignes">${"<span></span>".repeat(lignesDe(it))}</div>`;
       } else {
         const ord = order(it);
         h += it.enonce + figOf(it) + `<ol class="pr-opts" type="A">${ord.map((j) => `<li>${it.options[j]}</li>`).join("")}</ol>`;
@@ -250,12 +259,12 @@
       if (it.type === "calcul") {
         const card = cardOf(it), p = (card && card.__p) || it.gen(), rep = it.reponses(p);
         Object.assign(o, { kind: "calcul", enonce: it.enonce(p), fig: it.figp ? it.figp(p) : figOf(it), correction: it.correction(p),
-          champs: it.champs.map((c, j) => ({ label: c.label, unite: c.unite || "", rep: fmt(rep[j], 4) })) });
+          champs: it.champs.map((c, j) => ({ label: c.label, unite: c.unite || "", rep: repTexte(c, rep[j], 4), choix: c.choix || null })) });
       } else if (it.type === "vf") {
         Object.assign(o, { kind: "vf", enonce: it.enonce || "", fig: figOf(it), etiquettes: it.etiquettes || ["Vrai", "Faux"],
-          affirmations: it.affirmations.map((a) => ({ texte: a[0], vrai: !!a[1], expl: a[2] })) });
+          affirmations: ordreVF(it).map((j) => it.affirmations[j]).map((a) => ({ texte: a[0], vrai: !!a[1], expl: a[2] })) });
       } else if (it.type === "redaction") {
-        Object.assign(o, { kind: "redaction", enonce: it.enonce, fig: figOf(it), criteres: it.criteres || [], corrige: it.corrige || "" });
+        Object.assign(o, { kind: "redaction", enonce: it.enonce, fig: figOf(it), criteres: it.criteres || [], corrige: it.corrige || "", lignes: lignesDe(it) });
       } else {
         const ord = order(it);
         Object.assign(o, { kind: "qcm", enonce: it.enonce, fig: figOf(it), options: ord.map((j) => it.options[j]), bonne: ord.indexOf(it.c), explication: it.explication });
@@ -296,6 +305,13 @@
     for (let k = idx.length - 1; k > 0; k--) { h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0; const r = h % (k + 1); [idx[k], idx[r]] = [idx[r], idx[k]]; }
     return idx;
   }
+  /* Vrai ou faux : ordre des affirmations (mélangé à l’écran, stable à l’impression), consigne par défaut */
+  const ordreVF = (it, melange) => order({ id: it.id + "-vf", titre: it.titre, options: it.affirmations }, melange);
+  const consigneVF = (it) => it.enonce || "<p>Indiquez si chaque affirmation est vraie ou fausse.</p>";
+  /* Rédaction : nombre de lignes à prévoir sur papier, d’après la longueur demandée (« 10 à 15 lignes ») */
+  const lignesDe = (it) => { const m = ((typeof it.enonce === "string" ? it.enonce : "") + " " + (it.competence || "")).match(/(\d+) à (\d+) lignes/); return m ? Math.min(28, Math.max(12, +m[2] + 2)) : 16; };
+  /* Calcul : un champ peut proposer un choix (champs: [{ label, choix: ["a", "b"] }]) ; la réponse attendue est alors l’indice du bon choix */
+  const repTexte = (c, r, d) => c.choix ? c.choix[r] : fmt(r, d);
   /* Fiche de méthode associée (champ « methode » ou déduite du titre et de la compétence) */
   const RULES = [[/élasticit/i, "elasticite"], [/équilibre|système|monopole|monopsone|importations avant|taxe pigouvienne|perte sèche|incidence/i, "equations"], [/réel|pouvoir d’achat|valeur réelle|déflateur/i, "reel"], [/indice|IPC/i, "indices"], [/composé|actualis|valeur future|valeur actuelle|doublement|frais|Gordon|obligation/i, "interets"], [/variation|taux de croissance|inflation|points de pourcentage|rendement/i, "variation"], [/part|moyenne|médiane|Gini|répartition|seuil/i, "proportions"], [/graphique|courbe/i, "graphiques"], [/tableau|série|statistique/i, "tableaux"]];
   const OVERRIDE = { "m2-surplus": "equations", "mo2-phillips": "graphiques", "mo1-tableau-ipc": "tableaux", "cr1-suisse-pib": "tableaux", "fi1-placements": "tableaux", "m1-tableau": "tableaux",
@@ -333,7 +349,7 @@
       }));
     }
     if (it.type === "vf") {
-      b.innerHTML = `${it.enonce || ""}${fig}<ol class="ex-vf">${it.affirmations.map((a, j) => `<li data-j="${j}"><p>${a[0]}</p><span><button type="button" data-v="1">${(it.etiquettes || ["Vrai"])[0]}</button><button type="button" data-v="0">${(it.etiquettes || [, "Faux"])[1]}</button></span><div class="ex-vf-e" hidden></div></li>`).join("")}</ol>
+      b.innerHTML = `${consigneVF(it)}${fig}<ol class="ex-vf">${ordreVF(it, true).map((j) => [it.affirmations[j], j]).map(([a, j]) => `<li data-j="${j}"><p>${a[0]}</p><span><button type="button" data-v="1">${(it.etiquettes || ["Vrai"])[0]}</button><button type="button" data-v="0">${(it.etiquettes || [, "Faux"])[1]}</button></span><div class="ex-vf-e" hidden></div></li>`).join("")}</ol>
         <div class="ex-actions"><button type="button" class="btn small ex-check">Vérifier</button></div><div class="ex-feedback" hidden></div>`;
       $$(".ex-vf li", b).forEach((li) => $$("button", li).forEach((btn) => btn.addEventListener("click", () => { $$("button", li).forEach((x) => x.classList.toggle("on", x === btn)); li.dataset.r = btn.dataset.v; })));
       $(".ex-check", b).addEventListener("click", () => {
@@ -355,11 +371,11 @@
     if (it.type === "calcul") {
       const p = it.gen(), rep = it.reponses(p); card.__p = p;
       const figc = it.figp ? it.figp(p) : fig;
-      b.innerHTML = `${it.enonce(p)}${figc}<div class="ex-fields">${it.champs.map((c, j) => `<label><span>${c.label}</span><input type="text" inputmode="decimal" autocomplete="off" data-j="${j}"><em>${c.unite || ""}</em></label>`).join("")}</div>
+      b.innerHTML = `${it.enonce(p)}${figc}<div class="ex-fields">${it.champs.map((c, j) => `<label><span>${c.label}</span>${c.choix ? `<select data-j="${j}"><option value="">Choisir…</option>${c.choix.map((x, k) => `<option value="${k}">${x}</option>`).join("")}</select>` : `<input type="text" inputmode="decimal" autocomplete="off" data-j="${j}">`}<em>${c.unite || ""}</em></label>`).join("")}</div>
         <div class="ex-actions"><button type="button" class="btn small ex-check">Vérifier</button><button type="button" class="btn small ghost ex-show">Je bloque : voir la correction</button><button type="button" class="btn small ghost ex-new">Nouvelles valeurs</button></div>
         ${it.niveau <= 2 ? methodeLink(it, "Besoin d’un exemple résolu avant de commencer ? Fiche méthode :") : ""}
         <div class="ex-feedback" hidden></div><div class="ex-corr" hidden><h4>Correction pas à pas</h4>${it.correction(p)}${notionLink(it)}${methodeLink(it)}</div>`;
-      const inputs = $$("input", b);
+      const inputs = $$("input, select", b);
       let essaye = false, rates = 0;
       inputs.forEach((inp) => inp.addEventListener("keydown", (e) => { if (e.key === "Enter") $(".ex-check", b).click(); }));
       $(".ex-check", b).addEventListener("click", () => {
@@ -374,7 +390,8 @@
         if (!all) rates++;
         /* premier échec : l’indice (la stratégie) ; à partir du deuxième : la première étape de la correction */
         const paras = rates >= 2 ? (it.correction(p).match(/<p>[\s\S]*?<\/p>/g) || []) : [];
-        const etape = paras.length >= 2 ? paras[0] : "";   /* jamais quand la correction tient en un seul paragraphe : ce serait la réponse */
+        /* jamais quand la correction tient en un seul paragraphe : ce serait la réponse ; les résultats en gras de la première étape sont masqués */
+        const etape = paras.length >= 2 ? paras[0].replace(/<b>[^<]*\d[^<]*<\/b>/g, "<b>…</b>") : "";
         f.innerHTML = all ? `<p class="ex-verdict ok">Juste ! ${it.bravo ? it.bravo(p) : ""}</p>` : `<p class="ex-verdict ko">${inputs.length > 1 ? `${good} réponse${good > 1 ? "s" : ""} juste${good > 1 ? "s" : ""} sur ${inputs.length}.` : "Pas encore."} ${rates >= 2 ? "Voici la première étape ; essayez de continuer seul." : "Vérifiez vos calculs, ou demandez la correction."}</p>${it.indice ? `<p class="ex-indice"><b>Indice :</b> ${it.indice}</p>` : ""}${etape ? `<div class="ex-indice"><b>Première étape :</b>${etape}</div>` : ""}${methodeLink(it)}`;
         if (all) $(".ex-corr", b).hidden = false;
         mark(it.id, all);

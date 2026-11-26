@@ -185,7 +185,7 @@
         if (P && x.explication) out.push(await blocks(x.explication, C, ctx));
       } else if (x.kind === "calcul") {
         out.push(table([4300, 3272, 1500], [{ head: true, cells: [th("Résultat demandé"), th("Votre réponse"), th("Unité")] },
-          ...x.champs.map((c) => ({ h: 520, cells: [td(c.label), td(P ? para(run(c.rep, { b: true, color: ORANGE }), { after: 0 }) : ""), td(c.unite || "")] }))]));
+          ...x.champs.map((c) => ({ h: 520, cells: [td(c.label), td(P ? para(run(c.rep, { b: true, color: ORANGE }), { after: 0 }) : c.choix ? para(c.choix.flatMap((t, k) => [box(false), run(" " + t + (k < c.choix.length - 1 ? "     " : ""))]), { after: 0 }) : ""), td(c.unite || "")] }))]));
         if (P && x.correction) out.push(await blocks(x.correction, C, ctx));
       } else if (x.kind === "vf") {
         const [e1, e2] = x.etiquettes;
@@ -200,7 +200,7 @@
           x.criteres.forEach((c) => out.push(tiret(c, { b: false })));
           out.push(para(run("Exemple de réponse", { b: true, color: ORANGE }), { before: 120, after: 60, ...TITRE }));
           out.push(await blocks(x.corrige, C, ctx));
-        } else out.push(lignes(14));
+        } else out.push(lignes(x.lignes || 14));
       }
     }
     /* la ligne de licence ne part jamais seule sur une dernière page : le dernier bloc (paragraphe ou dernière ligne de tableau) lui est lié */
