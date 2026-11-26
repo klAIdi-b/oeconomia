@@ -6,23 +6,31 @@
    de télécharger une version imprimable (fichier HTML à ouvrir, puis à imprimer ou enregistrer en PDF). */
 (function () {
   "use strict";
-  const VARS = "--paper:#fff;--paper-2:#f2f4f1;--card:#fff;--ink:#12231C;--ink-soft:#4B5F56;--line:rgba(18,35,28,.22);--note:#1D5944;--note-soft:rgba(29,89,68,.10);--plum:#5B2C6C;--plum-soft:rgba(91,44,108,.10);--gold:#9C7516;--serial:#A3322A;--r:8px;--f-display:Georgia,'Times New Roman',serif;--f-body:'Segoe UI',Arial,sans-serif;--f-mono:Consolas,'Courier New',monospace;--f-engr:Georgia,serif";
+  const VARS = "--paper:#fff;--paper-2:#f2f4f1;--card:#fff;--ink:#12231C;--ink-soft:#4B5F56;--line:rgba(18,35,28,.22);--note:#1D5944;--note-soft:rgba(29,89,68,.10);--plum:#5B2C6C;--plum-soft:rgba(91,44,108,.10);--gold:#9C7516;--serial:#A3322A;--r:8px;--f-display:Aptos,Calibri,Carlito,'Segoe UI',Arial,sans-serif;--f-body:Aptos,Calibri,Carlito,'Segoe UI',Arial,sans-serif;--f-mono:Consolas,'Courier New',monospace;--f-engr:Aptos,Calibri,Carlito,'Segoe UI',Arial,sans-serif";
+  /* Document imprimé : Aptos (Calibri ou Carlito à défaut), 11 points au minimum pour le contenu, 9 à 10 points pour les éléments secondaires.
+     Un titre ne reste jamais seul en bas de page ; listes de réponses, tableaux courts et figures ne sont pas coupés. */
   const DOC_CSS = `
-.pr-doc{font:11pt/1.5 var(--f-body); color:var(--ink); background:#fff; max-width:180mm; margin:0 auto}
-.pr-doc h1{font:400 22pt/1.15 var(--f-display); margin:0 0 4pt}
-.pr-doc h2{font:400 20pt/1.15 var(--f-display); margin:0 0 6pt}
-.pr-doc h3{font:400 14pt/1.2 var(--f-display); margin:16pt 0 6pt; break-after:avoid}
-.pr-doc h4{font-size:11pt; margin:10pt 0 4pt; break-after:avoid}
+.pr-doc{font:11pt/1.5 var(--f-body); color:var(--ink); background:#fff; max-width:180mm; margin:0 auto; orphans:3; widows:3}
+.pr-doc h1{font:700 22pt/1.15 var(--f-display); margin:0 0 4pt}
+.pr-doc h2{font:700 20pt/1.15 var(--f-display); margin:0 0 6pt}
+.pr-doc h3{font:700 14pt/1.2 var(--f-display); margin:16pt 0 6pt}
+.pr-doc h4{font:700 11pt/1.3 var(--f-body); margin:10pt 0 4pt}
+.pr-doc h1, .pr-doc h2, .pr-doc h3, .pr-doc h4, .pr-doc h5, .pr-doc details > summary{break-after:avoid; page-break-after:avoid; break-inside:avoid; page-break-inside:avoid}
 .pr-doc p{margin:0 0 6pt}
+.pr-doc p:has(+ figure), .pr-doc p:has(+ table), .pr-doc p:has(+ ul), .pr-doc p:has(+ ol){break-after:avoid; page-break-after:avoid}
 .pr-doc a{color:var(--ink); text-decoration:none}
-.pr-doc table{border-collapse:collapse; margin:6pt 0 10pt; font-size:10pt}
-.pr-doc th, .pr-doc td{border-bottom:1px solid var(--line); padding:3pt 6pt; text-align:left; vertical-align:top}
-.pr-doc figure{margin:8pt 0; break-inside:avoid}
+.pr-doc table{border-collapse:collapse; margin:6pt 0 10pt; font-size:11pt}
+.pr-doc th, .pr-doc td{border-bottom:1px solid var(--line); padding:3pt 5pt; text-align:left; vertical-align:top}
+.pr-doc thead{display:table-header-group; break-after:avoid; page-break-after:avoid}
+.pr-doc tr{break-inside:avoid; page-break-inside:avoid}
+.pr-doc table:not(:has(tr:nth-of-type(8))){break-inside:avoid; page-break-inside:avoid}
+.pr-doc small{font-size:inherit}
+.pr-doc figure{margin:8pt 0; break-inside:avoid; page-break-inside:avoid}
 .pr-doc svg{width:100%; max-width:170mm; height:auto; display:block}
 .pr-doc figcaption{font-size:9pt; color:var(--ink-soft)}
 .pr-doc .essentiel, .pr-doc .suisse, .pr-doc .openq, .pr-doc .fiche-ex, .pr-doc .fiche-formule{border:1px solid var(--line); border-radius:6px; padding:6pt 9pt; margin:8pt 0; break-inside:avoid}
-.pr-doc .essentiel > span, .pr-doc .suisse > span, .pr-doc .openq > span{display:block; font:600 8pt var(--f-body); letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:4pt}
-.pr-doc details > summary{list-style:none; font:400 13pt var(--f-display); margin:12pt 0 4pt}
+.pr-doc .essentiel > span, .pr-doc .suisse > span, .pr-doc .openq > span{display:block; font:600 9pt var(--f-body); letter-spacing:.12em; text-transform:uppercase; color:var(--gold); margin-bottom:4pt}
+.pr-doc details > summary{list-style:none; font:700 13pt var(--f-display); margin:12pt 0 4pt}
 .pr-doc details > summary::-webkit-details-marker{display:none}
 .pr-doc .bnum{color:var(--gold); margin-right:6pt; font:600 9pt var(--f-mono)}
 .pr-doc .btxt small{display:block; font:9pt var(--f-body); color:var(--ink-soft)}
@@ -30,19 +38,23 @@
 .pr-doc .bchev, .pr-doc .ncontrols, .pr-doc .crumb, .pr-doc .readpill{display:none}
 .pr-head{display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid var(--line); padding-bottom:4pt; margin-bottom:12pt; font-size:9pt; color:var(--ink-soft)}
 .pr-head b{font:700 11pt var(--f-engr); letter-spacing:.14em; color:var(--ink)}
-.pr-foot{margin-top:16pt; padding-top:4pt; border-top:1px solid var(--line); font-size:8pt; color:var(--ink-soft)}
+.pr-foot{margin-top:16pt; padding-top:4pt; border-top:1px solid var(--line); font-size:9pt; color:var(--ink-soft); break-inside:avoid; break-before:avoid; page-break-before:avoid}
 .pr-sous{color:var(--ink-soft); margin-bottom:8pt}
 .pr-nom{margin:6pt 0 12pt}
-.pr-ex{break-inside:avoid; border-top:1px solid var(--line); padding-top:6pt; margin-top:10pt}
+.pr-ex{break-inside:avoid; page-break-inside:avoid; border-top:1px solid var(--line); padding-top:6pt; margin-top:10pt}
 .pr-ex h3{margin-top:0}
-.pr-comp{font-size:9pt; color:var(--ink-soft)}
+.pr-comp{font-size:11pt; color:var(--ink-soft); break-after:avoid; page-break-after:avoid}
+.pr-ex > p{break-after:avoid; page-break-after:avoid}
 .pr-opts, .pr-vf{margin:4pt 0 6pt; padding-left:18pt}
-.pr-opts li, .pr-vf li{margin-bottom:3pt}
+.pr-opts, .pr-champs{break-inside:avoid; page-break-inside:avoid}
+.pr-opts li, .pr-vf li{margin-bottom:3pt; break-inside:avoid; page-break-inside:avoid}
 .pr-box{white-space:nowrap; margin-left:6pt; color:var(--ink-soft)}
 .pr-champs{line-height:2.2}
 .pr-lignes span{display:block; height:22pt; border-bottom:1px solid var(--line)}
+.pr-lignes span:nth-child(-n+3){break-after:avoid; page-break-after:avoid}
 .pr-corr{margin:6pt 0; padding:6pt 9pt; border-left:3px solid var(--note); background:var(--note-soft)}
 .pr-corr p{margin:0 0 4pt}
+.pr-corr > p:first-child{break-after:avoid; page-break-after:avoid}
 .pr-qopts{margin:2pt 0 6pt; padding-left:18pt}
 `;
   const style = document.createElement("style");
@@ -75,7 +87,7 @@ ${DOC_CSS.replace(/\.pr-/g, "#printArea .pr-").replace(/#printArea \.pr-doc \.pr
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-zA-Z0-9]+/g, "-").replace(/^-|-$/g, "").toLowerCase().slice(0, 60) || "oeconomia";
   const wrap = (title, html) => `<div class="pr-doc"><header class="pr-head"><b>ŒCONOMIA</b><span>${esc(title)}</span></header>${html}<footer class="pr-foot">Œconomia · ${esc(OEC.linkTo ? OEC.linkTo(location.hash.slice(1)) : location.href)} · imprimé le ${new Date().toLocaleDateString("fr-CH")}</footer></div>`;
-  const standalone = (title, inner) => `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · Œconomia</title><style>:root{${VARS}} body{margin:16px; background:#fff} ${DOC_CSS} @page{margin:14mm} .pr-note{font:13px Arial,sans-serif; color:#555; margin-bottom:12px} @media print{.pr-note{display:none}}</style></head><body><p class="pr-note">Pour imprimer ou enregistrer en PDF : Ctrl + P (ou Cmd + P sur Mac).</p>${inner}</body></html>`;
+  const standalone = (title, inner) => `<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)} · Œconomia</title><style>:root{${VARS}} body{margin:16px; background:#fff} ${DOC_CSS} @page{margin:14mm} .pr-note{font:13px Aptos,Calibri,Carlito,'Segoe UI',Arial,sans-serif; color:#555; margin-bottom:12px} @media print{.pr-note{display:none}}</style></head><body><p class="pr-note">Pour imprimer ou enregistrer en PDF : Ctrl + P (ou Cmd + P sur Mac).</p>${inner}</body></html>`;
 
   /* ----- Impression ----- */
   let area = null, last = null;
