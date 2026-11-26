@@ -18,9 +18,9 @@
   const NORMATIF = (it) => it.normatif != null ? !!it.normatif : /faut-il|faudrait-il|devrait-on|doit-on|souhaitable/i.test(it.titre + " " + (typeof it.enonce === "string" ? it.enonce : ""));
   const TYPES = { qcm: "Choix multiple", vf: "Vrai ou faux", calcul: "Calcul", graphique: "Graphique", redaction: "Rédaction", document: "Analyse de document" };
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const fmt = (x, d = 2) => Number(x).toLocaleString("fr-CH", { maximumFractionDigits: d, minimumFractionDigits: 0 }).replace(/ | /g, " ").replace(/^-/, "−");
-  /* arrondi unique pour les réponses et les corrections : demi arrondi en s’éloignant de zéro, sans erreur de virgule flottante */
+  /* arrondi unique pour les réponses, les corrections et l’affichage : demi arrondi en s’éloignant de zéro, sans erreur de virgule flottante */
   const arr = (x, d = 2) => { const k = Math.pow(10, d); return (x < 0 ? -1 : 1) * Math.round(Math.abs(x) * k + 1e-9) / k; };
+  const fmt = (x, d = 2) => arr(Number(x), d).toLocaleString("fr-CH", { maximumFractionDigits: d, minimumFractionDigits: 0 }).replace(/ | /g, " ").replace(/^-/, "−");
   const rnd = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
   const pick = (arr) => arr[Math.floor(Math.random() * arr.length)];
   const parseNum = (s) => {
@@ -371,7 +371,7 @@
     if (it.type === "calcul") {
       const p = it.gen(), rep = it.reponses(p); card.__p = p;
       const figc = it.figp ? it.figp(p) : fig;
-      b.innerHTML = `${it.enonce(p)}${figc}<div class="ex-fields">${it.champs.map((c, j) => `<label><span>${c.label}</span>${c.choix ? `<select data-j="${j}"><option value="">Choisir…</option>${c.choix.map((x, k) => `<option value="${k}">${x}</option>`).join("")}</select>` : `<input type="text" inputmode="decimal" autocomplete="off" data-j="${j}">`}<em>${c.unite || ""}</em></label>`).join("")}</div>
+      b.innerHTML = `${it.enonce(p)}${figc}<div class="ex-fields">${it.champs.map((c, j) => `<label><span>${c.label}</span>${c.choix ? `<select data-j="${j}"><option value="">Choisir…</option>${c.choix.map((x, k) => [x, k]).sort(() => Math.random() - 0.5).map(([x, k]) => `<option value="${k}">${x}</option>`).join("")}</select>` : `<input type="text" inputmode="decimal" autocomplete="off" data-j="${j}">`}<em>${c.unite || ""}</em></label>`).join("")}</div>
         <div class="ex-actions"><button type="button" class="btn small ex-check">Vérifier</button><button type="button" class="btn small ghost ex-show">Je bloque : voir la correction</button><button type="button" class="btn small ghost ex-new">Nouvelles valeurs</button></div>
         ${it.niveau <= 2 ? methodeLink(it, "Besoin d’un exemple résolu avant de commencer ? Fiche méthode :") : ""}
         <div class="ex-feedback" hidden></div><div class="ex-corr" hidden><h4>Correction pas à pas</h4>${it.correction(p)}${notionLink(it)}${methodeLink(it)}</div>`;
