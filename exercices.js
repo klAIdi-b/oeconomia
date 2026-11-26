@@ -113,7 +113,7 @@
   const coul = (c) => COUL[c] || c || COUL.n;
   const gtxt = (x, y, t, c, anc = "start", mono) => `<text x="${(+x).toFixed(1)}" y="${(+y).toFixed(1)}" text-anchor="${anc}" style="fill:${coul(c)}; font:${mono ? "600 16px var(--f-mono, monospace)" : "700 16px Manrope, sans-serif"}">${t}</text>`;
   function graphe(o) {
-    const W = 600, H = o.h || 300, L = o.left || 66, R = o.right || 30, T = 34, B = o.bottom || 48;
+    const W = 600, H = o.h || (o.gx && o.xlab ? 312 : 300), L = o.left || 66, R = o.right || 30, T = 34, B = o.bottom || (o.gx && o.xlab ? 60 : 48);   /* une ligne de plus sous l’axe quand il porte des graduations et un titre */
     const x0 = o.xmin || 0, x1 = o.xmax, y0 = o.ymin || 0, y1 = o.ymax;
     const X = (x) => L + ((x - x0) / (x1 - x0)) * (W - L - R), Y = (y) => H - B - ((y - y0) / (y1 - y0)) * (H - T - B);
     const pt = (p) => `${X(p[0]).toFixed(1)},${Y(p[1]).toFixed(1)}`;
