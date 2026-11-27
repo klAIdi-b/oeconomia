@@ -33,7 +33,7 @@
     titre: "Lire un déplacement de courbe", competence: "Distinguer un déplacement de la demande d’un mouvement le long de la courbe.",
     enonce: P("Sur le marché des glaces en Suisse, on observe le déplacement représenté ci-dessous : la courbe de demande D passe en D′.", "Quel événement peut expliquer ce déplacement ?"),
     fig: () => marche({ shift: "demande+", caption: "La demande passe de D à D′ ; l’équilibre passe de E à E′." }),
-    options: ["Le prix des glaces a baissé.", "Une vague de chaleur rend les glaces plus désirables à chaque prix.", "Le coût du lait, utilisé pour fabriquer les glaces, a augmenté.", "De nouveaux fabricants de glaces se sont installés."], c: 1, pourquoi: ["Une baisse du prix fait glisser le long de la courbe de demande ; elle ne la déplace pas.", null, "Le coût du lait concerne les producteurs : il déplace la courbe d’offre, pas celle de la demande.", "De nouveaux fabricants augmentent l’offre : c’est la courbe d’offre qui se déplace."],
+    options: ["Le prix des glaces a baissé, ce qui pousse les consommateurs à en acheter plus.","Une vague de chaleur rend les glaces plus désirables à chaque prix.","Le coût du lait, utilisé pour fabriquer les glaces, a augmenté.","De nouveaux fabricants de glaces se sont installés sur le marché."], c: 1, pourquoi: ["Une baisse du prix fait glisser le long de la courbe de demande ; elle ne la déplace pas.", null, "Le coût du lait concerne les producteurs : il déplace la courbe d’offre, pas celle de la demande.", "De nouveaux fabricants augmentent l’offre : c’est la courbe d’offre qui se déplace."],
     explication: P("La courbe de demande se déplace vers la droite quand, <b>à chaque prix</b>, les consommateurs veulent davantage du bien : changement de goûts, de météo, hausse des revenus, hausse du prix d’un substitut. La baisse du prix ne déplace pas la courbe : elle fait glisser le long de celle-ci. Le coût du lait et l’arrivée de nouveaux fabricants touchent l’<i>offre</i>.", "Résultat : au nouvel équilibre E′, le prix <b>et</b> la quantité échangée augmentent.") },
 
   { id: "m1-vf-marche", theme: "marche", niveau: 1, type: "vf", notion: "offre-demande",
@@ -98,7 +98,7 @@
   { id: "m2-recette", theme: "marche", niveau: 2, type: "qcm", notion: "elasticite",
     titre: "Élasticité et recette", competence: "Prévoir l’effet d’une hausse de prix sur la recette.",
     enonce: P("L’élasticité-prix de la demande de cigarettes est estimée à environ −0,4. L’État augmente fortement les taxes, ce qui fait monter le prix du paquet de 10 %. Quel effet peut-on prévoir ?"),
-    options: ["La consommation baisse d’environ 4 %, et les dépenses totales des fumeurs augmentent.", "La consommation baisse d’environ 40 %, et les recettes fiscales s’effondrent.", "La consommation ne change pas, car les fumeurs sont dépendants.", "La consommation baisse de 10 %, comme le prix."], c: 0, pourquoi: [null, "Une baisse de 40 % supposerait une élasticité de −4. Avec −0,4, la quantité baisse dix fois moins, et les recettes fiscales augmentent.", "La dépendance rend la demande peu élastique, mais pas nulle : une partie des fumeurs réduit sa consommation, surtout les jeunes.", "Une baisse de 10 % correspondrait à une élasticité de −1. Ici, la quantité réagit moins que le prix."],
+    options: ["La consommation baisse d’environ 4 %, et les dépenses des fumeurs augmentent.","La consommation baisse d’environ 40 %, et les recettes fiscales s’effondrent.","La consommation ne change pas, car les fumeurs sont dépendants au tabac.","La consommation baisse de 10 %, autant que le prix du paquet."], c: 0, pourquoi: [null, "Une baisse de 40 % supposerait une élasticité de −4. Avec −0,4, la quantité baisse dix fois moins, et les recettes fiscales augmentent.", "La dépendance rend la demande peu élastique, mais pas nulle : une partie des fumeurs réduit sa consommation, surtout les jeunes.", "Une baisse de 10 % correspondrait à une élasticité de −1. Ici, la quantité réagit moins que le prix."],
     explication: P("Avec une élasticité de −0,4, une hausse de prix de 10 % réduit la quantité d’environ 0,4 × 10 = <b>4 %</b>. La demande est inélastique : le prix monte plus que la quantité ne baisse, donc la dépense totale augmente (environ 1,10 × 0,96 ≈ 1,056, soit +5,6 %).", "C’est pourquoi les taxes sur le tabac rapportent beaucoup à l’État. L’effet sur la santé existe, mais il est plus fort chez les jeunes, dont la demande est plus élastique.") },
 
   { id: "m2-taxe-graph", theme: "marche", niveau: 2, type: "graphique", notion: "surplus",
@@ -126,7 +126,7 @@
       ["Un prix plafond fixé en dessous du prix d’équilibre provoque une pénurie.", true, "À ce prix bas, la quantité demandée dépasse la quantité offerte. Une partie des acheteurs ne trouve rien à acheter, d’où des files ou des listes d’attente."],
       ["Un prix plafond fixé au-dessus du prix d’équilibre n’a aucun effet.", true, "Le prix d’équilibre est déjà inférieur au plafond : la contrainte ne joue pas, on dit qu’elle n’est pas « contraignante »."],
       ["Un prix plancher fixé au-dessus de l’équilibre provoque un excédent.", true, "Au prix élevé, les vendeurs offrent plus que ce que les acheteurs demandent. C’est le cas des anciens prix garantis agricoles, qui ont créé des surplus de beurre ou de lait en Europe."],
-      ["Un salaire minimum est un exemple de prix plafond.", false, "C’est un <b>prix plancher</b> sur le marché du travail : il interdit de payer moins qu’un certain montant. Ses effets sur l’emploi dépendent de son niveau et du fonctionnement du marché."]
+      ["Un salaire minimum est un exemple de prix plafond appliqué au marché du travail.", false, "C’est un <b>prix plancher</b> sur le marché du travail : il interdit de payer moins qu’un certain montant. Ses effets sur l’emploi dépendent de son niveau et du fonctionnement du marché."]
     ] },
 
   { id: "m2-loyers-zurich", theme: "marche", niveau: 2, type: "redaction", notion: "offre-demande",
@@ -223,10 +223,10 @@
     titre: "Constat ou jugement de valeur ?", competence: "Distinguer un constat, que l’on peut vérifier, d’un jugement de valeur, qui dit ce qui devrait être.",
     enonce: P("Pour chaque affirmation, dites s’il s’agit d’un <b>constat</b>, que l’on peut vérifier avec des données, même s’il se révèle faux, ou d’un <b>jugement de valeur</b>, qui dit ce qui devrait être."),
     affirmations: [
-      ["Il est injuste que les loyers soient si élevés à Genève.", false, "Il dit ce qui devrait être. Des faits peuvent éclairer le débat, mais pas le trancher : « injuste » est une appréciation."],
+      ["Il est injuste que les loyers soient si élevés à Genève pour les familles modestes.", false, "Il dit ce qui devrait être. Des faits peuvent éclairer le débat, mais pas le trancher : « injuste » est une appréciation."],
       ["Quand le prix d’un bien augmente, la quantité demandée diminue en général.", true, "On peut le vérifier avec des données, et les observations le confirment dans la grande majorité des marchés."],
       ["Après le plafonnement des loyers à Berlin en 2020, le nombre d’annonces de location a baissé.", true, "On peut le vérifier avec des données : des études l’ont mesuré sur les annonces publiées."],
-      ["L’État devrait garantir un logement abordable à chacun.", false, "Il dit ce qui devrait être. Des faits peuvent éclairer le débat, mais pas le trancher : « devrait » signale un choix politique."]] },
+      ["L’État devrait garantir un logement abordable à chacun, quel que soit son revenu.", false, "Il dit ce qui devrait être. Des faits peuvent éclairer le débat, mais pas le trancher : « devrait » signale un choix politique."]] },
   ]);
   /* =========================== COMPLÉMENTS : séries portées à douze exercices (novembre 2026) =========================== */
   X.add([
