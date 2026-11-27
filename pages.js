@@ -348,7 +348,7 @@
     const DQ = (OEC.dossierQuiz || {})[id];
     const quizDossier = DQ ? `<h3>Vérifier sa compréhension</h3><div class="quizbox">${DQ.quiz.map((x, i) => `
         <div class="quizq" data-c="${x.c}"><p class="qq"><b>${i + 1}.</b> ${x.q}</p>
-          <div class="qopts">${x.o.map((o, j) => `<button class="qopt" data-j="${j}">${o}</button>`).join("")}</div>
+          <div class="qopts">${ordreReponses(x).map((j) => `<button class="qopt" data-j="${j}">${x.o[j]}</button>`).join("")}</div>
           <p class="qexpl" hidden>${x.e}</p></div>`).join("")}
         <p class="qscore" hidden></p></div>
         <p class="dq-train"><a class="btn small" href="#ex-${DQ.theme}-1">S’entraîner sur ce thème →</a></p>` : "";
@@ -536,15 +536,16 @@
 
   /* Notice longue : essentiel, sections, cas, objections, écoles, texte source, quiz, lectures.
      level : "decouvrir" ou "approfondir" ; blocs : présentation en blocs repliables */
+  /* Ordre des réponses mélangé de façon stable (graine tirée du texte de la question),
+     pour que la bonne réponse ne soit pas toujours à la même place (quiz des notices, des portraits et des dossiers). */
+  function ordreReponses(q) {
+    let h = 2166136261; for (const ch of q.q) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
+    const idx = q.o.map((_, j) => j);
+    for (let k = idx.length - 1; k > 0; k--) { h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0; const r = h % (k + 1); [idx[k], idx[r]] = [idx[r], idx[k]]; }
+    return idx;
+  }
   function noticeBody(c, N, level, blocs) {
-    /* Ordre des réponses mélangé de façon stable (graine tirée du texte de la question),
-       pour que la bonne réponse ne soit pas toujours à la même place. */
-    const order = (q) => {
-      let h = 2166136261; for (const ch of q.q) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
-      const idx = q.o.map((_, j) => j);
-      for (let k = idx.length - 1; k > 0; k--) { h = Math.imul(h ^ (h >>> 15), 2246822507) >>> 0; const r = h % (k + 1); [idx[k], idx[r]] = [idx[r], idx[k]]; }
-      return idx;
-    };
+    const order = ordreReponses;
     const quizHtml = (items) => `<div class="quizbox">${items.map((q, i) => `
         <div class="quizq" data-c="${q.c}"><p class="qq"><b>${i + 1}.</b> ${q.q}</p>
           <div class="qopts">${order(q).map((j) => `<button class="qopt" data-j="${j}">${q.o[j]}</button>`).join("")}</div>
