@@ -1,4 +1,4 @@
-/* Œconomia — Entraînement : thème « Emploi et chômage » (24 exercices, trois niveaux). */
+/* Œconomia — Entraînement : thème « Emploi et chômage » (36 exercices, trois niveaux). */
 (function () {
   const X = OEC.exo, { rnd, pick, fmt } = X;
   const P = (...a) => a.map((t) => `<p>${t}</p>`).join("");

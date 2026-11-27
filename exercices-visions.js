@@ -1,4 +1,4 @@
-/* Œconomia — Entraînement : thème « Autres visions de l’économie » (18 exercices, trois niveaux).
+/* Œconomia — Entraînement : thème « Autres visions de l’économie » (36 exercices, trois niveaux).
    Polanyi, Kalecki, Aglietta, Waring, Kelton : encastrement, monnaie endogène, travail non rémunéré, mode de régulation. */
 (function () {
   const X = OEC.exo, { rnd, pick, fmt } = X;

@@ -2,8 +2,8 @@
    Des itinéraires tout tracés (notions, simulateurs, portraits, crises, controverses, exercices), dans l’ordre.
    Page #parcours (liste) et #parcours-<id> (détail). Pendant un parcours, un bandeau en bas de l’écran
    rappelle l’étape en cours et mène à la suivante.
-   Une étape compte comme faite quand la notice, le dossier ou le portrait est « lu », quand au moins 4 exercices
-   sur 8 du niveau sont réussis, ou, pour les autres (simulateur, crise, controverse, fiche), quand on l’a ouverte.
+   Une étape compte comme faite quand la notice, le dossier ou le portrait est « lu », quand la moitié des exercices
+   du niveau sont réussis (6 sur 12), ou, pour les autres (simulateur, crise, controverse, fiche), quand on l’a ouverte.
    Tout est enregistré dans le navigateur : « oec-parcours » (étapes ouvertes, parcours en cours).
    Pour ajouter un parcours : compléter la liste P ci-dessous (types d’étapes : c, q, eco, lab, crise, debat, ex, m). */
 (function () {
@@ -112,13 +112,13 @@
         ["c:monnaie-endogene", "D’où vient l’argent sur votre compte ? Le crédit crée la monnaie."],
         ["debat:kelton-summers", "Un État peut-il dépenser sans compter ? La théorie moderne de la monnaie face à ses critiques."],
         ["c:travail-non-remunere", "Le travail que le PIB ne compte pas, et pourquoi c’est important."],
-        ["ex:visions-1", "Sept exercices de niveau Découverte pour vérifier ce que vous avez retenu."]] }
+        ["ex:visions-1", "Les douze exercices du niveau Découverte, pour vérifier ce que vous avez retenu."]] }
   ];
 
   const KEY = "oec-parcours";
   const NIV = { 1: "Découverte", 2: "Intermédiaire", 3: "Avancé" };
   const PREFIX = { m: "marche", mo: "monnaie", cr: "croissance", em: "emploi", co: "commerce", in: "inegalites", et: "etat", fi: "finance", vi: "visions" };
-  const MIN = { c: 7, q: 20, eco: 12, lab: 8, crise: 8, debat: 10, ex: 20, exs: 15, m: 8, page: 6 };
+  const MIN = { c: 7, q: 20, eco: 12, lab: 8, crise: 8, debat: 10, ex: 30, exs: 15, m: 8, page: 6 };
   const get = (k, d) => { try { return JSON.parse(localStorage.getItem(k) || "") || d; } catch (e) { return d; } };
   let S = get(KEY, {}); S.vus = S.vus || [];
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };

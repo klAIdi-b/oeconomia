@@ -1,4 +1,4 @@
-/* Œconomia — Entraînement : thème « Inégalités et répartition » (24 exercices, trois niveaux). */
+/* Œconomia — Entraînement : thème « Inégalités et répartition » (36 exercices, trois niveaux). */
 (function () {
   const X = OEC.exo, { rnd, pick, fmt } = X;
   const P = (...a) => a.map((t) => `<p>${t}</p>`).join("");
