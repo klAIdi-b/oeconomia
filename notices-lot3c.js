@@ -92,23 +92,23 @@ ${frontiere}
     },
     quiz: [
       { q: "Quand une situation est-elle optimale au sens de Pareto ?",
-        o: ["Quand chacun a la même chose", "Quand on ne peut améliorer le sort de quelqu’un sans détériorer celui d’au moins un autre", "Quand la production est maximale", "Quand l’État a redistribué les revenus"], c: 1,
+        o: ["Quand tout le monde possède la même part des richesses produites", "Quand on ne peut aider quelqu’un sans nuire à une autre personne", "Quand la production totale du pays atteint son niveau le plus élevé", "Quand l’État a redistribué les revenus de manière équitable entre tous"], c: 1,
         e: "L’optimum de Pareto est l’absence de toute amélioration possible sans perdant ; il ne dit rien de l’égalité." },
       { q: "Une réforme fait gagner 100 à Anna et perdre 20 à Bruno, sans compensation. Est-ce une amélioration de Pareto ?",
-        o: ["Oui, car le gain total est positif", "Non, car Bruno perd ; c’est en revanche une amélioration au sens de Kaldor-Hicks", "Oui, si Anna est plus pauvre", "Non, et ce n’est pas non plus une amélioration de Kaldor-Hicks"], c: 1,
+        o: ["Oui, car le gain total de 80 est positif et l’emporte sur la perte", "Non, car Bruno perd, même si c’est une amélioration au sens de Kaldor-Hicks", "Oui, si Anna est plus pauvre que Bruno, car la réforme réduit l’écart", "Non, et ce n’est pas non plus une amélioration au sens de Kaldor-Hicks"], c: 1,
         e: "Anna pourrait indemniser Bruno et rester gagnante (critère de Kaldor-Hicks), mais tant que l’indemnisation n’a pas lieu, Bruno est perdant." },
       { q: "Que dit le premier théorème du bien-être ?",
-        o: ["Tout équilibre de marché est juste", "Un équilibre de concurrence parfaite est Pareto-optimal, sous certaines conditions", "Les marchés réels sont toujours efficaces", "La redistribution est inutile"], c: 1,
+        o: ["Tout équilibre de marché est juste et donc souhaitable pour la société", "Un équilibre de concurrence parfaite est Pareto-optimal sous conditions", "Les marchés réels atteignent l’efficacité sans intervention de l’État", "La redistribution des revenus est inutile dans une économie de marché"], c: 1,
         e: "Sous des conditions strictes (marchés complets, pas d’externalités ni de pouvoir de marché, information parfaite), le marché atteint l’efficacité." },
       { q: "Pourquoi le critère de Pareto est-il souvent jugé favorable au statu quo ?",
-        o: ["Parce qu’il interdit toute réforme qui fait un perdant, même minime", "Parce qu’il favorise les pauvres", "Parce qu’il impose l’égalité", "Parce qu’il ne s’applique qu’aux marchés"], c: 0,
+        o: ["Parce qu’il interdit toute réforme qui fait un perdant, même minime", "Parce qu’il favorise les plus pauvres au détriment des plus riches", "Parce qu’il impose que tous les revenus soient redistribués également", "Parce qu’il vise les décisions des entreprises et pas celles de l’État"], c: 0,
         e: "En exigeant que personne ne perde, il donne un droit de veto implicite à ceux que la situation actuelle avantage." },
       { q: "Pourquoi l’échange croisé de reins est-il une amélioration de Pareto ?",
-        o: ["Parce que les organes sont vendus", "Parce que plusieurs patients sont greffés sans que personne ne soit lésé", "Parce que l’État paie les donneurs", "Parce qu’il réduit les dépenses de santé"], c: 1,
+        o: ["Parce que les organes sont vendus au plus offrant, ce qui accroît l’offre", "Parce que plusieurs patients sont greffés sans que personne soit lésé", "Parce que l’État rémunère les donneurs pour qu’ils acceptent l’opération", "Parce qu’il réduit fortement les dépenses de santé des hôpitaux publics"], c: 1,
         e: "Chaque donneur donne comme prévu, chaque patient reçoit un rein compatible : il n’y a que des gagnants." }
     ],
     transfert: { q: "Un pays supprime ses droits de douane sur l’acier : les consommateurs gagnent 900 millions, les producteurs d’acier perdent 300 millions, sans compensation. Est-ce une amélioration de Pareto ?",
-      o: ["Non, puisque des producteurs y perdent ; les gagnants pourraient toutefois indemniser les perdants", "Oui, puisque le gain total est positif", "Oui, si les consommateurs sont plus nombreux", "Non, et les gagnants ne pourraient pas indemniser les perdants"], c: 0,
+      o: ["Non, des producteurs y perdent, mais les gagnants pourraient les indemniser", "Oui, puisque le gain total de 600 millions l’emporte sur la perte", "Oui, si les consommateurs sont bien plus nombreux que les producteurs d’acier", "Non, et les consommateurs ne pourraient pas indemniser les producteurs d’acier"], c: 0,
       e: "C’est une amélioration au sens de Kaldor-Hicks, pas de Pareto : sans indemnisation, les perdants restent perdants." },
     ouverte: {
       q: "Plusieurs pays ont relevé l’âge de la retraite ces dernières années, comme la France en 2023 ou la Suisse pour les femmes à partir de 2025. Comment analyser ces réformes avec les critères de Pareto et de Kaldor-Hicks ?",
@@ -124,10 +124,10 @@ ${frontiere}
     decouvrir: {
       questions: [
         { q: "Selon le critère de Pareto, quand une situation s’améliore-t-elle ?",
-          o: ["Quand au moins une personne y gagne et que personne n’y perd", "Quand la majorité y gagne", "Quand le revenu total augmente", "Quand les plus pauvres y gagnent"], c: 0,
+          o: ["Quand au moins une personne y gagne et que personne n’y perd", "Quand la majorité de la population y gagne, même si une minorité y perd", "Quand le revenu total de la société augmente, quelle qu’en soit la répartition", "Quand les plus pauvres y gagnent davantage que les plus riches"], c: 0,
           e: "C’est un critère très exigeant, qui évite de comparer les bonheurs." },
         { q: "Pourquoi une situation où une seule personne a presque tout peut-elle être efficace au sens de Pareto ?",
-          o: ["Parce qu’on ne peut rien lui prendre sans la léser", "Parce qu’elle est juste", "Parce que les autres sont satisfaits", "Parce que l’État l’a voulue"], c: 0,
+          o: ["Parce qu’on ne peut rien lui prendre pour aider d’autres sans la léser", "Parce que cette situation est juste et que chacun l’accepte", "Parce que les autres personnes se déclarent satisfaites de leur sort", "Parce que l’État a voulu cette répartition et l’a mise en place"], c: 0,
           e: "Efficace ne veut pas dire juste." }
       ],
       duree: 5,
@@ -238,23 +238,23 @@ ${chaine}
     },
     quiz: [
       { q: "Que désigne une « capabilité » chez Sen ?",
-        o: ["Une compétence professionnelle", "Une façon de vivre qu’une personne est réellement en mesure de choisir", "Le revenu disponible", "Le niveau de satisfaction déclaré"], c: 1,
+        o: ["Une compétence professionnelle qu’une personne a acquise par la formation", "Une façon de vivre qu’une personne est réellement en mesure de choisir", "Le revenu disponible dont une personne dispose pour acheter ce qu’elle veut", "Le niveau de satisfaction que la personne déclare dans les enquêtes"], c: 1,
         e: "Les capabilités sont l’ensemble des fonctionnements (être en bonne santé, instruit, mobile…) qu’une personne peut effectivement atteindre." },
       { q: "Pourquoi Sen juge-t-il la satisfaction déclarée insuffisante pour mesurer le bien-être ?",
-        o: ["Parce qu’elle est trop difficile à mesurer", "Parce que les personnes démunies peuvent adapter leurs désirs à leurs privations", "Parce qu’elle ne tient pas compte du revenu", "Parce qu’elle varie trop d’un jour à l’autre"], c: 1,
+        o: ["Parce qu’elle est trop difficile à mesurer de façon fiable dans les enquêtes", "Parce que les démunis finissent par adapter leurs désirs à leurs privations", "Parce qu’elle ne tient pas compte du revenu des personnes interrogées", "Parce qu’elle varie trop d’un jour à l’autre selon l’humeur des gens"], c: 1,
         e: "Ce sont les « préférences adaptatives » : se déclarer satisfait de peu ne signifie pas que la situation est bonne." },
       { q: "Quelle est la différence entre jeûner et avoir faim selon Sen ?",
-        o: ["Aucune, puisque l’effet sur la santé est le même", "Le fonctionnement est le même, mais seul celui qui jeûne a la capabilité de manger", "Celui qui jeûne est plus pauvre", "Celui qui jeûne a moins de fonctionnements que celui qui a faim"], c: 1,
+        o: ["Aucune différence, puisque l’effet sur la santé est identique pour les deux", "Même fonctionnement, mais seul celui qui jeûne pouvait choisir de manger", "Celui qui jeûne est plus pauvre et dispose de moins de ressources", "Celui qui jeûne a moins de fonctionnements que celui qui a faim"], c: 1,
         e: "Les deux sont mal nourris, mais seul le premier a choisi ; c’est la liberté de choix, donc la capabilité, qui les distingue." },
       { q: "Quelles dimensions combine l’Indice de développement humain ?",
-        o: ["Revenu, inflation, chômage", "Espérance de vie, éducation, revenu par habitant", "PIB, dette, exportations", "Bonheur, liberté, sécurité"], c: 1,
+        o: ["Revenu par habitant, inflation, taux de chômage moyen", "Espérance de vie, éducation, revenu par habitant", "PIB, dette publique, volume des exportations", "Bonheur déclaré, liberté politique, sécurité"], c: 1,
         e: "Créé en 1990 par Mahbub ul Haq avec Sen, l’IDH combine santé, éducation et revenu." },
       { q: "Qu’a montré Sen à propos de la famine du Bengale de 1943 ?",
-        o: ["Qu’elle était due à une récolte catastrophique", "Qu’elle venait de l’effondrement des droits d’accès à la nourriture de certains groupes, malgré une production non exceptionnellement basse", "Qu’elle avait été provoquée par une épidémie", "Qu’elle avait touché toutes les classes sociales également"], c: 1,
-        e: "La hausse des prix alimentaires, sans hausse des revenus des plus pauvres, a privé certains groupes de la capacité de se nourrir." }
+        o: ["Qu’elle était due à une récolte catastrophique qui avait vidé les greniers", "Qu’elle venait de l’effondrement des droits d’accès à la nourriture de certains groupes", "Qu’elle avait été provoquée par une épidémie qui avait empêché de travailler", "Qu’elle avait frappé toutes les classes sociales de la même manière et partout"], c: 1,
+        e: "La hausse des prix alimentaires, sans hausse des revenus des plus pauvres, a privé certains groupes de la capacité de se nourrir, alors que la production n’était pas exceptionnellement basse." }
     ],
     transfert: { q: "Deux pays ont le même revenu par habitant. Dans le premier, les filles quittent l’école à 12 ans et l’hôpital le plus proche est à une journée de route. Que conclurait Sen ?",
-      o: ["Le développement y est moindre, car les possibilités réelles de vie sont plus faibles", "Les deux pays sont aussi développés, puisque leur revenu est le même", "Le premier est plus développé, car il dépense moins pour l’école", "On ne peut rien dire sans connaître le bonheur déclaré"], c: 0,
+      o: ["Le développement y est moindre, faute de possibilités réelles de vie", "Les deux pays sont aussi développés, puisque leur revenu est le même", "Le premier est plus développé, car l’État y dépense moins pour l’école", "On ne peut rien dire sans connaître le niveau de bonheur déclaré par chacun"], c: 0,
       e: "Le développement se mesure aux libertés réelles, pas seulement au revenu." },
     ouverte: {
       q: "Les pays en tête du classement de l’IDH, comme la Norvège ou l’Islande, n’ont-ils plus de privations à corriger ? Quels groupes l’approche par les capabilités inviterait-elle à regarder ?",
@@ -270,10 +270,10 @@ ${chaine}
     decouvrir: {
       questions: [
         { q: "Quel fait surprenant Amartya Sen relève-t-il à propos des hommes afro-américains et des habitants du Kerala ?",
-          o: ["Les premiers, plus riches en moyenne, avaient moins de chances d’atteindre un âge avancé", "Les seconds étaient plus riches", "Les deux groupes avaient la même espérance de vie", "Les premiers étaient plus nombreux à faire des études"], c: 0,
+          o: ["Les premiers, plus riches, avaient moins de chances d’atteindre un âge avancé", "Les seconds étaient bien plus riches et vivaient plus longtemps", "Les deux groupes avaient la même espérance de vie, malgré des revenus différents", "Les premiers étaient plus nombreux à faire des études supérieures"], c: 0,
           e: "Le revenu ne dit pas tout de la qualité d’une vie." },
         { q: "Selon Sen, pourquoi deux personnes au même revenu n’ont-elles pas forcément les mêmes possibilités ?",
-          o: ["Parce que la santé, le handicap ou les règles de la société changent ce qu’elles peuvent réellement faire", "Parce qu’elles ne dépensent pas leur argent de la même façon", "Parce que les prix sont différents chaque jour", "Parce que l’une épargne plus que l’autre"], c: 0,
+          o: ["Parce que santé, handicap ou règles sociales changent ce qu’elles peuvent faire", "Parce qu’elles ne dépensent pas leur revenu de la même façon, selon leurs goûts", "Parce que les prix changent chaque jour et ne sont pas les mêmes pour tous", "Parce que l’une épargne davantage que l’autre et dépense donc moins"], c: 0,
           e: "Ce qui compte, ce sont les capabilités : ce qu’on est réellement capable d’être et de faire." }
       ],
       duree: 5,

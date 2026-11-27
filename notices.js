@@ -108,20 +108,20 @@ OEC.notices["institutions-inclusives"] = {
       o: ["Parce que les deux villes ont des climats très différents", "Parce qu’il neutralise la géographie et la culture, et ne laisse varier que les institutions", "Parce que la ville américaine dispose de ressources naturelles bien plus abondantes", "Parce qu’il montre que la culture explique l’essentiel des écarts de revenu"],
       c: 1, e: "Les deux villes partagent climat, maladies, ancêtres et culture. La différence de prospérité ne peut donc venir que de ce qui diffère : les règles des États-Unis et celles du Mexique." },
     { q: "Dans l’article de 2001, à quoi sert la mortalité des premiers colons ?",
-      o: ["À mesurer directement la pauvreté actuelle", "À montrer que les maladies tropicales rendent les pays pauvres", "À isoler une source de différences institutionnelles sans lien direct avec la richesse actuelle", "À estimer le nombre de colons installés aujourd’hui"],
+      o: ["À mesurer directement le niveau de pauvreté actuel de chacune des anciennes colonies", "À montrer que les maladies tropicales suffisent à expliquer la pauvreté des pays du Sud", "À isoler des différences d’institutions sans lien direct avec la richesse d’aujourd’hui", "À estimer combien de descendants de colons vivent encore aujourd’hui dans chacun de ces pays"],
       c: 2, e: "C’est une variable instrumentale : elle a influencé le type de colonisation, donc les institutions, sans affecter directement le revenu actuel. C’est précisément ce point que conteste Albouy." },
     { q: "Pourquoi une élite peut-elle refuser des institutions qui enrichiraient le pays ?",
-      o: ["Par ignorance économique", "Parce que la destruction créatrice menace sa richesse et son pouvoir", "Parce que les institutions inclusives coûtent trop cher", "Parce que la culture locale l’interdit"],
+      o: ["Parce que les élites ignorent les bénéfices économiques de ces réformes", "Parce que la destruction créatrice menace sa richesse et son pouvoir", "Parce que ces institutions coûtent trop cher à financer pour l’État", "Parce que la culture du pays lui interdit de changer les règles établies"],
       c: 1, e: "Les auteurs rejettent l’hypothèse de l’ignorance. Les élites calculent : de nouveaux entrepreneurs, de nouvelles technologies et de nouveaux groupes enrichis menacent leurs positions." },
     { q: "Que désigne le « renversement de fortune » ?",
-      o: ["Le fait que les anciennes colonies les plus prospères vers 1500 sont souvent devenues relativement plus pauvres", "La chute des empires européens après 1945", "La faillite des compagnies coloniales", "Le rattrapage de l’Asie depuis 1980"],
+      o: ["Les colonies les plus riches vers 1500 sont souvent devenues relativement pauvres", "La chute des empires coloniaux européens après la Seconde Guerre mondiale", "La faillite des grandes compagnies coloniales au cours du XVIIIe siècle", "Le rattrapage spectaculaire de l’Asie de l’Est et du Sud-Est depuis les années 1980"],
       c: 0, e: "Là où il y avait des populations denses et des richesses à prendre, les colonisateurs ont installé des institutions extractives ; là où il n’y avait presque rien, ils ont dû se donner des règles protectrices." },
     { q: "Quelle est l’objection principale de Glaeser et de ses coauteurs (2004) ?",
-      o: ["La mortalité des colons a surtout touché les colonies les plus riches", "Les colons ont aussi apporté du capital humain, qui pourrait être la vraie cause de la croissance", "Les données de mortalité sont fausses", "La géographie et le climat suffisent à expliquer les écarts de revenu"],
+      o: ["La mortalité des colons a surtout frappé les colonies les plus riches au départ", "Les colons ont apporté du capital humain, cause possible de la croissance", "Les chiffres de mortalité des colons sont trop peu fiables pour être exploités", "La géographie et le climat suffisent à eux seuls à expliquer les écarts de revenu"],
       c: 1, e: "Ils soutiennent que l’instruction et les savoir-faire comptent d’abord, les institutions démocratiques suivant l’enrichissement. L’objection sur les données est celle d’Albouy (2012), celle sur la géographie celle de Sachs." }
   ],
   transfert: { q: "Dans un pays, ouvrir un atelier exige deux ans de démarches et des pots-de-vin, et le gouvernement peut confisquer les terres. Que prévoit la théorie des institutions ?",
-    o: ["Peu d’investissement et d’innovation, car ceux qui créent de la richesse risquent de se la faire prendre", "Une croissance rapide, grâce à un État fort", "Aucun effet : seule la géographie compte", "Une arrivée massive d’entrepreneurs étrangers"], c: 0,
+    o: ["Peu d’investissement, car ceux qui créent de la richesse risquent de se la voir prendre", "Une croissance rapide, grâce à un État fort qui protège l’ordre public et la stabilité du pays", "Aucun effet, car seule la géographie compte pour expliquer le niveau de richesse", "Une arrivée massive d’entrepreneurs étrangers attirés par la faiblesse des règles"], c: 0,
     e: "Des institutions extractives découragent d’investir : celui qui crée de la richesse n’est pas sûr d’en profiter." },
   ouverte: {
     q: "La Suisse n’a ni accès à la mer, ni matières premières, ni grandes plaines fertiles. Comment le cadre d’Acemoglu et Robinson pourrait-il expliquer sa prospérité, et que manquerait-il à cette explication ?",
@@ -146,13 +146,13 @@ OEC.notices["institutions-inclusives"] = {
 
       { q: "Pourquoi la comparaison entre les deux moitiés de Nogales est-elle si parlante ?",
 
-        o: ["Parce que le climat et la culture sont les mêmes des deux côtés : seules les règles diffèrent", "Parce que la moitié mexicaine possède davantage de ressources naturelles", "Parce que les habitants des deux côtés n’ont aucun lien entre eux", "Parce que la moitié américaine est beaucoup plus ancienne"], c: 0,
+        o: ["Parce que climat et culture sont les mêmes des deux côtés, seules les règles changent", "Parce que la moitié mexicaine possède bien davantage de ressources naturelles que l’autre", "Parce que les habitants des deux côtés viennent de populations très différentes", "Parce que la moitié américaine a été peuplée bien avant la moitié mexicaine"], c: 0,
 
         e: "Géographie et culture étant semblables, l’écart de niveau de vie doit venir des institutions." },
 
       { q: "Le Botswana et la Sierra Leone ont tous deux découvert des diamants. Qu’est-ce qui explique leurs destins opposés ?",
 
-        o: ["La qualité de leurs diamants", "L’usage du pouvoir : richesse investie et pouvoir contrôlé au Botswana, richesse captée par un parti unique en Sierra Leone", "Leur climat", "La taille de leur population"], c: 1,
+        o: ["La qualité et la taille des diamants extraits, bien supérieures au Botswana qu’en Sierra Leone", "La manière dont le pouvoir a été exercé, contrôlé au Botswana et accaparé en Sierra Leone", "Le climat, nettement plus favorable à l’agriculture et au commerce au Botswana", "La taille de la population, bien plus petite au Botswana et plus facile à gérer"], c: 1,
 
         e: "Mêmes ressources, règles différentes, destins opposés : c’est l’argument des institutions." }
 

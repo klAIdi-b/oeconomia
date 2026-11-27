@@ -92,23 +92,23 @@ ${compound}
     },
     quiz: [
       { q: "Que désignent r et g chez Piketty ?",
-        o: ["Le taux d’intérêt réel et la croissance de la population", "Le rendement du capital et le taux de croissance de l’économie", "Les recettes fiscales et la dette", "Le taux de change et le PIB"], c: 1,
+        o: ["Le taux d’intérêt réel et le taux de croissance de la population", "Le rendement du capital et le taux de croissance de l’économie", "Les recettes fiscales de l’État et le niveau de sa dette publique", "Le taux de change de la monnaie et le niveau du PIB par habitant"], c: 1,
         e: "r est le rendement annuel moyen du patrimoine, g la croissance du revenu national. Quand r > g, le capital croît plus vite que l’économie." },
       { q: "Avec un taux d’épargne de 12 % et une croissance de 2 %, quel rapport capital sur revenu β = s / g obtient-on à long terme ?",
         o: ["2,4", "6", "10", "24"], c: 1,
         e: "β = 0,12 / 0,02 = 6 : le patrimoine représente six années de revenu national." },
       { q: "Pourquoi les inégalités de patrimoine ont-elles fortement baissé entre 1914 et 1950 selon Piketty ?",
-        o: ["Grâce à la croissance spontanée de l’économie", "À cause des guerres, de l’inflation, des faillites et de l’impôt progressif", "Grâce à la hausse des prix de l’immobilier", "À cause du libre-échange"], c: 1,
+        o: ["Grâce à la croissance spontanée de l’économie et au progrès technique", "À cause des guerres, de l’inflation, des faillites et de l’impôt progressif", "Grâce à la hausse des prix de l’immobilier, qui a enrichi les ménages modestes", "À cause du libre-échange, qui a fait baisser les revenus du capital"], c: 1,
         e: "Les chocs de la période ont détruit ou réduit les grands patrimoines, et la fiscalité progressive a limité leur reconstitution." },
       { q: "Quelle est l’objection principale de Matthew Rognlie ?",
-        o: ["r est toujours inférieur à g", "La hausse de la part du capital tient presque entièrement au logement", "Les données fiscales sont fausses", "L’héritage a disparu"], c: 1,
+        o: ["r est inférieur à g dans tous les pays depuis la fin du XIXe siècle", "La hausse de la part du capital tient presque entièrement au logement", "Les données fiscales utilisées sont trop anciennes pour être comparées", "L’héritage a presque disparu et ne pèse plus sur les patrimoines"], c: 1,
         e: "Si le phénomène vient du logement, il s’explique par la rareté du foncier et l’urbanisme, ce qui appelle d’autres réponses qu’un impôt général sur le capital." },
       { q: "Que reprochent Acemoglu et Robinson à Piketty ?",
-        o: ["D’ignorer les données", "De présenter des « lois générales » alors que les institutions expliquent davantage l’évolution des inégalités", "De proposer un impôt trop faible", "De sous-estimer la hausse des inégalités aux États-Unis"], c: 1,
+        o: ["D’ignorer les données historiques disponibles sur les revenus et les patrimoines depuis 1900", "De présenter des « lois générales » alors que les institutions comptent davantage", "De proposer un impôt mondial sur le capital trop faible pour être efficace", "De sous-estimer la hausse récente des inégalités aux États-Unis et en Chine"], c: 1,
         e: "Pour eux, ce sont les institutions politiques et économiques, différentes selon les pays, qui déterminent la répartition, plus qu’un écart arithmétique." }
     ],
     transfert: { q: "Dans un pays, les patrimoines rapportent 5 % par an et l’économie croît de 1 % par an pendant des décennies, sans impôt progressif. Que prévoit Piketty ?",
-      o: ["Les grandes fortunes, surtout héritées, prennent une place croissante", "Les inégalités de patrimoine diminuent d’elles-mêmes", "Les salaires dépassent bientôt les revenus du capital", "Rien ne change dans la répartition"], c: 0,
+      o: ["Les grandes fortunes, surtout héritées, prennent une place de plus en plus grande", "Les inégalités de patrimoine diminuent d’elles-mêmes, grâce à la croissance", "Les salaires rattrapent bientôt les revenus du capital dans le revenu national", "Rien ne change dans la répartition, les patrimoines évoluant comme les salaires"], c: 0,
       e: "Avec r largement supérieur à g, le patrimoine accumulé croît plus vite que le revenu national." },
     ouverte: {
       q: "Faut-il taxer davantage les successions, plutôt que la fortune ou le revenu, si l’on veut limiter le mécanisme décrit par Piketty ?",
@@ -124,10 +124,10 @@ ${compound}
     decouvrir: {
       questions: [
         { q: "Que veut montrer le conseil de Vautrin à Rastignac, dans le roman de Balzac ?",
-          o: ["Qu’au XIXe siècle, l’héritage comptait plus que le travail pour devenir riche", "Que le travail était très bien payé", "Que les impôts étaient trop élevés", "Que les mariages étaient interdits entre classes sociales"], c: 0,
+          o: ["Qu’au XIXe siècle, l’héritage comptait plus que le travail pour s’enrichir", "Que le travail était très bien payé et menait rapidement à la fortune dans toutes les classes", "Que les impôts sur les successions étaient trop élevés à cette époque", "Que les mariages entre classes sociales étaient interdits par la loi"], c: 0,
           e: "Piketty se demande si ce monde où l’héritage domine est en train de revenir." },
         { q: "Pourquoi les inégalités de patrimoine remontent-elles quand r est plus grand que g ?",
-          o: ["Parce qu’un patrimoine qui réinvestit ses revenus grossit plus vite que les salaires", "Parce que les salaires augmentent plus vite que les patrimoines", "Parce que l’inflation détruit les patrimoines", "Parce que la croissance est trop forte"], c: 0,
+          o: ["Parce qu’un patrimoine réinvesti grossit plus vite que les salaires", "Parce que les salaires augmentent plus vite que les patrimoines", "Parce que l’inflation détruit la valeur des patrimoines financiers", "Parce que la croissance est trop forte et enrichit surtout les salariés"], c: 0,
           e: "Le rendement du patrimoine dépasse la croissance de l’économie, donc des revenus du travail." }
       ],
       duree: 5,
@@ -263,17 +263,17 @@ ${principes}
         o: ["La gestion par les usagers eux-mêmes", "La privatisation ou la gestion par l’État", "Une gestion confiée aux organisations internationales", "L’appel à la conscience des usagers"], c: 1,
         e: "Hardin ne voit que la propriété privée ou la coercition publique ; il juge l’appel à la conscience inefficace." },
       { q: "Qu’ont montré les expériences de laboratoire d’Ostrom, Walker et Gardner ?",
-        o: ["Que la communication ne change rien", "Que la simple possibilité de discuter réduit fortement la surexploitation", "Que seules les amendes de l’État fonctionnent", "Que les participants coopèrent toujours"], c: 1,
+        o: ["Que la communication entre participants ne change rien au comportement", "Que la simple possibilité de discuter réduit fortement la surexploitation", "Que seules les amendes imposées par l’État font baisser la surexploitation", "Que les participants coopèrent dès le début, sans avoir besoin de discuter"], c: 1,
         e: "Sans communication, les participants surexploitent ; avec quelques minutes de discussion, et plus encore avec des sanctions mutuelles, la gestion s’améliore nettement." },
       { q: "Quelle règle de Törbel ajuste la charge des alpages aux ressources de chacun ?",
-        o: ["Un tirage au sort annuel des pâturages", "L’interdiction d’envoyer à l’alpage plus de vaches qu’on ne peut en nourrir l’hiver", "Un impôt sur chaque vache", "La vente des alpages au plus offrant"], c: 1,
+        o: ["Un tirage au sort chaque année qui attribue à chaque famille ses pâturages d’altitude", "L’interdiction d’envoyer plus de vaches à l’alpage qu’on n’en nourrit l’hiver", "Un impôt annuel versé à la commune pour chaque vache envoyée à l’alpage", "La vente aux enchères des alpages au plus offrant chaque printemps"], c: 1,
         e: "La règle de 1517 lie le droit d’usage estival à la capacité de chacun à nourrir ses bêtes en hiver avec son propre foin." },
       { q: "Quelle limite le cas islandais des quotas transférables illustre-t-il ?",
-        o: ["Les stocks se sont effondrés", "Une solution efficace pour la ressource peut concentrer les droits et poser des problèmes de répartition", "Les quotas ont été interdits", "Les quotas n’ont eu aucun effet sur les stocks de poissons"], c: 1,
+        o: ["Les stocks de poissons se sont effondrés malgré l’introduction des quotas", "Une solution efficace peut concentrer les droits et créer des inégalités", "Les quotas ont été interdits par le Parlement après quelques années", "Les quotas n’ont eu aucun effet notable sur l’état des stocks de poissons"], c: 1,
         e: "Les stocks et la rentabilité se sont améliorés, mais les quotas se sont concentrés et certains villages ont perdu leur pêche." }
     ],
     transfert: { q: "Dans une ville, tout le monde peut se garer gratuitement dans le centre, et les places sont toujours occupées. De quel problème s’agit-il, et quelle réponse en découle ?",
-      o: ["D’une ressource rivale et ouverte à tous, surexploitée ; on peut la régler par un stationnement payant ou des règles d’accès", "D’un bien public pur, que seul l’État peut produire", "D’une externalité positive, qu’il faut subventionner", "D’un monopole, qu’il faut briser"], c: 0,
+      o: ["D’une ressource en libre accès surexploitée, qu’on règle par un tarif ou des règles", "D’un bien public pur, que seul l’État peut produire et financer par l’impôt", "D’une externalité positive, qu’il faut encourager par des subventions publiques ciblées", "D’un monopole de fait sur les places, qu’il faut briser par la concurrence"], c: 0,
       e: "Chaque conducteur prend une place sans tenir compte de la gêne pour les autres ; un prix ou une règle limite l’usage." },
     ouverte: {
       q: "Les glaciers et les ressources en eau des montagnes, des Alpes à l’Himalaya, sont-ils des biens communs ? Comment les principes d’Ostrom pourraient-ils s’appliquer à leur gestion face au réchauffement ?",
@@ -289,10 +289,10 @@ ${principes}
     decouvrir: {
       questions: [
         { q: "Dans l’image du pâturage de Hardin, pourquoi chaque berger ajoute-t-il des vaches ?",
-          o: ["Parce qu’il garde tout le profit de sa vache, alors que les dégâts du surpâturage sont partagés entre tous", "Parce que l’herbe repousse toujours", "Parce que l’État l’y oblige", "Parce que les vaches sont gratuites"], c: 0,
+          o: ["Parce qu’il garde le profit de sa vache et partage les dégâts avec tous", "Parce que l’herbe repousse très vite et ne risque pas de manquer", "Parce que l’État l’y oblige afin d’augmenter la production de viande", "Parce que les vaches coûtent très peu et ne demandent aucun entretien"], c: 0,
           e: "Le gain est privé, le coût est collectif : c’est la tragédie des communs." },
         { q: "Qu’a découvert Elinor Ostrom en étudiant des centaines de cas réels ?",
-          o: ["Que de nombreuses communautés gèrent durablement leurs ressources grâce à des règles décidées ensemble", "Que seule la privatisation protège les ressources", "Que seul l’État peut gérer une ressource commune", "Que les ressources communes finissent toujours par disparaître"], c: 0,
+          o: ["Que de nombreuses communautés gèrent leurs ressources grâce à des règles communes", "Que seule la privatisation des ressources permet de les protéger durablement", "Que seul l’État est capable de gérer une ressource commune de façon durable", "Que les ressources communes finissent par disparaître, quelles que soient les règles"], c: 0,
           e: "Règles communes, surveillance mutuelle et sanctions progressives sont les clés du succès." }
       ],
       duree: 5,

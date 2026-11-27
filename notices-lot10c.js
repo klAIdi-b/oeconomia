@@ -115,17 +115,17 @@ ${tauxBNS}` }
         o: ["Elle baisse son taux directeur", "Elle relève son taux directeur", "Elle achète davantage de titres publics", "Elle imprime plus de billets"], c: 1,
         e: "Le crédit devient plus cher, la demande ralentit et la hausse des prix se calme." },
       { q: "Pourquoi le canal du taux de change est-il particulièrement important dans les petites économies très ouvertes, comme la Suisse ou la Nouvelle-Zélande ?",
-        o: ["Parce qu’elles importent et exportent beaucoup par rapport à leur production", "Parce qu’elles n’ont pas de banques commerciales", "Parce que leur monnaie est rattachée au dollar", "Parce que leurs taux ne changent jamais"], c: 0,
+        o: ["Parce qu’elles importent et exportent beaucoup par rapport à leur production", "Parce qu’elles n’ont pas de banques commerciales pour relayer les décisions", "Parce que leur monnaie est rattachée au dollar par une parité officielle fixe", "Parce que leurs taux directeurs ne changent presque jamais d’une année à l’autre"], c: 0,
         e: "Un taux plus élevé renforce la monnaie, ce qui fait baisser le prix des importations et freine l’inflation." },
       { q: "Que signifie l’expression « délais longs et variables » ?",
-        o: ["Que la BNS se réunit rarement", "Que les effets d’une décision monétaire mettent un à deux ans à se faire sentir, de façon incertaine", "Que les crédits durent longtemps", "Que les taux changent lentement et rarement"], c: 1,
-        e: "D’où l’importance des prévisions dans les décisions." },
+        o: ["Que la BNS se réunit rarement et prend ses décisions avec beaucoup de retard", "Que les effets d’une décision mettent un à deux ans à se faire sentir", "Que les crédits accordés par les banques durent longtemps avant remboursement", "Que les taux directeurs changent lentement, par petites étapes successives"], c: 1,
+        e: "Les effets sont aussi incertains : d’où l’importance des prévisions dans les décisions." },
       { q: "Pourquoi la BNS a-t-elle appliqué un taux négatif de 2015 à 2022 ?",
-        o: ["Pour réduire la dette des cantons", "Pour rendre les placements en francs moins attrayants et freiner la hausse du franc", "Pour financer la Confédération", "Pour provoquer de l’inflation élevée"], c: 1,
+        o: ["Pour réduire la dette des cantons en leur faisant payer moins d’intérêts", "Pour décourager les placements en francs et freiner la hausse du franc", "Pour aider la Confédération à financer ses dépenses à moindre coût", "Pour provoquer une inflation élevée et rapide dans toute l’économie"], c: 1,
         e: "Le franc, valeur refuge, menaçait les exportations et poussait les prix à la baisse." }
     ],
     transfert: { q: "Depuis dix ans, la banque centrale d’un pays annonce une inflation de 3 % et relève ses taux à chaque dérapage. Salariés et entreprises fixent désormais leurs prix et leurs salaires en tablant sur 3 %. Que montre cette situation ?",
-        o: ["La crédibilité de la banque centrale aide à garder l’inflation basse, car les anticipations restent ancrées", "La banque centrale n’a plus besoin de son taux directeur", "L’inflation dépend seulement du prix du pétrole", "Les salaires sont fixés par la loi"], c: 0,
+        o: ["La crédibilité de la banque centrale ancre les anticipations d’inflation", "La banque centrale n’a plus besoin de son taux directeur pour piloter l’économie", "L’inflation dépend avant tout du prix du pétrole et des matières premières", "Les salaires sont fixés par la loi en fonction de l’inflation annoncée"], c: 0,
         e: "Quand chacun croit à l’objectif, salaires et prix s’ajustent en conséquence : la crédibilité est un instrument en soi." },
     ouverte: {
       q: "Faut-il élargir le mandat des banques centrales, aujourd’hui centré sur la stabilité des prix, à d’autres objectifs comme l’emploi, le climat ou les inégalités ?",
@@ -142,7 +142,7 @@ ${tauxBNS}` }
     decouvrir: {
       questions: [
         { q: "Pourquoi une hausse du taux directeur freine-t-elle la hausse des prix ?",
-          o: ["Parce qu’emprunter coûte plus cher, qu’on dépense moins et que la demande ralentit", "Parce que les commerçants sont obligés de baisser leurs prix", "Parce que les salaires sont gelés par la loi", "Parce que les banques ferment leurs guichets"], c: 0,
+          o: ["Parce qu’emprunter coûte plus cher, on dépense moins et la demande ralentit", "Parce que les commerçants sont obligés de baisser leurs prix par la loi", "Parce que les salaires sont gelés par la loi quand le taux directeur monte", "Parce que les banques ferment leurs guichets et ne prêtent plus à personne"], c: 0,
           e: "La banque centrale ne fixe pas les prix : elle agit sur le coût de l’argent, donc sur la demande." },
         { q: "Qu’ont fait les grandes banques centrales face au retour de l’inflation en 2022 ?",
         o: ["Elles ont relevé leurs taux très rapidement", "Elles ont baissé leurs taux à zéro", "Elles ont fixé elles-mêmes les prix des biens", "Elles ont cessé d’intervenir"], c: 0,

@@ -120,20 +120,20 @@ ${paradoxe}` },
     },
     quiz: [
       { q: "Que dit la « critique de Lucas » (1976) ?",
-        o: ["Que les modèles doivent reposer uniquement sur des données historiques", "Que les relations estimées dans le passé changent quand la politique change, car les agents adaptent leurs comportements", "Que la politique budgétaire n’a jamais d’effet", "Que les impôts sont trop élevés"], c: 1,
-        e: "Les modèles doivent reposer sur des paramètres qui ne dépendent pas de la politique." },
+        o: ["Que les modèles doivent reposer sur des données historiques abondantes et fiables", "Que les relations estimées dans le passé changent quand la politique change", "Que la politique budgétaire n’a pas d’effet sur l’emploi à court terme", "Que les impôts sont trop élevés pour encourager l’investissement"], c: 1,
+        e: "Les agents adaptent leurs comportements à la politique ; les modèles doivent reposer sur des paramètres qui n’en dépendent pas." },
       { q: "Dans le modèle des îles, pourquoi une surprise monétaire augmente-t-elle la production ?",
-        o: ["Parce que les producteurs savent que tous les prix montent", "Parce que les producteurs attribuent en partie la hausse de leur prix à une hausse de la demande pour leur produit", "Parce que les salaires baissent", "Parce que les importations augmentent"], c: 1,
-        e: "Une création monétaire anticipée, en revanche, n’a pas d’effet réel." },
+        o: ["Parce que les producteurs savent que tous les prix montent en même temps partout", "Parce que les producteurs prennent la hausse de leur prix pour un signe de demande", "Parce que les salaires baissent pendant que les prix restent stables", "Parce que les importations augmentent et font baisser les coûts"], c: 1,
+        e: "Les producteurs confondent en partie hausse générale des prix et hausse de la demande pour leur produit ; une création monétaire anticipée, en revanche, n’a pas d’effet réel." },
       { q: "Pour quelle contribution Lucas reçoit-il le prix Nobel en 1995 ?",
-        o: ["La théorie des jeux", "L’hypothèse des anticipations rationnelles en macroéconomie", "Le commerce international", "La finance comportementale"], c: 1,
+        o: ["La théorie des jeux appliquée aux marchés oligopolistiques", "L’hypothèse des anticipations rationnelles en macroéconomie", "Une théorie du commerce international fondée sur les économies d’échelle", "La finance comportementale et l’étude des biais des investisseurs"], c: 1,
         e: "Elle a transformé l’analyse macroéconomique." },
       { q: "Qu’est-ce que le « paradoxe de Lucas » ?",
-        o: ["La monnaie est neutre et non neutre", "Le capital ne se dirige pas massivement vers les pays pauvres malgré les rendements élevés attendus", "Les riches épargnent moins", "Les prix baissent avec la demande"], c: 1,
-        e: "Le capital humain et les institutions l’expliquent en partie." },
+        o: ["La monnaie est à la fois neutre à long terme et non neutre à court terme", "Le capital ne se dirige pas vers les pays pauvres, pourtant rentables", "Les riches épargnent une part plus faible de leur revenu que les pauvres", "Les prix baissent quand la demande monte, contre toute attente"], c: 1,
+        e: "Les rendements attendus y sont plus élevés ; le capital humain et les institutions l’expliquent en partie." },
       { q: "Que déclare Lucas en 2003 à l’American Economic Association ?",
-        o: ["Que la crise arrive", "Que le problème central de la prévention des dépressions a été résolu en pratique", "Que Keynes avait raison", "Que les crises financières sont inévitables"], c: 1,
-        e: "La crise de 2008 a rendu la phrase célèbre." }
+        o: ["Que la prochaine grande crise financière approche à grands pas", "Que le problème central de la prévention des dépressions est résolu", "Que Keynes avait raison sur le rôle de l’État dans les crises", "Que les crises financières resteront inévitables malgré la régulation"], c: 1,
+        e: "Il juge ce problème résolu en pratique ; la crise de 2008 a rendu la phrase célèbre." }
     ],
     ouverte: {
       q: "La Suisse, pays riche, exporte chaque année une grande quantité de capitaux vers le reste du monde. Le paradoxe de Lucas éclaire-t-il ce phénomène ?",
@@ -149,7 +149,7 @@ ${paradoxe}` },
     decouvrir: {
       questions: [
         { q: "Selon Lucas, pourquoi une création de monnaie prévisible ne relance-t-elle pas l’économie ?",
-          o: ["Parce que tout le monde s’y attend, et que seuls les prix montent", "Parce que la monnaie est détruite aussitôt", "Parce que les banques refusent de prêter", "Parce que les salaires sont fixés par la loi"], c: 0,
+          o: ["Parce que tout le monde s’y attend, et que seuls les prix montent", "Parce que la monnaie créée est détruite aussitôt par les banques commerciales", "Parce que les banques refusent de prêter davantage aux entreprises", "Parce que les salaires sont fixés par la loi à un niveau rigide"], c: 0,
           e: "Seules les surprises ont un effet, et on ne peut pas surprendre les gens tout le temps." },
         { q: "À quoi Lucas s’intéresse-t-il plus tard, qu’il juge bien plus important pour le bien-être que les cycles ?",
           o: ["La croissance et l’éducation", "Les taux de change", "La Bourse", "Les impôts sur les successions"], c: 0,
@@ -291,17 +291,17 @@ ${systemes}
     },
     quiz: [
       { q: "Pourquoi Kahneman, psychologue, a-t-il reçu le prix Nobel d’économie ?",
-        o: ["Pour une théorie de la monnaie", "Pour avoir intégré la psychologie du jugement et de la décision à l’analyse économique", "Pour ses travaux sur la croissance", "Pour un modèle de commerce"], c: 1,
-        e: "Le prix de 2002 est partagé avec Vernon Smith." },
+        o: ["Pour une nouvelle théorie de la monnaie et de la politique monétaire des banques", "Pour avoir intégré la psychologie de la décision à l’analyse économique", "Pour ses travaux sur la croissance et le progrès technique", "Pour un modèle du commerce fondé sur les économies d’échelle"], c: 1,
+        e: "Il a intégré la psychologie du jugement et de la décision ; le prix de 2002 est partagé avec Vernon Smith." },
       { q: "Que montre le problème de Linda ?",
-        o: ["Que les gens sont bons en probabilités", "Que la représentativité peut faire juger plus probable une conjonction d’événements qu’un seul événement", "Que les gens surestiment toujours les petites probabilités", "Que l’ancrage n’existe pas"], c: 1,
+        o: ["Que les gens calculent bien les probabilités quand l’enjeu est élevé pour eux", "Qu’une conjonction d’événements peut sembler plus probable qu’un seul", "Que les gens se fient trop à leurs souvenirs d’événements récents", "Que l’ancrage sur un premier chiffre n’influence pas le jugement"], c: 1,
         e: "Être employée de banque et féministe est forcément moins probable qu’être employée de banque." },
       { q: "Selon la théorie des perspectives, comment pèsent les pertes par rapport aux gains ?",
-        o: ["Autant", "Plus que les gains de même montant", "Moins", "Elles sont ignorées"], c: 1,
+        o: ["Autant que les gains, puisque le calcul reste rationnel", "Plus lourdement que des gains de même montant", "Moins que les gains, car on s’habitue vite à perdre", "Elles sont ignorées tant que le montant reste modeste"], c: 1,
         e: "C’est l’aversion aux pertes." },
       { q: "Dans l’expérience de la « maladie asiatique », que change le cadrage ?",
-        o: ["Le nombre de victimes", "La part de personnes qui choisissent l’option sûre, selon qu’elle est présentée en vies sauvées ou en morts", "Le coût des programmes", "La gravité de la maladie annoncée"], c: 1,
-        e: "72 % contre 22 %, pour des situations identiques." },
+        o: ["Le nombre réel de victimes que le programme permet d’éviter", "Les choix, selon qu’on parle de vies sauvées ou de morts", "Le coût des programmes de santé proposés aux participants", "La gravité de la maladie telle que l’annoncent les médecins"], c: 1,
+        e: "La part qui choisit l’option sûre passe de 72 % à 22 %, pour des situations identiques." },
       { q: "Avec qui Kahneman a-t-il mené l’essentiel de ses recherches ?",
         o: ["Richard Thaler", "Amos Tversky", "Herbert Simon", "Milton Friedman"], c: 1,
         e: "Leur collaboration commence en 1969." }
@@ -320,11 +320,11 @@ ${systemes}
     decouvrir: {
       questions: [
         { q: "Lequel de ces raccourcis mentaux Kahneman a-t-il décrits ?",
-          o: ["Juger un risque plus probable si un exemple nous vient facilement à l’esprit", "Toujours choisir l’option la moins chère", "Calculer parfaitement les probabilités", "Ignorer les chiffres entendus juste avant"], c: 0,
+          o: ["Juger un risque plus probable si un exemple vient facilement à l’esprit", "Choisir l’option la moins chère dès que les prix sont affichés", "Calculer parfaitement les probabilités avant de prendre une décision", "Ignorer les chiffres entendus juste avant de faire une estimation"], c: 0,
           e: "Nous nous trompons souvent, et toujours de la même façon." },
         { q: "Que sont les « nudges » inspirés par ses travaux ?",
-          o: ["De petites incitations, comme les options par défaut, utilisées notamment par les gouvernements", "Des impôts sur les comportements risqués", "Des interdictions légales", "Des subventions massives"], c: 0,
-          e: "Ils s’appuient sur nos biais au lieu de les ignorer." }
+          o: ["De petites incitations, comme les options par défaut", "Des impôts sur les comportements risqués, comme le tabac et l’alcool", "Des interdictions légales visant les achats impulsifs", "Des subventions massives versées aux ménages modestes"], c: 0,
+          e: "Utilisés notamment par les gouvernements, ils s’appuient sur nos biais au lieu de les ignorer." }
       ],
       duree: 6,
       html: `

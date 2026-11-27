@@ -108,23 +108,23 @@ ${periodes}
     },
     quiz: [
       { q: "Qu’est-ce qu’une trappe à liquidité ?",
-        o: ["Une situation où la banque centrale ne peut plus créer de monnaie", "Une situation où les taux sont si bas que la monnaie créée est conservée au lieu d’être dépensée ou prêtée", "Une situation où les taux sont trop élevés pour emprunter", "Un excès d’inflation"], c: 1,
+        o: ["Une situation où la banque centrale n’a plus les moyens de créer de monnaie", "Une situation où les taux sont si bas que la monnaie créée est conservée, non dépensée", "Une situation où les taux sont trop élevés pour que l’on emprunte", "Un excès d’inflation qui pousse chacun à dépenser avant la hausse des prix"], c: 1,
         e: "La banque centrale ne peut plus faire baisser les taux, et la politique monétaire classique perd son effet." },
       { q: "Pourquoi les taux ne peuvent-ils pas descendre très en dessous de zéro ?",
-        o: ["Parce que l’inflation deviendrait incontrôlable", "Parce que l’on peut conserver son argent en billets, qui rapportent zéro", "Parce que les banques font faillite", "Parce que les banques centrales n’ont pas le droit de perdre de l’argent"], c: 1,
+        o: ["Parce que l’inflation deviendrait incontrôlable pour la banque centrale", "Parce que l’on peut garder son argent en billets, qui rapportent zéro", "Parce que les banques feraient faillite en cascade dans tout le pays", "Parce que les banques centrales n’ont pas le droit de perdre de l’argent"], c: 1,
         e: "Si les dépôts coûtaient trop cher, on retirerait son argent en billets." },
       { q: "Avec un taux nominal nul et des prix qui baissent de 2 % par an, quel est le taux réel ?",
         o: ["−2 %", "0 %", "+2 %", "+4 %"], c: 2,
         e: "Taux réel ≈ taux nominal − inflation = 0 − (−2) = +2 %. La déflation rend le crédit plus cher." },
       { q: "Que propose Krugman en 1998 pour sortir le Japon de la trappe ?",
-        o: ["Augmenter les impôts", "Que la banque centrale promette de manière crédible une inflation plus élevée à l’avenir", "Revenir à l’étalon-or", "Que l’État rembourse rapidement sa dette"], c: 1,
+        o: ["Que l’État augmente les impôts pour assainir ses finances publiques", "Que la banque centrale promette de façon crédible une inflation plus élevée", "Que le Japon revienne à l’étalon-or pour stabiliser sa monnaie et ses prix", "Que l’État rembourse rapidement sa dette pour rassurer les marchés"], c: 1,
         e: "Si le public anticipe plus d’inflation, le taux réel baisse même avec un taux nominal nul." },
       { q: "Que promet la Banque du Japon en 2013 pour sortir de la trappe à liquidité ?",
-        o: ["De doubler la base monétaire en achetant massivement des obligations, avec un objectif d’inflation de 2 %", "De relever fortement ses taux", "De rattacher le yen au dollar", "De supprimer les billets de 10 000 yens"], c: 0,
-        e: "Les résultats ont été mitigés : l’inflation est restée longtemps sous l’objectif." }
+        o: ["De doubler la base monétaire, avec un objectif d’inflation de 2 %", "De relever fortement ses taux directeurs pour renforcer la valeur du yen", "De rattacher le yen au dollar à un taux de change fixe pour stabiliser le commerce", "De supprimer les billets de 10 000 yens pour décourager la thésaurisation"], c: 0,
+        e: "La Banque du Japon a promis de doubler la base monétaire par des achats massifs d’obligations. Les résultats ont été mitigés : l’inflation est restée longtemps sous l’objectif." }
     ],
     transfert: { q: "Un pays a ramené ses taux à zéro il y a trois ans. Les prix baissent légèrement, et le crédit ne repart pas malgré la création de monnaie. Quelle politique les économistes keynésiens recommanderaient-ils en priorité ?",
-      o: ["Une relance par la dépense publique, puisque la politique monétaire classique a perdu sa force", "Une hausse des taux pour restaurer la confiance", "Une réduction de la dépense publique", "Une hausse des impôts sur la consommation"], c: 0,
+      o: ["Une relance par la dépense publique, la politique monétaire ayant perdu sa force", "Une hausse des taux d’intérêt pour restaurer la confiance des épargnants", "Une réduction de la dépense publique pour rassurer les créanciers de l’État", "Une hausse des impôts sur la consommation pour réduire les déficits de l’État"], c: 0,
       e: "À taux zéro, la banque centrale ne peut plus guère stimuler la demande : l’État prend le relais." },
     ouverte: {
       q: "Faudrait-il supprimer les grosses coupures, comme le billet de 500 euros ou de 1 000 francs, pour permettre aux banques centrales de descendre plus bas en taux négatifs ?",
@@ -140,10 +140,10 @@ ${periodes}
     decouvrir: {
       questions: [
         { q: "Quand les taux sont nuls, pourquoi la monnaie créée par la banque centrale reste-t-elle immobile ?",
-          o: ["Parce que garder de l’argent ne coûte rien et que le placer ne rapporte presque rien", "Parce que la banque centrale interdit de la prêter", "Parce que les prix montent trop vite", "Parce que les banques ont fermé"], c: 0,
+          o: ["Parce que garder de l’argent ne coûte rien et que le placer rapporte à peine", "Parce que la banque centrale interdit aux banques de la prêter à l’économie", "Parce que les prix montent trop vite et découragent les achats des ménages", "Parce que les banques ont fermé leurs guichets pendant la crise financière"], c: 0,
           e: "Banques, entreprises et ménages la gardent en réserve." },
         { q: "Quels outils les banques centrales ont-elles inventés face à la trappe à liquidité ?",
-          o: ["Des achats massifs d’obligations et des taux légèrement négatifs", "La suppression des billets", "Le retour à l’étalon-or", "Le contrôle des prix"], c: 0,
+          o: ["Des achats massifs d’obligations et des taux légèrement négatifs", "La suppression des billets de banque pour obliger à dépenser", "Le retour à l’étalon-or pour ancrer la valeur de la monnaie", "Le contrôle des prix pour empêcher toute baisse du niveau général"], c: 0,
           e: "Beaucoup d’économistes recommandent aussi une relance par la dépense publique." }
       ],
       duree: 5,
@@ -283,23 +283,23 @@ ${trois}
     },
     quiz: [
       { q: "Que suppose l’hypothèse des anticipations rationnelles ?",
-        o: ["Que chacun prévoit parfaitement l’avenir", "Que les agents utilisent toute l’information disponible et ne se trompent pas systématiquement", "Que les agents suivent le prix de l’an passé", "Que les agents se fient surtout à l’avis des experts"], c: 1,
+        o: ["Que chacun connaît d’avance l’avenir de l’économie et prévoit à coup sûr", "Que les agents exploitent l’information disponible sans erreur systématique", "Que les agents suivent le prix de l’an passé pour fixer leurs prévisions", "Que les agents se fient surtout à l’avis des experts et des journaux"], c: 1,
         e: "Les erreurs existent, mais elles sont imprévisibles et se compensent en moyenne." },
       { q: "Avec des anticipations adaptatives, que se passe-t-il quand l’inflation augmente durablement ?",
-        o: ["Les agents l’anticipent aussitôt", "Ils se trompent dans le même sens pendant plusieurs périodes", "Ils prévoient une baisse", "L’inflation disparaît"], c: 1,
+        o: ["Les agents l’anticipent aussitôt et ajustent immédiatement leurs prix", "Ils se trompent dans le même sens pendant plusieurs périodes", "Ils prévoient une baisse de l’inflation dès la période suivante", "L’inflation disparaît d’elle-même au bout de quelques mois"], c: 1,
         e: "Ils ne corrigent qu’une partie de leur erreur à chaque période, ce qui crée un retard systématique." },
       { q: "Que dit la « critique de Lucas » (1976) ?",
-        o: ["Que la monnaie n’a aucun effet", "Que les relations estimées dans le passé changent quand la politique change, car les agents adaptent leur comportement", "Que les modèles doivent reposer uniquement sur des données historiques", "Que la politique budgétaire n’a jamais d’effet"], c: 1,
+        o: ["Que la monnaie est neutre et n’agit pas sur l’économie réelle, même à court terme", "Que les relations estimées dans le passé changent quand la politique change", "Que les modèles doivent se fonder sur de longues séries de données historiques", "Que la politique budgétaire est sans effet sur la production et l’emploi"], c: 1,
         e: "On ne peut pas évaluer une nouvelle politique avec des régularités observées sous l’ancienne." },
       { q: "Quelle solution découle des travaux de Kydland et Prescott sur l’incohérence temporelle ?",
-        o: ["Laisser le gouvernement ajuster la politique monétaire au cas par cas", "Confier la politique monétaire à une banque centrale indépendante avec un objectif clair", "Confier la politique monétaire à un comité d’élus", "Changer souvent d’objectif pour surprendre les marchés"], c: 1,
+        o: ["Laisser le gouvernement ajuster la politique monétaire au cas par cas selon la conjoncture", "Confier la politique monétaire à une banque indépendante, à objectif clair", "Confier la politique monétaire à un comité d’élus renouvelé à chaque législature", "Changer souvent d’objectif pour surprendre les marchés et les salariés"], c: 1,
         e: "Une banque centrale indépendante n’a pas la tentation de créer de l’inflation surprise, ce qui rend son objectif crédible." },
       { q: "Que montre Sargent en étudiant la fin des hyperinflations des années 1920 ?",
-        o: ["Que l’inflation diminue lentement", "Qu’un changement de régime crédible peut arrêter l’inflation très vite, avec un coût limité", "Qu’il faut des années de chômage élevé pour l’arrêter", "Que seule une forte baisse des salaires peut l’arrêter"], c: 1,
+        o: ["Que l’inflation diminue lentement, au rythme des réformes budgétaires", "Qu’un changement de régime crédible peut stopper l’inflation vite, à coût limité", "Qu’il faut plusieurs années de chômage élevé pour parvenir à l’arrêter", "Qu’une forte baisse des salaires est nécessaire pour l’arrêter, au prix d’une récession"], c: 1,
         e: "Dès que la réforme est crédible, les anticipations changent et l’inflation s’arrête en quelques semaines." }
     ],
     transfert: { q: "Un gouvernement annonce chaque année qu’il va relancer l’économie en créant un peu d’inflation « surprise ». Selon les anticipations rationnelles, que se passe-t-il au bout de quelques années ?",
-      o: ["Les gens l’anticipent, intègrent l’inflation dans les salaires et les prix, et l’emploi ne gagne plus rien", "L’emploi augmente chaque année davantage", "L’inflation disparaît", "Les salaires baissent en termes réels chaque année"], c: 0,
+      o: ["Elle est anticipée et intégrée aux prix et aux salaires, sans gain d’emploi", "L’emploi augmente chaque année davantage grâce à ces relances répétées", "L’inflation disparaît parce que les entreprises cessent d’augmenter leurs prix", "Les salaires baissent en termes réels chaque année et l’emploi progresse"], c: 0,
       e: "On ne surprend pas les gens indéfiniment : la relance permanente ne fait qu’augmenter l’inflation." },
     ouverte: {
       q: "La BNS avait-elle raison de surprendre complètement les marchés le 15 janvier 2015, alors que sa crédibilité repose sur des anticipations bien guidées ?",
@@ -315,10 +315,10 @@ ${trois}
     decouvrir: {
       questions: [
         { q: "Si l’on prévoit simplement que demain sera comme hier, que se passe-t-il quand l’inflation monte durablement ?",
-          o: ["On se trompe longtemps dans le même sens", "On prévoit toujours juste", "On surestime l’inflation", "On ne peut plus rien prévoir du tout"], c: 0,
+          o: ["On se trompe longtemps dans le même sens, par sous-estimation", "On prévoit juste dès que l’inflation commence à monter, sans retard", "On surestime l’inflation et l’on prévoit une baisse des prix à venir", "On ne peut plus rien prévoir du tout, faute d’information utilisable"], c: 0,
           e: "C’est la limite des anticipations fondées sur le passé." },
         { q: "Pourquoi les banques centrales annoncent-elles un objectif d’inflation clair ?",
-          o: ["Pour que chacun puisse anticiper leur politique, ce qui renforce leur crédibilité", "Pour surprendre les marchés", "Parce que la loi leur interdit de changer de taux", "Pour fixer elles-mêmes les salaires"], c: 0,
+          o: ["Pour que chacun anticipe leur politique, ce qui renforce leur crédibilité", "Pour surprendre les marchés et obtenir un effet plus fort sur les prix", "Parce que la loi leur interdit de changer de taux avant la fin de l’année", "Pour fixer elles-mêmes les salaires et éviter les conflits sociaux"], c: 0,
           e: "Si l’on ne peut pas tromper les gens durablement, la crédibilité devient un instrument." }
       ],
       duree: 5,

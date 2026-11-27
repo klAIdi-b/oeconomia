@@ -113,19 +113,19 @@ ${outils}
     },
     quiz: [
       { q: "Quelle est la règle principale de Mun pour enrichir le royaume ?",
-        o: ["Interdire toute sortie d’or et d’argent du royaume", "Vendre chaque année aux étrangers plus que l’on consomme des leurs", "Imprimer de la monnaie", "Baisser les impôts"], c: 1,
+        o: ["Interdire la sortie d’or et d’argent du royaume pour garder les métaux précieux", "Vendre chaque année aux étrangers plus que l’on consomme des leurs", "Imprimer de la monnaie en grande quantité pour baisser le coût du crédit", "Baisser les impôts des marchands pour qu’ils investissent dans la production"], c: 1,
         e: "La différence entre dans le royaume sous forme d’or et d’argent." },
       { q: "Pourquoi Mun défend-il l’exportation d’argent vers les Indes ?",
-        o: ["Parce qu’il est payé par les Indes", "Parce que la revente des épices fait revenir davantage d’argent", "Parce que l’argent abonde en Angleterre", "Parce que la charte de la Compagnie l’y oblige"], c: 1,
+        o: ["Parce que les Indes paient la Compagnie en or pour chaque cargaison livrée", "Parce que la revente des épices fait revenir davantage d’argent", "Parce que l’argent est trop abondant en Angleterre et perd de sa valeur", "Parce que la charte de la Compagnie l’y oblige envers le roi"], c: 1,
         e: "Il raisonne sur la balance générale du commerce." },
       { q: "Quelle compagnie Mun dirige-t-il ?",
-        o: ["La Compagnie des Indes occidentales", "La Compagnie anglaise des Indes orientales", "La Banque d’Angleterre", "La Compagnie de la baie d’Hudson"], c: 1,
+        o: ["La Compagnie des Indes occidentales, installée à Amsterdam", "La Compagnie anglaise des Indes orientales", "La Banque d’Angleterre, créée pour financer l’État", "La Compagnie de la baie d’Hudson, active au Canada"], c: 1,
         e: "Fondée en 1600, avec un monopole sur le commerce avec l’Asie." },
       { q: "Quelle critique David Hume adresse-t-il au mercantilisme en 1752 ?",
-        o: ["Les droits de douane enrichissent l’État aux dépens des marchands", "L’entrée de métaux fait monter les prix, réduit les exportations et rééquilibre la balance", "Les colonies coûtent trop cher", "La monnaie doit être en papier"], c: 1,
-        e: "C’est le mécanisme du flux des espèces et des prix." },
+        o: ["Les droits de douane enrichissent l’État aux dépens des marchands", "L’afflux de métaux fait monter les prix et réduit les exportations", "Les colonies coûtent plus cher à l’État qu’elles ne rapportent au pays", "La monnaie devrait être en papier pour ne plus dépendre des métaux"], c: 1,
+        e: "C’est le mécanisme du flux des espèces et des prix : l’afflux de métaux finit par rééquilibrer la balance." },
       { q: "Quand le grand ouvrage de Mun est-il publié ?",
-        o: ["De son vivant, en 1621", "En 1664, vingt-trois ans après sa mort, par son fils", "En 1776", "En 1690, après la Glorieuse Révolution"], c: 1,
+        o: ["De son vivant, en 1621, pour défendre la Compagnie", "En 1664, vingt-trois ans après sa mort, par son fils", "En 1776, la même année que la Richesse des nations", "En 1690, après la Glorieuse Révolution, par des disciples"], c: 1,
         e: "Écrit vers 1630, il est publié par son fils John." }
     ],
     ouverte: {
@@ -142,11 +142,11 @@ ${outils}
     decouvrir: {
       questions: [
         { q: "De quoi accuse-t-on la compagnie dirigée par Mun ?",
-          o: ["D’appauvrir l’Angleterre en envoyant de l’argent en Asie pour acheter des épices", "De vendre trop cher aux Anglais", "D’avoir causé une guerre", "De refuser de payer ses impôts"], c: 0,
+          o: ["D’appauvrir le pays en envoyant de l’argent en Asie pour des épices", "De faire monter les prix en Angleterre en important trop d’épices", "D’avoir fraudé la Couronne en cachant une partie de ses bénéfices", "D’avoir provoqué une guerre contre les Hollandais pour les îles"], c: 0,
           e: "Mun répond par un livre qui devient la référence du mercantilisme." },
         { q: "Que critique Adam Smith dans la doctrine de Mun ?",
-          o: ["L’idée que la richesse d’un pays est son or : c’est ce qu’il produit et consomme qui compte", "L’idée que le commerce est utile", "L’idée que les épices sont chères", "L’idée qu’il faut produire davantage"], c: 0,
-          e: "Pour Smith, le commerce profite aux deux partenaires." }
+          o: ["L’idée que la richesse d’un pays se mesure à son stock d’or", "L’idée que le commerce extérieur peut enrichir un pays marchand", "L’idée que les épices d’Asie coûtent trop cher aux Anglais", "L’idée qu’il faut produire davantage pour exporter davantage"], c: 0,
+          e: "Pour Smith, la richesse est ce qu’un pays produit et consomme, et le commerce profite aux deux partenaires." }
       ],
       duree: 6,
       html: `
@@ -275,16 +275,16 @@ ${tableau}
     },
     quiz: [
       { q: "Quelle était la profession de Quesnay ?",
-        o: ["Banquier", "Médecin de Madame de Pompadour et du roi", "Ministre des Finances", "Marchand"], c: 1,
+        o: ["Banquier de la cour et conseiller des finances du roi", "Médecin de Madame de Pompadour et du roi", "Ministre des Finances de Louis XV pendant dix ans", "Marchand de grains installé près du port de Rouen"], c: 1,
         e: "Il ne s’intéresse à l’économie qu’après soixante ans." },
       { q: "Selon les physiocrates, quelle activité produit un surplus ?",
-        o: ["L’industrie", "L’agriculture seule", "Le commerce", "La banque"], c: 1,
+        o: ["L’industrie manufacturière, grâce à la division des tâches", "L’agriculture seule, grâce à la fertilité des sols", "Le commerce, grâce à l’écart entre prix d’achat et de vente", "La banque, grâce aux intérêts perçus sur les prêts"], c: 1,
         e: "Ce surplus est le « produit net »." },
       { q: "Qu’est-ce que le Tableau économique ?",
-        o: ["Une liste de prix", "La première représentation de l’économie comme un circuit de flux entre classes", "Un registre fiscal", "Un plan de réforme de la monarchie"], c: 1,
-        e: "Ancêtre de la comptabilité nationale et des tableaux entrée-sortie." },
+        o: ["Une liste des prix des grains et des denrées relevés dans le royaume", "Une représentation de l’économie comme un circuit de flux entre classes", "Un registre fiscal recensant les terres, leurs propriétaires et leurs revenus", "Un plan de réforme de la monarchie et de ses finances"], c: 1,
+        e: "C’est la première représentation de ce genre, ancêtre de la comptabilité nationale et des tableaux entrée-sortie." },
       { q: "Quel impôt les physiocrates proposent-ils ?",
-        o: ["Un impôt sur les salaires", "Un impôt unique sur le revenu des terres", "Une taxe sur le commerce", "Un impôt sur la consommation de luxe"], c: 1,
+        o: ["Un impôt sur les salaires versés dans les villes", "Un impôt unique sur le revenu des terres", "Une taxe sur le commerce des grains et des draps", "Un impôt sur la consommation de luxe des nobles"], c: 1,
         e: "Puisque seul le produit net est un surplus, tous les impôts retombent sur lui." },
       { q: "Quelle société suisse, fondée en 1759, s’inspire des idées agronomiques et physiocratiques ?",
         o: ["La Société helvétique de Schinznach", "La Société économique de Berne", "La Banque nationale suisse", "La Société suisse d’utilité publique"], c: 1,
@@ -304,10 +304,10 @@ ${tableau}
     decouvrir: {
       questions: [
         { q: "Selon Quesnay, pourquoi l’artisan et le commerçant ne créent-ils pas de richesse nouvelle ?",
-          o: ["Parce qu’ils transforment et déplacent les biens, alors que seule l’agriculture produit plus qu’elle ne consomme", "Parce qu’ils ne travaillent pas assez", "Parce qu’ils paient trop d’impôts", "Parce qu’ils vendent à l’étranger"], c: 0,
-          e: "C’est le « produit net », qui vient de la nature." },
+          o: ["Parce qu’ils ne font que transformer et déplacer des biens", "Parce qu’ils travaillent moins que les paysans et produisent peu", "Parce qu’ils paient des impôts trop lourds pour investir", "Parce qu’ils vendent surtout à l’étranger et non au royaume"], c: 0,
+          e: "Seule l’agriculture produit plus qu’elle ne consomme : c’est le « produit net », qui vient de la nature." },
         { q: "Qu’est-ce qui inspire à Quesnay l’idée de l’économie comme un circuit ?",
-          o: ["Sa connaissance de médecin de la circulation du sang", "Les canaux de Versailles", "Les comptes du roi", "Le commerce maritime"], c: 0,
+          o: ["Sa connaissance de médecin de la circulation du sang", "Les canaux et les bassins des jardins du château de Versailles", "Les comptes tenus par les fermiers généraux du roi", "Le va-et-vient des navires dans les grands ports"], c: 0,
           e: "Son Tableau économique est l’ancêtre de la comptabilité nationale." }
       ],
       duree: 6,

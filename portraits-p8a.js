@@ -121,19 +121,19 @@ ${stagnation}
     },
     quiz: [
       { q: "Quels postes Summers a-t-il occupés ?",
-        o: ["Président de la Réserve fédérale", "Secrétaire au Trésor, président de Harvard et conseiller économique d’Obama", "Directeur du FMI", "Sénateur"], c: 1,
+        o: ["Président de la Réserve fédérale, à la tête de la banque centrale", "Secrétaire au Trésor, président de Harvard et conseiller d’Obama", "Directeur général du Fonds monétaire international à Washington", "Sénateur démocrate, puis gouverneur d’un grand État américain"], c: 1,
         e: "Il a aussi été économiste en chef de la Banque mondiale." },
       { q: "Qu’est-ce que l’hystérèse du chômage ?",
-        o: ["Un chômage qui disparaît seul", "Le fait que le chômage d’aujourd’hui augmente durablement le chômage de demain", "Le chômage saisonnier", "Le chômage dû aux robots"], c: 1,
+        o: ["Un chômage qui disparaît de lui-même avec la croissance", "Le fait que le chômage actuel nourrit durablement le chômage futur", "Un chômage saisonnier lié aux récoltes et au tourisme", "Un chômage provoqué par le remplacement des travailleurs par des robots"], c: 1,
         e: "Les chômeurs de longue durée perdent compétences et liens avec l’emploi." },
       { q: "Selon la stagnation séculaire, quel est le problème central ?",
-        o: ["Une inflation trop forte", "Un excès d’épargne par rapport à l’investissement, qui pousse le taux d’intérêt naturel sous zéro", "Un excès d’investissement par rapport à l’épargne", "Un manque de main-d’œuvre"], c: 1,
+        o: ["Une inflation trop forte, que la banque centrale ne parvient plus à maîtriser", "Un excès d’épargne qui pousse le taux d’intérêt naturel sous zéro", "Un excès d’investissement par rapport à l’épargne disponible", "Un manque de main-d’œuvre qui fait monter fortement les salaires"], c: 1,
         e: "La banque centrale est bloquée au plancher du zéro." },
       { q: "Quel remède Summers propose-t-il contre la stagnation séculaire ?",
-        o: ["L’austérité budgétaire", "L’investissement public, notamment dans les infrastructures", "Le protectionnisme", "La hausse des taux"], c: 1,
+        o: ["L’austérité budgétaire pour rassurer les marchés financiers", "L’investissement public, notamment dans les infrastructures", "Le protectionnisme, pour protéger l’industrie nationale des importations", "Le relèvement des taux directeurs par la banque centrale"], c: 1,
         e: "Financé à des taux d’intérêt très bas." },
       { q: "Que prévoit Summers début 2021 ?",
-        o: ["Une déflation", "Une forte inflation provoquée par un plan de relance trop important", "Une crise bancaire", "Une baisse du dollar"], c: 1,
+        o: ["Une déflation durable, avec des prix qui baissent partout", "Une forte inflation, à cause d’un plan de relance trop important", "Une crise bancaire déclenchée par la hausse rapide des taux", "Une forte baisse du dollar face aux principales monnaies mondiales en 2021"], c: 1,
         e: "L’inflation américaine dépasse 9 % en 2022." }
     ],
     ouverte: {
@@ -150,10 +150,10 @@ ${stagnation}
     decouvrir: {
       questions: [
         { q: "Selon Summers, pourquoi les pays riches épargnent-ils trop et investissent-ils trop peu ?",
-          o: ["À cause du vieillissement, des inégalités et du faible coût des équipements", "À cause d’impôts trop élevés", "À cause de taux d’intérêt trop hauts", "À cause d’une population trop jeune"], c: 0,
+          o: ["À cause du vieillissement, des inégalités et d’équipements bon marché", "À cause d’impôts trop élevés qui découragent les entrepreneurs", "À cause de taux d’intérêt trop hauts qui découragent l’investissement des firmes", "À cause d’une population trop jeune qui consomme tout son revenu"], c: 0,
           e: "C’est la stagnation séculaire." },
         { q: "Qu’ont montré Summers et Olivier Blanchard à propos des récessions ?",
-          o: ["Qu’elles peuvent laisser des traces durables, d’où l’intérêt de relances rapides", "Qu’elles n’ont aucun effet durable", "Qu’elles se corrigent toujours d’elles-mêmes", "Qu’elles font baisser durablement le chômage"], c: 0,
+          o: ["Qu’elles peuvent laisser des traces durables, d’où des relances rapides", "Qu’elles n’ont pas d’effet durable, puisque l’économie se redresse", "Qu’elles se corrigent d’elles-mêmes, si l’État n’intervient pas", "Qu’elles font baisser le chômage en éliminant les entreprises les moins efficaces"], c: 0,
           e: "C’est l’hystérèse." }
       ],
       duree: 6,
@@ -287,19 +287,19 @@ ${cercles}
     },
     quiz: [
       { q: "Selon Acemoglu, qu’est-ce qui explique d’abord les écarts de richesse entre pays ?",
-        o: ["Le climat", "Les institutions politiques et économiques", "La religion", "Les ressources naturelles"], c: 1,
+        o: ["Le climat et la position géographique des pays", "Les institutions politiques et économiques", "La religion et les valeurs culturelles des peuples", "Les ressources naturelles que le pays possède"], c: 1,
         e: "La géographie et la culture jouent un rôle secondaire selon lui." },
       { q: "Que montre l’exemple de Nogales ?",
-        o: ["Que le climat explique tout", "Qu’avec la même géographie et la même culture, des institutions différentes donnent des niveaux de vie différents", "Que le commerce appauvrit", "Que la ville mexicaine est plus pauvre à cause de son climat"], c: 1,
+        o: ["Que le climat suffit à expliquer les écarts de niveau de vie", "Qu’à géographie égale, des institutions différentes créent des écarts", "Que le commerce avec l’étranger appauvrit les deux côtés de la frontière", "Que la partie mexicaine est plus pauvre à cause de son climat"], c: 1,
         e: "La ville est coupée en deux par la frontière entre les États-Unis et le Mexique." },
       { q: "Qu’utilisent Acemoglu, Johnson et Robinson en 2001 pour prouver le rôle des institutions ?",
-        o: ["Les prix du pétrole", "La mortalité des premiers colons européens", "Les résultats électoraux", "Le nombre de colons arrivés chaque année"], c: 1,
+        o: ["Les prix des matières premières exportées", "La mortalité des premiers colons européens", "Les résultats électoraux des anciennes colonies", "Le nombre de colons arrivés chaque année"], c: 1,
         e: "Elle a déterminé le type d’institutions installées par les colons." },
       { q: "Pourquoi une élite extractive bloque-t-elle souvent l’innovation ?",
-        o: ["Par ignorance", "Parce que la destruction créatrice menacerait ses rentes et son pouvoir", "Faute d’argent", "Parce que l’innovation coûte trop cher à importer"], c: 1,
+        o: ["Par ignorance des techniques nouvelles et de leurs usages", "Parce que la destruction créatrice menacerait ses rentes", "Faute d’argent pour financer les machines et les brevets", "Parce que l’innovation importée coûte trop cher à son pays"], c: 1,
         e: "C’est le cercle vicieux des institutions extractives." },
       { q: "Que soutient Pouvoir et progrès (2023) ?",
-        o: ["Que la technologie profite toujours à tous", "Que les gains de la technologie ne sont partagés que si la société oriente son développement", "Qu’il faut interdire les robots", "Que la technologie détruit toujours plus d’emplois qu’elle n’en crée"], c: 1,
+        o: ["Que la technologie profite automatiquement à toute la société", "Que les gains du progrès ne sont partagés que si la société l’oriente", "Qu’il faut interdire les robots et l’intelligence artificielle", "Que la technologie détruit plus d’emplois qu’elle n’en crée, partout"], c: 1,
         e: "Écrit avec Simon Johnson." }
     ],
     ouverte: {
@@ -316,10 +316,10 @@ ${cercles}
     decouvrir: {
       questions: [
         { q: "Quel événement de son adolescence pousse Acemoglu à réfléchir aux liens entre politique et prospérité ?",
-          o: ["Le coup d’État militaire de 1980 en Turquie", "La chute du mur de Berlin", "La crise de 2008", "L’indépendance de l’Arménie"], c: 0,
+          o: ["Le coup d’État militaire de 1980 dans son pays, la Turquie", "La chute du mur de Berlin en 1989 vue de Turquie", "La crise financière de 2008 et la faillite de Lehman", "L’indépendance de l’Arménie après la chute de l’URSS"], c: 0,
           e: "Il deviendra professeur au MIT et prix Nobel en 2024." },
         { q: "Pourquoi, selon Acemoglu, la pauvreté peut-elle durer des siècles ?",
-          o: ["Parce qu’une élite qui profite d’institutions extractives bloque les changements qui la menaceraient", "Parce que certains climats empêchent toute croissance", "Parce que les pays pauvres refusent le commerce", "Parce que la population augmente trop vite"], c: 0,
+          o: ["Parce qu’une élite qui en profite bloque les réformes qui la menaceraient", "Parce que certains climats rendent la croissance impossible pendant des siècles", "Parce que les pays pauvres refusent d’ouvrir leurs frontières au commerce", "Parce que la population augmente plus vite que la production agricole"], c: 0,
           e: "Les institutions comptent davantage que la géographie ou la culture." }
       ],
       duree: 6,

@@ -100,23 +100,23 @@ ${trappe}
     },
     quiz: [
       { q: "Selon Keynes, que rémunère le taux d’intérêt ?",
-        o: ["L’épargne", "La renonciation à la liquidité pendant une période donnée", "Le travail des banquiers", "Le risque d’inflation"], c: 1,
+        o: ["L’attente du consommateur qui reporte ses achats à plus tard", "La renonciation à la liquidité pendant une période donnée", "Le travail fourni par les banquiers pour gérer les dépôts", "Le risque que l’inflation fasse perdre de la valeur à la monnaie"], c: 1,
         e: "Pour Keynes, l’intérêt est le prix payé pour convaincre quelqu’un de se séparer de sa monnaie, actif parfaitement liquide." },
       { q: "Quel motif conduit à garder de la monnaie quand on anticipe une hausse des taux ?",
         o: ["Le motif de transaction", "Le motif de précaution", "Le motif de spéculation", "Le motif fiscal"], c: 2,
         e: "Si les taux montent, le prix des obligations baisse : mieux vaut garder de la monnaie et acheter les titres plus tard, moins cher." },
       { q: "Qu’est-ce qu’une trappe à liquidité ?",
-        o: ["Une situation où la banque centrale manque de monnaie", "Une situation où les taux sont si bas que la monnaie supplémentaire est conservée au lieu d’être prêtée ou dépensée", "Une situation où les taux sont trop élevés pour emprunter", "Une situation où les banques refusent tout crédit, quel que soit le taux"], c: 1,
+        o: ["Une situation où la banque centrale n’a plus assez de monnaie à prêter", "Une situation où les taux sont si bas que la monnaie créée reste inutilisée", "Une situation où les taux sont si élevés que plus personne n’emprunte", "Une situation où les banques prêtent moins parce que leurs clients sont endettés"], c: 1,
         e: "Quand les taux sont déjà proches de zéro, créer davantage de monnaie ne fait plus baisser les taux ni relancer la dépense." },
       { q: "Pourquoi les taux d’intérêt peuvent-ils descendre légèrement sous zéro ?",
-        o: ["Parce que l’épargne est taxée par l’État", "Parce que détenir de grandes quantités de billets a un coût de stockage et d’assurance", "Parce que les banques centrales paient les épargnants", "Parce que l’inflation est négative"], c: 1,
+        o: ["Parce que l’État taxe l’épargne et reverse l’argent aux emprunteurs", "Parce que garder de gros montants de billets coûte en stockage et en assurance", "Parce que la banque centrale rémunère les épargnants pour qu’ils dépensent", "Parce que l’inflation est négative et que les prix des biens baissent peu à peu"], c: 1,
         e: "Tant que garder des billets coûte plus cher que d’accepter un taux légèrement négatif, les épargnants ne retirent pas massivement leurs fonds." },
       { q: "Comment la BNS a-t-elle réagi en 2011 alors que ses taux étaient déjà proches de zéro ?",
         o: ["Elle a relevé ses taux", "Elle a fixé un cours plancher de 1,20 franc pour un euro", "Elle a acheté massivement des obligations de la Confédération", "Elle a cessé toute intervention"], c: 1,
         e: "Le taux de change est devenu son principal instrument : elle a acheté massivement des devises pour empêcher le franc de s’apprécier au-delà du plancher." }
     ],
     transfert: { q: "En 2020, les taux sont déjà proches de zéro dans la zone euro, et les entreprises hésitent à investir malgré l’argent bon marché. Quelle conclusion tirerait Keynes ?",
-      o: ["La banque centrale seule ne suffit plus : la dépense publique doit prendre le relais", "Il faut relever fortement les taux", "Les entreprises vont forcément investir bientôt", "Il faut supprimer l’argent liquide"], c: 0,
+      o: ["La banque centrale ne suffit plus, la dépense publique doit prendre le relais", "Il faut relever fortement les taux pour encourager les placements", "Les entreprises vont investir d’elles-mêmes dès que le crédit sera encore moins cher", "Il faut supprimer l’argent liquide pour que chacun dépense davantage"], c: 0,
       e: "Dans une trappe à liquidité, la politique monétaire perd son efficacité : c’est l’argument pour la relance budgétaire." },
     ouverte: {
       q: "Entre 2014 et 2022, plusieurs banques centrales, dont la BCE, la Banque du Japon et la banque centrale de Suède, ont appliqué des taux négatifs. Qui en a profité et qui en a souffert ?",
@@ -132,10 +132,10 @@ ${trappe}
     decouvrir: {
       questions: [
         { q: "Pour Keynes, pourquoi garde-t-on de l’argent qui ne rapporte rien ?",
-          o: ["Pour payer ses achats, faire face aux imprévus ou attendre une meilleure occasion de placer", "Parce que la loi l’impose", "Parce que les billets prennent de la valeur avec le temps", "Parce que les banques refusent les dépôts"], c: 0,
+          o: ["Pour payer ses achats, faire face aux imprévus ou attendre l’occasion de placer", "Parce que la loi oblige les ménages à conserver une réserve en monnaie", "Parce que les billets prennent de la valeur en vieillissant, comme les pièces rares", "Parce que les banques refusent les dépôts des petits épargnants et des entreprises"], c: 0,
           e: "Ce goût pour l’argent disponible est la préférence pour la liquidité." },
         { q: "Pourquoi créer davantage de monnaie ne sert-il presque plus à rien dans une trappe à liquidité ?",
-          o: ["Parce que la monnaie reste dans les banques au lieu d’être prêtée ou dépensée", "Parce que les prix montent aussitôt", "Parce que la monnaie est détruite chaque soir", "Parce que les taux d’intérêt sont trop élevés"], c: 0,
+          o: ["Parce que la monnaie reste dans les banques au lieu d’être prêtée ou dépensée", "Parce que les prix montent aussitôt et annulent l’effet de la création monétaire", "Parce que la monnaie créée est détruite par la banque centrale chaque soir", "Parce que les taux d’intérêt sont trop élevés pour que les entreprises empruntent"], c: 0,
           e: "Quand les taux sont à zéro et que la confiance manque, la monnaie ne circule plus." }
       ],
       duree: 5,
@@ -250,23 +250,23 @@ ${valeur}
     },
     quiz: [
       { q: "Selon la théorie des perspectives, comment évaluons-nous un résultat ?",
-        o: ["En richesse totale finale", "En gain ou en perte par rapport à un point de référence", "En fonction du prix de marché", "En fonction de l’avis des autres"], c: 1,
+        o: ["En richesse totale finale, une fois tous les gains et pertes additionnés", "En gain ou en perte par rapport à un point de référence", "En fonction du prix de marché de ce qu’on obtient ou perd", "En fonction de l’avis des autres personnes concernées par le choix"], c: 1,
         e: "C’est le premier principe de Kahneman et Tversky : la référence, souvent le statu quo ou une attente, détermine si un résultat est vécu comme un gain ou une perte." },
       { q: "Un pari à pile ou face : gagner 120 francs ou perdre 100 francs. Avec un coefficient d’aversion aux pertes de 2, le pari paraît-il attractif ?",
-        o: ["Oui, car le gain espéré est positif", "Non, car la perte de 100 pèse comme 200, plus que le gain de 120", "Oui, car on est indifférent au risque", "Impossible à dire"], c: 1,
+        o: ["Oui, car le gain possible de 120 dépasse la perte possible de 100", "Non, car la perte de 100 pèse comme 200, plus que le gain de 120", "Oui, car pile ou face est un jeu équitable et on est indifférent au risque", "Impossible à dire, car le résultat dépend de la fortune du joueur"], c: 1,
         e: "Le gain espéré monétaire est de +10, mais en valeur ressentie : 0,5 × 120 − 0,5 × 200 = −40. La plupart refusent ce type de pari." },
       { q: "Qu’est-ce que l’effet de dotation ?",
-        o: ["La tendance à donner aux œuvres caritatives", "Le fait d’exiger davantage pour céder un objet que l’on ne paierait pour l’acquérir", "La préférence pour les biens de luxe", "L’héritage des parents"], c: 1,
+        o: ["La tendance à donner une part de ses revenus à des œuvres caritatives", "Exiger plus pour céder un objet que ce qu’on paierait pour l’acquérir", "La préférence pour les biens de luxe dès que le revenu d’un ménage augmente", "La part de patrimoine qu’une personne reçoit de ses parents à leur décès"], c: 1,
         e: "Une fois possédé, l’objet fait partie du point de référence ; le céder est vécu comme une perte." },
       { q: "Pourquoi les investisseurs vendent-ils plus volontiers leurs actions gagnantes que leurs perdantes ?",
         o: ["Pour payer moins d’impôts", "Parce que vendre une action en perte rend la perte définitive", "Parce que les actions perdantes remontent toujours", "Parce que les actions gagnantes ont atteint leur valeur maximale"], c: 1,
         e: "C’est l’effet de disposition, documenté par Odean (1998) : on préfère attendre que la perte se résorbe plutôt que de la réaliser." },
       { q: "Comment le programme « Save More Tomorrow » contourne-t-il l’aversion aux pertes ?",
-        o: ["En obligeant les salariés à épargner", "En affectant à l’épargne une partie des futures augmentations, sans jamais réduire le salaire disponible", "En offrant une prime d’épargne", "En prélevant l’épargne sur le salaire dès le premier mois"], c: 1,
+        o: ["En obligeant les salariés à épargner une part fixe de leur salaire actuel", "En réservant une part des futures augmentations, sans baisse du salaire net", "En offrant une prime à ceux qui augmentent leur taux d’épargne chaque mois", "En prélevant l’épargne sur le salaire dès le premier mois, avant toute augmentation"], c: 1,
         e: "Le revenu disponible ne baisse jamais ; il augmente simplement moins vite. L’épargne n’est donc pas vécue comme une perte." }
     ],
     transfert: { q: "Un magasin en ligne présente la même offre de deux façons : « 10 euros de réduction si vous payez en avance » ou « 10 euros de frais si vous payez à la livraison ». Selon l’économie comportementale, laquelle pousse le plus à payer en avance ?",
-      o: ["Les frais, car éviter une perte motive davantage qu’obtenir un gain", "La réduction, car les gains comptent davantage que les pertes", "Les deux ont exactement le même effet", "Aucune, car les clients ne lisent pas les conditions"], c: 0,
+      o: ["Les frais, car éviter une perte motive davantage qu’obtenir un gain", "La réduction, car les gains comptent davantage que les pertes", "Les deux ont le même effet, puisque le montant en jeu est identique", "Aucune, car les clients ne lisent pas les conditions de paiement"], c: 0,
       e: "Les deux présentations sont équivalentes en argent, mais la perte pèse plus lourd." },
     ouverte: {
       q: "Dans plusieurs pays, comme le Royaume-Uni ou les Pays-Bas, les futurs retraités peuvent toucher tout ou partie de leur épargne retraite en capital plutôt qu’en rente. Comment l’aversion aux pertes et le cadrage peuvent-ils influencer ce choix ?",
@@ -282,10 +282,10 @@ ${valeur}
     decouvrir: {
       questions: [
         { q: "Dans l’exemple de la maladie qui menace 600 personnes, qu’est-ce qui change la décision des gens ?",
-          o: ["La façon de présenter le même choix : en vies sauvées ou en morts", "Le nombre de malades", "Le coût du programme", "L’avis des médecins"], c: 0,
+          o: ["La présentation du même choix, en vies sauvées ou en morts", "Le nombre réel de malades concernés dans chaque programme", "Le coût du programme de soins pour la collectivité et les assurances", "L’avis des médecins qui présentent les programmes aux patients"], c: 0,
           e: "C’est l’effet de cadrage, mis en évidence par Kahneman et Tversky." },
         { q: "Pourquoi la plupart des gens refusent-ils de jouer à pile ou face pour gagner 150 francs ou en perdre 100 ?",
-          o: ["Parce qu’une perte leur fait environ deux fois plus d’effet qu’un gain de même montant", "Parce que le pari est perdant en moyenne", "Parce que les jeux d’argent sont interdits", "Parce qu’ils ne comprennent pas les probabilités"], c: 0,
+          o: ["Parce qu’une perte pèse environ deux fois plus qu’un gain de même montant", "Parce que le pari fait perdre de l’argent en moyenne sur plusieurs parties", "Parce que les jeux d’argent sont interdits dans la plupart des pays", "Parce qu’ils comprennent mal les probabilités de gagner ou de perdre"], c: 0,
           e: "Le pari est pourtant avantageux en moyenne : c’est l’aversion aux pertes." }
       ],
       duree: 5,

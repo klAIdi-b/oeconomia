@@ -109,23 +109,23 @@ ${coordination}
     },
     quiz: [
       { q: "Qu’est-ce qu’un équilibre de Nash ?",
-        o: ["La situation qui maximise le gain total", "Une situation où personne ne peut améliorer son sort en changeant seul de stratégie", "Un accord signé entre les joueurs", "La stratégie qui garantit au joueur le gain le plus élevé possible"], c: 1,
+        o: ["La situation qui maximise le gain total de l’ensemble des joueurs", "Une situation où personne ne gagne à changer seul de stratégie", "Un accord signé entre les joueurs et respecté par chacun d’eux", "La stratégie qui garantit à chaque joueur le gain le plus élevé possible"], c: 1,
         e: "Chacun joue la meilleure réponse aux choix des autres." },
       { q: "Pourquoi le dilemme du prisonnier est-il un dilemme ?",
-        o: ["Parce qu’il n’a pas d’équilibre", "Parce que l’équilibre est moins bon pour tous qu’une autre issue possible", "Parce que les joueurs coopèrent toujours", "Parce que chacun a intérêt à coopérer, quoi que fasse l’autre"], c: 1,
+        o: ["Parce que le jeu n’a pas d’équilibre, quoi que choisissent les joueurs", "Parce que l’équilibre est moins bon pour tous qu’une autre issue possible", "Parce que les joueurs coopèrent spontanément et se font ensuite exploiter", "Parce que chacun gagne à coopérer, quel que soit le choix de l’autre joueur"], c: 1,
         e: "Chacun a intérêt à trahir, et tous y perdent." },
       { q: "Pourquoi la coopération peut-elle devenir stable dans un jeu répété ?",
-        o: ["Parce que les joueurs oublient le passé", "Parce que celui qui trahit aujourd’hui peut être puni demain", "Parce que les gains de la trahison diminuent à chaque tour", "Parce que les gains augmentent toujours"], c: 1,
+        o: ["Parce que les joueurs oublient ce qui s’est passé aux tours précédents", "Parce que celui qui trahit aujourd’hui risque d’être puni demain", "Parce que les gains de la trahison diminuent un peu à chaque tour", "Parce que les gains de la coopération augmentent à chaque nouveau tour"], c: 1,
         e: "La perspective de l’avenir discipline les comportements, comme dans la stratégie donnant-donnant." },
       { q: "Qu’est-ce qu’un jeu de coordination, comme le choix de rouler à gauche ou à droite ?",
-        o: ["Un jeu sans équilibre", "Un jeu à plusieurs équilibres, où chacun veut faire comme les autres", "Un jeu où l’un gagne ce que l’autre perd", "Un jeu où chaque joueur a une stratégie dominante"], c: 1,
+        o: ["Un jeu sans équilibre, où les joueurs changent sans cesse de stratégie", "Un jeu à plusieurs équilibres, où chacun veut agir comme les autres", "Un jeu où l’un gagne exactement ce que l’autre perd, tour après tour", "Un jeu où chaque joueur possède une stratégie dominante qu’il suit"], c: 1,
         e: "Une convention ou une loi désigne l’équilibre retenu." },
       { q: "Comment un programme de clémence fragilise-t-il les cartels ?",
-        o: ["En augmentant les amendes de tous", "En offrant l’immunité au premier qui dénonce, ce qui pousse chacun à parler avant les autres", "En autorisant les cartels déclarés", "En interdisant aux entreprises de répondre aux appels d’offres"], c: 1,
+        o: ["En augmentant les amendes infligées à toutes les entreprises du cartel", "En offrant l’immunité au premier qui dénonce, ce qui pousse à parler tôt", "En autorisant officiellement les cartels qui se déclarent à l’autorité", "En interdisant aux entreprises de répondre aux appels d’offres publics"], c: 1,
         e: "Le cartel devient un dilemme du prisonnier." }
     ],
     transfert: { q: "Deux pays voisins pêchent dans le même lac. Chacun gagne à pêcher davantage, mais si les deux le font, le stock de poissons s’effondre. De quel type de situation s’agit-il ?",
-      o: ["Un dilemme du prisonnier : l’intérêt de chacun conduit à une issue mauvaise pour les deux", "Un jeu de coordination à plusieurs équilibres", "Un monopole", "Une situation sans interaction entre les deux pays"], c: 0,
+      o: ["Un dilemme du prisonnier, chacun suivant son intérêt aux dépens des deux", "Un jeu de coordination, avec plusieurs équilibres possibles pour les deux pays", "Un monopole, puisqu’un seul lac est exploité par les deux pays voisins", "Une situation sans interaction, chaque pays décidant seul de sa pêche"], c: 0,
       e: "Chacun a intérêt à pêcher plus quoi que fasse l’autre, et tous deux y perdent : seul un accord surveillé peut l’éviter." },
     ouverte: {
       q: "Un petit pays qui émet une part infime des gaz à effet de serre mondiaux a-t-il intérêt à réduire ses émissions si les grands pays ne le font pas ?",
@@ -142,10 +142,10 @@ ${coordination}
     decouvrir: {
       questions: [
         { q: "Deux stations-service gagneraient toutes deux à garder des prix élevés. Pourquoi finissent-elles par les baisser ?",
-          o: ["Parce que chacune peut attirer tous les clients en baissant seule, et craint que l’autre le fasse", "Parce que la loi les y oblige", "Parce que leurs coûts ont baissé", "Parce que les clients exigent un prix unique"], c: 0,
+          o: ["Parce que chacune craint que l’autre baisse d’abord et lui prenne ses clients", "Parce que la loi les oblige à s’aligner sur le prix le plus bas du marché", "Parce que leurs coûts de production ont baissé et qu’elles répercutent la baisse", "Parce que les clients exigent un prix unique dans toutes les stations"], c: 0,
           e: "C’est la logique du dilemme du prisonnier : l’intérêt de chacun mène à une issue moins bonne pour les deux." },
         { q: "Qu’est-ce qui permet parfois de sortir d’un dilemme du prisonnier ?",
-          o: ["La répétition du jeu, la confiance et des règles communes", "Le hasard seulement", "Le fait de ne jouer qu’une seule fois", "Des prix imposés par les clients"], c: 0,
+          o: ["La répétition du jeu, la confiance et des règles communes", "Le hasard, qui amène parfois les joueurs à choisir la même chose", "Le fait de ne jouer qu’une seule fois, sans penser au lendemain", "Des prix imposés par les clients, au-dessus du niveau de concurrence"], c: 0,
           e: "Quand on se retrouve souvent, la trahison d’aujourd’hui peut être punie demain." }
       ],
       duree: 5,

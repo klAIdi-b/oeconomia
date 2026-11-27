@@ -114,23 +114,23 @@ ${fpp}
     },
     quiz: [
       { q: "Qu’est-ce que le coût d’opportunité d’un choix ?",
-        o: ["Le prix payé", "La valeur de la meilleure option à laquelle on renonce", "La somme de toutes les options abandonnées", "Les coûts déjà dépensés"], c: 1,
+        o: ["Le prix payé pour obtenir le bien ou le service choisi", "La valeur de la meilleure option à laquelle on renonce", "La somme des valeurs de toutes les options abandonnées", "Les coûts déjà dépensés et qu’on ne peut plus récupérer"], c: 1,
         e: "Seule la meilleure alternative sacrifiée compte." },
       { q: "Que veut montrer Bastiat avec l’histoire de la vitre cassée ?",
-        o: ["Que les vitriers sont utiles", "Que la dépense du commerçant chez le vitrier se fait au détriment d’une autre dépense qu’on ne voit pas", "Qu’il faut casser des vitres pour relancer l’économie", "Que l’assurance devrait rembourser les vitres cassées"], c: 1,
+        o: ["Que les vitriers sont utiles et qu’il faut mieux les rémunérer", "Que payer le vitrier prive le commerçant d’une autre dépense, qu’on ne voit pas", "Qu’il faut casser des vitres de temps en temps pour relancer l’économie", "Que l’assurance devrait rembourser les vitres cassées par des inconnus"], c: 1,
         e: "Ce qu’on voit, le travail du vitrier ; ce qu’on ne voit pas, les souliers qui ne seront pas achetés." },
       { q: "Une indépendante encaisse 120, dépense 80, et pourrait gagner 55 comme salariée. Quel est son bénéfice économique ?",
         o: ["40", "−15", "55", "120"], c: 1,
         e: "Bénéfice comptable : 120 − 80 = 40 ; moins le salaire sacrifié de 55 : −15." },
       { q: "Pourquoi faut-il ignorer les coûts irrécupérables dans une décision ?",
-        o: ["Parce qu’ils sont faibles", "Parce qu’ils sont perdus quoi qu’on décide, et ne changent donc pas la comparaison des options", "Parce qu’ils sont déjà inclus dans le prix de vente", "Parce qu’ils sont remboursés"], c: 1,
+        o: ["Parce qu’ils sont trop faibles par rapport aux autres coûts du projet, et négligeables", "Parce qu’ils sont perdus quoi qu’on décide et ne changent pas la comparaison", "Parce qu’ils sont déjà inclus dans le prix de vente, donc comptés deux fois", "Parce qu’ils seront remboursés par l’État une fois le projet terminé"], c: 1,
         e: "Continuer un projet parce qu’on y a beaucoup investi est l’erreur du Concorde." },
       { q: "Que représente un point à l’intérieur de la frontière des possibilités de production ?",
-        o: ["Une production impossible", "Une situation où des ressources sont inemployées", "La production maximale", "Une production qui n’utilise que du capital"], c: 1,
+        o: ["Une production impossible avec les ressources disponibles, même en les employant toutes", "Une situation où certaines ressources ne sont pas utilisées", "La production maximale que l’économie puisse atteindre", "Une production n’utilisant que du capital, sans travail"], c: 1,
         e: "On peut alors produire plus de tout sans rien sacrifier, comme en récession." }
     ],
     transfert: { q: "Une ville offre un terrain qu’elle possède « gratuitement » pour construire un stade, au lieu de le vendre 20 millions à un promoteur. Que dirait un économiste du coût de ce terrain pour la ville ?",
-      o: ["Il coûte 20 millions : c’est ce à quoi la ville renonce en ne le vendant pas", "Il ne coûte rien, puisque la ville le possède déjà", "Il coûte seulement l’entretien futur du stade", "Il rapporte de l’argent, puisque le stade attire des visiteurs"], c: 0,
+      o: ["Il coûte 20 millions, ce à quoi la ville renonce en ne le vendant pas", "Il ne coûte rien, puisque la ville le possède déjà et ne paie pas pour l’obtenir", "Il coûte surtout l’entretien futur du stade, une fois celui-ci construit", "Il rapporte de l’argent à la ville, puisque le stade attirera des visiteurs"], c: 0,
       e: "Le coût d’opportunité d’un bien qu’on possède est ce qu’on pourrait en tirer autrement." },
     ouverte: {
       q: "L’Allemagne, l’Autriche ou la Suisse forment une grande partie de leurs jeunes par l’apprentissage plutôt que par l’université. Le coût d’opportunité des études longues justifie-t-il ce modèle ?",
@@ -146,10 +146,10 @@ ${fpp}
     decouvrir: {
       questions: [
         { q: "Pour un étudiant, que comprend le vrai coût de ses études ?",
-          o: ["Les frais d’inscription, mais aussi le salaire qu’il aurait gagné en travaillant à la place", "Seulement les frais d’inscription", "Seulement le prix des livres", "Rien, si les études sont gratuites"], c: 0,
+          o: ["Les frais d’inscription, mais aussi le salaire qu’il aurait gagné en travaillant", "Les frais d’inscription, car c’est tout ce que l’étudiant paie réellement", "Le prix des livres et du matériel, seules dépenses directement liées aux études", "Rien du tout, si les études sont gratuites et que l’État les finance"], c: 0,
           e: "Le vrai coût d’un choix, c’est la meilleure chose qu’on aurait pu faire à la place." },
         { q: "Qu’est-ce que l’« erreur du Concorde » ?",
-          o: ["Continuer un projet raté parce qu’on y a déjà beaucoup investi", "Arrêter un projet trop tôt", "Investir dans les avions", "Refuser tout projet risqué"], c: 0,
+          o: ["Continuer un projet raté parce qu’on y a déjà beaucoup investi", "Arrêter un projet trop tôt, avant qu’il n’ait eu le temps de porter ses fruits", "Investir dans l’aviation de luxe sans étudier la demande", "Refuser tout projet risqué, par peur de perdre l’argent déjà investi"], c: 0,
           e: "L’argent déjà dépensé et perdu ne doit pas influencer la décision." }
       ],
       duree: 5,
@@ -284,19 +284,19 @@ ${plage}
     },
     quiz: [
       { q: "Pourquoi un monopole vend-il moins qu’un marché concurrentiel ?",
-        o: ["Parce qu’il produit mal", "Parce que pour vendre davantage, il devrait baisser son prix sur toutes les unités, ce qui réduit son profit", "Parce que ses coûts de production sont plus élevés", "Parce qu’il manque de clients"], c: 1,
+        o: ["Parce qu’il produit mal, faute de concurrence pour le pousser à s’améliorer", "Parce que vendre davantage l’obligerait à baisser son prix sur toutes ses unités", "Parce que ses coûts de production sont plus élevés que ceux des entreprises concurrentes", "Parce que les clients ne connaissent pas son produit et l’achètent peu"], c: 1,
         e: "Il choisit la quantité qui maximise son profit, inférieure à celle de la concurrence." },
       { q: "Dans l’exemple chiffré (prix = 100 − quantité, coût de 10), quel est le prix de monopole ?",
         o: ["10", "40", "55", "100"], c: 2,
         e: "Le monopole produit 45 unités, vendues au prix de 100 − 45 = 55." },
       { q: "Pourquoi les cartels sont-ils souvent instables ?",
-        o: ["Parce qu’ils sont trop petits", "Parce que chaque membre est tenté de tricher en vendant davantage", "Parce que les consommateurs les boycottent", "Parce que les prix baissent toujours"], c: 1,
+        o: ["Parce qu’ils sont trop petits pour peser sur le marché et sur les prix", "Parce que chaque membre est tenté de tricher en vendant davantage", "Parce que les consommateurs les boycottent dès qu’ils sont découverts", "Parce que les prix baissent dès que le cartel est formé, ce qui le ruine"], c: 1,
         e: "C’est un dilemme du prisonnier : l’intérêt collectif contredit l’intérêt individuel." },
       { q: "Que montre le modèle de la plage de Hotelling ?",
-        o: ["Que deux concurrents s’installent aux deux extrémités pour se partager la clientèle", "Que deux concurrents tendent à s’installer côte à côte au centre, et à proposer des produits semblables", "Que la concurrence fait toujours baisser les prix", "Que les monopoles sont efficaces"], c: 1,
+        o: ["Que deux concurrents s’installent aux deux extrémités pour se partager la clientèle", "Que deux concurrents se rapprochent du centre et proposent des produits semblables", "Que la concurrence entre deux vendeurs fait baisser les prix jusqu’à leur coût", "Que les monopoles sont efficaces parce qu’ils n’ont pas de rivaux à suivre"], c: 1,
         e: "Le même mécanisme explique le recentrage des partis politiques." },
       { q: "Pour quel motif la COMCO a-t-elle condamné BMW en 2012 ?",
-        o: ["Pour pollution", "Pour avoir empêché les importations parallèles de voitures vers la Suisse", "Pour fraude fiscale", "Pour publicité mensongère"], c: 1,
+        o: ["Pour des émissions de gaz d’échappement supérieures aux normes", "Pour avoir empêché les importations parallèles de voitures vers la Suisse", "Pour fraude fiscale dans la déclaration de ses bénéfices en Suisse", "Pour publicité mensongère sur la consommation de carburant de ses modèles"], c: 1,
         e: "Cloisonner le marché suisse permettait de maintenir des prix plus élevés qu’à l’étranger." }
     ],
     transfert: { q: "Dans une région, une seule entreprise fournit l’internet à haut débit. Une deuxième entreprise obtient le droit de s’installer. Que prévoit l’analyse de la concurrence imparfaite ?",
@@ -316,10 +316,10 @@ ${plage}
     decouvrir: {
       questions: [
         { q: "Pourquoi un producteur de blé parmi des milliers ne peut-il pas choisir son prix ?",
-          o: ["Parce que s’il le relève, ses clients achètent ailleurs", "Parce que l’État fixe le prix du blé", "Parce que son blé est de moins bonne qualité", "Parce que ses coûts sont trop élevés"], c: 0,
+          o: ["Parce que s’il relève son prix, ses clients achètent ailleurs", "Parce que l’État fixe le prix du blé et interdit de s’en écarter", "Parce que son blé est de moins bonne qualité que celui des autres", "Parce que ses coûts sont trop élevés pour qu’il puisse baisser son prix"], c: 0,
           e: "En concurrence parfaite, chacun prend le prix du marché comme une donnée." },
         { q: "Qu’est-ce qu’un cartel ?",
-          o: ["Une entente secrète entre entreprises pour fixer les prix ou se partager le marché", "Une entreprise publique", "Une fusion autorisée", "Un syndicat de salariés"], c: 0,
+          o: ["Une entente entre entreprises pour fixer les prix ou se partager le marché", "Une entreprise publique chargée de fournir un service à toute la population", "Une fusion de deux entreprises autorisée par l’autorité de la concurrence", "Un syndicat de salariés qui négocie les salaires d’un secteur entier"], c: 0,
           e: "Les cartels sont interdits ; Adam Smith s’en méfiait déjà en 1776." }
       ],
       duree: 5,

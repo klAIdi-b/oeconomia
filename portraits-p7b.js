@@ -112,20 +112,20 @@ ${centre}
     },
     quiz: [
       { q: "Que cherche à expliquer la nouvelle théorie du commerce de Krugman ?",
-        o: ["Le commerce de matières premières", "Le commerce de produits semblables entre pays semblables", "Le protectionnisme", "Les taux de change"], c: 1,
+        o: ["Le commerce de matières premières entre pays riches et pays pauvres", "Le commerce de produits semblables entre pays semblables", "Le protectionnisme des pays riches face aux économies émergentes", "Les variations des taux de change entre les grandes monnaies"], c: 1,
         e: "Comme l’échange de voitures entre l’Allemagne et la France." },
       { q: "Sur quels mécanismes repose-t-elle ?",
-        o: ["L’avantage comparatif seul", "Les rendements croissants et le goût des consommateurs pour la variété", "Les droits de douane", "La loi des débouchés"], c: 1,
+        o: ["L’avantage comparatif seul, tiré des écarts de productivité entre pays", "Les rendements croissants et le goût des consommateurs pour la variété", "Les droits de douane qui protègent les industries nationales naissantes", "La loi des débouchés, selon laquelle l’offre crée sa demande"], c: 1,
         e: "Chaque firme produit en grand quelques variétés." },
       { q: "Que décrit le modèle centre-périphérie (1991) ?",
         o: ["La colonisation", "La concentration cumulative de l’industrie dans une région", "La migration des capitaux vers les pays pauvres", "La dispersion de l’industrie quand les transports deviennent bon marché"], c: 1,
         e: "Une petite avance initiale peut se renforcer d’elle-même." },
       { q: "Que recommande Krugman au Japon en 1998 ?",
-        o: ["Monter les taux d’intérêt", "S’engager de façon crédible à laisser monter l’inflation", "Quitter le libre-échange", "Réduire les dépenses publiques"], c: 1,
+        o: ["Monter les taux d’intérêt pour attirer les capitaux étrangers", "S’engager de façon crédible à laisser monter l’inflation", "Quitter le libre-échange pour protéger l’industrie japonaise", "Réduire les dépenses publiques pour assainir les finances"], c: 1,
         e: "Pour sortir de la trappe à liquidité." },
       { q: "Que dit Krugman de la « compétitivité » des nations ?",
-        o: ["Qu’elle est la clé de tout", "Que c’est une notion souvent trompeuse, car les pays ne se font pas concurrence comme des entreprises", "Qu’il faut des subventions à l’exportation", "Qu’elle dépend du taux de change"], c: 1,
-        e: "Article « Competitiveness: A Dangerous Obsession », 1994." }
+        o: ["Qu’elle est la clé de la prospérité des nations dans le commerce mondial", "Qu’elle est trompeuse, car un pays n’est pas une entreprise en concurrence", "Qu’elle exige des subventions à l’exportation pour les industries clés du pays", "Qu’elle dépend avant tout du taux de change de la monnaie nationale"], c: 1,
+        e: "Les pays ne se concurrencent pas comme des entreprises. Article « Competitiveness: A Dangerous Obsession », 1994." }
     ],
     ouverte: {
       q: "La Suisse est régulièrement classée première ou presque dans les classements mondiaux de compétitivité, établis à Genève par le Forum économique mondial, jusqu’en 2019, et à Lausanne par l’IMD. Que dirait Krugman de ces classements ?",
@@ -141,10 +141,10 @@ ${centre}
     decouvrir: {
       questions: [
         { q: "Pourquoi l’Allemagne et la France échangent-elles des voitures, selon Krugman ?",
-          o: ["Il est moins cher de produire en grand quelques modèles, et les clients aiment le choix", "Parce que l’une ne sait pas en fabriquer", "Parce que les droits de douane l’imposent", "Parce que l’essence est moins chère dans l’autre pays"], c: 0,
+          o: ["Parce que produire en grand quelques modèles coûte moins, et que le choix plaît", "Parce que l’un des deux pays ne sait pas fabriquer certains modèles de voitures populaires", "Parce que les droits de douane imposent cet échange entre voisins", "Parce que le prix de l’essence est plus bas dans le pays voisin"], c: 0,
           e: "Chaque pays se spécialise dans certains modèles et achète les autres." },
         { q: "Qu’a rêvé de faire Krugman adolescent, en lisant un roman de science-fiction ?",
-          o: ["Prévoir l’avenir des sociétés", "Devenir astronaute", "Diriger une banque centrale", "Écrire des romans"], c: 0,
+          o: ["Prévoir l’avenir des sociétés par les mathématiques", "Devenir astronaute et explorer d’autres planètes lointaines", "Diriger une grande banque centrale comme la Fed", "Écrire des romans de science-fiction à son tour"], c: 0,
           e: "Il deviendra économiste, puis prix Nobel en 2008." }
       ],
       duree: 6,

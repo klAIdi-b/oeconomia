@@ -92,13 +92,13 @@ ${double}
     },
     quiz: [
       { q: "Que signifie, pour Polanyi, une économie « encastrée » ?",
-        o: ["Une économie fermée au commerce", "Une économie prise dans les relations sociales, politiques et religieuses", "Une économie planifiée par l’État", "Une économie sans monnaie"], c: 1,
+        o: ["Une économie fermée au commerce extérieur, qui vit en autarcie", "Une économie prise dans les relations sociales et religieuses", "Une économie planifiée par l’État, qui fixe les prix et la production", "Une économie sans monnaie, fondée sur le troc entre voisins"], c: 1,
         e: "Pendant la plus grande partie de l’histoire, la production et l’échange étaient réglés par la société." },
       { q: "Quelles sont les trois « marchandises fictives » ?",
         o: ["Les machines, les terres agricoles et l’or", "Le travail, la terre et la monnaie", "Le capital, l’entreprise et le savoir", "Les actions, les obligations et les devises"], c: 1,
         e: "Elles ne sont pas produites pour être vendues." },
       { q: "Qu’est-ce que le « double mouvement » ?",
-        o: ["L’alternance des crises et des reprises", "L’extension du marché et la réaction de protection de la société", "Le va-et-vient des capitaux", "La hausse simultanée des prix et des salaires"], c: 1,
+        o: ["L’alternance régulière des crises et des reprises économiques", "L’extension du marché et la réaction protectrice de la société", "Le va-et-vient des capitaux entre les pays riches et les pays pauvres", "La hausse simultanée des prix et des salaires dans l’économie"], c: 1,
         e: "Chaque avancée du marché appelle une protection." },
       { q: "Quel livre paraît la même année que La Grande Transformation, avec une thèse opposée ?",
         o: ["La Théorie générale de Keynes", "La Route de la servitude de Hayek", "Le Capital de Marx", "Capitalisme et liberté de Friedman"], c: 1,
@@ -117,8 +117,8 @@ ${double}
     decouvrir: {
       questions: [
         { q: "Pourquoi Polanyi écrit-il La Grande Transformation en 1944 ?",
-          o: ["Pour comprendre l’effondrement de l’Empire austro-hongrois, de l’étalon-or et de la démocratie qu’il a vécu", "Pour défendre l’étalon-or", "Pour proposer un plan de reconstruction de l’Europe", "Pour répondre à Keynes"], c: 0,
-          e: "Exilé, il cherche à expliquer ce qui s’est passé en trente ans." },
+          o: ["Pour comprendre l’effondrement de l’ordre européen qu’il a vécu", "Pour défendre le retour à l’étalon-or après la guerre", "Pour proposer un plan de reconstruction économique de l’Europe", "Pour répondre point par point à la Théorie générale de Keynes"], c: 0,
+          e: "Exilé, il cherche à expliquer en trente ans l’effondrement de l’Empire austro-hongrois, de l’étalon-or et de la démocratie." },
         { q: "Selon Polanyi, d’où vient le système où tout, même le travail et la terre, s’achète et se vend ?",
           o: ["Il a été créé par des lois au XIXe siècle", "Il a toujours existé", "Il est né naturellement des échanges", "Il a été inventé par les marchands du Moyen Âge"], c: 0,
           e: "Pour Polanyi, le marché généralisé n’a rien de naturel." }
@@ -236,16 +236,16 @@ ${cycle}
     },
     quiz: [
       { q: "Qu’a découvert Kalecki dès 1933, avant Keynes ?",
-        o: ["La loi des débouchés", "Le rôle de la demande effective et de l’investissement dans le niveau de l’activité", "L’avantage comparatif", "La théorie quantitative de la monnaie"], c: 1,
+        o: ["La loi des débouchés, selon laquelle l’offre crée sa demande", "Le rôle de la demande effective dans le niveau de l’activité", "L’avantage comparatif, qui pousse les pays à se spécialiser", "La théorie quantitative, qui lie les prix à la masse monétaire"], c: 1,
         e: "Il le publie en polonais, trois ans avant la Théorie générale." },
       { q: "Selon l’équation des profits de Kalecki, d’où viennent les profits dans une économie simplifiée ?",
-        o: ["De l’épargne des ménages", "Des dépenses des capitalistes, investissement et consommation", "Des exportations seulement", "Des impôts"], c: 1,
+        o: ["De l’épargne des ménages, que les banques placent dans les entreprises", "Des dépenses des capitalistes en investissement et consommation", "Des ventes aux marchés étrangers, qui rapportent des devises", "Des impôts prélevés par l’État sur les ménages et les firmes"], c: 1,
         e: "« Les capitalistes gagnent ce qu’ils dépensent. »" },
       { q: "Pourquoi les chefs d’entreprise pourraient-ils s’opposer au plein emploi durable ?",
-        o: ["Parce qu’il réduit toujours les profits", "Parce qu’il retire au licenciement son pouvoir de discipline", "Parce qu’il oblige à payer davantage d’impôts", "Parce qu’il fait baisser les prix"], c: 1,
+        o: ["Parce qu’il fait mécaniquement baisser les profits des entreprises", "Parce qu’il retire au licenciement son pouvoir de discipline", "Parce qu’il oblige les entreprises à payer davantage d’impôts", "Parce qu’il fait baisser les prix et donc les marges des firmes"], c: 1,
         e: "C’est l’argument de l’article de 1943." },
       { q: "Comment les grandes entreprises fixent-elles leurs prix selon Kalecki ?",
-        o: ["Par enchères", "En ajoutant une marge à leurs coûts, selon leur pouvoir de marché", "En suivant la banque centrale", "Au niveau où l’offre égale exactement la demande"], c: 1,
+        o: ["Par des enchères entre acheteurs et vendeurs sur chaque marché", "En ajoutant une marge à leurs coûts, selon leur pouvoir de marché", "En suivant le taux directeur que fixe la banque centrale chaque mois", "Au niveau où l’offre égale la demande sur un marché concurrentiel"], c: 1,
         e: "C’est le « degré de monopole »." }
     ],
     ouverte: {
@@ -261,10 +261,10 @@ ${cycle}
     decouvrir: {
       questions: [
         { q: "Qu’y a-t-il de remarquable dans le parcours de Kalecki ?",
-          o: ["Il n’a jamais suivi de cours d’économie et découvre en polonais, dès 1933, des idées proches de celles de Keynes", "Il a été l’élève de Keynes à Cambridge", "Il a dirigé la banque centrale polonaise", "Il a reçu le prix Nobel"], c: 0,
+          o: ["Autodidacte, il découvre dès 1933, en polonais, des idées proches de Keynes", "Il a été l’élève de Keynes à Cambridge, où il a préparé sa thèse de doctorat", "Il a dirigé la banque centrale polonaise dans l’entre-deux-guerres", "Il a reçu le prix Nobel pour ses travaux sur les cycles économiques"], c: 0,
           e: "C’est un autodidacte de génie." },
         { q: "Selon Kalecki, quel cycle la politique économique risque-t-elle de suivre ?",
-          o: ["Relance quand le chômage monte, austérité quand il disparaît", "Croissance continue sans crise", "Austérité permanente", "Inflation puis déflation chaque année"], c: 0,
+          o: ["Relance quand le chômage monte, austérité quand il disparaît", "Croissance continue, sans crise, grâce à une politique stable", "Austérité permanente pour maintenir l’équilibre des comptes publics", "Une alternance d’inflation et de déflation, année après année"], c: 0,
           e: "Le plein emploi donne du pouvoir aux salariés, ce qui inquiète les chefs d’entreprise." }
       ],
       duree: 5,
@@ -382,16 +382,16 @@ ${fordisme}
     },
     quiz: [
       { q: "Qu’appelle-t-on un « mode de régulation » ?",
-        o: ["Une loi sur la concurrence", "Un ensemble d’institutions qui assure pendant une période la stabilité de la croissance", "Une règle de la banque centrale", "Un modèle mathématique d’équilibre"], c: 1,
+        o: ["Une loi qui encadre la concurrence entre les entreprises", "Des institutions qui assurent la stabilité de la croissance", "Une règle que la banque centrale suit pour fixer ses taux d’intérêt", "Un modèle mathématique qui décrit l’équilibre du marché"], c: 1,
         e: "Salaires, concurrence, monnaie, État et insertion internationale." },
       { q: "Qu’est-ce que le fordisme ?",
-        o: ["Une organisation du travail fondée sur l’artisanat", "Un régime de croissance associant production de masse, hausse des salaires et consommation de masse", "Une théorie de la monnaie", "Une politique protectionniste"], c: 1,
-        e: "Le modèle des Trente Glorieuses." },
+        o: ["Une organisation du travail fondée sur l’artisanat et l’atelier", "Un régime de croissance associant production et consommation de masse", "Une théorie de la monnaie qui repose sur la rareté de l’or", "Une politique protectionniste qui ferme les frontières aux importations"], c: 1,
+        e: "Le modèle des Trente Glorieuses, où les salaires montent avec la productivité." },
       { q: "Comment Aglietta explique-t-il la crise des années 1970 ?",
         o: ["Par une erreur de la banque centrale", "Par l’épuisement du fordisme", "Par une guerre", "Par la hausse excessive de la masse monétaire"], c: 1,
         e: "La productivité ralentit et le cercle vertueux se rompt." },
       { q: "Que soutiennent Aglietta et Orléan sur la monnaie ?",
-        o: ["Qu’elle est une marchandise comme les autres", "Qu’elle est une institution sociale fondée sur la confiance", "Qu’elle est neutre à long terme", "Qu’elle doit être en or"], c: 1,
+        o: ["Qu’elle est une marchandise comme les autres, échangée sur un marché", "Qu’elle est une institution sociale fondée sur la confiance", "Qu’elle est neutre à long terme et sans effet sur l’économie réelle", "Qu’elle doit être adossée à l’or pour conserver sa valeur"], c: 1,
         e: "D’où le lien entre monnaie et souveraineté." }
     ],
     ouverte: {
@@ -407,10 +407,10 @@ ${fordisme}
     decouvrir: {
       questions: [
         { q: "Quel livre d’Aglietta fonde l’école de la régulation en 1976 ?",
-          o: ["Régulation et crises du capitalisme", "La Grande Transformation", "Le Capital au XXIe siècle", "La Théorie générale"], c: 0,
+          o: ["Régulation et crises du capitalisme, de Michel Aglietta", "La Grande Transformation, de Karl Polanyi, paru en 1944", "Le Capital au XXIe siècle, de Thomas Piketty, paru en 2013", "La Théorie générale, de John Maynard Keynes, paru en 1936"], c: 0,
           e: "C’est l’une des rares écoles économiques nées en France après la guerre." },
         { q: "Pour Aglietta, qu’est-ce qui permet au capitalisme de tenir pendant des décennies ?",
-          o: ["Des institutions : la manière de fixer les salaires, la monnaie, l’État", "Les seules forces du marché", "La découverte de nouvelles ressources naturelles", "Le hasard"], c: 0,
+          o: ["Des institutions qui règlent les salaires, la monnaie et l’État", "Les forces du marché, qui se corrigent d’elles-mêmes sans règles", "La découverte de nouvelles ressources naturelles à exploiter", "Un hasard historique que les économistes ne peuvent pas expliquer"], c: 0,
           e: "Quand ces institutions s’usent, une grande crise éclate." }
       ],
       duree: 5,

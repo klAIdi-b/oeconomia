@@ -115,7 +115,7 @@ ${triangle}
         o: ["Le dollar s’est déprécié", "Le dollar s’est apprécié", "L’euro s’est apprécié", "Les deux monnaies se sont dépréciées"], c: 1,
         e: "Il faut moins de dollars pour un euro : le dollar vaut plus, l’euro moins." },
       { q: "Quel est l’effet d’une monnaie forte sur les exportateurs d’un pays ?",
-        o: ["Leurs produits deviennent moins chers à l’étranger", "Leurs produits deviennent plus chers pour les clients étrangers", "Leurs matières premières importées deviennent plus chères", "Leurs ventes à l’étranger augmentent"], c: 1,
+        o: ["Leurs produits deviennent moins chers pour les clients étrangers", "Leurs produits deviennent plus chers pour les clients étrangers", "Leurs matières premières importées deviennent plus chères à acheter", "Leurs ventes à l’étranger augmentent, car leurs produits sont plus prisés"], c: 1,
         e: "À prix inchangé en monnaie nationale, il faut plus de monnaie étrangère pour acheter leurs produits." },
       { q: "Selon la parité des pouvoirs d’achat, que devient à long terme la monnaie d’un pays à forte inflation ?",
         o: ["Elle s’apprécie", "Elle se déprécie", "Elle reste stable", "Elle dépend seulement des taux d’intérêt"], c: 1,
@@ -128,7 +128,7 @@ ${triangle}
         e: "Stabilité politique, faible inflation et finances solides en font une valeur refuge." }
     ],
     transfert: { q: "Supposons que le yen japonais perde 30 % de sa valeur face au dollar. Qu’en attend-on pour un constructeur automobile japonais qui vend aux États-Unis ?",
-      o: ["Ses voitures deviennent moins chères en dollars, ou plus rentables à prix inchangé", "Ses voitures deviennent plus chères en dollars", "Aucun effet, puisque ses prix sont fixés en yens", "Il doit fermer ses usines au Japon"], c: 0,
+      o: ["Ses voitures coûtent moins cher en dollars, ou rapportent plus à prix inchangé", "Ses voitures deviennent plus chères en dollars pour les clients américains", "Aucun effet, puisque ses prix sont fixés en yens et ne dépendent pas du dollar", "Il doit fermer une partie de ses usines au Japon faute de clients"], c: 0,
       e: "Une monnaie qui se déprécie avantage les exportateurs : il faut moins de dollars pour acheter un même prix en yens." },
     ouverte: {
       q: "Une monnaie forte est-elle plutôt une chance ou un problème pour un pays ?",
@@ -145,7 +145,7 @@ ${triangle}
     decouvrir: {
       questions: [
         { q: "Quand une monnaie s’apprécie, qui en profite directement ?",
-        o: ["Ses habitants qui voyagent à l’étranger ou achètent des produits importés", "Les hôtels du pays qui accueillent des touristes étrangers", "Les entreprises du pays qui exportent", "Personne"], c: 0,
+        o: ["Ses habitants qui voyagent à l’étranger ou achètent des produits importés", "Les hôtels du pays, qui accueillent davantage de touristes étrangers", "Les entreprises du pays qui exportent une grande part de leur production", "Personne, car l’appréciation ne change rien au pouvoir d’achat des gens"], c: 0,
         e: "Avec une monnaie plus forte, il faut moins de monnaie nationale pour payer à l’étranger." },
         { q: "Que signifie « 1 euro = 1,10 dollar » ?",
         o: ["Il faut 1,10 dollar pour obtenir un euro", "Il faut 1,10 euro pour obtenir un dollar", "Le dollar vaut plus que l’euro", "L’euro a gagné 10 % en un an"], c: 0,

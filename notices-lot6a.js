@@ -119,14 +119,14 @@ ${fuites}
         o: ["Parce que les Suisses épargnent moins", "Parce qu’une grande part de la dépense part en importations", "Parce que la dette publique suisse est très élevée", "Parce que les taux d’intérêt suisses sont très élevés"], c: 1,
         e: "Les importations sont une fuite : la dépense crée des revenus à l’étranger plutôt que dans le pays." },
       { q: "Qu’ont montré Blanchard et Leigh en 2013 ?",
-        o: ["Que l’austérité relance la croissance", "Que les multiplicateurs en Europe en 2010-2011 étaient plus élevés que supposé, donc l’austérité plus coûteuse", "Que le multiplicateur est nul", "Que le multiplicateur était plus faible en récession"], c: 1,
+        o: ["Que l’austérité relance la croissance en rétablissant la confiance", "Que les multiplicateurs européens de 2010-2011 étaient sous-estimés", "Que le multiplicateur est nul dès que la dette dépasse un certain seuil", "Que le multiplicateur était plus faible en récession qu’en période de croissance"], c: 1,
         e: "Les prévisions supposaient environ 0,5 ; les erreurs indiquent plutôt 0,9 à 1,7." },
       { q: "Dans quelle situation le multiplicateur est-il le plus élevé ?",
         o: ["Au plein emploi avec une banque centrale qui relève ses taux", "En récession, avec des taux bloqués à zéro", "En période d’inflation forte", "Quand la dette publique est très élevée"], c: 1,
         e: "Sans éviction par les taux et avec des ressources inemployées, la dépense se propage pleinement." }
     ],
     transfert: { q: "Deux pays lancent le même plan de relance. Le premier importe la moitié de ce qu’il consomme, le second un dixième. Dans lequel le multiplicateur sera-t-il probablement le plus faible ?",
-      o: ["Dans le premier, car une grande partie de la dépense profite aux producteurs étrangers", "Dans le second, car il produit davantage lui-même", "Il sera identique dans les deux", "Dans le second, car ses importations sont plus chères"], c: 0,
+      o: ["Dans le premier, car une grande part de la dépense part à l’étranger", "Dans le second, car il produit davantage lui-même ce qu’il consomme", "Il sera identique dans les deux pays, car le plan de relance est le même", "Dans le second, car ses importations sont plus chères que dans le premier"], c: 0,
       e: "Plus une économie est ouverte, plus les fuites vers l’étranger sont importantes." },
     ouverte: {
       q: "En cas de forte récession, un petit pays très ouvert, dont le multiplicateur est faible, devrait-il lancer un grand plan de relance budgétaire ?",
@@ -142,10 +142,10 @@ ${fuites}
     decouvrir: {
       questions: [
         { q: "Pourquoi une dépense publique de 100 millions peut-elle augmenter le revenu du pays de plus de 100 millions ?",
-          o: ["Parce que ceux qui la reçoivent en dépensent une partie, qui devient le revenu d’autres, et ainsi de suite", "Parce que l’État rembourse deux fois la somme", "Parce que les prix montent", "Parce que les impôts baissent automatiquement"], c: 0,
+          o: ["Parce que ceux qui la reçoivent en dépensent une partie, qui devient le revenu d’autres", "Parce que l’État verse deux fois la somme aux entreprises bénéficiaires", "Parce que les prix montent et gonflent mécaniquement le revenu exprimé en euros", "Parce que les impôts baissent automatiquement et que les ménages dépensent plus"], c: 0,
           e: "C’est le multiplicateur." },
         { q: "Qu’est-ce qui réduit le multiplicateur ?",
-          o: ["Les « fuites » : impôts, épargne et achats de produits étrangers", "La hausse de la consommation", "Les grands travaux", "Le chômage"], c: 0,
+          o: ["Les « fuites » que sont les impôts, l’épargne et les importations", "La hausse de la consommation des ménages après la dépense publique", "Les grands travaux financés par l’État dans les infrastructures", "Le chômage élevé, qui laisse des travailleurs disponibles pour produire"], c: 0,
           e: "À chaque étape, une partie de l’argent ne circule plus dans le pays." }
       ],
       duree: 5,
@@ -283,23 +283,23 @@ ${misere}
     },
     quiz: [
       { q: "Qu’est-ce que la stagflation ?",
-        o: ["Une croissance forte sans inflation", "La combinaison d’une croissance faible, d’un chômage élevé et d’une forte inflation", "Une baisse générale des prix", "Une inflation forte accompagnée d’une croissance rapide"], c: 1,
+        o: ["Une croissance forte sans inflation, grâce à l’essor du progrès technique", "Une croissance faible, un chômage élevé et une forte inflation à la fois", "Une baisse générale des prix qui s’accompagne d’une chute de la production", "Une inflation forte accompagnée d’une croissance rapide et d’un plein emploi"], c: 1,
         e: "Le mot combine stagnation et inflation." },
       { q: "Pourquoi un choc pétrolier peut-il provoquer une stagflation ?",
-        o: ["Parce qu’il augmente la demande", "Parce qu’il renchérit la production, ce qui fait monter les prix et baisser la production", "Parce qu’il pousse la banque centrale à baisser ses taux", "Parce qu’il fait baisser les salaires"], c: 1,
+        o: ["Parce qu’il augmente fortement la demande des ménages et des entreprises", "Parce qu’il renchérit la production, donc les prix montent et l’activité recule", "Parce qu’il pousse la banque centrale à baisser ses taux et à relancer le crédit", "Parce qu’il fait baisser les salaires et les prix de tous les biens"], c: 1,
         e: "C’est un choc d’offre : prix et production évoluent en sens contraire." },
       { q: "Quel rôle jouent les anticipations dans la stagflation selon Friedman et Phelps ?",
-        o: ["Aucun", "Quand l’inflation est anticipée, elle persiste même si le chômage augmente", "Elles font baisser les prix", "Elles font disparaître le chômage naturel"], c: 1,
+        o: ["Aucun rôle, puisque les prix se fixent sans tenir compte des prévisions", "Une inflation anticipée persiste même quand le chômage augmente", "Elles font baisser les prix dès que les agents prévoient une récession", "Elles font disparaître le chômage naturel dès que l’inflation est annoncée"], c: 1,
         e: "L’inflation anticipée est intégrée dans les contrats et continue indépendamment du chômage." },
       { q: "Avec une inflation de 13,5 % et un chômage de 7,1 %, quel est l’indice de misère ?",
         o: ["6,4", "13,5", "20,6", "95,9"], c: 2,
         e: "L’indice de misère additionne les deux taux : 13,5 + 7,1 = 20,6." },
       { q: "Pourquoi le chômage enregistré est-il resté faible en Suisse malgré la récession de 1975 ?",
-        o: ["Parce que l’économie n’a pas reculé", "Parce que beaucoup de travailleurs étrangers ont quitté le pays et que de nombreuses femmes se sont retirées du marché du travail", "Parce que l’industrie horlogère a continué à embaucher", "Parce que la Suisse a fermé ses frontières aux importations"], c: 1,
+        o: ["Parce que l’économie suisse n’a pas du tout reculé, contrairement à celle des voisins", "Parce que des étrangers sont partis et que des femmes se sont retirées de l’emploi", "Parce que l’industrie horlogère et les banques ont continué à embaucher massivement", "Parce que la Suisse a fermé ses frontières aux importations pour protéger ses emplois"], c: 1,
         e: "La Suisse a « exporté » une partie de son chômage, un phénomène lié au statut des permis de travail de l’époque." }
     ],
     transfert: { q: "En 2022, la guerre en Ukraine fait flamber le prix du gaz en Europe. Pourquoi ce choc fait-il craindre une stagflation ?",
-      o: ["Parce que l’énergie plus chère fait monter les prix tout en freinant la production", "Parce que le gaz plus cher fait baisser les prix", "Parce qu’il augmente la demande des ménages", "Parce qu’il fait disparaître le chômage"], c: 0,
+      o: ["Parce que l’énergie plus chère fait monter les prix et freine la production", "Parce que le gaz plus cher fait baisser les prix des biens industriels", "Parce qu’il augmente la demande des ménages pour les biens de consommation", "Parce qu’il fait disparaître le chômage en créant des emplois dans l’énergie"], c: 0,
       e: "Comme en 1973, un choc sur le coût de l’énergie pousse les prix à la hausse et la production à la baisse." },
     ouverte: {
       q: "En 2022, l’inflation a été bien plus faible au Japon, en Chine ou en Suisse qu’au Royaume-Uni ou en Europe centrale. Qu’est-ce qui explique ces écarts face au même choc ?",
@@ -315,10 +315,10 @@ ${misere}
     decouvrir: {
       questions: [
         { q: "Que désigne le mot « stagflation » ?",
-          o: ["La combinaison d’une économie qui stagne et d’une forte inflation", "Une croissance très forte", "Une baisse générale des prix", "Une hausse des exportations"], c: 0,
+          o: ["La combinaison d’une économie qui stagne et d’une forte inflation", "Une croissance très forte accompagnée d’une baisse du chômage", "Une baisse générale des prix qui s’installe pendant plusieurs années", "Une hausse des exportations qui soutient la croissance du pays"], c: 0,
           e: "Contraction de stagnation et inflation, le mot date de 1965." },
         { q: "Pourquoi sortir de la stagflation est-il si difficile ?",
-          o: ["Parce que relancer l’économie aggrave l’inflation et la freiner aggrave le chômage", "Parce que les prix du pétrole sont fixés par l’État", "Parce que les banques centrales n’existent pas", "Parce que les salaires baissent trop vite"], c: 0,
+          o: ["Parce que relancer aggrave l’inflation et que la freiner aggrave le chômage", "Parce que les prix du pétrole sont fixés par l’État dans chaque pays", "Parce que les banques centrales n’existent pas encore à cette époque", "Parce que les salaires baissent trop vite et font chuter la demande des ménages"], c: 0,
           e: "Les États-Unis ont choisi après 1979 de freiner fortement, au prix d’un chômage élevé." }
       ],
       duree: 5,

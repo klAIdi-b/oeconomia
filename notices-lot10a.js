@@ -128,7 +128,7 @@ ${echelle}
         o: ["Elle la fait baisser", "Elle la fait monter", "Elle ne change rien", "Elle dépend uniquement du coût de production"], c: 1,
         e: "La quantité baisse moins que le prix ne monte : le produit des deux augmente." },
       { q: "Pourquoi la demande d’essence est-elle plus élastique à long terme qu’à court terme ?",
-        o: ["Parce que les prix baissent toujours avec le temps", "Parce qu’avec le temps, on peut changer de voiture, de trajet ou de logement", "Parce que l’essence devient un bien de luxe", "Parce que les automobilistes s’habituent au nouveau prix"], c: 1,
+        o: ["Parce que les prix de l’essence baissent avec le temps", "Parce qu’avec le temps, on peut changer de voiture ou de logement", "Parce que l’essence devient peu à peu un bien de luxe pour les ménages", "Parce que les automobilistes finissent par s’habituer au nouveau prix"], c: 1,
         e: "Les possibilités d’adaptation augmentent avec le temps." },
       { q: "L’élasticité croisée entre deux biens est positive. Que peut-on en conclure ?",
         o: ["Ce sont des compléments", "Ce sont des substituts", "Ce sont des biens inférieurs", "Ce sont des biens de luxe"], c: 1,
@@ -138,7 +138,7 @@ ${echelle}
         e: "Celui qui a le moins de solutions de rechange ne peut pas éviter la taxe." }
     ],
     transfert: { q: "Une ville augmente de 20 % le prix des tickets de métro, et le nombre de trajets baisse de 4 %. Que peut-on en conclure ?",
-      o: ["La demande est élastique, et la recette de la compagnie baisse", "La demande est inélastique (environ −0,2), et la recette de la compagnie augmente", "L’élasticité vaut −5", "On ne peut rien dire sans connaître le prix de l’essence"], c: 1,
+      o: ["La demande est élastique, et la recette de la compagnie baisse", "La demande est inélastique (environ −0,2), et la recette augmente", "L’élasticité vaut −5, donc la demande est très sensible au prix", "On ne peut rien conclure sans connaître le coût de production des trajets"], c: 1,
       e: "−4 % ÷ 20 % = −0,2 : la quantité réagit bien moins que le prix, donc la recette augmente." },
     ouverte: {
       q: "Faut-il taxer les boissons sucrées, comme le font le Mexique depuis 2014 ou le Royaume-Uni depuis 2018 ?",
@@ -155,10 +155,10 @@ ${echelle}
     decouvrir: {
       questions: [
         { q: "Pourquoi la demande de cigarettes réagit-elle peu à une hausse de prix ?",
-          o: ["Parce que les fumeurs ont peu de substituts et une forte habitude", "Parce que les cigarettes sont bon marché", "Parce que l’État fixe leur prix", "Parce que les fumeurs ne connaissent pas les prix"], c: 0,
+          o: ["Parce que les fumeurs ont peu de substituts et une forte habitude", "Parce que les fumeurs ont des revenus nettement plus élevés que les autres", "Parce que l’État fixe lui-même le prix de chaque paquet vendu", "Parce que les fumeurs ne connaissent pas les prix pratiqués en magasin"], c: 0,
           e: "Sans substitut proche et avec la dépendance, la quantité achetée baisse peu." },
         { q: "Une marque de café augmente fortement son prix, les autres non. Que se passe-t-il probablement ?",
-          o: ["Ses ventes changent à peine", "Beaucoup de clients passent à une autre marque : la demande pour cette marque est élastique", "Toutes les marques vendent moins", "Ses ventes augmentent, car son café paraît meilleur"], c: 1,
+          o: ["Ses ventes changent à peine, car les clients restent fidèles à leur marque", "Beaucoup de clients passent à une autre marque, donc sa demande est élastique", "Toutes les marques vendent moins, car la hausse se répercute sur le marché", "Ses ventes augmentent, car son café paraît meilleur aux yeux des clients"], c: 1,
           e: "Quand les substituts sont nombreux, les acheteurs réagissent fortement au prix." }
       ],
       duree: 5,

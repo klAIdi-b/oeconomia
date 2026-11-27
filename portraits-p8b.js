@@ -116,19 +116,19 @@ ${rg}
     },
     quiz: [
       { q: "Quelles sources Piketty utilise-t-il principalement ?",
-        o: ["Des sondages", "Les données fiscales sur les revenus et les successions", "Les cours de la Bourse", "Les comptes des entreprises"], c: 1,
+        o: ["Des sondages réalisés auprès des ménages sur leur patrimoine", "Les données fiscales sur les revenus et les successions", "Les cours de la Bourse et les rendements des actions", "Les bilans comptables des grandes entreprises du pays"], c: 1,
         e: "Elles couvrent bien le sommet de la distribution, depuis le début du XXe siècle." },
       { q: "Quelle forme prend l’évolution des inégalités au XXe siècle ?",
-        o: ["Une baisse continue", "Une courbe en U : forte baisse de 1914 à 1945, puis remontée depuis 1980", "Une hausse continue", "Une courbe en cloche : hausse jusqu’en 1945, puis baisse continue"], c: 1,
+        o: ["Une baisse continue, grâce à la croissance et à l’instruction", "Une courbe en U, forte baisse de 1914 à 1945 puis remontée", "Une hausse continue, au rythme de l’enrichissement des plus riches", "Une courbe en cloche, hausse jusqu’en 1945 puis baisse continue"], c: 1,
         e: "Ce qui contredit la courbe de Kuznets." },
       { q: "Que signifie l’inégalité r > g ?",
-        o: ["Que les revenus augmentent plus vite que les patrimoines", "Que le rendement du capital dépasse la croissance de l’économie", "Que les taux d’intérêt sont négatifs", "Que le rendement du capital dépasse le taux d’intérêt"], c: 1,
+        o: ["Que les revenus augmentent plus vite que les patrimoines", "Que le capital rapporte plus que la croissance de l’économie", "Que les taux d’intérêt sont négatifs pour les épargnants", "Que le rendement du capital dépasse le taux d’intérêt officiel"], c: 1,
         e: "Les patrimoines hérités croissent alors plus vite que l’économie." },
       { q: "Selon Piketty, qu’est-ce qui explique la baisse des inégalités entre 1914 et 1945 ?",
-        o: ["Une loi naturelle du développement", "Les guerres, la crise de 1929 et la fiscalité progressive", "Le progrès technique", "L’immigration"], c: 1,
+        o: ["Une loi naturelle du développement, qui réduit les écarts", "Les guerres, la crise de 1929 et la fiscalité progressive", "Le progrès technique, qui a profité à tous les travailleurs", "Le recul de l’immigration, qui a fait monter les salaires"], c: 1,
         e: "Des chocs et des choix politiques, pas une loi automatique." },
       { q: "Quel remède principal Piketty propose-t-il ?",
-        o: ["Un revenu universel financé par la TVA", "Un impôt progressif sur le capital, coordonné au niveau international", "La nationalisation des entreprises", "Une baisse de l’impôt sur le revenu des classes moyennes"], c: 1,
+        o: ["Un revenu universel versé à tous et financé par la TVA", "Un impôt progressif sur le capital, au niveau mondial", "La nationalisation des grandes banques et entreprises", "Une baisse de l’impôt sur le revenu des classes moyennes"], c: 1,
         e: "Il le qualifie lui-même d’« utopie utile »." }
     ],
     ouverte: {
@@ -145,10 +145,10 @@ ${rg}
     decouvrir: {
       questions: [
         { q: "Pourquoi Piketty passe-t-il des années dans les archives de l’impôt ?",
-          o: ["Pour mesurer les inégalités sur plus d’un siècle", "Pour calculer la dette publique", "Pour étudier la fraude fiscale", "Pour écrire l’histoire de l’impôt sur le revenu"], c: 0,
+          o: ["Pour mesurer les inégalités sur plus d’un siècle", "Pour calculer le montant de la dette publique de l’État", "Pour étudier l’ampleur de la fraude fiscale des plus riches", "Pour écrire l’histoire de l’impôt sur le revenu en France"], c: 0,
           e: "Il veut une économie qui s’appuie davantage sur les faits et l’histoire." },
         { q: "Selon Piketty, qu’est-ce qui a fait baisser les inégalités entre 1914 et 1945 ?",
-          o: ["Des chocs et des choix politiques : guerres, crise de 1929, impôts progressifs", "Une loi naturelle du développement", "Le progrès technique seul", "La baisse des salaires"], c: 0,
+          o: ["Des chocs et des choix politiques, guerres et impôts progressifs", "Une loi naturelle du développement, qui réduit les écarts", "Le progrès technique, qui a profité à tous les salariés du pays", "La baisse générale des salaires, qui a rapproché tous les revenus"], c: 0,
           e: "La baisse n’était donc pas automatique." }
       ],
       duree: 6,
@@ -293,13 +293,13 @@ ${vaccins}
         o: ["La modélisation macroéconomique", "L’essai randomisé contrôlé", "L’analyse de la Bourse", "L’étude approfondie d’un seul village"], c: 1,
         e: "Empruntée aux essais cliniques en médecine." },
       { q: "Pourquoi tire-t-on au sort les bénéficiaires d’un programme dans un essai ?",
-        o: ["Pour réduire les coûts", "Pour que les deux groupes soient semblables en moyenne et que la différence mesure l’effet du programme", "Pour être plus rapide", "Pour que les plus pauvres soient servis en premier"], c: 1,
+        o: ["Pour réduire les coûts de l’évaluation du programme sur le terrain", "Pour que les groupes se ressemblent et que l’écart mesure l’effet", "Pour gagner du temps lors du lancement du programme dans les villages", "Pour que les familles les plus pauvres soient servies en premier"], c: 1,
         e: "Le hasard élimine les autres différences entre les groupes." },
       { q: "Quel effet a eu l’offre d’un sac de lentilles au Rajasthan ?",
-        o: ["Aucun effet", "Elle a fortement augmenté la part d’enfants entièrement vaccinés", "Elle a réduit la vaccination", "Elle a surtout amélioré la nutrition des enfants"], c: 1,
+        o: ["Elle n’a eu aucun effet mesurable sur la vaccination des enfants", "Elle a fortement augmenté la part d’enfants entièrement vaccinés", "Elle a réduit la vaccination, les familles se méfiant du cadeau", "Elle a surtout amélioré la nutrition des enfants de la région"], c: 1,
         e: "De 18 % à 39 % d’enfants entièrement vaccinés." },
       { q: "Que reproche Angus Deaton aux essais randomisés ?",
-        o: ["D’être trop chers", "Que leurs résultats ne se transposent pas forcément à d’autres contextes", "D’être trop théoriques", "D’être contraires à l’éthique dans tous les cas"], c: 1,
+        o: ["D’être trop chers pour être menés à grande échelle par les États", "Que leurs résultats ne valent pas forcément dans d’autres contextes", "D’être trop théoriques et trop éloignés des réalités du terrain", "D’être financés par des fondations privées, donc partiaux"], c: 1,
         e: "C’est le problème de la validité externe." },
       { q: "Qu’a montré l’évaluation du microcrédit ?",
         o: ["Qu’il sort massivement les ménages de la pauvreté", "Qu’il a des effets réels mais modestes", "Qu’il est nuisible", "Qu’il n’est jamais remboursé"], c: 1,
@@ -319,11 +319,11 @@ ${vaccins}
     decouvrir: {
       questions: [
         { q: "Comment Duflo mesure-t-elle l’effet réel d’un programme contre la pauvreté ?",
-          o: ["En tirant au sort les villages ou les écoles qui en bénéficient, et en les comparant aux autres", "En interrogeant les responsables du programme", "En comparant les pays riches et les pays pauvres", "En calculant son coût total"], c: 0,
+          o: ["En tirant au sort les villages aidés et en les comparant aux autres", "En interrogeant les responsables du programme sur ses résultats", "En comparant les pays riches et les pays pauvres sur vingt ans", "En calculant le coût total du programme pour chaque personne aidée"], c: 0,
           e: "C’est la méthode des essais cliniques appliquée à l’économie." },
         { q: "Qu’a montré l’expérience des moustiquaires au Kenya ?",
-          o: ["Les moustiquaires gratuites sont bien plus utilisées que celles vendues, même à bas prix", "Les familles préfèrent les moustiquaires chères", "Les moustiquaires n’ont aucun effet", "Les moustiquaires gratuites sont revendues"], c: 0,
-          e: "De petits détails peuvent avoir de grands effets." }
+          o: ["Gratuites, elles touchent bien plus de familles et sont autant utilisées", "Les familles préfèrent les moustiquaires chères, jugées plus sûres", "Les moustiquaires n’ont eu aucun effet sur la santé des enfants", "Les moustiquaires gratuites sont presque toutes revendues au marché"], c: 0,
+          e: "De petits détails peuvent avoir de grands effets. Un prix même modeste fait chuter la demande, et les familles qui les reçoivent gratuitement les utilisent tout autant (Cohen et Dupas, 2010)." }
       ],
       duree: 6,
       html: `

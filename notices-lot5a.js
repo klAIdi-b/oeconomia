@@ -128,20 +128,20 @@ ${cercle}
         o: ["20", "480", "4 800", "48 000"], c: 2,
         e: "Dix ouvriers produisent 48 000 épingles, soit 4 800 chacun, contre moins de vingt pour un ouvrier seul." },
       { q: "Laquelle de ces raisons n’est PAS l’une des trois données par Smith ?",
-        o: ["L’habileté acquise", "Le temps gagné entre les tâches", "L’invention de machines", "La possibilité de payer chaque tâche à son niveau de qualification"], c: 3,
+        o: ["Le paiement de chaque tâche à son niveau de qualification", "L’habileté acquise par l’ouvrier qui répète le même geste", "Le temps gagné en ne passant plus d’une tâche à une autre", "L’invention de machines qui facilitent et abrègent le travail"], c: 3,
         e: "C’est la quatrième raison, ajoutée par Charles Babbage en 1832." },
       { q: "Qu’est-ce qui limite la division du travail selon Smith ?",
         o: ["La fatigue des ouvriers spécialisés", "L’étendue du marché", "Le nombre de machines", "Le niveau d’instruction des ouvriers"], c: 1,
         e: "Sans assez de clients, un artisan ne peut pas se spécialiser dans une seule tâche." },
       { q: "Qu’appelle Durkheim la « solidarité organique » ?",
-        o: ["La solidarité entre membres d’une famille", "La cohésion d’une société dont les membres, différents, dépendent les uns des autres", "L’entraide agricole", "Une assurance sociale"], c: 1,
+        o: ["La solidarité entre membres d’une même famille ou d’un même village", "La cohésion née de l’interdépendance de membres différents", "L’entraide agricole entre voisins au moment des récoltes", "Une assurance sociale financée par l’État pour tous les citoyens"], c: 1,
         e: "La division du travail rend les individus différents mais interdépendants, comme les organes d’un corps." },
       { q: "Quel choc les horlogers suisses découvrent-ils à Philadelphie en 1876 ?",
-        o: ["Les premières montres-bracelets anglaises", "La production en série de montres américaines avec des pièces interchangeables", "Les montres japonaises à quartz", "Une taxe américaine sur les montres"], c: 1,
+        o: ["Les premières montres-bracelets fabriquées en série par des horlogers anglais", "La production en série de montres américaines à pièces interchangeables", "Les montres japonaises à quartz, bien moins chères que les suisses", "Une lourde taxe américaine sur les montres importées de Suisse"], c: 1,
         e: "La production mécanisée et concentrée des Américains contraste avec l’établissage dispersé du Jura." }
     ],
     transfert: { q: "Dans un petit village isolé, un seul artisan répare à la fois les vélos, les montres et les radios. Dans une grande ville, chaque réparateur a sa spécialité. Comment Smith l’explique-t-il ?",
-      o: ["La division du travail est limitée par la taille du marché : au village, il n’y a pas assez de clients pour se spécialiser", "Les artisans de village sont plus habiles", "La loi interdit la spécialisation à la campagne", "En ville, les réparations sont moins chères à faire"], c: 0,
+      o: ["La division du travail est limitée par la taille du marché, trop petite au village", "Les artisans de village sont plus habiles et savent donc tout réparer eux-mêmes", "La loi interdit la spécialisation à la campagne pour protéger les petits métiers", "En ville, les réparations sont moins chères à faire à cause des loyers plus bas"], c: 0,
       e: "On ne peut se spécialiser que s’il y a assez de clients pour une seule activité." },
     ouverte: {
       q: "La pandémie a relancé dans de nombreux pays le débat sur la dépendance aux chaînes d’approvisionnement mondiales, par exemple pour les médicaments ou les puces électroniques. Faut-il relocaliser certaines productions ?",
@@ -157,10 +157,10 @@ ${cercle}
     decouvrir: {
       questions: [
         { q: "Que montre l’exemple du crayon ?",
-          o: ["Qu’aucune personne ne saurait le fabriquer seule : il résulte du travail spécialisé de milliers de gens", "Qu’un crayon est facile à fabriquer", "Que le bois est la matière la plus chère", "Que les crayons sont produits par une seule entreprise"], c: 0,
+          o: ["Qu’aucune personne ne saurait le fabriquer seule, tant il exige de travail spécialisé", "Qu’un crayon est un objet simple qu’un seul artisan fabrique en une journée", "Que le bois est la matière la plus chère et explique l’essentiel du prix du crayon", "Que les crayons sont produits par une seule entreprise qui contrôle toute la chaîne"], c: 0,
           e: "C’est le résultat de la division du travail, à l’échelle du monde." },
         { q: "Pourquoi Adam Smith plaide-t-il pour l’éducation publique ?",
-          o: ["Parce qu’un travail répétitif toute la vie peut abrutir les ouvriers", "Parce que les écoles rapportent des impôts", "Parce que les patrons manquent de clients", "Parce que les épingles exigent des ingénieurs"], c: 0,
+          o: ["Parce qu’un travail répétitif toute la vie peut abrutir les ouvriers", "Parce que les écoles rapportent des impôts à l’État et aux communes", "Parce que les patrons manquent de clients pour leurs produits", "Parce que les fabricants d’épingles exigent désormais des ingénieurs très qualifiés dans chaque atelier"], c: 0,
           e: "La division du travail a aussi un prix humain, que Smith souligne lui-même." }
       ],
       duree: 5,
@@ -294,23 +294,23 @@ ${coop}
     },
     quiz: [
       { q: "Que dit la loi des débouchés de Say ?",
-        o: ["Que les exportations sont la seule source de richesse", "Que les produits s’échangent contre des produits, si bien qu’une surproduction générale est impossible", "Que l’État doit créer des débouchés", "Qu’une surproduction peut toucher toute l’économie à la fois"], c: 1,
+        o: ["Que les exportations sont la source principale de la richesse d’un pays", "Que toute production crée sa propre demande, donc pas de surproduction générale", "Que l’État doit créer des débouchés en achetant les produits que personne ne veut", "Qu’une surproduction peut toucher toute l’économie à la fois, puis durer des années"], c: 1,
         e: "Chaque production fournit les moyens d’acheter d’autres produits ; seules des surproductions partielles sont possibles." },
       { q: "Qui a résumé la loi de Say par la formule « l’offre crée sa propre demande » ?",
         o: ["Say lui-même", "Ricardo", "Keynes", "Marx"], c: 2,
         e: "La formule est de Keynes, en 1936. Say ne l’a jamais écrite." },
       { q: "Selon Marx et Keynes, qu’est-ce qui peut provoquer une surproduction générale ?",
-        o: ["Le progrès technique", "Le fait que l’on garde la monnaie au lieu de la dépenser", "La hausse des salaires", "Le commerce international"], c: 1,
+        o: ["Le progrès technique, qui détruit plus d’emplois qu’il n’en crée", "Le fait que l’on garde la monnaie au lieu de la dépenser", "La hausse des salaires, qui réduit les profits et l’investissement", "Le commerce international, qui met les producteurs en concurrence"], c: 1,
         e: "Si la monnaie est désirée pour elle-même, la vente n’est pas suivie d’un achat, et la demande manque." },
       { q: "Selon la loi de Walras, un excès d’offre général de biens a pour contrepartie…",
         o: ["un excès d’offre de travail seulement", "un excès de demande de monnaie", "une hausse des prix", "un déficit public"], c: 1,
         e: "La somme des excès d’offre et de demande sur tous les marchés, monnaie comprise, est nulle." },
       { q: "Que montre l’histoire de la coopérative de baby-sitting de Capitol Hill ?",
-        o: ["Que les coopératives fonctionnent mieux sans règles", "Qu’une demande excessive de monnaie peut provoquer une récession même quand personne ne manque de rien", "Que les coopératives sont inefficaces", "Que l’inflation est toujours nuisible"], c: 1,
+        o: ["Que les coopératives de ce genre fonctionnent mieux sans règles ni coupons", "Qu’une demande excessive de monnaie peut causer une récession même sans pénurie", "Que les coopératives d’entraide sont inefficaces et vouées à disparaître", "Que l’inflation est nuisible et que les prix montent quand les coupons circulent"], c: 1,
         e: "Chacun voulant accumuler des tickets, personne ne sortait, et personne ne pouvait en gagner." }
     ],
     transfert: { q: "En 2009, après une crise financière, les ventes chutent dans presque tous les secteurs en même temps, et les entreprises gardent leurs liquidités. Ce constat donne-t-il raison à Say ou à Keynes ?",
-      o: ["Plutôt à Keynes : la demande manque partout à la fois parce que l’argent est gardé", "Plutôt à Say : il y a trop de certains biens et pas assez d’autres", "Aux deux à égalité, puisque les prix baissent", "À aucun des deux, car les crises n’ont rien à voir avec la demande"], c: 0,
+      o: ["Plutôt à Keynes, car la demande manque partout parce que l’argent est gardé", "Plutôt à Say, car il y a trop de certains biens et pas assez d’autres, ce qui est temporaire", "Aux deux à égalité, puisque les prix baissent dans tous les secteurs", "À aucun des deux, car les crises n’ont rien à voir avec la demande"], c: 0,
       e: "On admet souvent que Say a raison à long terme, et Keynes en période de crise." },
     ouverte: {
       q: "Pendant la Grande Dépression, les pays du « bloc-or », comme la France, la Belgique ou la Suisse, ont maintenu la valeur de leur monnaie et cherché à baisser prix et salaires jusqu’en 1935-1936. Que dirait Say de cette politique, et que dirait Keynes ?",
@@ -326,10 +326,10 @@ ${coop}
     decouvrir: {
       questions: [
         { q: "Pour Say, pourquoi une surproduction de tout à la fois est-elle impossible ?",
-          o: ["Parce qu’en produisant et en vendant, on gagne de quoi acheter autre chose", "Parce que l’État achète les invendus", "Parce que les machines produisent peu", "Parce que les prix ne changent jamais"], c: 0,
+          o: ["Parce qu’en produisant et en vendant, on gagne de quoi acheter autre chose", "Parce que l’État achète les invendus et soutient ainsi les producteurs", "Parce que les machines produisent peu et que les stocks restent limités", "Parce que les prix restent fixes d’une année à l’autre sur tous les marchés"], c: 0,
           e: "Les produits s’échangent contre des produits." },
         { q: "Qu’objecte Keynes à la loi des débouchés ?",
-          o: ["L’argent gagné n’est pas toujours dépensé : en période d’inquiétude, on le garde", "La production est toujours insuffisante", "Les prix s’ajustent trop vite", "Le commerce international l’empêche"], c: 0,
+          o: ["L’argent gagné peut être gardé plutôt que dépensé en période d’inquiétude", "La production est insuffisante pour répondre à tous les besoins des ménages", "Les prix s’ajustent trop vite et désorientent les producteurs et les acheteurs", "Le commerce international l’empêche de s’appliquer dans un pays isolé"], c: 0,
           e: "La demande peut alors manquer partout à la fois, comme pendant la Grande Dépression." }
       ],
       duree: 5,

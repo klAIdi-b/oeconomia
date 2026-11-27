@@ -151,19 +151,19 @@ ${chaine}
     },
     quiz: [
       { q: "Quel livre fait de Keynes une célébrité mondiale en 1919 ?",
-        o: ["La Théorie générale", "Les Conséquences économiques de la paix", "Le Traité sur la monnaie", "Comment payer la guerre"], c: 1,
+        o: ["La Théorie générale de l’emploi, de l’intérêt et de la monnaie", "Les Conséquences économiques de la paix", "Le Traité sur la monnaie, publié en 1930", "Comment payer la guerre, publié en 1940"], c: 1,
         e: "Il y critique les réparations imposées à l’Allemagne au traité de Versailles." },
       { q: "Pourquoi, selon Keynes, une économie peut-elle rester durablement en sous-emploi ?",
-        o: ["Parce que les salaires sont trop bas", "Parce que la demande effective peut être insuffisante, sans mécanisme automatique pour la rétablir", "Parce que l’État dépense trop", "Parce que la population augmente"], c: 1,
+        o: ["Parce que les salaires sont trop bas pour inciter les gens à travailler", "Parce que la demande peut manquer, sans mécanisme automatique pour la rétablir", "Parce que l’État dépense trop et évince les investissements des entreprises", "Parce que la population augmente plus vite que le nombre d’emplois créés"], c: 1,
         e: "Rien ne garantit que l’investissement comble l’écart entre revenu et consommation." },
       { q: "Que désignent les « esprits animaux » ?",
-        o: ["Les spéculateurs malhonnêtes", "Le besoin spontané d’agir des entrepreneurs face à un avenir incertain", "Les grèves ouvrières", "Les anticipations rationnelles des investisseurs"], c: 1,
+        o: ["Les spéculateurs malhonnêtes qui profitent de la naïveté des petits épargnants", "Le besoin spontané d’agir des entrepreneurs face à un avenir incertain", "Les grèves ouvrières qui bloquent régulièrement l’activité des entreprises", "Les anticipations rationnelles que les investisseurs forment à partir des données"], c: 1,
         e: "L’investissement dépend de la confiance autant que du calcul." },
       { q: "Que proposait Keynes à Bretton Woods en 1944 ?",
-        o: ["Le retour à l’étalon-or", "Une union de compensation avec une monnaie internationale, le bancor", "Des taux de change entièrement flottants", "Un système fondé sur le dollar"], c: 1,
+        o: ["Le retour à l’étalon-or tel qu’il existait avant la Première Guerre mondiale", "Une union de compensation avec une monnaie internationale, le bancor", "Des taux de change entièrement flottants, fixés librement par les marchés", "Un système monétaire international fondé sur la convertibilité du dollar"], c: 1,
         e: "Le plan américain de Harry Dexter White, fondé sur le dollar, l’a emporté." },
       { q: "Pourquoi Keynes juge-t-il qu’une baisse générale des salaires ne résout pas le chômage ?",
-        o: ["Parce qu’elle fait monter les taux d’intérêt", "Parce qu’elle réduit aussi les revenus et donc la demande", "Parce qu’elle augmente les prix", "Parce que les syndicats l’empêchent"], c: 1,
+        o: ["Parce qu’elle fait monter les taux d’intérêt et décourage les emprunteurs", "Parce qu’elle réduit aussi les revenus, donc la demande des ménages", "Parce qu’elle augmente les prix et réduit le pouvoir d’achat des salariés", "Parce que les syndicats l’empêchent dans la plupart des grandes entreprises"], c: 1,
         e: "Elle peut faire baisser les prix sans augmenter l’emploi, et alourdir les dettes." }
     ],
     ouverte: {
@@ -180,10 +180,10 @@ ${chaine}
     decouvrir: {
       questions: [
         { q: "Que répondaient la plupart des économistes de l’entre-deux-guerres face au chômage massif ?",
-          o: ["Qu’il suffisait d’attendre que les salaires baissent", "Que l’État devait dépenser davantage", "Qu’il fallait imprimer de la monnaie", "Que le chômage était impossible"], c: 0,
+          o: ["Qu’il suffisait d’attendre, car la baisse des salaires ramènerait l’emploi", "Que l’État devait dépenser davantage pour relancer la demande des ménages", "Qu’il fallait imprimer de la monnaie pour financer des emplois publics", "Que le chômage venait d’abord d’un manque de machines dans les usines"], c: 0,
           e: "Keynes leur répond : « À long terme, nous serons tous morts. »" },
         { q: "Selon Keynes, que doit faire l’État quand ménages et entreprises, inquiets, dépensent moins ?",
-          o: ["Soutenir la demande par des taux bas et des dépenses publiques", "Réduire ses dépenses pour donner l’exemple", "Laisser baisser les salaires", "Augmenter les impôts"], c: 0,
+          o: ["Soutenir la demande par des taux bas et des dépenses publiques", "Réduire ses propres dépenses pour donner l’exemple aux ménages", "Laisser les salaires baisser pour rendre l’emploi moins coûteux", "Augmenter les impôts pour rembourser sa dette le plus vite possible"], c: 0,
           e: "Sinon, la production baisse et le chômage peut durer." }
       ],
       duree: 6,

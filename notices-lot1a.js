@@ -110,10 +110,10 @@ ${rounds}
     },
     quiz: [
       { q: "Selon Keynes, qu’est-ce qui détermine d’abord le niveau de production d’une économie ?",
-        o: ["Le stock de machines disponibles", "La dépense anticipée par les entreprises", "Le niveau des salaires", "La quantité de monnaie"], c: 1,
+        o: ["Le stock de machines et d’usines disponible dans le pays", "La dépense que les entreprises prévoient de la part des acheteurs", "Le niveau des salaires fixé sur le marché du travail", "La quantité de monnaie mise en circulation par la banque centrale"], c: 1,
         e: "Les entreprises produisent ce qu’elles pensent vendre. Les capacités de production fixent un plafond, mais en crise, c’est la demande effective qui détermine la production réelle." },
       { q: "Pourquoi une baisse générale des salaires peut-elle aggraver une dépression ?",
-        o: ["Parce qu’elle augmente les coûts des entreprises", "Parce qu’elle réduit les revenus, donc la consommation, et alourdit le poids réel des dettes", "Parce qu’elle provoque de l’inflation", "Parce qu’elle pousse les entreprises à remplacer les machines par des travailleurs"], c: 1,
+        o: ["Parce qu’elle fait grimper les coûts de production des entreprises", "Parce qu’elle réduit les revenus et la consommation, et alourdit les dettes", "Parce qu’elle provoque une hausse générale des prix qui ruine les ménages", "Parce qu’elle pousse les entreprises à remplacer les machines par des travailleurs"], c: 1,
         e: "Le salaire est un coût pour chaque entreprise, mais un revenu pour l’ensemble de l’économie. La baisse générale réduit la demande et, en faisant baisser les prix, augmente la charge réelle des dettes." },
       { q: "Avec une propension à dépenser de 0,75, quel est le multiplicateur simple ?",
         o: ["0,75", "1,75", "4", "7,5"], c: 2,
@@ -122,11 +122,11 @@ ${rounds}
         o: ["Au plein emploi, avec une inflation forte", "En récession, avec des taux d’intérêt déjà à zéro", "Quand l’économie est très ouverte aux importations", "Quand les ménages anticipent des hausses d’impôts"], c: 1,
         e: "Quand des capacités sont inemployées et que la banque centrale ne compense pas la relance par une hausse des taux, la dépense publique n’évince pas la dépense privée." },
       { q: "Quelle observation Blanchard et Leigh ont-ils faite en 2013 ?",
-        o: ["L’austérité avait relancé la croissance européenne", "Les multiplicateurs effectifs étaient nettement supérieurs à ceux supposés dans les prévisions", "Le multiplicateur était négatif en Grèce", "La politique monétaire avait été trop restrictive en 2010"], c: 1,
+        o: ["L’austérité avait relancé la croissance dans la plupart des pays européens", "Les multiplicateurs réels étaient bien plus forts que ceux des prévisions", "Le multiplicateur budgétaire était négatif dans les pays les plus endettés", "La politique monétaire avait été trop restrictive dès le début de 2010"], c: 1,
         e: "Les prévisions supposaient un multiplicateur d’environ 0,5 ; la réalité correspondait plutôt à 0,9 à 1,7. Les pays qui ont le plus réduit leurs dépenses ont donc connu des récessions plus fortes que prévu." }
     ],
     transfert: { q: "Pendant une récession, les ménages d’un pays décident tous d’épargner davantage par précaution. Que prévoit le raisonnement de Keynes ?",
-      o: ["Les ventes baissent, les entreprises produisent et embauchent moins, et les revenus diminuent", "Les taux baissent et l’investissement compense aussitôt la baisse de la consommation", "La production augmente grâce à l’épargne", "Rien ne change"], c: 0,
+      o: ["Les ventes baissent, puis la production, l’emploi et les revenus diminuent aussi", "Les taux baissent et l’investissement compense aussitôt la baisse de la consommation", "La production augmente, car l’épargne supplémentaire finance de nouveaux investissements", "Rien de notable, car l’épargne des uns devient la dépense des autres"], c: 0,
       e: "La dépense des uns est le revenu des autres : moins de dépense, c’est moins de revenu." },
     ouverte: {
       q: "La Suisse applique depuis 2003 un « frein à l’endettement » qui oblige la Confédération à équilibrer son budget sur l’ensemble d’un cycle conjoncturel. Est-ce compatible avec les idées de Keynes ?",
@@ -142,10 +142,10 @@ ${rounds}
     decouvrir: {
       questions: [
         { q: "Selon Keynes, pourquoi des usines peuvent-elles rester vides alors que des chômeurs cherchent du travail ?",
-          o: ["Parce que les entreprises ne produisent que ce qu’elles pensent pouvoir vendre", "Parce que les machines sont usées", "Parce que les chômeurs refusent de travailler", "Parce que les salaires sont trop bas"], c: 0,
+          o: ["Parce que les entreprises ne produisent que ce qu’elles pensent vendre", "Parce que les machines sont trop usées pour reprendre la production", "Parce que les chômeurs refusent les emplois proposés au salaire en vigueur", "Parce que les salaires sont trop bas pour inciter les gens à travailler"], c: 0,
           e: "Si personne n’achète, personne ne produit, et personne n’embauche." },
         { q: "Que veut montrer l’exemple des 100 millions dépensés par l’État pour des routes ?",
-          o: ["Que la dépense publique peut créer au total plus de richesse que la somme de départ", "Que les routes coûtent toujours trop cher", "Que l’État doit rembourser aussitôt", "Que les salaires doivent baisser"], c: 0,
+          o: ["Qu’une dépense publique peut créer plus de richesse que son montant", "Que les grands travaux publics coûtent trop cher pour le résultat obtenu", "Que l’État doit compenser immédiatement chaque dépense par de nouveaux impôts", "Que les salaires doivent baisser pour que les routes soient rentables"], c: 0,
           e: "Les salaires versés sont en partie dépensés, puis redépensés : c’est le multiplicateur." }
       ],
       duree: 5,
@@ -273,20 +273,20 @@ ${gains}
         o: ["Parce que l’Angleterre a un avantage absolu dans le drap", "Parce qu’un drap coûte moins de vin en Angleterre qu’au Portugal", "Parce que le Portugal manque de main-d’œuvre", "Parce que le drap anglais se vend plus cher à l’étranger que le vin"], c: 1,
         e: "Le drap coûte 0,83 tonneau de vin en Angleterre contre 1,125 au Portugal. C’est le coût d’opportunité, et non la productivité absolue, qui détermine la spécialisation." },
       { q: "Un pays A produit une voiture en 10 heures et un ordinateur en 5 heures ; un pays B, une voiture en 20 heures et un ordinateur en 8 heures. Qui a l’avantage comparatif dans les ordinateurs ?",
-        o: ["A, car il est plus rapide pour les deux", "B, car un ordinateur lui coûte 0,4 voiture contre 0,5 pour A", "Personne, les coûts sont proportionnels", "A, car un ordinateur lui coûte 0,4 voiture"], c: 1,
+        o: ["A, car il est plus rapide que B pour produire chacun des deux biens", "B, car un ordinateur lui coûte 0,4 voiture contre 0,5 pour A", "Personne, car les coûts relatifs sont les mêmes dans les deux pays", "A, car un ordinateur lui coûte 0,4 voiture contre 0,5 pour B"], c: 1,
         e: "Pour A, un ordinateur coûte 5/10 = 0,5 voiture. Pour B, 8/20 = 0,4 voiture. B a l’avantage comparatif dans les ordinateurs, A dans les voitures." },
       { q: "Que montre le théorème de Stolper-Samuelson ?",
-        o: ["Que le commerce profite toujours à tous", "Que l’ouverture fait baisser la rémunération du facteur relativement rare", "Que les pays pauvres perdent toujours au commerce", "Que les droits de douane sont toujours inefficaces"], c: 1,
+        o: ["Que le commerce international profite autant aux ouvriers qu’aux détenteurs de capital", "Que l’ouverture fait baisser la rémunération du facteur relativement rare", "Que les pays pauvres perdent forcément à l’ouverture de leurs frontières", "Que les droits de douane font monter les salaires de tous les travailleurs"], c: 1,
         e: "Le pays gagne globalement, mais les détenteurs du facteur rare (souvent le travail peu qualifié dans les pays riches) voient leur rémunération baisser." },
       { q: "Pourquoi l’ouverture du Japon en 1859 est-elle un test précieux ?",
-        o: ["Parce que le Japon avait les mêmes coûts relatifs que ses partenaires", "Parce que les prix d’autarcie, observables avant l’ouverture, révèlent les coûts relatifs", "Parce que le Japon était déjà spécialisé dans l’industrie", "Parce que le commerce s’y est fait par troc"], c: 1,
+        o: ["Parce que le Japon avait exactement les mêmes coûts relatifs que ses partenaires", "Parce que les prix d’autarcie d’avant l’ouverture révèlent les coûts relatifs", "Parce que le Japon était déjà très spécialisé dans l’industrie avant 1859", "Parce que le commerce s’y est fait par troc, sans monnaie ni prix"], c: 1,
         e: "Les coûts relatifs d’autarcie sont normalement inobservables. Au Japon, on les connaît grâce aux prix d’avant 1859, et l’on vérifie que le pays exporte les biens relativement bon marché chez lui." },
       { q: "Quelle hypothèse de Ricardo le « choc chinois » a-t-il le plus remise en cause ?",
-        o: ["La gratuité des transports", "Le passage sans coût des travailleurs d’un secteur à l’autre", "La concurrence parfaite sur tous les marchés", "L’égalité des salaires entre pays"], c: 1,
+        o: ["La gratuité du transport des marchandises entre les pays", "Le passage sans coût des travailleurs d’un secteur à l’autre", "La concurrence parfaite entre les entreprises de tous les secteurs", "L’égalité des salaires entre les pays qui commercent entre eux"], c: 1,
         e: "Les travailleurs licenciés des secteurs concurrencés n’ont pas retrouvé facilement d’emploi ailleurs, ni déménagé : l’ajustement a été lent et coûteux." }
     ],
     transfert: { q: "Le Vietnam produit des chaussures et des puces électroniques moins efficacement que la Corée du Sud, mais son retard est bien plus faible dans les chaussures. Que conseille la théorie de Ricardo ?",
-      o: ["Le Vietnam se spécialise dans les chaussures, la Corée dans les puces, et ils échangent", "La Corée produit tout elle-même", "Le Vietnam produit tout lui-même", "Aucun échange n’est avantageux"], c: 0,
+      o: ["Le Vietnam se spécialise dans les chaussures, la Corée dans les puces", "La Corée produit tout elle-même, puisqu’elle est plus efficace partout", "Le Vietnam produit tout lui-même, pour ne pas dépendre de la Corée", "Les deux pays gagnent à ne pas échanger, la Corée étant plus efficace partout"], c: 0,
       e: "Chaque pays se spécialise là où son coût d’opportunité est le plus faible, même s’il est moins productif partout." },
     ouverte: {
       q: "Les pays riches qui protègent fortement leur agriculture, comme le Japon, la Norvège ou la Suisse, devraient-ils continuer de le faire, au regard de la théorie de l’avantage comparatif ?",
@@ -302,10 +302,10 @@ ${gains}
     decouvrir: {
       questions: [
         { q: "Pourquoi l’avocate a-t-elle intérêt à confier la frappe à sa secrétaire, même si elle tape plus vite ?",
-          o: ["Parce que chaque heure passée à taper est une heure de conseil qu’elle ne facture pas", "Parce que taper est fatigant", "Parce que la secrétaire tape en réalité plus vite qu’elle", "Parce que l’ordinateur coûte plus cher que la secrétaire"], c: 0,
+          o: ["Parce que chaque heure de frappe est une heure de conseil non facturée", "Parce que la frappe est un travail trop fatigant pour une avocate surchargée", "Parce que la secrétaire tape en réalité plus vite et plus juste qu’elle", "Parce que le temps d’ordinateur coûte plus cher que le salaire de la secrétaire"], c: 0,
           e: "Ce qui compte n’est pas d’être le meilleur, mais ce à quoi on renonce." },
         { q: "Qu’est-ce que le coût d’opportunité ?",
-          o: ["Ce à quoi on renonce en choisissant une activité", "Le prix payé au fournisseur", "Le coût du transport des marchandises", "Les impôts sur le commerce"], c: 0,
+          o: ["Ce à quoi on renonce en choisissant une activité plutôt qu’une autre", "Le prix payé au fournisseur pour obtenir un bien ou un service", "Le coût du transport et de l’assurance des marchandises échangées", "Les impôts et taxes que l’État prélève sur le commerce"], c: 0,
           e: "C’est la clé de l’avantage comparatif." }
       ],
       duree: 5,

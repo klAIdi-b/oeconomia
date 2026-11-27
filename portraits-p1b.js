@@ -105,19 +105,19 @@ ${circuits}
     },
     quiz: [
       { q: "Avec qui Marx rédige-t-il le Manifeste du parti communiste (1848) ?",
-        o: ["Proudhon", "Friedrich Engels", "Bakounine", "Lénine"], c: 1,
+        o: ["Pierre-Joseph Proudhon", "Friedrich Engels", "Mikhaïl Bakounine", "Ferdinand Lassalle"], c: 1,
         e: "Engels est son ami, collaborateur et soutien financier." },
       { q: "D’où vient la plus-value selon Marx ?",
-        o: ["Du vol du capitaliste", "De la différence entre la valeur créée par la force de travail et ce qu’elle coûte", "Du commerce international", "De la rente foncière"], c: 1,
+        o: ["D’un vol du capitaliste, qui paie le travail sous sa valeur", "De l’écart entre la valeur créée par le travail et le salaire versé", "Du commerce international, qui permet d’acheter bas et vendre haut", "De la rente foncière que les propriétaires prélèvent sur le produit"], c: 1,
         e: "L’exploitation découle des règles mêmes de l’échange marchand." },
       { q: "Qu’est-ce que l’« armée industrielle de réserve » ?",
-        o: ["Une milice ouvrière", "Les chômeurs créés par la mécanisation, qui pèsent sur les salaires", "Les ouvriers les plus qualifiés, gardés en réserve par les patrons", "Les syndicats"], c: 1,
+        o: ["Une milice ouvrière que les syndicats arment en cas de grève", "Les chômeurs créés par la mécanisation, qui pèsent sur les salaires", "Les ouvriers les plus qualifiés, gardés en réserve par les patrons", "Les syndicats de métier, qui négocient les salaires pour tous"], c: 1,
         e: "Elle résulte de l’accumulation et de la mécanisation." },
       { q: "Où se tient le premier congrès de l’Association internationale des travailleurs, en 1866 ?",
         o: ["À Londres", "À Genève", "À Paris", "À Berlin"], c: 1,
         e: "La Suisse a joué un rôle central dans l’histoire de l’Internationale." },
       { q: "Quelle critique Böhm-Bawerk adresse-t-il au Capital en 1896 ?",
-        o: ["Qu’il surestime le rôle de la monnaie", "Que le livre III, où les prix s’écartent des valeurs, contredit la théorie de la valeur du livre I", "Qu’il ignore la monnaie", "Qu’il ignore la concurrence entre capitalistes"], c: 1,
+        o: ["Qu’il surestime le rôle de la monnaie dans la formation des prix", "Que le livre III, où les prix s’écartent des valeurs, contredit le livre I", "Qu’il néglige la concurrence entre capitalistes dans le livre III, pourtant essentielle", "Qu’il ignore le rôle de l’entrepreneur dans la production de valeur"], c: 1,
         e: "C’est le « problème de la transformation »." }
     ],
     ouverte: {
@@ -134,10 +134,10 @@ ${circuits}
     decouvrir: {
       questions: [
         { q: "Selon Marx, à quoi la concurrence entre capitalistes conduit-elle ?",
-          o: ["À mécaniser, ce qui crée du chômage et provoque des crises", "À augmenter sans cesse les salaires", "À supprimer les profits pour toujours", "À la disparition des machines"], c: 0,
+          o: ["À mécaniser, ce qui crée du chômage et provoque des crises", "À relever les salaires pour attirer la main-d’œuvre qualifiée", "À supprimer les profits en faisant baisser tous les prix", "À abandonner les machines pour revenir au travail artisanal"], c: 0,
           e: "Marx y voit des contradictions qui transformeront la société." },
         { q: "Comment la notice juge-t-elle l’héritage de Marx ?",
-          o: ["Immense et contesté : plusieurs prédictions se sont révélées fausses, mais ses analyses restent discutées", "Entièrement confirmé par l’histoire", "Sans aucune influence au XXe siècle", "Limité à l’Allemagne"], c: 0,
+          o: ["Immense mais contesté, car plusieurs prédictions étaient fausses", "Confirmé par l’histoire, car ses prédictions se sont réalisées", "Négligeable au XXe siècle, car les États l’ont écarté", "Limité à l’Allemagne, car ses idées n’ont pas traversé le Rhin"], c: 0,
           e: "Ses idées ont inspiré les partis socialistes et des révolutions aux résultats souvent tragiques." }
       ],
       duree: 6,
@@ -268,19 +268,19 @@ ${etain}
     },
     quiz: [
       { q: "Où Hayek fonde-t-il la Société du Mont-Pèlerin en 1947 ?",
-        o: ["À Vienne", "Au Mont-Pèlerin, au-dessus de Vevey, en Suisse", "À Chicago", "À Londres"], c: 1,
+        o: ["À Vienne, la ville où il a fait ses études", "Au Mont-Pèlerin, au-dessus de Vevey, en Suisse", "À Chicago, où il enseignait alors à l’université", "À Londres, à la London School of Economics"], c: 1,
         e: "Trente-neuf intellectuels libéraux s’y réunissent pendant dix jours." },
       { q: "Quel est le rôle du système des prix selon Hayek ?",
-        o: ["Garantir une répartition juste des revenus", "Transmettre une information dispersée que personne ne peut centraliser", "Fixer les salaires", "Remplacer l’État"], c: 1,
+        o: ["Garantir une répartition juste des revenus entre les citoyens", "Transmettre une information dispersée que personne ne peut centraliser", "Fixer le niveau des salaires de chaque métier de manière équitable", "Remplacer l’État dans ses fonctions de défense et de justice"], c: 1,
         e: "C’est l’argument de son article de 1945, avec l’exemple de l’étain." },
       { q: "Selon la théorie autrichienne des cycles, qu’est-ce qui provoque les crises ?",
-        o: ["L’insuffisance de la demande", "Un crédit trop abondant qui fausse l’investissement", "Les syndicats", "Le commerce international"], c: 1,
+        o: ["Une demande globale insuffisante face à la production", "Un crédit trop abondant qui fausse l’investissement", "La force excessive des syndicats sur les salaires", "La concurrence internationale, qui détruit les emplois"], c: 1,
         e: "La crise est la liquidation des investissements que l’épargne ne pouvait soutenir." },
       { q: "Avec qui Hayek partage-t-il le prix Nobel de 1974 ?",
-        o: ["Keynes", "Gunnar Myrdal", "Friedman", "Samuelson"], c: 1,
+        o: ["John Kenneth Galbraith", "Gunnar Myrdal", "Milton Friedman", "Paul Samuelson"], c: 1,
         e: "Myrdal, aux idées très opposées, défendait l’État-providence." },
       { q: "Qu’est-ce qu’un « ordre spontané » ?",
-        o: ["Un ordre imposé par une autorité centrale", "Un ordre issu des actions de nombreux individus suivant des règles, sans plan d’ensemble", "Un ordre né du hasard, sans aucune règle", "Une décision du parlement"], c: 1,
+        o: ["Un ordre imposé par une autorité centrale qui décide de tout à l’avance", "Un ordre né d’individus suivant des règles, sans plan d’ensemble", "Un ordre né du hasard, sans règle, que personne ne peut comprendre", "Un ordre voté par le parlement pour organiser la vie économique"], c: 1,
         e: "Le langage, le droit coutumier et le marché en sont des exemples." }
     ],
     ouverte: {
@@ -297,10 +297,10 @@ ${etain}
     decouvrir: {
       questions: [
         { q: "Dans l’exemple de Hayek, que se passe-t-il quand l’étain devient rare ?",
-          o: ["Son prix monte, et chacun l’économise sans même savoir pourquoi", "Le gouvernement le rationne", "Son prix baisse", "Personne ne s’en aperçoit"], c: 0,
+          o: ["Son prix monte, et chacun l’économise sans même savoir pourquoi", "Le gouvernement le rationne pour en garantir la répartition", "Son prix baisse, car les producteurs cherchent à l’écouler", "Personne ne s’en aperçoit tant que les stocks ne sont pas épuisés"], c: 0,
           e: "Les prix transmettent une information dispersée entre des millions de personnes." },
         { q: "À partir des années 1970, qui les idées de Hayek inspirent-elles ?",
-          o: ["Margaret Thatcher et le renouveau du libéralisme", "Les partis communistes européens", "Le New Deal de Roosevelt", "Les planificateurs soviétiques"], c: 0,
+          o: ["Margaret Thatcher et le renouveau du libéralisme", "Les partis communistes d’Europe occidentale", "Les défenseurs du New Deal et de l’État-providence", "Les planificateurs soviétiques et leur économie dirigée"], c: 0,
           e: "Dans les années 1930, c’est Keynes qui l’avait emporté dans leur débat." }
       ],
       duree: 6,

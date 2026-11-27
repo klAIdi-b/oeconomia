@@ -88,16 +88,16 @@ ${compte}
     },
     quiz: [
       { q: "Que reproche Waring à la comptabilité nationale ?",
-        o: ["D’être trop compliquée", "D’ignorer le travail non payé et la valeur de la nature", "De compter deux fois les impôts", "De surestimer la production agricole"], c: 1,
+        o: ["D’être trop compliquée pour être comprise par le public", "D’ignorer le travail non payé et la valeur de la nature", "De compter deux fois les impôts dans le revenu national", "De surestimer la production agricole des pays en développement"], c: 1,
         e: "Une activité n’y est productive que si elle est payée." },
       { q: "Pourquoi le même travail peut-il être compté ou non dans le PIB ?",
-        o: ["Selon sa durée", "Selon qu’il est payé ou non", "Selon le pays", "Selon le secteur d’activité"], c: 1,
+        o: ["Selon le nombre d’heures effectuées", "Selon qu’il est rémunéré ou non", "Selon le pays où il est effectué", "Selon le secteur d’activité concerné"], c: 1,
         e: "Garder un enfant contre un salaire est compté ; garder le sien ne l’est pas." },
       { q: "Que propose Waring pour mesurer ce qui est oublié ?",
-        o: ["Ajouter au PIB une estimation unique du travail domestique", "Mesurer le temps passé à chaque activité, payée ou non, et l’état de la nature", "Remplacer le PIB par le bonheur déclaré", "Compter seulement les exportations"], c: 1,
+        o: ["Ajouter au PIB une estimation unique du travail domestique", "Mesurer le temps passé à chaque activité et l’état de la nature", "Remplacer le PIB par le bonheur déclaré par les habitants", "Compter les exportations plutôt que la production intérieure"], c: 1,
         e: "Elle préfère compter en temps plutôt qu’en argent." },
       { q: "Quel événement politique a-t-elle provoqué en 1984 ?",
-        o: ["Une réforme fiscale", "Des élections anticipées, en soutenant une loi antinucléaire de l’opposition", "L’entrée dans l’Union européenne", "La création d’une banque centrale"], c: 1,
+        o: ["Une réforme fiscale qui a bouleversé le budget de l’État", "Des élections anticipées, après son soutien à une loi antinucléaire", "Un référendum sur la monarchie, après son discours au Parlement", "La démission du gouverneur de la banque centrale, qu’elle a critiqué"], c: 1,
         e: "Le Premier ministre Muldoon a convoqué des élections anticipées." }
     ],
     ouverte: {
@@ -113,10 +113,10 @@ ${compte}
     decouvrir: {
       questions: [
         { q: "Comment Marilyn Waring découvre-t-elle les limites des comptes nationaux ?",
-          o: ["En présidant la commission des dépenses publiques du Parlement néo-zélandais", "En travaillant à la banque centrale", "En étudiant à l’université de Harvard", "En dirigeant une entreprise"], c: 0,
+          o: ["En présidant la commission des dépenses publiques du Parlement", "En travaillant comme économiste à la banque centrale du pays", "En étudiant l’économie à l’université de Harvard, aux États-Unis", "En dirigeant pendant dix ans une grande entreprise agricole"], c: 0,
           e: "Elle constate que les comptes ignorent une grande partie du travail qu’elle voit autour d’elle." },
         { q: "Selon Waring, pourquoi le travail domestique et les soins disparaissent-ils souvent des politiques ?",
-          o: ["Parce qu’ils ne sont pas payés, donc pas comptés dans le PIB", "Parce qu’ils sont interdits", "Parce qu’ils sont assurés par l’État", "Parce qu’ils sont déjà très bien rémunérés"], c: 0,
+          o: ["Parce qu’ils ne sont pas payés, donc pas comptés dans le PIB", "Parce qu’ils sont devenus inutiles avec les machines modernes", "Parce qu’ils sont déjà assurés par l’État et financés par l’impôt", "Parce qu’ils sont déjà très bien rémunérés sur le marché du travail"], c: 0,
           e: "Ce que l’on ne compte pas, on ne le voit pas, et on ne le finance pas." }
       ],
       duree: 5,
@@ -236,13 +236,13 @@ ${circuit}
     },
     quiz: [
       { q: "Selon la théorie moderne de la monnaie, quelle est la vraie limite de la dépense d’un État qui émet sa propre monnaie ?",
-        o: ["Le niveau de la dette", "L’inflation, quand les ressources de l’économie sont pleinement utilisées", "Le taux de change fixe", "Le budget de l’année précédente"], c: 1,
+        o: ["Le niveau de la dette publique, qui ne doit pas dépasser le PIB", "L’inflation, quand les ressources sont pleinement utilisées", "Le taux de change fixe, qui oblige à défendre la monnaie", "Le budget de l’année précédente, reconduit chaque année"], c: 1,
         e: "La question n’est pas « comment le payer ? », mais « avons-nous les ressources ? »." },
       { q: "À quoi sert l’impôt dans cette vision ?",
-        o: ["Uniquement à financer l’État", "À créer une demande pour la monnaie, à retirer de la monnaie pour contenir l’inflation et à orienter les comportements", "À rembourser la banque centrale", "À rembourser la dette publique accumulée"], c: 1,
-        e: "L’État dépense d’abord, puis prélève." },
+        o: ["À financer les dépenses de l’État avant qu’il puisse les engager", "À créer une demande pour la monnaie et à contenir l’inflation", "À rembourser à la banque centrale la monnaie qu’elle a créée", "À rembourser la dette publique accumulée au fil des années"], c: 1,
+        e: "L’État dépense d’abord, puis prélève ; l’impôt oriente aussi les comportements." },
       { q: "Qu’est-ce que la garantie d’emploi proposée par Kelton ?",
-        o: ["Une interdiction de licencier", "Un emploi public à salaire fixe offert à toute personne qui en cherche un", "Un revenu universel sans travail", "Une subvention aux entreprises"], c: 1,
+        o: ["Une interdiction de licencier pendant les périodes de crise", "Un emploi public à salaire fixe offert à qui en cherche un", "Un revenu universel versé à chacun, sans contrepartie de travail", "Une subvention versée aux entreprises qui embauchent des chômeurs"], c: 1,
         e: "Le nombre de ces emplois varie avec la conjoncture." },
       { q: "Quel économiste a jugé en 2019 cette théorie « recette d’un désastre » ?",
         o: ["Paul Krugman", "Lawrence Summers", "Milton Friedman", "Joseph Stiglitz"], c: 1,
@@ -261,10 +261,10 @@ ${circuit}
     decouvrir: {
       questions: [
         { q: "Selon Kelton, en quoi un État qui émet sa propre monnaie diffère-t-il d’un ménage ?",
-          o: ["Il crée la monnaie en dépensant et ne peut pas faire faillite dans sa propre monnaie", "Il doit toujours gagner de l’argent avant de le dépenser", "Il ne peut jamais s’endetter", "Il dépend des banques pour obtenir de la monnaie"], c: 0,
+          o: ["Il crée la monnaie en la dépensant, donc il ne peut pas faire faillite", "Il doit gagner de l’argent avant de pouvoir le dépenser, comme un ménage", "Il ne peut pas s’endetter, contrairement aux ménages et aux firmes", "Il dépend des banques privées pour obtenir la monnaie qu’il dépense"], c: 0,
           e: "C’est le point de départ de la théorie moderne de la monnaie." },
         { q: "Que reprochent ses critiques à la théorie défendue par Kelton ?",
-          o: ["D’encourager les gouvernements à trop dépenser", "D’interdire toute dépense publique", "D’ignorer complètement la monnaie", "De vouloir supprimer les impôts"], c: 0,
+          o: ["D’encourager les gouvernements à trop dépenser", "D’interdire toute dépense publique en période de crise", "De négliger le rôle de la monnaie dans l’économie", "De proposer de supprimer l’impôt sur les sociétés"], c: 0,
           e: "Elle répond qu’il faut surveiller l’inflation, pas la dette." }
       ],
       duree: 5,

@@ -115,19 +115,19 @@ ${credit}
     },
     quiz: [
       { q: "Qu’appelle-t-on une asymétrie d’information ?",
-        o: ["Une différence de revenus entre deux pays", "Une situation où l’un des partenaires d’un échange en sait plus que l’autre", "Un écart entre l’offre et la demande", "Une erreur de prévision de la banque centrale"], c: 1,
+        o: ["Une différence de revenus entre deux pays qui commercent", "Une situation où un partenaire en sait plus que l’autre", "Un écart entre l’offre et la demande sur un même marché", "Une erreur de prévision de la banque centrale sur l’inflation"], c: 1,
         e: "Le vendeur, l’emprunteur ou le salarié en savent plus que l’acheteur, la banque ou l’employeur." },
       { q: "Pourquoi une banque refuse-t-elle des prêts au lieu de relever son taux ?",
-        o: ["Parce que les taux sont fixés par la banque centrale", "Parce qu’un taux élevé fait fuir les emprunteurs prudents et attire les plus risqués", "Parce qu’elle manque toujours d’argent", "Parce que les emprunteurs refusent de payer plus"], c: 1,
-        e: "C’est le rationnement du crédit, démontré avec Andrew Weiss en 1981." },
+        o: ["Parce que la banque centrale lui interdit de relever ses taux", "Parce qu’un taux élevé fait fuir les prudents et attire les risqués", "Parce qu’elle manque de liquidités pour prêter à ses clients", "Parce que les emprunteurs refusent d’emprunter à un taux plus élevé"], c: 1,
+        e: "C’est le rationnement du crédit, démontré avec Andrew Weiss en 1981 : un taux élevé fait fuir les prudents et attire les plus risqués." },
       { q: "Avec qui Stiglitz partage-t-il le prix Nobel en 2001 ?",
         o: ["Paul Krugman et Robert Lucas", "George Akerlof et Michael Spence", "Amartya Sen et Jean-Paul Fitoussi", "Milton Friedman et Friedrich Hayek"], c: 1,
         e: "Tous trois sont récompensés pour leurs analyses des marchés avec asymétrie d’information." },
       { q: "Que reproche Stiglitz au FMI dans La Grande Désillusion ?",
-        o: ["D’avoir prêté trop peu", "D’avoir imposé aux pays en crise une austérité et une ouverture financière qui ont aggravé leur situation", "D’avoir refusé toute réforme", "D’avoir favorisé l’Asie contre l’Amérique latine"], c: 1,
-        e: "Il critique surtout la gestion de la crise asiatique de 1997-1998." },
+        o: ["D’avoir prêté trop peu d’argent aux pays en difficulté financière", "D’avoir imposé l’austérité et l’ouverture financière aux pays en crise", "D’avoir laissé les pays en crise sans aucune condition de réforme", "D’avoir favorisé les pays asiatiques au détriment de l’Amérique latine"], c: 1,
+        e: "Il critique surtout la gestion de la crise asiatique de 1997-1998, où ces remèdes ont aggravé la situation." },
       { q: "Selon la théorie du salaire d’efficience, pourquoi des entreprises paient-elles plus que le salaire du marché ?",
-        o: ["Pour attirer les clients par une bonne image", "Pour que le salarié ait beaucoup à perdre s’il est pris à ne pas travailler", "Parce que les syndicats l’exigent toujours", "Parce que la productivité baisse quand les salaires montent"], c: 1,
+        o: ["Pour soigner leur image auprès des clients et des candidats", "Pour que le salarié ait beaucoup à perdre en cas de renvoi", "Parce que les syndicats l’imposent lors des négociations", "Parce que la productivité baisse dès que les salaires montent"], c: 1,
         e: "Comme toutes le font, les salaires sont trop élevés pour le plein emploi : il reste du chômage." }
     ],
     ouverte: {
@@ -144,11 +144,11 @@ ${credit}
     decouvrir: {
       questions: [
         { q: "Selon Stiglitz, que se passe-t-il quand l’un des partenaires d’un échange est mal informé ?",
-          o: ["Il se protège, et le marché ne fonctionne plus comme prévu", "Le marché devient plus efficace", "Les prix baissent toujours", "L’échange devient impossible par la loi"], c: 0,
+          o: ["Il se protège, et le marché ne fonctionne plus comme prévu", "Le marché devient plus efficace, car chacun se méfie davantage", "Les prix baissent, jusqu’à rendre l’échange plus avantageux", "L’échange est annulé par la loi, qui protège le mal informé"], c: 0,
           e: "C’est l’asymétrie d’information." },
         { q: "Pour Stiglitz, que suppose la « main invisible » d’Adam Smith ?",
-          o: ["Une information parfaite, qui n’existe pas : les marchés ont donc besoin de règles", "Un État très puissant", "L’absence de monnaie", "Des entreprises toutes publiques"], c: 0,
-          e: "Il est devenu l’un des critiques les plus écoutés de la mondialisation." }
+          o: ["Une information parfaite, que les marchés ne connaissent pas", "Un État très puissant qui planifie la production et les prix", "L’absence de monnaie, dans une économie de troc généralisé", "Des entreprises toutes publiques, gérées dans l’intérêt général"], c: 0,
+          e: "Sans cette information, les marchés ont besoin de règles. Il est devenu l’un des critiques les plus écoutés de la mondialisation." }
       ],
       duree: 6,
       html: `
@@ -288,19 +288,19 @@ ${risques}
     },
     quiz: [
       { q: "Quelle est la thèse centrale de L’État entrepreneur ?",
-        o: ["L’État doit posséder toutes les entreprises", "L’État prend les risques de long terme à l’origine des grandes innovations", "L’innovation ne vient que des petites entreprises", "L’État doit cesser de financer la recherche"], c: 1,
+        o: ["L’État doit posséder et diriger les grandes entreprises", "L’État porte les risques à long terme des grandes innovations", "L’innovation vient surtout des petites entreprises de garage", "L’État devrait cesser de financer la recherche de base"], c: 1,
         e: "Il investit là où le privé juge le risque trop grand." },
       { q: "Parmi ces technologies, laquelle Mazzucato rattache-t-elle à un financement public ?",
-        o: ["L’imprimante 3D seulement", "Internet, le GPS, l’écran tactile et l’assistant vocal", "Seulement le GPS", "Seulement l’appareil photo"], c: 1,
+        o: ["L’imprimante 3D, le drone civil et la montre connectée", "Internet, le GPS, l’écran tactile et l’assistant vocal", "Le four à micro-ondes, la télévision couleur et le magnétoscope", "L’appareil photo numérique, la radio FM et la pile alcaline"], c: 1,
         e: "Ce sont les quatre exemples de son chapitre sur l’iPhone." },
       { q: "Que reproche-t-elle au partage actuel des risques et des gains ?",
-        o: ["Les entreprises prennent tous les risques", "Les risques sont supportés par le public, mais les gains restent privés", "L’État gagne trop d’argent", "Les chercheurs sont trop payés"], c: 1,
+        o: ["Les entreprises prennent en charge l’essentiel des risques", "Le public porte les risques, mais les gains restent privés", "L’État gagne trop d’argent sur les innovations qu’il finance", "Les chercheurs sont trop payés pour des résultats modestes"], c: 1,
         e: "Elle l’illustre par les prêts à Solyndra et à Tesla." },
       { q: "Qu’est-ce qu’une « mission » au sens de Mazzucato ?",
-        o: ["Une subvention à une entreprise précise", "Un objectif public ambitieux et mesurable, qui mobilise plusieurs secteurs", "Une entreprise publique chargée d’un secteur", "Une privatisation"], c: 1,
-        e: "Le modèle est le programme Apollo." },
+        o: ["Une subvention versée à une entreprise pour l’aider à innover", "Un grand objectif public, qui mobilise plusieurs secteurs", "Une entreprise publique chargée de gérer un secteur entier", "Une privatisation d’entreprises publiques jugées inefficaces"], c: 1,
+        e: "Le modèle est le programme Apollo, un objectif précis et mesurable." },
       { q: "Quelle est la principale critique adressée à ses thèses ?",
-        o: ["Elle exagère le rôle des petites start-up", "Elle retient les succès de l’État et oublie ses échecs", "Elle refuse toute dépense publique", "Elle défend le libre-échange"], c: 1,
+        o: ["Qu’elle exagère le rôle des petites start-up dans l’innovation", "Qu’elle retient les succès de l’État et oublie ses échecs", "Qu’elle réclame une baisse des dépenses publiques de recherche", "Qu’elle défend le libre-échange contre les politiques industrielles"], c: 1,
         e: "C’est l’argument de McCloskey et Mingardi." }
     ],
     ouverte: {
@@ -317,7 +317,7 @@ ${risques}
     decouvrir: {
       questions: [
         { q: "Selon Mazzucato, qui a pris le risque de départ des technologies de l’iPhone ?",
-          o: ["Le contribuable, par des recherches payées par l’État américain", "L’entreprise qui l’a commercialisé", "Les banques privées", "Les consommateurs"], c: 0,
+          o: ["Le contribuable, par des recherches financées par l’État américain", "L’entreprise qui l’a commercialisé, grâce à ses propres chercheurs", "Les banques privées, par des prêts consentis à l’entreprise", "Les consommateurs, par l’achat des premiers modèles vendus"], c: 0,
           e: "L’entreprise a eu le talent de les assembler." },
         { q: "Quel exemple historique Mazzucato donne-t-elle d’une « mission » publique ?",
           o: ["Aller sur la Lune", "Construire le canal de Suez", "Inventer l’imprimerie", "Créer l’euro"], c: 0,

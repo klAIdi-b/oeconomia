@@ -90,7 +90,7 @@ ${heures}
     },
     quiz: [
       { q: "Pourquoi le travail domestique n’entre-t-il pas dans le PIB ?",
-        o: ["Parce qu’il est inutile", "Parce qu’il ne donne pas lieu à un paiement sur un marché", "Parce qu’il représente trop peu d’heures pour être mesuré", "Parce que les ménages refusent de le déclarer"], c: 1,
+        o: ["Parce qu’il est inutile pour l’économie et la société", "Parce qu’il ne donne pas lieu à un paiement sur un marché", "Parce qu’il représente trop peu d’heures pour être mesuré", "Parce que les ménages refusent de le déclarer aux statisticiens"], c: 1,
         e: "Le même travail, payé, entrerait dans le PIB." },
       { q: "En Suisse, en 2020, consacrait-on plus d’heures au travail non rémunéré ou au travail rémunéré ?",
         o: ["Au travail rémunéré", "Au travail non rémunéré", "Autant aux deux", "On ne le sait pas"], c: 1,
@@ -102,11 +102,11 @@ ${heures}
         o: ["Environ un quart", "Environ la moitié", "Environ les trois quarts", "La quasi-totalité"], c: 2,
         e: "Les femmes assurent environ les trois quarts des heures de travail de soin non rémunéré dans le monde, avec de fortes différences entre pays." },
       { q: "Que sont les « comptes satellites » ?",
-        o: ["Des comptes tenus par les cantons et les communes", "Des comptes statistiques tenus à côté du PIB pour mesurer, par exemple, le travail domestique", "Des comptes de la banque centrale", "Des comptes qui remplacent le PIB dans les statistiques officielles"], c: 1,
+        o: ["Des comptes tenus par les cantons et les communes pour leur budget", "Des comptes tenus à côté du PIB pour mesurer le travail domestique", "Des comptes de la banque centrale destinés à surveiller les banques", "Des comptes qui remplacent le PIB dans les statistiques officielles"], c: 1,
         e: "Ils sont prévus par le système de comptabilité nationale depuis 1993." }
     ],
     transfert: { q: "Une commune ferme une crèche publique pour économiser, et des parents réduisent leur temps de travail payé pour garder leurs enfants. Que montre une analyse qui tient compte du travail non rémunéré ?",
-      o: ["L’économie n’est pas gratuite : le coût est transféré aux familles, sous forme de temps et de revenus perdus", "La commune a réalisé une économie nette pour la société", "Le PIB mesure exactement ce changement", "Aucun travail n’a été ajouté"], c: 0,
+      o: ["Le coût n’a pas disparu, il est transféré aux familles en temps et en revenus", "La commune a réalisé une économie nette, car son budget a baissé sans autre effet", "Le PIB mesure fidèlement ce changement, y compris le temps de garde des parents", "Aucun travail supplémentaire n’apparaît, puisque les parents travaillent moins"], c: 0,
       e: "Le travail de garde ne disparaît pas : il passe du secteur payé au secteur non payé." },
     ouverte: {
       q: "Faudrait-il mieux tenir compte du travail non rémunéré, comme l’éducation des enfants ou les soins aux proches, dans le calcul des retraites ?",
@@ -122,10 +122,10 @@ ${heures}
     decouvrir: {
       questions: [
         { q: "Pourquoi le même travail de cuisine peut-il compter ou non dans le PIB ?",
-          o: ["Il compte s’il est payé, par exemple chez des voisins, et pas s’il est fait gratuitement pour sa famille", "Il compte seulement s’il est fait le week-end", "Il ne compte jamais", "Il compte seulement s’il est fait par un homme"], c: 0,
+          o: ["Il compte s’il est payé, mais pas s’il est fait gratuitement", "Il compte seulement s’il est fait le week-end, hors des heures de bureau", "Il ne compte jamais, car la cuisine relève de la vie privée des ménages", "Il compte seulement s’il est fait par un cuisinier diplômé et déclaré"], c: 0,
           e: "Le PIB ne mesure que ce qui donne lieu à un paiement." },
         { q: "Pourquoi ce travail non compté peut-il fausser certaines décisions ?",
-          o: ["Une économie qui reporte du travail sur les familles peut sembler gratuite, alors qu’elle ne l’est pas", "Parce qu’il fait baisser les impôts", "Parce qu’il est déjà payé par l’État", "Parce qu’il n’a aucune valeur"], c: 0,
+          o: ["Parce que ce qui est reporté sur les familles paraît gratuit", "Parce qu’il fait baisser les impôts des ménages qui l’accomplissent", "Parce qu’il est déjà payé par l’État sous forme d’allocations familiales", "Parce qu’il n’a aucune valeur pour les familles ni pour la société"], c: 0,
           e: "Ce qui n’est pas compté pèse moins dans les décisions." }
       ],
       duree: 5,
@@ -232,23 +232,23 @@ ${formes}
     },
     quiz: [
       { q: "Qu’est-ce qu’un mode de régulation ?",
-        o: ["Une loi sur la concurrence", "Un ensemble d’institutions qui assure pendant une période la stabilité de la croissance", "Un modèle mathématique", "Une décision de la banque centrale"], c: 1,
+        o: ["Une loi sur la concurrence qui limite le pouvoir des grandes entreprises", "Un ensemble d’institutions qui stabilise la croissance pendant une période", "Un modèle mathématique qui prévoit la croissance de l’année suivante", "Une décision de la banque centrale qui fixe les taux d’intérêt pour une période"], c: 1,
         e: "Salaires, concurrence, monnaie, État et insertion internationale." },
       { q: "Quelles sont les cinq formes institutionnelles ?",
-        o: ["Offre, demande, prix, salaire, profit", "Rapport salarial, concurrence, régime monétaire, État, insertion internationale", "Agriculture, industrie, services, commerce, finance", "Épargne, investissement, impôt, dette, inflation"], c: 1,
+        o: ["Offre de biens, demande de biens, prix, salaire et profit des entreprises", "Rapport salarial, concurrence, régime monétaire, État, insertion internationale", "Agriculture, industrie, services, commerce et finance, classés par secteur d’activité", "Épargne, investissement, impôt, dette, inflation, vus comme variables clés"], c: 1,
         e: "Leur cohérence permet un régime d’accumulation durable." },
       { q: "Que désigne le fordisme ?",
-        o: ["Une organisation du travail fondée sur l’artisanat", "Un régime associant production de masse, partage des gains de productivité et consommation de masse", "Une théorie de la monnaie", "Une politique protectionniste"], c: 1,
+        o: ["Une organisation du travail fondée sur l’artisanat et les corporations", "Une production de masse reliée à la consommation de masse par les salaires", "Une théorie de la monnaie fondée sur le rôle central des banques centrales", "Une politique protectionniste visant à protéger l’industrie nationale de la concurrence"], c: 1,
         e: "C’est le modèle des Trente Glorieuses." },
       { q: "Qu’est-ce qu’une « grande crise » pour les régulationnistes ?",
-        o: ["Une récession ordinaire", "Une crise du mode de régulation lui-même, qui oblige à inventer de nouvelles institutions", "Une crise boursière d’un jour", "Une crise financière qui touche plusieurs pays"], c: 1,
+        o: ["Une récession ordinaire, qui dure plus d’un an et fait monter le chômage", "Une crise du mode de régulation lui-même, qui exige de nouvelles institutions", "Une crise boursière brutale, qui fait chuter les cours de plus de 20 %", "Une crise financière qui touche plusieurs pays à la fois et leurs systèmes bancaires"], c: 1,
         e: "Comme celle des années 1970." },
       { q: "Pourquoi Henry Ford a-t-il doublé les salaires en 1914 ?",
-        o: ["Par conviction socialiste", "Surtout pour réduire la rotation du personnel et augmenter la productivité", "Pour baisser ses prix", "À cause d’une grève générale"], c: 1,
+        o: ["Par conviction socialiste, pour partager les bénéfices avec ses ouvriers", "Surtout pour réduire la rotation du personnel et gagner en productivité", "Pour pouvoir baisser ses prix et prendre des parts de marché à ses concurrents", "À cause d’une grève générale qui paralysait ses usines de Detroit"], c: 1,
         e: "Il y voyait une mesure d’économie." }
     ],
     transfert: { q: "Depuis les années 1980, dans de nombreux pays, les salaires progressent moins vite que la productivité, et la consommation est en partie soutenue par l’endettement des ménages. Comment un régulationniste interpréterait-il ce changement ?",
-      o: ["Comme un nouveau mode de régulation, où la finance remplace en partie la hausse des salaires", "Comme le retour du fordisme", "Comme la fin de toute régulation", "Comme une simple récession ordinaire"], c: 0,
+      o: ["Comme un nouveau mode de régulation, où la finance remplace en partie les salaires", "Comme le retour pur et simple du fordisme, avec un partage des gains de productivité", "Comme la fin de toute régulation, le marché se corrigeant seul désormais", "Comme une simple récession ordinaire, due à un choc de demande temporaire"], c: 0,
       e: "Chaque période du capitalisme a ses propres règles, et celle-ci donne une place centrale à la finance." },
     ouverte: {
       q: "Peut-on parler de modèles nationaux de capitalisme, comme le modèle rhénan allemand, le modèle nordique ou le modèle anglo-saxon ? Qu’apporte la notion de mode de régulation à cette comparaison ?",
@@ -264,10 +264,10 @@ ${formes}
     decouvrir: {
       questions: [
         { q: "Selon Aglietta, sur quoi reposait la croissance stable de l’après-guerre ?",
-          o: ["Sur un ensemble de règles qui s’accordaient bien entre elles, un « mode de régulation »", "Sur la seule politique monétaire", "Sur le commerce avec les colonies", "Sur l’absence d’État"], c: 0,
+          o: ["Sur des règles qui s’accordaient bien entre elles, un « mode de régulation »", "Sur la seule politique monétaire, menée avec rigueur par les banques centrales", "Sur le commerce avec les colonies, qui fournissait matières et débouchés", "Sur l’absence d’État, laissant le marché organiser seul la croissance"], c: 0,
           e: "Quand ces règles s’usent, la croissance se dérègle." },
         { q: "Dans le cercle fordiste, pourquoi les hausses de salaires soutiennent-elles la croissance ?",
-          o: ["Parce que les ouvriers achètent ce qu’ils fabriquent, ce qui soutient les ventes et l’investissement", "Parce qu’elles font baisser les prix", "Parce qu’elles réduisent les impôts", "Parce qu’elles diminuent la production"], c: 0,
+          o: ["Parce que les ouvriers achètent ce qu’ils fabriquent, ce qui soutient les ventes", "Parce qu’elles font baisser les prix, ce qui augmente le pouvoir d’achat", "Parce qu’elles réduisent les impôts, ce qui libère de l’argent pour les entreprises", "Parce qu’elles diminuent la production, ce qui rend les produits plus rares"], c: 0,
           e: "Productivité, salaires et consommation de masse se renforcent mutuellement." }
       ],
       duree: 5,

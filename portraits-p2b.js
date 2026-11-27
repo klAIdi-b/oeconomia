@@ -112,19 +112,19 @@ ${inconnues}
     },
     quiz: [
       { q: "Dans quelle ville Walras a-t-il enseigné et construit sa théorie ?",
-        o: ["Paris", "Lausanne", "Genève", "Évreux"], c: 1,
+        o: ["Paris", "Lausanne", "Genève", "Neuchâtel"], c: 1,
         e: "Il occupe la chaire d’économie politique de l’Académie de Lausanne de 1870 à 1892." },
       { q: "Quelle est l’originalité principale de Walras ?",
-        o: ["La théorie de la valeur-travail", "L’étude de tous les marchés ensemble, avec leurs interdépendances", "La défense du protectionnisme", "L’étude des cycles"], c: 1,
+        o: ["La théorie de la valeur-travail et de l’exploitation", "L’étude simultanée de tous les marchés et de leurs liens", "La défense du protectionnisme pour les industries naissantes", "L’étude des cycles économiques et de leurs retournements"], c: 1,
         e: "C’est la théorie de l’équilibre général." },
       { q: "Qu’appelle Walras la « rareté » ?",
-        o: ["Le manque de ressources naturelles", "L’intensité du dernier besoin satisfait, c’est-à-dire l’utilité marginale", "Le prix d’un bien", "La quantité totale d’un bien disponible"], c: 1,
+        o: ["Le manque de ressources naturelles qui limite la production d’un pays", "L’intensité du dernier besoin satisfait, soit l’utilité marginale", "Le prix que l’on paie pour obtenir un bien sur le marché", "La quantité totale d’un bien disponible à un moment donné"], c: 1,
         e: "Il reprend l’idée de son père Auguste Walras." },
       { q: "Que propose Walras dans son économie sociale ?",
-        o: ["La suppression de la propriété privée", "Le rachat progressif des terres par l’État pour en percevoir la rente", "L’impôt unique sur le revenu", "La fin de la concurrence"], c: 1,
+        o: ["La suppression de la propriété privée de tous les moyens de production", "Le rachat progressif des terres par l’État, pour en tirer la rente", "Un impôt unique sur le revenu, qui remplacerait les autres", "La fin de la concurrence grâce à des monopoles d’État"], c: 1,
         e: "La rente du sol, due au progrès collectif, devrait financer l’État." },
       { q: "Qui succède à Walras à Lausanne en 1893 ?",
-        o: ["Schumpeter", "Vilfredo Pareto", "Marshall", "Jevons"], c: 1,
+        o: ["Joseph Schumpeter", "Vilfredo Pareto", "Alfred Marshall", "William Jevons"], c: 1,
         e: "Ensemble, ils forment l’école de Lausanne." }
     ],
     ouverte: {
@@ -141,10 +141,10 @@ ${inconnues}
     decouvrir: {
       questions: [
         { q: "Pourquoi Walras s’installe-t-il à Lausanne ?",
-          o: ["Parce que la France n’a pas de place pour lui et que le canton de Vaud lui offre une chaire en 1870", "Parce qu’il y est né", "Pour diriger une banque", "Pour fuir une guerre"], c: 0,
+          o: ["Parce que la France n’a pas de place pour lui, et Vaud lui offre une chaire", "Parce qu’il y est né et qu’il souhaite enseigner dans sa ville natale", "Pour diriger une banque cantonale qui lui a proposé un poste important", "Pour échapper à des dettes contractées en France et repartir à zéro"], c: 0,
           e: "Il y écrit l’une des œuvres les plus importantes de l’histoire de l’économie." },
         { q: "Selon Walras, comment l’État devrait-il se financer pour ne pas taxer le travail ?",
-          o: ["En possédant les terres et en vivant de leurs loyers", "En imprimant de la monnaie", "En taxant les importations", "En empruntant sans limite"], c: 0,
+          o: ["En possédant les terres et en vivant de leurs loyers", "En faisant imprimer de la monnaie selon ses besoins", "En taxant fortement les produits importés aux frontières", "En s’endettant auprès des banques pour financer ses dépenses"], c: 0,
           e: "Walras était aussi un réformateur social." }
       ],
       duree: 6,
@@ -282,13 +282,13 @@ ${outils}
     },
     quiz: [
       { q: "Quelle image Marshall utilise-t-il pour réconcilier coût et utilité ?",
-        o: ["Le pendule", "Les deux lames d’une paire de ciseaux", "La main invisible", "La balance"], c: 1,
+        o: ["Le va-et-vient d’un pendule", "Les deux lames de ciseaux", "La main invisible du marché", "Les plateaux d’une balance"], c: 1,
         e: "L’offre et la demande coupent ensemble." },
       { q: "Que signifie « toutes choses égales par ailleurs » ?",
-        o: ["Que l’on tient compte de tous les facteurs à la fois", "Isoler un effet en supposant que les autres facteurs ne changent pas", "Que les prix sont égaux", "Que l’offre égale la demande"], c: 1,
+        o: ["Que l’on tient compte de tous les facteurs en même temps", "Isoler un effet en supposant que les autres facteurs restent fixes", "Que tous les prix sont égaux sur l’ensemble des marchés d’un même pays", "Que l’offre et la demande s’égalisent sur chaque marché"], c: 1,
         e: "C’est la méthode de l’équilibre partiel." },
       { q: "Pourquoi le prix dépend-il davantage du coût à long terme ?",
-        o: ["Parce que la demande disparaît", "Parce que l’offre a le temps de s’adapter, par exemple en construisant de nouveaux bateaux", "Parce que les goûts des consommateurs ne changent jamais", "Parce que les coûts baissent toujours"], c: 1,
+        o: ["Parce que la demande des consommateurs s’effondre à long terme", "Parce que l’offre a le temps de s’adapter, avec de nouveaux bateaux", "Parce que les goûts des consommateurs restent stables à long terme", "Parce que les coûts de production diminuent avec l’expérience"], c: 1,
         e: "C’est la distinction entre jour du marché, courte et longue période." },
       { q: "Que conseille Marshall de faire des mathématiques une fois le raisonnement traduit et illustré ?",
         o: ["Les publier en premier", "Les brûler", "Les enseigner", "Les vérifier par ordinateur"], c: 1,
@@ -311,7 +311,7 @@ ${outils}
     decouvrir: {
       questions: [
         { q: "Pourquoi Marshall décide-t-il de consacrer sa vie à l’économie ?",
-          o: ["En visitant les quartiers pauvres, il veut comprendre comment améliorer la condition des travailleurs", "Pour faire fortune en Bourse", "Parce que son père était économiste", "Pour conseiller la Banque d’Angleterre"], c: 0,
+          o: ["En visitant des quartiers pauvres, pour améliorer le sort des travailleurs", "Pour faire fortune à la Bourse de Londres, comme certains de ses amis", "Pour suivre son père, économiste et conseiller du gouvernement", "Pour conseiller la Banque d’Angleterre sur sa politique monétaire"], c: 0,
           e: "Le mathématicien de Cambridge veut une économie utile." },
         { q: "Selon Marshall, qu’est-ce qui compte le plus pour fixer le prix à long terme ?",
           o: ["Le coût de production", "La demande", "L’humeur des acheteurs", "Le prix fixé par l’État"], c: 0,

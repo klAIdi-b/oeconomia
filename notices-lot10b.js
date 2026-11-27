@@ -117,20 +117,20 @@ ${residu}
         o: ["Parce que les taux d’intérêt montent sans cesse", "Parce que le capital a des rendements décroissants", "Parce que la population diminue toujours", "Parce que les machines deviennent plus chères chaque année"], c: 1,
         e: "Chaque machine de plus rapporte moins que la précédente, jusqu’à l’état stationnaire." },
       { q: "Que se passe-t-il à long terme dans un pays qui augmente son taux d’épargne ?",
-        o: ["Sa croissance accélère pour toujours", "Il devient plus riche, mais sa croissance par habitant finit par revenir au même rythme", "Sa consommation par habitant augmente d’autant, chaque année", "Rien ne change"], c: 1,
+        o: ["Sa croissance accélère pour toujours, tant que l’épargne reste élevée", "Il devient plus riche, mais sa croissance par habitant revient à son rythme", "Sa consommation par habitant augmente d’autant chaque année, sans limite", "Rien ne change, car l’épargne ne modifie pas le revenu à long terme"], c: 1,
         e: "L’épargne élève le niveau du revenu, pas son rythme de croissance à long terme." },
       { q: "Selon le modèle, quel est le seul moteur d’une croissance durable du revenu par habitant ?",
         o: ["La hausse de la population", "Le progrès technique", "L’épargne", "Les dépenses publiques"], c: 1,
         e: "Il permet de produire davantage avec les mêmes moyens." },
       { q: "Qu’appelle-t-on le « résidu de Solow » ?",
-        o: ["La croissance due à la hausse de la population", "La part de la croissance que n’expliquent ni le capital ni le travail", "Le capital usé chaque année", "L’épargne non investie"], c: 1,
+        o: ["La croissance qui vient uniquement de la hausse de la population", "La part de la croissance que n’expliquent ni le capital ni le travail", "La part du capital qui s’use chaque année et qu’il faut remplacer", "L’épargne des ménages qui n’est pas investie dans les entreprises"], c: 1,
         e: "On l’attribue au progrès technique ; Abramovitz l’appelait « la mesure de notre ignorance »." },
       { q: "Que signifie la « convergence conditionnelle » ?",
-        o: ["Tous les pays finissent par avoir le même revenu", "Les pays pauvres rattrapent les riches quand leurs caractéristiques sont comparables", "Les pays riches croissent toujours plus vite", "Les pays pauvres rattrapent les riches s’ils empruntent assez"], c: 1,
+        o: ["Tous les pays finissent par atteindre le même niveau de revenu", "Les pays pauvres rattrapent les riches à caractéristiques comparables", "Les pays riches croissent plus vite que les pays pauvres, par effet d’échelle", "Les pays pauvres rattrapent les riches dès qu’ils empruntent assez à l’étranger"], c: 1,
         e: "Le rattrapage dépend de l’éducation, de l’épargne et des institutions." }
     ],
     transfert: { q: "Deux pays disposent des mêmes techniques. Le premier investit 35 % de son revenu, le second 15 %. Que prévoit le modèle de Solow à long terme ?",
-      o: ["Le premier aura un revenu par habitant plus élevé, mais les deux finiront par croître au même rythme, celui du progrès technique", "Le premier croîtra toujours plus vite que le second", "Les deux auront exactement le même revenu par habitant", "Le second finira par dépasser le premier"], c: 0,
+      o: ["Le premier sera plus riche, mais les deux croîtront au même rythme à long terme", "Le premier croîtra plus vite que le second, année après année et sans limite de durée", "Les deux auront le même revenu par habitant, car ils ont les mêmes techniques", "Le second finira par dépasser le premier, grâce à un meilleur rendement"], c: 0,
       e: "L’épargne élève le niveau du revenu, pas son rythme de croissance à long terme." },
     ouverte: {
       q: "Dans plusieurs pays riches, comme l’Australie ou le Canada, une grande partie de la croissance du PIB vient de la hausse de la population. Est-ce le signe d’une économie en bonne santé ?",
@@ -147,10 +147,10 @@ ${residu}
     decouvrir: {
       questions: [
         { q: "Pourquoi chaque machine supplémentaire rapporte-t-elle un peu moins que la précédente ?",
-          o: ["Parce que les machines récentes sont de moins bonne qualité", "Parce que les premières machines servent aux tâches les plus utiles, les suivantes à des tâches de moins en moins importantes", "Parce que les machines sont de plus en plus taxées", "Parce que les travailleurs refusent de s’en servir"], c: 1,
+          o: ["Parce que les machines récentes sont de moins bonne qualité", "Parce que les premières machines vont aux tâches les plus utiles", "Parce que les machines sont de plus en plus lourdement taxées", "Parce que les travailleurs refusent de se servir des nouvelles machines"], c: 1,
           e: "C’est la loi des rendements décroissants : le premier ordinateur change tout, le troisième presque rien." },
         { q: "Selon Solow, que faut-il pour que le revenu par habitant continue de croître à long terme ?",
-          o: ["Construire toujours plus d’usines", "Augmenter la population", "Produire mieux avec les mêmes moyens : techniques, organisation, formation", "Créer davantage de monnaie"], c: 2,
+          o: ["Construire toujours plus d’usines pour accumuler du capital", "Augmenter la population pour disposer de plus de travailleurs", "Produire mieux avec les mêmes moyens, par les techniques et la formation", "Créer davantage de monnaie pour stimuler la demande des ménages"], c: 2,
           e: "À force d’accumuler, on atteint un plafond ; seul le progrès technique permet d’aller plus loin." }
       ],
       duree: 5,
