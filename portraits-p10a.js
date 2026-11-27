@@ -239,13 +239,13 @@ ${cycle}
         o: ["La loi des débouchés, selon laquelle l’offre crée sa demande", "Le rôle de la demande effective dans le niveau de l’activité", "L’avantage comparatif, qui pousse les pays à se spécialiser", "La théorie quantitative, qui lie les prix à la masse monétaire"], c: 1,
         e: "Il le publie en polonais, trois ans avant la Théorie générale." },
       { q: "Selon l’équation des profits de Kalecki, d’où viennent les profits dans une économie simplifiée ?",
-        o: ["De l’épargne des ménages, que les banques placent dans les entreprises", "Des dépenses des capitalistes en investissement et consommation", "Des ventes aux marchés étrangers, qui rapportent des devises", "Des impôts prélevés par l’État sur les ménages et les firmes"], c: 1,
+        o: ["De l’épargne des ménages, que les banques placent dans les entreprises", "Des ventes aux marchés étrangers, qui rapportent des devises", "Des dépenses des capitalistes en investissement et consommation", "Des impôts prélevés par l’État sur les ménages et les firmes"], c: 2,
         e: "« Les capitalistes gagnent ce qu’ils dépensent. »" },
       { q: "Pourquoi les chefs d’entreprise pourraient-ils s’opposer au plein emploi durable ?",
         o: ["Parce qu’il fait mécaniquement baisser les profits des entreprises", "Parce qu’il retire au licenciement son pouvoir de discipline", "Parce qu’il oblige les entreprises à payer davantage d’impôts", "Parce qu’il fait baisser les prix et donc les marges des firmes"], c: 1,
         e: "C’est l’argument de l’article de 1943." },
       { q: "Comment les grandes entreprises fixent-elles leurs prix selon Kalecki ?",
-        o: ["Par des enchères entre acheteurs et vendeurs sur chaque marché", "En ajoutant une marge à leurs coûts, selon leur pouvoir de marché", "En suivant le taux directeur que fixe la banque centrale chaque mois", "Au niveau où l’offre égale la demande sur un marché concurrentiel"], c: 1,
+        o: ["En ajoutant une marge à leurs coûts, selon leur pouvoir de marché", "Par des enchères entre acheteurs et vendeurs sur chaque marché", "En suivant le taux directeur que fixe la banque centrale chaque mois", "Au niveau où l’offre égale la demande sur un marché concurrentiel"], c: 0,
         e: "C’est le « degré de monopole »." }
     ],
     ouverte: {
