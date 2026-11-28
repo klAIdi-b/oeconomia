@@ -531,8 +531,12 @@
     }
     else setTimeout(() => { if (location.hash === "#c-" + id) markRead("c-" + id); }, 8000);
   }
-  function pref(k, d) { try { return localStorage.getItem(k) || d; } catch (e) { return d; } }
-  function setPref(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  /* Préférences d’affichage : gardées aussi en mémoire pendant la visite, pour que les boutons (Découvrir, Approfondir,
+     Blocs repliables…) marchent même quand le navigateur refuse l’enregistrement (application Claude sur téléphone,
+     navigation privée). */
+  const PREFS = {};
+  function pref(k, d) { if (k in PREFS) return PREFS[k]; try { return localStorage.getItem(k) || d; } catch (e) { return d; } }
+  function setPref(k, v) { PREFS[k] = v; try { localStorage.setItem(k, v); } catch (e) {} }
 
   /* Notice longue : essentiel, sections, cas, objections, écoles, texte source, quiz, lectures.
      level : "decouvrir" ou "approfondir" ; blocs : présentation en blocs repliables */

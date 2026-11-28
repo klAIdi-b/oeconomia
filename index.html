@@ -915,6 +915,8 @@ dialog::backdrop{background:rgba(5,12,9,.6); backdrop-filter:blur(3px)}
 .msg-foot{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
 .msg.b .msg-foot{flex-direction:row-reverse}
 .auto-lbl{display:inline-flex; gap:6px; align-items:center; font-size:13px; color:var(--ink-soft); cursor:pointer}
+.auto-bar{display:inline-block; width:72px; height:4px; border-radius:2px; background:var(--line); overflow:hidden; vertical-align:middle}
+.auto-bar i{display:block; height:100%; width:0; background:var(--plum)}
 .step-count{font:600 12px/1 var(--f-mono); color:var(--ink-soft)}
 .msg{max-width:min(88%, 640px); display:flex; flex-direction:column; gap:6px; animation:pop .35s ease}
 .msg.a{align-self:flex-start} .msg.b{align-self:flex-end; align-items:flex-end}
@@ -1331,7 +1333,8 @@ footer .brand{font-size:22px}
           <div class="arena-foot">
             <button class="btn small" id="playBtn">Lancer le débat</button>
             <span class="step-count" id="stepCount"></span>
-            <label class="auto-lbl"><input type="checkbox" id="autoPlay"> Enchaîner automatiquement</label>
+            <label class="auto-lbl" title="La réplique suivante arrive seule, le temps de lire la précédente. Le bouton permet d’avancer plus vite."><input type="checkbox" id="autoPlay" checked> Enchaîner automatiquement</label>
+            <span class="auto-bar" id="autoBar" aria-hidden="true"><i></i></span>
             <button class="btn small ghost" id="skipBtn" hidden>Tout afficher</button>
             <span class="note">Dialogue reconstitué à partir de leurs écrits ; sources sous chaque réplique</span>
           </div>

@@ -286,7 +286,7 @@
     });
     $("#playBtn").onclick = () => { if (!started || finished) startDebate(); else nextReply(); };
     $("#skipBtn").onclick = () => { playToken++; busy = false; $$(".typing").forEach((t) => t.remove()); while (shown < debate.rounds.length) addMsg(shown++); finish(); };
-    $("#autoPlay").addEventListener("change", (e) => { if (e.target.checked && started && !finished && !busy) scheduleNext(900); });
+    $("#autoPlay").addEventListener("change", (e) => { if (e.target.checked && started && !finished && !busy) scheduleNext(900); else if (!e.target.checked) { clearTimeout(autoTimer); barre(0); } });
     selectDebate(OEC.debates[0].id);
     // table ronde
     const qs = $("#rtQs");
@@ -345,14 +345,20 @@
     $("#skipBtn").hidden = false;
     nextReply();
   }
+  /* Barre de lecture : se remplit pendant le temps laissé pour lire la réplique, avant la suivante */
+  function barre(ms) {
+    const i = document.querySelector("#autoBar i"); if (!i) return;
+    i.style.transition = "none"; i.style.width = "0";
+    if (ms && !reduced) { void i.offsetWidth; i.style.transition = `width ${ms}ms linear`; i.style.width = "100%"; }
+  }
   function scheduleNext(ms) {
-    clearTimeout(autoTimer);
+    clearTimeout(autoTimer); barre(ms);
     const my = playToken;
     autoTimer = setTimeout(() => { if (my === playToken && $("#autoPlay").checked && !finished) nextReply(); }, ms);
   }
   function nextReply() {
     if (busy || finished) return;
-    clearTimeout(autoTimer);
+    clearTimeout(autoTimer); barre(0);
     const my = playToken, chat = $("#chat");
     busy = true; $("#playBtn").disabled = true;
     const side = debate.rounds[shown][0];
@@ -367,7 +373,7 @@
     }, reduced ? 50 : 750);
   }
   function finish() {
-    finished = true; clearTimeout(autoTimer);
+    finished = true; clearTimeout(autoTimer); barre(0);
     $$(".typing").forEach((t) => t.remove());
     $("#skipBtn").hidden = true; $("#playBtn").disabled = false; $("#playBtn").textContent = "Rejouer"; $("#stepCount").textContent = `${shown} / ${debate.rounds.length}`;
     const A = ECO[debate.a], B = ECO[debate.b];
