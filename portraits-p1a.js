@@ -56,20 +56,40 @@ ${vieSmith}
 <p>La Richesse des nations paraît la même année que la Déclaration d’indépendance américaine. Smith y consacre de longues pages aux colonies, et suggère que la Grande-Bretagne aurait intérêt à se séparer volontairement des colonies américaines, dont le monopole commercial lui coûte plus qu’il ne rapporte.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. La sympathie</h4>
-<p>La Théorie des sentiments moraux part d’une observation : nous sommes capables de nous mettre à la place des autres, d’imaginer ce qu’ils ressentent. Cette « sympathie » nous permet de juger nos propres actions comme le ferait un « spectateur impartial ». La morale naît ainsi des relations sociales, et non d’un calcul égoïste ou d’une révélation divine.</p>
+<p><b>La question.</b> D’où viennent nos jugements moraux, s’ils ne viennent ni de la religion ni du seul intérêt ?</p>
+<p><b>Son raisonnement.</b> Nous sommes capables d’imaginer ce que ressentent les autres. Cette « sympathie » nous pousse à juger nos propres actes comme le ferait un « spectateur impartial », un témoin bien informé et sans parti pris que chacun porte en soi. La morale naît ainsi des relations sociales, pas d’un calcul égoïste.</p>
+<p><b>Un exemple.</b> La Théorie des sentiments moraux s’ouvre sur une scène simple. Quand nous voyons un coup sur le point de frapper la jambe de quelqu’un, nous retirons instinctivement la nôtre. Ce réflexe montre que nous éprouvons, en imagination, ce qui arrive aux autres.</p>
 <h4>2. La richesse, c’est le travail productif</h4>
-<p>Contre les mercantilistes, Smith affirme que la richesse d’une nation n’est pas son stock d’or, mais la masse des biens nécessaires et commodes que produit le travail de ses habitants. Elle dépend de la productivité du travail et de la proportion de la population employée à un travail productif.</p>
+<p><b>La question.</b> Qu’est-ce qui rend une nation riche ?</p>
+<p><b>Son raisonnement.</b> Les mercantilistes répondaient l’or et l’argent, qu’il fallait accumuler en exportant plus qu’on n’importait. Smith répond que la richesse est la masse des biens utiles que produit le travail des habitants. Elle augmente quand chaque travailleur produit davantage, et quand une plus grande part de la population travaille.</p>
+<p><b>Un exemple.</b> L’Espagne et le Portugal reçoivent l’or et l’argent des mines d’Amérique, observe Smith, et restent pourtant parmi les pays les plus pauvres d’Europe. Posséder de l’or ne suffit pas, il faut produire.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites », qui mesure aujourd’hui cette production →</a></p>
 <h4>3. La division du travail</h4>
-<p>La productivité dépend avant tout de la division du travail, illustrée par la célèbre manufacture d’épingles (<a href="#c-division-travail">voir division du travail</a>). Celle-ci vient d’un « penchant naturel à trafiquer, troquer et échanger », et elle est limitée par l’étendue du marché.</p>
+<p><b>La question.</b> Pourquoi le travail devient-il plus productif ?</p>
+<p><b>Son raisonnement.</b> Quand on se partage les tâches, chacun devient plus habile, perd moins de temps à passer d’une activité à l’autre, et les gestes simples peuvent être confiés à des machines. Mais pour se spécialiser, il faut pouvoir vendre ce qu’on produit. La division du travail est donc limitée par l’étendue du marché.</p>
+<p><b>Un exemple.</b> Dans une manufacture d’épingles, dix ouvriers qui se partagent dix-huit opérations fabriquent environ 48 000 épingles par jour, soit 4 800 chacun. Seul, un ouvrier en ferait à peine vingt. À l’inverse, dans un hameau isolé des Highlands écossais, chaque paysan doit être son propre boucher, boulanger et brasseur, faute de clients pour un spécialiste.</p>
+<p><a href="#c-division-travail">Pour aller plus loin, la notice « Division du travail » →</a></p>
 ${livres}
 <h4>4. L’échange et l’intérêt personnel</h4>
-<p>Dans une grande société, nous dépendons de milliers de personnes que nous ne connaissons pas. Nous ne pouvons pas compter sur leur bienveillance, mais sur leur intérêt : c’est le sens du passage du boucher et du boulanger. Le marché permet de coopérer sans se connaître.</p>
+<p><b>La question.</b> Comment des millions d’inconnus arrivent-ils à coopérer ?</p>
+<p><b>Son raisonnement.</b> Dans une grande société, nous dépendons de personnes que nous ne connaîtrons jamais. Nous ne pouvons pas compter sur leur bienveillance, mais nous pouvons leur proposer un échange qui les avantage aussi. Le marché permet ainsi de coopérer sans se connaître.</p>
+<p><b>Un exemple.</b> « Ce n’est pas de la bienveillance du boucher, du marchand de bière ou du boulanger que nous attendons notre dîner, mais du soin qu’ils apportent à leurs intérêts. » Le pain du matin mobilise un agriculteur, un meunier, un transporteur et un boulanger, sans que personne n’organise l’ensemble.</p>
+<p><a href="#c-surplus">Pour aller plus loin, la notice « Surplus du consommateur et perte sèche », qui mesure ce que chacun gagne à l’échange →</a></p>
 <h4>5. La main invisible</h4>
-<p>L’expression n’apparaît qu’une fois dans la Richesse des nations, à propos de l’investissement : en préférant investir dans son propre pays, l’individu, sans le chercher, contribue à l’intérêt de la société, « conduit par une main invisible ». Elle figure aussi une fois dans la Théorie des sentiments moraux. Smith ne l’a jamais présentée comme une loi générale ; c’est la postérité qui en a fait le symbole de l’efficacité des marchés.</p>
+<p><b>La question.</b> L’intérêt de chacun peut-il servir l’intérêt de tous ?</p>
+<p><b>Son raisonnement.</b> Parfois, répond Smith. En cherchant son propre gain, l’individu contribue souvent à l’intérêt de la société sans le vouloir, « conduit par une main invisible ». Mais l’expression n’apparaît qu’une fois dans la Richesse des nations, et une fois dans la Théorie des sentiments moraux. Smith n’en fait pas une loi générale, et il connaît bien les cas où l’intérêt privé nuit au public, comme les ententes entre marchands.</p>
+<p><b>Un exemple.</b> Le passage porte sur un cas précis. Un marchand préfère placer son capital dans son propre pays, où il le surveille mieux, plutôt qu’à l’étranger. Sans le chercher, il soutient ainsi l’activité nationale. C’est la postérité qui a fait de cette image le symbole de l’efficacité des marchés.</p>
+<p><a href="#c-optimum-pareto">Pour aller plus loin, la notice « Optimum de Pareto », qui en donne la version moderne et ses conditions →</a></p>
 <h4>6. Les prix et la répartition</h4>
-<p>Smith distingue le prix de marché, qui varie avec l’offre et la demande, du prix naturel, qui couvre les salaires, les profits et la rente à leurs taux ordinaires, et vers lequel le prix de marché « gravite » (<a href="#c-prix-naturel">voir prix naturel</a>). Il étudie la répartition du revenu entre ces trois classes : travailleurs, capitalistes, propriétaires fonciers.</p>
+<p><b>La question.</b> Qu’est-ce qui fixe le prix d’une marchandise ?</p>
+<p><b>Son raisonnement.</b> Smith distingue le prix de marché, qui varie chaque jour avec l’offre et la demande, du prix naturel, qui paie juste les salaires, les profits et la rente à leur taux ordinaire. Le prix de marché « gravite » autour du prix naturel. Smith étudie aussi la répartition du revenu entre trois classes, les travailleurs, les capitalistes et les propriétaires fonciers.</p>
+<p><b>Un exemple.</b> Un deuil public, note Smith, fait monter le prix du drap noir, soudain demandé par tous, et les salaires des ouvriers tailleurs. L’écart est passager. Quand des profits ou des salaires dépassent leur taux ordinaire, de nouveaux producteurs se tournent vers ce métier, et le prix revient vers son niveau naturel.</p>
+<p><a href="#c-prix-naturel">Pour aller plus loin, la notice « Prix naturel et prix de marché » →</a></p>
 <h4>7. Le système de la liberté naturelle et le rôle de l’État</h4>
-<p>Smith recommande de supprimer les privilèges, monopoles et protections pour laisser jouer le « système simple et évident de la liberté naturelle ». L’État conserve trois devoirs : la défense, la justice et les ouvrages publics que l’intérêt privé ne peut financer, dont l’éducation du peuple.</p>
+<p><b>La question.</b> Que doit faire l’État ?</p>
+<p><b>Son raisonnement.</b> Smith veut supprimer les privilèges, les monopoles et les protections qui faussent la concurrence, pour laisser jouer le « système simple et évident de la liberté naturelle ». L’État garde pourtant trois devoirs, la défense, la justice et les ouvrages publics que l’intérêt privé ne financerait pas, comme les routes, les ponts et l’éducation du peuple.</p>
+<p><b>Un exemple.</b> Smith craint que la division du travail abrutisse l’ouvrier qui répète toute sa vie quelques gestes simples. Il propose donc, dans chaque paroisse, une petite école en partie payée par l’État, sur le modèle écossais, où les enfants du peuple apprendraient à lire, à écrire et à compter.</p>
+<p><a href="#c-bien-public">Pour aller plus loin, la notice « Bien public » →</a></p>
 ${etat}` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Théorie des sentiments moraux (1759).</b> Le livre que Smith considérait peut-être comme le plus important, révisé jusqu’à sa mort. Il fonde la morale sur la sympathie et le spectateur impartial. La sixième édition, de 1790, ajoute une partie sur la vertu et la corruption des sentiments moraux par l’admiration des riches.</p>
