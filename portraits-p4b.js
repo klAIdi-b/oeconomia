@@ -57,21 +57,38 @@ ${vieMun}
 <p>Dans les années 1620, une crise frappe le commerce anglais des draps, principal produit d’exportation. Un débat s’engage entre plusieurs auteurs, Gerard Malynes, Edward Misselden et Mun, sur ses causes : manipulation des changes, sortie des métaux, ou déséquilibre du commerce extérieur. Mun soutient que la clé est la balance du commerce.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. La règle d’or</h4>
-<p>Pour Mun, le moyen ordinaire d’accroître la richesse et le trésor du royaume est le commerce extérieur, à une condition : vendre chaque année aux étrangers plus, en valeur, que l’on consomme de leurs produits. La différence entre dans le royaume sous forme d’or et d’argent.</p>
+<p><b>La question.</b> Comment un pays s’enrichit-il ?</p>
+<p><b>Son raisonnement.</b> Pour Mun, le moyen ordinaire d’accroître la richesse et le trésor du royaume est le commerce extérieur, à une condition. Il faut vendre chaque année aux étrangers plus, en valeur, que l’on consomme de leurs produits. La différence entre dans le royaume sous forme d’or et d’argent.</p>
+<p><b>Un exemple.</b> Mun est l’un des directeurs de la Compagnie anglaise des Indes orientales. Son livre, Le Trésor de l’Angleterre par le commerce extérieur, écrit vers 1630, n’est publié qu’en 1664 par son fils, et devient le bréviaire des mercantilistes anglais.</p>
 <h4>2. La balance générale</h4>
-<p>Mun raisonne sur la balance de l’ensemble du commerce, et non sur chaque échange. Une exportation de métaux précieux peut être bénéfique si elle permet, par le commerce de réexportation, de faire revenir davantage de métaux. C’est un raisonnement d’ensemble, qui prend en compte les services, comme le transport et les assurances.</p>
+<p><b>La question.</b> Faut-il juger le commerce échange par échange ?</p>
+<p><b>Son raisonnement.</b> Non, répond Mun. Il raisonne sur la balance de l’ensemble du commerce. Une sortie de métaux précieux peut être bénéfique si elle permet, par la revente de marchandises à d’autres pays, d’en faire revenir davantage. Son raisonnement d’ensemble compte aussi les services, comme le transport et les assurances.</p>
+<p><b>Un exemple.</b> On reproche à sa compagnie d’envoyer de l’argent en Asie pour acheter du poivre et des épices. Mun répond que ces épices, revendues en Europe, rapportent bien plus d’argent qu’il n’en est sorti.</p>
 ${circuit}
 <h4>3. Contre les mesures monétaires</h4>
-<p>Contre Gerard Malynes, qui voulait contrôler les changes, Mun soutient que ce n’est pas la manipulation des monnaies qui fait entrer ou sortir les métaux, mais l’état du commerce. Interdire la sortie de l’argent ne sert à rien si la balance est défavorable.</p>
+<p><b>La question.</b> Peut-on retenir l’argent dans le pays par décret ?</p>
+<p><b>Son raisonnement.</b> Contre Gerard Malynes, qui voulait contrôler les changes, Mun soutient que ce n’est pas la manipulation des monnaies qui fait entrer ou sortir les métaux, mais l’état du commerce. Interdire la sortie de l’argent ne sert à rien si la balance est défavorable.</p>
+<p><b>Un exemple.</b> Le débat naît de la crise commerciale qui frappe l’Angleterre au début des années 1620. Le gouvernement charge une commission d’en chercher les causes, et Mun y défend que le mal vient du commerce, non des taux de change.</p>
+<p><a href="#c-taux-de-change">Pour aller plus loin, la notice « Taux de change » →</a></p>
 <h4>4. Les moyens</h4>
-<p>Pour obtenir une balance favorable, Mun recommande de cultiver les terres et de développer la pêche, pour moins importer ; de réduire la consommation de produits de luxe étrangers ; de vendre cher ce dont l’étranger a besoin, et bon marché ce qu’il pourrait acheter ailleurs ; d’utiliser ses propres navires ; et de faire de l’Angleterre un entrepôt de réexportation.</p>
+<p><b>La question.</b> Comment vendre plus qu’on n’achète ?</p>
+<p><b>Son raisonnement.</b> Mun recommande de cultiver les terres et de développer la pêche, pour moins importer, de réduire la consommation de produits de luxe étrangers, de vendre cher ce dont l’étranger a besoin et bon marché ce qu’il pourrait acheter ailleurs, d’utiliser ses propres navires, et de faire de l’Angleterre un entrepôt où l’on importe pour réexporter.</p>
+<p><b>Un exemple.</b> Le vocabulaire de Mun n’a pas disparu. Les débats actuels sur les déficits commerciaux, par exemple entre les États-Unis et la Chine, le reprennent souvent, comme si un excédent était une victoire et un déficit une défaite.</p>
+<p><a href="#c-avantage-comparatif">Pour aller plus loin, la notice « Avantage comparatif », qui montre pourquoi l’échange profite même sans excédent →</a></p>
 ${outils}
 <h4>5. La monnaie et les prix</h4>
-<p>Mun perçoit une limite à son propre raisonnement : si trop d’argent entre dans le royaume, les prix montent, les marchandises anglaises deviennent plus chères et les exportations diminuent. Il recommande donc de ne pas thésauriser l’argent, mais de le réinvestir dans le commerce. Cette intuition sera développée par David Hume en 1752 avec le mécanisme du « flux des espèces et des prix ».</p>
+<p><b>La question.</b> Accumuler de l’or enrichit-il toujours ?</p>
+<p><b>Son raisonnement.</b> Mun perçoit une limite à son propre raisonnement. Si trop d’argent entre dans le royaume, les prix montent, les marchandises anglaises deviennent plus chères et les exportations diminuent. Il recommande donc de ne pas entasser l’argent, mais de le réinvestir dans le commerce.</p>
+<p><b>Un exemple.</b> David Hume pousse l’idée jusqu’au bout en 1752 et la retourne contre les mercantilistes, avec le mécanisme du « flux des espèces et des prix ». Si les quatre cinquièmes de la monnaie d’un pays disparaissaient en une nuit, imagine-t-il, les prix baisseraient, les exportations augmenteraient, et l’or reviendrait jusqu’à ce que les prix retrouvent leur niveau.</p>
+<p><a href="#c-theorie-quantitative">Pour aller plus loin, la notice « Théorie quantitative de la monnaie » →</a></p>
 <h4>6. La puissance de l’État</h4>
-<p>Le commerce, pour Mun, sert la puissance du royaume : le trésor permet au souverain de financer la guerre et la flotte. Mais il met en garde contre un trésor accumulé par le prince au-delà de ce que le commerce a fait entrer : cela appauvrirait les sujets et ruinerait le commerce lui-même.</p>
+<p><b>La question.</b> À quoi sert la richesse d’un royaume ?</p>
+<p><b>Son raisonnement.</b> Le commerce, pour Mun, sert la puissance du royaume, car le trésor permet au souverain de financer la guerre et la flotte. Mais il met en garde contre un trésor accumulé par le prince au-delà de ce que le commerce a fait entrer, qui appauvrirait les sujets et ruinerait le commerce lui-même.</p>
+<p><b>Un exemple.</b> Après sa mort, en 1641, l’Angleterre adopte l’Acte de navigation de 1651. Les marchandises d’Asie, d’Afrique et d’Amérique doivent arriver sur des navires anglais, et celles d’Europe sur des navires anglais ou du pays qui les produit. Le texte vise les transporteurs hollandais, et pense ensemble le commerce et la puissance navale, dans l’esprit de Mun.</p>
 <h4>7. L’exemple hollandais</h4>
-<p>Mun admire et redoute les Hollandais, qui, sans ressources naturelles importantes, sont devenus riches par la pêche, le transport et le commerce. Il veut que l’Angleterre les imite et les supplante, notamment dans la pêche du hareng au large des côtes anglaises, alors dominée par les flottes hollandaises.</p>` },
+<p><b>La question.</b> Comment un petit pays sans ressources devient-il riche ?</p>
+<p><b>Son raisonnement.</b> Mun admire et redoute les Hollandais, qui, sans ressources naturelles importantes, sont devenus riches par la pêche, le transport et le commerce. Il veut que l’Angleterre les imite et les supplante.</p>
+<p><b>Un exemple.</b> Il vise surtout la pêche du hareng au large des côtes anglaises, dominée par des centaines de bateaux hollandais. Que des étrangers s’enrichissent avec le poisson de ses propres eaux lui paraît le comble de la mauvaise gestion.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>A Discourse of Trade from England unto the East-Indies (1621).</b> Un plaidoyer pour la Compagnie des Indes, qui répond aux accusations d’appauvrir le royaume en exportant de l’argent.</p>
 <p><b>England’s Treasure by Forraign Trade, or The Balance of our Forraign Trade is the Rule of our Treasure (1664).</b> Son œuvre majeure, écrite vers 1630, publiée par son fils, rééditée de nombreuses fois au XVIIIe siècle. C’est le texte de référence du mercantilisme anglais.</p>
@@ -218,20 +235,39 @@ ${vieQuesnay}
 <p>Médecin, Quesnay voit l’économie comme un corps, où la richesse circule comme le sang. Il veut découvrir les lois naturelles qui assurent la santé de ce corps, et convaincre le souverain de s’y conformer plutôt que de les contrarier par des règlements arbitraires.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’ordre naturel</h4>
-<p>Les physiocrates pensent qu’il existe un ordre naturel et essentiel des sociétés, voulu par la Providence et découvrable par la raison. Le rôle du souverain est de le connaître et de le faire respecter, non de le modifier selon ses caprices. Ce gouvernement de la nature donne son nom à l’école.</p>
+<p><b>La question.</b> Le roi peut-il faire les lois économiques qu’il veut ?</p>
+<p><b>Son raisonnement.</b> Les physiocrates pensent qu’il existe un ordre naturel et essentiel des sociétés, voulu par la Providence et découvert par la raison. Le rôle du souverain est de le connaître et de le faire respecter, non de le modifier selon ses caprices.</p>
+<p><b>Un exemple.</b> Le mot « physiocratie » vient du grec physis, la nature, et kratos, le pouvoir, le gouvernement de la nature. Quesnay, médecin de Madame de Pompadour à Versailles, pense l’économie comme un corps vivant, avec ses lois que le bon médecin respecte.</p>
 <h4>2. Le produit net</h4>
-<p>Seule la terre, grâce au concours de la nature, produit plus que ce qui a été consommé pour la produire. Ce surplus, le « produit net », est la seule véritable source de richesse nouvelle. L’industrie transforme les matières premières, le commerce les déplace, mais ils ne font que restituer la valeur de ce qu’ils ont consommé : ils forment la classe « stérile ».</p>
+<p><b>La question.</b> Où naît la richesse nouvelle ?</p>
+<p><b>Son raisonnement.</b> Seule la terre, grâce au concours de la nature, produit plus que ce qui a été consommé pour la produire. Ce surplus, le « produit net », est pour Quesnay la seule véritable source de richesse nouvelle. L’industrie transforme les matières premières, le commerce les déplace, mais ils ne font que rendre la valeur de ce qu’ils ont consommé. Ils forment la classe « stérile ».</p>
+<p><b>Un exemple.</b> Le grain semé revient multiplié à la récolte, alors que le menuisier qui fait une table ne fait, selon Quesnay, que transformer un bois qui existait déjà. Aujourd’hui, on compte la valeur ajoutée par chaque activité, celle du menuisier comprise.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>
 <h4>3. Les trois classes</h4>
-<p>La société se compose de la classe productive, les fermiers et cultivateurs, de la classe des propriétaires, qui reçoivent le produit net sous forme de rente, et de la classe stérile, les artisans et commerçants. Les échanges entre elles assurent la circulation des richesses.</p>
+<p><b>La question.</b> Comment les richesses circulent-elles dans la société ?</p>
+<p><b>Son raisonnement.</b> La société se compose de la classe productive, les fermiers et cultivateurs, de la classe des propriétaires, qui reçoivent le produit net sous forme de rente, et de la classe stérile, les artisans et commerçants. Les échanges entre elles assurent la circulation des richesses.</p>
+<p><b>Un exemple.</b> Dans la France du milieu du XVIIIe siècle, environ quatre habitants sur cinq vivent à la campagne, et l’agriculture fournit l’essentiel de la production. La vision de Quesnay colle à ce monde rural.</p>
 <h4>4. Le Tableau économique</h4>
-<p>Le Tableau représente en un schéma les flux de dépenses entre ces classes au cours d’une année, et montre comment la production se reproduit d’une année sur l’autre. C’est la première représentation de l’économie comme un circuit, ancêtre de la comptabilité nationale et des tableaux entrée-sortie de Leontief (<a href="#c-equilibre-general">voir équilibre général</a>).</p>
+<p><b>La question.</b> Peut-on représenter toute une économie sur une seule page ?</p>
+<p><b>Son raisonnement.</b> Le Tableau économique représente les flux de dépenses entre les trois classes au cours d’une année, et montre comment la production se reproduit d’une année sur l’autre. C’est la première représentation de l’économie comme un circuit, ancêtre de la comptabilité nationale et des tableaux entrée-sortie de Wassily Leontief.</p>
+<p><b>Un exemple.</b> Le Tableau est imprimé à Versailles en 1758. Le marquis de Mirabeau, disciple de Quesnay, le met au rang des trois grandes inventions de l’humanité, avec l’écriture et la monnaie. Deux siècles plus tard, Leontief reçoit le prix Nobel (1973) pour des tableaux qui en sont les héritiers.</p>
+<p><a href="#c-equilibre-general">Pour aller plus loin, la notice « Équilibre général » →</a></p>
 ${tableau}
 <h4>5. La liberté du commerce des grains</h4>
-<p>Pour que l’agriculture prospère, il faut que le prix des grains soit rémunérateur pour les cultivateurs. Les physiocrates réclament donc la liberté du commerce des grains, à l’intérieur et à l’exportation. C’est l’origine de la formule « laissez faire, laissez passer », empruntée à leur allié Vincent de Gournay.</p>
+<p><b>La question.</b> Faut-il laisser circuler librement le blé ?</p>
+<p><b>Son raisonnement.</b> Pour que l’agriculture prospère, il faut que le prix des grains rémunère les cultivateurs. Les physiocrates réclament donc la liberté du commerce des grains, à l’intérieur du royaume et à l’exportation. La formule « laissez faire, laissez passer », qu’on attribue à leur allié Vincent de Gournay, résume ce programme.</p>
+<p><b>Un exemple.</b> Turgot, proche des physiocrates, rétablit la libre circulation des grains dans le royaume en septembre 1774, juste après une récolte médiocre. Les prix montent, et la « guerre des farines » du printemps 1775 voit des émeutes dans tout le Bassin parisien. Après son renvoi, en 1776, ses successeurs reviennent peu à peu à la réglementation.</p>
+<p><a href="#c-offre-demande">Pour aller plus loin, la notice « Offre et demande » →</a></p>
 <h4>6. L’impôt unique</h4>
-<p>Puisque seul le produit net est un surplus, tous les impôts retombent finalement sur lui. Les physiocrates proposent donc de remplacer la multitude des taxes par un impôt unique sur le revenu des terres, payé par les propriétaires, nobles compris. C’est une proposition révolutionnaire dans une France où la noblesse est largement exemptée (<a href="#c-rente">voir rente</a>).</p>
+<p><b>La question.</b> Qui paie vraiment l’impôt ?</p>
+<p><b>Son raisonnement.</b> Puisque seul le produit net est un surplus, tous les impôts retombent finalement sur lui. Les physiocrates proposent donc de remplacer la multitude des taxes par un impôt unique sur le revenu des terres, payé par les propriétaires, nobles compris. C’est une proposition révolutionnaire dans une France où la noblesse est largement exemptée.</p>
+<p><b>Un exemple.</b> L’Américain Henry George reprend l’idée en 1879 dans Progrès et pauvreté, avec un impôt unique sur la valeur du sol. Des économistes de toutes les écoles jugent encore qu’un impôt sur la valeur des terrains décourage moins l’activité que les autres.</p>
+<p><a href="#c-rente">Pour aller plus loin, la notice « Rente différentielle » →</a></p>
 <h4>7. Le despotisme légal</h4>
-<p>Les physiocrates ne sont pas des démocrates : ils veulent un monarque éclairé, un « despote légal », qui gouverne selon les lois naturelles et les fasse appliquer. Quesnay admire la Chine, dont l’empereur lui semble gouverner selon la raison et favoriser l’agriculture.</p>` },
+<p><b>La question.</b> Quel régime politique pour faire respecter l’ordre naturel ?</p>
+<p><b>Son raisonnement.</b> Les physiocrates ne sont pas des démocrates. Ils veulent un monarque éclairé, un « despote légal », qui gouverne selon les lois naturelles et les fasse appliquer. Le pouvoir doit être fort, mais soumis à l’évidence des lois économiques.</p>
+<p><b>Un exemple.</b> Quesnay admire la Chine, dont l’empereur lui semble gouverner selon la raison et honorer l’agriculture. Il lui consacre en 1767 un livre, Le Despotisme de la Chine, qui en donne une image très idéalisée.</p>
+<p><a href="#c-institutions-inclusives">Pour aller plus loin, la notice « Institutions inclusives et extractives », sur le lien entre régime politique et prospérité →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Articles de l’Encyclopédie (1756-1757).</b> « Fermiers » et « Grains » plaident pour une grande agriculture moderne, à l’anglaise, et pour la liberté des grains.</p>
 <p><b>Tableau économique (1758-1759).</b> Le célèbre « zigzag », imprimé en quelques exemplaires à Versailles, puis repris dans de nombreuses versions, dont l’« Analyse de la formule arithmétique du Tableau économique » (1766).</p>

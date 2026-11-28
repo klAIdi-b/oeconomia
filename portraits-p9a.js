@@ -56,21 +56,40 @@ ${vieStiglitz}
 <p>À partir de 1989, la chute du mur de Berlin ouvre une période de confiance dans les marchés. Le FMI et la Banque mondiale recommandent aux pays en développement et aux anciens pays communistes de privatiser, d’équilibrer leur budget et d’ouvrir leurs frontières aux capitaux : c’est le « consensus de Washington ». Stiglitz, qui voit ces politiques de l’intérieur, les jugera fondées sur une théorie qu’il a passé sa carrière à réfuter.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’information n’est jamais parfaite</h4>
-<p>Dans la plupart des échanges, l’un des partenaires en sait plus que l’autre. Le vendeur connaît mieux son produit, l’emprunteur son projet, l’assuré ses habitudes, le salarié son effort. Stiglitz en fait le point de départ de toute son œuvre : ce n’est pas un détail, c’est la situation normale.</p>
+<p><b>La question.</b> Les deux parties d’un échange savent-elles la même chose ?</p>
+<p><b>Son raisonnement.</b> Dans la plupart des échanges, l’un des partenaires en sait plus que l’autre. Le vendeur connaît mieux son produit, l’emprunteur son projet, l’assuré ses habitudes, le salarié son effort. Stiglitz en fait le point de départ de toute son œuvre, ce n’est pas un détail, c’est la situation normale.</p>
+<p><b>Un exemple.</b> George Akerlof avait montré en 1970, avec le marché des voitures d’occasion, que le doute sur la qualité peut chasser les bonnes voitures du marché. Stiglitz, Akerlof et Michael Spence reçoivent ensemble le prix Nobel en 2001 pour leurs travaux sur l’information.</p>
+<p><a href="#c-asymetrie-information">Pour aller plus loin, la notice « Asymétrie d’information » →</a></p>
 ${asym}
-<h4>2. Trier les clients : l’assurance</h4>
-<p>Avec Michael Rothschild, il montre en 1976 comment un assureur peut amener ses clients à révéler eux-mêmes leur risque. Il propose deux contrats : l’un complet et cher, l’autre bon marché avec une franchise élevée. Les personnes prudentes choisissent le second, les autres le premier. Mais cet équilibre est fragile, et il peut ne pas exister du tout.</p>
+<h4>2. Trier les clients, l’assurance</h4>
+<p><b>La question.</b> Comment un assureur reconnaît-il les clients risqués ?</p>
+<p><b>Son raisonnement.</b> Avec Michael Rothschild, Stiglitz montre en 1976 comment un assureur peut amener ses clients à révéler eux-mêmes leur risque. Il propose deux contrats, l’un complet et cher, l’autre bon marché avec une franchise élevée. Les personnes prudentes choisissent le second, les autres le premier. Mais cet équilibre est fragile, et il peut ne pas exister du tout.</p>
+<p><b>Un exemple.</b> C’est la logique des franchises en assurance automobile ou maladie. Un conducteur qui se sait prudent accepte une franchise élevée pour payer moins cher, un conducteur qui craint l’accident préfère une couverture complète.</p>
+<p><a href="#c-asymetrie-information">Pour aller plus loin, la notice « Asymétrie d’information », qui présente la sélection adverse →</a></p>
 <h4>3. Le rationnement du crédit</h4>
-<p>Avec Andrew Weiss, il explique en 1981 pourquoi les banques refusent des prêts au lieu de relever leurs taux. Un taux élevé fait fuir les emprunteurs prudents et n’attire que ceux qui prennent de gros risques. La banque préfère donc un taux modéré et sélectionne ses clients : une partie des demandeurs, même sérieux, n’obtient rien.</p>
+<p><b>La question.</b> Pourquoi une banque refuse-t-elle un prêt au lieu d’augmenter son taux ?</p>
+<p><b>Son raisonnement.</b> Avec Andrew Weiss, Stiglitz explique en 1981 qu’un taux élevé fait fuir les emprunteurs prudents et n’attire que ceux qui prennent de gros risques. La banque préfère donc un taux modéré et sélectionne ses clients. Une partie des demandeurs, même sérieux, n’obtient rien, à aucun prix.</p>
+<p><b>Un exemple.</b> Une jeune entreprise sans historique, même avec un bon projet, se voit souvent refuser un crédit, alors qu’elle accepterait de payer un taux plus élevé. Pendant la crise de 2008-2009, de nombreuses petites entreprises ont été privées de crédit de cette façon.</p>
 ${credit}
 <h4>4. Les salaires d’efficience</h4>
-<p>Avec Carl Shapiro, il montre en 1984 qu’un employeur qui ne peut pas surveiller tous ses salariés a intérêt à les payer plus que le salaire du marché : celui qui serait pris à tricher aurait alors beaucoup à perdre. Mais si toutes les entreprises font de même, les salaires sont trop élevés pour que tout le monde trouve un emploi. Le chômage devient ce qui discipline les salariés.</p>
+<p><b>La question.</b> Pourquoi un employeur paierait-il plus que le salaire du marché ?</p>
+<p><b>Son raisonnement.</b> Avec Carl Shapiro, Stiglitz montre en 1984 qu’un employeur qui ne peut pas surveiller tous ses salariés a intérêt à les payer plus que le salaire du marché, car celui qui serait pris à tricher aurait alors beaucoup à perdre. Mais si toutes les entreprises font de même, les salaires sont trop élevés pour que tout le monde trouve un emploi. Le chômage devient ce qui discipline les salariés.</p>
+<p><b>Un exemple.</b> En 1914, Henry Ford double le salaire journalier de ses ouvriers, qui passe à cinq dollars. Les démissions et l’absentéisme, très élevés sur ses chaînes, chutent aussitôt, et la productivité augmente.</p>
+<p><a href="#c-taux-naturel">Pour aller plus loin, la notice « Taux de chômage naturel » →</a></p>
 <h4>5. Des marchés financiers jamais parfaitement efficients</h4>
-<p>Avec Sanford Grossman, il relève en 1980 un paradoxe. Si les prix des actions reflétaient déjà toute l’information disponible, personne n’aurait intérêt à payer pour s’informer ; mais alors les prix ne refléteraient plus rien. Les marchés ne peuvent donc pas être parfaitement efficients.</p>
+<p><b>La question.</b> Les prix de la Bourse peuvent-ils refléter toute l’information ?</p>
+<p><b>Son raisonnement.</b> Avec Sanford Grossman, Stiglitz relève en 1980 un paradoxe. Si les prix des actions reflétaient déjà toute l’information disponible, personne n’aurait intérêt à payer pour s’informer, et les prix ne refléteraient alors plus rien. Les marchés ne peuvent donc pas être parfaitement efficients.</p>
+<p><b>Un exemple.</b> Les banques et les fonds paient des milliers d’analystes pour étudier les entreprises. Ils ne le feraient pas si tout ce qu’ils trouvent était déjà dans les prix. Il faut un peu d’inefficience pour que l’information soit produite.</p>
 <h4>6. La main invisible en question</h4>
-<p>Avec Bruce Greenwald, il généralise en 1986 : dès que l’information est imparfaite ou que certains marchés manquent, l’équilibre de marché n’est en général pas efficace. Il existe en principe des interventions publiques, des taxes ou des subventions, qui amélioreraient le sort de tous. La « main invisible » n’est donc pas le cas général, mais un cas particulier.</p>
+<p><b>La question.</b> Le marché libre conduit-il toujours à un résultat efficace ?</p>
+<p><b>Son raisonnement.</b> Avec Bruce Greenwald, Stiglitz montre en 1986 que, dès que l’information est imparfaite ou que certains marchés manquent, l’équilibre de marché n’est en général pas efficace. Il existe en principe des interventions publiques, des taxes ou des subventions, qui amélioreraient le sort de tous. La « main invisible » n’est donc pas le cas général, mais un cas particulier.</p>
+<p><b>Un exemple.</b> Si l’assurance maladie était facultative, les personnes en bonne santé seraient tentées de s’en passer, les primes monteraient pour les autres, et le marché pourrait s’effondrer. C’est l’une des raisons de l’assurance maladie obligatoire, introduite en Suisse en 1996.</p>
+<p><a href="#c-optimum-pareto">Pour aller plus loin, la notice « Optimum de Pareto » →</a></p>
 <h4>7. La mondialisation et les inégalités</h4>
-<p>Stiglitz applique ces idées aux grands débats. Il reproche au FMI d’avoir imposé aux pays en crise une austérité et une ouverture financière qui les ont fragilisés. Il soutient que les inégalités américaines ne récompensent pas seulement le talent, mais aussi des rentes : positions de monopole, avantages fiscaux, influence politique (<a href="#c-rente">voir rente</a>). Selon lui, ces inégalités affaiblissent la croissance elle-même.</p>` },
+<p><b>La question.</b> La mondialisation profite-t-elle à tous ?</p>
+<p><b>Son raisonnement.</b> Stiglitz reproche au FMI d’avoir imposé aux pays en crise une austérité et une ouverture financière qui les ont fragilisés. Il soutient aussi que les inégalités américaines ne récompensent pas seulement le talent, mais des rentes, positions de monopole, avantages fiscaux, influence politique. Selon lui, ces inégalités affaiblissent la croissance elle-même.</p>
+<p><b>Un exemple.</b> Économiste en chef de la Banque mondiale de 1997 à 2000, il assiste de près à la crise asiatique. Il en tire La Grande Désillusion (2002), une critique sévère des recettes du FMI, contestée par l’institution.</p>
+<p><a href="#c-courbe-kuznets">Pour aller plus loin, la notice « Courbe de Kuznets », sur le lien entre croissance et inégalités →</a></p>` },
       { id: "livres", titre: "Les livres et articles qui comptent", html: `
 <p><b>« Equilibrium in Competitive Insurance Markets » (1976), avec Michael Rothschild.</b> Comment un assureur trie ses clients en leur proposant plusieurs contrats.</p>
 <p><b>« Credit Rationing in Markets with Imperfect Information » (1981), avec Andrew Weiss.</b> L’article fondateur sur le rationnement du crédit.</p>
@@ -230,21 +249,38 @@ ${vieMazzucato}
 <p>Sa formation la prépare à contester ce récit. Elle a étudié Joseph <a href="#eco-schumpeter">Schumpeter</a>, pour qui l’innovation est le moteur du capitalisme, et John Maynard <a href="#eco-keynes">Keynes</a>, pour qui l’investissement dépend d’une confiance fragile. Elle pose une question simple : qui, concrètement, a financé les innovations dont nous sommes le plus fiers ?</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’innovation est incertaine, longue et collective</h4>
-<p>Une innovation majeure demande des décennies de recherche dont personne ne connaît l’issue. Mazzucato reprend la distinction de Keynes entre le risque, qu’on peut calculer, et l’incertitude, qu’on ne peut pas. Les investisseurs privés, même le capital-risque, veulent un retour en quelques années : ils arrivent quand le plus dur est fait.</p>
+<p><b>La question.</b> Pourquoi les investisseurs privés financent-ils si peu les grandes découvertes ?</p>
+<p><b>Son raisonnement.</b> Une innovation majeure demande des décennies de recherche dont personne ne connaît l’issue. Mazzucato reprend la distinction de Frank Knight et de Keynes entre le risque, qu’on peut calculer, et l’incertitude, qu’on ne peut pas. Les investisseurs privés, même le capital-risque, veulent un retour en quelques années. Ils arrivent quand le plus dur est fait.</p>
+<p><b>Un exemple.</b> Un fonds de capital-risque cherche en général à revendre ses parts au bout de cinq à dix ans. Le séquençage du génome humain, lui, a demandé treize ans de travail, de 1990 à 2003, dans un programme international largement public.</p>
 <h4>2. L’État, premier investisseur</h4>
-<p>Ce sont donc des agences publiques qui financent les premières étapes : l’agence de recherche du Pentagone pour l’informatique et Internet, les instituts nationaux de santé américains pour les médicaments, les programmes spatiaux pour les satellites. L’État n’y répare pas un marché existant : il fait exister des marchés qui n’existaient pas.</p>
+<p><b>La question.</b> Qui a financé Internet, le GPS ou l’écran tactile ?</p>
+<p><b>Son raisonnement.</b> Ce sont des agences publiques qui financent les premières étapes, l’agence de recherche du Pentagone pour l’informatique et Internet, les instituts nationaux de santé américains pour les médicaments, les programmes spatiaux pour les satellites. Dans L’État entrepreneur (2013), Mazzucato montre que l’État n’y répare pas un marché existant, il fait exister des marchés qui n’existaient pas.</p>
+<p><b>Un exemple.</b> Elle démonte un téléphone intelligent. Internet, le GPS, l’écran tactile et l’assistant vocal reposent tous sur des recherches financées par l’argent public, que les entreprises ont ensuite assemblées avec talent.</p>
+<p><a href="#c-bien-public">Pour aller plus loin, la notice « Bien public » →</a></p>
 ${iphone}
 <h4>3. Créer des marchés, pas seulement les corriger</h4>
-<p>La théorie habituelle justifie l’action publique par les défaillances du marché. Pour Mazzucato, ce cadre est trop étroit : il présente l’État comme un réparateur. Elle parle d’un État qui « crée et façonne » les marchés, en donnant une direction à l’innovation, comme il l’a fait pour Internet ou les énergies renouvelables.</p>
+<p><b>La question.</b> L’État doit-il seulement réparer les défaillances du marché ?</p>
+<p><b>Son raisonnement.</b> La théorie habituelle justifie l’action publique par les défaillances du marché, comme la pollution ou les biens publics. Pour Mazzucato, ce cadre est trop étroit, car il présente l’État comme un simple réparateur. Elle parle d’un État qui « crée et façonne » les marchés, en donnant une direction à l’innovation.</p>
+<p><b>Un exemple.</b> Le marché de l’énergie solaire n’existait presque pas avant que des États ne le créent. L’Allemagne garantit à partir de 2000 un prix d’achat de l’électricité solaire, et la Chine finance massivement ses fabricants de panneaux. Le prix des panneaux s’effondre ensuite, ce qui rend l’énergie solaire compétitive.</p>
+<p><a href="#c-externalite">Pour aller plus loin, la notice « Externalité », qui présente le cadre habituel des défaillances du marché →</a></p>
 <h4>4. Risques partagés, gains privés</h4>
-<p>Si le contribuable finance les étapes les plus risquées, il devrait toucher une part des succès. Or les gains vont aux actionnaires, tandis que les échecs restent à la charge du public. Mazzucato propose plusieurs moyens d’y remédier : des participations de l’État au capital, des redevances, des conditions sur les prix ou sur le réinvestissement des bénéfices.</p>
+<p><b>La question.</b> Qui profite des succès financés par le contribuable ?</p>
+<p><b>Son raisonnement.</b> Si le contribuable finance les étapes les plus risquées, il devrait toucher une part des succès. Or les gains vont aux actionnaires, tandis que les échecs restent à la charge du public. Mazzucato propose des participations de l’État au capital, des redevances, ou des conditions sur les prix et sur le réinvestissement des bénéfices.</p>
+<p><b>Un exemple.</b> En 2009-2010, le gouvernement américain prête 535 millions de dollars à Solyndra, qui fait faillite en 2011, et 465 millions à Tesla, qui rembourse en 2013 et devient l’une des entreprises les plus valorisées du monde. Le public a porté la perte de l’une, sans rien recevoir du succès de l’autre au-delà du remboursement et des intérêts.</p>
 ${risques}
 <h4>5. Qui crée la valeur ?</h4>
-<p>Dans The Value of Everything (2018), elle distingue ceux qui créent de la valeur et ceux qui l’extraient. Une partie de la finance, selon elle, capte des revenus sans rien produire, et les rachats d’actions enrichissent les actionnaires au détriment de l’investissement. Elle rejoint ici l’analyse de la rente (<a href="#c-rente">voir rente</a>).</p>
+<p><b>La question.</b> Qui crée la valeur, et qui ne fait que la capter ?</p>
+<p><b>Son raisonnement.</b> Dans La Valeur de toute chose (2018), Mazzucato distingue ceux qui créent de la valeur et ceux qui l’extraient. Une partie de la finance, selon elle, capte des revenus sans rien produire, et les rachats d’actions enrichissent les actionnaires au détriment de l’investissement.</p>
+<p><b>Un exemple.</b> Les grandes entreprises américaines consacrent chaque année plusieurs centaines de milliards de dollars à racheter leurs propres actions, pour en faire monter le cours. Pour Mazzucato, cet argent ne finance ni usines, ni recherche, ni salaires. Ses critiques répondent que les actionnaires le réinvestissent en partie dans d’autres entreprises.</p>
+<p><a href="#c-rente">Pour aller plus loin, la notice « Rente différentielle », sur les revenus qui ne récompensent pas un effort →</a></p>
 <h4>6. Les missions</h4>
-<p>Dans Mission économie (2021), elle propose d’organiser l’action publique autour d’objectifs ambitieux, précis et mesurables, à la manière du programme Apollo, qui devait poser un homme sur la Lune avant la fin des années 1960. Une mission fixe le but, pas les moyens : elle mobilise de nombreux secteurs et laisse les entreprises concourir pour y parvenir.</p>
+<p><b>La question.</b> Comment donner une direction à l’innovation ?</p>
+<p><b>Son raisonnement.</b> Dans Mission économie (2021), Mazzucato propose d’organiser l’action publique autour d’objectifs ambitieux, précis et mesurables. Une mission fixe le but, pas les moyens. Elle mobilise de nombreux secteurs et laisse les entreprises concourir pour y parvenir.</p>
+<p><b>Un exemple.</b> Le modèle est le programme Apollo, lancé par Kennedy en 1961 pour poser un homme sur la Lune avant la fin de la décennie, ce qui est fait en 1969. L’Union européenne s’en inspire depuis 2021, avec des missions comme cent villes neutres pour le climat d’ici 2030.</p>
 <h4>7. Reconstruire les capacités de l’État</h4>
-<p>Un État qui veut mener des missions doit en avoir les compétences. Dans The Big Con (2023), écrit avec Rosie Collington, elle reproche aux gouvernements de confier trop de tâches à des cabinets de conseil : ils y perdent leur savoir-faire et deviennent incapables d’agir par eux-mêmes.</p>` },
+<p><b>La question.</b> Un État peut-il tout confier à des cabinets de conseil ?</p>
+<p><b>Son raisonnement.</b> Un État qui veut mener des missions doit en avoir les compétences. Dans The Big Con (2023), écrit avec Rosie Collington, Mazzucato reproche aux gouvernements de confier trop de tâches à des cabinets de conseil. Ils y perdent leur savoir-faire et deviennent incapables d’agir par eux-mêmes.</p>
+<p><b>Un exemple.</b> Pendant la pandémie, le système britannique de dépistage s’appuie sur environ 2 500 consultants au plus fort de la crise, payés en moyenne plus de 1 000 livres par jour. Les compétences acquises repartent avec eux à la fin des contrats.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>L’État entrepreneur (2013).</b> Son livre fondateur : l’origine publique des grandes innovations, d’Internet aux médicaments.</p>
 <p><b>The Value of Everything (2018).</b> Une histoire de l’idée de valeur, et une critique de ceux qui la captent sans la créer.</p>

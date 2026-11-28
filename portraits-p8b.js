@@ -58,21 +58,37 @@ ${viePiketty}
 <p>Pourtant, depuis 1980, les plus hauts revenus progressent fortement aux États-Unis et au Royaume-Uni. Piketty veut mesurer ces évolutions sur la longue durée, en revenant aux sources fiscales, qui couvrent le sommet de la distribution.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Les sources fiscales</h4>
-<p>Piketty utilise les déclarations d’impôt sur le revenu et sur les successions, disponibles depuis le début du XXe siècle, pour estimer la part des revenus et des patrimoines détenue par les plus riches : les 10 %, les 1 %, les 0,1 %. Avec Emmanuel Saez, il applique cette méthode aux États-Unis en 2003, puis un vaste réseau de chercheurs l’étend à des dizaines de pays.</p>
+<p><b>La question.</b> Comment mesurer ce que possèdent les plus riches ?</p>
+<p><b>Son raisonnement.</b> Piketty utilise les déclarations d’impôt sur le revenu, disponibles depuis le début du XXe siècle, et sur les successions, qui remontent parfois au XIXe siècle, pour estimer la part des revenus et des patrimoines détenue par les plus riches, les 10 %, les 1 %, les 0,1 %. Avec Emmanuel Saez, il applique cette méthode aux États-Unis en 2003, puis un vaste réseau de chercheurs l’étend à des dizaines de pays.</p>
+<p><b>Un exemple.</b> Les enquêtes auprès des ménages saisissent mal les très hauts revenus, car les plus riches y répondent peu. Les déclarations fiscales, elles, les enregistrent. Les séries obtenues sont aujourd’hui rassemblées dans une base de données mondiale en libre accès, la World Inequality Database.</p>
 <h4>2. La courbe en U</h4>
-<p>Les séries montrent que les inégalités étaient très fortes avant 1914, ont fortement baissé entre 1914 et 1945, sont restées faibles jusqu’aux années 1970, puis ont remonté. La baisse ne vient pas d’une loi naturelle du développement, comme le pensait Kuznets, mais des chocs des guerres, de la crise de 1929 et des politiques fiscales et sociales.</p>
+<p><b>La question.</b> Les inégalités diminuent-elles naturellement avec le développement ?</p>
+<p><b>Son raisonnement.</b> Les séries montrent que les inégalités étaient très fortes avant 1914, ont fortement baissé entre 1914 et 1945, sont restées faibles jusqu’aux années 1970, puis ont remonté. La baisse ne vient pas d’une loi naturelle du développement, comme le pensait Kuznets, mais des chocs des guerres, de la crise de 1929 et des politiques fiscales et sociales.</p>
+<p><b>Un exemple.</b> En France, les 10 % les mieux payés recevaient environ 45 à 50 % des revenus avant 1914, et environ 30 à 35 % dans les années 1950 à 1970. Aux États-Unis, après une baisse comparable, leur part est remontée à près de la moitié des revenus.</p>
+<p><a href="#c-courbe-kuznets">Pour aller plus loin, la notice « Courbe de Kuznets » →</a></p>
 ${courbeU}
 <h4>3. Le retour du capital</h4>
-<p>Piketty mesure le rapport entre le patrimoine privé total et le revenu national. En Europe, ce rapport valait six à sept années de revenu vers 1900, est tombé à deux ou trois après 1945, et est remonté à cinq ou six. Le capital, surtout immobilier et financier, retrouve un poids proche de celui de la Belle Époque.</p>
+<p><b>La question.</b> Le capital pèse-t-il plus qu’autrefois ?</p>
+<p><b>Son raisonnement.</b> Piketty mesure le rapport entre le patrimoine privé total et le revenu national. En Europe, ce rapport valait six à sept années de revenu vers 1900, est tombé à deux ou trois après 1945, et est remonté à cinq ou six. Le capital, surtout immobilier et financier, retrouve un poids proche de celui de la Belle Époque.</p>
+<p><b>Un exemple.</b> La hausse des prix de l’immobilier explique une grande partie de ce retour. Un appartement acheté dans une grande ville européenne dans les années 1990 vaut souvent aujourd’hui plusieurs fois son prix d’achat, bien plus que les salaires n’ont augmenté.</p>
 <h4>4. r > g</h4>
-<p>Le rendement moyen du capital, r, a toujours été de l’ordre de 4 à 5 % par an, alors que la croissance, g, dépasse rarement 1 à 2 % sur longue période. Quand r > g, les patrimoines existants croissent plus vite que l’économie, et l’héritage prend de plus en plus d’importance (<a href="#c-r-g">voir r > g</a>). Le XXe siècle, avec sa forte croissance et ses destructions, a été une exception.</p>
+<p><b>La question.</b> Pourquoi les fortunes héritées pèsent-elles de plus en plus ?</p>
+<p><b>Son raisonnement.</b> Le rendement moyen du capital, r, a toujours été de l’ordre de 4 à 5 % par an, alors que la croissance, g, dépasse rarement 1 à 2 % sur longue période. Quand r est supérieur à g, les patrimoines existants croissent plus vite que l’économie, et l’héritage prend de plus en plus d’importance. Le XXe siècle, avec sa forte croissance et ses destructions, a été une exception.</p>
+<p><b>Un exemple.</b> Avec un rendement de 5 % réinvesti, un patrimoine double en quatorze ans environ. Avec une croissance de 1 %, l’économie met environ soixante-dix ans à doubler. Il suffit de quelques générations pour que les héritiers prennent une place croissante.</p>
+<p><a href="#c-r-g">Pour aller plus loin, la notice « r > g » →</a></p>
 ${rg}
 <h4>5. Les « super-cadres »</h4>
-<p>Aux États-Unis, la hausse des inégalités depuis 1980 vient d’abord des très hauts salaires des dirigeants. Piketty l’explique par la baisse des taux marginaux d’imposition, qui a encouragé les dirigeants à négocier des rémunérations plus élevées, plutôt que par une hausse de leur productivité.</p>
+<p><b>La question.</b> Pourquoi les très hauts salaires ont-ils explosé ?</p>
+<p><b>Son raisonnement.</b> Aux États-Unis, la hausse des inégalités depuis 1980 vient d’abord des très hauts salaires des dirigeants. Piketty l’explique par la baisse des taux marginaux d’imposition, qui a encouragé les dirigeants à négocier des rémunérations plus élevées, plutôt que par une hausse de leur productivité.</p>
+<p><b>Un exemple.</b> Le taux marginal supérieur de l’impôt fédéral sur le revenu dépasse 90 % aux États-Unis dans les années 1950. Il tombe à 28 % en 1988. Pour Piketty, quand un dollar de plus est presque entièrement taxé, personne ne se bat pour l’obtenir. Quand il ne l’est presque plus, la négociation en vaut la peine.</p>
 <h4>6. L’impôt mondial sur le capital</h4>
-<p>Pour limiter la concentration, Piketty propose un impôt progressif annuel sur le patrimoine, coordonné au niveau international, ainsi qu’une fiscalité très progressive sur les hauts revenus et les successions. Il reconnaît lui-même que cet impôt mondial est une « utopie utile ».</p>
+<p><b>La question.</b> Comment limiter la concentration des patrimoines ?</p>
+<p><b>Son raisonnement.</b> Piketty propose un impôt progressif annuel sur le patrimoine, coordonné au niveau international, ainsi qu’une fiscalité très progressive sur les hauts revenus et les successions. Il reconnaît lui-même que cet impôt mondial est une « utopie utile ».</p>
+<p><b>Un exemple.</b> L’idée progresse. En 2024, sous présidence brésilienne, le G20 discute d’un impôt minimum d’environ 2 % sur le patrimoine des milliardaires, sur la base d’un rapport de l’économiste Gabriel Zucman, proche de Piketty.</p>
 <h4>7. Les idéologies</h4>
-<p>Dans Capital et idéologie (2019), il élargit l’analyse : chaque société justifie ses inégalités par une idéologie, sociétés d’ordres, sociétés propriétaristes, colonialisme, communisme, hypercapitalisme. Ces idéologies peuvent changer, et les inégalités avec elles. Dans Une brève histoire de l’égalité (2021), il souligne la tendance de long terme vers plus d’égalité, obtenue par des luttes politiques.</p>` },
+<p><b>La question.</b> Pourquoi les sociétés acceptent-elles leurs inégalités ?</p>
+<p><b>Son raisonnement.</b> Dans Capital et idéologie (2019), Piketty élargit l’analyse. Chaque société justifie ses inégalités par une idéologie, sociétés d’ordres, sociétés propriétaristes, colonialisme, communisme, hypercapitalisme. Ces idéologies peuvent changer, et les inégalités avec elles. Dans Une brève histoire de l’égalité (2021), il souligne la tendance de long terme vers plus d’égalité, obtenue par des luttes politiques.</p>
+<p><b>Un exemple.</b> Lorsque le Royaume-Uni abolit l’esclavage dans ses colonies en 1833, il indemnise largement les propriétaires d’esclaves, et non les esclaves libérés. Pour Piketty, l’épisode montre jusqu’où peut aller la sacralisation de la propriété.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Les Hauts Revenus en France au XXe siècle (2001).</b> Le premier grand travail sur les séries fiscales, qui fonde sa méthode.</p>
 <p><b>« Income Inequality in the United States, 1913-1998 » (2003), avec Emmanuel Saez.</b> L’article qui révèle l’ampleur de la hausse des hauts revenus américains.</p>
@@ -232,21 +248,38 @@ ${vieDuflo}
 <p>En 1997, le gouvernement mexicain a évalué par tirage au sort son grand programme de transferts sociaux, Progresa. Michael Kremer a mené au Kenya des essais sur l’éducation. Duflo s’inscrit dans ce mouvement et le transforme en programme de recherche mondial.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Découper la pauvreté en questions</h4>
-<p>Pour Duflo, la lutte contre la pauvreté avance par une multitude de petites questions concrètes, auxquelles on peut répondre rigoureusement. Ces petits progrès, accumulés, finissent par faire une grande différence.</p>
+<p><b>La question.</b> Comment faire reculer la pauvreté ?</p>
+<p><b>Son raisonnement.</b> Pour Duflo, la lutte contre la pauvreté avance par une multitude de petites questions concrètes, auxquelles on peut répondre rigoureusement. Ces petits progrès, accumulés, finissent par faire une grande différence.</p>
+<p><b>Un exemple.</b> Plutôt que de se demander si « l’aide au développement marche », on peut se demander si des moustiquaires distribuées gratuitement sont autant utilisées que des moustiquaires vendues. La réponse, établie au Kenya par Jessica Cohen et Pascaline Dupas, est oui. Duflo reçoit le prix Nobel en 2019 avec Abhijit Banerjee et Michael Kremer.</p>
+<p><a href="#c-capabilites">Pour aller plus loin, la notice « Capabilités » →</a></p>
 <h4>2. L’essai randomisé</h4>
-<p>Pour mesurer l’effet d’un programme, on tire au sort parmi des villages, des écoles ou des personnes comparables ceux qui en bénéficieront. Le hasard garantit que les deux groupes sont semblables en moyenne. La différence de résultats mesure donc l’effet du programme.</p>
+<p><b>La question.</b> Comment savoir si un programme fonctionne vraiment ?</p>
+<p><b>Son raisonnement.</b> Pour mesurer l’effet d’un programme, on tire au sort, parmi des villages, des écoles ou des personnes comparables, ceux qui en bénéficieront. Le hasard garantit que les deux groupes sont semblables en moyenne. La différence de résultats mesure donc l’effet du programme.</p>
+<p><b>Un exemple.</b> À la fin des années 1990, le Mexique lance Progresa, qui verse de l’argent aux familles pauvres à condition que les enfants aillent à l’école et chez le médecin. Les villages qui en bénéficient en premier sont tirés au sort, ce qui permet de prouver que le programme augmente la scolarisation. Il est ensuite étendu à tout le pays et imité ailleurs.</p>
 ${essai}
 <h4>3. Les petites incitations</h4>
-<p>Les expériences montrent que de petits obstacles ou de petites incitations ont souvent de grands effets. Au Rajasthan, offrir un sac de lentilles aux familles qui font vacciner leurs enfants fait passer la part d’enfants entièrement vaccinés de 18 % à 39 %. Au Kenya, avec Michael Kremer et Jonathan Robinson, elle montre que proposer d’acheter de l’engrais juste après la récolte, quand les paysans ont de l’argent, augmente fortement son utilisation.</p>
+<p><b>La question.</b> Pourquoi de petits détails changent-ils beaucoup les comportements ?</p>
+<p><b>Son raisonnement.</b> Les expériences montrent que de petits obstacles ou de petites incitations ont souvent de grands effets. Une démarche reportée, une file d’attente, un moment mal choisi suffisent à faire renoncer, et un petit cadeau ou une offre faite au bon moment suffisent à faire agir.</p>
+<p><b>Un exemple.</b> Au Rajasthan, offrir un sac de lentilles aux familles qui font vacciner leurs enfants fait passer la part d’enfants complètement vaccinés de 18 % à 39 %. Au Kenya, avec Michael Kremer et Jonathan Robinson, Duflo montre que proposer d’acheter de l’engrais juste après la récolte, quand les paysans ont de l’argent, augmente fortement son utilisation.</p>
+<p><a href="#c-aversion-pertes">Pour aller plus loin, la notice « Aversion aux pertes », sur les biais étudiés par l’économie comportementale →</a></p>
 ${vaccins}
 <h4>4. La psychologie des pauvres</h4>
-<p>Duflo et Banerjee insistent sur le fait que les pauvres ne sont ni plus ni moins rationnels que les autres, mais qu’ils doivent prendre beaucoup plus de décisions difficiles, sans filet de sécurité. Le manque d’assurance, de crédit et d’information pèse sur leurs choix. Ils rejoignent ici l’économie comportementale de Daniel <a href="#eco-kahneman">Kahneman</a>.</p>
+<p><b>La question.</b> Les pauvres font-ils de mauvais choix ?</p>
+<p><b>Son raisonnement.</b> Duflo et Banerjee insistent sur le fait que les pauvres ne sont ni plus ni moins rationnels que les autres, mais qu’ils doivent prendre beaucoup plus de décisions difficiles, sans filet de sécurité. Le manque d’assurance, de crédit et d’information pèse sur leurs choix.</p>
+<p><b>Un exemple.</b> Dans un pays riche, l’eau du robinet est potable, les vaccins sont rappelés par le médecin et l’assurance maladie est souvent obligatoire. Un paysan pauvre doit décider lui-même, chaque jour, de traiter son eau, de vacciner ses enfants ou d’assurer sa récolte.</p>
 <h4>5. Le microcrédit réévalué</h4>
-<p>Le microcrédit était présenté dans les années 2000 comme une solution miracle. Les essais randomisés menés à Hyderabad, en Inde, et dans plusieurs autres pays montrent des effets réels mais modestes : il aide certains entrepreneurs, sans sortir massivement les ménages de la pauvreté.</p>
+<p><b>La question.</b> Le microcrédit sort-il les gens de la pauvreté ?</p>
+<p><b>Son raisonnement.</b> Le microcrédit était présenté dans les années 2000 comme une solution miracle. Les essais randomisés menés à Hyderabad, en Inde, et dans plusieurs autres pays montrent des effets réels mais modestes. Il aide certains entrepreneurs, sans sortir massivement les ménages de la pauvreté.</p>
+<p><b>Un exemple.</b> En 2006, le prix Nobel de la paix est attribué à Muhammad Yunus et à la Grameen Bank, pionniers du microcrédit au Bangladesh. Les évaluations publiées ensuite, dont celle de Duflo et Banerjee à Hyderabad, invitent à des attentes plus réalistes.</p>
+<p><a href="#c-asymetrie-information">Pour aller plus loin, la notice « Asymétrie d’information », sur les difficultés du crédit aux pauvres →</a></p>
 <h4>6. Du laboratoire à la politique</h4>
-<p>Les programmes qui réussissent peuvent être étendus. L’approche « enseigner au bon niveau » de l’ONG indienne Pratham, qui regroupe les élèves selon leur niveau réel, a été évaluée par J-PAL puis adoptée dans plusieurs pays. Duflo compare l’économiste à un « plombier » qui doit régler les détails concrets de la mise en œuvre.</p>
+<p><b>La question.</b> Comment passer d’une expérience réussie à une politique ?</p>
+<p><b>Son raisonnement.</b> Les programmes qui réussissent peuvent être étendus. L’approche « enseigner au bon niveau » de l’ONG indienne Pratham, qui regroupe les élèves selon leur niveau réel, a été évaluée par le laboratoire J-PAL, fondé en 2003 par Duflo, Banerjee et Sendhil Mullainathan, puis adoptée dans plusieurs pays.</p>
+<p><b>Un exemple.</b> Duflo compare l’économiste à un « plombier », qui doit régler les détails concrets de la mise en œuvre. Une bonne idée échoue souvent pour une raison pratique, des cahiers qui n’arrivent pas ou des enseignants absents, que seul le terrain révèle.</p>
 <h4>7. Une économie utile</h4>
-<p>Dans Économie utile pour des temps difficiles (2019), Duflo et Banerjee appliquent cette démarche aux grands débats des pays riches : immigration, commerce, croissance, inégalités, climat. Ils plaident pour une économie modeste, attentive aux données et à la dignité des personnes.</p>` },
+<p><b>La question.</b> L’économie peut-elle éclairer les grands débats des pays riches ?</p>
+<p><b>Son raisonnement.</b> Dans Économie utile pour des temps difficiles (2019), Duflo et Banerjee appliquent cette démarche à l’immigration, au commerce, à la croissance, aux inégalités et au climat. Ils plaident pour une économie modeste, attentive aux données et à la dignité des personnes.</p>
+<p><b>Un exemple.</b> Sur l’immigration, ils rappellent les travaux de David Card sur l’arrivée soudaine de quelque 125 000 Cubains à Miami en 1980. Les salaires et l’emploi des habitants peu qualifiés n’en ont guère souffert, contrairement à ce que suggère l’intuition. George Borjas a contesté ce résultat en 2017, et le débat reste vif parmi les spécialistes.</p>` },
       { id: "livres", titre: "Les livres et articles qui comptent", html: `
 <p><b>« Schooling and Labor Market Consequences of School Construction in Indonesia » (2001).</b> Sa thèse, qui mesure les effets d’un grand programme de construction d’écoles.</p>
 <p><b>« Women as Policy Makers » (2004), avec Raghabendra Chattopadhyay.</b> En Inde, les villages où la présidence du conseil est réservée à une femme, par tirage au sort, investissent davantage dans l’eau potable.</p>

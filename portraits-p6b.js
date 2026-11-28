@@ -61,20 +61,41 @@ ${vieLucas}
 <p>Lucas pense que la macroéconomie doit reposer sur les mêmes principes que la microéconomie : des individus qui optimisent, des marchés qui s’équilibrent, et des anticipations cohérentes avec le fonctionnement réel de l’économie. Il s’appuie sur l’idée formulée par John Muth en 1961 (<a href="#c-anticipations-rationnelles">voir anticipations rationnelles</a>).</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Les anticipations rationnelles en macroéconomie</h4>
-<p>Lucas applique l’hypothèse de Muth à la macroéconomie : les individus utilisent toute l’information disponible et ne se trompent pas systématiquement. Ils ne peuvent pas être durablement abusés par une politique prévisible.</p>
+<p><b>La question.</b> Peut-on tromper durablement les gens avec une politique prévisible ?</p>
+<p><b>Son raisonnement.</b> Lucas applique à la macroéconomie l’hypothèse proposée par John Muth en 1961. Les individus utilisent toute l’information disponible et ne se trompent pas systématiquement. Ils ne peuvent donc pas être durablement abusés par une politique prévisible.</p>
+<p><b>Un exemple.</b> Si une banque centrale relance l’économie avant chaque élection, les syndicats et les entreprises finissent par le prévoir. Ils augmentent salaires et prix à l’avance, et la relance ne produit plus que de l’inflation.</p>
+<p><a href="#c-anticipations-rationnelles">Pour aller plus loin, la notice « Anticipations rationnelles » →</a></p>
 <h4>2. La neutralité de la monnaie</h4>
-<p>Dans son article de 1972, Lucas imagine des producteurs dispersés sur des « îles », qui ne voient que le prix de leur propre produit. Quand ce prix monte, ils ne savent pas s’il s’agit d’une hausse de la demande pour leur produit ou d’une hausse générale des prix. Une création monétaire imprévue les pousse à produire davantage ; une création monétaire anticipée n’a pas d’effet réel.</p>
+<p><b>La question.</b> Pourquoi une hausse surprise de la monnaie fait-elle produire davantage, pour un temps ?</p>
+<p><b>Son raisonnement.</b> Dans son article de 1972, reprenant une image d’Edmund Phelps, Lucas imagine des producteurs dispersés sur des « îles », qui ne voient que le prix de leur propre produit. Quand ce prix monte, ils ne savent pas si c’est leur produit qui est plus demandé ou si tous les prix montent. Une création monétaire imprévue les pousse à produire davantage, une création monétaire anticipée n’a pas d’effet réel.</p>
+<p><b>Un exemple.</b> Un vigneron voit le prix de son vin monter. S’il croit que son vin est plus apprécié, il en produit davantage. S’il découvre ensuite que tous les prix ont monté d’autant, il comprend qu’il s’est trompé et revient à sa production habituelle.</p>
+<p><a href="#c-theorie-quantitative">Pour aller plus loin, la notice « Théorie quantitative de la monnaie » →</a></p>
 ${iles}
 <h4>3. La critique de Lucas</h4>
-<p>En 1976, Lucas publie « Évaluation économétrique des politiques : une critique ». Les grands modèles estiment des relations observées dans le passé, comme la consommation en fonction du revenu, et les utilisent pour prévoir l’effet de nouvelles politiques. Mais ces relations dépendent des politiques suivies : si la politique change, les comportements changent, et les prévisions sont fausses. Il faut des modèles fondés sur des paramètres « profonds », les préférences et les techniques, qui ne changent pas avec la politique.</p>
+<p><b>La question.</b> Peut-on prévoir l’effet d’une nouvelle politique à partir des données du passé ?</p>
+<p><b>Son raisonnement.</b> En 1976, Lucas montre que les grands modèles de l’époque estiment des relations observées dans le passé et les utilisent pour prévoir l’effet de nouvelles politiques. Mais ces relations dépendent des politiques suivies. Si la politique change, les comportements changent, et les prévisions sont fausses. Il faut des modèles fondés sur des paramètres « profonds », les préférences et les techniques, qui ne changent pas avec la politique.</p>
+<p><b>Un exemple.</b> Dans les années 1960, on croyait pouvoir « acheter » moins de chômage avec un peu plus d’inflation, en s’appuyant sur la courbe de Phillips observée. Dès que les gouvernements ont tenté de l’exploiter, la relation s’est déplacée, et les années 1970 ont connu à la fois plus d’inflation et plus de chômage.</p>
+<p><a href="#c-courbe-phillips">Pour aller plus loin, la notice « Courbe de Phillips » →</a></p>
 <h4>4. Les fondements microéconomiques</h4>
-<p>Lucas en tire un programme : construire la macroéconomie à partir des choix optimaux d’agents représentatifs, en équilibre. Ce programme a été développé par Kydland et Prescott dans la théorie des cycles réels, puis par les modèles néokeynésiens d’équilibre général dynamique utilisés aujourd’hui par les banques centrales (<a href="#c-cycles">voir cycles économiques</a>).</p>
+<p><b>La question.</b> La macroéconomie doit-elle partir des choix individuels ?</p>
+<p><b>Son raisonnement.</b> Lucas en tire un programme, construire la macroéconomie à partir des choix optimaux de ménages et d’entreprises, en équilibre. Ce programme a été développé par Finn Kydland et Edward Prescott dans la théorie des cycles réels, puis par les modèles néokeynésiens d’équilibre général dynamique.</p>
+<p><b>Un exemple.</b> Les banques centrales, dont la BCE, la Réserve fédérale et la BNS, utilisent aujourd’hui de tels modèles pour préparer leurs décisions. Kydland et Prescott reçoivent le prix Nobel en 2004.</p>
+<p><a href="#c-cycles">Pour aller plus loin, la notice « Cycles économiques » →</a></p>
 <h4>5. Les règles plutôt que la discrétion</h4>
-<p>Si la politique n’a d’effet réel que par surprise, une politique de stabilisation active est inefficace, voire nuisible. Lucas défend des règles stables et prévisibles, plutôt que des interventions discrétionnaires. Cette idée a contribué à l’indépendance des banques centrales et au ciblage d’inflation.</p>
+<p><b>La question.</b> L’État doit-il intervenir à chaque ralentissement ?</p>
+<p><b>Son raisonnement.</b> Si la politique n’a d’effet réel que par surprise, une politique de stabilisation active est inefficace, voire nuisible. Lucas défend des règles stables et prévisibles, plutôt que des interventions au cas par cas. Cette idée a contribué à l’indépendance des banques centrales et aux objectifs d’inflation.</p>
+<p><b>Un exemple.</b> En 1997, le gouvernement britannique rend la Banque d’Angleterre indépendante pour fixer les taux d’intérêt, avec un objectif d’inflation annoncé. Beaucoup de pays ont fait de même, pour rendre la politique monétaire crédible.</p>
+<p><a href="#c-politique-monetaire">Pour aller plus loin, la notice « Politique monétaire » →</a></p>
 <h4>6. Le coût des cycles</h4>
-<p>En 1987, Lucas calcule que les fluctuations de la consommation américaine d’après-guerre coûtent l’équivalent d’une fraction minime de la consommation. Il en conclut que les gains à attendre d’une meilleure politique de stabilisation sont faibles par rapport à ceux d’une croissance plus rapide.</p>
+<p><b>La question.</b> Les récessions coûtent-elles cher ?</p>
+<p><b>Son raisonnement.</b> En 1987, Lucas calcule que les fluctuations de la consommation américaine d’après-guerre coûtent l’équivalent d’une fraction minime de la consommation. Il en conclut que les gains à attendre d’une meilleure politique de stabilisation sont faibles comparés à ceux d’une croissance plus rapide.</p>
+<p><b>Un exemple.</b> Selon son calcul, supprimer toutes les fluctuations vaudrait à peine un vingtième de pour cent de la consommation. La crise de 2008 a relancé le débat, car des récessions profondes peuvent laisser des traces durables, avec du chômage de longue durée et des investissements perdus.</p>
+<p><a href="#c-hysterese">Pour aller plus loin, la notice « Hystérèse du chômage » →</a></p>
 <h4>7. La croissance et le capital humain</h4>
-<p>Dans « Sur la mécanique du développement économique » (1988), Lucas étudie pourquoi certains pays croissent plus vite que d’autres. Il insiste sur le capital humain, l’éducation et les compétences, et sur ses effets externes : chacun est plus productif entouré de personnes qualifiées. En 1990, il pose le « paradoxe de Lucas » sur les flux de capitaux.</p>
+<p><b>La question.</b> Pourquoi certains pays croissent-ils plus vite que d’autres ?</p>
+<p><b>Son raisonnement.</b> Dans « Sur la mécanique du développement économique » (1988), Lucas insiste sur le capital humain, l’éducation et les compétences, et sur ses effets externes, chacun étant plus productif entouré de personnes qualifiées. En 1990, il pose le « paradoxe de Lucas », le capital ne va pas des pays riches vers les pays pauvres autant que la théorie le prévoit.</p>
+<p><b>Un exemple.</b> Une fois qu’on commence à penser aux écarts de croissance entre pays, écrit-il, il est difficile de penser à autre chose. Selon la théorie simple, le capital devrait rapporter des dizaines de fois plus en Inde qu’aux États-Unis, et pourtant il n’y afflue pas.</p>
+<p><a href="#c-modele-solow">Pour aller plus loin, la notice « Croissance et modèle de Solow » →</a></p>
 ${paradoxe}` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>« Expectations and the Neutrality of Money » (1972).</b> L’article fondateur de la nouvelle macroéconomie classique, avec le modèle des îles.</p>
@@ -233,21 +254,37 @@ ${vieKahneman}
 <p>Kahneman et Tversky abordent les décisions en psychologues. Ils partent d’intuitions sur leurs propres erreurs, conçoivent des questions simples, les posent à des étudiants et à des experts, et montrent que les erreurs ne sont pas aléatoires, mais systématiques et prévisibles. Leur article de 1979 est publié dans Econometrica, la grande revue d’économie mathématique, ce qui lui donne un écho considérable chez les économistes.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Les heuristiques</h4>
-<p>Face à l’incertitude, nous utilisons des raccourcis. L’heuristique de disponibilité nous fait juger un événement plus probable quand des exemples nous viennent facilement à l’esprit. L’heuristique de représentativité nous fait juger d’après la ressemblance à un stéréotype, en négligeant les probabilités de base. L’ancrage nous fait rester trop près d’un chiffre initial, même arbitraire.</p>
+<p><b>La question.</b> Comment jugeons-nous quand nous ne savons pas ?</p>
+<p><b>Son raisonnement.</b> Face à l’incertitude, nous utilisons des raccourcis. L’heuristique de disponibilité nous fait juger un événement plus probable quand des exemples nous viennent facilement à l’esprit. L’heuristique de représentativité nous fait juger d’après la ressemblance à un stéréotype, en négligeant les probabilités de base. L’ancrage nous fait rester trop près d’un chiffre initial, même arbitraire.</p>
+<p><b>Un exemple.</b> Dans une expérience de 1974, Kahneman et Tversky font tourner une roue truquée qui s’arrête sur 10 ou sur 65, puis demandent quelle part des pays de l’ONU est africaine. Ceux qui ont vu 10 répondent typiquement 25 %, ceux qui ont vu 65 répondent 45 %. Un chiffre tiré au hasard a pesé sur leur estimation.</p>
 <h4>2. Le problème de Linda</h4>
-<p>Linda, 31 ans, célibataire, brillante, a milité contre la discrimination. Est-il plus probable qu’elle soit employée de banque, ou employée de banque et militante féministe ? La majorité répond la seconde, alors qu’elle est forcément moins probable que la première. La représentativité l’emporte sur la logique des probabilités.</p>
+<p><b>La question.</b> Nos intuitions respectent-elles les règles des probabilités ?</p>
+<p><b>Son raisonnement.</b> Linda, 31 ans, célibataire, brillante, a milité contre la discrimination. Est-il plus probable qu’elle soit employée de banque, ou employée de banque et militante féministe ? La seconde réponse est forcément moins probable que la première, puisqu’elle ajoute une condition. La ressemblance avec un portrait l’emporte pourtant sur la logique.</p>
+<p><b>Un exemple.</b> Dans les premières expériences, environ 85 % des étudiants interrogés choisissent la seconde réponse, y compris des étudiants qui connaissent la théorie des probabilités.</p>
 <h4>3. La théorie des perspectives</h4>
-<p>En 1979, Kahneman et Tversky proposent une alternative à la théorie de l’utilité espérée. Nous évaluons les résultats comme des gains ou des pertes par rapport à un point de référence ; nous sommes plus sensibles aux pertes qu’aux gains de même montant ; et nous surpondérons les faibles probabilités (<a href="#c-aversion-pertes">voir aversion aux pertes</a>).</p>
+<p><b>La question.</b> Pourquoi refusons-nous des paris pourtant favorables ?</p>
+<p><b>Son raisonnement.</b> En 1979, Kahneman et Amos Tversky proposent une alternative à la théorie de l’utilité espérée. Nous évaluons les résultats comme des gains ou des pertes par rapport à un point de référence, nous sommes plus sensibles aux pertes qu’aux gains de même montant, et nous surestimons le poids des faibles probabilités.</p>
+<p><b>Un exemple.</b> La plupart des gens refusent de jouer à pile ou face s’ils peuvent perdre 100 francs et gagner 150. Il faut en général promettre un gain d’environ 200 francs pour qu’ils acceptent, signe qu’une perte pèse à peu près deux fois plus qu’un gain. Ces travaux valent à Kahneman le prix Nobel en 2002, Tversky étant mort en 1996.</p>
+<p><a href="#c-aversion-pertes">Pour aller plus loin, la notice « Aversion aux pertes » →</a></p>
 <h4>4. L’effet de cadrage</h4>
-<p>La même situation, présentée en termes de gains ou de pertes, conduit à des choix différents. Cela contredit l’hypothèse selon laquelle les préférences ne dépendent pas de la manière dont les options sont décrites.</p>
+<p><b>La question.</b> La façon de présenter un choix change-t-elle la décision ?</p>
+<p><b>Son raisonnement.</b> La même situation, présentée en termes de gains ou de pertes, conduit à des choix différents. Cela contredit l’hypothèse selon laquelle les préférences ne dépendent pas de la manière dont les options sont décrites.</p>
+<p><b>Un exemple.</b> Face à une épidémie qui menace 600 personnes, la plupart préfèrent un programme qui « sauve 200 personnes à coup sûr » à un pari risqué. Mais si l’on dit que le même programme « laisse mourir 400 personnes », la majorité choisit le pari. Les chiffres sont identiques, seul le cadrage a changé.</p>
 ${cadrage}
 <h4>5. Les deux systèmes</h4>
-<p>Dans Système 1, Système 2 (2011), Kahneman résume ces travaux en distinguant deux modes de pensée : un système rapide et intuitif, qui produit l’essentiel de nos jugements, et un système lent et délibéré, qui ne les vérifie que rarement. Les biais naissent de la confiance que nous accordons aux réponses du premier.</p>
+<p><b>La question.</b> Pourquoi faisons-nous confiance à des réponses fausses ?</p>
+<p><b>Son raisonnement.</b> Dans Système 1, Système 2 (2011), Kahneman distingue deux modes de pensée, un système rapide et intuitif, qui produit l’essentiel de nos jugements, et un système lent et délibéré, qui ne les vérifie que rarement. Les biais naissent de la confiance que nous accordons aux réponses du premier.</p>
+<p><b>Un exemple.</b> Ce problème imaginé par le psychologue Shane Frederick est devenu célèbre. Une batte et une balle coûtent ensemble 1,10 franc, et la batte coûte 1 franc de plus que la balle. Combien coûte la balle ? La réponse qui vient spontanément est 10 centimes, la bonne est 5 centimes. Beaucoup d’étudiants de grandes universités se trompent, faute d’avoir vérifié.</p>
 ${systemes}
 <h4>6. Le bien-être vécu et le bien-être remémoré</h4>
-<p>Kahneman distingue l’expérience vécue, moment par moment, et le souvenir que nous en gardons. Le souvenir est dominé par le moment le plus intense et par la fin de l’épisode, la « règle du pic et de la fin », et néglige la durée. Il a aussi étudié la relation entre revenu et satisfaction, en distinguant le bonheur au quotidien et l’évaluation de sa vie.</p>
+<p><b>La question.</b> Nous souvenons-nous fidèlement de ce que nous avons vécu ?</p>
+<p><b>Son raisonnement.</b> Kahneman distingue l’expérience vécue, moment par moment, et le souvenir qu’on en garde. Le souvenir est dominé par le moment le plus intense et par la fin de l’épisode, la « règle du pic et de la fin », et néglige la durée. Il a aussi étudié la relation entre revenu et satisfaction, en distinguant le bonheur au quotidien et l’évaluation de sa vie.</p>
+<p><b>Un exemple.</b> Des patients qui subissent un examen médical douloureux gardent un meilleur souvenir d’un examen plus long, si les dernières minutes sont moins pénibles. Sur le revenu, Kahneman et Angus Deaton concluent en 2010 que le bien-être quotidien cesse de progresser au-delà d’un certain revenu, avant de nuancer ce résultat en 2023 avec Matthew Killingsworth.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>
 <h4>7. Le bruit</h4>
-<p>Dans Noise (2021), avec Olivier Sibony et Cass Sunstein, Kahneman étudie une autre source d’erreur : la variabilité injustifiée des jugements de professionnels face à des cas identiques, juges, médecins, assureurs. Ce « bruit » est souvent aussi coûteux que les biais, et peut être réduit par des procédures structurées.</p>` },
+<p><b>La question.</b> Deux experts face au même dossier rendent-ils le même jugement ?</p>
+<p><b>Son raisonnement.</b> Dans Noise (2021), avec Olivier Sibony et Cass Sunstein, Kahneman étudie la variabilité injustifiée des jugements de professionnels face à des cas identiques, juges, médecins, assureurs. Ce « bruit » est souvent aussi coûteux que les biais, et peut être réduit par des procédures structurées.</p>
+<p><b>Un exemple.</b> Dans une compagnie d’assurance, les dirigeants s’attendaient à des écarts d’environ 10 % entre les primes fixées par deux souscripteurs pour le même dossier. L’écart médian était d’environ 55 %.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>« Judgment under Uncertainty: Heuristics and Biases » (1974), avec Tversky.</b> L’article de Science qui présente la disponibilité, la représentativité et l’ancrage.</p>
 <p><b>« Prospect Theory: An Analysis of Decision under Risk » (1979), avec Tversky.</b> L’un des articles les plus cités de l’histoire de l’économie, qui propose une théorie descriptive des choix risqués.</p>

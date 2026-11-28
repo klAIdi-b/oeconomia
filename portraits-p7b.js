@@ -53,21 +53,41 @@ ${vieKrugman}
 <p>Dans les années 1990, ses intérêts se déplacent vers les crises : crises de change en Amérique latine et en Asie, stagnation du Japon. Après 2008, il devient l’un des principaux défenseurs des politiques keynésiennes de relance, contre l’austérité budgétaire.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. La nouvelle théorie du commerce</h4>
-<p>Dans deux articles de 1979 et 1980, Krugman montre que, lorsque la production d’un bien bénéficie de rendements croissants, chaque firme a intérêt à produire en grande quantité un petit nombre de variétés. Les consommateurs aimant la variété, les pays échangent des variétés différentes d’un même produit. Le commerce existe donc même entre pays identiques.</p>
+<p><b>La question.</b> Pourquoi des pays semblables s’échangent-ils les mêmes produits ?</p>
+<p><b>Son raisonnement.</b> Dans deux articles de 1979 et 1980, Krugman montre que, lorsque la production d’un bien bénéficie de rendements croissants, chaque entreprise a intérêt à produire en grande quantité un petit nombre de variétés. Comme les consommateurs aiment la variété, les pays échangent des variétés différentes d’un même produit. Le commerce existe donc même entre pays identiques, ce que l’avantage comparatif n’expliquait pas.</p>
+<p><b>Un exemple.</b> La France vend des Renault et des Peugeot à l’Allemagne, qui lui vend des Volkswagen et des BMW. Chaque constructeur produit quelques modèles en grande série, et chaque client trouve un plus grand choix. Ces travaux valent à Krugman le prix Nobel en 2008.</p>
+<p><a href="#c-rendements-croissants">Pour aller plus loin, la notice « Rendements croissants » →</a></p>
 ${intra}
 <h4>2. Les gains du commerce</h4>
-<p>Dans ce cadre, l’ouverture au commerce apporte des gains nouveaux : un marché plus grand permet des séries plus longues, donc des coûts plus bas, et offre aux consommateurs un choix plus large. Le commerce intra-branche provoque aussi moins de conflits que le commerce classique, car il ne fait pas disparaître des branches entières.</p>
+<p><b>La question.</b> Que gagne-t-on à commercer avec un pays qui nous ressemble ?</p>
+<p><b>Son raisonnement.</b> Dans ce cadre, l’ouverture au commerce apporte des gains nouveaux. Un marché plus grand permet des séries plus longues, donc des coûts plus bas, et offre aux consommateurs un choix plus large. Le commerce entre produits semblables provoque aussi moins de conflits que le commerce classique, car il ne fait pas disparaître des branches entières.</p>
+<p><b>Un exemple.</b> Après l’accord automobile de 1965 entre le Canada et les États-Unis, les usines canadiennes, qui fabriquaient auparavant de nombreux modèles en petites séries pour leur seul marché, se spécialisent dans quelques modèles vendus sur tout le continent. Leur productivité se rapproche de celle des usines américaines.</p>
+<p><a href="#c-avantage-comparatif">Pour aller plus loin, la notice « Avantage comparatif », qui explique l’autre forme de commerce →</a></p>
 <h4>3. L’effet du marché intérieur</h4>
-<p>Avec des coûts de transport, les entreprises ont intérêt à s’installer près du plus grand marché, et à exporter vers les autres. Le pays qui a la plus forte demande pour un bien tend donc à en devenir exportateur : c’est l’« effet du marché intérieur ».</p>
+<p><b>La question.</b> Où une entreprise a-t-elle intérêt à s’installer ?</p>
+<p><b>Son raisonnement.</b> Avec des coûts de transport, les entreprises ont intérêt à s’installer près du plus grand marché, et à exporter de là vers les autres. Le pays qui a la plus forte demande pour un bien tend donc à en devenir exportateur. C’est l’« effet du marché intérieur ».</p>
+<p><b>Un exemple.</b> Un fabricant qui ne peut ouvrir qu’une seule usine la place près du marché où il vend le plus, pour économiser les transports sur la plus grande partie de sa production, et il exporte de là vers les marchés plus petits.</p>
 <h4>4. La géographie économique</h4>
-<p>En 1991, Krugman étend ce raisonnement aux régions. Les entreprises attirent les travailleurs, qui forment un marché, qui attire d’autres entreprises : une causalité cumulative. Deux régions identiques peuvent ainsi devenir un centre et une périphérie. L’histoire et le hasard comptent, car une petite avance peut se renforcer d’elle-même.</p>
+<p><b>La question.</b> Pourquoi l’activité se concentre-t-elle dans certaines régions ?</p>
+<p><b>Son raisonnement.</b> En 1991, Krugman étend ce raisonnement aux régions. Les entreprises attirent les travailleurs, qui forment un marché, qui attire d’autres entreprises, une causalité cumulative. Deux régions identiques peuvent ainsi devenir un centre et une périphérie. L’histoire et le hasard comptent, car une petite avance peut se renforcer d’elle-même.</p>
+<p><b>Un exemple.</b> Krugman prend l’exemple de la « ceinture manufacturière » du nord-est des États-Unis, où l’industrie américaine s’est concentrée à la fin du XIXe siècle et est restée pendant des décennies, bien après que ses raisons de départ eurent disparu.</p>
+<p><a href="#c-rendements-croissants">Pour aller plus loin, la notice « Rendements croissants » →</a></p>
 ${centre}
 <h4>5. Les crises de change</h4>
-<p>Dès 1979, Krugman propose un modèle des crises de balance des paiements : un pays qui finance son déficit en épuisant ses réserves pour défendre son taux de change fixe subit, à un moment prévisible, une attaque spéculative soudaine. Ce modèle, dit de « première génération », est le point de départ de toute une littérature.</p>
+<p><b>La question.</b> Pourquoi une monnaie peut-elle s’effondrer d’un coup ?</p>
+<p><b>Son raisonnement.</b> Dès 1979, Krugman propose un modèle des crises de change. Un pays qui finance son déficit en créant de la monnaie perd peu à peu ses réserves s’il veut garder un taux de change fixe. Il subit, à un moment prévisible, une attaque spéculative soudaine. Les spéculateurs n’attendent pas que les réserves soient vides, ils les vident eux-mêmes d’un coup.</p>
+<p><b>Un exemple.</b> En décembre 1994, le Mexique, dont les réserves de dollars fondent, doit laisser tomber le peso, qui perd plus de la moitié de sa valeur en trois mois. La crise mexicaine ressemble en partie à ce scénario, même si sa dette à court terme en dollars y a joué un grand rôle. Les crises asiatiques de 1997 suivront d’autres mécanismes, que des modèles plus récents chercheront à expliquer.</p>
+<p><a href="#c-taux-de-change">Pour aller plus loin, la notice « Taux de change » →</a></p>
 <h4>6. La trappe à liquidité</h4>
-<p>En 1998, il montre que le Japon est tombé dans une <a href="#c-trappe-liquidite">trappe à liquidité</a> : les taux d’intérêt sont à zéro, et la banque centrale ne peut plus les baisser. Il recommande à la Banque du Japon de s’engager de façon crédible à laisser monter l’inflation, pour réduire les taux d’intérêt réels. Après 2008, il applique cette analyse aux États-Unis et à l’Europe, et plaide pour une relance budgétaire.</p>
+<p><b>La question.</b> Que faire quand les taux d’intérêt sont déjà à zéro ?</p>
+<p><b>Son raisonnement.</b> En 1998, Krugman montre que le Japon est tombé dans une trappe à liquidité. Les taux d’intérêt sont à zéro, et la banque centrale ne peut plus les baisser. Il lui recommande de s’engager de façon crédible à laisser monter l’inflation, pour réduire les taux d’intérêt réels. Après 2008, il applique cette analyse aux États-Unis et à l’Europe, et plaide pour une relance budgétaire.</p>
+<p><b>Un exemple.</b> Son article de 1998 s’intitule, en anglais, « Elle est de retour », la trappe à liquidité que l’on croyait disparue avec les années 1930. En 2013, la Banque du Japon adopte enfin un objectif d’inflation de 2 %.</p>
+<p><a href="#c-trappe-liquidite">Pour aller plus loin, la notice « Trappe à liquidité » →</a></p>
 <h4>7. La productivité et le refus de la « compétitivité »</h4>
-<p>Krugman insiste sur le fait que le niveau de vie d’un pays dépend avant tout de sa productivité. Il critique l’idée que les pays se feraient concurrence comme des entreprises : le commerce international n’est pas un jeu à somme nulle, et parler de « compétitivité » nationale est selon lui souvent trompeur.</p>` },
+<p><b>La question.</b> Les pays se font-ils concurrence comme des entreprises ?</p>
+<p><b>Son raisonnement.</b> Krugman insiste sur le fait que le niveau de vie d’un pays dépend avant tout de sa productivité. Il critique l’idée que les pays se feraient concurrence comme des entreprises. Le commerce international n’est pas un jeu à somme nulle, et parler de « compétitivité » nationale est selon lui souvent trompeur.</p>
+<p><b>Un exemple.</b> « La productivité n’est pas tout, mais à long terme, c’est presque tout », écrit-il en 1990. En 1994, il qualifie la compétitivité d’« obsession dangereuse », car un pays n’est pas une entreprise qui ferait faillite parce que ses voisins prospèrent.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>« Increasing Returns, Monopolistic Competition, and International Trade » (1979) et « Scale Economies, Product Differentiation, and the Pattern of Trade » (1980).</b> Les deux articles fondateurs de la nouvelle théorie du commerce.</p>
 <p><b>Geography and Trade (1991).</b> Un petit livre de conférences, très clair, qui présente la nouvelle économie géographique.</p>

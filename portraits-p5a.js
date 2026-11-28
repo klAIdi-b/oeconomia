@@ -58,21 +58,40 @@ ${vieMises}
 <p>Mises défend l’héritage de l’école autrichienne de Carl Menger et de Böhm-Bawerk, fondée sur l’utilité subjective, contre l’école historique allemande, qui refuse les théories générales, et contre l’économie mathématique de <a href="#eco-walras">Walras</a>, qu’il juge incapable de saisir l’action humaine dans le temps.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. La valeur de la monnaie</h4>
-<p>Dans la Théorie de la monnaie et du crédit (1912), Mises applique l’utilité marginale à la monnaie. Il explique pourquoi la monnaie a une valeur : elle est demandée parce qu’on s’attend à pouvoir l’échanger, et cette attente remonte, par un « théorème de régression », jusqu’à un temps où elle était une marchandise utile en elle-même, comme l’or (<a href="#c-fonctions-monnaie">voir fonctions de la monnaie</a>).</p>
+<p><b>La question.</b> Pourquoi accepte-t-on des billets qui ne valent rien en eux-mêmes ?</p>
+<p><b>Son raisonnement.</b> Dans la Théorie de la monnaie et du crédit (1912), Mises applique l’utilité marginale à la monnaie. La monnaie est demandée parce qu’on s’attend à pouvoir l’échanger. Cette attente repose sur sa valeur de la veille, et ainsi de suite, en remontant jusqu’à l’époque où la monnaie était une marchandise utile en elle-même, comme l’or. C’est son « théorème de régression ».</p>
+<p><b>Un exemple.</b> On accepte un billet de 20 francs aujourd’hui parce qu’il permettait d’acheter quelque chose hier. En remontant le temps, on arrive aux pièces d’or et d’argent, qui avaient une valeur comme métal avant d’en avoir une comme monnaie.</p>
+<p><a href="#c-fonctions-monnaie">Pour aller plus loin, la notice « Fonctions de la monnaie » →</a></p>
 <h4>2. Le crédit et le cycle</h4>
-<p>Quand les banques créent du crédit au-delà de l’épargne disponible, les taux tombent sous leur niveau naturel. Les entreprises lancent des investissements longs que l’épargne réelle ne permet pas d’achever. Le boom finit en crise, qui est la liquidation nécessaire de ces erreurs (<a href="#c-cycles">voir cycles économiques</a>).</p>
+<p><b>La question.</b> Pourquoi les booms finissent-ils mal ?</p>
+<p><b>Son raisonnement.</b> Quand les banques créent du crédit au-delà de l’épargne disponible, les taux d’intérêt tombent sous leur niveau naturel. Les entreprises lancent des investissements longs que l’épargne réelle ne permet pas d’achever. Le boom finit en crise, qui est la liquidation nécessaire de ces erreurs. Hayek développera cette théorie.</p>
+<p><b>Un exemple.</b> Dans L’Action humaine, Mises compare l’économie en plein boom à un maître d’œuvre qui croit disposer de plus de matériaux qu’il n’en a. Il lance une maison trop grande et découvre trop tard qu’il ne pourra pas l’achever. Ses disciples voient dans la bulle immobilière américaine des années 2000, nourrie par des taux très bas, une illustration de cette théorie, que d’autres économistes contestent.</p>
+<p><a href="#c-cycles">Pour aller plus loin, la notice « Cycles économiques » →</a></p>
 ${cycle}
 <h4>3. Le calcul économique sous le socialisme</h4>
-<p>En 1920, Mises publie un article qui fait date : sans propriété privée des moyens de production, il n’y a pas de marché pour ces biens, donc pas de prix, donc pas de calcul possible des coûts. Une économie socialiste ne peut pas savoir quelles méthodes de production sont efficaces. Ce « débat sur le calcul socialiste » mobilise les économistes pendant des décennies (<a href="#c-equilibre-general">voir équilibre général</a>).</p>
+<p><b>La question.</b> Une économie sans marché peut-elle savoir ce qui coûte cher ?</p>
+<p><b>Son raisonnement.</b> En 1920, Mises publie un article qui fait date. Sans propriété privée des moyens de production, il n’y a pas de marché pour ces biens, donc pas de prix, donc pas de calcul possible des coûts. Une économie socialiste ne peut pas savoir quelles méthodes de production sont efficaces. Ce « débat sur le calcul socialiste » occupe les économistes pendant des décennies.</p>
+<p><b>Un exemple.</b> Faut-il construire une voie ferrée en acier ou un canal en béton ? Sans prix pour l’acier, le béton et le travail, impossible de comparer. Les planificateurs soviétiques devaient fixer eux-mêmes des millions de prix, ce qui entraînait des pénuries et des gaspillages chroniques.</p>
+<p><a href="#c-equilibre-general">Pour aller plus loin, la notice « Équilibre général » →</a></p>
 ${calcul}
 <h4>4. L’interventionnisme</h4>
-<p>Mises soutient que les interventions partielles de l’État, contrôle des prix, salaires minimum, protections, produisent des effets contraires à leurs objectifs, qui appellent de nouvelles interventions. L’interventionnisme conduit ainsi, par étapes, au socialisme. Il n’y a pas, selon lui, de voie du milieu stable.</p>
+<p><b>La question.</b> Une intervention limitée de l’État peut-elle rester limitée ?</p>
+<p><b>Son raisonnement.</b> Mises soutient que les interventions partielles de l’État, contrôle des prix, salaires minimaux, protections douanières, produisent des effets contraires à leurs objectifs, qui appellent de nouvelles interventions. L’interventionnisme conduit ainsi, par étapes, au socialisme. Il n’y a pas, selon lui, de voie du milieu stable.</p>
+<p><b>Un exemple.</b> Mises prend l’exemple du lait. Si l’État en plafonne le prix pour le rendre accessible, les producteurs en vendent moins et le lait manque. Pour les inciter à produire, il faut contrôler le prix du fourrage, puis celui des engrais, et ainsi de suite, jusqu’à diriger toute la production.</p>
+<p><a href="#c-offre-demande">Pour aller plus loin, la notice « Offre et demande » →</a></p>
 <h4>5. La praxéologie</h4>
-<p>Dans L’Action humaine (1949), Mises fonde l’économie sur un axiome : l’homme agit, c’est-à-dire qu’il utilise des moyens pour atteindre des fins. Toute la théorie économique se déduit logiquement de cet axiome, comme la géométrie. Elle est vraie a priori, sans pouvoir être vérifiée ou réfutée par l’expérience. Cette position méthodologique isole Mises de la plupart des économistes.</p>
+<p><b>La question.</b> L’économie peut-elle être vérifiée par l’expérience ?</p>
+<p><b>Son raisonnement.</b> Dans L’Action humaine (1949), Mises fonde l’économie sur un axiome, l’homme agit, c’est-à-dire qu’il utilise des moyens pour atteindre des fins. Toute la théorie économique se déduit logiquement de cet axiome, comme la géométrie. Elle est vraie a priori, sans pouvoir être confirmée ou réfutée par l’expérience. Cette position isole Mises de la plupart des économistes.</p>
+<p><b>Un exemple.</b> Pour Mises, la loi selon laquelle un prix plafond fixé sous l’équilibre crée une pénurie découle de la logique, aucune statistique ne pourrait la démentir. Friedman soutient l’inverse, une théorie se juge à ses prédictions.</p>
 <h4>6. Le subjectivisme</h4>
-<p>Les valeurs sont subjectives : elles dépendent des préférences de chacun, qu’on ne peut ni mesurer ni comparer entre personnes. L’économiste ne doit pas juger les fins des individus, mais seulement analyser les moyens. C’est pourquoi Mises rejette les mathématiques et l’économétrie, qui supposent des grandeurs mesurables et constantes.</p>
+<p><b>La question.</b> Peut-on mesurer la valeur que chacun accorde aux choses ?</p>
+<p><b>Son raisonnement.</b> Non, répond Mises. Les valeurs sont subjectives, elles dépendent des préférences de chacun, qu’on ne peut ni mesurer ni comparer entre personnes. L’économiste ne doit pas juger les fins des individus, mais seulement analyser les moyens. C’est pourquoi Mises rejette les mathématiques et l’économétrie, qui supposent des grandeurs mesurables et constantes.</p>
+<p><b>Un exemple.</b> Un verre d’eau vaut une fortune pour un voyageur perdu dans le désert et presque rien pour celui qui a un robinet. Et personne ne peut dire si le plaisir de l’un est plus grand que celui de l’autre.</p>
+<p><a href="#c-utilite-marginale">Pour aller plus loin, la notice « Utilité marginale » →</a></p>
 <h4>7. Le libéralisme classique</h4>
-<p>Mises défend la propriété privée, le marché libre, l’étalon-or, le libre-échange et la paix comme conditions de la prospérité et de la civilisation. Il juge que l’État doit se limiter à protéger la vie, la propriété et les contrats. Il est l’un des penseurs les plus intransigeants du libéralisme au XXe siècle.</p>` },
+<p><b>La question.</b> Que doit faire l’État ?</p>
+<p><b>Son raisonnement.</b> Mises défend la propriété privée, le marché libre, l’étalon-or, le libre-échange et la paix comme conditions de la prospérité et de la civilisation. L’État doit se limiter à protéger la vie, la propriété et les contrats. Il est l’un des penseurs les plus intransigeants du libéralisme au XXe siècle.</p>
+<p><b>Un exemple.</b> Juif autrichien installé à Vienne et menacé par le nazisme, Mises quitte Vienne en 1934 pour enseigner à Genève, à l’Institut universitaire de hautes études internationales, puis part pour New York en 1940. Il participe en 1947 à la fondation de la Société du Mont-Pèlerin, avec Hayek et Friedman.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Théorie de la monnaie et du crédit (1912).</b> L’application de l’utilité marginale à la monnaie et la première formulation de la théorie autrichienne du cycle.</p>
 <p><b>« Le calcul économique en régime socialiste » (1920).</b> L’article qui lance le débat sur le calcul socialiste, développé en 1922 dans Le Socialisme.</p>
@@ -213,20 +232,38 @@ ${vieVeblen}
 <p>Lecteur de Darwin, Veblen pense que l’économie devrait étudier l’évolution des institutions humaines comme la biologie étudie l’évolution des espèces, au lieu de décrire un équilibre intemporel.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Une économie évolutionniste</h4>
-<p>Dans un article de 1898, « Pourquoi l’économie n’est-elle pas une science évolutionniste ? », Veblen reproche à l’économie de son temps de se fonder sur une psychologie hédoniste et de rechercher des équilibres. Il veut une science qui étudie les processus cumulatifs de changement des institutions, des habitudes de pensée collectives.</p>
+<p><b>La question.</b> L’économie doit-elle chercher des équilibres ou étudier des évolutions ?</p>
+<p><b>Son raisonnement.</b> Dans un article de 1898, « Pourquoi l’économie n’est-elle pas une science évolutionniste ? », Veblen reproche à l’économie de son temps de se fonder sur une psychologie du plaisir et de la peine et de rechercher des équilibres. Il veut une science qui étudie les changements cumulatifs des institutions, c’est-à-dire des habitudes de pensée collectives.</p>
+<p><b>Un exemple.</b> Il se moque de l’homme économique des manuels, réduit à un calculateur éclair de plaisirs et de peines, qui ne serait ni le produit d’une histoire ni le membre d’une société.</p>
 <h4>2. Les institutions</h4>
-<p>Pour Veblen, les institutions sont des habitudes de pensée partagées, transmises et lentement transformées par les conditions matérielles, en particulier la technique. Elles retardent toujours sur les changements techniques, ce qui crée des tensions.</p>
+<p><b>La question.</b> Pourquoi les habitudes changent-elles plus lentement que les techniques ?</p>
+<p><b>Son raisonnement.</b> Pour Veblen, les institutions sont des habitudes de pensée partagées, transmises et lentement transformées par les conditions matérielles, en particulier la technique. Elles retardent toujours sur les changements techniques, ce qui crée des tensions.</p>
+<p><b>Un exemple.</b> On peut penser au clavier « azerty » ou « qwerty », conçu pour les machines à écrire mécaniques et conservé sur nos téléphones, simplement parce que tout le monde l’a appris. Les habitudes survivent aux raisons qui les ont fait naître.</p>
+<p><a href="#c-institutions-inclusives">Pour aller plus loin, la notice « Institutions inclusives et extractives » →</a></p>
 <h4>3. La classe de loisir</h4>
-<p>Dans les sociétés fondées sur la propriété, la richesse donne le statut, mais elle doit être montrée. La classe supérieure le fait par le « loisir ostentatoire », l’abstention de tout travail productif, et par la « consommation ostentatoire », la dépense visible et le gaspillage (<a href="#c-consommation-ostentatoire">voir consommation ostentatoire</a>).</p>
+<p><b>La question.</b> Pourquoi achète-t-on des choses chères pour être vu ?</p>
+<p><b>Son raisonnement.</b> Dans La Théorie de la classe de loisir (1899), Veblen observe que, dans les sociétés fondées sur la propriété, la richesse donne le statut, mais qu’elle doit être montrée. La classe supérieure le fait par le « loisir ostentatoire », l’abstention de tout travail productif, et par la « consommation ostentatoire », la dépense visible et le gaspillage.</p>
+<p><b>Un exemple.</b> Veblen compare une cuillère d’argent faite à la main et une cuillère fabriquée à la machine, tout aussi utile et à peine différente. La première coûte bien plus cher, et c’est justement ce qui la rend désirable, puisqu’elle montre qu’on peut se l’offrir.</p>
+<p><a href="#c-consommation-ostentatoire">Pour aller plus loin, la notice « Consommation ostentatoire » →</a></p>
 <h4>4. L’émulation pécuniaire</h4>
-<p>Chaque classe imite la consommation de la classe supérieure, et les normes de dépense descendent l’échelle sociale. Cette course au statut explique une part importante des dépenses, et les biens dont le prix élevé fait l’attrait.</p>
+<p><b>La question.</b> Pourquoi dépense-t-on pour faire comme les autres ?</p>
+<p><b>Son raisonnement.</b> Chaque classe imite la consommation de la classe supérieure, et les normes de dépense descendent l’échelle sociale. Cette course au statut explique une part importante des dépenses, et l’attrait de certains biens justement parce qu’ils sont chers.</p>
+<p><b>Un exemple.</b> Pour certains produits de luxe, une hausse de prix augmente la demande au lieu de la réduire, car elle rend l’objet plus distinctif. On parle aujourd’hui de « biens de Veblen ».</p>
+<p><a href="#c-elasticite">Pour aller plus loin, la notice « Élasticité », qui mesure comment la demande réagit au prix →</a></p>
 <h4>5. Industrie et affaires</h4>
-<p>Dans La Théorie de l’entreprise (1904), Veblen oppose l’industrie, la production efficace de biens par les techniciens et les ouvriers, et les affaires, la recherche du profit par les propriétaires et les financiers. Les intérêts financiers peuvent entrer en conflit avec la production : limiter l’offre pour maintenir les prix, manipuler les valeurs boursières.</p>
+<p><b>La question.</b> Les financiers servent-ils toujours la production ?</p>
+<p><b>Son raisonnement.</b> Dans La Théorie de l’entreprise (1904), Veblen oppose l’industrie, la production efficace de biens par les techniciens et les ouvriers, et les affaires, la recherche du profit par les propriétaires et les financiers. Les intérêts financiers peuvent entrer en conflit avec la production, en limitant l’offre pour maintenir les prix, ou en manipulant les valeurs boursières.</p>
+<p><b>Un exemple.</b> Veblen écrit à l’époque des grands trusts américains. En 1901, le banquier J. P. Morgan réunit plusieurs aciéries dans U.S. Steel, première entreprise au monde à valoir plus d’un milliard de dollars, une opération pensée autant pour la Bourse que pour l’usine.</p>
+<p><a href="#c-concurrence-imparfaite">Pour aller plus loin, la notice « Monopole, oligopole et monopsone » →</a></p>
 ${industrie}
 <h4>6. L’instinct du travail bien fait</h4>
-<p>Veblen pense que l’homme possède un « instinct du travail bien fait », un goût pour l’efficacité et l’utile, et un « instinct parental », un souci du bien-être des autres. Ces instincts sont contrariés par les institutions prédatrices héritées des sociétés guerrières, qui valorisent l’exploit et la prise plutôt que la production.</p>
+<p><b>La question.</b> Qu’est-ce qui pousse les hommes à bien travailler ?</p>
+<p><b>Son raisonnement.</b> Veblen pense que l’homme possède un « instinct du travail bien fait », un goût pour l’efficacité et l’utile, et un « instinct parental », un souci du bien-être des autres. Ces instincts sont contrariés par les institutions prédatrices héritées des sociétés guerrières, qui valorisent l’exploit et la prise plutôt que la production.</p>
+<p><b>Un exemple.</b> Il consacre à cet instinct un livre entier en 1914. L’artisan qui soigne la finition d’un meuble, même là où personne ne la verra, en est l’image.</p>
 <h4>7. Les ingénieurs</h4>
-<p>Dans Les Ingénieurs et le système des prix (1921), Veblen imagine que les ingénieurs, dépositaires de la connaissance technique, pourraient prendre le contrôle de la production et l’organiser au service de l’utilité, plutôt que du profit. Cette idée inspirera le mouvement « technocratique » des années 1930.</p>` },
+<p><b>La question.</b> Qui devrait diriger la production ?</p>
+<p><b>Son raisonnement.</b> Dans Les Ingénieurs et le système des prix (1921), Veblen imagine que les ingénieurs, dépositaires de la connaissance technique, pourraient prendre le contrôle de la production et l’organiser au service de l’utilité plutôt que du profit.</p>
+<p><b>Un exemple.</b> Pendant la Grande Dépression, aux États-Unis, le mouvement « technocratique » reprend l’idée et propose de confier l’économie aux ingénieurs. Il connaît une vogue brève en 1932-1933, avant de devenir marginal.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>La Théorie de la classe de loisir (1899).</b> Son livre le plus célèbre, une étude ironique des comportements de la classe aisée, de la mode au sport et à l’enseignement supérieur.</p>
 <p><b>La Théorie de l’entreprise (1904).</b> Une analyse du capitalisme financier, du crédit, des fusions et des crises, fondée sur l’opposition entre industrie et affaires.</p>

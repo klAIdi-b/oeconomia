@@ -63,20 +63,39 @@ ${vieMalthus}
 <p>Malthus écrit aussi au moment où commence la révolution industrielle. Ses contemporains ne savent pas encore que la productivité agricole et industrielle va augmenter comme jamais auparavant. Les données qu’il rassemble décrivent des sociétés où, pendant des siècles, le niveau de vie de la majorité est resté proche de la subsistance.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Deux postulats</h4>
-<p>L’Essai part de deux postulats : la nourriture est nécessaire à l’existence de l’homme, et la passion entre les sexes est nécessaire et restera à peu près ce qu’elle est. Il en tire un « principe de population » : la capacité de la population à s’accroître est infiniment plus grande que celle de la terre à produire des subsistances.</p>
+<p><b>La question.</b> La population peut-elle croître sans limite ?</p>
+<p><b>Son raisonnement.</b> L’Essai sur le principe de population part de deux postulats. La nourriture est nécessaire à l’existence de l’homme, et la passion entre les sexes est nécessaire et restera à peu près ce qu’elle est. Malthus en tire un « principe de population », la capacité de la population à s’accroître est infiniment plus grande que celle de la terre à produire des subsistances.</p>
+<p><b>Un exemple.</b> L’Essai paraît anonymement en 1798. Il répond à Godwin et à Condorcet, qui croyaient au progrès indéfini de l’humanité. Pour Malthus, aucune réforme ne pourra supprimer la misère si la population croît plus vite que la nourriture.</p>
 <h4>2. Les deux progressions</h4>
-<p>Non freinée, la population croît selon une progression géométrique, doublant tous les vingt-cinq ans, comme dans les colonies américaines. Les subsistances, au mieux, croissent selon une progression arithmétique, car les terres fertiles sont limitées et les rendements décroissants (<a href="#c-rente">voir rente</a>).</p>
+<p><b>La question.</b> Pourquoi la population risque-t-elle de dépasser la nourriture ?</p>
+<p><b>Son raisonnement.</b> Sans frein, la population croît selon une progression géométrique et double tous les vingt-cinq ans, comme dans les colonies américaines. Les subsistances, au mieux, croissent selon une progression arithmétique, car les terres fertiles sont limitées et chaque nouvelle terre rapporte moins que la précédente.</p>
+<p><b>Un exemple.</b> La population suit 1, 2, 4, 8, 16, la nourriture 1, 2, 3, 4, 5. Au bout de deux siècles, calcule Malthus, la population serait aux subsistances comme 256 est à 9. L’écart ne peut donc pas durer, il doit se refermer d’une manière ou d’une autre.</p>
+<p><a href="#c-rente">Pour aller plus loin, la notice « Rente différentielle », qui explique les rendements décroissants de la terre →</a></p>
 ${progressions}
 <h4>3. Les freins</h4>
-<p>L’écart entre population et subsistances est comblé par des « freins ». Les freins positifs augmentent la mortalité : famines, épidémies, guerres, misère. Les freins préventifs réduisent la natalité : dans la première édition, le vice ; à partir de 1803, la « contrainte morale », c’est-à-dire le mariage tardif et la chasteté avant le mariage. Malthus, en pasteur, rejette la contraception.</p>
+<p><b>La question.</b> Comment l’écart entre population et nourriture se referme-t-il ?</p>
+<p><b>Son raisonnement.</b> Par des « freins ». Les freins positifs augmentent la mortalité, famines, épidémies, guerres, misère. Les freins préventifs réduisent la natalité, le vice dans la première édition, puis, à partir de 1803, la « contrainte morale », c’est-à-dire le mariage tardif et la chasteté avant le mariage. Pasteur anglican, Malthus rejette la contraception.</p>
+<p><b>Un exemple.</b> Dans l’Europe d’avant la révolution industrielle, une mauvaise récolte faisait bondir le prix du pain et la mortalité. La famine de 1693-1694 tue plus d’un million de personnes en France.</p>
 <h4>4. La critique des lois sur les pauvres</h4>
-<p>Pour Malthus, l’assistance aux pauvres, en leur permettant de nourrir des familles plus nombreuses, augmente la population sans augmenter la nourriture, et fait finalement monter le prix du pain pour tous. Il propose d’abolir progressivement le droit à l’assistance pour les enfants nés après une certaine date. Ces idées influenceront la réforme de la loi sur les pauvres de 1834, qui crée les sinistres « workhouses ».</p>
+<p><b>La question.</b> Aider les pauvres réduit-il la pauvreté ?</p>
+<p><b>Son raisonnement.</b> Pour Malthus, l’assistance, en permettant aux pauvres de nourrir des familles plus nombreuses, augmente la population sans augmenter la nourriture, et fait finalement monter le prix du pain pour tous. Il propose d’abolir peu à peu le droit à l’assistance pour les enfants nés après une certaine date.</p>
+<p><b>Un exemple.</b> Ces idées pèsent sur la réforme de la loi sur les pauvres de 1834, qui généralise les sinistres « workhouses ». Les paroisses sont regroupées, et l’aide n’est plus accordée qu’en échange d’un enfermement et d’un travail pénible. Dickens en fait le procès dans Oliver Twist, publié à partir de 1837.</p>
+<p><a href="#c-alea-moral">Pour aller plus loin, la notice « Aléa moral », qui étudie les effets d’une protection sur les comportements →</a></p>
 <h4>5. La rente et les Corn Laws</h4>
-<p>Malthus formule en 1815, en même temps que Ricardo, la théorie de la rente différentielle. Mais il en tire une conclusion opposée : il défend les Corn Laws, au nom de la sécurité alimentaire et de la dépense des propriétaires fonciers, qui soutient la demande.</p>
+<p><b>La question.</b> Faut-il protéger l’agriculture nationale ?</p>
+<p><b>Son raisonnement.</b> Malthus formule en 1815, en même temps que Ricardo et Edward West, la théorie de la rente différentielle. Mais il en tire une conclusion opposée et défend les Corn Laws, au nom de la sécurité alimentaire et de la dépense des propriétaires fonciers, qui soutient la demande.</p>
+<p><b>Un exemple.</b> Malthus a en tête le blocus continental de Napoléon, qui a coupé le Royaume-Uni d’une partie de ses fournisseurs. Un pays qui dépend du blé étranger, craint-il, est à la merci de la prochaine guerre.</p>
+<p><a href="#c-rente">Pour aller plus loin, la notice « Rente différentielle » →</a></p>
 <h4>6. La demande effective</h4>
-<p>Dans ses Principes (1820), Malthus soutient, contre Ricardo et <a href="#eco-say">Say</a>, qu’une surproduction générale est possible : si les capitalistes épargnent trop, la demande ne suffit plus à acheter la production. La consommation des propriétaires fonciers et les dépenses publiques jouent un rôle utile (<a href="#c-loi-debouches">voir loi des débouchés</a>). <a href="#eco-keynes">Keynes</a> regrettera en 1933 que Ricardo l’ait emporté sur ce point.</p>
+<p><b>La question.</b> Une économie peut-elle produire trop ?</p>
+<p><b>Son raisonnement.</b> Dans ses Principes (1820), Malthus soutient, contre Ricardo et Say, qu’une surproduction générale est possible. Si les capitalistes épargnent trop, la demande ne suffit plus à acheter la production. La consommation des propriétaires fonciers et les dépenses publiques jouent alors un rôle utile.</p>
+<p><b>Un exemple.</b> Après 1815, la fin des guerres provoque au Royaume-Uni une crise de débouchés et un chômage massif. Malthus y voit une insuffisance de la demande. Keynes regrettera en 1933 que Ricardo l’ait emporté sur ce point, et que l’économie du XIXe siècle ne soit pas partie de Malthus.</p>
+<p><a href="#c-demande-effective">Pour aller plus loin, la notice « Demande effective » →</a></p>
 <h4>7. Ce que Malthus n’a pas vu</h4>
-<p>Malthus décrit bien les sociétés préindustrielles, où les gains de productivité se transformaient en hausse de la population plutôt qu’en hausse durable du niveau de vie. Mais il n’a pas anticipé la révolution agricole et industrielle, qui a permis de nourrir une population multipliée, ni la transition démographique, qui a fait baisser la natalité volontairement.</p>
+<p><b>La question.</b> Malthus avait-il raison ?</p>
+<p><b>Son raisonnement.</b> Il décrit bien les sociétés préindustrielles, où les gains de productivité se transformaient en hausse de la population plutôt qu’en hausse durable du niveau de vie. Mais il n’a anticipé ni la révolution agricole et industrielle, qui a permis de nourrir une population multipliée, ni la transition démographique, qui a fait baisser volontairement la natalité.</p>
+<p><b>Un exemple.</b> Depuis 1800, la population mondiale a été multipliée par huit environ, et la nourriture disponible par habitant a pourtant augmenté. Dans la plupart des pays riches, les femmes ont aujourd’hui moins de deux enfants en moyenne.</p>
+<p><a href="#c-modele-solow">Pour aller plus loin, la notice « Croissance et modèle de Solow » →</a></p>
 ${transition}` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Essai sur le principe de population (1798).</b> La première édition, anonyme, courte et polémique, écrite contre Godwin et Condorcet. C’est la plus lue et la plus vivante.</p>
@@ -224,20 +243,38 @@ ${vieSay}
 <p>Après 1815, l’Angleterre connaît des crises commerciales et des invendus. Beaucoup y voient une surproduction générale due aux machines. Say répond par sa loi des débouchés, qui suscite une controverse européenne avec Malthus et le Genevois Sismondi.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Une science d’observation</h4>
-<p>Say veut une économie fondée sur l’observation des faits, à la manière des sciences physiques, mais il se méfie des mathématiques, qu’il juge mal adaptées à des phénomènes trop variables. Il organise la discipline en trois parties devenues classiques : la production, la répartition et la consommation des richesses.</p>
+<p><b>La question.</b> Comment étudier l’économie ?</p>
+<p><b>Son raisonnement.</b> Say veut une économie fondée sur l’observation des faits, à la manière des sciences physiques, mais il se méfie des mathématiques, qu’il juge mal adaptées à des phénomènes trop variables. Il organise la discipline en trois parties devenues classiques, la production, la répartition et la consommation des richesses.</p>
+<p><b>Un exemple.</b> Son Traité d’économie politique (1803), clair et bien construit, devient le manuel de référence en Europe et aux États-Unis. Son plan en trois parties se retrouve encore dans bien des cours d’introduction.</p>
 <h4>2. La valeur fondée sur l’utilité</h4>
-<p>Contrairement à Smith et à Ricardo, qui fondent la valeur sur le travail, Say la fonde sur l’utilité : produire, c’est créer de l’utilité. Le prix reflète l’utilité que les acheteurs attribuent aux biens, compte tenu des frais de production. Cette approche annonce la tradition française et les marginalistes (<a href="#c-utilite-marginale">voir utilité marginale</a>).</p>
+<p><b>La question.</b> D’où vient la valeur d’un bien ?</p>
+<p><b>Son raisonnement.</b> Contrairement à Smith et à Ricardo, qui fondent la valeur sur le travail, Say la fonde sur l’utilité. Produire, c’est créer de l’utilité. Le prix reflète l’utilité que les acheteurs attribuent aux biens, compte tenu des frais de production. Cette approche annonce les marginalistes.</p>
+<p><b>Un exemple.</b> Un grand vin se vend bien plus cher qu’un vin ordinaire, sans avoir demandé dix fois plus de travail. C’est l’utilité, ou le plaisir, que les acheteurs lui prêtent qui fait son prix.</p>
+<p><a href="#c-utilite-marginale">Pour aller plus loin, la notice « Utilité marginale » →</a></p>
 <h4>3. Les services sont productifs</h4>
-<p>Smith jugeait improductif le travail des médecins, des avocats ou des artistes, qui ne laisse pas d’objet durable. Say le conteste : ces « produits immatériels » ont une utilité et une valeur, et sont donc productifs. L’économie moderne, où les services dominent, lui donne raison.</p>
+<p><b>La question.</b> Un médecin ou un musicien produit-il de la richesse ?</p>
+<p><b>Son raisonnement.</b> Smith jugeait improductif le travail des médecins, des avocats ou des artistes, qui ne laisse pas d’objet durable. Say le conteste. Ces « produits immatériels » ont une utilité et une valeur, ils sont donc productifs.</p>
+<p><b>Un exemple.</b> L’économie moderne lui donne raison. Dans les pays riches, les services représentent aujourd’hui environ les trois quarts de la production, et la comptabilité nationale les compte tous dans le PIB.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>
 <h4>4. L’entrepreneur</h4>
-<p>Say distingue trois « services productifs » : l’industrie humaine, le capital et la terre, rémunérés par les salaires, les intérêts et les fermages. Il met au centre l’entrepreneur, qui les combine, dirige la production et en supporte les risques. Le profit de l’entrepreneur rémunère son talent, distinct de l’intérêt du capitaliste.</p>
+<p><b>La question.</b> Qui organise la production ?</p>
+<p><b>Son raisonnement.</b> Say distingue trois « services productifs », l’industrie humaine, le capital et la terre, rémunérés par les salaires, les intérêts et les fermages. Il met au centre l’entrepreneur, qui les combine, dirige la production et en supporte les risques. Le profit de l’entrepreneur rémunère son talent, et se distingue de l’intérêt du capitaliste.</p>
+<p><b>Un exemple.</b> Say parle d’expérience. Écarté du Tribunat par Napoléon, il fonde à la fin de 1804 une filature de coton à Auchy, dans le Pas-de-Calais, qu’il dirige plusieurs années avant de revenir à l’enseignement.</p>
 ${facteurs}
 <h4>5. La loi des débouchés</h4>
-<p>Pour Say, les produits s’échangent contre des produits : chaque production fournit les moyens d’acheter d’autres produits. Une surabondance de certains biens est possible, mais elle correspond à une insuffisance d’autres biens ; une surproduction générale est impossible. La prospérité d’un pays dépend donc de la production, et chaque pays a intérêt à la prospérité de ses voisins (<a href="#c-loi-debouches">voir loi des débouchés</a>).</p>
+<p><b>La question.</b> Peut-il y avoir trop de produits dans une économie ?</p>
+<p><b>Son raisonnement.</b> Pour Say, les produits s’échangent contre des produits. Chaque production fournit les moyens d’acheter d’autres produits. Une surabondance de certains biens est possible, mais elle correspond à une insuffisance d’autres biens, si bien qu’une surproduction générale est impossible. La prospérité d’un pays dépend donc de sa production.</p>
+<p><b>Un exemple.</b> Il en tire une conclusion favorable au commerce. Un voisin prospère est un client, et chaque pays a intérêt à la prospérité des autres. Malthus contestera la première partie de son raisonnement, en montrant qu’une épargne excessive peut faire manquer la demande. Keynes ajoutera qu’on peut garder sa monnaie au lieu de la dépenser.</p>
+<p><a href="#c-loi-debouches">Pour aller plus loin, la notice « Loi des débouchés » →</a></p>
 <h4>6. La liberté et l’instruction</h4>
-<p>Say défend la liberté du travail, du commerce et de l’industrie, et critique les privilèges, les douanes et les dépenses de guerre. Mais il insiste aussi sur l’instruction : l’ingéniosité des entrepreneurs et l’habileté des ouvriers sont des sources essentielles de richesse, et il consacre la fin de sa vie à l’enseignement de l’économie industrielle.</p>
+<p><b>La question.</b> D’où vient l’ingéniosité qui enrichit les nations ?</p>
+<p><b>Son raisonnement.</b> Say défend la liberté du travail, du commerce et de l’industrie, et critique les privilèges, les douanes et les dépenses de guerre. Mais il insiste aussi sur l’instruction. L’ingéniosité des entrepreneurs et l’habileté des ouvriers sont pour lui des sources essentielles de richesse.</p>
+<p><b>Un exemple.</b> Il consacre la fin de sa vie à l’enseignement, au Conservatoire des arts et métiers à partir de 1820, puis au Collège de France, où il occupe en 1831 la première chaire d’économie politique de l’établissement.</p>
 <h4>7. Les impôts et l’État</h4>
-<p>Say se méfie des dépenses publiques, qu’il juge improductives quand elles ne créent pas d’utilité durable. Il formule un principe souvent cité : le meilleur de tous les plans de finances est de dépenser peu, et le meilleur de tous les impôts est le plus petit. Il reconnaît cependant l’utilité des dépenses pour l’instruction, les routes et la sécurité.</p>` },
+<p><b>La question.</b> Combien l’État doit-il dépenser ?</p>
+<p><b>Son raisonnement.</b> Say se méfie des dépenses publiques, qu’il juge improductives quand elles ne créent pas d’utilité durable. Il formule un principe souvent cité, le meilleur de tous les plans de finances est de dépenser peu, et le meilleur de tous les impôts est le plus petit. Il reconnaît cependant l’utilité des dépenses pour l’instruction, les routes et la sécurité.</p>
+<p><b>Un exemple.</b> Les éditions du Traité parues à partir de 1814 s’adressent à une France qui sort de plus de vingt ans de guerres, financées par l’impôt, les assignats et les contributions imposées aux pays conquis. La sobriété budgétaire lui paraît la condition de la paix et de la prospérité.</p>
+<p><a href="#c-bien-public">Pour aller plus loin, la notice « Bien public », sur les dépenses que le marché ne financerait pas →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Traité d’économie politique (1803).</b> Son grand ouvrage, clair et ordonné, réédité et enrichi jusqu’à la cinquième édition (1826). Traduit en anglais, en allemand et dans de nombreuses langues, il est le manuel de référence en Europe et aux États-Unis, où Thomas Jefferson le recommande.</p>
 <p><b>Catéchisme d’économie politique (1815).</b> Une présentation de l’économie sous forme de questions et réponses, destinée au grand public, et l’un des premiers ouvrages de vulgarisation économique.</p>

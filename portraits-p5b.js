@@ -61,21 +61,41 @@ ${vieRobinson}
 <p>C’est aussi l’époque de la décolonisation et de la guerre froide. Robinson s’intéresse aux économies en développement et aux expériences socialistes, en Inde, en Chine, à Cuba, qu’elle juge souvent avec une sympathie que l’histoire n’a pas confirmée.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. La concurrence imparfaite</h4>
-<p>En 1933, en même temps que l’Américain Edward Chamberlin, Robinson rompt avec le modèle de la concurrence parfaite. Elle étudie les entreprises qui ont un pouvoir sur leurs prix, avec des outils comme la recette marginale, et montre qu’elles produisent moins et vendent plus cher qu’en concurrence (<a href="#c-concurrence-imparfaite">voir concurrence imparfaite</a>).</p>
+<p><b>La question.</b> Que se passe-t-il quand une entreprise peut fixer son prix ?</p>
+<p><b>Son raisonnement.</b> En 1933, en même temps que l’Américain Edward Chamberlin, Robinson rompt avec le modèle de la concurrence parfaite. Dans L’Économie de la concurrence imparfaite, elle étudie les entreprises qui ont un pouvoir sur leurs prix, avec des outils comme la recette marginale, et montre qu’elles produisent moins et vendent plus cher qu’en concurrence.</p>
+<p><b>Un exemple.</b> Une entreprise qui vend une marque connue n’a pas de concurrent exactement identique. Si elle augmente un peu son prix, elle perd quelques clients, pas tous. Elle a donc intérêt à vendre moins, mais plus cher, que sur un marché parfaitement concurrentiel.</p>
+<p><a href="#c-concurrence-imparfaite">Pour aller plus loin, la notice « Monopole, oligopole et monopsone » →</a></p>
 <h4>2. Le monopsone</h4>
-<p>Robinson étudie aussi le cas symétrique : un acheteur unique, par exemple le seul employeur d’une ville. Elle invente pour le désigner le mot « monopsone », suggéré par un collègue helléniste. L’employeur paie des salaires inférieurs à la valeur de ce que produisent les salariés, ce qu’elle appelle une « exploitation » au sens technique.</p>
+<p><b>La question.</b> Que se passe-t-il quand il n’y a qu’un seul employeur ?</p>
+<p><b>Son raisonnement.</b> Robinson étudie le cas symétrique du monopole, un acheteur unique, par exemple le seul employeur d’une ville. Elle le nomme « monopsone », un mot que lui suggère un collègue helléniste, Bertrand Hallward. L’employeur paie des salaires inférieurs à la valeur de ce que produisent les salariés, ce qu’elle appelle une « exploitation » au sens technique.</p>
+<p><b>Un exemple.</b> L’idée a pris une grande importance depuis les années 1990. En 1994, David Card et Alan Krueger montrent qu’une hausse du salaire minimum au New Jersey n’a pas réduit l’emploi dans la restauration rapide. Le monopsone peut expliquer ce résultat, qui reste discuté, d’autres études trouvant avec d’autres données un léger recul de l’emploi.</p>
 ${monopsone}
 <h4>3. Avec Keynes</h4>
-<p>Membre du « cirque » de Cambridge, elle participe à la critique et à la relecture des épreuves de la Théorie générale, puis en devient l’une des grandes vulgarisatrices, avec son Introduction à la théorie de l’emploi (1937). Elle insiste sur ce que la synthèse oubliera : l’incertitude, les anticipations, le temps historique irréversible.</p>
+<p><b>La question.</b> Comment faire comprendre une théorie difficile ?</p>
+<p><b>Son raisonnement.</b> Membre du « cirque » de Cambridge, le petit groupe de jeunes économistes qui discute les idées de Keynes, Robinson participe à la critique et à la relecture des épreuves de la Théorie générale. Elle en devient ensuite l’une des grandes vulgarisatrices, avec son Introduction à la théorie de l’emploi (1937). Elle insiste sur ce que la synthèse oubliera, l’incertitude, les anticipations et le temps historique irréversible.</p>
+<p><b>Un exemple.</b> Le cirque, avec Richard Kahn, Piero Sraffa, James Meade et Austin Robinson, se réunit en 1931 pour discuter le Traité sur la monnaie. Ses objections poussent Keynes vers la Théorie générale.</p>
+<p><a href="#c-demande-effective">Pour aller plus loin, la notice « Demande effective » →</a></p>
 <h4>4. Keynes et Marx</h4>
-<p>Dans son Essai sur l’économie marxiste (1942), Robinson lit <a href="#eco-marx">Marx</a> en économiste keynésienne. Elle rejette la théorie de la valeur-travail, qu’elle juge métaphysique, mais retient l’analyse de l’accumulation, de la répartition et des crises. Elle estime que Marx et Keynes posent les mêmes questions sur la dynamique du capitalisme.</p>
+<p><b>La question.</b> Que peut retenir une keynésienne de Marx ?</p>
+<p><b>Son raisonnement.</b> Dans son Essai sur l’économie marxiste (1942), Robinson lit Marx en économiste keynésienne. Elle rejette la théorie de la valeur-travail, qu’elle juge métaphysique, mais retient l’analyse de l’accumulation, de la répartition et des crises. Pour elle, Marx et Keynes posent les mêmes questions sur la dynamique du capitalisme.</p>
+<p><b>Un exemple.</b> Cette ouverture a aussi ses angles morts. Dans les années 1960 et 1970, Robinson se montre très indulgente envers la Chine de Mao et la Corée du Nord, ce qui pèsera sur sa réputation.</p>
+<p><a href="#c-plus-value">Pour aller plus loin, la notice « Plus-value » →</a></p>
 <h4>5. L’accumulation du capital</h4>
-<p>Dans L’Accumulation du capital (1956), elle cherche à étendre l’analyse de Keynes au long terme, en étudiant la croissance, l’investissement, la répartition entre salaires et profits et le progrès technique. Elle développe avec Nicholas Kaldor une théorie post-keynésienne de la répartition, où le taux de profit dépend du taux d’accumulation.</p>
+<p><b>La question.</b> Comment la croissance détermine-t-elle le partage entre salaires et profits ?</p>
+<p><b>Son raisonnement.</b> Dans L’Accumulation du capital (1956), elle cherche à étendre l’analyse de Keynes au long terme, en étudiant la croissance, l’investissement, la répartition entre salaires et profits et le progrès technique. Elle développe avec Nicholas Kaldor une théorie post-keynésienne de la répartition, où le taux de profit dépend du rythme d’accumulation.</p>
+<p><b>Un exemple.</b> Une formule venue de Michał Kalecki résume cette école. Les travailleurs, qui n’épargnent pas, dépensent ce qu’ils gagnent, et les capitalistes gagnent ce qu’ils dépensent. Plus les entreprises investissent, plus les profits sont élevés.</p>
+<p><a href="#c-r-g">Pour aller plus loin, la notice « r > g », sur le partage entre capital et travail →</a></p>
 <h4>6. La controverse sur le capital</h4>
-<p>Robinson pose en 1953 une question simple en apparence : en quelle unité mesure-t-on le « capital » dans les fonctions de production néoclassiques ? Pour additionner des machines différentes, il faut leurs prix, qui dépendent du taux de profit, que le capital est censé expliquer. Ce raisonnement circulaire ouvre la controverse des deux Cambridge.</p>
+<p><b>La question.</b> Qu’est-ce que « le capital », et comment le mesurer ?</p>
+<p><b>Son raisonnement.</b> Robinson pose en 1953 une question simple en apparence. En quelle unité mesure-t-on le capital dans les fonctions de production néoclassiques ? Pour additionner des machines différentes, il faut leurs prix, qui dépendent du taux de profit, que le capital est censé expliquer. Ce raisonnement circulaire ouvre la controverse des deux Cambridge, celle d’Angleterre contre celle du Massachusetts.</p>
+<p><b>Un exemple.</b> En 1966, Paul Samuelson reconnaît dans un article que la critique est fondée sur un point technique, le « retour des techniques », une méthode de production peut redevenir la plus rentable quand le taux de profit change. Les modèles de croissance n’en continuent pas moins d’utiliser un capital agrégé.</p>
+<p><a href="#c-modele-solow">Pour aller plus loin, la notice « Croissance et modèle de Solow » →</a></p>
 ${cambridges}
 <h4>7. Le temps historique</h4>
-<p>Robinson reproche à l’économie dominante de raisonner en « temps logique », en comparant des équilibres, comme si l’on pouvait revenir en arrière. Dans le temps historique, les décisions sont irréversibles et prises dans l’incertitude ; l’équilibre est une fiction dangereuse. Cette critique est au cœur du post-keynésianisme.</p>` },
+<p><b>La question.</b> Peut-on revenir en arrière en économie ?</p>
+<p><b>Son raisonnement.</b> Robinson reproche à l’économie dominante de raisonner en « temps logique », en comparant des équilibres comme si l’on pouvait revenir en arrière. Dans le temps historique, les décisions sont irréversibles et prises dans l’incertitude, et l’équilibre est une fiction dangereuse. Cette critique est au cœur du post-keynésianisme.</p>
+<p><b>Un exemple.</b> Une usine fermée pendant une crise ne rouvre pas simplement parce que la demande revient. Les ouvriers sont partis, les machines ont été vendues, les clients ont trouvé d’autres fournisseurs. L’économie ne retrouve pas son point de départ.</p>
+<p><a href="#c-hysterese">Pour aller plus loin, la notice « Hystérèse du chômage » →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>L’Économie de la concurrence imparfaite (1933).</b> Le livre qui la rend célèbre, consacré au monopole, à la discrimination par les prix et au monopsone.</p>
 <p><b>Essai sur l’économie marxiste (1942).</b> Une lecture de Marx par une économiste keynésienne, qui fait scandale à Cambridge.</p>
@@ -224,20 +244,39 @@ ${vieGalbraith}
 <p>Il s’inquiète aussi des priorités d’une société riche, qui produit toujours plus de biens privés, voitures, téléviseurs, gadgets, mais néglige les écoles, les parcs, les transports publics et l’environnement.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Le pouvoir compensateur</h4>
-<p>Dans Le Capitalisme américain (1952), Galbraith soutient que la concurrence entre petites entreprises a laissé place à de grandes organisations. Ce qui limite leur pouvoir, ce n’est plus la concurrence, mais le « pouvoir compensateur » d’autres grandes organisations : syndicats face aux employeurs, grande distribution face aux producteurs, État face aux uns et aux autres.</p>
+<p><b>La question.</b> Qui limite le pouvoir des grandes entreprises ?</p>
+<p><b>Son raisonnement.</b> Dans Le Capitalisme américain (1952), Galbraith soutient que la concurrence entre petites entreprises a laissé place à de grandes organisations. Ce qui limite leur pouvoir, ce n’est plus la concurrence, mais le « pouvoir compensateur » d’autres grandes organisations, les syndicats face aux employeurs, la grande distribution face aux producteurs, l’État face aux uns et aux autres.</p>
+<p><b>Un exemple.</b> En 1950, le syndicat de l’automobile signe avec General Motors un contrat de cinq ans qui garantit hausses de salaires, retraites et une prise en charge partielle de l’assurance maladie. Un ouvrier isolé n’aurait rien obtenu, un syndicat puissant fait jeu égal avec le géant.</p>
 <h4>2. La sagesse conventionnelle</h4>
-<p>Galbraith forge l’expression de « sagesse conventionnelle » pour désigner les idées acceptées parce qu’elles sont familières, commodes et rassurantes, plutôt que vraies. Les économistes, comme les hommes politiques, y sont particulièrement sujets.</p>
+<p><b>La question.</b> Pourquoi des idées fausses peuvent-elles durer longtemps ?</p>
+<p><b>Son raisonnement.</b> Dans L’Ère de l’opulence (1958), Galbraith forge l’expression de « sagesse conventionnelle » pour désigner les idées acceptées parce qu’elles sont familières, commodes et rassurantes, plutôt que vraies. Les économistes, comme les hommes politiques, y sont particulièrement sujets.</p>
+<p><b>Un exemple.</b> Dans La Crise économique de 1929 (1955), il avait déjà montré comment, avant le krach, presque tout le monde tenait pour acquis que la Bourse ne pouvait que monter. L’idée rassurait tant que personne ne voulait la mettre en doute.</p>
 <h4>3. L’ère de l’opulence</h4>
-<p>Dans L’Ère de l’opulence (1958), il observe que la production de biens de consommation reste l’objectif central de la politique économique, alors que les besoins essentiels sont satisfaits dans une société riche. Il dénonce le déséquilibre entre « l’opulence privée et la misère publique » : des voitures de luxe circulant dans des villes sales, sur des routes mal entretenues.</p>
+<p><b>La question.</b> Une société riche doit-elle encore viser à produire toujours plus ?</p>
+<p><b>Son raisonnement.</b> Dans L’Ère de l’opulence (1958), Galbraith observe que la production de biens de consommation reste l’objectif central de la politique économique, alors que les besoins essentiels sont satisfaits. Il dénonce le déséquilibre entre « l’opulence privée et la misère publique ».</p>
+<p><b>Un exemple.</b> Il décrit une famille qui part en promenade dans une voiture luxueuse et climatisée, traverse des villes mal pavées, sales et enlaidies par les panneaux publicitaires, puis pique-nique au bord d’une rivière polluée. Tout ce qui s’achète est somptueux, tout ce qui est public est négligé.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>
 <h4>4. L’effet de dépendance</h4>
-<p>Dans une société riche, les besoins ne précèdent pas la production : ils sont créés par la production elle-même, à travers la publicité et l’émulation. C’est l’« effet de dépendance ». Il est donc absurde de justifier la croissance de la production privée par la satisfaction de besoins qu’elle a elle-même suscités (<a href="#c-consommation-ostentatoire">voir consommation ostentatoire</a>).</p>
+<p><b>La question.</b> Nos besoins viennent-ils vraiment de nous ?</p>
+<p><b>Son raisonnement.</b> Dans une société riche, les besoins ne précèdent pas la production, ils sont créés par la production elle-même, à travers la publicité et l’imitation. C’est l’« effet de dépendance ». Il est donc absurde de justifier la croissance de la production privée par la satisfaction de besoins qu’elle a elle-même suscités.</p>
+<p><b>Un exemple.</b> Personne ne réclamait un téléphone tactile avant qu’on le lui montre. Les entreprises consacrent aujourd’hui des sommes énormes à la publicité, plusieurs centaines de milliards de dollars par an aux seuls États-Unis, justement pour créer le désir.</p>
+<p><a href="#c-consommation-ostentatoire">Pour aller plus loin, la notice « Consommation ostentatoire » →</a></p>
 <h4>5. La technostructure</h4>
-<p>Dans Le Nouvel État industriel (1967), Galbraith explique que le pouvoir dans la grande entreprise n’appartient plus aux actionnaires ni même aux dirigeants, mais à la « technostructure », l’ensemble des spécialistes qui prennent les décisions collectivement. Son objectif est moins le profit maximal que la sécurité et la croissance de l’entreprise.</p>
+<p><b>La question.</b> Qui décide vraiment dans une grande entreprise ?</p>
+<p><b>Son raisonnement.</b> Dans Le Nouvel État industriel (1967), Galbraith explique que le pouvoir dans la grande entreprise n’appartient plus aux actionnaires ni même aux dirigeants, mais à la « technostructure », l’ensemble des spécialistes qui décident collectivement. Son objectif est moins le profit maximal que la sécurité et la croissance de l’entreprise.</p>
+<p><b>Un exemple.</b> Lancer un nouveau modèle de voiture mobilise pendant des années des ingénieurs, des juristes, des financiers et des spécialistes du marketing. Aucun actionnaire, et même aucun patron, ne maîtrise seul toutes les informations nécessaires pour juger le projet.</p>
+<p><a href="#c-asymetrie-information">Pour aller plus loin, la notice « Asymétrie d’information » →</a></p>
 <h4>6. La filière inversée</h4>
-<p>Pour sécuriser des investissements lourds et longs, la grande entreprise planifie : elle contrôle ses prix, ses approvisionnements et sa demande. La publicité permet de façonner les goûts des consommateurs. La souveraineté du consommateur est en partie une fiction : c’est la « filière inversée ».</p>
+<p><b>La question.</b> Est-ce le consommateur qui décide ce qu’on produit ?</p>
+<p><b>Son raisonnement.</b> Pour sécuriser des investissements lourds et longs, la grande entreprise planifie. Elle contrôle ses prix, ses approvisionnements et sa demande, et la publicité façonne les goûts des consommateurs. La souveraineté du consommateur est en partie une fiction, et la décision remonte de l’entreprise vers le client, c’est la « filière inversée ».</p>
+<p><b>Un exemple.</b> Une entreprise qui investit des milliards dans un nouveau produit ne laisse pas sa demande au hasard. Études de marché, campagnes publicitaires, contrats à long terme avec ses fournisseurs, tout est organisé bien avant la mise en vente.</p>
+<p><a href="#c-concurrence-imparfaite">Pour aller plus loin, la notice « Monopole, oligopole et monopsone » →</a></p>
 ${sequence}
 <h4>7. Le rôle de l’État</h4>
-<p>Galbraith en tire un programme keynésien et social : investissement public dans l’éducation, la santé, les transports et l’environnement ; contrôle des prix et des salaires dans les secteurs concentrés pour lutter contre l’inflation ; réglementation de la grande entreprise. Il défend une économie mixte, où l’État équilibre le pouvoir des grandes organisations.</p>` },
+<p><b>La question.</b> Que doit faire l’État dans une société riche ?</p>
+<p><b>Son raisonnement.</b> Galbraith en tire un programme keynésien et social, l’investissement public dans l’éducation, la santé, les transports et l’environnement, le contrôle des prix et des salaires dans les secteurs concentrés pour lutter contre l’inflation, et la réglementation de la grande entreprise. Il défend une économie mixte, où l’État équilibre le pouvoir des grandes organisations.</p>
+<p><b>Un exemple.</b> Galbraith parle d’expérience. Pendant la Seconde Guerre mondiale, il dirige une partie du contrôle des prix aux États-Unis. Il conseille plus tard John F. Kennedy, qui le nomme ambassadeur en Inde de 1961 à 1963.</p>
+<p><a href="#c-bien-public">Pour aller plus loin, la notice « Bien public » →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Le Capitalisme américain : le concept de pouvoir compensateur (1952).</b> Une description de l’économie américaine dominée par de grandes organisations qui se font contrepoids.</p>
 <p><b>La Crise économique de 1929 (1955).</b> Un récit vivant et ironique du krach et de la spéculation qui l’a précédé, toujours réédité, notamment après chaque crise boursière.</p>

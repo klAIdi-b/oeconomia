@@ -41,16 +41,31 @@ ${vieWaring}
 <p>Dans les années 1970 et 1980, les mouvements féministes ont déjà dénoncé le travail domestique « invisible ». Waring apporte un angle nouveau : elle examine les règles comptables elles-mêmes, ligne par ligne, pour montrer comment elles ont été écrites, par qui, et avec quelles conséquences.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Ce que le PIB compte</h4>
-<p>Les comptes nationaux mesurent la production vendue sur un marché, plus les services des administrations. Une activité n’est « productive » que si elle donne lieu à un paiement.</p>
+<p><b>La question.</b> Que mesure vraiment le PIB ?</p>
+<p><b>Son raisonnement.</b> Les comptes nationaux mesurent surtout la production vendue sur un marché, plus les services des administrations. Le travail domestique fait gratuitement pour sa famille n’y entre pas.</p>
+<p><b>Un exemple.</b> Un exemple classique, dû à l’économiste Arthur Pigou, résume le problème. Si un homme épouse son employée de maison et qu’elle continue le même travail sans salaire, le revenu national baisse, alors que rien n’a changé dans la maison. Marilyn Waring le reprend dans son livre If Women Counted (1988).</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>
 <h4>2. Ce qu’il oublie</h4>
-<p>Cuisiner, nettoyer, élever des enfants, soigner un parent malade, aller chercher l’eau et le bois : ce travail, souvent plus long que le travail payé, n’entre pas dans les comptes quand il est fait gratuitement pour sa famille. Il est assuré en majorité par des femmes (<a href="#c-travail-non-remunere">voir travail non rémunéré</a>).</p>
+<p><b>La question.</b> Quel travail le PIB ignore-t-il ?</p>
+<p><b>Son raisonnement.</b> Cuisiner, nettoyer, élever des enfants, soigner un parent malade, ce travail, souvent plus long que le travail payé, n’entre pas dans les comptes quand il est fait gratuitement pour sa famille. Il est assuré en majorité par des femmes. Quand Waring écrit, aller chercher l’eau et le bois en était aussi exclu en pratique. Les règles de 1993 l’ont intégré, mais il reste souvent mal mesuré.</p>
+<p><b>Un exemple.</b> Waring découvre ce problème comme députée en Nouvelle-Zélande, élue en 1975 à 23 ans, en examinant le budget national. En Suisse, l’Office fédéral de la statistique compte en 2020 plus d’heures de travail non rémunéré que de travail rémunéré.</p>
+<p><a href="#c-travail-non-remunere">Pour aller plus loin, la notice « Travail non rémunéré » →</a></p>
 ${compte}
 <h4>3. Ce qu’il compte à tort</h4>
-<p>À l’inverse, le PIB augmente quand on abat une forêt, quand on répare les dégâts d’une marée noire ou quand on fabrique des armes. Il ne distingue pas ce qui améliore la vie de ce qui la détruit, et traite la nature comme gratuite (<a href="#c-externalite">voir externalité</a>).</p>
+<p><b>La question.</b> Tout ce qui augmente le PIB améliore-t-il la vie ?</p>
+<p><b>Son raisonnement.</b> À l’inverse, le PIB augmente quand on abat une forêt, quand on répare les dégâts d’une marée noire ou quand on fabrique des armes. Il ne distingue pas ce qui améliore la vie de ce qui la détruit, et traite la nature comme gratuite.</p>
+<p><b>Un exemple.</b> Après le naufrage du pétrolier Exxon Valdez en Alaska, en 1989, les milliards dépensés pour nettoyer les côtes s’ajoutent au PIB américain. La destruction de la faune et des plages, elle, n’est soustraite nulle part.</p>
+<p><a href="#c-externalite">Pour aller plus loin, la notice « Externalité » →</a></p>
 <h4>4. Invisible, donc absent des politiques</h4>
-<p>Pour Waring, ces conventions ont des effets très concrets. Un projet d’aide qui fait gagner du temps aux femmes, comme un puits près du village, paraît sans valeur dans les comptes. Une coupe dans les services publics semble faire des économies, alors qu’elle reporte le travail sur les familles.</p>
+<p><b>La question.</b> Que devient ce qui n’est pas compté ?</p>
+<p><b>Son raisonnement.</b> Pour Waring, ces conventions ont des effets très concrets. Ce qui n’est pas compté ne pèse pas dans les décisions. Une coupe dans les services publics semble faire des économies, alors qu’elle reporte le travail sur les familles.</p>
+<p><b>Un exemple.</b> Un puits creusé près d’un village peut épargner aux femmes des heures de marche chaque jour. Dans les comptes, ce temps gagné ne vaut rien, et le projet paraît moins rentable qu’une route qui transporte des marchandises vendues.</p>
+<p><a href="#c-capabilites">Pour aller plus loin, la notice « Capabilités », qui mesure le développement autrement →</a></p>
 <h4>5. Compter le temps</h4>
-<p>Plutôt que d’attribuer à tout un prix, Waring propose de mesurer le temps : des enquêtes sur l’emploi du temps de chacun, payé ou non, et des comptes de l’état des ressources naturelles. Le temps, dit-elle, est la seule ressource que chacun possède en quantité égale.</p>` },
+<p><b>La question.</b> Comment mesurer autrement l’activité humaine ?</p>
+<p><b>Son raisonnement.</b> Plutôt que d’attribuer un prix à tout, Waring propose de mesurer le temps, par des enquêtes sur l’emploi du temps de chacun, payé ou non, et par des comptes de l’état des ressources naturelles. Le temps, dit-elle, est la seule ressource que chacun possède en quantité égale.</p>
+<p><b>Un exemple.</b> En 1995, la conférence de l’ONU sur les femmes, à Pékin, recommande aux pays de mesurer le travail non rémunéré dans des comptes à part. De nombreux pays, dont la Suisse, publient aujourd’hui de tels « comptes satellites ».</p>
+<p><a href="#c-travail-non-remunere">Pour aller plus loin, la notice « Travail non rémunéré » →</a></p>` },
       { id: "livres", titre: "Les livres et le film qui comptent", html: `
 <p><b>Counting for Nothing (1988), publié aux États-Unis sous le titre If Women Counted.</b> Le livre fondateur, accessible et souvent drôle.</p>
 <p><b>« Who’s Counting? Marilyn Waring on Sex, Lies and Global Economics » (1995).</b> Le documentaire de Terre Nash, produit par l’Office national du film du Canada, qui a diffusé ses idées dans le monde entier.</p>
@@ -184,18 +199,35 @@ ${vieKelton}
 <p>La théorie moderne de la monnaie reprend des idées anciennes. Georg Friedrich Knapp soutenait dès 1905 que la monnaie est une création de l’État, qui l’impose en exigeant qu’on paie l’impôt avec elle. Abba Lerner proposait en 1943 une « finance fonctionnelle » : juger la dépense publique à ses effets sur l’emploi et les prix, et non à l’équilibre du budget. Dans les années 1990, l’investisseur Warren Mosler et l’économiste Randall Wray en tirent un ensemble cohérent.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’État n’est pas un ménage</h4>
-<p>Un ménage doit gagner de l’argent avant de le dépenser. Un État qui émet sa propre monnaie, avec un taux de change flottant et une dette dans cette monnaie, est dans une situation différente : il crée la monnaie en dépensant. Il ne peut donc jamais être forcé à la faillite dans sa propre monnaie, contrairement à la Grèce dans la zone euro ou à un pays endetté en dollars.</p>
+<p><b>La question.</b> Un État doit-il gagner de l’argent avant de le dépenser ?</p>
+<p><b>Son raisonnement.</b> Un ménage doit gagner de l’argent avant de le dépenser. Un État qui émet sa propre monnaie, avec un taux de change flottant et une dette dans cette monnaie, est dans une situation différente, il crée la monnaie en dépensant. Il n’est donc jamais obligé de faire défaut dans sa propre monnaie, même si certains États l’ont fait par choix politique, comme la Russie en 1998, contrairement à la Grèce dans la zone euro ou à un pays endetté en dollars.</p>
+<p><b>Un exemple.</b> Le Japon, dont la dette publique dépasse depuis des années deux fois sa production annuelle (environ 207 % en 2025 selon le FMI), emprunte à des taux très bas, car sa dette est en yens. La Grèce, endettée en euros qu’elle ne pouvait pas créer, a dû restructurer sa dette en 2012.</p>
 ${circuit}
 <h4>2. L’inflation, vraie limite</h4>
-<p>Cela ne veut pas dire que l’État peut dépenser sans limite. S’il demande plus de travailleurs, de matériaux et d’énergie qu’il n’y en a de disponibles, les prix montent. La question à poser n’est donc pas « comment le payer ? », mais « avons-nous les ressources ? ».</p>
+<p><b>La question.</b> Qu’est-ce qui limite vraiment les dépenses publiques ?</p>
+<p><b>Son raisonnement.</b> Cela ne veut pas dire que l’État peut dépenser sans limite. S’il demande plus de travailleurs, de matériaux et d’énergie qu’il n’y en a de disponibles, les prix montent. La question à poser n’est donc pas « comment le payer ? », mais « avons-nous les ressources ? ».</p>
+<p><b>Un exemple.</b> L’inflation de 2021-2022, après des dépenses publiques massives, a rappelé que cette limite est bien réelle. Les partisans de Kelton y voient une confirmation de leur critère, leurs critiques la preuve que la limite est atteinte plus vite qu’ils ne le disaient.</p>
+<p><a href="#c-theorie-quantitative">Pour aller plus loin, la notice « Théorie quantitative de la monnaie », qui défend une autre vision →</a></p>
 <h4>3. À quoi sert l’impôt</h4>
-<p>Dans cette vision, l’impôt ne sert pas d’abord à financer l’État. Il crée une demande pour la monnaie, puisqu’il faut la posséder pour payer ses impôts, il retire de la monnaie quand l’économie chauffe, et il permet d’orienter les comportements, par exemple en taxant la pollution.</p>
+<p><b>La question.</b> À quoi sert l’impôt, si l’État crée la monnaie ?</p>
+<p><b>Son raisonnement.</b> Dans cette vision, l’impôt ne sert pas d’abord à financer l’État. Il crée une demande pour la monnaie, puisqu’il faut la posséder pour payer ses impôts. Il retire de la monnaie quand l’économie chauffe. Et il permet d’orienter les comportements, par exemple en taxant la pollution.</p>
+<p><b>Un exemple.</b> Dans l’Afrique coloniale, les administrations imposaient des taxes payables uniquement dans leur monnaie, ce qui obligeait les habitants à travailler pour elles ou à leur vendre des produits pour en obtenir. Aujourd’hui, une taxe sur le carbone, comme celle de la Suède depuis 1991, sert surtout à modifier les comportements.</p>
+<p><a href="#c-externalite">Pour aller plus loin, la notice « Externalité » →</a></p>
 <h4>4. Leur déficit est notre excédent</h4>
-<p>Quand l’État dépense plus qu’il ne prélève, la différence reste dans les mains des ménages et des entreprises. Le déficit public est donc, en comptabilité, l’excédent du secteur privé. Réduire le déficit, c’est réduire l’épargne financière du privé.</p>
+<p><b>La question.</b> Le déficit public appauvrit-il le pays ?</p>
+<p><b>Son raisonnement.</b> Quand l’État dépense plus qu’il ne prélève, la différence reste dans les mains des ménages et des entreprises. Le déficit public est donc, en comptabilité, l’excédent du secteur privé, avec celui du reste du monde. Réduire le déficit, c’est réduire l’épargne financière du privé.</p>
+<p><b>Un exemple.</b> De 1998 à 2001, le budget fédéral américain est en excédent. Les mêmes années, les ménages américains s’endettent fortement. Pour Kelton, les deux faits sont liés.</p>
+<p><a href="#c-equivalence-ricardienne">Pour aller plus loin, la notice « Équivalence ricardienne », qui propose une tout autre lecture du déficit →</a></p>
 <h4>5. La garantie d’emploi</h4>
-<p>Kelton propose que l’État offre un emploi à salaire fixe à toute personne qui en cherche un, dans des services utiles à la collectivité. Ce stock d’emplois grossirait en récession et se viderait en période de croissance, servant à la fois contre le chômage et contre l’inflation.</p>
+<p><b>La question.</b> L’État peut-il garantir un emploi à chacun ?</p>
+<p><b>Son raisonnement.</b> Kelton propose que l’État offre un emploi à salaire fixe à toute personne qui en cherche un, dans des services utiles à la collectivité. Ce réservoir d’emplois grossirait en récession et se viderait en période de croissance, servant à la fois contre le chômage et contre l’inflation.</p>
+<p><b>Un exemple.</b> Minsky en a donné une des premières formulations. L’Argentine en a tenté une version en 2002, après sa crise, avec un programme qui employait environ deux millions de chefs de famille dans des travaux d’intérêt collectif. Le programme a aussi été critiqué pour son clientélisme.</p>
+<p><a href="#c-hysterese">Pour aller plus loin, la notice « Hystérèse du chômage », sur le coût du chômage de longue durée →</a></p>
 <h4>6. La monnaie créée par le crédit</h4>
-<p>Comme les post-keynésiens, Kelton considère que la monnaie est créée quand l’État dépense et quand les banques prêtent, et non fixée par la banque centrale (<a href="#c-monnaie-endogene">voir monnaie endogène</a>).</p>` },
+<p><b>La question.</b> Qui crée la monnaie ?</p>
+<p><b>Son raisonnement.</b> Comme les post-keynésiens, Kelton considère que la monnaie est créée quand l’État dépense et quand les banques prêtent, et non fixée par la banque centrale.</p>
+<p><b>Un exemple.</b> En 2014, la Banque d’Angleterre l’a écrit noir sur blanc dans un article de son bulletin. Quand une banque accorde un prêt, elle crée en même temps un dépôt sur le compte de l’emprunteur, c’est-à-dire de la monnaie nouvelle.</p>
+<p><a href="#c-monnaie-endogene">Pour aller plus loin, la notice « Monnaie endogène » →</a></p>` },
       { id: "livres", titre: "Les livres et articles qui comptent", html: `
 <p><b>Le Mythe du déficit (2020).</b> Son livre grand public, qui démonte six « mythes » sur la dette et le déficit.</p>
 <p><b>« Can Taxes and Bonds Finance Government Spending? » (1998, sous son nom de naissance, Stephanie Bell).</b> Son article de recherche sur le circuit de la dépense publique.</p>

@@ -54,21 +54,40 @@ ${vieSamuelson}
 <p>Après la guerre, les États-Unis deviennent le centre mondial de la recherche économique. Les universités se développent, les gouvernements recrutent des économistes, et la discipline se professionnalise. Le manuel de Samuelson et ses travaux théoriques façonnent cette nouvelle économie scientifique.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’économie comme science mathématique</h4>
-<p>Dans les Fondements (1947), Samuelson montre que des problèmes en apparence différents, le comportement du consommateur, de l’entreprise, l’équilibre des marchés, peuvent tous être formulés comme des problèmes de maximisation sous contrainte. Il en tire une méthode générale et des prédictions testables. Il introduit aussi le « principe de correspondance » entre la stabilité d’un équilibre et les effets d’un changement des conditions.</p>
+<p><b>La question.</b> Peut-on écrire toute l’économie avec les mêmes outils ?</p>
+<p><b>Son raisonnement.</b> Dans les Fondements de l’analyse économique (1947), Samuelson montre que des problèmes en apparence différents, le comportement du consommateur, celui de l’entreprise, l’équilibre des marchés, peuvent tous être formulés comme des problèmes de maximisation sous contrainte. Il en tire une méthode générale et des prédictions vérifiables.</p>
+<p><b>Un exemple.</b> Le livre est tiré de sa thèse de Harvard. Son manuel, L’Économique (1948), se vend à des millions d’exemplaires et forme des générations d’étudiants. En 1970, Samuelson devient le premier Américain à recevoir le prix Nobel d’économie.</p>
 <h4>2. Les préférences révélées</h4>
-<p>En 1938, il propose de déduire les préférences des consommateurs de leurs choix observés, sans supposer une utilité mesurable. Si un consommateur choisit un panier alors qu’un autre était abordable, il « révèle » qu’il le préfère. Cette approche fonde l’analyse empirique de la demande.</p>
+<p><b>La question.</b> Comment connaître les goûts de quelqu’un sans le lui demander ?</p>
+<p><b>Son raisonnement.</b> En 1938, Samuelson propose de déduire les préférences des consommateurs de leurs choix observés, sans supposer une utilité mesurable. Si un consommateur choisit un panier alors qu’un autre lui était accessible, il « révèle » qu’il le préfère. Cette approche fonde l’analyse empirique de la demande.</p>
+<p><b>Un exemple.</b> Si vous prenez un thé alors qu’un café au même prix était disponible, vous révélez que vous préférez le thé, au moins ce jour-là. En observant des millions de tels choix, on peut reconstituer les préférences sans jamais mesurer le plaisir.</p>
+<p><a href="#c-utilite-marginale">Pour aller plus loin, la notice « Utilité marginale » →</a></p>
 <h4>3. Le multiplicateur-accélérateur</h4>
-<p>En 1939, il combine le <a href="#c-multiplicateur">multiplicateur</a> de Keynes et l’accélérateur, selon lequel l’investissement dépend de la croissance des ventes. Il montre que leur interaction peut produire des oscillations : une première explication mathématique des <a href="#c-cycles">cycles</a>.</p>
+<p><b>La question.</b> Pourquoi l’activité économique oscille-t-elle ?</p>
+<p><b>Son raisonnement.</b> En 1939, Samuelson combine le multiplicateur de Keynes et l’accélérateur, selon lequel l’investissement dépend de la croissance des ventes. Il montre que leur interaction peut produire des oscillations, amorties ou amplifiées, une des premières explications mathématiques des cycles. Le modèle lui est suggéré par son professeur Alvin Hansen.</p>
+<p><b>Un exemple.</b> Quand les ventes de voitures augmentent, les constructeurs commandent des machines pour produire plus. Si les ventes cessent simplement d’augmenter, même à un niveau élevé, les commandes de machines s’effondrent, ce qui réduit les revenus et les ventes, et le cycle s’inverse.</p>
+<p><a href="#c-cycles">Pour aller plus loin, la notice « Cycles économiques » →</a></p>
 ${apports}
 <h4>4. Le commerce international</h4>
-<p>Avec Wolfgang Stolper, en 1941, il montre que le libre-échange peut nuire au facteur de production relativement rare dans un pays : dans un pays riche en capital, les travailleurs peu qualifiés peuvent perdre au commerce avec des pays riches en main-d’œuvre. En 1948, il montre que le commerce tend à égaliser les rémunérations des facteurs entre pays. En 2004, il souligne encore que la délocalisation vers la Chine peut faire des perdants aux États-Unis.</p>
+<p><b>La question.</b> Le libre-échange profite-t-il à tout le monde ?</p>
+<p><b>Son raisonnement.</b> Avec Wolfgang Stolper, en 1941, Samuelson montre que le libre-échange peut nuire au facteur de production relativement rare dans un pays. Dans un pays riche en capital, les travailleurs peu qualifiés peuvent perdre au commerce avec des pays riches en main-d’œuvre. En 1948, il montre que le commerce tend à rapprocher les rémunérations des facteurs entre pays.</p>
+<p><b>Un exemple.</b> En 2004, à 89 ans, il publie un article remarqué où il montre que les progrès de la Chine dans les secteurs où les États-Unis sont forts peuvent faire baisser durablement le revenu moyen des Américains. Les études sur le « choc chinois », publiées à partir de 2013, montreront de fortes pertes d’emplois dans les régions industrielles américaines concurrencées.</p>
+<p><a href="#c-avantage-comparatif">Pour aller plus loin, la notice « Avantage comparatif » →</a></p>
 <h4>5. Les biens publics</h4>
-<p>En 1954, dans un article de trois pages, il donne la définition moderne des <a href="#c-bien-public">biens publics</a>, non rivaux, et la règle de leur quantité efficace : la somme des dispositions à payer de tous doit égaler le coût.</p>
+<p><b>La question.</b> Qui doit payer une digue ou un phare ?</p>
+<p><b>Son raisonnement.</b> En 1954, dans un article de trois pages, Samuelson donne la définition moderne des biens publics, dont la consommation par l’un ne réduit pas celle des autres, et la règle de leur quantité efficace. La somme de ce que chacun est prêt à payer pour une unité de plus doit égaler le coût de cette unité.</p>
+<p><b>Un exemple.</b> Une digue protège tout un village. Chacun a intérêt à attendre que les autres la paient, puisqu’il en profitera de toute façon. Si tout le monde raisonne ainsi, la digue n’est jamais construite, d’où la nécessité d’un financement collectif.</p>
+<p><a href="#c-bien-public">Pour aller plus loin, la notice « Bien public » →</a></p>
 <h4>6. La synthèse néoclassique</h4>
-<p>Samuelson réconcilie Keynes et la théorie néoclassique : à court terme, l’économie peut connaître un chômage durable, que la politique budgétaire et monétaire doit combattre ; une fois le plein emploi rétabli, les mécanismes de marché classiques s’appliquent. Avec Robert Solow, il présente en 1960 la <a href="#c-courbe-phillips">courbe de Phillips</a> comme un menu de choix entre inflation et chômage.</p>
+<p><b>La question.</b> Comment concilier Keynes et le fonctionnement des marchés ?</p>
+<p><b>Son raisonnement.</b> Samuelson réconcilie Keynes et la théorie néoclassique. À court terme, l’économie peut connaître un chômage durable, que la politique budgétaire et monétaire doit combattre. Une fois le plein emploi rétabli, les mécanismes de marché classiques s’appliquent.</p>
+<p><b>Un exemple.</b> Avec Robert Solow, il présente en 1960 la courbe de Phillips comme un menu. Selon leurs estimations pour les États-Unis, un chômage d’environ 3 % irait avec une inflation de 4 à 5 % par an. Ils avertissaient déjà que ce menu pourrait changer avec le temps, et la stagflation des années 1970 le montrera.</p>
+<p><a href="#c-courbe-phillips">Pour aller plus loin, la notice « Courbe de Phillips » →</a></p>
 ${synthese}
 <h4>7. La finance et les générations</h4>
-<p>En 1958, il crée le modèle des « générations imbriquées », qui étudie les échanges entre jeunes et vieux et éclaire le financement des retraites. En 1965, il démontre que des prix correctement anticipés fluctuent de manière aléatoire, une base de la théorie des marchés efficients.</p>` },
+<p><b>La question.</b> Comment les générations s’échangent-elles des ressources, et peut-on prévoir la Bourse ?</p>
+<p><b>Son raisonnement.</b> En 1958, Samuelson crée le modèle des « générations imbriquées », qui étudie les échanges entre jeunes et vieux et éclaire le financement des retraites. En 1965, il démontre que des prix correctement anticipés fluctuent de manière imprévisible, une base de la théorie des marchés efficients.</p>
+<p><b>Un exemple.</b> Un système de retraite par répartition, comme l’AVS en Suisse, paie les rentes des retraités surtout avec les cotisations des actifs. Le modèle de Samuelson montre qu’un tel système peut profiter à toutes les générations tant que la population augmente assez vite. Henry Aaron montre en 1966 que la croissance des revenus joue le même rôle, à condition de dépasser le taux d’intérêt.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Fondements de l’analyse économique (1947).</b> Sa thèse de doctorat, qui fait de l’économie une discipline mathématique unifiée. C’est l’un des livres les plus influents de l’histoire de l’économie au XXe siècle.</p>
 <p><b>L’Économique (1948).</b> Le manuel d’introduction le plus vendu de l’histoire, qui a formé des générations d’étudiants dans le monde entier et diffusé la synthèse néoclassique.</p>
@@ -222,21 +241,40 @@ ${vieMinsky}
 <p>Il juge que l’économie dominante, qui étudie des équilibres sans monnaie ni banques, est incapable de comprendre ces phénomènes. Il se réclame d’une lecture de <a href="#eco-keynes">Keynes</a> centrée sur l’incertitude, la finance et l’investissement, et de l’analyse des crises d’Irving Fisher.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Une économie de Wall Street</h4>
-<p>Minsky propose d’étudier l’économie du point de vue d’un banquier de Wall Street : un réseau d’engagements financiers, où chaque agent doit faire face à des paiements futurs avec des revenus incertains. L’investissement, financé par la dette, est le moteur de l’économie et la source de son instabilité.</p>
+<p><b>La question.</b> Qu’est-ce qui fait tourner une économie capitaliste ?</p>
+<p><b>Son raisonnement.</b> Minsky propose d’étudier l’économie du point de vue d’un banquier de Wall Street, comme un réseau d’engagements financiers, où chacun doit faire face à des paiements futurs avec des revenus incertains. L’investissement, financé par la dette, est le moteur de l’économie et la source de son instabilité.</p>
+<p><b>Un exemple.</b> Une entreprise qui construit une usine s’engage à payer des intérêts pendant vingt ans, avec des recettes qu’elle ne connaît pas encore. Toute l’économie est une toile de tels engagements, et il suffit que quelques fils cèdent pour que d’autres se tendent.</p>
+<p><a href="#c-instabilite-financiere">Pour aller plus loin, la notice « Hypothèse d’instabilité financière » →</a></p>
 <h4>2. Les trois postures de financement</h4>
-<p>Un emprunteur en « couverture » peut rembourser intérêts et capital avec ses revenus. Un emprunteur « spéculatif » ne peut payer que les intérêts et doit refinancer le capital. Un emprunteur « Ponzi » ne peut même pas payer les intérêts : il compte sur la hausse de la valeur de ses actifs pour rembourser.</p>
+<p><b>La question.</b> Tous les emprunteurs prennent-ils le même risque ?</p>
+<p><b>Son raisonnement.</b> Un emprunteur « en couverture » peut rembourser intérêts et capital avec ses revenus. Un emprunteur « spéculatif » ne peut payer que les intérêts et doit refinancer le capital. Un emprunteur « Ponzi » ne peut même pas payer les intérêts, il compte sur la hausse de la valeur de ses biens pour rembourser.</p>
+<p><b>Un exemple.</b> Un ménage qui rembourse son crédit immobilier avec son salaire est en couverture. Un promoteur qui compte emprunter à nouveau pour rembourser est spéculatif. Un acheteur qui ne peut payer ses intérêts qu’en revendant plus cher est en position Ponzi, comme bien des emprunteurs « subprime » américains vers 2006.</p>
 ${regimes}
 <h4>3. La stabilité est déstabilisante</h4>
-<p>Pendant une période calme, les défauts sont rares, les banques et les emprunteurs gagnent confiance, réduisent leurs marges de sécurité et s’endettent davantage. La part des postures spéculatives et Ponzi augmente, sans que personne ne le remarque, car tout semble bien se passer.</p>
+<p><b>La question.</b> Pourquoi les périodes calmes préparent-elles les crises ?</p>
+<p><b>Son raisonnement.</b> Pendant une période calme, les défauts sont rares, les banques et les emprunteurs prennent confiance, réduisent leurs marges de sécurité et s’endettent davantage. La part des postures spéculatives et Ponzi augmente, sans que personne ne le remarque, car tout semble bien se passer.</p>
+<p><b>Un exemple.</b> Du milieu des années 1980 à 2007, les économistes parlent de « Grande Modération », tant l’inflation et les fluctuations sont faibles. C’est précisément pendant ces années que l’endettement des ménages américains grimpe très fortement.</p>
+<p><a href="#c-cycles">Pour aller plus loin, la notice « Cycles économiques » →</a></p>
 <h4>4. Le moment Minsky</h4>
-<p>Il suffit alors d’un choc modeste, une hausse des taux, une baisse des prix des actifs, pour que les emprunteurs Ponzi ne puissent plus payer. Ils doivent vendre leurs actifs, ce qui fait baisser les prix, met en difficulté d’autres emprunteurs, et déclenche une spirale de ventes forcées et de faillites (<a href="#c-instabilite-financiere">voir instabilité financière</a>).</p>
+<p><b>La question.</b> Comment une crise financière se déclenche-t-elle ?</p>
+<p><b>Son raisonnement.</b> Il suffit alors d’un choc modeste, une hausse des taux ou une baisse du prix des actifs, pour que les emprunteurs Ponzi ne puissent plus payer. Ils doivent vendre, ce qui fait baisser les prix, met en difficulté d’autres emprunteurs et déclenche une spirale de ventes forcées et de faillites.</p>
+<p><b>Un exemple.</b> L’expression « moment Minsky » est lancée en 1998 par l’investisseur Paul McCulley, à propos de la crise russe. Elle devient célèbre en 2007-2008, quand la baisse des prix immobiliers américains déclenche exactement ce type de spirale.</p>
+<p><a href="#c-instabilite-financiere">Pour aller plus loin, la notice « Hypothèse d’instabilité financière » →</a></p>
 ${cycleMinsky}
 <h4>5. La grande banque et le grand État</h4>
-<p>Pour Minsky, ce qui empêche les crises de dégénérer en dépressions, depuis 1945, c’est le « grand gouvernement », dont les déficits soutiennent les profits en récession, et la « grande banque », la banque centrale, qui agit comme <a href="#c-preteur-dernier-ressort">prêteur en dernier ressort</a>. Ces interventions sont indispensables.</p>
+<p><b>La question.</b> Pourquoi n’y a-t-il pas eu de nouvelle Grande Dépression après 1945 ?</p>
+<p><b>Son raisonnement.</b> Pour Minsky, ce qui empêche les crises de dégénérer en dépressions, c’est le « grand gouvernement », dont les déficits soutiennent les profits pendant les récessions, et la « grande banque », la banque centrale, qui agit comme prêteur en dernier ressort. Ces interventions sont indispensables.</p>
+<p><b>Un exemple.</b> En 2008-2009, les banques centrales prêtent massivement aux banques et les déficits publics se creusent fortement. La récession est profonde, mais elle ne devient pas une dépression comparable à celle des années 1930.</p>
+<p><a href="#c-preteur-dernier-ressort">Pour aller plus loin, la notice « Prêteur en dernier ressort » →</a></p>
 <h4>6. Le revers des sauvetages</h4>
-<p>Mais en évitant les faillites, les interventions valident après coup les comportements risqués et encouragent de nouveaux endettements : c’est une forme d’<a href="#c-alea-moral">aléa moral</a>. Chaque crise évitée prépare la suivante, à une échelle plus grande. L’innovation financière, qui contourne sans cesse les règles, accentue ce processus.</p>
+<p><b>La question.</b> Sauver les banques prépare-t-il la crise suivante ?</p>
+<p><b>Son raisonnement.</b> En évitant les faillites, les interventions valident après coup les comportements risqués et encouragent de nouveaux endettements. C’est une forme d’aléa moral. Chaque crise évitée prépare la suivante, à une échelle plus grande, et l’innovation financière, qui contourne sans cesse les règles, accentue ce processus.</p>
+<p><b>Un exemple.</b> En 1998, la Réserve fédérale de New York organise le sauvetage du fonds LTCM par ses créanciers. Pour beaucoup d’observateurs, l’épisode a conforté l’idée que les grands acteurs de la finance seraient toujours secourus.</p>
+<p><a href="#c-alea-moral">Pour aller plus loin, la notice « Aléa moral » →</a></p>
 <h4>7. Stabiliser une économie instable</h4>
-<p>Minsky propose de réguler fortement les banques, de limiter l’endettement, de préférer les investissements publics et les emplois garantis par l’État, l’« employeur en dernier ressort », plutôt que les transferts, et de réformer la fiscalité pour réduire l’incitation à l’endettement.</p>` },
+<p><b>La question.</b> Comment rendre la finance moins instable ?</p>
+<p><b>Son raisonnement.</b> Minsky propose de réguler fortement les banques, de limiter l’endettement, de préférer les investissements publics et les emplois garantis par l’État, l’« employeur en dernier ressort », aux simples transferts, et de réformer la fiscalité pour réduire l’incitation à s’endetter.</p>
+<p><b>Un exemple.</b> Après 2008, les accords de Bâle III obligent les banques à détenir davantage de fonds propres, dans un esprit proche du sien. Son idée d’emplois garantis par l’État est reprise par les économistes de la théorie moderne de la monnaie, dont Stephanie Kelton.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>John Maynard Keynes (1975).</b> Une relecture de Keynes centrée sur l’investissement, la finance et l’incertitude, contre la synthèse néoclassique.</p>
 <p><b>Est-ce que « cela » peut se reproduire ? (1982).</b> Un recueil d’essais, dont le titre pose la question d’une nouvelle Grande Dépression.</p>

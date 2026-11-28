@@ -54,21 +54,41 @@ ${vieWalras}
 <p>En Suisse, il trouve un environnement plus ouvert, une université récente qui accueille les idées nouvelles, et un canton dirigé par des radicaux réformateurs. C’est depuis Lausanne qu’il découvre, en 1874, que l’Anglais William Stanley Jevons a publié des idées voisines en 1871, puis que l’Autrichien Carl Menger a fait de même : l’utilité marginale a été découverte trois fois, indépendamment.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Science, art et morale</h4>
-<p>Walras distingue trois économies : l’économie pure, science de la détermination des prix, l’économie appliquée, art d’organiser la production, et l’économie sociale, réflexion sur la justice dans la répartition.</p>
+<p><b>La question.</b> L’économie est-elle une science, un art ou une morale ?</p>
+<p><b>Son raisonnement.</b> Les trois à la fois, répond Walras, mais il faut les distinguer. L’économie pure est la science de la formation des prix. L’économie appliquée est l’art d’organiser la production. L’économie sociale réfléchit à la justice dans la répartition des richesses.</p>
+<p><b>Un exemple.</b> Pour une boulangerie, la formation du prix du pain relève de l’économie pure, la meilleure façon d’organiser le fournil de l’économie appliquée, et la question de savoir si le mitron est justement payé de l’économie sociale.</p>
 ${trois}
 <h4>2. La rareté</h4>
-<p>Reprenant l’idée de son père, Walras fonde la valeur d’échange sur la « rareté », qu’il définit comme l’intensité du dernier besoin satisfait par une quantité consommée, c’est-à-dire l’<a href="#c-utilite-marginale">utilité marginale</a>. À l’équilibre, chaque consommateur répartit ses dépenses de façon que les raretés soient proportionnelles aux prix.</p>
+<p><b>La question.</b> Qu’est-ce qui fait la valeur d’un bien ?</p>
+<p><b>Son raisonnement.</b> Reprenant une idée de son père, Walras fonde la valeur d’échange sur la « rareté », qu’il définit comme l’intensité du dernier besoin satisfait par la quantité consommée, ce qu’on appelle aujourd’hui l’utilité marginale. À l’équilibre, chaque consommateur répartit ses dépenses de façon que les raretés soient proportionnelles aux prix.</p>
+<p><b>Un exemple.</b> Le premier verre d’eau d’un randonneur assoiffé vaut beaucoup pour lui, le dixième presque rien. C’est le dernier verre qui compte pour le prix. Walras arrive à cette idée au début des années 1870, en même temps que Jevons et Menger, sans les connaître.</p>
+<p><a href="#c-utilite-marginale">Pour aller plus loin, la notice « Utilité marginale » →</a></p>
 <h4>3. L’interdépendance des marchés</h4>
-<p>L’originalité décisive de Walras est de considérer tous les marchés à la fois : marchés des produits, des services producteurs (travail, terre, capital), du capital et de la monnaie. La demande de chaque bien dépend de tous les prix, et les revenus dépendent des prix des services (<a href="#c-equilibre-general">voir équilibre général</a>).</p>
+<p><b>La question.</b> Peut-on étudier un marché isolément ?</p>
+<p><b>Son raisonnement.</b> L’originalité décisive de Walras est de considérer tous les marchés à la fois, ceux des produits, des services producteurs comme le travail, la terre et le capital, du capital neuf et de la monnaie. La demande de chaque bien dépend de tous les prix, et les revenus dépendent des prix des services.</p>
+<p><b>Un exemple.</b> Une hausse du prix du pétrole change le prix des billets d’avion, la demande de voitures, les salaires dans l’automobile, et de proche en proche tous les autres prix. Walras décrit l’ensemble par un système d’équations, autant que d’inconnues.</p>
+<p><a href="#c-equilibre-general">Pour aller plus loin, la notice « Équilibre général » →</a></p>
 ${inconnues}
 <h4>4. Le tâtonnement</h4>
-<p>Pour décrire comment le marché trouve les prix d’équilibre, Walras imagine un processus de « tâtonnement » : on crie des prix, on relève ceux des biens trop demandés et on baisse ceux des biens trop offerts, jusqu’à l’équilibre. Il s’inspire de la Bourse de Paris, où des agents ajustent les cours selon les ordres reçus.</p>
+<p><b>La question.</b> Comment le marché trouve-t-il ses prix ?</p>
+<p><b>Son raisonnement.</b> Walras imagine un « tâtonnement ». On annonce des prix, on relève ceux des biens trop demandés et on baisse ceux des biens trop offerts, jusqu’à ce que l’offre égale la demande partout. Il s’inspire de la Bourse de Paris, où des agents ajustent les cours selon les ordres reçus.</p>
+<p><b>Un exemple.</b> Avant l’ouverture, les Bourses actuelles organisent une enchère où un ordinateur recueille les ordres d’achat et de vente, puis cherche le prix qui permet d’échanger la plus grande quantité. C’est un tâtonnement très proche de celui que décrivait Walras.</p>
+<p><a href="#c-offre-demande">Pour aller plus loin, la notice « Offre et demande » →</a></p>
 <h4>5. L’entrepreneur qui ne fait ni bénéfice ni perte</h4>
-<p>À l’équilibre de libre concurrence, l’entrepreneur, qui achète des services producteurs et vend des produits, ne fait ni bénéfice ni perte : le prix de vente égale le coût. Il est un simple coordinateur. Cette vision statique sera critiquée par <a href="#eco-schumpeter">Schumpeter</a>, qui fera au contraire de l’entrepreneur le moteur du changement.</p>
+<p><b>La question.</b> L’entrepreneur gagne-t-il de l’argent à l’équilibre ?</p>
+<p><b>Son raisonnement.</b> À l’équilibre de libre concurrence, l’entrepreneur, qui achète des services producteurs et vend des produits, ne fait ni bénéfice ni perte. Le prix de vente égale le coût, y compris la rémunération normale de son travail et de son capital. Il n’est qu’un coordinateur. Schumpeter critiquera cette vision immobile et fera au contraire de l’entrepreneur le moteur du changement.</p>
+<p><b>Un exemple.</b> Si les boulangers d’une ville font de gros bénéfices, de nouvelles boulangeries s’ouvrent, et le prix du pain baisse jusqu’à couvrir juste les coûts. Les bénéfices durables supposent un obstacle à la concurrence ou une innovation.</p>
+<p><a href="#c-concurrence-imparfaite">Pour aller plus loin, la notice « Monopole, oligopole et monopsone », sur les cas où les bénéfices durent →</a></p>
 <h4>6. La monnaie et le crédit</h4>
-<p>Walras consacre de longs développements à la monnaie, défend un bimétallisme corrigé, avec une « monnaie régulatrice » en argent pour stabiliser les prix, et critique la création excessive de monnaie par les banques. Il est l’un des premiers à proposer une politique monétaire visant explicitement la stabilité des prix.</p>
+<p><b>La question.</b> Comment éviter que les prix varient trop ?</p>
+<p><b>Son raisonnement.</b> Walras consacre de longs développements à la monnaie. Il défend un système fondé sur l’or, complété par un « billon d’argent régulateur », des pièces d’argent dont la quantité serait ajustée pour stabiliser les prix, et critique la création excessive de monnaie par les banques. Il est l’un des premiers à proposer une politique monétaire qui vise explicitement la stabilité des prix.</p>
+<p><b>Un exemple.</b> Au milieu du XIXe siècle, les découvertes d’or en Californie, en 1848, puis en Australie, en 1851, font monter les prix en Europe. Walras cherche un système qui corrigerait de tels à-coups au lieu de les subir.</p>
+<p><a href="#c-theorie-quantitative">Pour aller plus loin, la notice « Théorie quantitative de la monnaie » →</a></p>
 <h4>7. Le socialisme libéral</h4>
-<p>Walras se dit « socialiste scientifique » : il veut que l’État rachète progressivement les terres pour en percevoir la rente, ce qui permettrait de supprimer les impôts sur le travail, puisque la valeur du sol, due au progrès collectif, appartient à la société (<a href="#c-rente">voir rente</a>). Il défend la libre concurrence là où elle est possible, et le monopole public, pour les chemins de fer par exemple, là où elle ne l’est pas.</p>` },
+<p><b>La question.</b> Comment concilier la concurrence et la justice ?</p>
+<p><b>Son raisonnement.</b> Walras se dit « socialiste scientifique ». Il veut que l’État rachète peu à peu les terres pour en percevoir la rente, ce qui permettrait de supprimer les impôts sur le travail, puisque la valeur du sol, due au progrès de toute la société, appartient à la collectivité. Il défend la libre concurrence là où elle est possible, et le monopole public là où elle ne l’est pas, par exemple pour les chemins de fer.</p>
+<p><b>Un exemple.</b> Quand une ville grandit, les terrains du centre prennent de la valeur sans que leurs propriétaires aient rien fait. Pour Walras, ce gain revient à la collectivité qui l’a créé. L’idée inspire encore les impôts sur la plus-value foncière.</p>
+<p><a href="#c-rente">Pour aller plus loin, la notice « Rente différentielle » →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Éléments d’économie politique pure, ou théorie de la richesse sociale (1874-1877).</b> Son chef-d’œuvre, révisé jusqu’à l’édition définitive de 1926. Il expose successivement la théorie de l’échange, de la production, de la capitalisation et de la monnaie. Les leçons 1 à 12 contiennent l’essentiel.</p>
 <p><b>Théorie mathématique de la richesse sociale (1883).</b> Un recueil de mémoires présentant ses théories aux mathématiciens et aux savants.</p>
@@ -225,21 +245,41 @@ ${vieMarshall}
 <p>Marshall veut aussi une économie utile, qui aide à comprendre comment améliorer la vie des travailleurs. Sa leçon inaugurale de 1885 se termine par un appel aux étudiants : avoir « une tête froide mais un cœur chaud », et consacrer leurs forces à combattre la souffrance sociale.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’économie, étude de l’homme dans les affaires ordinaires</h4>
-<p>Marshall définit l’économie comme l’étude de l’humanité dans les affaires ordinaires de la vie. Elle s’appuie sur la mesure des motivations par l’argent, qui est le moyen de mesurer la force des désirs, sans supposer que les hommes ne soient mus que par l’argent.</p>
+<p><b>La question.</b> De quoi s’occupe l’économie ?</p>
+<p><b>Son raisonnement.</b> Marshall la définit comme l’étude de l’humanité dans les affaires ordinaires de la vie. Elle s’appuie sur l’argent, qui permet de mesurer la force des désirs, sans supposer que les hommes ne soient mus que par l’argent. Le goût du travail bien fait, l’affection familiale ou le sens du devoir comptent aussi.</p>
+<p><b>Un exemple.</b> Une famille hésite entre un appartement cher près du travail et un logement moins cher à une heure de trajet. La somme qu’elle accepte de payer en plus mesure la valeur qu’elle accorde à son temps, sans résumer tout ce qui compte pour elle.</p>
+<p><a href="#c-cout-opportunite">Pour aller plus loin, la notice « Coût d’opportunité » →</a></p>
 <h4>2. Les ciseaux de l’offre et de la demande</h4>
-<p>À la querelle entre ceux qui fondent la valeur sur le coût et ceux qui la fondent sur l’utilité, Marshall répond par l’image des ciseaux : les deux lames coupent ensemble. La demande dépend de l’utilité, l’offre du coût, et le prix de leur rencontre (<a href="#c-offre-demande">voir offre et demande</a>).</p>
+<p><b>La question.</b> Le prix dépend-il du coût de production ou de l’utilité ?</p>
+<p><b>Son raisonnement.</b> Des deux, répond Marshall. Se demander si c’est l’offre ou la demande qui fixe le prix, c’est comme se demander laquelle des deux lames de ciseaux coupe le papier. La demande dépend de l’utilité, l’offre dépend du coût, et le prix naît de leur rencontre.</p>
+<p><b>Un exemple.</b> Les fraises coûtent moins cher en juin qu’en mars. Leur utilité n’a pas changé, mais en pleine saison, l’offre est abondante et le coût de production faible. Le prix descend jusqu’à ce que les acheteurs absorbent toute la récolte.</p>
+<p><a href="#c-offre-demande">Pour aller plus loin, la notice « Offre et demande » →</a></p>
 <h4>3. Toutes choses égales par ailleurs</h4>
-<p>Pour étudier un problème complexe, Marshall l’isole : il étudie un marché à la fois, en supposant que le reste ne change pas, ceteris paribus. C’est l’équilibre partiel, plus modeste que l’équilibre général de <a href="#eco-walras">Walras</a>, mais plus maniable et plus proche des données.</p>
+<p><b>La question.</b> Comment étudier un problème où tout dépend de tout ?</p>
+<p><b>Son raisonnement.</b> Marshall l’isole. Il étudie un marché à la fois, en supposant que le reste ne change pas, « toutes choses égales par ailleurs ». C’est l’équilibre partiel, plus modeste que l’équilibre général de Walras, mais plus maniable et plus proche des données.</p>
+<p><b>Un exemple.</b> Pour prévoir l’effet d’une taxe sur le tabac, on étudie le marché du tabac en supposant inchangés les salaires et les autres prix. L’erreur est faible, car le tabac pèse peu dans l’ensemble de l’économie. Pour le pétrole, qui touche tous les prix, la méthode marche beaucoup moins bien.</p>
+<p><a href="#c-equilibre-general">Pour aller plus loin, la notice « Équilibre général », qui fait l’inverse →</a></p>
 <h4>4. Le rôle du temps</h4>
-<p>Marshall distingue le jour du marché, la courte période et la longue période. Plus l’horizon est long, plus l’offre peut s’adapter, et plus le prix dépend du coût de production. C’est la clé de la réconciliation entre classiques et marginalistes.</p>
+<p><b>La question.</b> Pourquoi un même choc n’a-t-il pas le même effet demain et dans dix ans ?</p>
+<p><b>Son raisonnement.</b> Marshall distingue le jour du marché, la courte période et la longue période. Plus l’horizon est long, plus l’offre peut s’adapter, et plus le prix dépend du coût de production. C’est la clé de sa réconciliation entre les classiques, qui insistent sur le coût, et les marginalistes, qui insistent sur l’utilité.</p>
+<p><b>Un exemple.</b> Marshall prend le marché du poisson. Si une épidémie frappe le bétail et que la demande de poisson bondit, le prix monte fortement le jour même, puisque la pêche est déjà débarquée. En quelques mois, les pêcheurs sortent plus souvent. En quelques années, de nouveaux bateaux sont construits, et le prix redescend vers le coût de la pêche.</p>
+<p><a href="#c-elasticite">Pour aller plus loin, la notice « Élasticité » →</a></p>
 ${periodes}
 <h4>5. L’élasticité et le surplus</h4>
-<p>Marshall formalise l’élasticité de la demande, qui mesure la sensibilité de la quantité demandée au prix, et le <a href="#c-surplus">surplus du consommateur</a>, la différence entre ce qu’on serait prêt à payer et ce qu’on paie. Ces outils permettent d’analyser les taxes et les monopoles.</p>
+<p><b>La question.</b> Comment mesurer l’effet d’une hausse de prix ou d’une taxe ?</p>
+<p><b>Son raisonnement.</b> Marshall formalise l’élasticité de la demande, qui mesure la sensibilité de la quantité demandée au prix, et le surplus du consommateur, la différence entre ce qu’on serait prêt à payer et ce qu’on paie. Ces outils permettent d’analyser les taxes et les monopoles.</p>
+<p><b>Un exemple.</b> Une taxe sur un bien dont on se passe difficilement, comme le carburant pour qui doit prendre sa voiture, réduit peu les achats et rapporte beaucoup. Sur un bien facile à remplacer, elle fait fuir les acheteurs et rapporte peu. Le surplus perdu par ceux qui renoncent à acheter ne profite alors à personne.</p>
+<p><a href="#c-surplus">Pour aller plus loin, la notice « Surplus du consommateur et perte sèche » →</a></p>
 ${outils}
 <h4>6. Les économies externes et les districts industriels</h4>
-<p>Marshall observe que les entreprises d’une même industrie gagnent à se regrouper dans une région : main-d’œuvre qualifiée, fournisseurs spécialisés, circulation des idées. Ces économies externes expliquent les districts industriels de Sheffield ou du Lancashire, et annoncent l’économie géographique moderne (<a href="#c-rendements-croissants">voir rendements croissants</a>).</p>
+<p><b>La question.</b> Pourquoi des entreprises concurrentes s’installent-elles côte à côte ?</p>
+<p><b>Son raisonnement.</b> Les entreprises d’une même industrie gagnent à se regrouper. Elles y trouvent une main-d’œuvre qualifiée, des fournisseurs spécialisés et des idées qui circulent, au point que les secrets du métier sont, dit Marshall, comme « dans l’air ». Ces économies externes expliquent les districts industriels et annoncent l’économie géographique moderne.</p>
+<p><b>Un exemple.</b> À l’époque de Marshall, la coutellerie est à Sheffield et le coton dans le Lancashire. Aujourd’hui, l’informatique est dans la Silicon Valley et l’horlogerie dans l’Arc jurassien, pour les mêmes raisons.</p>
+<p><a href="#c-rendements-croissants">Pour aller plus loin, la notice « Rendements croissants » →</a></p>
 <h4>7. Les mathématiques comme langage auxiliaire</h4>
-<p>Mathématicien de formation, Marshall relègue les équations en notes et en annexe. Il veut que les Principes soient lisibles par les hommes d’affaires et les responsables publics. Les mathématiques servent à vérifier un raisonnement ; elles doivent ensuite être traduites en langage ordinaire et illustrées par des exemples réels.</p>` },
+<p><b>La question.</b> Quelle place donner aux mathématiques en économie ?</p>
+<p><b>Son raisonnement.</b> Mathématicien de formation, Marshall relègue les équations dans les notes et en annexe. Il veut que ses Principes (1890) soient lisibles par les hommes d’affaires et les responsables publics. Les mathématiques servent à vérifier un raisonnement, qui doit ensuite être dit en langage ordinaire et illustré par des exemples réels.</p>
+<p><b>Un exemple.</b> Dans une lettre de 1906, il donne sa méthode. Utiliser les mathématiques comme une sténographie, traduire le résultat en anglais, l’illustrer par des exemples importants tirés de la vie réelle, puis brûler les mathématiques. Et si l’on ne trouve pas d’exemple, brûler aussi l’anglais.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>The Economics of Industry (1879), avec Mary Paley Marshall.</b> Un manuel destiné aux cours populaires, qui contient déjà l’essentiel de ses idées. Marshall le retirera ensuite de la vente, le jugeant trop simple.</p>
 <p><b>Principes d’économie politique (1890).</b> Son œuvre majeure, révisée jusqu’en 1920. Le livre III sur la demande, le livre IV sur la production et l’organisation industrielle, et le livre V sur l’équilibre de l’offre et de la demande sont les plus importants.</p>

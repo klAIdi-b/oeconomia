@@ -49,20 +49,39 @@ ${vieMill}
 <p>Il est aussi marqué par la pensée française : les saint-simoniens, Auguste Comte, avec qui il correspond, et Alexis de Tocqueville, dont il admire De la démocratie en Amérique et dont il retient la crainte d’une « tyrannie de la majorité ».</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’utilitarisme revisité</h4>
-<p>Élevé dans l’utilitarisme de Bentham, pour qui le bien est ce qui maximise le bonheur du plus grand nombre, Mill le transforme : il distingue des plaisirs supérieurs, intellectuels et moraux, et des plaisirs inférieurs. « Il vaut mieux être un humain insatisfait qu’un porc satisfait ; mieux vaut être Socrate insatisfait qu’un imbécile satisfait. »</p>
+<p><b>La question.</b> Tous les plaisirs se valent-ils ?</p>
+<p><b>Son raisonnement.</b> Élevé dans l’utilitarisme de Bentham, pour qui le bien est ce qui maximise le bonheur du plus grand nombre, Mill le transforme. Il distingue des plaisirs supérieurs, intellectuels et moraux, et des plaisirs inférieurs. Le bonheur ne se mesure pas seulement à la quantité de plaisir.</p>
+<p><b>Un exemple.</b> « Il vaut mieux être un humain insatisfait qu’un porc satisfait ; mieux vaut être Socrate insatisfait qu’un imbécile satisfait », écrit-il dans L’Utilitarisme (1861). Mill parle d’expérience. À vingt ans, après une éducation tout entière tournée vers le calcul, il traverse une grave dépression, dont il sort peu à peu, notamment grâce à la poésie de Wordsworth.</p>
 <h4>2. Une science abstraite et hypothétique</h4>
-<p>Mill définit l’économie politique comme une science qui étudie l’homme en tant qu’être qui désire posséder la richesse, en faisant abstraction de ses autres motivations. Ses conclusions sont donc vraies « dans l’abstrait », sous conditions, et doivent être corrigées par d’autres considérations avant d’être appliquées. C’est l’origine de la notion d’« homo œconomicus ».</p>
+<p><b>La question.</b> Peut-on étudier l’homme comme s’il ne voulait que s’enrichir ?</p>
+<p><b>Son raisonnement.</b> Oui, à condition de savoir ce qu’on fait. Mill définit l’économie politique comme la science qui étudie l’homme en tant qu’être qui désire posséder la richesse, en laissant de côté ses autres motivations. Ses conclusions sont donc vraies « dans l’abstrait », sous conditions, et doivent être corrigées avant d’être appliquées. C’est l’origine de l’« homo œconomicus ».</p>
+<p><b>Un exemple.</b> Un physicien calcule la chute des corps comme si l’air n’existait pas. Le résultat est juste pour une pierre, faux pour une plume. De même, la prédiction de l’économiste vaut d’autant mieux que l’intérêt pécuniaire domine la situation étudiée.</p>
+<p><a href="#c-aversion-pertes">Pour aller plus loin, la notice « Aversion aux pertes », qui montre où l’homme économique se trompe →</a></p>
 <h4>3. Production et répartition</h4>
-<p>Dans ses Principes, Mill distingue les lois de la production, qui tiennent à la nature des choses, et celles de la répartition, qui dépendent des institutions humaines et peuvent être réformées. C’est l’idée centrale de son réformisme.</p>
+<p><b>La question.</b> Les inégalités sont-elles une loi de la nature ?</p>
+<p><b>Son raisonnement.</b> Non, répond Mill dans ses Principes (1848). Les lois de la production tiennent à la nature des choses, mais celles de la répartition dépendent des institutions humaines, que la société peut réformer. C’est l’idée centrale de son réformisme.</p>
+<p><b>Un exemple.</b> Ce qu’un champ peut produire dépend du sol, du climat et des techniques. La façon de partager la récolte entre le fermier et le propriétaire dépend des lois, des contrats et des coutumes, que l’on peut changer.</p>
+<p><a href="#c-r-g">Pour aller plus loin, la notice « r > g », qui reprend la question de la répartition au XXIe siècle →</a></p>
 ${lois}
 <h4>4. La propriété, l’héritage et la terre</h4>
-<p>Mill défend la propriété privée comme garantie des fruits du travail, mais pas l’héritage illimité : il propose de plafonner ce que chacun peut recevoir par héritage. Il propose aussi de taxer l’« accroissement non gagné » de la valeur du sol, dû au développement de la société et non au travail du propriétaire (<a href="#c-rente">voir rente</a>).</p>
+<p><b>La question.</b> Toute richesse est-elle méritée ?</p>
+<p><b>Son raisonnement.</b> Mill défend la propriété privée comme garantie des fruits du travail, mais pas l’héritage illimité. Il propose de plafonner ce que chacun peut recevoir par héritage, pour que la richesse se répartisse entre plus de mains. Il propose aussi de taxer l’« accroissement non gagné » de la valeur du sol, dû au développement de la société et non au travail du propriétaire.</p>
+<p><b>Un exemple.</b> Les grands propriétaires fonciers, écrit Mill, s’enrichissent pour ainsi dire en dormant, sans travailler ni risquer quoi que ce soit, simplement parce que la ville grandit autour de leurs terrains.</p>
+<p><a href="#c-rente">Pour aller plus loin, la notice « Rente différentielle » →</a></p>
 <h4>5. Les coopératives</h4>
-<p>Mill observe avec intérêt les associations ouvrières et les coopératives en France et en Angleterre. Il pense que l’avenir appartient à des associations de travailleurs, propriétaires collectivement de leur capital et élisant leurs dirigeants, en concurrence entre elles. C’est une voie entre le capitalisme salarial et le socialisme d’État.</p>
+<p><b>La question.</b> Le salariat est-il la seule façon d’organiser le travail ?</p>
+<p><b>Son raisonnement.</b> Mill observe avec intérêt les associations ouvrières et les coopératives en France et en Angleterre. Il pense que l’avenir appartient à des associations de travailleurs, propriétaires ensemble de leur capital et élisant leurs dirigeants, en concurrence les unes avec les autres. C’est une voie entre le capitalisme salarial et le socialisme d’État.</p>
+<p><b>Un exemple.</b> Il cite les associations ouvrières nées à Paris après la révolution de 1848. Les coopératives de travailleurs existent toujours, comme le groupe Mondragon au Pays basque, fondé en 1956, qui emploie des dizaines de milliers de personnes, dont une grande partie sont sociétaires. Les coopératives de consommateurs, comme Migros et Coop en Suisse, appartiennent à leurs clients et non à leurs employés.</p>
 <h4>6. L’état stationnaire</h4>
-<p>À la différence de ses prédécesseurs, qui le redoutaient, Mill accueille favorablement la perspective d’un « état stationnaire », où le capital et la population cesseraient de croître. L’humanité pourrait alors se consacrer à la culture, aux relations humaines et à la nature, plutôt qu’à la course à la richesse. Ce chapitre est souvent cité par les penseurs de la décroissance et de l’écologie.</p>
+<p><b>La question.</b> Une économie doit-elle croître toujours ?</p>
+<p><b>Son raisonnement.</b> À la différence de ses prédécesseurs, qui le redoutaient, Mill accueille favorablement l’« état stationnaire », où le capital et la population cesseraient de croître. L’humanité pourrait alors se consacrer à la culture, aux relations humaines et à la nature, plutôt qu’à la course à la richesse.</p>
+<p><b>Un exemple.</b> Il dit ne pas souhaiter un monde où chaque arpent serait cultivé, chaque fleur sauvage arrachée et chaque animal non domestique exterminé. Ce chapitre est souvent cité par les penseurs de l’écologie et de la décroissance.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>
 <h4>7. Le principe de non-nuisance</h4>
-<p>Dans De la liberté, Mill pose un principe simple : la société ne peut contraindre un individu que pour empêcher qu’il nuise à autrui. Il défend une liberté presque absolue d’opinion et d’expression, car la vérité ne s’établit que dans la confrontation des idées. En économie, il défend une présomption en faveur du laissez-faire, avec de nombreuses exceptions : éducation, protection des enfants, biens publics, industries naissantes.</p>
+<p><b>La question.</b> Jusqu’où la société peut-elle contraindre un individu ?</p>
+<p><b>Son raisonnement.</b> Dans De la liberté (1859), Mill pose un principe simple. La société ne peut contraindre un individu que pour l’empêcher de nuire à autrui. Il défend une liberté presque absolue d’opinion et d’expression, car la vérité ne s’établit que dans la confrontation des idées. En économie, il défend une présomption en faveur du laissez-faire, avec de nombreuses exceptions, l’éducation, la protection des enfants, les biens publics ou les industries naissantes.</p>
+<p><b>Un exemple.</b> Selon ce principe, on peut interdire de fumer dans un restaurant, parce que la fumée gêne les autres clients, mais pas dans son propre jardin, où l’on ne nuit qu’à soi-même.</p>
+<p><a href="#c-externalite">Pour aller plus loin, la notice « Externalité » →</a></p>
 ${harm}` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Système de logique (1843).</b> Un traité de logique et de méthode scientifique, qui le rend célèbre, et dont le livre VI porte sur la méthode des sciences sociales.</p>
@@ -226,21 +245,40 @@ ${viePareto}
 <p>Sa trajectoire intellectuelle suit sa désillusion politique. Convaincu au départ que la raison et la science pouvaient guider les sociétés, il finit par penser que les actions humaines sont largement guidées par des sentiments et des croyances non logiques, que les élites manipulent et que les théories rationalisent après coup.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’équilibre général</h4>
-<p>Pareto reprend et généralise le système de Walras. Il le présente de manière plus élégante et insiste sur l’interdépendance de tous les phénomènes économiques, qu’il compare aux systèmes de la mécanique (<a href="#c-equilibre-general">voir équilibre général</a>).</p>
+<p><b>La question.</b> Comment décrire une économie où tout dépend de tout ?</p>
+<p><b>Son raisonnement.</b> Pareto reprend et généralise le système de Walras. Il le présente de manière plus élégante et insiste sur l’interdépendance de tous les phénomènes économiques, qu’il compare aux systèmes de la mécanique, où chaque pièce agit sur toutes les autres.</p>
+<p><b>Un exemple.</b> Ingénieur des chemins de fer devenu économiste, Pareto succède à Walras en 1893 à l’université de Lausanne. À eux deux, ils forment ce qu’on appellera l’école de Lausanne.</p>
+<p><a href="#c-equilibre-general">Pour aller plus loin, la notice « Équilibre général » →</a></p>
 <h4>2. La loi de répartition des revenus</h4>
-<p>Dans le Cours d’économie politique (1896-1897), il étudie les statistiques fiscales de nombreux pays et époques et observe une régularité : la distribution des hauts revenus suit une loi de puissance, avec un coefficient voisin de 1,5. Il en conclut que l’inégalité est à peu près indépendante des institutions, une conclusion contestée.</p>
+<p><b>La question.</b> Les inégalités de revenus suivent-elles une loi ?</p>
+<p><b>Son raisonnement.</b> Dans le Cours d’économie politique (1896-1897), Pareto étudie les statistiques fiscales de nombreux pays et époques et observe une régularité. Les hauts revenus se répartissent selon une même forme mathématique, une loi de puissance. Il en conclut que l’inégalité dépend peu des institutions, une conclusion très contestée depuis.</p>
+<p><b>Un exemple.</b> Sa découverte a donné son nom au « principe de Pareto », popularisé dans les années 1940, selon lequel une petite partie des causes produit l’essentiel des effets, par exemple 20 % des clients qui font 80 % du chiffre d’affaires. Pareto lui-même n’a jamais énoncé cette règle.</p>
+<p><a href="#c-courbe-kuznets">Pour aller plus loin, la notice « Courbe de Kuznets », qui pense au contraire que les inégalités évoluent →</a></p>
 ${loi}
 <h4>3. Les courbes d’indifférence et l’utilité ordinale</h4>
-<p>Reprenant un outil de l’Irlandais Francis Edgeworth, Pareto décrit les préférences par des courbes d’indifférence : des combinaisons de biens entre lesquelles le consommateur est indifférent. Il montre qu’il suffit de savoir classer les préférences, sans mesurer l’utilité. Cette « utilité ordinale » fonde la théorie moderne du consommateur.</p>
+<p><b>La question.</b> Faut-il mesurer le plaisir pour expliquer les choix ?</p>
+<p><b>Son raisonnement.</b> Reprenant un outil de l’Irlandais Francis Edgeworth, Pareto décrit les préférences par des courbes d’indifférence, des combinaisons de biens entre lesquelles le consommateur ne fait pas de différence. Il montre qu’il suffit de savoir classer les préférences, sans mesurer l’utilité. Cette « utilité ordinale » fonde la théorie moderne du consommateur.</p>
+<p><b>Un exemple.</b> Il suffit de savoir que vous préférez deux cafés et un croissant à un café et deux croissants. Personne n’a besoin de savoir de combien, ni de mesurer votre plaisir en unités.</p>
+<p><a href="#c-utilite-marginale">Pour aller plus loin, la notice « Utilité marginale » →</a></p>
 <h4>4. L’optimum</h4>
-<p>Pareto définit un état optimal comme une situation où l’on ne peut améliorer la satisfaction de quelqu’un sans diminuer celle d’un autre. Il montre que la libre concurrence conduit à un tel état. Ce critère ne compare pas les satisfactions entre personnes et ne dit rien de la justice de la répartition (<a href="#c-optimum-pareto">voir optimum de Pareto</a>).</p>
+<p><b>La question.</b> Quand une situation est-elle efficace ?</p>
+<p><b>Son raisonnement.</b> Pareto appelle optimale une situation où l’on ne peut améliorer la satisfaction de quelqu’un sans diminuer celle d’un autre. Il soutient que la libre concurrence conduit à un tel état, ce que d’autres démontreront rigoureusement au XXe siècle. Ce critère ne compare pas les satisfactions entre personnes et ne dit rien de la justice de la répartition.</p>
+<p><b>Un exemple.</b> Deux enfants se partagent des billes et des images. Si l’un préfère les images et l’autre les billes, un échange rend les deux plus contents, la situation n’était donc pas optimale. Mais un partage où l’un a tout et l’autre rien est aussi un optimum, puisqu’on ne peut rien donner au second sans prendre au premier.</p>
+<p><a href="#c-optimum-pareto">Pour aller plus loin, la notice « Optimum de Pareto » →</a></p>
 ${optimum}
 <h4>5. Les actions non logiques</h4>
-<p>Dans le Traité de sociologie générale (1916), Pareto distingue les actions logiques, où les moyens sont adaptés aux fins, et les actions non logiques, guidées par des sentiments. L’économie étudie les premières ; la sociologie doit étudier les secondes, qui dominent la vie sociale et politique.</p>
+<p><b>La question.</b> Les gens agissent-ils toujours de façon logique ?</p>
+<p><b>Son raisonnement.</b> Dans le Traité de sociologie générale (1916), Pareto distingue les actions logiques, où les moyens sont adaptés aux fins, et les actions non logiques, guidées par des sentiments. L’économie étudie les premières. La sociologie doit étudier les secondes, qui dominent la vie sociale et politique.</p>
+<p><b>Un exemple.</b> Pareto prend l’exemple des marins grecs qui offraient des sacrifices à Poséidon avant de prendre la mer. Pour les marins, sacrifier et bien ramer étaient deux moyens tout aussi logiques d’arriver au port. Pour l’observateur, seul le second l’est.</p>
+<p><a href="#c-aversion-pertes">Pour aller plus loin, la notice « Aversion aux pertes », sur les biais étudiés aujourd’hui par l’économie comportementale →</a></p>
 <h4>6. Résidus et dérivations</h4>
-<p>Les actions non logiques reposent sur des « résidus », des sentiments et instincts relativement constants, comme l’instinct des combinaisons ou la persistance des agrégats, et sont justifiées après coup par des « dérivations », des théories, idéologies et raisonnements qui donnent une apparence logique à ce qui ne l’est pas.</p>
+<p><b>La question.</b> Pourquoi justifions-nous nos choix après coup ?</p>
+<p><b>Son raisonnement.</b> Les actions non logiques reposent sur des « résidus », des sentiments et des instincts assez constants, comme le goût des combinaisons nouvelles ou l’attachement à ce qui existe. Elles sont ensuite justifiées par des « dérivations », des théories, des idéologies et des raisonnements qui donnent une apparence logique à ce qui ne l’est pas.</p>
+<p><b>Un exemple.</b> Quelqu’un adopte une opinion politique par fidélité à son milieu, puis trouve des arguments pour la défendre. Pour Pareto, les arguments changent d’une époque à l’autre, mais les sentiments qui les inspirent restent les mêmes.</p>
 <h4>7. La circulation des élites</h4>
-<p>Toute société est gouvernée par une élite. Les élites se renouvellent sans cesse : celles qui se fondent sur la ruse et la combinaison, les « renards », alternent avec celles qui recourent à la force, les « lions ». Quand une élite cesse de se renouveler, elle est renversée. « L’histoire est un cimetière d’aristocraties. »</p>` },
+<p><b>La question.</b> Qui gouverne vraiment ?</p>
+<p><b>Son raisonnement.</b> Toute société est gouvernée par une élite, qui se renouvelle sans cesse. Les élites fondées sur la ruse et la combinaison, les « renards », alternent avec celles qui recourent à la force, les « lions ». Quand une élite cesse de se renouveler, elle est renversée. « L’histoire est un cimetière d’aristocraties », écrit-il.</p>
+<p><b>Un exemple.</b> Le fascisme italien se réclamera de cette théorie, et Mussolini fait nommer Pareto sénateur en 1923, quelques mois avant sa mort. Les historiens discutent encore de ce que Pareto pensait vraiment du régime naissant.</p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Cours d’économie politique (1896-1897).</b> Ses leçons de Lausanne, rédigées en français, qui présentent l’équilibre général et la loi de répartition des revenus.</p>
 <p><b>Les Systèmes socialistes (1902-1903).</b> Une étude critique des doctrines socialistes, qui annonce son intérêt pour les croyances et les idéologies.</p>

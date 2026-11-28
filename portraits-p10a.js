@@ -42,18 +42,35 @@ ${viePolanyi}
 <p>Polanyi écrit contre deux courants à la fois. Contre les libéraux comme <a href="#eco-hayek">Hayek</a> et Mises, qui voient dans l’intervention de l’État la cause des malheurs du siècle. Et contre un marxisme qui réduit tout aux intérêts de classe, alors que pour lui les sociétés défendent aussi des valeurs, des statuts et des modes de vie.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Une économie encastrée</h4>
-<p>En s’appuyant sur l’histoire et l’anthropologie, Polanyi distingue trois grandes manières d’organiser l’économie : la réciprocité, des dons qui appellent des contre-dons ; la redistribution, par un centre qui collecte et répartit ; et l’échange marchand. Pendant la plus grande partie de l’histoire, le marché a existé, mais à la marge, et l’économie restait « encastrée » dans la société (<a href="#c-encastrement">voir encastrement</a>).</p>
+<p><b>La question.</b> Le marché a-t-il toujours organisé l’économie ?</p>
+<p><b>Son raisonnement.</b> En s’appuyant sur l’histoire et l’anthropologie, Polanyi distingue, dans ses travaux de 1957, trois grandes manières d’organiser l’économie, la réciprocité, des dons qui appellent des contre-dons, la redistribution, par un centre qui collecte et répartit, et l’échange marchand. Pendant la plus grande partie de l’histoire, le marché a existé, mais à la marge, et l’économie restait « encastrée » dans la société.</p>
+<p><b>Un exemple.</b> Polanyi s’appuie sur la « kula » des îles Trobriand, décrite par l’anthropologue Bronisław Malinowski, où des colliers et des bracelets circulent d’île en île sans rien rapporter, pour créer des liens. Dans l’Égypte des pharaons, les récoltes étaient collectées dans des greniers puis redistribuées.</p>
+<p><a href="#c-encastrement">Pour aller plus loin, la notice « Encastrement » →</a></p>
 <h4>2. Le marché autorégulateur, une invention</h4>
-<p>Le XIXe siècle veut faire l’inverse : un système où tous les prix, y compris les salaires et les loyers de la terre, se fixent librement, et où la société s’adapte au marché. Polanyi souligne que ce système n’est pas né spontanément. Il a fallu des lois pour supprimer les protections anciennes, enclore les terres, créer un marché national du travail. D’où sa formule : « le laissez-faire était planifié ; la planification ne l’était pas ».</p>
+<p><b>La question.</b> Le marché libre est-il né tout seul ?</p>
+<p><b>Son raisonnement.</b> Le XIXe siècle veut un système où tous les prix, y compris les salaires et les loyers de la terre, se fixent librement, et où la société s’adapte au marché. Polanyi souligne que ce système n’est pas né spontanément. Il a fallu des lois pour supprimer les protections anciennes, enclore les terres et créer un marché national du travail. D’où sa formule, « le laissez-faire était planifié ; la planification ne l’était pas ».</p>
+<p><b>Un exemple.</b> En Angleterre, le système de Speenhamland, en place depuis 1795, complétait les salaires trop bas par une aide de la paroisse. La réforme de 1834 le supprime, et oblige les pauvres valides à vendre leur travail au prix du marché. C’est, pour Polanyi, la vraie naissance du marché du travail.</p>
 <h4>3. Les marchandises fictives</h4>
-<p>Le travail, la terre et la monnaie ne sont pas produits pour être vendus. Les traiter comme des marchandises, c’est accepter que des salaires tombent sous le minimum vital, que la nature soit épuisée, que la monnaie manque au pire moment. Aucune société ne le supporte longtemps.</p>
+<p><b>La question.</b> Peut-on tout acheter et tout vendre ?</p>
+<p><b>Son raisonnement.</b> Le travail, la terre et la monnaie ne sont pas produits pour être vendus. Les traiter comme des marchandises, c’est accepter que des salaires tombent sous le minimum vital, que la nature soit épuisée et que la monnaie manque au pire moment. Aucune société ne le supporte longtemps.</p>
+<p><b>Un exemple.</b> Une marchandise invendue peut attendre en stock. Un travailleur qui ne trouve pas d’acheteur pour son travail ne peut pas attendre, il doit manger et loger sa famille. C’est pourquoi le travail ne se comporte pas comme du blé ou du fer.</p>
+<p><a href="#c-externalite">Pour aller plus loin, la notice « Externalité », sur les dommages faits à la nature que le marché ne fait pas payer →</a></p>
 <h4>4. Le double mouvement</h4>
-<p>Chaque avancée du marché provoque donc une réaction de protection, souvent sans plan d’ensemble : lois sur le travail des enfants, syndicats, tarifs agricoles, banques centrales. Ce ne sont pas des complots contre le marché, mais des réflexes d’autodéfense de la société.</p>
+<p><b>La question.</b> Pourquoi chaque avancée du marché suscite-t-elle une protection ?</p>
+<p><b>Son raisonnement.</b> Chaque avancée du marché provoque une réaction de protection, souvent sans plan d’ensemble, lois sur le travail des enfants, syndicats, tarifs agricoles, banques centrales. Ce ne sont pas des complots contre le marché, mais des réflexes d’autodéfense de la société.</p>
+<p><b>Un exemple.</b> En 1833, le Parlement britannique interdit le travail des enfants de moins de neuf ans dans presque toutes les usines textiles, limite celui des plus âgés et crée des inspecteurs chargés de faire appliquer la loi. Les mêmes années qui créent le marché du travail créent aussi ses premières protections.</p>
+<p><a href="#c-mode-regulation">Pour aller plus loin, la notice « Mode de régulation », sur la façon dont les sociétés encadrent le marché →</a></p>
 ${double}
 <h4>5. De l’étalon-or au fascisme</h4>
-<p>Dans les années 1920 et 1930, ces deux mouvements deviennent incompatibles. L’étalon-or exige de baisser les salaires pour défendre la monnaie ; les démocraties ne le peuvent plus. Le blocage ouvre la voie à des solutions autoritaires. Pour Polanyi, le fascisme est l’une des issues, la pire, à la crise d’une société de marché.</p>
+<p><b>La question.</b> Comment une crise économique peut-elle mener à la dictature ?</p>
+<p><b>Son raisonnement.</b> Dans les années 1920 et 1930, les deux mouvements deviennent incompatibles. L’étalon-or exige de baisser les salaires pour défendre la monnaie, et les démocraties ne le peuvent plus. Le blocage ouvre la voie à des solutions autoritaires. Pour Polanyi, le fascisme est l’une des issues, la pire, à la crise d’une société de marché.</p>
+<p><b>Un exemple.</b> De 1930 à 1932, le chancelier allemand Heinrich Brüning baisse les salaires et les dépenses pour défendre le mark. Le chômage dépasse six millions de personnes, et Hitler arrive au pouvoir en janvier 1933.</p>
+<p><a href="#c-taux-de-change">Pour aller plus loin, la notice « Taux de change » →</a></p>
 <h4>6. Après le marché autorégulateur</h4>
-<p>Polanyi espère que l’après-guerre « réencastrera » l’économie : des marchés, mais sous le contrôle de la démocratie, avec des protections pour le travail, la terre et la monnaie. Il voit dans cette perspective un gain de liberté, et non une servitude.</p>` },
+<p><b>La question.</b> Que faire après la fin du marché autorégulateur ?</p>
+<p><b>Son raisonnement.</b> Polanyi espère que l’après-guerre « réencastrera » l’économie, avec des marchés, mais sous le contrôle de la démocratie, et des protections pour le travail, la terre et la monnaie. Il voit dans cette perspective un gain de liberté, et non une servitude.</p>
+<p><b>Un exemple.</b> La Grande Transformation paraît en 1944, l’année des accords de Bretton Woods. L’ordre d’après-guerre lui donne en partie raison, avec le contrôle des mouvements de capitaux, des taux de change stables et l’État social.</p>
+<p><a href="#c-encastrement">Pour aller plus loin, la notice « Encastrement » →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>La Grande Transformation (1944).</b> Son chef-d’œuvre : l’histoire de la société de marché, de sa naissance en Angleterre à son effondrement dans les années 1930.</p>
 <p><b>« Notre obsolète mentalité de marché » (1947).</b> Un article court qui résume sa pensée et plaide pour sortir de l’idée que l’économie se réduit au marché.</p>
@@ -186,18 +203,34 @@ ${vieKalecki}
 <p>Plus tard, dans les années 1950 et 1960, il s’intéresse aux pays pauvres qui viennent d’accéder à l’indépendance, comme l’Inde, et aux difficultés de la planification dans les pays socialistes.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. L’investissement commande l’activité</h4>
-<p>Dès 1933, Kalecki montre que la production et l’emploi dépendent de la dépense, et surtout de l’investissement, qui est la composante la plus instable (<a href="#c-demande-effective">voir demande effective</a>). Quand les entreprises cessent d’investir, les revenus et l’emploi chutent, sans retour automatique à l’équilibre.</p>
+<p><b>La question.</b> Qu’est-ce qui détermine le niveau de la production et de l’emploi ?</p>
+<p><b>Son raisonnement.</b> Dès 1933, Kalecki montre que la production et l’emploi dépendent de la dépense, et surtout de l’investissement, qui en est la partie la plus instable. Quand les entreprises cessent d’investir, les revenus et l’emploi chutent, sans retour automatique à l’équilibre.</p>
+<p><b>Un exemple.</b> Kalecki publie ces idées en polonais, trois ans avant la Théorie générale de Keynes. Dans les récessions, l’investissement des entreprises chute en général bien plus fortement que la consommation des ménages, et entraîne le reste de l’économie.</p>
+<p><a href="#c-demande-effective">Pour aller plus loin, la notice « Demande effective » →</a></p>
 <h4>2. Les profits viennent des dépenses des capitalistes</h4>
-<p>Dans une économie simplifiée où les salariés dépensent tout leur salaire, les profits sont égaux aux dépenses des capitalistes : leurs investissements et leur consommation. Ce ne sont pas les profits qui permettent d’investir, mais l’investissement qui crée les profits. Le déficit public et l’excédent commercial s’y ajoutent.</p>
+<p><b>La question.</b> D’où viennent les profits ?</p>
+<p><b>Son raisonnement.</b> Dans une économie simplifiée où les salariés dépensent tout leur salaire, les profits sont égaux aux dépenses des capitalistes, leurs investissements et leur consommation. Ce ne sont pas les profits qui permettent d’investir, mais l’investissement qui crée les profits. Le déficit public et l’excédent commercial s’y ajoutent.</p>
+<p><b>Un exemple.</b> La formule devenue célèbre résume l’idée. Les travailleurs dépensent ce qu’ils gagnent, les capitalistes gagnent ce qu’ils dépensent. Elle aide à comprendre pourquoi, en 2021, les profits des entreprises américaines ont atteint un record alors que l’économie sortait d’une récession, portés par des déficits publics énormes.</p>
 <h4>3. Des prix fixés par une marge</h4>
-<p>Dans l’industrie, les grandes entreprises fixent leurs prix en ajoutant une marge à leurs coûts. Cette marge dépend de leur « degré de monopole » : moins il y a de concurrence, plus elle est forte, et plus la part des profits dans le revenu national est élevée. La répartition des revenus devient ainsi une question de pouvoir de marché.</p>
+<p><b>La question.</b> Comment les grandes entreprises fixent-elles leurs prix ?</p>
+<p><b>Son raisonnement.</b> Dans l’industrie, les grandes entreprises fixent leurs prix en ajoutant une marge à leurs coûts. Cette marge dépend de leur « degré de monopole ». Moins il y a de concurrence, plus elle est forte, et plus la part des profits dans le revenu national est élevée. La répartition des revenus devient ainsi une question de pouvoir de marché.</p>
+<p><b>Un exemple.</b> Pendant la poussée d’inflation de 2021-2023, des études de la BCE et du FMI montrent que la hausse des marges des entreprises a contribué de façon importante à la hausse des prix dans la zone euro, une idée que Kalecki n’aurait pas trouvée surprenante.</p>
+<p><a href="#c-concurrence-imparfaite">Pour aller plus loin, la notice « Monopole, oligopole et monopsone » →</a></p>
 <h4>4. Le cycle</h4>
-<p>L’investissement d’aujourd’hui augmente la capacité de production de demain, ce qui finit par décourager de nouveaux investissements. Ce mécanisme, avec les délais entre la décision d’investir et la livraison des machines, produit des fluctuations régulières de l’activité (<a href="#c-cycles">voir cycles</a>).</p>
+<p><b>La question.</b> Pourquoi l’investissement monte-t-il et descend-il ?</p>
+<p><b>Son raisonnement.</b> L’investissement d’aujourd’hui augmente la capacité de production de demain, ce qui finit par décourager de nouveaux investissements. Ce mécanisme, avec les délais entre la décision d’investir et la livraison des machines, produit des fluctuations régulières de l’activité.</p>
+<p><b>Un exemple.</b> Après une vague de construction d’usines et de bureaux, les capacités sont abondantes, et les entreprises cessent d’investir pendant un temps. La demande de machines et de bâtiments s’effondre, les revenus baissent, jusqu’à ce que l’usure des équipements relance les commandes.</p>
+<p><a href="#c-cycles">Pour aller plus loin, la notice « Cycles économiques » →</a></p>
 <h4>5. Les aspects politiques du plein emploi</h4>
-<p>En 1943, alors que tout le monde parle de plein emploi pour l’après-guerre, Kalecki prévient : l’État sait le réaliser, en dépensant, mais les chefs d’entreprise s’y opposeront. Ils se méfient de l’intervention publique, des dépenses qui ne passent pas par eux, et surtout d’un plein emploi durable qui retire au licenciement son pouvoir de discipline. La politique économique suivra donc un « cycle politique » : relance en récession, austérité quand le plein emploi s’installe.</p>
+<p><b>La question.</b> Pourquoi le plein emploi n’est-il pas toujours recherché ?</p>
+<p><b>Son raisonnement.</b> En 1943, alors que tout le monde parle de plein emploi pour l’après-guerre, Kalecki prévient. L’État sait le réaliser, en dépensant, mais les chefs d’entreprise s’y opposeront. Ils se méfient de l’intervention publique, des dépenses qui ne passent pas par eux, et surtout d’un plein emploi durable qui retire au licenciement son pouvoir de discipline. La politique économique suivra donc un « cycle politique », relance en récession, austérité quand le plein emploi s’installe.</p>
+<p><b>Un exemple.</b> L’article paraît dans la revue britannique The Political Quarterly. Il inspire plus tard les travaux sur le « cycle électoral », comme celui de William Nordhaus en 1975, qui le cite et observe des relances avant les élections. Chez Nordhaus, la cause n’est plus le patronat, mais la recherche de voix.</p>
+<p><a href="#c-choix-public">Pour aller plus loin, la notice « Théorie des choix publics » →</a></p>
 ${cycle}
 <h4>6. Le développement</h4>
-<p>Dans ses travaux pour les pays pauvres, Kalecki souligne que l’investissement y bute moins sur le manque d’épargne que sur le manque de nourriture : si l’agriculture ne suit pas, la relance fait monter les prix alimentaires et appauvrit les plus pauvres.</p>` },
+<p><b>La question.</b> Qu’est-ce qui freine le développement des pays pauvres ?</p>
+<p><b>Son raisonnement.</b> Dans ses travaux pour les pays pauvres, Kalecki souligne que l’investissement y bute moins sur le manque d’épargne que sur le manque de nourriture. Si l’agriculture ne suit pas, la relance fait monter les prix alimentaires et appauvrit les plus pauvres.</p>
+<p><b>Un exemple.</b> Kalecki conseille plusieurs pays, dont l’Inde, Israël et Cuba. Dans l’Inde des années 1960, la « révolution verte », avec ses nouvelles semences et l’irrigation, desserre justement ce goulet d’étranglement alimentaire.</p>` },
       { id: "livres", titre: "Les livres et articles qui comptent", html: `
 <p><b>« Essai sur la théorie du cycle économique » (1933, en polonais).</b> La demande effective et le cycle, trois ans avant Keynes.</p>
 <p><b>Essais sur la théorie des fluctuations économiques (1939).</b> Sa première publication en anglais, avec la théorie des prix fondée sur le degré de monopole.</p>
@@ -332,18 +365,36 @@ ${vieAglietta}
 <p>Aglietta prend le problème par l’autre bout. Plutôt que de demander pourquoi la crise est arrivée, il demande pourquoi une croissance aussi forte et aussi stable a été possible pendant vingt-cinq ans, alors que le capitalisme avait connu tant de crises auparavant. Il emprunte à <a href="#eco-marx">Marx</a> l’attention aux rapports sociaux et à l’accumulation du capital, à <a href="#eco-keynes">Keynes</a> le rôle de la demande, et aux historiens le goût du temps long.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Pas d’équilibre naturel</h4>
-<p>Pour Aglietta, le capitalisme est traversé de conflits, entre salariés et employeurs, entre entreprises concurrentes, entre créanciers et débiteurs. Rien ne garantit qu’ils se résolvent d’eux-mêmes en un équilibre. La stabilité, quand elle existe, doit être expliquée.</p>
+<p><b>La question.</b> Le capitalisme tend-il naturellement vers l’équilibre ?</p>
+<p><b>Son raisonnement.</b> Pour Aglietta, le capitalisme est traversé de conflits, entre salariés et employeurs, entre entreprises concurrentes, entre créanciers et débiteurs. Rien ne garantit qu’ils se résolvent d’eux-mêmes en un équilibre. La stabilité, quand elle existe, doit être expliquée.</p>
+<p><b>Un exemple.</b> Sa thèse, publiée en 1976 sous le titre Régulation et crises du capitalisme, étudie un siècle d’économie américaine. Elle fonde ce qu’on appellera l’école de la régulation, très présente en France.</p>
+<p><a href="#c-equilibre-general">Pour aller plus loin, la notice « Équilibre général », qui part au contraire de l’équilibre →</a></p>
 <h4>2. Le mode de régulation</h4>
-<p>Elle s’explique par un ensemble d’institutions qui se tiennent : la manière de fixer les salaires, les formes de la concurrence, le régime monétaire, le rôle de l’État, la place dans l’économie mondiale. Ensemble, elles forment un « mode de régulation » (<a href="#c-mode-regulation">voir mode de régulation</a>).</p>
+<p><b>La question.</b> Qu’est-ce qui rend une économie stable pendant des décennies ?</p>
+<p><b>Son raisonnement.</b> Un ensemble d’institutions qui se tiennent, la manière de fixer les salaires, les formes de la concurrence, le régime monétaire, le rôle de l’État et la place dans l’économie mondiale. Ensemble, elles forment un « mode de régulation ».</p>
+<p><b>Un exemple.</b> En France après 1945, la Sécurité sociale, les conventions collectives et un salaire minimum indexé sur les prix, puis sur la croissance, forment un tel ensemble. Chaque pièce soutient les autres.</p>
+<p><a href="#c-mode-regulation">Pour aller plus loin, la notice « Mode de régulation » →</a></p>
 <h4>3. Le fordisme</h4>
-<p>Après 1945, ces institutions forment un cercle vertueux. La production de masse dégage de forts gains de productivité, partagés avec les salariés par des conventions collectives. Les salariés achètent ce qu’ils produisent, ce qui soutient l’investissement. Aglietta appelle ce système le « fordisme », en référence à Henry Ford, qui voulait que ses ouvriers puissent acheter ses voitures.</p>
+<p><b>La question.</b> Comment produire en masse et vendre en masse ?</p>
+<p><b>Son raisonnement.</b> Après 1945, ces institutions forment un cercle vertueux. La production de masse dégage de forts gains de productivité, partagés avec les salariés par des conventions collectives. Les salariés achètent ce qu’ils produisent, ce qui soutient l’investissement. Aglietta appelle ce système le « fordisme », un mot déjà employé par Antonio Gramsci, en référence à Henry Ford.</p>
+<p><b>Un exemple.</b> En 1914, Ford double le salaire de ses ouvriers, d’abord pour retenir une main-d’œuvre qui quittait vite l’usine. Le récit veut aussi qu’il ait voulu leur permettre d’acheter ses voitures. Pendant les Trente Glorieuses, de 1945 à 1975, la production française croît d’environ 5 % par an, et les ménages s’équipent en voitures, réfrigérateurs et téléviseurs.</p>
+<p><a href="#c-rendements-croissants">Pour aller plus loin, la notice « Rendements croissants » →</a></p>
 ${fordisme}
 <h4>4. Les grandes crises</h4>
-<p>À la fin des années 1960, la productivité ralentit, la concurrence internationale s’intensifie, les salariés résistent à la baisse de leur part. Le cercle se rompt : ce n’est pas une récession ordinaire, mais une « grande crise » du mode de régulation, qui ne se résout que par l’invention d’institutions nouvelles.</p>
+<p><b>La question.</b> Pourquoi certaines crises durent-elles une décennie ?</p>
+<p><b>Son raisonnement.</b> À la fin des années 1960, la productivité ralentit, la concurrence internationale s’intensifie, et les salariés résistent à la baisse de leur part. Le cercle se rompt. Ce n’est pas une récession ordinaire, mais une « grande crise » du mode de régulation, qui ne se résout que par l’invention d’institutions nouvelles.</p>
+<p><b>Un exemple.</b> Les années 1970 voient à la fois l’inflation, le chômage et le ralentissement de la croissance, la stagflation. Il faudra une décennie et de profondes réformes, libéralisation financière, désindexation des salaires, pour qu’un nouveau régime se mette en place.</p>
+<p><a href="#c-stagflation">Pour aller plus loin, la notice « Stagflation » →</a></p>
 <h4>5. La monnaie, institution sociale</h4>
-<p>Avec André Orléan, Aglietta soutient que la monnaie n’est ni une marchandise ni un simple outil technique. Elle repose sur la confiance de tous dans le fait que les autres l’accepteront. Cette confiance est fragile : elle peut se rompre dans les crises, les hyperinflations ou les paniques bancaires. La monnaie est donc liée à la souveraineté politique (<a href="#c-fonctions-monnaie">voir fonctions de la monnaie</a>).</p>
+<p><b>La question.</b> Sur quoi repose la confiance dans la monnaie ?</p>
+<p><b>Son raisonnement.</b> Avec André Orléan, Aglietta soutient que la monnaie n’est ni une marchandise ni un simple outil technique. Elle repose sur la confiance de tous dans le fait que les autres l’accepteront. Cette confiance est fragile. Elle peut se rompre dans les crises, les hyperinflations ou les paniques bancaires. La monnaie est donc liée à la souveraineté politique.</p>
+<p><b>Un exemple.</b> Leur livre commun s’intitule La Violence de la monnaie (1982). Quand la confiance disparaît, comme au Zimbabwe en 2008, la monnaie nationale est abandonnée début 2009 au profit surtout du dollar américain et du rand sud-africain.</p>
+<p><a href="#c-fonctions-monnaie">Pour aller plus loin, la notice « Fonctions de la monnaie » →</a></p>
 <h4>6. Le capitalisme financiarisé</h4>
-<p>Après les années 1980, un nouveau régime se met en place, dominé par la finance et la valeur pour l’actionnaire. Aglietta en étudie l’instabilité, de la crise de 2008 aux faiblesses de l’euro, une monnaie sans État complet. Il plaide pour des institutions capables de réguler la finance mondiale et de financer la transition écologique.</p>` },
+<p><b>La question.</b> Que change le pouvoir pris par la finance ?</p>
+<p><b>Son raisonnement.</b> Après les années 1980, un nouveau régime se met en place, dominé par la finance et la valeur pour l’actionnaire. Aglietta en étudie l’instabilité, de la crise de 2008 aux faiblesses de l’euro, une monnaie sans État complet. Il plaide pour des institutions capables de réguler la finance mondiale et de financer la transition écologique.</p>
+<p><b>Un exemple.</b> Pendant la crise de l’euro, la Grèce ne peut ni dévaluer ni créer sa monnaie. Il faut l’engagement de la BCE de faire « tout ce qu’il faudra », en juillet 2012, pour calmer les marchés, ce qui illustre le lien entre monnaie et souveraineté.</p>
+<p><a href="#c-instabilite-financiere">Pour aller plus loin, la notice « Hypothèse d’instabilité financière » →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Régulation et crises du capitalisme (1976).</b> Le livre fondateur, à partir de l’histoire économique des États-Unis.</p>
 <p><b>La Violence de la monnaie (1982), avec André Orléan.</b> La monnaie comme institution sociale, née de la violence et de la rivalité.</p>

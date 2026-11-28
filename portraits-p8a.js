@@ -65,19 +65,37 @@ ${vieSummers}
 <p>Après la crise de 2008, il observe une reprise anormalement lente, malgré des taux d’intérêt à zéro. Il cherche à comprendre pourquoi les économies riches semblent avoir besoin de bulles financières pour atteindre le plein emploi.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Les marchés financiers ne sont pas toujours efficients</h4>
-<p>Dans les années 1980, Summers montre avec d’autres que les prix des actifs peuvent s’écarter durablement de leur valeur fondamentale, à cause de « bruiteurs », des investisseurs mal informés, et des limites de l’arbitrage. Il plaide même pour une petite taxe sur les transactions financières.</p>
+<p><b>La question.</b> Les cours de Bourse reflètent-ils toujours la valeur des entreprises ?</p>
+<p><b>Son raisonnement.</b> Dans les années 1980, Summers montre avec d’autres que les prix des actifs peuvent s’écarter durablement de leur valeur fondamentale, à cause d’investisseurs mal informés qui suivent les rumeurs, et parce que les investisseurs avisés ne peuvent pas toujours corriger ces écarts. Il plaide même pour une petite taxe sur les transactions financières.</p>
+<p><b>Un exemple.</b> Pendant la bulle internet de la fin des années 1990, des entreprises sans bénéfices valaient des milliards. L’indice Nasdaq perd ensuite près de 80 % de sa valeur entre 2000 et 2002, ce qui, pour Summers et d’autres, s’explique mal par la seule évolution des perspectives des entreprises.</p>
+<p><a href="#c-instabilite-financiere">Pour aller plus loin, la notice « Hypothèse d’instabilité financière » →</a></p>
 <h4>2. L’hystérèse du chômage</h4>
-<p>Avec Olivier Blanchard, il montre en 1986 que le chômage peut devenir persistant : les chômeurs de longue durée perdent leurs compétences et leurs liens avec l’emploi, et pèsent moins sur les salaires. Le <a href="#c-taux-naturel">taux de chômage naturel</a> dépend donc de l’histoire (<a href="#c-hysterese">voir hystérèse</a>).</p>
+<p><b>La question.</b> Le chômage peut-il s’installer durablement ?</p>
+<p><b>Son raisonnement.</b> Avec Olivier Blanchard, Summers montre en 1986 que le chômage peut devenir persistant. Les salaires sont négociés par les salariés en place, qui ne tiennent guère compte des chômeurs. Les chômeurs de longue durée, qui perdent aussi leurs compétences, pèsent donc peu sur les salaires. Le taux de chômage naturel dépend donc de l’histoire.</p>
+<p><b>Un exemple.</b> En Europe, dans les années 1970 et 1980, le chômage monte à chaque récession et ne redescend presque pas à la reprise. C’est cette énigme que Blanchard et Summers cherchent à expliquer.</p>
+<p><a href="#c-hysterese">Pour aller plus loin, la notice « Hystérèse du chômage » →</a></p>
 ${cicatrices}
 <h4>3. La politique budgétaire en temps de crise</h4>
-<p>Summers défend une relance budgétaire « opportune, ciblée et temporaire ». Quand les taux d’intérêt sont à zéro, les dépenses publiques sont plus efficaces, car la banque centrale ne les neutralise pas en remontant ses taux, et elles évitent les cicatrices de l’hystérèse.</p>
+<p><b>La question.</b> Quand l’État doit-il dépenser pour soutenir l’économie ?</p>
+<p><b>Son raisonnement.</b> Summers défend une relance budgétaire « opportune, ciblée et temporaire ». Quand les taux d’intérêt sont à zéro, les dépenses publiques sont plus efficaces, car la banque centrale ne les neutralise pas en remontant ses taux, et elles évitent les cicatrices de l’hystérèse.</p>
+<p><b>Un exemple.</b> En 2009, Summers dirige le Conseil économique national de Barack Obama. Le Congrès adopte alors un plan de relance d’environ 800 milliards de dollars. Beaucoup d’économistes jugeront plus tard qu’un plan plus important aurait été justifié.</p>
+<p><a href="#c-multiplicateur">Pour aller plus loin, la notice « Multiplicateur » →</a></p>
 <h4>4. La stagnation séculaire</h4>
-<p>En novembre 2013, lors d’une conférence au Fonds monétaire international, Summers reprend l’idée d’Alvin Hansen : les économies riches souffriraient d’un excès chronique d’épargne par rapport à l’investissement (<a href="#c-stagnation-seculaire">voir stagnation séculaire</a>). Le taux d’intérêt d’équilibre serait devenu négatif, et la banque centrale, bloquée au plancher du zéro, ne pourrait plus assurer le plein emploi (<a href="#c-trappe-liquidite">voir trappe à liquidité</a>).</p>
+<p><b>La question.</b> Pourquoi la croissance reste-t-elle faible alors que les taux d’intérêt sont nuls ?</p>
+<p><b>Son raisonnement.</b> En novembre 2013, lors d’une conférence au Fonds monétaire international, Summers reprend l’idée de l’économiste Alvin Hansen. Les économies riches souffriraient d’un excès chronique d’épargne par rapport à l’investissement. Le taux d’intérêt d’équilibre serait devenu négatif, et la banque centrale, bloquée près de zéro, ne pourrait plus assurer le plein emploi.</p>
+<p><b>Un exemple.</b> Hansen avait lancé l’expression en 1938, à la fin de la Grande Dépression. Dans les années 2010, les taux d’intérêt réels sont négatifs dans la plupart des pays riches, et la BNS fixe même son taux directeur à −0,75 % de 2015 à 2022.</p>
+<p><a href="#c-stagnation-seculaire">Pour aller plus loin, la notice « Stagnation séculaire » →</a></p>
 ${stagnation}
 <h4>5. Bulles et investissement public</h4>
-<p>Summers en tire deux conclusions. D’abord, les bulles des années 2000 n’étaient pas un accident : sans elles, la demande aurait été insuffisante. Ensuite, la meilleure réponse est l’investissement public, dans les infrastructures notamment, financé par l’emprunt à des taux très bas.</p>
+<p><b>La question.</b> Faut-il des bulles pour soutenir la demande ?</p>
+<p><b>Son raisonnement.</b> Summers en tire deux conclusions. D’abord, les bulles des années 2000 n’étaient pas un accident, car sans elles, la demande aurait été insuffisante. Ensuite, la meilleure réponse est l’investissement public, dans les infrastructures notamment, financé par l’emprunt à des taux très bas.</p>
+<p><b>Un exemple.</b> Même pendant la bulle immobilière américaine, alors que les ménages s’endettaient massivement, la croissance n’a pas été exceptionnelle. Pour Summers, c’est le signe d’une demande structurellement faible. Le grand plan d’infrastructures voté aux États-Unis en 2021 va dans le sens de ses recommandations.</p>
+<p><a href="#c-bien-public">Pour aller plus loin, la notice « Bien public » →</a></p>
 <h4>6. Le retour de l’inflation</h4>
-<p>En 2021, Summers juge le plan de relance de Joe Biden, 1 900 milliards de dollars, trop important face à l’écart réel entre la production et son potentiel. Il prédit une inflation forte. La suite lui donne largement raison, même s’il prévoyait aussi qu’une forte hausse du chômage serait nécessaire pour la réduire, ce qui ne s’est pas produit.</p>` },
+<p><b>La question.</b> Une relance peut-elle être trop forte ?</p>
+<p><b>Son raisonnement.</b> En 2021, Summers juge le plan de relance de Joe Biden, 1 900 milliards de dollars, trop important face à l’écart réel entre la production et son potentiel. Il prédit une inflation forte. La suite lui donne largement raison, même s’il prévoyait aussi qu’une forte hausse du chômage serait nécessaire pour la réduire, ce qui ne s’est pas produit.</p>
+<p><b>Un exemple.</b> L’inflation américaine atteint 9,1 % sur un an en juin 2022, son plus haut niveau depuis quarante ans, puis redescend sans récession. Le débat avec Krugman, qui jugeait l’inflation passagère, est reconstitué dans la rubrique Controverses.</p>
+<p><a href="#c-courbe-phillips">Pour aller plus loin, la notice « Courbe de Phillips » →</a></p>` },
       { id: "livres", titre: "Les livres et articles qui comptent", html: `
 <p><b>« Hysteresis and the European Unemployment Problem » (1986), avec Olivier Blanchard.</b> L’article fondateur sur la persistance du chômage.</p>
 <p><b>« Noise Trader Risk in Financial Markets » (1990), avec J. Bradford De Long, Andrei Shleifer et Robert Waldmann.</b> Pourquoi les investisseurs irrationnels peuvent influencer durablement les prix.</p>
@@ -229,21 +247,38 @@ ${vieAcemoglu}
 <p>Acemoglu, Johnson et Robinson cherchent un moyen de trancher cette question de causalité, en utilisant l’histoire comme une expérience naturelle.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Les origines coloniales</h4>
-<p>Dans un article de 2001, Acemoglu, Johnson et Robinson utilisent la mortalité des premiers colons européens. Là où les colons mouraient en masse de maladies, comme en Afrique de l’Ouest, ils ont créé des institutions extractives pour exploiter les ressources à distance. Là où ils pouvaient s’installer, comme en Amérique du Nord ou en Australie, ils ont importé des institutions protégeant les droits de propriété. Ces institutions ont persisté, et expliquent une grande partie des écarts de revenu actuels.</p>
+<p><b>La question.</b> Pourquoi certaines anciennes colonies sont-elles riches et d’autres pauvres ?</p>
+<p><b>Son raisonnement.</b> Dans un article de 2001, Acemoglu, Simon Johnson et James Robinson utilisent la mortalité des premiers colons européens. Là où les colons mouraient en masse de maladies, ils ont créé des institutions extractives pour exploiter les ressources à distance. Là où ils pouvaient s’installer, ils ont importé des institutions qui protégeaient les droits de propriété. Ces institutions ont persisté et expliquent une grande partie des écarts de revenu actuels.</p>
+<p><b>Un exemple.</b> En Afrique de l’Ouest, le paludisme et la fièvre jaune tuaient chaque année une forte proportion des Européens, qui ne venaient que pour prélever. En Amérique du Nord ou en Australie, ils se sont installés avec leurs familles et ont exigé des droits. Les données de mortalité utilisées sont toutefois contestées par l’économiste David Albouy.</p>
+<p><a href="#c-institutions-inclusives">Pour aller plus loin, la notice « Institutions inclusives et extractives » →</a></p>
 <h4>2. Le renversement de fortune</h4>
-<p>En 2002, ils montrent que, parmi les anciennes colonies, les régions les plus riches et les plus peuplées vers 1500, comme le Mexique, le Pérou ou l’Inde, sont souvent devenues plus pauvres que les régions alors peu développées, comme les États-Unis ou le Canada. Les Européens ont installé des institutions extractives là où il y avait des richesses et des populations à exploiter.</p>
+<p><b>La question.</b> Les régions riches d’hier sont-elles les riches d’aujourd’hui ?</p>
+<p><b>Son raisonnement.</b> En 2002, Acemoglu, Johnson et Robinson montrent que, parmi les anciennes colonies, les régions les plus riches et les plus peuplées vers 1500 sont souvent devenues plus pauvres que les régions alors peu développées. Les Européens ont installé des institutions extractives là où il y avait des richesses et des populations à exploiter.</p>
+<p><b>Un exemple.</b> Vers 1500, le Mexique aztèque et le Pérou inca comptent de grandes villes et des millions d’habitants, alors que l’Amérique du Nord est peu peuplée. Cinq siècles plus tard, les États-Unis et le Canada sont bien plus riches que le Mexique et le Pérou.</p>
 <h4>3. Inclusives ou extractives</h4>
-<p>Les institutions économiques inclusives protègent la propriété, garantissent l’égalité devant la loi et permettent à chacun d’entreprendre. Elles reposent sur des institutions politiques inclusives, pluralistes et assez centralisées pour faire respecter le droit (<a href="#c-institutions-inclusives">voir institutions inclusives</a>). Les institutions extractives, au contraire, concentrent le pouvoir et les richesses dans les mains d’une élite.</p>
+<p><b>La question.</b> Qu’est-ce qui distingue les institutions qui enrichissent un pays ?</p>
+<p><b>Son raisonnement.</b> Les institutions économiques inclusives protègent la propriété, garantissent l’égalité devant la loi et permettent à chacun d’entreprendre. Elles reposent sur des institutions politiques inclusives, pluralistes et assez centralisées pour faire respecter le droit. Les institutions extractives, au contraire, concentrent le pouvoir et les richesses dans les mains d’une élite.</p>
+<p><b>Un exemple.</b> Les deux Corées partageaient la même langue, la même culture et le même territoire jusqu’en 1945. La Corée du Sud est aujourd’hui un pays riche, la Corée du Nord l’un des plus pauvres du monde, et ce sont surtout les institutions qui ont divergé.</p>
+<p><a href="#c-institutions-inclusives">Pour aller plus loin, la notice « Institutions inclusives et extractives » →</a></p>
 ${nogales}
 <h4>4. Les cercles vertueux et vicieux</h4>
-<p>Les institutions tendent à se reproduire. Une élite qui profite d’institutions extractives craint la <a href="#c-destruction-creatrice">destruction créatrice</a>, qui pourrait faire émerger des concurrents et des contre-pouvoirs. Elle bloque donc l’innovation. Les changements viennent surtout de « moments critiques », comme la peste noire ou la révolution anglaise de 1688.</p>
+<p><b>La question.</b> Pourquoi les mauvaises institutions durent-elles ?</p>
+<p><b>Son raisonnement.</b> Les institutions tendent à se reproduire. Une élite qui profite d’institutions extractives craint la destruction créatrice, qui pourrait faire émerger des concurrents et des contre-pouvoirs. Elle bloque donc l’innovation. Les changements viennent surtout de « moments critiques », comme la peste noire ou la révolution anglaise de 1688.</p>
+<p><b>Un exemple.</b> Au début du XIXe siècle, les dirigeants de l’Empire d’Autriche et de la Russie tsariste freinent les chemins de fer et l’industrie, de peur qu’ils n’apportent avec eux des idées nouvelles et des troubles. Leurs pays prennent un retard durable sur la Grande-Bretagne.</p>
+<p><a href="#c-destruction-creatrice">Pour aller plus loin, la notice « Destruction créatrice » →</a></p>
 ${cercles}
 <h4>5. Le couloir étroit</h4>
-<p>Dans Le Couloir étroit (2019), Acemoglu et Robinson décrivent la liberté comme un équilibre fragile entre un État fort et une société forte, capable de le contrôler. Trop d’État mène au despotisme, pas assez à l’anarchie ou à la domination des coutumes et des clans.</p>
+<p><b>La question.</b> Comment un État peut-il être fort sans écraser la liberté ?</p>
+<p><b>Son raisonnement.</b> Dans Le Couloir étroit (2019), Acemoglu et Robinson décrivent la liberté comme un équilibre fragile entre un État fort et une société forte, capable de le contrôler. Trop d’État mène au despotisme, pas assez à l’anarchie ou à la domination des coutumes et des clans.</p>
+<p><b>Un exemple.</b> Ils parlent d’un « effet Reine rouge », d’après le personnage de Lewis Carroll qui court pour rester à la même place. L’État et la société doivent se renforcer ensemble, sans cesse, pour que l’un ne prenne pas le dessus sur l’autre.</p>
 <h4>6. La technologie et le travail</h4>
-<p>Avec Pascual Restrepo, Acemoglu étudie l’automatisation. Ils estiment en 2020 que chaque robot industriel supplémentaire pour mille travailleurs a réduit l’emploi et les salaires dans les régions américaines concernées. Dans Pouvoir et progrès (2023), avec Simon Johnson, il soutient que la technologie ne profite pas automatiquement à tous : tout dépend de qui décide de son orientation.</p>
+<p><b>La question.</b> Le progrès technique profite-t-il à tout le monde ?</p>
+<p><b>Son raisonnement.</b> Avec Pascual Restrepo, Acemoglu étudie l’automatisation. Dans Pouvoir et progrès (2023), avec Simon Johnson, il soutient que la technologie ne profite pas automatiquement à tous, tout dépend de qui décide de son orientation et de la façon dont les gains sont partagés.</p>
+<p><b>Un exemple.</b> Acemoglu et Restrepo estiment en 2020 que, dans les régions américaines concernées, chaque robot industriel supplémentaire pour mille travailleurs a réduit le taux d’emploi d’environ 0,2 point et les salaires d’environ 0,4 %.</p>
 <h4>7. L’intelligence artificielle</h4>
-<p>Acemoglu s’inquiète d’une intelligence artificielle tournée vers l’automatisation et la surveillance plutôt que vers l’aide aux travailleurs. En 2024, il estime que ses effets sur la productivité seront plus modestes que ce qu’annoncent ses promoteurs, du moins pendant la décennie à venir.</p>` },
+<p><b>La question.</b> L’intelligence artificielle va-t-elle enrichir tout le monde ?</p>
+<p><b>Son raisonnement.</b> Acemoglu s’inquiète d’une intelligence artificielle tournée vers l’automatisation et la surveillance plutôt que vers l’aide aux travailleurs. En 2024, il estime que ses effets sur la productivité seront plus modestes que ce qu’annoncent ses promoteurs, du moins pendant la décennie à venir.</p>
+<p><b>Un exemple.</b> Selon son estimation, l’IA telle qu’elle est orientée n’augmenterait la productivité globale de l’économie américaine que d’au plus 0,7 % environ en dix ans. La même année, il reçoit le prix Nobel avec Simon Johnson et James Robinson pour leurs travaux sur les institutions.</p>` },
       { id: "livres", titre: "Les livres et articles qui comptent", html: `
 <p><b>« The Colonial Origins of Comparative Development » (2001), avec Simon Johnson et James Robinson.</b> L’article fondateur, l’un des plus cités de l’économie contemporaine.</p>
 <p><b>Economic Origins of Dictatorship and Democracy (2006), avec James Robinson.</b> Une théorie des transitions démocratiques.</p>

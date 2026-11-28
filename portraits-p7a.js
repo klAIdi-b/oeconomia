@@ -243,20 +243,38 @@ ${vieSen}
 <p>Sen veut réintroduire l’éthique et la philosophie dans l’économie, sans renoncer à la rigueur. Il travaille à la frontière entre les deux disciplines, en dialogue avec des philosophes comme John Rawls et Martha Nussbaum.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Le choix social</h4>
-<p>Dans Choix collectif et bien-être social (1970), Sen montre que l’impossibilité d’Arrow peut être levée si l’on accepte de comparer le bien-être entre personnes, en utilisant davantage d’informations. Il démontre aussi le « paradoxe du libéral parétien » : respecter à la fois le critère de Pareto et des libertés individuelles minimales peut être impossible.</p>
+<p><b>La question.</b> Peut-on additionner les préférences de chacun pour prendre une décision collective ?</p>
+<p><b>Son raisonnement.</b> Kenneth Arrow avait montré en 1951 qu’aucune règle de vote ne peut respecter à la fois quelques conditions simples et raisonnables. Dans Choix collectif et bien-être social (1970), Sen montre qu’on peut sortir de cette impasse si l’on accepte de comparer le bien-être entre personnes, en utilisant davantage d’informations. Il démontre aussi le « paradoxe du libéral parétien », respecter à la fois le critère de Pareto et des libertés individuelles minimales peut être impossible.</p>
+<p><b>Un exemple.</b> Sen illustre son paradoxe avec un livre jugé scandaleux, L’Amant de Lady Chatterley, et deux lecteurs, un prude et un libertin. Respecter la liberté de chacun de lire ou non et respecter leurs préférences communes conduit à une contradiction.</p>
+<p><a href="#c-optimum-pareto">Pour aller plus loin, la notice « Optimum de Pareto » →</a></p>
 <h4>2. La mesure de la pauvreté</h4>
-<p>Sen critique les mesures de la pauvreté qui se contentent de compter les pauvres, et propose en 1976 un indice qui tient compte de la profondeur de la pauvreté et des inégalités entre les pauvres.</p>
+<p><b>La question.</b> Suffit-il de compter les pauvres ?</p>
+<p><b>Son raisonnement.</b> Sen critique les mesures de la pauvreté qui se contentent de compter les pauvres, et propose en 1976 un indice qui tient compte de la profondeur de la pauvreté et des inégalités entre les pauvres.</p>
+<p><b>Un exemple.</b> Un gouvernement qui aide seulement ceux qui sont juste sous le seuil de pauvreté fait baisser le nombre de pauvres, alors que les plus démunis ne reçoivent rien. L’indice de Sen évite ce piège, car il compte aussi l’écart au seuil.</p>
 <h4>3. Les famines et les droits d’accès</h4>
-<p>Dans Pauvreté et famines (1981), Sen étudie les famines du Bengale (1943), d’Éthiopie (1973-1974), du Sahel et du Bangladesh (1974). Il montre qu’elles surviennent souvent sans baisse majeure de la nourriture disponible. Ce qui change, c’est la capacité de certains groupes à obtenir de la nourriture, par leur travail, leur production ou leurs échanges.</p>
+<p><b>La question.</b> Les famines viennent-elles d’un manque de nourriture ?</p>
+<p><b>Son raisonnement.</b> Dans Pauvreté et famines (1981), Sen étudie les famines du Bengale (1943), d’Éthiopie (1973-1974), du Sahel et du Bangladesh (1974). Il montre qu’elles surviennent souvent sans baisse majeure de la nourriture disponible. Ce qui change, c’est la capacité de certains groupes à obtenir de la nourriture, par leur travail, leur production ou leurs échanges.</p>
+<p><b>Un exemple.</b> Au Bengale en 1943, la récolte n’est pas catastrophique, mais l’inflation de guerre fait flamber le prix du riz. Les ouvriers agricoles et les pêcheurs, dont les revenus ne suivent pas, ne peuvent plus en acheter. La famine tue entre deux et trois millions de personnes. Sen, alors âgé de neuf ans, en a été le témoin.</p>
 ${famine}
 <h4>4. La démocratie contre la famine</h4>
-<p>Sen observe qu’aucune famine majeure ne s’est produite dans un pays démocratique doté d’une presse relativement libre. Les gouvernements qui doivent rendre des comptes aux électeurs et à la presse ont intérêt à agir vite. À l’inverse, la famine du Grand Bond en avant en Chine, de 1958 à 1961, a pu tuer des dizaines de millions de personnes dans le silence.</p>
+<p><b>La question.</b> Pourquoi les démocraties ne connaissent-elles pas de grandes famines ?</p>
+<p><b>Son raisonnement.</b> Sen observe qu’aucune famine majeure ne s’est produite dans un pays démocratique doté d’une presse relativement libre. Les gouvernements qui doivent rendre des comptes aux électeurs et à la presse ont intérêt à agir vite.</p>
+<p><b>Un exemple.</b> L’Inde indépendante n’a plus connu de grande famine. Lors de la sécheresse du Maharashtra en 1972-1973, des travaux publics ont donné un revenu à des millions de personnes. À l’inverse, la famine du Grand Bond en avant en Chine, de 1958 à 1961, a pu tuer des dizaines de millions de personnes dans le silence.</p>
+<p><a href="#c-institutions-inclusives">Pour aller plus loin, la notice « Institutions inclusives et extractives » →</a></p>
 <h4>5. Les capabilités</h4>
-<p>Pour Sen, le développement doit se mesurer non au revenu ou à l’utilité, mais aux « capabilités » : les libertés réelles dont disposent les personnes de mener la vie qu’elles ont des raisons de valoriser, être en bonne santé, instruit, participer à la vie sociale (<a href="#c-capabilites">voir capabilités</a>). Le revenu n’est qu’un moyen, et deux personnes au même revenu peuvent avoir des possibilités très différentes.</p>
+<p><b>La question.</b> Comment mesurer le développement ?</p>
+<p><b>Son raisonnement.</b> Pour Sen, le développement se mesure non au revenu ou à l’utilité, mais aux « capabilités », les libertés réelles dont disposent les personnes de mener la vie qu’elles ont des raisons de valoriser, être en bonne santé, instruit, participer à la vie sociale. Le revenu n’est qu’un moyen, et deux personnes au même revenu peuvent avoir des possibilités très différentes.</p>
+<p><b>Un exemple.</b> Sen compare souvent l’État indien du Kerala, longtemps pauvre mais doté de bonnes écoles et de bons dispensaires, à des régions plus riches où l’on vivait moins longtemps. Ces idées inspirent l’indice de développement humain du PNUD, créé en 1990 avec l’économiste pakistanais Mahbub ul Haq.</p>
+<p><a href="#c-capabilites">Pour aller plus loin, la notice « Capabilités » →</a></p>
 <h4>6. Les femmes manquantes</h4>
-<p>En 1990, Sen calcule que plus de cent millions de femmes « manquent » dans le monde, principalement en Asie : compte tenu du rapport normal entre les sexes, elles auraient dû être vivantes. Ce déficit résulte de la négligence des filles dans l’alimentation et les soins, puis des avortements sélectifs. C’est l’un de ses travaux les plus cités.</p>
+<p><b>La question.</b> Pourquoi manque-t-il des femmes dans certains pays ?</p>
+<p><b>Son raisonnement.</b> En 1990, Sen calcule que plus de cent millions de femmes « manquent » dans le monde, principalement en Asie. Compte tenu du rapport normal entre les sexes, elles auraient dû être vivantes. Ce déficit résulte de la négligence des filles dans l’alimentation et les soins, puis des avortements sélectifs. C’est l’un de ses travaux les plus cités.</p>
+<p><b>Un exemple.</b> Il naît normalement environ 105 garçons pour 100 filles. En Chine, au milieu des années 2000, on comptait près de 120 garçons pour 100 filles à la naissance, un écart qui s’explique surtout par la sélection.</p>
 <h4>7. Le développement comme liberté</h4>
-<p>Dans Un nouveau modèle économique : développement, justice, liberté (1999), Sen fait de la liberté à la fois la fin et le moyen du développement. Il insiste sur l’éducation, la santé, la démocratie et l’égalité des femmes comme moteurs du progrès. Dans L’Idée de justice (2009), il propose une approche comparative, qui cherche à réduire les injustices manifestes plutôt qu’à définir une société parfaitement juste.</p>
+<p><b>La question.</b> À quoi sert le développement ?</p>
+<p><b>Son raisonnement.</b> Dans Un nouveau modèle économique (1999), Sen fait de la liberté à la fois la fin et le moyen du développement. Il insiste sur l’éducation, la santé, la démocratie et l’égalité des femmes comme moteurs du progrès. Dans L’Idée de justice (2009), il propose une approche comparative, qui cherche à réduire les injustices manifestes plutôt qu’à définir une société parfaitement juste.</p>
+<p><b>Un exemple.</b> Le prix Nobel lui est attribué en 1998 pour ses travaux sur l’économie du bien-être. Son approche se lit aujourd’hui dans les objectifs de développement durable de l’ONU, qui mesurent la santé, l’éducation et l’égalité autant que le revenu.</p>
+<p><a href="#c-pib">Pour aller plus loin, la notice « PIB et ses limites » →</a></p>
 ${idh}` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Choix collectif et bien-être social (1970).</b> Son ouvrage fondateur sur la théorie du choix social, qui renouvelle le débat après Arrow.</p>

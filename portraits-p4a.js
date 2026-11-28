@@ -61,21 +61,41 @@ ${vieAristote}
 <p>Aristote observe avec méfiance le développement du commerce et de la finance, qui permet à certains de s’enrichir sans limite. Il se demande quelle place donner à l’acquisition de richesses dans une vie bonne, et comment l’échange peut être juste entre des personnes et des choses très différentes.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. La cité et la maisonnée</h4>
-<p>Pour Aristote, l’homme est un « animal politique » : il ne peut réaliser sa nature que dans la cité. La maisonnée, l’oikos, est la cellule de base, qui pourvoit aux besoins de la vie. L’économie est l’art de gérer la maisonnée en vue de bien vivre, non de s’enrichir indéfiniment.</p>
+<p><b>La question.</b> À quoi sert l’économie ?</p>
+<p><b>Son raisonnement.</b> Pour Aristote, l’homme est un « animal politique », qui ne peut réaliser sa nature que dans la cité. La maisonnée, l’oikos, en est la cellule de base et pourvoit aux besoins de la vie. L’économie est l’art de gérer la maisonnée en vue de bien vivre, non de s’enrichir sans fin.</p>
+<p><b>Un exemple.</b> Le mot « économie » vient du grec oikonomia, de oikos, la maison, et nomos, la règle. Il désignait la bonne tenue d’une maison, de ses biens, de ses esclaves et de ses provisions, bien avant de désigner l’activité d’un pays.</p>
 <h4>2. Valeur d’usage et valeur d’échange</h4>
-<p>Aristote remarque qu’une chaussure peut servir à être portée ou à être échangée. Les deux usages sont légitimes, mais le premier est propre à l’objet, le second non. C’est la première formulation de la distinction entre valeur d’usage et valeur d’échange (<a href="#c-valeur-usage">voir valeur d’usage</a>).</p>
+<p><b>La question.</b> Un objet a-t-il une seule valeur ?</p>
+<p><b>Son raisonnement.</b> Aristote remarque qu’un objet peut servir de deux façons, être utilisé ou être échangé. Les deux usages sont légitimes, mais le premier est propre à l’objet, le second non. C’est la première formulation de la distinction entre valeur d’usage et valeur d’échange, que reprendront Smith et Marx.</p>
+<p><b>Un exemple.</b> Une chaussure peut être portée ou échangée contre de la nourriture. Elle reste une chaussure dans les deux cas, mais seul le premier usage correspond à ce pour quoi elle a été faite.</p>
+<p><a href="#c-valeur-usage">Pour aller plus loin, la notice « Valeur d’usage et valeur d’échange » →</a></p>
 <h4>3. Les deux arts d’acquérir</h4>
-<p>Il existe un art d’acquérir naturel, qui procure les biens nécessaires à la maisonnée et à la cité, et qui a une limite : on n’a pas besoin d’une quantité infinie de biens pour bien vivre. Mais il existe aussi un art d’acquérir qui vise l’argent pour lui-même, la chrématistique, et qui n’a pas de limite. Aristote le juge contre nature, car il confond le moyen, l’argent, avec la fin, la vie bonne.</p>
+<p><b>La question.</b> Faut-il chercher à s’enrichir sans limite ?</p>
+<p><b>Son raisonnement.</b> Il existe un art d’acquérir naturel, qui procure les biens nécessaires à la maisonnée et à la cité, et qui a une limite, car on n’a pas besoin d’une quantité infinie de biens pour bien vivre. Il existe aussi un art d’acquérir qui vise l’argent pour lui-même, la chrématistique, et qui n’a pas de limite. Aristote le juge contre nature, car il confond le moyen, l’argent, avec la fin, la vie bonne.</p>
+<p><b>Un exemple.</b> Aristote rappelle la légende du roi Midas, qui obtient que tout ce qu’il touche se change en or et meurt de faim au milieu de ses richesses. Une richesse faite seulement d’argent peut laisser manquer du nécessaire.</p>
+<p><a href="#c-encastrement">Pour aller plus loin, la notice « Encastrement », où Polanyi reprend cette idée au XXe siècle →</a></p>
 ${deuxArts}
 <h4>4. La monnaie, convention et mesure</h4>
-<p>La monnaie a été inventée pour faciliter les échanges entre cités éloignées. Elle sert de commune mesure : elle permet de comparer des choses très différentes, grâce au besoin qu’en ont les hommes. Son nom, nomisma, vient de nomos, la loi : elle existe par convention, non par nature, et la cité pourrait la changer (<a href="#c-fonctions-monnaie">voir fonctions de la monnaie</a>).</p>
+<p><b>La question.</b> Pourquoi la monnaie a-t-elle de la valeur ?</p>
+<p><b>Son raisonnement.</b> La monnaie a été inventée pour faciliter les échanges entre cités éloignées. Elle sert de commune mesure et permet de comparer des choses très différentes, grâce au besoin qu’en ont les hommes. Son nom, nomisma, vient de nomos, la loi. Elle existe par convention, non par nature, et la cité pourrait la changer.</p>
+<p><b>Un exemple.</b> Un billet de 100 francs ne vaut presque rien comme papier. Il vaut parce que chacun sait que les autres l’accepteront, ce qui prolonge l’idée d’Aristote d’une monnaie fondée sur la convention.</p>
+<p><a href="#c-fonctions-monnaie">Pour aller plus loin, la notice « Fonctions de la monnaie » →</a></p>
 <h4>5. La justice dans l’échange</h4>
-<p>Dans le livre V de l’Éthique à Nicomaque, Aristote distingue la justice distributive, qui répartit les biens communs selon le mérite, et la justice corrective, qui répare les torts dans les transactions. Dans l’échange, la justice exige une réciprocité proportionnelle : le cordonnier et le bâtisseur doivent échanger selon le rapport de leurs travaux et des besoins.</p>
+<p><b>La question.</b> Qu’est-ce qu’un échange juste ?</p>
+<p><b>Son raisonnement.</b> Dans le livre V de l’Éthique à Nicomaque, Aristote distingue la justice distributive, qui répartit les biens communs selon le mérite, et la justice corrective, qui répare les torts dans les transactions. Dans l’échange, la justice exige une réciprocité proportionnelle, fondée sur le besoin que les hommes ont les uns des autres.</p>
+<p><b>Un exemple.</b> Combien de paires de chaussures faut-il pour une maison ? Aristote cherche le rapport qui rend l’échange réciproque entre le cordonnier et le bâtisseur. La question du « juste prix » occupera ensuite les théologiens du Moyen Âge.</p>
+<p><a href="#c-prix-naturel">Pour aller plus loin, la notice « Prix naturel et prix de marché » →</a></p>
 ${justices}
 <h4>6. La condamnation de l’usure</h4>
-<p>Le prêt à intérêt est la forme la plus contre nature de la chrématistique : la monnaie, stérile par nature, y engendre de la monnaie. Le mot grec tokos désigne à la fois l’intérêt et le petit d’un animal. Cette condamnation traversera le Moyen Âge chrétien et islamique.</p>
+<p><b>La question.</b> Est-il légitime de prêter de l’argent contre intérêt ?</p>
+<p><b>Son raisonnement.</b> Pour Aristote, le prêt à intérêt est la forme la plus contre nature de la chrématistique. La monnaie, stérile par nature, y engendre de la monnaie. Le mot grec tokos désigne d’ailleurs à la fois l’intérêt et le petit d’un animal.</p>
+<p><b>Un exemple.</b> Les théologiens du Moyen Âge chrétien reprennent cet argument pour appuyer l’interdit biblique du prêt à intérêt. L’islam interdit lui aussi l’intérêt, au nom du Coran, et la finance islamique cherche encore aujourd’hui à s’en passer en partageant les profits et les pertes.</p>
+<p><a href="#c-preference-liquidite">Pour aller plus loin, la notice « Préférence pour la liquidité », sur une explication moderne de l’intérêt →</a></p>
 <h4>7. La propriété et l’esclavage</h4>
-<p>Contre Platon, qui imaginait pour ses gardiens une communauté des biens, Aristote défend la propriété privée : on prend mieux soin de ce qui nous appartient, et elle permet la générosité. Mais il justifie aussi l’esclavage, qu’il juge naturel pour certains hommes, une position qui pèse lourdement sur sa réputation morale.</p>` },
+<p><b>La question.</b> Faut-il mettre les biens en commun ?</p>
+<p><b>Son raisonnement.</b> Contre Platon, qui imaginait pour ses gardiens une communauté des biens, Aristote défend la propriété privée. On prend mieux soin de ce qui nous appartient, et la propriété permet la générosité. Mais il justifie aussi l’esclavage, qu’il juge naturel pour certains hommes, une position qui pèse lourdement sur sa réputation morale.</p>
+<p><b>Un exemple.</b> Ce qui est commun au plus grand nombre fait l’objet des moindres soins, observe Aristote, car chacun pense surtout à ce qui est à lui. On reconnaît là l’idée de la « tragédie des communs », que Garrett Hardin formulera en 1968 et qu’Elinor Ostrom nuancera.</p>
+<p><a href="#c-biens-communs">Pour aller plus loin, la notice « Biens communs » →</a></p>` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>Éthique à Nicomaque.</b> Un traité de morale consacré au bonheur et aux vertus. Le livre V, sur la justice, contient l’analyse de l’échange et de la monnaie qui a fondé la réflexion économique médiévale.</p>
 <p><b>Politique.</b> Un traité sur la cité, ses formes de gouvernement et ses institutions. Le livre I traite de la maisonnée, de l’esclavage, de l’économie et de la chrématistique ; le livre II critique la communauté des biens de Platon.</p>
@@ -235,20 +255,38 @@ ${vieKhaldoun}
 <p>Il reproche aux historiens de son temps de compiler des récits sans les critiquer, en acceptant des chiffres invraisemblables. Il propose une « science de la civilisation », ilm al-‘umran, qui étudierait les faits sociaux selon leurs causes, pour distinguer le vrai du faux dans les récits historiques.</p>` },
       { id: "pensee", titre: "La pensée, pas à pas", html: `
 <h4>1. Une science nouvelle</h4>
-<p>La Muqaddima commence par une critique de la méthode historique. Pour juger un récit, il faut connaître la nature des sociétés : leurs besoins, leur économie, leurs institutions. Ibn Khaldoun fonde ainsi une science sociale, qu’il juge sans précédent, et qui doit précéder l’écriture de l’histoire.</p>
+<p><b>La question.</b> Comment savoir si un récit historique est vrai ?</p>
+<p><b>Son raisonnement.</b> La Muqaddima, écrite en 1377, commence par une critique de la méthode historique. Pour juger un récit, il faut connaître la nature des sociétés, leurs besoins, leur économie, leurs institutions. Ibn Khaldoun fonde ainsi une science sociale, qu’il juge sans précédent, et qui doit précéder l’écriture de l’histoire.</p>
+<p><b>Un exemple.</b> Des historiens rapportaient que Moïse avait compté plus de 600 000 combattants parmi les Israélites. Ibn Khaldoun juge le chiffre impossible, compte tenu de la population, du territoire et des moyens de l’époque. Il faut confronter les récits à ce que l’on sait des sociétés.</p>
 <h4>2. La ‘asabiyya</h4>
-<p>La force qui fonde les États est la ‘asabiyya, l’esprit de corps, la solidarité qui unit un groupe, née des liens du sang et de la vie commune, et renforcée par la religion. Elle est la plus forte chez les nomades et les montagnards, que la rudesse de la vie rend solidaires et courageux.</p>
+<p><b>La question.</b> Qu’est-ce qui donne sa force à un groupe ?</p>
+<p><b>Son raisonnement.</b> La force qui fonde les États est la ‘asabiyya, l’esprit de corps, la solidarité qui unit un groupe. Elle naît des liens du sang et de la vie commune, et la religion la renforce. Elle est la plus forte chez les nomades et les montagnards, que la rudesse de la vie rend solidaires et courageux.</p>
+<p><b>Un exemple.</b> Ibn Khaldoun pense aux dynasties berbères des Almoravides et des Almohades, parties des déserts et des montagnes pour conquérir le Maghreb et l’Espagne musulmane aux XIe et XIIe siècles, portées par une forte solidarité de tribu et par un élan religieux.</p>
 <h4>3. Le cycle des dynasties</h4>
-<p>Un groupe doté d’une forte ‘asabiyya conquiert le pouvoir et fonde une dynastie. Mais ses descendants, installés en ville, s’habituent au luxe et perdent leur solidarité ; le souverain s’entoure de clients et de mercenaires, et augmente les impôts. Au bout de trois ou quatre générations, environ cent vingt ans, la dynastie s’effondre et un nouveau groupe la remplace.</p>
+<p><b>La question.</b> Pourquoi les empires naissent-ils, puis meurent-ils ?</p>
+<p><b>Son raisonnement.</b> Un groupe doté d’une forte ‘asabiyya conquiert le pouvoir et fonde une dynastie. Mais ses descendants, installés en ville, s’habituent au luxe et perdent leur solidarité. Le souverain s’entoure de clients et de mercenaires, et augmente les impôts. Au bout de trois ou quatre générations, environ cent vingt ans, la dynastie s’effondre et un nouveau groupe la remplace.</p>
+<p><b>Un exemple.</b> Ibn Khaldoun décrit trois générations. La première garde la rudesse et la solidarité du désert. La deuxième passe à la vie urbaine et au luxe, mais se souvient encore des vertus des fondateurs. La troisième a tout oublié et doit payer des mercenaires pour se défendre. Le prestige d’une famille, ajoute-t-il, ne dépasse guère quatre générations.</p>
 ${cycle}
 <h4>4. Le travail, source de la richesse</h4>
-<p>Ibn Khaldoun affirme que les gains et les richesses sont la valeur réalisée du travail humain. Même dans les biens qui semblent venir de la nature, comme les produits agricoles, le travail est la source principale de la valeur. On a vu dans ces passages une anticipation de la théorie de la valeur-travail de <a href="#eco-smith">Smith</a> et de <a href="#eco-ricardo">Ricardo</a> (<a href="#c-valeur-travail">voir valeur-travail</a>).</p>
+<p><b>La question.</b> D’où vient la richesse ?</p>
+<p><b>Son raisonnement.</b> Ibn Khaldoun affirme que les gains et les richesses sont la valeur réalisée du travail humain. Même dans les biens qui semblent venir de la nature, comme les produits agricoles, le travail est la source principale de la valeur. On a vu dans ces passages une anticipation de la théorie de la valeur-travail de Smith et de Ricardo.</p>
+<p><b>Un exemple.</b> Même dans le prix du blé, dit-il, entre le travail de celui qui laboure, sème et moissonne, même si on le remarque moins que dans un objet artisanal. On y a vu une première intuition de la valeur-travail, plus de quatre siècles avant Smith.</p>
+<p><a href="#c-valeur-travail">Pour aller plus loin, la notice « Valeur-travail » →</a></p>
 <h4>5. La division du travail et les villes</h4>
-<p>Un homme seul ne peut produire tout ce dont il a besoin : la coopération et la division du travail permettent de produire bien plus que le nécessaire. Les grandes villes, où le travail est plus divisé et la population plus dense, sont plus riches, les salaires y sont plus élevés et les métiers plus raffinés (<a href="#c-division-travail">voir division du travail</a>).</p>
+<p><b>La question.</b> Pourquoi les villes sont-elles plus riches que les campagnes ?</p>
+<p><b>Son raisonnement.</b> Un homme seul ne peut produire tout ce dont il a besoin. La coopération et la division du travail permettent de produire bien plus que le nécessaire. Les grandes villes, où le travail est plus divisé et la population plus dense, sont plus riches, les salaires y sont plus élevés et les métiers plus raffinés.</p>
+<p><b>Un exemple.</b> Ibn Khaldoun arrive en Égypte à la fin de 1382 et s’installe au Caire et s’émerveille de cette métropole, où l’abondance de la population fait vivre des métiers inconnus des petites villes du Maghreb. Il en tire que la richesse d’une ville vient du nombre et de la variété de ceux qui y travaillent.</p>
+<p><a href="#c-division-travail">Pour aller plus loin, la notice « Division du travail » →</a></p>
 <h4>6. L’offre, la demande et les prix</h4>
-<p>Ibn Khaldoun explique que les prix des biens de luxe sont élevés dans les grandes villes parce que la demande y est forte, et que les prix alimentaires dépendent de l’abondance des récoltes et des stocks. Il observe que les prix trop bas ruinent les producteurs, et que les prix trop élevés nuisent aux acheteurs.</p>
+<p><b>La question.</b> Qu’est-ce qui fait varier les prix ?</p>
+<p><b>Son raisonnement.</b> Ibn Khaldoun explique que les produits de luxe sont chers dans les grandes villes parce que la demande y est forte, et que les prix alimentaires dépendent de l’abondance des récoltes et des stocks. Il observe que des prix trop bas ruinent les producteurs, et que des prix trop élevés nuisent aux acheteurs.</p>
+<p><b>Un exemple.</b> Dans une grande ville, les gens font des réserves de grain, si bien qu’une mauvaise année ne fait pas flamber les prix comme dans un village sans stocks. À l’inverse, la soie et les parfums y coûtent cher, parce que beaucoup d’acheteurs riches les recherchent.</p>
+<p><a href="#c-offre-demande">Pour aller plus loin, la notice « Offre et demande » →</a></p>
 <h4>7. L’impôt et l’État</h4>
-<p>Au début d’une dynastie, les impôts sont légers et rapportent beaucoup, car l’activité prospère. À la fin, le luxe de la cour exige des impôts toujours plus lourds, qui découragent l’effort et réduisent les recettes. Pire, quand l’État se fait lui-même commerçant ou s’empare des biens des sujets, il ruine l’initiative. « L’injustice ruine la civilisation », écrit-il.</p>
+<p><b>La question.</b> Des impôts plus lourds rapportent-ils davantage ?</p>
+<p><b>Son raisonnement.</b> Au début d’une dynastie, les impôts sont légers et rapportent beaucoup, car l’activité prospère. À la fin, le luxe de la cour exige des impôts toujours plus lourds, qui découragent l’effort et réduisent les recettes. Pire, quand l’État se fait lui-même commerçant ou s’empare des biens des sujets, il ruine l’initiative. « L’injustice ruine la civilisation », écrit-il.</p>
+<p><b>Un exemple.</b> L’économiste américain Arthur Laffer popularise la même idée dans les années 1970, sous la forme d’une courbe, et le président Ronald Reagan cite Ibn Khaldoun en 1981 pour défendre ses baisses d’impôts. Le taux à partir duquel l’impôt rapporte moins reste très discuté.</p>
+<p><a href="#c-institutions-inclusives">Pour aller plus loin, la notice « Institutions inclusives et extractives » →</a></p>
 ${impot}` },
       { id: "livres", titre: "Les livres qui comptent", html: `
 <p><b>La Muqaddima (1377).</b> L’introduction et le premier livre de son histoire universelle, en six parties : la civilisation en général, la vie nomade, les dynasties et le pouvoir, la vie urbaine, l’économie et les métiers, les sciences. C’est elle qui fait sa célébrité.</p>
