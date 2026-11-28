@@ -1,0 +1,10 @@
+Polices utilisées par Œconomia, hébergées avec le site (sous-ensembles latin et latin étendu, format woff2, téléchargés depuis Google Fonts le 24.11.2026).
+
+- Cinzel, de Natanael Gama
+- Instrument Serif, de Rodrigo Fuenzalida et Jordan Egstad (Instrument)
+- JetBrains Mono, de JetBrains
+- Manrope, de Mikhail Sharanda
+
+Les quatre familles sont distribuées sous la SIL Open Font License, version 1.1.
+Texte de la licence : https://openfontlicense.org
+Pages des polices : https://fonts.google.com/specimen/Cinzel, https://fonts.google.com/specimen/Instrument+Serif, https://fonts.google.com/specimen/JetBrains+Mono, https://fonts.google.com/specimen/Manrope

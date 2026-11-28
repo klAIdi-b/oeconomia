@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://klaidi-b.github.io/oeconomia/sitemap.xml
